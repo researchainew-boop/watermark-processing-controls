@@ -7,8 +7,10 @@ IEEE pages including references, with 24 references, six tables and three
 figures. All five pages were rendered at 120 dpi and visually inspected;
 no overlap or clipping was found. The combined numerical, formatting,
 embedded-font and source/PDF fingerprint gate passed; see
-[the saved Phase 5 submission check](../outputs/phase5/submission_check.json).
-Public reviewer hosting remains pending. The
+[the saved Phase 5 submission check](../evidence/phase5/submission_check.json).
+The clean reviewer snapshot is publicly hosted at
+[watermark-processing-controls](https://github.com/researchainew-boop/watermark-processing-controls),
+with its public commit verified without authentication. The
 previous six-page source/PDF remains in `manuscript/archive/pre_phase123_20261009.*`.
 The source before the new controls is preserved in
 `manuscript/archive/pre_phase4_20261010.tex`.
@@ -675,12 +677,17 @@ with `--require-completed-phase3 --require-completed-phase4
 analysis finishes; approved
 figure assets are supplied explicitly to the packager.
 
-No public anonymous URL is available. Public pair IDs/seeds use their own
+The clean snapshot is available at
+[watermark-processing-controls](https://github.com/researchainew-boop/watermark-processing-controls).
+The local `release/publication.json` records verified publication separately
+from the immutable snapshot manifest. Public pair IDs/seeds use their own
 strict field allowlist; benchmark images, caption/prompt text and private
 predictions stay excluded. See [release_export.md](release_export.md).
 Archive checks are separate from independent data/end-to-end reproduction.
 Compilation, visual review and the final numerical/font/fingerprint gate are
-complete. Verified public reviewer access remains pending.
+complete. Public reviewer access was verified without authentication;
+source/PDF changes require refreshed checks, packaging and a published
+snapshot update.
 Further research includes additional keyed/learned
 marks, published removal attacks, unseen-collection/generator validation,
 and a licensed benchmark release.

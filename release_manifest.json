@@ -1,7 +1,7 @@
 {
-  "created_at_utc": "2026-10-11T10:58:35.116392+00:00",
+  "created_at_utc": "2026-10-11T11:18:25.704726+00:00",
   "status": "local anonymous code snapshot; not published",
-  "file_count": 252,
+  "file_count": 253,
   "python_files_syntax_parsed": 70,
   "model_data_or_reproduction_tests_run": false,
   "checks": {
@@ -110,7 +110,7 @@
     "official_ECC_flags_verified_as_archived_not_decoded_again": true,
     "pooled_binomial_endpoints_are_formula_checks_not_exact_mixture_coverage": true,
     "within_collection_binomial_coverage_requires_iid_source_events": true,
-    "checked_at_utc": "2026-10-11T10:58:29.694780+00:00",
+    "checked_at_utc": "2026-10-11T11:18:21.695118+00:00",
     "all_required_Phase5_evidence_complete": true
   },
   "aggregate_csv_files": [
@@ -247,12 +247,12 @@
       "sha256": "6a61317a2fd83eae7da868099af563860104e05866933faeb4b38b88633b375d"
     },
     "docs/release_export.md": {
-      "bytes": 9333,
-      "sha256": "d88b042ab6f31b11a42f540037acc9b4099f56ee966f6f63c5654b08c18138c3"
+      "bytes": 9783,
+      "sha256": "be640598e86ef22f0c63ac07d821e07111b9beb87f61d9a23bbe158198402d26"
     },
     "docs/reproducibility.md": {
-      "bytes": 40345,
-      "sha256": "b84ea83da753c0f4e3e7d746ee835fc48e1e9473e57870134587159f31045083"
+      "bytes": 40833,
+      "sha256": "6229bfc82e22d99d269dc06a62c4ca61614b8f82ad6764f47bfc876e515dcc1b"
     },
     "docs/size_controlled_ablation.md": {
       "bytes": 10653,
@@ -822,6 +822,10 @@
       "bytes": 102629,
       "sha256": "656c237d803cff08c9673f2fce65cabbe6dfc938ed9cee38a4c75a8c9504800a"
     },
+    "evidence/phase5/submission_check.json": {
+      "bytes": 2821,
+      "sha256": "d63fba76386611f6ab33cfc1688790db883f3485a636766f646640b51595e84d"
+    },
     "manuscript/assets/generated-asset-provenance.json": {
       "bytes": 5483,
       "sha256": "eead18a3b8be8871cab4b1006d9fcfa66a1b6d2a23b97a617f14c0247f81d4c1"
@@ -851,8 +855,8 @@
       "sha256": "6ae45866df700fcf1299454621ed8a4acc011b8bec73eba3658475a1d914573f"
     },
     "manuscript/main.tex": {
-      "bytes": 30501,
-      "sha256": "d43f966dbaa56646e7493beaf2ce4128baf73232995fcf41081b6610c701a959"
+      "bytes": 30535,
+      "sha256": "3657aeed633635d60e03dfc064a84580107c6405ccc3b200accda7efd3c6324e"
     },
     "pyproject.toml": {
       "bytes": 969,

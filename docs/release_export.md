@@ -1,10 +1,17 @@
 # Anonymous reviewer export
 
-`release/anonymous-code.zip` is a local export. A prepared archive is not an
-externally published repository, a benchmark image release, or an independent
-reproduction. The current `release/package_check.json` identifies the ZIP
-fingerprint, member count and whether external publication has occurred.
-The package must be refreshed after the final measured revision and PDF review.
+The clean reviewer snapshot is publicly hosted at
+[watermark-processing-controls](https://github.com/researchainew-boop/watermark-processing-controls).
+Its public `main` commit was verified without authentication. The local
+`release/publication.json` records the verified repository/commit URLs and
+published ZIP, manifest and source/PDF fingerprints; this receipt stays
+outside the clean package to avoid a circular hash dependency.
+`release/anonymous-code.zip` is the local export, and
+`release/package_check.json` records its fingerprint, member count and
+publication status. Hosting supplies reviewer access; independent
+reproduction and benchmark-image redistribution remain separate.
+Source/PDF changes require refreshed checks, packaging and a published
+snapshot update. The immutable manifest describes only its own snapshot.
 
 ## Included evidence and public identifiers
 
@@ -73,10 +80,10 @@ Unexpected stale export files cause an error instead of recursive deletion.
 
 ## Reviewer access and publication
 
-No public repository URL is recorded until an external upload succeeds and
-the resulting URL is verified. A GitHub profile alone is not a code repository
-or evidence of authentication. Account ownership, repository visibility and
-the intended reviewer access must agree before publication. For anonymous
+The repository link above was verified after successful publication;
+`release/publication.json` records the published revision. Future updates
+must pass the same unauthenticated public-commit check. Account ownership,
+repository visibility and intended reviewer access must agree. For anonymous
 review, inspect the account/repository name, commit metadata, README and
 downloaded snapshot for identifying information as part of choosing a suitable
 host. A public account can reveal author identity even if code paths are clean.
