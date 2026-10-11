@@ -1,0 +1,31 @@
+{
+  "completed_at_utc": "2026-10-10T10:22:48.672374+00:00",
+  "pairs": 200,
+  "planned_origin_sources": 400,
+  "planned_unmarked_image_copies": 1200,
+  "prior_source_records": 7592,
+  "prior_coco_public_ids": 2128,
+  "prior_native_id_intersections": 0,
+  "exact_or_ahash_overlap_screen_passed": true,
+  "source_pairs_sha256": "868434d65ac0adeac61bc14c84700f9562941ea3b20d02c1b81c21688bdb7e6f",
+  "protocol_sha256": "6a169ffed0556a74ac310f9f37809c5290555c6932e74724a9cb425dbcbd5bca",
+  "exclusion_manifest_sha256": "db51467b6af0996290f65ea2896326ffa2c63683361222029a88e5efcdc0a94c",
+  "caption_archive_sha256": "113a836d90195ee1f884e704da6304dfaaecff1f023f49b6ca93c4aaae470268",
+  "captions_val2017_json_sha256": "afe3b30e403dd7f228e2373023abbd60042a6e10ec6874d3652df034d289ebb9",
+  "coco_image_archive_sha256": "4f7e2ccb2866ec5041993c9cf2a952bbed69647b115d0f74da7ce8f4bef82f05",
+  "rejection_counts": {
+    "previously_used_native_id": 176,
+    "prior_or_within_new_sample_hash_overlap": 18,
+    "short_side_below256": 2
+  },
+  "all_pairs_split": "test",
+  "detector_inference_performed": false,
+  "generation_performed": false,
+  "selection_script_sha256": "dd59f4ac9f81dbe0530a9e03fc742d6811885b4925cfa4a13eb81736d9415820",
+  "caption_rule": {
+    "asset": "annotations_trainval2017.zip",
+    "member": "annotations/captions_val2017.json",
+    "annotation": "Lowest integer caption annotation ID for each selected COCO photo; exact caption text with fixed 'Photograph: ' prefix, no manual editing or quality selection.",
+    "caption_source": "Official COCO 2017 train/val annotation archive"
+  }
+}

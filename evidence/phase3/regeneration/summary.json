@@ -1,0 +1,561 @@
+{
+  "source_count": 204,
+  "covers": 408,
+  "outputs": 1224,
+  "matching_decoder_only": true,
+  "default_payload_only": true,
+  "real_controls_in_larger_regeneration_run": false,
+  "new_independent_dataset": false,
+  "generated_illustration_excluded": true,
+  "measurements": [
+    {
+      "condition": "diffusion_strength0p25",
+      "watermark_method": "dwt_dct",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "n_payloads": 1,
+      "verified": 10,
+      "verification_rate": 0.049019607843137254,
+      "n_outputs": 204,
+      "matches": 10,
+      "expected_payload_match_rate": 0.049019607843137254,
+      "rate_ci95_source_bootstrap": [
+        0.0196078431372549,
+        0.08333333333333333
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.023753940712105334,
+        0.08829920169689394
+      ],
+      "ci95": [
+        0.023753940712105334,
+        0.08829920169689394
+      ],
+      "mean_psnr": 20.751321191202987,
+      "mean_psnr_vs_input_cover": 20.751321191202987,
+      "mean_ssim_vs_input_cover": 0.5869874544919668,
+      "median_psnr": 20.219019508814448,
+      "mean_ssim": 0.5869874544919668,
+      "per_collection": [
+        {
+          "generator": "dalle-3",
+          "n_sources": 68,
+          "verified": 4,
+          "verification_rate": 0.058823529411764705
+        },
+        {
+          "generator": "midjourney",
+          "n_sources": 68,
+          "verified": 4,
+          "verification_rate": 0.058823529411764705
+        },
+        {
+          "generator": "stable-diffusion",
+          "n_sources": 68,
+          "verified": 2,
+          "verification_rate": 0.029411764705882353
+        }
+      ]
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "watermark_method": "trustmark",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "n_payloads": 1,
+      "verified": 0,
+      "verification_rate": 0.0,
+      "n_outputs": 204,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.01792023066243955
+      ],
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ],
+      "mean_psnr": 20.841094323508134,
+      "mean_psnr_vs_input_cover": 20.841094323508134,
+      "mean_ssim_vs_input_cover": 0.5994479742435798,
+      "median_psnr": 20.335338616509905,
+      "mean_ssim": 0.5994479742435798,
+      "per_collection": [
+        {
+          "generator": "dalle-3",
+          "n_sources": 68,
+          "verified": 0,
+          "verification_rate": 0.0
+        },
+        {
+          "generator": "midjourney",
+          "n_sources": 68,
+          "verified": 0,
+          "verification_rate": 0.0
+        },
+        {
+          "generator": "stable-diffusion",
+          "n_sources": 68,
+          "verified": 0,
+          "verification_rate": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "watermark_method": "dwt_dct",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "n_payloads": 1,
+      "verified": 6,
+      "verification_rate": 0.029411764705882353,
+      "n_outputs": 204,
+      "matches": 6,
+      "expected_payload_match_rate": 0.029411764705882353,
+      "rate_ci95_source_bootstrap": [
+        0.00980392156862745,
+        0.05392156862745098
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.01086853688823187,
+        0.06291470988072996
+      ],
+      "ci95": [
+        0.01086853688823187,
+        0.06291470988072996
+      ],
+      "mean_psnr": 16.069388759447282,
+      "mean_psnr_vs_input_cover": 16.069388759447282,
+      "mean_ssim_vs_input_cover": 0.3965373856650264,
+      "median_psnr": 15.671301435050548,
+      "mean_ssim": 0.3965373856650264,
+      "per_collection": [
+        {
+          "generator": "dalle-3",
+          "n_sources": 68,
+          "verified": 2,
+          "verification_rate": 0.029411764705882353
+        },
+        {
+          "generator": "midjourney",
+          "n_sources": 68,
+          "verified": 2,
+          "verification_rate": 0.029411764705882353
+        },
+        {
+          "generator": "stable-diffusion",
+          "n_sources": 68,
+          "verified": 2,
+          "verification_rate": 0.029411764705882353
+        }
+      ]
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "watermark_method": "trustmark",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "n_payloads": 1,
+      "verified": 0,
+      "verification_rate": 0.0,
+      "n_outputs": 204,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.01792023066243955
+      ],
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ],
+      "mean_psnr": 16.13876014557693,
+      "mean_psnr_vs_input_cover": 16.13876014557693,
+      "mean_ssim_vs_input_cover": 0.4074801877486438,
+      "median_psnr": 15.752518659827137,
+      "mean_ssim": 0.4074801877486438,
+      "per_collection": [
+        {
+          "generator": "dalle-3",
+          "n_sources": 68,
+          "verified": 0,
+          "verification_rate": 0.0
+        },
+        {
+          "generator": "midjourney",
+          "n_sources": 68,
+          "verified": 0,
+          "verification_rate": 0.0
+        },
+        {
+          "generator": "stable-diffusion",
+          "n_sources": 68,
+          "verified": 0,
+          "verification_rate": 0.0
+        }
+      ]
+    },
+    {
+      "condition": "vae_only",
+      "watermark_method": "dwt_dct",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "n_payloads": 1,
+      "verified": 76,
+      "verification_rate": 0.37254901960784315,
+      "n_outputs": 204,
+      "matches": 76,
+      "expected_payload_match_rate": 0.37254901960784315,
+      "rate_ci95_source_bootstrap": [
+        0.3088235294117647,
+        0.4411764705882353
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.30604564247101074,
+        0.44281526753593287
+      ],
+      "ci95": [
+        0.30604564247101074,
+        0.44281526753593287
+      ],
+      "mean_psnr": 26.221670057017405,
+      "mean_psnr_vs_input_cover": 26.221670057017405,
+      "mean_ssim_vs_input_cover": 0.7652936717506534,
+      "median_psnr": 25.757534680793654,
+      "mean_ssim": 0.7652936717506534,
+      "per_collection": [
+        {
+          "generator": "dalle-3",
+          "n_sources": 68,
+          "verified": 26,
+          "verification_rate": 0.38235294117647056
+        },
+        {
+          "generator": "midjourney",
+          "n_sources": 68,
+          "verified": 29,
+          "verification_rate": 0.4264705882352941
+        },
+        {
+          "generator": "stable-diffusion",
+          "n_sources": 68,
+          "verified": 21,
+          "verification_rate": 0.3088235294117647
+        }
+      ]
+    },
+    {
+      "condition": "vae_only",
+      "watermark_method": "trustmark",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "n_payloads": 1,
+      "verified": 21,
+      "verification_rate": 0.10294117647058823,
+      "n_outputs": 204,
+      "matches": 21,
+      "expected_payload_match_rate": 0.10294117647058823,
+      "rate_ci95_source_bootstrap": [
+        0.06372549019607843,
+        0.14705882352941177
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0648598468345592,
+        0.1530463722063586
+      ],
+      "ci95": [
+        0.0648598468345592,
+        0.1530463722063586
+      ],
+      "mean_psnr": 26.473039279560957,
+      "mean_psnr_vs_input_cover": 26.473039279560957,
+      "mean_ssim_vs_input_cover": 0.7801150559696868,
+      "median_psnr": 26.054777283650616,
+      "mean_ssim": 0.7801150559696868,
+      "per_collection": [
+        {
+          "generator": "dalle-3",
+          "n_sources": 68,
+          "verified": 3,
+          "verification_rate": 0.04411764705882353
+        },
+        {
+          "generator": "midjourney",
+          "n_sources": 68,
+          "verified": 12,
+          "verification_rate": 0.17647058823529413
+        },
+        {
+          "generator": "stable-diffusion",
+          "n_sources": 68,
+          "verified": 6,
+          "verification_rate": 0.08823529411764706
+        }
+      ]
+    }
+  ],
+  "manifest_sha256": "3f01d65dd46d62e8d435aa45ce2f3e698b0b222f90a639deb44f6a8d6cd6bdbc",
+  "measurement_file_sha256": "4e4663c0a563bab3e83c68c060337aea1811e27a3de726bdc4b8c4935d9c97f2",
+  "provenance": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "trustmark": "0.9.2",
+      "torch": "2.5.1+cu121",
+      "torchvision": "0.20.1+cu121",
+      "lightning": "2.5.0.post0",
+      "torchmetrics": "1.6.3",
+      "numpy": "1.26.4",
+      "pandas": "3.0.1",
+      "Pillow": "12.3.0",
+      "scipy": "1.14.1",
+      "scikit-image": "0.25.0",
+      "omegaconf": "2.3.0",
+      "einops": "0.8.1"
+    },
+    "device": "cuda",
+    "cuda": {
+      "available": true,
+      "torch_cuda": "12.1",
+      "device": "NVIDIA GeForce GTX 1050 Ti",
+      "capability": [
+        6,
+        1
+      ],
+      "compiled_architectures": [
+        "sm_50",
+        "sm_60",
+        "sm_61",
+        "sm_70",
+        "sm_75",
+        "sm_80",
+        "sm_86",
+        "sm_90"
+      ]
+    },
+    "checkpoints": [
+      {
+        "filename": "trustmark_Q.yaml",
+        "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_Q.yaml",
+        "bytes": 2009,
+        "official_md5": "fe40df84a7feeebfceb7a7678d7e6ec6",
+        "actual_md5": "fe40df84a7feeebfceb7a7678d7e6ec6",
+        "sha256": "43f37103f92efa8bd6b1c5902bb537cc12a981dc699fca19d9bb7de8c62d03d9"
+      },
+      {
+        "filename": "decoder_Q.ckpt",
+        "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/decoder_Q.ckpt",
+        "bytes": 47652460,
+        "official_md5": "4ced90e9cfe13e3295ad082887fe9187",
+        "actual_md5": "4ced90e9cfe13e3295ad082887fe9187",
+        "sha256": "e3d9cea5406a26590735719f8f15cb10802b11852ae69047eaf4cf17214df781"
+      },
+      {
+        "filename": "encoder_Q.ckpt",
+        "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/encoder_Q.ckpt",
+        "bytes": 17302074,
+        "official_md5": "700328b8754db934b2f6cb5e5185d81f",
+        "actual_md5": "700328b8754db934b2f6cb5e5185d81f",
+        "sha256": "dc382c3f6b4fd568b27d6fbb763d6ffc2d2587126d84afe9d5ee95b4c5d99826"
+      }
+    ],
+    "trustmark_variant": "Q",
+    "trustmark_ECC": "BCH5",
+    "data_capacity": 61,
+    "expected_message": "1011010010110100000000000000000000000000000000000000000000000",
+    "codeword_bits": 100,
+    "trustmark_strength": 1.0,
+    "dwt_strength": 12.0,
+    "dwt_threshold": 0.8125,
+    "code_sha256": {
+      "scripts\\benchmark_watermarks.py": "92359a35be43b76780c073f070891bfe6e42f7efa6125396e08edbac91cb1101",
+      "src\\aiwstudy\\attacks.py": "51546649126dd0594c451e81885be32068c47e37aa08b1265238ca893476137d",
+      "src\\aiwstudy\\watermark.py": "6b62834c2a14c4a5cb450c743e3169616c05231a6f29dcce52f4d8eca5e39415"
+    }
+  },
+  "public_decode_anchors": [
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p50",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p50",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p50",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p50",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p50",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p50",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p50",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p50",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p50",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p50",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "vae_only",
+      "batch_matches_public_decode": true
+    },
+    {
+      "cover_id_count": 1,
+      "condition": "diffusion_strength0p25",
+      "batch_matches_public_decode": true
+    }
+  ],
+  "ci": "Clopper-Pearson descriptive source-binomial intervals",
+  "analysis_completed_at_utc": "2026-10-09T10:02:00.906581+00:00"
+}

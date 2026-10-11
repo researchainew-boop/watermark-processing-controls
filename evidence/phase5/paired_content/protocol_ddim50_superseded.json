@@ -1,0 +1,112 @@
+{
+  "frozen_at_utc": "2026-10-10T10:12:59.689412+00:00",
+  "stage": "protocol_frozen_before_source_selection_or_generation",
+  "seed": 20261010,
+  "planned_pairs": 200,
+  "planned_sources": 400,
+  "planned_image_copies": 1200,
+  "primary_endpoint": "Identity unmarked origin ROC-AUC for each previously frozen probe; fixed validation-threshold TPR and actual FPR reported separately.",
+  "secondary_endpoints": "JPEG50 and 32x32 round-trip AUC/TPR/FPR, and ordinary fusion/gate comparisons using the unchanged expected-payload decoder.",
+  "source_split": "All 200 pairs are prospective test-only sources; no pair member or derivative enters fitting/calibration. Existing detector source splits and heads remain unchanged.",
+  "selection": {
+    "collection": "COCO val2017",
+    "minimum_side": 256,
+    "order": "SHA256('paired-content|20261010|coco|'+12-digit public photo ID)",
+    "excluded_prior_records": 7592,
+    "exclude": "All previously used native COCO public IDs, any previous native or standardized exact pixel fingerprint, 8x8 aHash Hamming distance<=2 against all prior records and selected new photographs.",
+    "detector_score_selection": false,
+    "within_sample_screen": true
+  },
+  "caption_rule": {
+    "asset": "annotations_trainval2017.zip",
+    "member": "annotations/captions_val2017.json",
+    "annotation": "Lowest integer caption annotation ID for each selected COCO photo; exact caption text with fixed 'Photograph: ' prefix, no manual editing or quality selection.",
+    "caption_source": "Official COCO 2017 train/val annotation archive"
+  },
+  "generator": {
+    "model": "SG161222/Realistic_Vision_V5.1_noVAE",
+    "cached_revision": "1e9f017a7b1eaefb63a1900ea6c5953d2739fd21",
+    "pipeline": "StableDiffusionPipeline text-to-image; no photograph supplied as initialization",
+    "size": [
+      512,
+      512
+    ],
+    "scheduler": "DDIMScheduler.from_config(cached scheduler config)",
+    "num_inference_steps": 50,
+    "guidance_scale": 7.5,
+    "eta": 0.0,
+    "negative_prompt": "",
+    "batch_size": 1,
+    "seed": "int(SHA256('paired-content|20261010|coco|'+12-digit public photo ID)[:16],16) modulo 2**31; CPU torch.Generator",
+    "unet_text_dtype": "float16",
+    "vae_dtype": "float32",
+    "attention": "Default torch2 SDPA; no simultaneous attention slicing",
+    "memory": "Resident CUDA first; on OOM use model CPU offload without changing prompt/seed/model/parameters",
+    "resampling_or_output_quality_selection": false,
+    "checkpoint_sha256": {
+      "model_index.json": "eaaa586611ebaf7e860145373536bcd7ea7c6f23d40ac63e03884596f19f8df0",
+      "scheduler/scheduler_config.json": "81c61cd6937a8b6c4ddf9eef06b64dafbaa66409d083786dc9426bec7f37a105",
+      "text_encoder/config.json": "f4b1867cbf991587483d691aed58c41b25c28df75ae5b7f391ceae51269dfe68",
+      "text_encoder/model.safetensors": "c1ef1f8a6d40562315dbb7a5224876f07fc7a8b46cc0a383c4f5b1227ddfeb58",
+      "tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "tokenizer/special_tokens_map.json": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+      "tokenizer/tokenizer_config.json": "19d7b034cb0cc3ce9766c2231373ab8aa8991fc72e2c8f76558bfaae3de0d563",
+      "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "unet/config.json": "f0567294c259d420cb4505c4c0ee37ee304342e4581ac2c87362b2e87965bbeb",
+      "unet/diffusion_pytorch_model.safetensors": "4e0868e8fcae7d4ea8f8cdd3051704b3b47d741dc8e8629552d1a07f6efb8e32",
+      "vae/config.json": "cd56fdbf7a5c01c4bf331a3640395c48d5456dcc58374e7b3d24a7e3fe42d42a",
+      "vae/diffusion_pytorch_model.safetensors": "68a430f8a51413e80ecec6c13fff4b6b63e57600a2ec661a016a14fd1037fa4b"
+    }
+  },
+  "common_processing": "Both origins convert to RGB/BGR, OpenCV INTER_AREA resize to256square, identical OpenCV JPEG95 encode/decode, lossless PNG staging; same three unmarked transformations afterward.",
+  "conditions": [
+    {
+      "name": "identity",
+      "severity": 0
+    },
+    {
+      "name": "jpeg",
+      "severity": 2
+    },
+    {
+      "name": "lowres",
+      "severity": 2
+    }
+  ],
+  "mark_embedding": false,
+  "expected_payload": "1011010010110100",
+  "gate_threshold": 0.8125,
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261012,
+    "cluster": "Caption/photo pair; both real and generated source plus all derivatives stay together in every paired draw.",
+    "interval": "Percentile95%; conditional on frozen heads/thresholds and the selected generator."
+  },
+  "test_inference_passes": 1,
+  "test_refitting": false,
+  "test_threshold_retuning": false,
+  "input_sha256": {
+    "original_source_audit": "7934f56b61befa7fa20f91157a450aef5af556a8d6e9bf4d702982b477b6746f",
+    "openimages_sources": "d9839ff81f9665e30d807cd00d284db78c053d0eef983fd711a681ac001d67dd",
+    "fresh192": "3a3d930c7eb4f3ca717f31cc258d906f125bfd02de5832ed38469f6436637765",
+    "fresh400": "f1463a5d5509de21e491655dcb99be2f34b6747991fe7d4c4a8d3b0c812460d3",
+    "public_index": "db3749aebe292e55f8fd6fde0aacd7760fd5be352bfae6e3ef892600cd6465ed",
+    "public_index_audit": "d7b55d527016ab9761899b0f8c1d7994135390318cabb37fd5bc3481d606bc53",
+    "frozen_validation_calibration": "82b6ee450fb589b214dcbba845aa0f3d7b746eac56a77c2212f7b468b41192a3"
+  },
+  "head_sha256": {
+    "resnet_full.npz": "08cf3bd91ccc3124983752a989f4d68935e1f7ba4859fa676dd7ad9dbfa87e0f",
+    "resnet_fusion_full.npz": "b74008eb87df5d1d337afff11aa4053afa15b0bb50ead780807ddce6af983d8b",
+    "clip_full.npz": "d57c6c892f3d4baf212bc2dc9decf3d5305fbee798102991a5c8dec3478f413d",
+    "clip_fusion_full.npz": "83d6c431470c21e77232c7e30aea5072ba7282cd7f8508410b1a73f84763cecb"
+  },
+  "calibration_caveat": "Existing fusion heads reused calibration validation rows; fusion/gate calibration is retrospective. The paired test remains prospectively selected after head/threshold lock.",
+  "limitations": [
+    "Caption pairing aligns described scene content but does not create identical scenes or pixel correspondence.",
+    "One cached SD1.5-family generator does not establish modern-generator generalization.",
+    "COCO or caption overlap in generator/detector pretraining is not ruled out.",
+    "Common final JPEG encoding does not erase original photographs' compression histories.",
+    "Memory placement and fixed seeds do not promise bitwise equality across different hardware/library versions."
+  ],
+  "preparation_script_sha256": "e44e5a94a0d212ee854ddff0a4439a3508482b13753022a627d7fa7d2f00a8b6"
+}

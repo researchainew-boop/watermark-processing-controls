@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-10T10:28:28.018491+00:00",
+  "initial_protocol_driver_sha256": "69a4c2948534df7a38575aaa4b458c09b0dc1a15be781831837542e1348486de",
+  "preserved_initial_driver_sha256": "69a4c2948534df7a38575aaa4b458c09b0dc1a15be781831837542e1348486de",
+  "current_driver_sha256": "ea05702c8a3a9e6953cdf74e5dae41f4caf09867968fd777e3cd41006d0446e3",
+  "changes": [
+    "Existing original split val alias accepted as validation; no intended source population change",
+    "CPU/encoding/calibration/test manifest and checkpoint fingerprint checks added before decoder use",
+    "PSNR-only quantization amendment approved by root before decoding; protocol_amendment.json preserves exact change"
+  ],
+  "source_manifest_sha256": "92b0dedd550f70e59e3255fe82842e6b4136309c3e163293fee26cfa318df63e",
+  "new_decoder_outputs_exist": false,
+  "pre_GPU_safeguard_recorded_at_utc": "2026-10-10T10:33:51.336652+00:00",
+  "pre_GPU_additional_safeguards": "Learned encoding start timestamp and protocol/amendment/input hashes; refuse repeat after completion/scoring; elapsed timing only, no inference/selection semantics change",
+  "CPU_derivative_queue_recorded_at_utc": "2026-10-10T10:37:49.153895+00:00",
+  "CPU_derivative_queue": "Prepares the same frozen4 transformations and quality measures on1616 CPU covers before GPU availability; final derive hash-verifies/reuses6464 images and computes2448 learned-copy images; no scoring or protocol settings change"
+}

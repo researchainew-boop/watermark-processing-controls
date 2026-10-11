@@ -1,0 +1,14 @@
+{
+  "started_at_utc": "2026-10-09T09:25:51.688168+00:00",
+  "torch": "2.5.1+cu121",
+  "diffusers": "0.35.1",
+  "device": "NVIDIA GeForce GTX 1050 Ti",
+  "requested_mode": "auto",
+  "mode": "resident",
+  "attention_processors": [
+    "AttnProcessor2_0"
+  ],
+  "generator_device": "cpu",
+  "cuda_total_bytes": 4294705152,
+  "driver_sha256": "4383ad9fb46801b6bccdf1e5634703782a87635a6de8041c88441d60230c03b8"
+}

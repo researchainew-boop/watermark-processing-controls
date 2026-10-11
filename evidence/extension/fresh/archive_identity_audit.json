@@ -1,0 +1,6 @@
+{
+  "reconstructed_original_prefix_count": 1000,
+  "fresh_dalle_count": 96,
+  "original_archive_id_overlap_count": 0,
+  "selection_rule": "Exact ordered qualifying archive entries used by prepare_native_sources.py"
+}

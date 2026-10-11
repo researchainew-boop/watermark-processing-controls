@@ -1,0 +1,15 @@
+seed: 20261007
+retained_sources: outputs/conference_clean/manifest_sources.csv
+image_side: 256
+jpeg_qualities: [95, 75, 50]
+selection:
+  val: {stable-diffusion: 60, dalle-3: 60}
+  test: {stable-diffusion: 60, dalle-3: 60, midjourney: 60}
+matching:
+  method: one_to_one_maximum_clean_clip_cosine
+  calibration_real: 300
+  calibration_per_seen_generator: 100
+  calibration_percentile: 5
+  exclude_below_caliper: false
+data_directory: data/extension_controls/encoding
+output_directory: outputs/extension_controls/encoding

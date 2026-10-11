@@ -1,0 +1,96 @@
+{
+  "started_at_utc": "2026-10-11T05:34:02.678227+00:00",
+  "role": "test",
+  "image_count": 7312,
+  "manifest_sha256": "57c0f520e85525ec3e27f0b1cb185be3178aa3d1bd78659db731f4a1142dd478",
+  "source_sha256": "92b0dedd550f70e59e3255fe82842e6b4136309c3e163293fee26cfa318df63e",
+  "protocol_sha256": "97e835b79d0e52d978acb34b951e5ed210993146d7d4986d3f53bb2e06cdc764",
+  "amendment_sha256": "3090b9ba4cf132cef1433cb980835dce99303175814c05ffec76ed7ceffc31cc",
+  "threshold_sha256_before_test": "504445199f2ea6e72940cf0de31f867a6ff44b07552098c445df6d5916658f38",
+  "driver_sha256": "ea05702c8a3a9e6953cdf74e5dae41f4caf09867968fd777e3cd41006d0446e3",
+  "device": "cuda",
+  "batch_size": 16,
+  "checkpoints": [
+    {
+      "filename": "trustmark_Q.yaml",
+      "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_Q.yaml",
+      "bytes": 2009,
+      "official_md5": "fe40df84a7feeebfceb7a7678d7e6ec6",
+      "actual_md5": "fe40df84a7feeebfceb7a7678d7e6ec6",
+      "sha256": "43f37103f92efa8bd6b1c5902bb537cc12a981dc699fca19d9bb7de8c62d03d9"
+    },
+    {
+      "filename": "decoder_Q.ckpt",
+      "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/decoder_Q.ckpt",
+      "bytes": 47652460,
+      "official_md5": "4ced90e9cfe13e3295ad082887fe9187",
+      "actual_md5": "4ced90e9cfe13e3295ad082887fe9187",
+      "sha256": "e3d9cea5406a26590735719f8f15cb10802b11852ae69047eaf4cf17214df781"
+    },
+    {
+      "filename": "encoder_Q.ckpt",
+      "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/encoder_Q.ckpt",
+      "bytes": 17302074,
+      "official_md5": "700328b8754db934b2f6cb5e5185d81f",
+      "actual_md5": "700328b8754db934b2f6cb5e5185d81f",
+      "sha256": "dc382c3f6b4fd568b27d6fbb763d6ffc2d2587126d84afe9d5ee95b4c5d99826"
+    }
+  ],
+  "anchors": [
+    {
+      "image_id_count": 1,
+      "file_sha256": "c1115d44cc7455c4ecbe56c07cf5817285cd80e72923ba2e8ba78895a86e9c56",
+      "matches_public_API": true,
+      "matches_archived_bits_ECC": true
+    },
+    {
+      "image_id_count": 1,
+      "file_sha256": "24e5b5220145cf26e2de4b84d62ac9952e9e83ad236b745913f7baf8e7dc0e44",
+      "matches_public_API": true,
+      "matches_archived_bits_ECC": true
+    },
+    {
+      "image_id_count": 1,
+      "file_sha256": "050d97e0732c82cfedc27d78616bb2b7f0cad11ec6a4ea84d2a194536f6f1edc",
+      "matches_public_API": true,
+      "matches_archived_bits_ECC": true
+    },
+    {
+      "image_id_count": 1,
+      "file_sha256": "42b36012376b2dd266647992de64a25f840c2a12a346a18bd94474864f2fdeba",
+      "matches_public_API": true,
+      "matches_archived_bits_ECC": true
+    },
+    {
+      "image_id_count": 1,
+      "file_sha256": "9b8895f0ca9caca38ea81c4173925c0654be201a13e3b766d005f1dc3cbc3827",
+      "matches_public_API": true,
+      "matches_archived_bits_ECC": true
+    },
+    {
+      "image_id_count": 1,
+      "file_sha256": "77ed202c290315053e5bf7ee05ddf201f6a13fa79bf44ba6f4a64fb89a16b27e",
+      "matches_public_API": true,
+      "matches_archived_bits_ECC": true
+    },
+    {
+      "image_id_count": 1,
+      "file_sha256": "12509027a89707af0454a7d1105ac3fba2b527e52d8b99d7cb1f8766015745fe",
+      "matches_public_API": true,
+      "matches_archived_bits_ECC": true
+    },
+    {
+      "image_id_count": 1,
+      "file_sha256": "298718e040aa5921242359d014dd33e0c7ac8ebaa046605adfcbfcac8708f674",
+      "matches_public_API": true,
+      "matches_archived_bits_ECC": true
+    },
+    {
+      "image_id_count": 1,
+      "file_sha256": "98c2f4725a4a3bab6a994d6f17087687e2af366a1be7f32a8cb8cadb77932081",
+      "matches_public_API": true,
+      "matches_archived_bits_ECC": true
+    }
+  ],
+  "anchor_scope": "Archived previously decoded API checks; not newly prepared test images or analysis outcomes"
+}

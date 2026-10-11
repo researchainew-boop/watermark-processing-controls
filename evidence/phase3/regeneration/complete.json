@@ -1,0 +1,9 @@
+{
+  "completed_at_utc": "2026-10-09T10:00:37.942950+00:00",
+  "outputs": 1224,
+  "sources": 204,
+  "covers": 408,
+  "manifest_sha256": "3f01d65dd46d62e8d435aa45ce2f3e698b0b222f90a639deb44f6a8d6cd6bdbc",
+  "protocol_sha256": "5a7044ec16a82979dee7cebe98cd5e8c0ce003304b30c7ec66a5c9a4f6a445df",
+  "generated_example_excluded": true
+}

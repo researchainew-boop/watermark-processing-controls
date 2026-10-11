@@ -1,0 +1,1036 @@
+{
+  "measurements_sha256": "bfa0f4dc9f50b034265a8bab04feffd23e886a6ad4e664cf54c3e114c4ed0d37",
+  "sampling_unit": "distinct input source",
+  "generator": "all",
+  "source_count_per_origin": 24,
+  "interval_target": "Probability all evaluated payloads verify on one source under a fixed condition; differs from mean per-output verification rate",
+  "interval_method": "Two-sided 95% exact Clopper-Pearson for the source-level binary event",
+  "caution": "Conditional on the chosen payloads, seed, methods, and exploratory sample; collection-balanced source selection is not a population probability sample. Distinct sources are treated as independent with a common success probability for this descriptive interval.",
+  "inference_or_threshold_tuning_performed": false,
+  "measurements": [
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 1,
+      "all_evaluated_payloads_verification_rate": 0.041666666666666664,
+      "ci95_exact_clopper_pearson": [
+        0.0010543524454697472,
+        0.2112016834569731
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 1,
+      "all_evaluated_payloads_verification_rate": 0.041666666666666664,
+      "ci95_exact_clopper_pearson": [
+        0.0010543524454697472,
+        0.2112016834569731
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 22,
+      "all_evaluated_payloads_verification_rate": 0.9166666666666666,
+      "ci95_exact_clopper_pearson": [
+        0.7300271984423963,
+        0.9897436587187498
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 20,
+      "all_evaluated_payloads_verification_rate": 0.8333333333333334,
+      "ci95_exact_clopper_pearson": [
+        0.6261582865113173,
+        0.9526463733927428
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 23,
+      "all_evaluated_payloads_verification_rate": 0.9583333333333334,
+      "ci95_exact_clopper_pearson": [
+        0.7887983165430268,
+        0.9989456475545303
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 24,
+      "all_evaluated_payloads_verification_rate": 1.0,
+      "ci95_exact_clopper_pearson": [
+        0.8575264022774743,
+        1.0
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 3,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "vae_only",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "vae_only",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 7,
+      "all_evaluated_payloads_verification_rate": 0.2916666666666667,
+      "ci95_exact_clopper_pearson": [
+        0.1261520885236913,
+        0.5109478138578332
+      ],
+      "verification_rule": "agreement >=13/16",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    },
+    {
+      "condition": "vae_only",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "Input-source provenance and this fixed condition; real unmarked controls check only the original expected string"
+    },
+    {
+      "condition": "vae_only",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "payloads_evaluated_per_source": 1,
+      "all_evaluated_payloads_verified_sources": 0,
+      "all_evaluated_payloads_verification_rate": 0.0,
+      "ci95_exact_clopper_pearson": [
+        0.0,
+        0.14247359772252563
+      ],
+      "verification_rule": "exact expected 61-bit data message plus valid schema/ECC",
+      "scope": "All fixed payloads evaluated for this source and condition verify"
+    }
+  ]
+}

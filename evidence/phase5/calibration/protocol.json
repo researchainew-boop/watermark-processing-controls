@@ -1,0 +1,612 @@
+{
+  "locked_at_utc": "2026-10-10T10:14:38.432504+00:00",
+  "seeds": [
+    20260920,
+    20260921,
+    20260922,
+    20260923,
+    20260924
+  ],
+  "alpha": 0.05,
+  "source_roles_sha256": "78adbbbb9bad2514eb6ffced6e7754eb3843d857d513e7446040e61f53671118",
+  "input_sha256": {
+    "outputs/conference_clean/manifest_derived.csv": "d1988cc40a66e0117a77d4f96987a2946b394a60267433d78a7cb582861691a3",
+    "outputs/phase3/controls/heldout_clip_manifest.csv": "50c5973786b34bdad1f01952e8c652e74f1ac9109497f4e599c49c8d5f72a12d",
+    "outputs/phase3/controls/openimages_derived_manifest.csv": "5317926252a748c8b76c4698116c8938213cbf839138a5e485f60750bab57cf1",
+    "outputs/phase3/controls/unmarked_test_manifest.csv": "3574b7deead5b539eba82206ea5403c19cb37f3a5a9f8b6b674b3db9ce621e52",
+    "outputs/phase3/controls/unmarked_union_extra_manifest.csv": "0a7b71132ce5405c732d2b0a55b79e2b76163b4d0804dffb7944b20e29cd8eae",
+    "outputs/phase3/controls/split_seeds/assignments.csv": "a13d79be60450cf932d2226b0c5dd4ae3df590aaaf018291fe9ad729884fe6ea",
+    "data/manifest_derived.csv": "d62d3f2ca6d3fb62230a33b4d06b53f877917aec4089913be3ccd72d488a4618",
+    "outputs/active_scores.csv": "eb2d90a7cd2e94ad53597057ce8301086c9a2ec64309c7fe6019b1431e955ea1",
+    "outputs/phase4/fresh_replication/manifest.csv": "502318071d193118eacdc5521b89a386d81e5df576f56694ce3c5f4fae4a1473",
+    "outputs/phase4/fresh_replication/summary.json": "80243fabbcd0ff764b96ed217098ad39c24c813f4f438d92dd08340985d0e82b",
+    "outputs/conference_clean/clip_attack.npz": "84b0278fe5db2850d22ee9226a4a01439fa2c685f62e30dda9ee2c1876910b86",
+    "outputs/conference_clean/clip_full.npz": "30cf885fbf4030471c15443ce8808173764ff193e775a61f7bb11329901278d4",
+    "outputs/conference_clean/clip_fusion_full.npz": "6c176dd5b5f945b077b284435231d7059b062e536acece8edf16c96a314d17b4",
+    "outputs/conference_clean/clip_fusion_no_attacks.npz": "82e0d0af1b9ffda4762a19aa38c9c32f79bee50c4cfa9705c38258ac4d303dc4",
+    "outputs/conference_clean/clip_fusion_no_matched_reals.npz": "28e13f227c55ae47a6c8aa1107fb90f9bb0581be00a02f45e933a1126338b88f",
+    "outputs/conference_clean/clip_no_attacks.npz": "824b0ef326336ebb0e9a08a4903a72ff41f74de923fb84c43765ef9b882fc19d",
+    "outputs/conference_clean/clip_no_matched_reals.npz": "f13d00686002d8ef3fd9e33154314362d2b05815238ea89fd8ce78275d6176ef",
+    "outputs/conference_clean/resnet_attack.npz": "5c1d6dbb547483772fe07be63d644655a849292271a0e46fd9e161377b5024ab",
+    "outputs/conference_clean/resnet_full.npz": "db427c4aeab4edf07496cf28d6f5fb766ce48f91baee53797df41ddb42b5d9f7",
+    "outputs/conference_clean/resnet_fusion_full.npz": "73fe3fba271ca02092201a559d707e903e9a5cc8897f2916306e5a2a865e365c",
+    "outputs/conference_clean/resnet_fusion_no_attacks.npz": "3291eb409fe0f228d41706c17fcbd8c5b1dda008f7948aa8c5743f4cabe7c6e2",
+    "outputs/conference_clean/resnet_fusion_no_matched_reals.npz": "4fe5761d915a03c632f9ae6c0a82f78762e463250ecafd7a26fcfc1a64791bbf",
+    "outputs/conference_clean/resnet_no_attacks.npz": "f47f3503aefdd5cd7f4e3e820facc8d708b13552e53a497ba5cd00467b7e1876",
+    "outputs/conference_clean/resnet_no_matched_reals.npz": "8d09c4ee813804b8490b123ad423b6bda9984576a80f52a4b0feef25d189c129",
+    "outputs/phase3/controls/split_seeds/20260920/resnet_full.npz": "08cf3bd91ccc3124983752a989f4d68935e1f7ba4859fa676dd7ad9dbfa87e0f",
+    "outputs/phase3/controls/split_seeds/20260920/resnet_fusion_full.npz": "b74008eb87df5d1d337afff11aa4053afa15b0bb50ead780807ddce6af983d8b",
+    "outputs/phase3/controls/split_seeds/20260920/clip_full.npz": "d57c6c892f3d4baf212bc2dc9decf3d5305fbee798102991a5c8dec3478f413d",
+    "outputs/phase3/controls/split_seeds/20260920/clip_fusion_full.npz": "83d6c431470c21e77232c7e30aea5072ba7282cd7f8508410b1a73f84763cecb",
+    "outputs/phase3/controls/split_seeds/20260921/resnet_full.npz": "ce1034c7c32f89ea083d562b0a3667d08f6c1c2475d7f8542aa9a331c3cc5637",
+    "outputs/phase3/controls/split_seeds/20260921/resnet_fusion_full.npz": "dd9d7864c69367a4e41c9d37ad3b96f31a0e8f331bee98855ba9451b8a2b55e0",
+    "outputs/phase3/controls/split_seeds/20260921/clip_full.npz": "6f249b03b4ec7325692b1431c3b4c76b22e19ace066ba2c3e048e4017619688b",
+    "outputs/phase3/controls/split_seeds/20260921/clip_fusion_full.npz": "e80e755fb643a9faa7cdf1c42df1fcda7c95699d53b14935b6a2afe979d098af",
+    "outputs/phase3/controls/split_seeds/20260922/resnet_full.npz": "917785493a0cac7c77408d258178caf2894d0a6068990193a289f004fc54c2d2",
+    "outputs/phase3/controls/split_seeds/20260922/resnet_fusion_full.npz": "c0e98e833af1798c0f528cd372f3e11555922c5d5ff350b5f376c796a241f95a",
+    "outputs/phase3/controls/split_seeds/20260922/clip_full.npz": "df2f597c4454639eaa967d8954a24c0f36ff74b598c184a39a7412f732b112a4",
+    "outputs/phase3/controls/split_seeds/20260922/clip_fusion_full.npz": "8a84d06280ce2123a8fa34304ab0070afdcba47acf32aae61893b35ee7743054",
+    "outputs/phase3/controls/split_seeds/20260923/resnet_full.npz": "d8a53b7f802a34ad7c3c5f4f990952bd78365eb789b252e6a3ef1381bf07b34a",
+    "outputs/phase3/controls/split_seeds/20260923/resnet_fusion_full.npz": "31f5301ec9a53a3f686e12d8aeea264224c7813fb4a50485d79c702d25dd6971",
+    "outputs/phase3/controls/split_seeds/20260923/clip_full.npz": "56716d2a8008fb1d2e18eb081211b73b3d823263c4ef670f8d2c87908b64cece",
+    "outputs/phase3/controls/split_seeds/20260923/clip_fusion_full.npz": "8f9192da74bb84f2788370f9bca9ca694a1edc0eaeac2a354577e2595e8bf7aa",
+    "outputs/phase3/controls/split_seeds/20260924/resnet_full.npz": "8506baf27cad2cdd580ed7cb99f8f78d8eef833b5ffcb61f729e5c7c28a5e073",
+    "outputs/phase3/controls/split_seeds/20260924/resnet_fusion_full.npz": "098730139b21d7ea6e0363ab62534db16bee05d7f05968407437e5e206686deb",
+    "outputs/phase3/controls/split_seeds/20260924/clip_full.npz": "2f17b14dcfd3f8a29c598ab39215ddb00344ecf025cac4410a7de11ee72c63e6",
+    "outputs/phase3/controls/split_seeds/20260924/clip_fusion_full.npz": "f956ad664b289cea769193c6a4fffcbb27a3f4fa9e84f03ad6261e938efbf8c3",
+    "outputs/resnet_embeddings.npz": "ddc593320bb9dbb9bfc8f855e1ed63e2f909e45984c3551e36e36458db462eb4",
+    "outputs/clip_train_embeddings.npz": "373b4ebbc3885d98185fa14cdba54a39b82ecd9e228e5b45161e91acbf27dd97",
+    "outputs/clip_eval_embeddings.npz": "06bc0828450bcec544511e2e137a9baa0f9bf0c81e5a318692a87dc61738c109",
+    "outputs/phase3/controls/clip_heldout_embeddings.npz": "6c48faa9cb8eb779fa15830ab38eeafc3e5c46674d252d14101d2aa56f5c3d62",
+    "outputs/phase3/controls/resnet_openimages_embeddings.npz": "93cd99e05d5ba667aef01922eb5e6a9e37e0cc6682a523435a05e6dfcc801de0",
+    "outputs/phase3/controls/resnet_unmarked_embeddings.npz": "ac6a0cef9d82710f28970d0e881224789444436a84c67947aee4d72f1487ef96",
+    "outputs/phase3/controls/resnet_union_embeddings.npz": "cc8f8fa3b5db7adc53d26ecd36fa839dcfee1a91a29718d37eb069b2e029e733",
+    "outputs/phase3/controls/clip_openimages_embeddings.npz": "3bd6e8bc91d5cae33e751bfad850cb2d2f3af56a0fc64ce9316f84eba611d110",
+    "outputs/phase3/controls/clip_unmarked_embeddings.npz": "71aa7dcb6ac71085487c993bb9adfec48f1f6168c9f4bc83722a6f573c12be19",
+    "outputs/phase3/controls/clip_union_embeddings.npz": "dba6e23119e61573ca5ea1d102a642e94e3e4e744485ee8ea64d46726f6a3fd8",
+    "outputs/phase4/fresh_replication/resnet_embeddings.npz": "37bf4d10edbdf840be67d59f2e9e25c456798adc2dd845dbbacba28ced218427",
+    "outputs/phase4/fresh_replication/clip_embeddings.npz": "da7208f156d31f37fb99064b57d7f4bd21cdf83755eeadd8107b51efa30d66ca"
+  },
+  "role_counts_per_seed": [
+    {
+      "seed": 20260920,
+      "role": "calibration",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "seed": 20260920,
+      "role": "calibration",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "seed": 20260920,
+      "role": "calibration",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "seed": 20260920,
+      "role": "calibration",
+      "collection": "stable-diffusion",
+      "sources": 147
+    },
+    {
+      "seed": 20260920,
+      "role": "fusion_fit",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "seed": 20260920,
+      "role": "fusion_fit",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "seed": 20260920,
+      "role": "fusion_fit",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "seed": 20260920,
+      "role": "fusion_fit",
+      "collection": "stable-diffusion",
+      "sources": 147
+    },
+    {
+      "seed": 20260920,
+      "role": "test",
+      "collection": "coco",
+      "sources": 288
+    },
+    {
+      "seed": 20260920,
+      "role": "test",
+      "collection": "dalle-3",
+      "sources": 148
+    },
+    {
+      "seed": 20260920,
+      "role": "test",
+      "collection": "midjourney",
+      "sources": 962
+    },
+    {
+      "seed": 20260920,
+      "role": "test",
+      "collection": "openimages",
+      "sources": 150
+    },
+    {
+      "seed": 20260920,
+      "role": "test",
+      "collection": "stable-diffusion",
+      "sources": 295
+    },
+    {
+      "seed": 20260920,
+      "role": "train",
+      "collection": "coco",
+      "sources": 1344
+    },
+    {
+      "seed": 20260920,
+      "role": "train",
+      "collection": "dalle-3",
+      "sources": 685
+    },
+    {
+      "seed": 20260920,
+      "role": "train",
+      "collection": "openimages",
+      "sources": 700
+    },
+    {
+      "seed": 20260920,
+      "role": "train",
+      "collection": "stable-diffusion",
+      "sources": 1373
+    },
+    {
+      "seed": 20260921,
+      "role": "calibration",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "seed": 20260921,
+      "role": "calibration",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "seed": 20260921,
+      "role": "calibration",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "seed": 20260921,
+      "role": "calibration",
+      "collection": "stable-diffusion",
+      "sources": 147
+    },
+    {
+      "seed": 20260921,
+      "role": "fusion_fit",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "seed": 20260921,
+      "role": "fusion_fit",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "seed": 20260921,
+      "role": "fusion_fit",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "seed": 20260921,
+      "role": "fusion_fit",
+      "collection": "stable-diffusion",
+      "sources": 147
+    },
+    {
+      "seed": 20260921,
+      "role": "test",
+      "collection": "coco",
+      "sources": 288
+    },
+    {
+      "seed": 20260921,
+      "role": "test",
+      "collection": "dalle-3",
+      "sources": 148
+    },
+    {
+      "seed": 20260921,
+      "role": "test",
+      "collection": "midjourney",
+      "sources": 962
+    },
+    {
+      "seed": 20260921,
+      "role": "test",
+      "collection": "openimages",
+      "sources": 150
+    },
+    {
+      "seed": 20260921,
+      "role": "test",
+      "collection": "stable-diffusion",
+      "sources": 295
+    },
+    {
+      "seed": 20260921,
+      "role": "train",
+      "collection": "coco",
+      "sources": 1344
+    },
+    {
+      "seed": 20260921,
+      "role": "train",
+      "collection": "dalle-3",
+      "sources": 685
+    },
+    {
+      "seed": 20260921,
+      "role": "train",
+      "collection": "openimages",
+      "sources": 700
+    },
+    {
+      "seed": 20260921,
+      "role": "train",
+      "collection": "stable-diffusion",
+      "sources": 1373
+    },
+    {
+      "seed": 20260922,
+      "role": "calibration",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "seed": 20260922,
+      "role": "calibration",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "seed": 20260922,
+      "role": "calibration",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "seed": 20260922,
+      "role": "calibration",
+      "collection": "stable-diffusion",
+      "sources": 147
+    },
+    {
+      "seed": 20260922,
+      "role": "fusion_fit",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "seed": 20260922,
+      "role": "fusion_fit",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "seed": 20260922,
+      "role": "fusion_fit",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "seed": 20260922,
+      "role": "fusion_fit",
+      "collection": "stable-diffusion",
+      "sources": 147
+    },
+    {
+      "seed": 20260922,
+      "role": "test",
+      "collection": "coco",
+      "sources": 288
+    },
+    {
+      "seed": 20260922,
+      "role": "test",
+      "collection": "dalle-3",
+      "sources": 148
+    },
+    {
+      "seed": 20260922,
+      "role": "test",
+      "collection": "midjourney",
+      "sources": 962
+    },
+    {
+      "seed": 20260922,
+      "role": "test",
+      "collection": "openimages",
+      "sources": 150
+    },
+    {
+      "seed": 20260922,
+      "role": "test",
+      "collection": "stable-diffusion",
+      "sources": 295
+    },
+    {
+      "seed": 20260922,
+      "role": "train",
+      "collection": "coco",
+      "sources": 1344
+    },
+    {
+      "seed": 20260922,
+      "role": "train",
+      "collection": "dalle-3",
+      "sources": 685
+    },
+    {
+      "seed": 20260922,
+      "role": "train",
+      "collection": "openimages",
+      "sources": 700
+    },
+    {
+      "seed": 20260922,
+      "role": "train",
+      "collection": "stable-diffusion",
+      "sources": 1373
+    },
+    {
+      "seed": 20260923,
+      "role": "calibration",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "seed": 20260923,
+      "role": "calibration",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "seed": 20260923,
+      "role": "calibration",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "seed": 20260923,
+      "role": "calibration",
+      "collection": "stable-diffusion",
+      "sources": 147
+    },
+    {
+      "seed": 20260923,
+      "role": "fusion_fit",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "seed": 20260923,
+      "role": "fusion_fit",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "seed": 20260923,
+      "role": "fusion_fit",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "seed": 20260923,
+      "role": "fusion_fit",
+      "collection": "stable-diffusion",
+      "sources": 147
+    },
+    {
+      "seed": 20260923,
+      "role": "test",
+      "collection": "coco",
+      "sources": 288
+    },
+    {
+      "seed": 20260923,
+      "role": "test",
+      "collection": "dalle-3",
+      "sources": 148
+    },
+    {
+      "seed": 20260923,
+      "role": "test",
+      "collection": "midjourney",
+      "sources": 962
+    },
+    {
+      "seed": 20260923,
+      "role": "test",
+      "collection": "openimages",
+      "sources": 150
+    },
+    {
+      "seed": 20260923,
+      "role": "test",
+      "collection": "stable-diffusion",
+      "sources": 295
+    },
+    {
+      "seed": 20260923,
+      "role": "train",
+      "collection": "coco",
+      "sources": 1344
+    },
+    {
+      "seed": 20260923,
+      "role": "train",
+      "collection": "dalle-3",
+      "sources": 685
+    },
+    {
+      "seed": 20260923,
+      "role": "train",
+      "collection": "openimages",
+      "sources": 700
+    },
+    {
+      "seed": 20260923,
+      "role": "train",
+      "collection": "stable-diffusion",
+      "sources": 1373
+    },
+    {
+      "seed": 20260924,
+      "role": "calibration",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "seed": 20260924,
+      "role": "calibration",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "seed": 20260924,
+      "role": "calibration",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "seed": 20260924,
+      "role": "calibration",
+      "collection": "stable-diffusion",
+      "sources": 147
+    },
+    {
+      "seed": 20260924,
+      "role": "fusion_fit",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "seed": 20260924,
+      "role": "fusion_fit",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "seed": 20260924,
+      "role": "fusion_fit",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "seed": 20260924,
+      "role": "fusion_fit",
+      "collection": "stable-diffusion",
+      "sources": 147
+    },
+    {
+      "seed": 20260924,
+      "role": "test",
+      "collection": "coco",
+      "sources": 288
+    },
+    {
+      "seed": 20260924,
+      "role": "test",
+      "collection": "dalle-3",
+      "sources": 148
+    },
+    {
+      "seed": 20260924,
+      "role": "test",
+      "collection": "midjourney",
+      "sources": 962
+    },
+    {
+      "seed": 20260924,
+      "role": "test",
+      "collection": "openimages",
+      "sources": 150
+    },
+    {
+      "seed": 20260924,
+      "role": "test",
+      "collection": "stable-diffusion",
+      "sources": 295
+    },
+    {
+      "seed": 20260924,
+      "role": "train",
+      "collection": "coco",
+      "sources": 1344
+    },
+    {
+      "seed": 20260924,
+      "role": "train",
+      "collection": "dalle-3",
+      "sources": 685
+    },
+    {
+      "seed": 20260924,
+      "role": "train",
+      "collection": "openimages",
+      "sources": 700
+    },
+    {
+      "seed": 20260924,
+      "role": "train",
+      "collection": "stable-diffusion",
+      "sources": 1373
+    }
+  ],
+  "partition_rule": "Preserve the locked original training/test source split. Within each validation collection, SHA256-sort by phase5|seed|validation-half|collection|source_id. First floor(n/2) fit the new fusion; the remainder calibrate. Every derivative follows its source. Midjourney remains test only.",
+  "probe_rule": "Existing full Phase3 probe for each seed/backbone stays fixed. Fit ten new balanced logistic fusion heads on only the fusion-fit source half and thirteen eligible views, C=1 L2, max_iter=3000, random_state=0. Inputs are unchanged probe probability and payload bit agreement. Gate remains agreement>=13/16.",
+  "processing_families": {
+    "core13": "Benchmark's two identity views (real includes wrong-payload spoof) plus eleven fitting-eligible edits. Excludes lowres severity2, grid-shift/JPEG/noise regenerate severity2, and spectral severity1.",
+    "all16": "Same two identity and all fourteen edit views. Weak three views are excluded from model fitting but deliberately included in this new retrospective negative calibration, so they are no longer held out from calibration here."
+  },
+  "policies": {
+    "per_image_core13": "Minimum observed negative core13 calibration logit with <=5% empirical copy FPR; classify score>=threshold, preserving whole ties. Independent of fitting; finite-source population control is not claimed.",
+    "conformal_core13": "For each real collection, take maximum score over each calibration source's complete core13 bundle; k=ceil((n+1)*(1-alpha)). Cut is kth smallest max (1-indexed), or +infinity if k>n. Classify score strictly greater than max(COCO cut,Open Images cut), preserving whole ties.",
+    "conformal_all16": "Same negative-source maximum rule over complete all16 bundles. One global cut deploys without an image collection or attack label."
+  },
+  "guarantee": "For a fixed fitted score function and exchangeable calibration/new real source bundles from either prespecified collection and the same calibrated processing family, strict exceedance controls the marginal probability of at least one false positive in a new bundle by alpha (with finite bound (n+1-k)/(n+1)). This is neither a high-confidence population-FPR guarantee nor a guarantee for new collections, changed encoding, arbitrary attacks or adversarial source selection. Max of collection cuts is conservative within either calibrated collection; no mixture labels are used at decision time.",
+  "evaluation": "All five original seed tests (sources overlap; Midjourney reused) and already-evaluated new400 cached sample as retrospective follow-up. Evaluate core13/all16 source bundles and fresh four views. The fresh JPEG95 acquisition/encoding and four-view protocol differ from calibration; transfer is measured and not guaranteed. No test score selects a model, scope, hyperparameter or threshold.",
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 20261020,
+    "unit": "Source, stratified by collection; reuse the same global source bootstrap weights across all five overlapping tests and all policies. Confidence intervals describe fixed-model/fixed-threshold test sampling only; they do not cover calibration uncertainty."
+  },
+  "retrospective": true,
+  "new400_is_untouched": false,
+  "test_threshold_tuning": false,
+  "script_sha256_at_lock": "f19b7bb84483cc580f330465d33960cfd0b381389635196d981f0f64d6277771",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "python": "3.12.14",
+  "device": "CPU fits/analysis; any missing CLIP vectors separately scheduled"
+}

@@ -1,0 +1,72 @@
+{
+  "frozen_at_utc": "2026-10-10T10:19:19.228531+00:00",
+  "seed": 20261015,
+  "sources": {
+    "calibration_photographs": 400,
+    "test_photographs": 400,
+    "test_AI": 204
+  },
+  "photographic_collections_per_split": {
+    "coco": 200,
+    "openimages": 200
+  },
+  "AI_per_collection": 68,
+  "payloads": [
+    "1011010010110100",
+    "0100101101001011",
+    "1100101000110101"
+  ],
+  "conditions": [
+    "identity",
+    "jpeg50",
+    "crop",
+    "lowres32"
+  ],
+  "source_selection": "Fixed source-ID SHA ordering; retain 200 of old 204 test COCO controls; calibration COCO from old validation; Open Images ranked 1000-source screened pool split 200 calibration/200 test; preserve all old 204 AI IDs",
+  "source_reuse": "Already examined collections/items; newly fixed watermark scores and source-disjoint calibration, not a new origin-detection benchmark",
+  "preprocessing": "PIL RGB; positive CCW Open Images rotation; OpenCV area resize256 square; identical OpenCV JPEG95 encode/decode; PNG staging",
+  "prior_encoding_limit": "Original synthetic exports already had JPEG95; common recoding does not erase earlier collection encoding differences",
+  "embedding": {
+    "base_DWT_strength": 12.0,
+    "TrustMark_version": "0.9.2",
+    "variant": "Q",
+    "ECC": "BCH5",
+    "base_TrustMark_strength": 1.0,
+    "target_PSNR_dB": 40.0,
+    "tolerance_dB": 0.1,
+    "gain_search": "Whole RGB residual from base encoded uint8 cover, gain[0,64] expanding from1 then48 binary steps; rint, clip[0,255]; pick closest PSNR evaluated pixels, error if outside tolerance; distortion only, no decoder",
+    "interpretation": "Generic residual gain is outside the official TrustMark encoding configuration; shared16 information bits but embedding redundancy remains method-specific"
+  },
+  "score": {
+    "dwt_dct": "mean((2*expected16-1)*median_coefficient_margins/12)",
+    "trustmark": "mean((2*expected16-1)*raw_decoder_logits[:16]); official Q preprocessing",
+    "interpretation": "Uncalibrated expected-information-bit margins, not message probabilities, ECC verification, or issuer authentication",
+    "queries": {
+      "default": "First existing payload",
+      "any3": "Maximum score across all three preexisting payloads"
+    }
+  },
+  "calibration": {
+    "nominal_FPR": 0.05,
+    "unit": "Equal-weight 1600 real images (400 sources x4 conditions)",
+    "rule": "Lowest score threshold whose empirical calibration FPR <=.05; accept >=threshold, retain whole ties; separate method/default and method/any3 thresholds",
+    "strict_separation": "Calibration margins then threshold file locked before test image decoding; no marked calibration images needed",
+    "claim": "Shared nominal validation target, not exact equal test FPR or population error guarantee"
+  },
+  "primary_test": {
+    "default_positive": "Default-payload marked AI scored by matching method",
+    "any3_positive": "All three marked payload covers scored by matching method, source-average and payload-specific results",
+    "negative": "Unmarked photographs; unmarked AI false watermark matches reported separately",
+    "quality": "PSNR and SSIM against original unmarked cover and attack input"
+  },
+  "secondary_verification": "DWT>=13/16; TrustMark valid BCH5/schema1 and complete expected61-bit message; different native rules remain secondary",
+  "uncertainty": "2000 collection-stratified source bootstrap draws seed20261016; derivatives/payloads paired within source; exact two-sided95% binomial intervals for one event per source; source-ever event distinguished from per-image rate",
+  "input_sha256": {
+    "original_sources": "7934f56b61befa7fa20f91157a450aef5af556a8d6e9bf4d702982b477b6746f",
+    "openimages": "d9839ff81f9665e30d807cd00d284db78c053d0eef983fd711a681ac001d67dd",
+    "existing_AI_and_COCO": "9b5483189c9597b6e96a80b67dc5635754bb0621824c739e7ef98cfba8fe09bd",
+    "existing_pairs": "cede1bdc130d819ce6ea401c85a4f3078ee938f9b2ad3540c481cc0bc3350cbd"
+  },
+  "initial_driver_sha256": "69a4c2948534df7a38575aaa4b458c09b0dc1a15be781831837542e1348486de",
+  "no_decoder_run_before_lock": true
+}

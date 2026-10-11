@@ -1,0 +1,25 @@
+{
+  "frozen_at_utc": "2026-10-09T06:10:49.820358+00:00",
+  "seed": 20261012,
+  "ai_sources": 204,
+  "real_sources": 204,
+  "ai_per_collection": 68,
+  "selection": "ID-SHA order within each AI collection; maximum total CLIP cosine assignment to distinct COCO controls",
+  "test_only": true,
+  "reuses_previously_examined_sources": true,
+  "new_independent_dataset": false,
+  "payloads": [
+    "1011010010110100",
+    "0100101101001011",
+    "1100101000110101"
+  ],
+  "noise_seeds": [
+    20261009,
+    20261010,
+    20261011
+  ],
+  "classical_rule": "agreement >=13/16",
+  "trustmark_rule": "exact61-bit data message plus valid schema/ECC",
+  "pairs_sha256": "cede1bdc130d819ce6ea401c85a4f3078ee938f9b2ad3540c481cc0bc3350cbd",
+  "sources_sha256": "9b5483189c9597b6e96a80b67dc5635754bb0621824c739e7ef98cfba8fe09bd"
+}

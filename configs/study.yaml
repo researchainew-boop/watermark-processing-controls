@@ -1,0 +1,47 @@
+seed: 20260920
+data:
+  real_dir: data/raw/real_coco
+  synthetic_dir: data/raw/synthetic_native
+  manifest: data/manifest.csv
+  processed_dir: data/processed
+  extensions: [".png", ".jpg", ".jpeg", ".webp"]
+  default_generator: stable-diffusion
+  heldout_generator: midjourney
+  train_fraction: 0.70
+  val_fraction: 0.15
+image:
+  width: 256
+  height: 256
+watermark:
+  method: dwt_dct
+  payload: "1011010010110100"
+  strength: 12.0
+attacks:
+  - {name: identity, severity: 0}
+  - {name: jpeg, severity: 1}
+  - {name: jpeg, severity: 2}
+  - {name: blur, severity: 1}
+  - {name: blur, severity: 2}
+  - {name: noise, severity: 1}
+  - {name: resize, severity: 1}
+  - {name: crop, severity: 1}
+  - {name: color, severity: 1}
+  - {name: denoise, severity: 1}
+  - {name: inpaint, severity: 1}
+  - {name: lowres, severity: 1}
+  - {name: lowres, severity: 2, hold_out: true}
+  - {name: regenerate, severity: 2, hold_out: true}
+  - {name: spectral, severity: 1, hold_out: true}
+model:
+  backbone: resnet18
+  compare_clip: true
+  pretrained: true
+  batch_size: 8
+  device: cuda
+evaluation:
+  bootstrap_samples: 2000
+  output_dir: outputs
+decision:
+  max_real_fpr: 0.05
+  min_coverage: 0.70
+  shortcut_slack: 0.02

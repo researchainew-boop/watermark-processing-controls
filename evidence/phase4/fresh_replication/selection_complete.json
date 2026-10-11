@@ -1,0 +1,19 @@
+{
+  "completed_at_utc": "2026-10-10T04:43:06.654190+00:00",
+  "sources": 400,
+  "sources_per_collection": {
+    "coco": 80,
+    "stable-diffusion": 80,
+    "dalle-3": 80,
+    "midjourney": 80,
+    "openimages": 80
+  },
+  "manifest_sha256": "f1463a5d5509de21e491655dcb99be2f34b6747991fe7d4c4a8d3b0c812460d3",
+  "protocol_sha256": "c05030cc990ec668e0225bc2e1099ba83075cbb5b99859b2c52ea9740bb9b45e",
+  "prior_source_count": 7192,
+  "native_exclusion_audit_sha256": "c4a058ae1c92c95c5bb4a3d0c24f20fd9479ab9ec97709a77e216ef6ccfbfc43",
+  "prior_native_id_intersections": 0,
+  "exact_or_ahash_overlap_screen_passed": true,
+  "source_hashes_screened": 7192,
+  "detector_inference_performed": false
+}

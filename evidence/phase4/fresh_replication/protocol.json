@@ -1,0 +1,57 @@
+{
+  "frozen_at_utc": "2026-10-10T04:38:55.998983+00:00",
+  "seed": 20261010,
+  "sources_per_collection": 80,
+  "collections": [
+    "coco",
+    "openimages",
+    "stable-diffusion",
+    "dalle-3",
+    "midjourney"
+  ],
+  "primary_heads": "Existing joint-collection seed20260920 full heads; no new fitting",
+  "model_hashes": {
+    "clip_full.npz": "d57c6c892f3d4baf212bc2dc9decf3d5305fbee798102991a5c8dec3478f413d",
+    "clip_fusion_full.npz": "83d6c431470c21e77232c7e30aea5072ba7282cd7f8508410b1a73f84763cecb",
+    "resnet_full.npz": "08cf3bd91ccc3124983752a989f4d68935e1f7ba4859fa676dd7ad9dbfa87e0f",
+    "resnet_fusion_full.npz": "b74008eb87df5d1d337afff11aa4053afa15b0bb50ead780807ddce6af983d8b"
+  },
+  "calibration_path": "outputs\\phase4\\domain_generalization\\frozen_seed_thresholds.json",
+  "calibration_sha256": "82b6ee450fb589b214dcbba845aa0f3d7b746eac56a77c2212f7b468b41192a3",
+  "selection": "SHA256 order of native archive IDs; minimum short side256; explicitly exclude original eligible DALL-E/MJ exports, original COCO IDs and earlier fresh/OI IDs, then reject exact pixels or average-hash Hamming<=2 overlap with all prior sources and within this sample; no score-based rejection",
+  "explicit_native_id_exclusions": true,
+  "calibration_head_hashes_verified": true,
+  "preprocessing": "PIL RGB; official metadata rotation for Open Images; INTER_AREA 256 square; OpenCV JPEG95 encode/decode equally for all origins; PNG lossless staging",
+  "conditions": [
+    {
+      "name": "identity",
+      "severity": 0
+    },
+    {
+      "name": "jpeg",
+      "severity": 2
+    },
+    {
+      "name": "crop",
+      "severity": 1
+    },
+    {
+      "name": "lowres",
+      "severity": 2
+    }
+  ],
+  "AI_variants": "Unmarked and marked independently per condition; mark applied after common JPEG95",
+  "real_variants": "Unmarked only; identical four conditions",
+  "payload": "1011010010110100",
+  "strength": 12,
+  "gate_threshold": 0.8125,
+  "planned_source_count": 400,
+  "planned_image_count": 2560,
+  "bootstrap_seed": 20261011,
+  "bootstrap_replicates": 2000,
+  "bootstrap_reporting": "Paired AUC differences, marginal AUC, and fixed-threshold TPR/FPR source-cluster percentile95% intervals; common source draws across systems.",
+  "test_inference_passes": 1,
+  "test_retuning": false,
+  "scope": "New source items from existing collections; no prior study inference on selected sources; pretraining and semantic overlap not excluded",
+  "script_sha256": "20f097977f94c3e6bda677b869bfb000bb47d15adf07d1e7bdd26f676ac7f342"
+}

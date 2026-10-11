@@ -1,0 +1,31 @@
+{
+  "locked_at_utc": "2026-10-10T10:22:24.648397+00:00",
+  "adapter_model": "latent-consistency/lcm-lora-sdv1-5",
+  "adapter_revision": "cf2fced511dbe7e26c8d1d397e728fbab875db4b",
+  "adapter_filename": "pytorch_lora_weights.safetensors",
+  "adapter_sha256": "8f90d840e075ff588a58e22c6586e2ae9a6f7922996ee6649a7f01072333afe4",
+  "base_revision": "1e9f017a7b1eaefb63a1900ea6c5953d2739fd21",
+  "base_checkpoint_sha256": {
+    "model_index.json": "eaaa586611ebaf7e860145373536bcd7ea7c6f23d40ac63e03884596f19f8df0",
+    "scheduler/scheduler_config.json": "81c61cd6937a8b6c4ddf9eef06b64dafbaa66409d083786dc9426bec7f37a105",
+    "text_encoder/config.json": "f4b1867cbf991587483d691aed58c41b25c28df75ae5b7f391ceae51269dfe68",
+    "text_encoder/model.safetensors": "c1ef1f8a6d40562315dbb7a5224876f07fc7a8b46cc0a383c4f5b1227ddfeb58",
+    "tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+    "tokenizer/special_tokens_map.json": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+    "tokenizer/tokenizer_config.json": "19d7b034cb0cc3ce9766c2231373ab8aa8991fc72e2c8f76558bfaae3de0d563",
+    "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+    "unet/config.json": "f0567294c259d420cb4505c4c0ee37ee304342e4581ac2c87362b2e87965bbeb",
+    "unet/diffusion_pytorch_model.safetensors": "4e0868e8fcae7d4ea8f8cdd3051704b3b47d741dc8e8629552d1a07f6efb8e32",
+    "vae/config.json": "cd56fdbf7a5c01c4bf331a3640395c48d5456dcc58374e7b3d24a7e3fe42d42a",
+    "vae/diffusion_pytorch_model.safetensors": "68a430f8a51413e80ecec6c13fff4b6b63e57600a2ec661a016a14fd1037fa4b"
+  },
+  "protocol_sha256": "6a169ffed0556a74ac310f9f37809c5290555c6932e74724a9cb425dbcbd5bca",
+  "head_sha256": {
+    "resnet_full.npz": "08cf3bd91ccc3124983752a989f4d68935e1f7ba4859fa676dd7ad9dbfa87e0f",
+    "resnet_fusion_full.npz": "b74008eb87df5d1d337afff11aa4053afa15b0bb50ead780807ddce6af983d8b",
+    "clip_full.npz": "d57c6c892f3d4baf212bc2dc9decf3d5305fbee798102991a5c8dec3478f413d",
+    "clip_fusion_full.npz": "83d6c431470c21e77232c7e30aea5072ba7282cd7f8508410b1a73f84763cecb"
+  },
+  "calibration_sha256": "82b6ee450fb589b214dcbba845aa0f3d7b746eac56a77c2212f7b468b41192a3",
+  "generation_performed": false
+}

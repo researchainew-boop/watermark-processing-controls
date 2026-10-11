@@ -1,0 +1,1960 @@
+{
+  "locked_at_utc": "2026-10-10T10:22:59.774610+00:00",
+  "protocol_sha256": "8bcd10e73004978f45121e513a5fab897c5fbee66b2d4b37dbf6c58f1eb00658",
+  "heads_locked_sha256": "001a9c691c4407a26aeae219381705b92bae14c08ca5f529c99e0b9b238ce94d",
+  "missing_manifest_sha256": "a4393773155c516fed330aed1b22c5fc83690e8d3e6b53392f4c258e36379449",
+  "calibration_only": true,
+  "test_threshold_tuning": false,
+  "models": {
+    "20260920_resnet": {
+      "seed": 20260920,
+      "backbone": "resnet",
+      "selected_at_utc": "2026-10-10T10:22:56.559466+00:00",
+      "fusion_sha256": "c9f5af977eb673a83ecc692a53a022cc04be155dd2af81e2e1bd2b8850eae3f6",
+      "probe_sha256": "08cf3bd91ccc3124983752a989f4d68935e1f7ba4859fa676dd7ad9dbfa87e0f",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": 0.9989980387260985,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 4.681943718401357,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.6756206881292264,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 4.681943718401357,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 5.5678038476531535,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 4.5101651773804114,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 5.5678038476531535,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": -0.2095862142841476,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 2.7844724913621093,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 0.9201072406433486,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.7844724913621093,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 3.0987235889614855,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 2.2399161635129374,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.0987235889614855,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": 1.0296160787826416,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 4.681943718401357,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.6756206881292264,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 4.681943718401357,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 5.5678038476531535,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 4.5101651773804114,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 5.5678038476531535,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    },
+    "20260921_resnet": {
+      "seed": 20260921,
+      "backbone": "resnet",
+      "selected_at_utc": "2026-10-10T10:22:56.694858+00:00",
+      "fusion_sha256": "6bc4b5bafc8ec49b6ab24addf372f9222885b926e58a042be1697ad45f9c691e",
+      "probe_sha256": "ce1034c7c32f89ea083d562b0a3667d08f6c1c2475d7f8542aa9a331c3cc5637",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": 1.3215293661730192,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 3.7446844173939327,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.0640512877231214,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.7446844173939327,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 4.7413352524872785,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 4.7413352524872785,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 4.117376972644577,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": 0.06661177524858353,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 2.7839306973090245,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.796353464157578,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.7839306973090245,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 2.7839306973090245,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 2.252324348363654,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.7839306973090245,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": 1.3735066753223253,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 3.7446844173939327,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.588869624907721,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.7446844173939327,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 4.7413352524872785,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 4.7413352524872785,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 4.117376972644577,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    },
+    "20260922_resnet": {
+      "seed": 20260922,
+      "backbone": "resnet",
+      "selected_at_utc": "2026-10-10T10:22:56.822859+00:00",
+      "fusion_sha256": "c6db850e4835adaaa8776736020a72f408ba1bef813a8bcf58f0823cae02ce98",
+      "probe_sha256": "917785493a0cac7c77408d258178caf2894d0a6068990193a289f004fc54c2d2",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": 1.8995417058786364,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 6.376361055284076,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.922434992619217,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 6.376361055284076,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 6.376361055284076,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 5.0062605777220055,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 6.376361055284076,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": 0.7465137467212077,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 3.208373732843235,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 2.401140523663731,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.208373732843235,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 3.446231022494052,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 2.5518193901516764,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.446231022494052,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": 1.9160480902942496,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 6.376361055284076,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.922434992619217,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 6.376361055284076,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 6.376361055284076,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 5.0062605777220055,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 6.376361055284076,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    },
+    "20260923_resnet": {
+      "seed": 20260923,
+      "backbone": "resnet",
+      "selected_at_utc": "2026-10-10T10:22:56.942854+00:00",
+      "fusion_sha256": "81ce9a63b26e72229a418695a03007086e265387e1540f20f7c2110924fdefb5",
+      "probe_sha256": "d8a53b7f802a34ad7c3c5f4f990952bd78365eb789b252e6a3ef1381bf07b34a",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": 2.062201564618962,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 4.8445859402082805,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 4.8445859402082805,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.6035939984033503,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 5.698098911493701,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 5.429950791096069,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 5.698098911493701,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": 0.6741962843262606,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 2.856240213060074,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 2.856240213060074,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 1.292678953052592,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 3.2239384926103796,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.2239384926103796,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.482304472091556,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": 2.0973715381733147,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 4.208473284539249,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 4.208473284539249,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.6035939984033503,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 5.698098911493701,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 5.429950791096069,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 5.698098911493701,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    },
+    "20260924_resnet": {
+      "seed": 20260924,
+      "backbone": "resnet",
+      "selected_at_utc": "2026-10-10T10:22:57.062859+00:00",
+      "fusion_sha256": "d70129a89633e257812f08c1227a326baf472a0ad00a61ef7fb4f4ab4e959b8d",
+      "probe_sha256": "8506baf27cad2cdd580ed7cb99f8f78d8eef833b5ffcb61f729e5c7c28a5e073",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": 1.7031265098129253,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 5.409300535979292,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.2450210576131133,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 5.409300535979292,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 5.550422411072518,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 4.123266301335902,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 5.550422411072518,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": 0.46164707527648297,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 2.790360416182457,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.623440970855329,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.790360416182457,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 3.5366176145918917,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 2.4153258544067935,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.5366176145918917,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": 1.7369257452212423,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 5.409300535979292,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.2450210576131133,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 5.409300535979292,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 5.550422411072518,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 4.123266301335902,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 5.550422411072518,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    },
+    "20260920_clip": {
+      "seed": 20260920,
+      "backbone": "clip",
+      "selected_at_utc": "2026-10-10T10:22:59.005611+00:00",
+      "fusion_sha256": "af8db3f3472949a351fa490314fadba372f6681a10550e9d6458c6c6f50c678f",
+      "probe_sha256": "d57c6c892f3d4baf212bc2dc9decf3d5305fbee798102991a5c8dec3478f413d",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": -0.42342646929347816,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 6.409349147643015,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.3296761046038876,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 6.409349147643015,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 9.698141367274873,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 7.622723875252041,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 9.698141367274873,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": -2.0347317211115774,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 3.2261974101077744,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 0.9939310840056397,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.2261974101077744,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 3.856414536493652,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.5967216062262963,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.856414536493652,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": -0.42342646929347816,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 6.409349147643015,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.3296761046038876,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 6.409349147643015,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 9.698141367274873,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 7.5968280147435605,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 9.698141367274873,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    },
+    "20260921_clip": {
+      "seed": 20260921,
+      "backbone": "clip",
+      "selected_at_utc": "2026-10-10T10:22:59.142611+00:00",
+      "fusion_sha256": "b10b981200006553e9bb76979a2ff6c37985f450eebb10dbbf9b93c9f115842f",
+      "probe_sha256": "6f249b03b4ec7325692b1431c3b4c76b22e19ace066ba2c3e048e4017619688b",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": -2.2539426560380385,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 3.973403953668534,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.485002788602419,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.973403953668534,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 6.292306133520764,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 6.165294000052578,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 6.292306133520764,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": -2.3039946516419105,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 1.7508382591928662,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.7176459652358513,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 1.7508382591928662,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 3.9235650270925913,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.382821339447524,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.9235650270925913,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": -1.7817528863536243,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 3.973403953668534,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.485002788602419,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.973403953668534,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 6.292306133520764,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 6.165294000052578,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 6.292306133520764,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    },
+    "20260922_clip": {
+      "seed": 20260922,
+      "backbone": "clip",
+      "selected_at_utc": "2026-10-10T10:22:59.355609+00:00",
+      "fusion_sha256": "747b5bda5bd5027dc46e0b09d080e3191245947f24d2b51965186c1bdc1ba178",
+      "probe_sha256": "df2f597c4454639eaa967d8954a24c0f36ff74b598c184a39a7412f732b112a4",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": -1.5178285367934172,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 6.597280799137592,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 0.9894515295201132,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 6.597280799137592,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 11.87164673907303,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 8.397478947981487,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 11.87164673907303,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": -2.6297096331200747,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 2.4008796438597475,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.2676225953302325,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.4008796438597475,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 4.286069704101605,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.71174016522788,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 4.286069704101605,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": -1.5178285367934172,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 6.597280799137592,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 0.9894515295201132,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 6.597280799137592,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 11.87164673907303,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 8.397478947981487,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 11.87164673907303,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    },
+    "20260923_clip": {
+      "seed": 20260923,
+      "backbone": "clip",
+      "selected_at_utc": "2026-10-10T10:22:59.507618+00:00",
+      "fusion_sha256": "686c95b78f5c05ddcb3f5fdbbe2634cba6dba0e0d6d0ec3d673b26ea27676db7",
+      "probe_sha256": "56716d2a8008fb1d2e18eb081211b73b3d823263c4ef670f8d2c87908b64cece",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": -1.0696778114106449,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 5.330557684613414,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 2.045100430000859,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 5.330557684613414,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 7.471793327267415,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 7.471793327267415,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 7.467886773001295,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": -2.2183586542806895,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 1.8780104782497666,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.6992314995047,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 1.8780104782497666,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 3.0258988163611225,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.0258988163611225,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.9774903923562714,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": -1.0428171436110318,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 5.330557684613414,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 2.045100430000859,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 5.330557684613414,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 7.471793327267415,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 7.471793327267415,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 7.467886773001295,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    },
+    "20260924_clip": {
+      "seed": 20260924,
+      "backbone": "clip",
+      "selected_at_utc": "2026-10-10T10:22:59.660608+00:00",
+      "fusion_sha256": "b69265c7345a984c872098399e590c7f762f9ad45dbbe4b8a07d1a03a43b948a",
+      "probe_sha256": "2f17b14dcfd3f8a29c598ab39215ddb00344ecf025cac4410a7de11ee72c63e6",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": -0.9199627015229983,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 3.6929490937718983,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.3731086861118964,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.6929490937718983,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 8.924209439002471,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 5.577921711797226,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 8.924209439002471,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": -2.4401908015602443,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 2.2899142911040684,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.0208110589638775,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.2899142911040684,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 4.575685958069624,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.7414065702779897,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 4.575685958069624,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": -0.9199627015229983,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 3.6929490937718983,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.3731086861118964,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.6929490937718983,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 8.924209439002471,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 5.577921711797226,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 8.924209439002471,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    }
+  }
+}

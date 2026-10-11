@@ -1,0 +1,11 @@
+{
+  "completed_at_utc": "2026-10-09T05:41:15.391975+00:00",
+  "corrected_metadata_orientation_IDs_count": 0,
+  "rotation_rule": "Open Images metadata specifies counterclockwise degrees; numpy.rot90 uses positive k.",
+  "rotation_primary_source": "https://storage.googleapis.com/openimages/web/download_v7.html",
+  "overlap_exclusions_count": 0,
+  "sources": 1000,
+  "inference_performed": false,
+  "manifest_sha256": "d9839ff81f9665e30d807cd00d284db78c053d0eef983fd711a681ac001d67dd",
+  "script_sha256": "6469ecc17fcffd807f8b88d46c2c14f3496d59f2b7dc8e692568364861349f74"
+}

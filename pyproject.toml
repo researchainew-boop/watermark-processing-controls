@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiwstudy"
+version = "0.1.0"
+description = "Matched image-edit evaluation of fixed-payload watermarks and frozen AI-origin probes"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "PyYAML>=6.0",
+  "opencv-python>=4.9",
+  "PyWavelets>=1.6",
+  "scikit-learn>=1.4",
+  "scipy>=1.12",
+  "torch>=2.2",
+  "torchvision>=0.17",
+  "tqdm>=4.66",
+  "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+quality = ["lpips>=0.1.4", "scikit-image>=0.22"]
+clip = ["open-clip-torch>=2.24"]
+datasets = ["huggingface_hub>=0.23"]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[project.scripts]
+aiw = "aiwstudy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,288 @@
+{
+  "frozen_at_utc": "2026-10-10T10:24:27.215474+00:00",
+  "status": "Retrospective restricted fitting-pool diagnostic, fixed before all new fits",
+  "seeds": [
+    20260920,
+    20260921,
+    20260922,
+    20260923,
+    20260924
+  ],
+  "backbones": [
+    "resnet",
+    "clip"
+  ],
+  "cells": [
+    "AA",
+    "AB",
+    "BA",
+    "BB"
+  ],
+  "cell_order": "First letter selects real-source edit set; second selects unmarked AI-source edit set",
+  "augmentation_sets": {
+    "A": "JPEG70 and Gaussian blur3",
+    "B": "Gaussian noise sigma6 and resize0.8"
+  },
+  "augmentation_keys": {
+    "A": [
+      [
+        "jpeg",
+        1
+      ],
+      [
+        "blur",
+        1
+      ]
+    ],
+    "B": [
+      [
+        "noise",
+        1
+      ],
+      [
+        "resize",
+        1
+      ]
+    ]
+  },
+  "training": "Each source contributes one clean feature and one feature for each of the two specified distinct process families. No marked AI or sham-marked real feature is used.",
+  "pool": {
+    "sources": 5716,
+    "real": 2920,
+    "AI_with_unmarked_edit_caches": 2796,
+    "non_midjourney_AI": 1834,
+    "midjourney_test_only": 962,
+    "collection_sources": {
+      "coco": 1920,
+      "dalle-3": 600,
+      "midjourney": 962,
+      "openimages": 1000,
+      "stable-diffusion": 1234
+    },
+    "restriction": "Fitting/validation AI sources without all four cached unmarked edits are excluded. Every existing five-seed test source remains available and is retained. No new extraction is performed."
+  },
+  "unchanged_across_cells": [
+    "training source identities",
+    "structural source/slot ordering",
+    "labels",
+    "row count",
+    "class weights",
+    "frozen backbones",
+    "solver and optimization budget",
+    "validation sources/conditions",
+    "test sources/conditions"
+  ],
+  "primary_endpoint": "Five-seed mean overall origin ROC-AUC contrast 0.5*(AA+BB-AB-BA) on clean plus the equal-frequency union of four unmarked edits",
+  "primary_contrast": "Mean matched cells AA/BB minus mean mismatched cells AB/BA; factor levels and their marginal frequency are balanced",
+  "secondary_endpoints": "Fixed-validation-threshold TPR and actual test FPR; descriptive testROC TPR5; identity/per-condition and per-real-collection AUC",
+  "validation_test": "Each held-out source contributes clean and all four unmarked edits, regardless of the cell used for fitting. The same five original source assignments are reused. All 962 Midjourney sources stay test only.",
+  "threshold": "Lowest finite logit threshold attaining validation FPR<=0.05 with whole ties, frozen for test; no test threshold tuning",
+  "counts": [
+    {
+      "seed": 20260920,
+      "train_rows": 9552,
+      "train_sources": 3184,
+      "class_counts": {
+        "0": 6132,
+        "1": 3420
+      },
+      "validation_rows": 3445,
+      "validation_sources": 689,
+      "test_rows": 9215,
+      "test_sources": 1843
+    },
+    {
+      "seed": 20260921,
+      "train_rows": 9618,
+      "train_sources": 3206,
+      "class_counts": {
+        "0": 6132,
+        "1": 3486
+      },
+      "validation_rows": 3335,
+      "validation_sources": 667,
+      "test_rows": 9215,
+      "test_sources": 1843
+    },
+    {
+      "seed": 20260922,
+      "train_rows": 9597,
+      "train_sources": 3199,
+      "class_counts": {
+        "0": 6132,
+        "1": 3465
+      },
+      "validation_rows": 3370,
+      "validation_sources": 674,
+      "test_rows": 9215,
+      "test_sources": 1843
+    },
+    {
+      "seed": 20260923,
+      "train_rows": 9579,
+      "train_sources": 3193,
+      "class_counts": {
+        "0": 6132,
+        "1": 3447
+      },
+      "validation_rows": 3400,
+      "validation_sources": 680,
+      "test_rows": 9215,
+      "test_sources": 1843
+    },
+    {
+      "seed": 20260924,
+      "train_rows": 9585,
+      "train_sources": 3195,
+      "class_counts": {
+        "0": 6132,
+        "1": 3453
+      },
+      "validation_rows": 3390,
+      "validation_sources": 678,
+      "test_rows": 9215,
+      "test_sources": 1843
+    }
+  ],
+  "logistic_regression_parameters": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": null,
+    "max_iter": 3000,
+    "multi_class": "deprecated",
+    "n_jobs": null,
+    "penalty": "l2",
+    "random_state": 0,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261013,
+    "unit": "Unique source in the union of all five test cohorts, retaining all derivatives and split membership",
+    "stratification": "Collection; identical multiplicities for all four cells, both backbones and five split means",
+    "conditioning": "Fixed fitted heads, validation thresholds and split/source membership; no training uncertainty. Overlapping tests and shared Midjourney holdout are not independent repetitions.",
+    "interval": "Percentile95% paired source-cluster interval for the prespecified five-seed interaction contrast"
+  },
+  "limitations": [
+    "Condition counts and family counts are equal, but distortion magnitude and information content are not equalized.",
+    "The balanced factorial estimates process-matching interaction for these four fixed transforms, frozen features and this restricted fitting pool; it does not establish that matching uniquely explains the broad edit-suite gain.",
+    "All source pools and prior results were already examined. This is retrospective and separate from the prospective caption-paired test.",
+    "Removing marked training examples changes the original training scope; factorial effects must not be presented as the original full-versus-removal effect."
+  ],
+  "input_sha256": {
+    "outputs/conference_clean/manifest_derived.csv": "d1988cc40a66e0117a77d4f96987a2946b394a60267433d78a7cb582861691a3",
+    "outputs/conference_clean/manifest_sources.csv": "50500337f7ee26fb28fd29e564982bd32864895d9002d9c8f3ca761dc0ce3112",
+    "outputs/phase3/controls/split_seeds/assignments.csv": "a13d79be60450cf932d2226b0c5dd4ae3df590aaaf018291fe9ad729884fe6ea",
+    "outputs/phase3/controls/split_seeds/protocol.json": "5ba49ef988f0719b99c4200841bbbb30848e3f62e96752a115107d5ddc103be7",
+    "outputs/phase3/controls/split_seeds/complete.json": "de05d737967fe0ecec66afccf0b7fb5fe0343e011a5a1012fdffef03d8c3e662",
+    "outputs/resnet_embeddings.npz": "ddc593320bb9dbb9bfc8f855e1ed63e2f909e45984c3551e36e36458db462eb4",
+    "outputs/clip_train_embeddings.npz": "373b4ebbc3885d98185fa14cdba54a39b82ecd9e228e5b45161e91acbf27dd97",
+    "outputs/clip_eval_embeddings.npz": "06bc0828450bcec544511e2e137a9baa0f9bf0c81e5a318692a87dc61738c109",
+    "outputs/phase3/controls/clip_heldout_embeddings.npz": "6c48faa9cb8eb779fa15830ab38eeafc3e5c46674d252d14101d2aa56f5c3d62",
+    "outputs/phase3/controls/clip_openimages_embeddings.npz": "3bd6e8bc91d5cae33e751bfad850cb2d2f3af56a0fc64ce9316f84eba611d110",
+    "outputs/phase3/controls/clip_union_embeddings.npz": "dba6e23119e61573ca5ea1d102a642e94e3e4e744485ee8ea64d46726f6a3fd8",
+    "outputs/phase3/controls/clip_unmarked_embeddings.npz": "71aa7dcb6ac71085487c993bb9adfec48f1f6168c9f4bc83722a6f573c12be19",
+    "outputs/phase3/controls/resnet_openimages_embeddings.npz": "93cd99e05d5ba667aef01922eb5e6a9e37e0cc6682a523435a05e6dfcc801de0",
+    "outputs/phase3/controls/resnet_union_embeddings.npz": "cc8f8fa3b5db7adc53d26ecd36fa839dcfee1a91a29718d37eb069b2e029e733",
+    "outputs/phase3/controls/resnet_unmarked_embeddings.npz": "ac6a0cef9d82710f28970d0e881224789444436a84c67947aee4d72f1487ef96",
+    "outputs/phase3/controls/heldout_clip_manifest.csv": "50c5973786b34bdad1f01952e8c652e74f1ac9109497f4e599c49c8d5f72a12d",
+    "outputs/phase3/controls/openimages_derived_manifest.csv": "5317926252a748c8b76c4698116c8938213cbf839138a5e485f60750bab57cf1",
+    "outputs/phase3/controls/unmarked_test_manifest.csv": "3574b7deead5b539eba82206ea5403c19cb37f3a5a9f8b6b674b3db9ce621e52",
+    "outputs/phase3/controls/unmarked_union_extra_manifest.csv": "0a7b71132ce5405c732d2b0a55b79e2b76163b4d0804dffb7944b20e29cd8eae",
+    "outputs/phase3/controls/openimages_sources.csv": "d9839ff81f9665e30d807cd00d284db78c053d0eef983fd711a681ac001d67dd"
+  },
+  "preserved_head_sha256": {
+    "outputs/conference_clean/clip_attack.npz": "84b0278fe5db2850d22ee9226a4a01439fa2c685f62e30dda9ee2c1876910b86",
+    "outputs/conference_clean/clip_full.npz": "30cf885fbf4030471c15443ce8808173764ff193e775a61f7bb11329901278d4",
+    "outputs/conference_clean/clip_fusion_full.npz": "6c176dd5b5f945b077b284435231d7059b062e536acece8edf16c96a314d17b4",
+    "outputs/conference_clean/clip_fusion_no_attacks.npz": "82e0d0af1b9ffda4762a19aa38c9c32f79bee50c4cfa9705c38258ac4d303dc4",
+    "outputs/conference_clean/clip_fusion_no_matched_reals.npz": "28e13f227c55ae47a6c8aa1107fb90f9bb0581be00a02f45e933a1126338b88f",
+    "outputs/conference_clean/clip_no_attacks.npz": "824b0ef326336ebb0e9a08a4903a72ff41f74de923fb84c43765ef9b882fc19d",
+    "outputs/conference_clean/clip_no_matched_reals.npz": "f13d00686002d8ef3fd9e33154314362d2b05815238ea89fd8ce78275d6176ef",
+    "outputs/conference_clean/resnet_attack.npz": "5c1d6dbb547483772fe07be63d644655a849292271a0e46fd9e161377b5024ab",
+    "outputs/conference_clean/resnet_full.npz": "db427c4aeab4edf07496cf28d6f5fb766ce48f91baee53797df41ddb42b5d9f7",
+    "outputs/conference_clean/resnet_fusion_full.npz": "73fe3fba271ca02092201a559d707e903e9a5cc8897f2916306e5a2a865e365c",
+    "outputs/conference_clean/resnet_fusion_no_attacks.npz": "3291eb409fe0f228d41706c17fcbd8c5b1dda008f7948aa8c5743f4cabe7c6e2",
+    "outputs/conference_clean/resnet_fusion_no_matched_reals.npz": "4fe5761d915a03c632f9ae6c0a82f78762e463250ecafd7a26fcfc1a64791bbf",
+    "outputs/conference_clean/resnet_no_attacks.npz": "f47f3503aefdd5cd7f4e3e820facc8d708b13552e53a497ba5cd00467b7e1876",
+    "outputs/conference_clean/resnet_no_matched_reals.npz": "8d09c4ee813804b8490b123ad423b6bda9984576a80f52a4b0feef25d189c129",
+    "outputs/phase3/controls/split_seeds/20260920/clip_full.npz": "d57c6c892f3d4baf212bc2dc9decf3d5305fbee798102991a5c8dec3478f413d",
+    "outputs/phase3/controls/split_seeds/20260920/clip_fusion_full.npz": "83d6c431470c21e77232c7e30aea5072ba7282cd7f8508410b1a73f84763cecb",
+    "outputs/phase3/controls/split_seeds/20260920/clip_fusion_no_attacks.npz": "cadf1f014364413b011d30513ddbb55c98b7a9cfde6a50bf864ea4a30cc0ed6d",
+    "outputs/phase3/controls/split_seeds/20260920/clip_fusion_no_matched_reals.npz": "41b115dbac2b36e4a5a06319e2e676f2da5284ba33483e016d163924501d11bd",
+    "outputs/phase3/controls/split_seeds/20260920/clip_no_attacks.npz": "8966f4b9d857eedeae3a146f8903b8b77aabee551db3483af6225c7cf2a541e4",
+    "outputs/phase3/controls/split_seeds/20260920/clip_no_matched_reals.npz": "b09312e12b64f46449b5196882bf75fa9295b63351313152e8f0fcf7d65e97e3",
+    "outputs/phase3/controls/split_seeds/20260920/resnet_full.npz": "08cf3bd91ccc3124983752a989f4d68935e1f7ba4859fa676dd7ad9dbfa87e0f",
+    "outputs/phase3/controls/split_seeds/20260920/resnet_fusion_full.npz": "b74008eb87df5d1d337afff11aa4053afa15b0bb50ead780807ddce6af983d8b",
+    "outputs/phase3/controls/split_seeds/20260920/resnet_fusion_no_attacks.npz": "9c6c563dc884f73ed0d08a59fd6a352a7bee37cea901a60281508b02d38574b4",
+    "outputs/phase3/controls/split_seeds/20260920/resnet_fusion_no_matched_reals.npz": "fb7a19ae77607693d0541b53def476bc833965798b7bad85234174b093729ce7",
+    "outputs/phase3/controls/split_seeds/20260920/resnet_no_attacks.npz": "f093afe839b21f8d0f18fe541b1b218b231757ef8672c562b996acd2edfc4470",
+    "outputs/phase3/controls/split_seeds/20260920/resnet_no_matched_reals.npz": "53a43c53850f1905b2bdd8f3063d7422520bc6a6ebd0acd6dac3c371bfeb67eb",
+    "outputs/phase3/controls/split_seeds/20260921/clip_full.npz": "6f249b03b4ec7325692b1431c3b4c76b22e19ace066ba2c3e048e4017619688b",
+    "outputs/phase3/controls/split_seeds/20260921/clip_fusion_full.npz": "e80e755fb643a9faa7cdf1c42df1fcda7c95699d53b14935b6a2afe979d098af",
+    "outputs/phase3/controls/split_seeds/20260921/clip_fusion_no_attacks.npz": "08dc7c71589ed9c74ce796b0310f7f2a91a55bd9041a9593b7da1d785a3e701f",
+    "outputs/phase3/controls/split_seeds/20260921/clip_fusion_no_matched_reals.npz": "476878d58c58c73a5ac6dfca7149cdfa398661295bc2579ebb38709823dfbf74",
+    "outputs/phase3/controls/split_seeds/20260921/clip_no_attacks.npz": "22c171c2948876f855d74cec5a26ec76937140669077473c54b558aa9f32e9a8",
+    "outputs/phase3/controls/split_seeds/20260921/clip_no_matched_reals.npz": "051025e7cb9313c96906af9d261226ac8d639c4a3e0bce0baa95fe478c3b9b44",
+    "outputs/phase3/controls/split_seeds/20260921/resnet_full.npz": "ce1034c7c32f89ea083d562b0a3667d08f6c1c2475d7f8542aa9a331c3cc5637",
+    "outputs/phase3/controls/split_seeds/20260921/resnet_fusion_full.npz": "dd9d7864c69367a4e41c9d37ad3b96f31a0e8f331bee98855ba9451b8a2b55e0",
+    "outputs/phase3/controls/split_seeds/20260921/resnet_fusion_no_attacks.npz": "0db4ffadfde299fbd0adca2fd97dfee93eac9d1221427e34a93d2b29dabc8a43",
+    "outputs/phase3/controls/split_seeds/20260921/resnet_fusion_no_matched_reals.npz": "7bd5f2774cd58b7bb4c92de2cace04336c199ce2c7de9fe7a0693e76d425e334",
+    "outputs/phase3/controls/split_seeds/20260921/resnet_no_attacks.npz": "2b8946d29bb892e9c4727d337448e356786138a2037428d6bc42ff918d0c5a59",
+    "outputs/phase3/controls/split_seeds/20260921/resnet_no_matched_reals.npz": "52626034a69d0ac5b8c8b6494ee30b2af1e753df648a2789bb271649c945006d",
+    "outputs/phase3/controls/split_seeds/20260922/clip_full.npz": "df2f597c4454639eaa967d8954a24c0f36ff74b598c184a39a7412f732b112a4",
+    "outputs/phase3/controls/split_seeds/20260922/clip_fusion_full.npz": "8a84d06280ce2123a8fa34304ab0070afdcba47acf32aae61893b35ee7743054",
+    "outputs/phase3/controls/split_seeds/20260922/clip_fusion_no_attacks.npz": "ae9f2663a00e75a61f9a5bfcc7b0206adfff12c934727ead0640665dbe401ef3",
+    "outputs/phase3/controls/split_seeds/20260922/clip_fusion_no_matched_reals.npz": "acca7e8f6611677b8b466e3012a0587daff77e4db85992938dbfa557ff6119b5",
+    "outputs/phase3/controls/split_seeds/20260922/clip_no_attacks.npz": "98c5b9e61e991572858d421398931197555355732a251a67b17f594d7a8098a4",
+    "outputs/phase3/controls/split_seeds/20260922/clip_no_matched_reals.npz": "4d66745c2bfbbaf26b151e5efab85c2c5fe1524a95a6b276750f2226e77b0e47",
+    "outputs/phase3/controls/split_seeds/20260922/resnet_full.npz": "917785493a0cac7c77408d258178caf2894d0a6068990193a289f004fc54c2d2",
+    "outputs/phase3/controls/split_seeds/20260922/resnet_fusion_full.npz": "c0e98e833af1798c0f528cd372f3e11555922c5d5ff350b5f376c796a241f95a",
+    "outputs/phase3/controls/split_seeds/20260922/resnet_fusion_no_attacks.npz": "fe728a224fd9b6a1deff6317ec0f72f5fe35200cafe18650859e548edc1c5a6b",
+    "outputs/phase3/controls/split_seeds/20260922/resnet_fusion_no_matched_reals.npz": "24de5d5d4a1588639288a8ba65c829fec29de8514215b3f4640d9fb2f632bf38",
+    "outputs/phase3/controls/split_seeds/20260922/resnet_no_attacks.npz": "4c53da82befa659b55e70df82673ccef4373096c528632b18258878bc60fa48b",
+    "outputs/phase3/controls/split_seeds/20260922/resnet_no_matched_reals.npz": "e1300f04148d6c041fd6d746a4d0b69ecfa4cf6311dd442fc570968fe221267e",
+    "outputs/phase3/controls/split_seeds/20260923/clip_full.npz": "56716d2a8008fb1d2e18eb081211b73b3d823263c4ef670f8d2c87908b64cece",
+    "outputs/phase3/controls/split_seeds/20260923/clip_fusion_full.npz": "8f9192da74bb84f2788370f9bca9ca694a1edc0eaeac2a354577e2595e8bf7aa",
+    "outputs/phase3/controls/split_seeds/20260923/clip_fusion_no_attacks.npz": "3b6dfeab705a21feada5193a07f06e8704a0436bd38a509a6d349a1b5f0dce3d",
+    "outputs/phase3/controls/split_seeds/20260923/clip_fusion_no_matched_reals.npz": "9f322ad6680065c869d88bad82a07187b2c92d3c401d6d10208f884fbed32d0b",
+    "outputs/phase3/controls/split_seeds/20260923/clip_no_attacks.npz": "9133ba0e201b559ae95b682255de2c6c0f339a6ffb6b06f2b876ee8d594f4ff4",
+    "outputs/phase3/controls/split_seeds/20260923/clip_no_matched_reals.npz": "b313dccfb29f40ce15332c4790c17484a89638abf48f2e68d7aafb7ba1eb9478",
+    "outputs/phase3/controls/split_seeds/20260923/resnet_full.npz": "d8a53b7f802a34ad7c3c5f4f990952bd78365eb789b252e6a3ef1381bf07b34a",
+    "outputs/phase3/controls/split_seeds/20260923/resnet_fusion_full.npz": "31f5301ec9a53a3f686e12d8aeea264224c7813fb4a50485d79c702d25dd6971",
+    "outputs/phase3/controls/split_seeds/20260923/resnet_fusion_no_attacks.npz": "401ba87549adbdfa2bb693491a8a6933f9d1c3354b691a2a8b47515ee709e188",
+    "outputs/phase3/controls/split_seeds/20260923/resnet_fusion_no_matched_reals.npz": "efbc97ddf5c2235c36b90c900ddf365335f790cdb153bd8c70a41f5615cbda69",
+    "outputs/phase3/controls/split_seeds/20260923/resnet_no_attacks.npz": "7665db850c2de2999dc3fc02d53f0e859234dc20f37117dac5f8e7dbb9e0a284",
+    "outputs/phase3/controls/split_seeds/20260923/resnet_no_matched_reals.npz": "53287570d1b468fc2afda1f7b9746e7b9f35be442fde6a0083b09c376bc4e3c0",
+    "outputs/phase3/controls/split_seeds/20260924/clip_full.npz": "2f17b14dcfd3f8a29c598ab39215ddb00344ecf025cac4410a7de11ee72c63e6",
+    "outputs/phase3/controls/split_seeds/20260924/clip_fusion_full.npz": "f956ad664b289cea769193c6a4fffcbb27a3f4fa9e84f03ad6261e938efbf8c3",
+    "outputs/phase3/controls/split_seeds/20260924/clip_fusion_no_attacks.npz": "3df3e1372d93986a6652daba8110f683a68a3e6fb3a240ecd916239f405b3437",
+    "outputs/phase3/controls/split_seeds/20260924/clip_fusion_no_matched_reals.npz": "8bd48c9a858736a11217aac7df4a1444a8fffa446ba627dde58dec30fe8a22e3",
+    "outputs/phase3/controls/split_seeds/20260924/clip_no_attacks.npz": "afe34fa04f6271e9a66614c502dffa8713f2402e074a7a53839ac3dc3657b4a0",
+    "outputs/phase3/controls/split_seeds/20260924/clip_no_matched_reals.npz": "76ba27436935890708ad98f415089d1c35c1a581712b9bc1d22ee041378ac0fd",
+    "outputs/phase3/controls/split_seeds/20260924/resnet_full.npz": "8506baf27cad2cdd580ed7cb99f8f78d8eef833b5ffcb61f729e5c7c28a5e073",
+    "outputs/phase3/controls/split_seeds/20260924/resnet_fusion_full.npz": "098730139b21d7ea6e0363ab62534db16bee05d7f05968407437e5e206686deb",
+    "outputs/phase3/controls/split_seeds/20260924/resnet_fusion_no_attacks.npz": "51353acd632d8bf934fa65452087fa5580a557f4b50749a8997850cbcb9f1d7c",
+    "outputs/phase3/controls/split_seeds/20260924/resnet_fusion_no_matched_reals.npz": "4ad3426601aa0c064af9494094f53ad7b8e623a3bb9f558adf0c012714d0a1d4",
+    "outputs/phase3/controls/split_seeds/20260924/resnet_no_attacks.npz": "2a4f2d564b67f137a8f15cd58f446075daf4f83658183fc0b293e41ab709390b",
+    "outputs/phase3/controls/split_seeds/20260924/resnet_no_matched_reals.npz": "0f98ce31d9a47b741549b2c46518019223277dc00ba741e6b7f45c90d0764d61"
+  },
+  "helper_script_sha256": "94bb539cbac7d765f3be41c8cbe49e0cb57f142259e8152ba3044ddfd69cc134",
+  "script_sha256": "65ee4f95ec1c04f0c9c131e4bf6b516c1d9483d4a71ed110ace46386cff054c2",
+  "device": "CPU",
+  "thread_limit": 4,
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "3.0.1",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.6.1",
+    "threadpoolctl": "3.7.0"
+  }
+}

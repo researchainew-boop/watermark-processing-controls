@@ -1,0 +1,1795 @@
+{
+  "completed_at_utc": "2026-10-09T06:10:06.904561+00:00",
+  "heads_refitted": false,
+  "thresholds_retuned": false,
+  "thresholds": "Probe/fusion thresholds copied from original validation report; gate classification threshold calculated on original validation only, with the 13/16 gate unchanged.",
+  "expected_unmarked_edit_rows": 19544,
+  "actual_unmarked_edit_rows": 19544,
+  "AI_sources": 1396,
+  "expanded_test_rows": 46424,
+  "expanded_test_sources": 1680,
+  "paired_design": "The same 1396 AI sources, 284 real sources, and 14 attacks; marked and unmarked AI variants compared separately to identical real-edit rows.",
+  "old_test_overall": {
+    "payload": {
+      "auc": 0.8600123972873324,
+      "tpr_at_test_roc_fpr_5pct": 0.6998567335243553,
+      "validation_threshold": 0.8125,
+      "false_positive_rate": 0.007482394366197183,
+      "true_positive_rate": 0.6841869627507163
+    },
+    "resnet_probe": {
+      "auc": 0.9426567477595695,
+      "tpr_at_test_roc_fpr_5pct": 0.7529996418338109,
+      "validation_threshold": 0.5688568949699402,
+      "false_positive_rate": 0.10123239436619719,
+      "true_positive_rate": 0.8557933381088825
+    },
+    "resnet_fusion": {
+      "auc": 0.9646178664708523,
+      "tpr_at_test_roc_fpr_5pct": 0.8203796561604585,
+      "validation_threshold": 0.4600671222132044,
+      "false_positive_rate": 0.08296654929577464,
+      "true_positive_rate": 0.9200841690544412
+    },
+    "resnet_gated": {
+      "auc": 0.9643792335180496,
+      "tpr_at_test_roc_fpr_5pct": 0.8368105300859598,
+      "validation_threshold": 0.5526642141907999,
+      "false_positive_rate": 0.10299295774647887,
+      "true_positive_rate": 0.9413055157593123
+    },
+    "clip_probe": {
+      "auc": 0.993996972297611,
+      "tpr_at_test_roc_fpr_5pct": 0.9747492836676218,
+      "validation_threshold": 0.43839988112449646,
+      "false_positive_rate": 0.0488556338028169,
+      "true_positive_rate": 0.9740329512893983
+    },
+    "clip_fusion": {
+      "auc": 0.9940058742329063,
+      "tpr_at_test_roc_fpr_5pct": 0.9922546561604585,
+      "validation_threshold": 0.21099856169799006,
+      "false_positive_rate": 0.04621478873239437,
+      "true_positive_rate": 0.9867478510028653
+    },
+    "clip_gated": {
+      "auc": 0.9937827445398574,
+      "tpr_at_test_roc_fpr_5pct": 0.9816887535816619,
+      "validation_threshold": 0.7394894,
+      "false_positive_rate": 0.03102992957746479,
+      "true_positive_rate": 0.9726898280802292
+    }
+  },
+  "expanded_test_overall": {
+    "payload": {
+      "auc": 0.709042934331154,
+      "tpr_at_test_roc_fpr_5pct": 0.39369627507163324,
+      "validation_threshold": 0.8125,
+      "false_positive_rate": 0.007482394366197183,
+      "true_positive_rate": 0.37024832855778417
+    },
+    "resnet_probe": {
+      "auc": 0.9424023051273256,
+      "tpr_at_test_roc_fpr_5pct": 0.7509551098376314,
+      "validation_threshold": 0.5688568949699402,
+      "false_positive_rate": 0.10123239436619719,
+      "true_positive_rate": 0.8554680038204393
+    },
+    "resnet_fusion": {
+      "auc": 0.9387099196480219,
+      "tpr_at_test_roc_fpr_5pct": 0.7119866284622731,
+      "validation_threshold": 0.4600671222132044,
+      "false_positive_rate": 0.08296654929577464,
+      "true_positive_rate": 0.8532712511938872
+    },
+    "resnet_gated": {
+      "auc": 0.953845000218599,
+      "tpr_at_test_roc_fpr_5pct": 0.7960840496657116,
+      "validation_threshold": 0.5526642141907999,
+      "false_positive_rate": 0.10299295774647887,
+      "true_positive_rate": 0.9023400191021967
+    },
+    "clip_probe": {
+      "auc": 0.9939245797432636,
+      "tpr_at_test_roc_fpr_5pct": 0.974665711556829,
+      "validation_threshold": 0.43839988112449646,
+      "false_positive_rate": 0.0488556338028169,
+      "true_positive_rate": 0.9740210124164279
+    },
+    "clip_fusion": {
+      "auc": 0.9881516223204797,
+      "tpr_at_test_roc_fpr_5pct": 0.9837153772683859,
+      "validation_threshold": 0.21099856169799006,
+      "false_positive_rate": 0.04621478873239437,
+      "true_positive_rate": 0.9801098376313276
+    },
+    "clip_gated": {
+      "auc": 0.9937482921946674,
+      "tpr_at_test_roc_fpr_5pct": 0.9783667621776504,
+      "validation_threshold": 0.7394894,
+      "false_positive_rate": 0.03102992957746479,
+      "true_positive_rate": 0.9677889207258835
+    }
+  },
+  "matched_marked_edits": {
+    "payload": {
+      "auc": 0.8649310478610509,
+      "tpr_at_test_roc_fpr_5pct": 0.7255935325419566,
+      "validation_threshold": 0.8125,
+      "false_positive_rate": 0.008048289738430584,
+      "true_positive_rate": 0.7097830536225952
+    },
+    "resnet_probe": {
+      "auc": 0.9415315315964555,
+      "tpr_at_test_roc_fpr_5pct": 0.7501023331968891,
+      "validation_threshold": 0.5688568949699402,
+      "false_positive_rate": 0.10362173038229376,
+      "true_positive_rate": 0.8558125255832992
+    },
+    "resnet_fusion": {
+      "auc": 0.9644260749721415,
+      "tpr_at_test_roc_fpr_5pct": 0.8206610724519035,
+      "validation_threshold": 0.4600671222132044,
+      "false_positive_rate": 0.08903420523138833,
+      "true_positive_rate": 0.9248362668849774
+    },
+    "resnet_gated": {
+      "auc": 0.9643148365222034,
+      "tpr_at_test_roc_fpr_5pct": 0.8376995497339337,
+      "validation_threshold": 0.5526642141907999,
+      "false_positive_rate": 0.1056338028169014,
+      "true_positive_rate": 0.9432050757265656
+    },
+    "clip_probe": {
+      "auc": 0.9935465355580062,
+      "tpr_at_test_roc_fpr_5pct": 0.9722677036430618,
+      "validation_threshold": 0.43839988112449646,
+      "false_positive_rate": 0.05331991951710262,
+      "true_positive_rate": 0.9739050347932869
+    },
+    "clip_fusion": {
+      "auc": 0.9938713456547719,
+      "tpr_at_test_roc_fpr_5pct": 0.9855198526401965,
+      "validation_threshold": 0.21099856169799006,
+      "false_positive_rate": 0.05130784708249497,
+      "true_positive_rate": 0.9875153499795334
+    },
+    "clip_gated": {
+      "auc": 0.9933950947807186,
+      "tpr_at_test_roc_fpr_5pct": 0.9796356938190749,
+      "validation_threshold": 0.7394894,
+      "false_positive_rate": 0.03345070422535211,
+      "true_positive_rate": 0.9727282030290626
+    }
+  },
+  "matched_unmarked_edits": {
+    "payload": {
+      "auc": 0.5053607242616567,
+      "tpr_at_test_roc_fpr_5pct": 0.04379860826852231,
+      "validation_threshold": 0.8125,
+      "false_positive_rate": 0.008048289738430584,
+      "true_positive_rate": 0.011461318051575931
+    },
+    "resnet_probe": {
+      "auc": 0.9407523476923763,
+      "tpr_at_test_roc_fpr_5pct": 0.7470323372902169,
+      "validation_threshold": 0.5688568949699402,
+      "false_positive_rate": 0.10362173038229376,
+      "true_positive_rate": 0.8550961932050757
+    },
+    "resnet_fusion": {
+      "auc": 0.902979803194937,
+      "tpr_at_test_roc_fpr_5pct": 0.5593532541956611,
+      "validation_threshold": 0.4600671222132044,
+      "false_positive_rate": 0.08903420523138833,
+      "true_positive_rate": 0.7769136307818256
+    },
+    "resnet_gated": {
+      "auc": 0.9404147330771366,
+      "tpr_at_test_roc_fpr_5pct": 0.7479533360622186,
+      "validation_threshold": 0.5526642141907999,
+      "false_positive_rate": 0.1056338028169014,
+      "true_positive_rate": 0.8578080229226361
+    },
+    "clip_probe": {
+      "auc": 0.9934224797207314,
+      "tpr_at_test_roc_fpr_5pct": 0.9722677036430618,
+      "validation_threshold": 0.43839988112449646,
+      "false_positive_rate": 0.05331991951710262,
+      "true_positive_rate": 0.9740073679901761
+    },
+    "clip_fusion": {
+      "auc": 0.9795219909819127,
+      "tpr_at_test_roc_fpr_5pct": 0.971807204257061,
+      "validation_threshold": 0.21099856169799006,
+      "false_positive_rate": 0.05130784708249497,
+      "true_positive_rate": 0.9725235366352845
+    },
+    "clip_gated": {
+      "auc": 0.9932791591958631,
+      "tpr_at_test_roc_fpr_5pct": 0.9723188702415063,
+      "validation_threshold": 0.7394894,
+      "false_positive_rate": 0.03345070422535211,
+      "true_positive_rate": 0.9621878837494884
+    }
+  },
+  "paired_AI_probe_effects": {
+    "resnet": {
+      "mean_probability_marked_minus_unmarked": 0.002193644664174475,
+      "mean_probability_delta_ci95": [
+        0.00082139641876482,
+        0.0035505080991681984
+      ],
+      "TPR_marked_minus_unmarked_at_original_validation_threshold": 0.0007163323782234956,
+      "TPR_delta_ci95": [
+        -0.0017409435120753192,
+        0.003172329103561193
+      ],
+      "paired_rows": 19544,
+      "source_units": 1396,
+      "bootstrap_replicates": 2000,
+      "bootstrap": "Pairs averaged within source, stratified by source collection; original 14 conditions have equal weight."
+    },
+    "clip": {
+      "mean_probability_marked_minus_unmarked": 0.0003063760620566776,
+      "mean_probability_delta_ci95": [
+        -0.0003203325379042075,
+        0.0009369231524409845
+      ],
+      "TPR_marked_minus_unmarked_at_original_validation_threshold": -0.00010233319688907085,
+      "TPR_delta_ci95": [
+        -0.0009721653704461724,
+        0.0007674989766680311
+      ],
+      "paired_rows": 19544,
+      "source_units": 1396,
+      "bootstrap_replicates": 2000,
+      "bootstrap": "Pairs averaged within source, stratified by source collection; original 14 conditions have equal weight."
+    }
+  },
+  "conditions": {
+    "blur:1": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.4928656826344888,
+          "tpr_at_test_roc_fpr_5pct": 0.03868194842406877,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.010744985673352435
+        },
+        "resnet_probe": {
+          "auc": 0.9540361798296946,
+          "tpr_at_test_roc_fpr_5pct": 0.7822349570200573,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.8767908309455588
+        },
+        "resnet_fusion": {
+          "auc": 0.9169785907421608,
+          "tpr_at_test_roc_fpr_5pct": 0.6088825214899714,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.06690140845070422,
+          "true_positive_rate": 0.7929799426934098
+        },
+        "resnet_gated": {
+          "auc": 0.9533803825820251,
+          "tpr_at_test_roc_fpr_5pct": 0.7836676217765043,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.0880281690140845,
+          "true_positive_rate": 0.8789398280802292
+        },
+        "clip_probe": {
+          "auc": 0.9970060333346785,
+          "tpr_at_test_roc_fpr_5pct": 0.9871060171919771,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9734957020057307
+        },
+        "clip_fusion": {
+          "auc": 0.9897241615884418,
+          "tpr_at_test_roc_fpr_5pct": 0.9792263610315186,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9734957020057307
+        },
+        "clip_gated": {
+          "auc": 0.9968496509140805,
+          "tpr_at_test_roc_fpr_5pct": 0.9871060171919771,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.9634670487106017
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.9998183946083377,
+          "tpr_at_test_roc_fpr_5pct": 0.9992836676217765,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.997134670487106
+        },
+        "resnet_probe": {
+          "auc": 0.9543312885911458,
+          "tpr_at_test_roc_fpr_5pct": 0.7808022922636103,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.8767908309455588
+        },
+        "resnet_fusion": {
+          "auc": 0.9947939787723475,
+          "tpr_at_test_roc_fpr_5pct": 0.9383954154727794,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.06690140845070422,
+          "true_positive_rate": 0.9964183381088825
+        },
+        "resnet_gated": {
+          "auc": 0.980379050809153,
+          "tpr_at_test_roc_fpr_5pct": 0.9025787965616046,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.0880281690140845,
+          "true_positive_rate": 0.9921203438395415
+        },
+        "clip_probe": {
+          "auc": 0.9971800718350216,
+          "tpr_at_test_roc_fpr_5pct": 0.9885386819484241,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9756446991404012
+        },
+        "clip_fusion": {
+          "auc": 0.9997326365067194,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9949856733524355
+        },
+        "clip_gated": {
+          "auc": 0.996085394890835,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.9785100286532952
+        }
+      },
+      "payload_unmarked_mean": 0.49749283667621774,
+      "payload_unmarked_acceptance": 0.010744985673352435,
+      "payload_marked_mean": 0.9951199856733525,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "blur:2": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.5055301364058274,
+          "tpr_at_test_roc_fpr_5pct": 0.04297994269340974,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.0035211267605633804,
+          "true_positive_rate": 0.01002865329512894
+        },
+        "resnet_probe": {
+          "auc": 0.9524420880584366,
+          "tpr_at_test_roc_fpr_5pct": 0.7786532951289399,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.10915492957746478,
+          "true_positive_rate": 0.8717765042979942
+        },
+        "resnet_fusion": {
+          "auc": 0.9139417450260301,
+          "tpr_at_test_roc_fpr_5pct": 0.6196275071633238,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.7908309455587392
+        },
+        "resnet_gated": {
+          "auc": 0.9522150813188588,
+          "tpr_at_test_roc_fpr_5pct": 0.7786532951289399,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.10915492957746478,
+          "true_positive_rate": 0.8739255014326648
+        },
+        "clip_probe": {
+          "auc": 0.9964082489204568,
+          "tpr_at_test_roc_fpr_5pct": 0.9856733524355301,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.02112676056338028,
+          "true_positive_rate": 0.9720630372492837
+        },
+        "clip_fusion": {
+          "auc": 0.9868941442350379,
+          "tpr_at_test_roc_fpr_5pct": 0.9770773638968482,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9706303724928367
+        },
+        "clip_gated": {
+          "auc": 0.9963477137899028,
+          "tpr_at_test_roc_fpr_5pct": 0.9856733524355301,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9648997134670487
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.9994400500423745,
+          "tpr_at_test_roc_fpr_5pct": 0.997134670487106,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.0035211267605633804,
+          "true_positive_rate": 0.9949856733524355
+        },
+        "resnet_probe": {
+          "auc": 0.952553069131119,
+          "tpr_at_test_roc_fpr_5pct": 0.7843839541547278,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.10915492957746478,
+          "true_positive_rate": 0.8746418338108882
+        },
+        "resnet_fusion": {
+          "auc": 0.9939616207272288,
+          "tpr_at_test_roc_fpr_5pct": 0.9405444126074498,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.9928366762177651
+        },
+        "resnet_gated": {
+          "auc": 0.9789463860527059,
+          "tpr_at_test_roc_fpr_5pct": 0.9018624641833811,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.10915492957746478,
+          "true_positive_rate": 0.9878223495702005
+        },
+        "clip_probe": {
+          "auc": 0.9965621090439485,
+          "tpr_at_test_roc_fpr_5pct": 0.9878223495702005,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.02112676056338028,
+          "true_positive_rate": 0.9749283667621776
+        },
+        "clip_fusion": {
+          "auc": 0.9995737317890149,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9935530085959885
+        },
+        "clip_gated": {
+          "auc": 0.9959441462528755,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9749283667621776
+        }
+      },
+      "payload_unmarked_mean": 0.4968660458452722,
+      "payload_unmarked_acceptance": 0.01002865329512894,
+      "payload_marked_mean": 0.9853151862464183,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "color:1": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.5085480648936599,
+          "tpr_at_test_roc_fpr_5pct": 0.03581661891117478,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.009312320916905445
+        },
+        "resnet_probe": {
+          "auc": 0.9510674361354374,
+          "tpr_at_test_roc_fpr_5pct": 0.7793696275071633,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.8610315186246418
+        },
+        "resnet_fusion": {
+          "auc": 0.9132153234593808,
+          "tpr_at_test_roc_fpr_5pct": 0.586676217765043,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.7851002865329513
+        },
+        "resnet_gated": {
+          "auc": 0.9502981355179789,
+          "tpr_at_test_roc_fpr_5pct": 0.7800859598853869,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.8631805157593123
+        },
+        "clip_probe": {
+          "auc": 0.9969253198272731,
+          "tpr_at_test_roc_fpr_5pct": 0.9885386819484241,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9749283667621776
+        },
+        "clip_fusion": {
+          "auc": 0.9903900480245368,
+          "tpr_at_test_roc_fpr_5pct": 0.9792263610315186,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9720630372492837
+        },
+        "clip_gated": {
+          "auc": 0.9967512813269301,
+          "tpr_at_test_roc_fpr_5pct": 0.9885386819484241,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9627507163323782
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.9997717321118689,
+          "tpr_at_test_roc_fpr_5pct": 0.9992836676217765,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9992836676217765
+        },
+        "resnet_probe": {
+          "auc": 0.9526312603414182,
+          "tpr_at_test_roc_fpr_5pct": 0.7901146131805158,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.8646131805157593
+        },
+        "resnet_fusion": {
+          "auc": 0.9935303079220308,
+          "tpr_at_test_roc_fpr_5pct": 0.923352435530086,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 1.0
+        },
+        "resnet_gated": {
+          "auc": 0.9803941845917914,
+          "tpr_at_test_roc_fpr_5pct": 0.8997134670487106,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.997134670487106
+        },
+        "clip_probe": {
+          "auc": 0.9971094475160418,
+          "tpr_at_test_roc_fpr_5pct": 0.9892550143266475,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9742120343839542
+        },
+        "clip_fusion": {
+          "auc": 0.999603999354292,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9914040114613181
+        },
+        "clip_gated": {
+          "auc": 0.9961106178618993,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9777936962750716
+        }
+      },
+      "payload_unmarked_mean": 0.5007163323782235,
+      "payload_unmarked_acceptance": 0.009312320916905445,
+      "payload_marked_mean": 0.9991045845272206,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "crop:1": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.4702406775898947,
+          "tpr_at_test_roc_fpr_5pct": 0.04727793696275072,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.0071633237822349575
+        },
+        "resnet_probe": {
+          "auc": 0.9564323620807942,
+          "tpr_at_test_roc_fpr_5pct": 0.8259312320916905,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.08098591549295775,
+          "true_positive_rate": 0.8646131805157593
+        },
+        "resnet_fusion": {
+          "auc": 0.9131219984664434,
+          "tpr_at_test_roc_fpr_5pct": 0.6275071633237822,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.06690140845070422,
+          "true_positive_rate": 0.7829512893982808
+        },
+        "resnet_gated": {
+          "auc": 0.95592790265951,
+          "tpr_at_test_roc_fpr_5pct": 0.8259312320916905,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.8660458452722063
+        },
+        "clip_probe": {
+          "auc": 0.9957650631583195,
+          "tpr_at_test_roc_fpr_5pct": 0.9899713467048711,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9785100286532952
+        },
+        "clip_fusion": {
+          "auc": 0.9870908834093385,
+          "tpr_at_test_roc_fpr_5pct": 0.9842406876790831,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9777936962750716
+        },
+        "clip_gated": {
+          "auc": 0.9956868719480205,
+          "tpr_at_test_roc_fpr_5pct": 0.9899713467048711,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9677650429799427
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.43711408854271766,
+          "tpr_at_test_roc_fpr_5pct": 0.03008595988538682,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.007879656160458453
+        },
+        "resnet_probe": {
+          "auc": 0.9573378667419993,
+          "tpr_at_test_roc_fpr_5pct": 0.8345272206303725,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.08098591549295775,
+          "true_positive_rate": 0.8703438395415473
+        },
+        "resnet_fusion": {
+          "auc": 0.9086600548851851,
+          "tpr_at_test_roc_fpr_5pct": 0.6081661891117478,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.06690140845070422,
+          "true_positive_rate": 0.7872492836676218
+        },
+        "resnet_gated": {
+          "auc": 0.9570629363573995,
+          "tpr_at_test_roc_fpr_5pct": 0.8345272206303725,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.8732091690544412
+        },
+        "clip_probe": {
+          "auc": 0.9958079422091288,
+          "tpr_at_test_roc_fpr_5pct": 0.9899713467048711,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9770773638968482
+        },
+        "clip_fusion": {
+          "auc": 0.9868827938980589,
+          "tpr_at_test_roc_fpr_5pct": 0.9835243553008596,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9777936962750716
+        },
+        "clip_gated": {
+          "auc": 0.995906311796279,
+          "tpr_at_test_roc_fpr_5pct": 0.9899713467048711,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9641833810888252
+        }
+      },
+      "payload_unmarked_mean": 0.5016117478510028,
+      "payload_unmarked_acceptance": 0.0071633237822349575,
+      "payload_marked_mean": 0.4877775787965616,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "denoise:1": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.5126203135719763,
+          "tpr_at_test_roc_fpr_5pct": 0.04297994269340974,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.010744985673352435
+        },
+        "resnet_probe": {
+          "auc": 0.935701602163122,
+          "tpr_at_test_roc_fpr_5pct": 0.7206303724928367,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.11971830985915492,
+          "true_positive_rate": 0.8474212034383954
+        },
+        "resnet_fusion": {
+          "auc": 0.8937431897978126,
+          "tpr_at_test_roc_fpr_5pct": 0.46060171919770776,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.1056338028169014,
+          "true_positive_rate": 0.7729226361031518
+        },
+        "resnet_gated": {
+          "auc": 0.9353737035392873,
+          "tpr_at_test_roc_fpr_5pct": 0.7220630372492837,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.12323943661971831,
+          "true_positive_rate": 0.8488538681948424
+        },
+        "clip_probe": {
+          "auc": 0.9955052665563582,
+          "tpr_at_test_roc_fpr_5pct": 0.9785100286532952,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9699140401146131
+        },
+        "clip_fusion": {
+          "auc": 0.9914443682150208,
+          "tpr_at_test_roc_fpr_5pct": 0.9785100286532952,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.028169014084507043,
+          "true_positive_rate": 0.9699140401146131
+        },
+        "clip_gated": {
+          "auc": 0.9953867185923564,
+          "tpr_at_test_roc_fpr_5pct": 0.9785100286532952,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9591690544412608
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.9927521792646998,
+          "tpr_at_test_roc_fpr_5pct": 0.9727793696275072,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.9512893982808023
+        },
+        "resnet_probe": {
+          "auc": 0.9357747487792081,
+          "tpr_at_test_roc_fpr_5pct": 0.7120343839541547,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.11971830985915492,
+          "true_positive_rate": 0.8452722063037249
+        },
+        "resnet_fusion": {
+          "auc": 0.9856456071673594,
+          "tpr_at_test_roc_fpr_5pct": 0.8932664756446992,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.1056338028169014,
+          "true_positive_rate": 0.9584527220630372
+        },
+        "resnet_gated": {
+          "auc": 0.9639916865087372,
+          "tpr_at_test_roc_fpr_5pct": 0.8524355300859598,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.12323943661971831,
+          "true_positive_rate": 0.9491404011461319
+        },
+        "clip_probe": {
+          "auc": 0.9955304895274224,
+          "tpr_at_test_roc_fpr_5pct": 0.9770773638968482,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9691977077363897
+        },
+        "clip_fusion": {
+          "auc": 0.9989280237297712,
+          "tpr_at_test_roc_fpr_5pct": 0.9978510028653295,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.028169014084507043,
+          "true_positive_rate": 0.9842406876790831
+        },
+        "clip_gated": {
+          "auc": 0.9948494693086888,
+          "tpr_at_test_roc_fpr_5pct": 0.9842406876790831,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9663323782234957
+        }
+      },
+      "payload_unmarked_mean": 0.4980300859598854,
+      "payload_unmarked_acceptance": 0.010744985673352435,
+      "payload_marked_mean": 0.963064111747851,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "inpaint:1": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.5050811675208846,
+          "tpr_at_test_roc_fpr_5pct": 0.03939828080229226,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.0035211267605633804,
+          "true_positive_rate": 0.01002865329512894
+        },
+        "resnet_probe": {
+          "auc": 0.9487620565801687,
+          "tpr_at_test_roc_fpr_5pct": 0.7686246418338109,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.09154929577464789,
+          "true_positive_rate": 0.8445558739255015
+        },
+        "resnet_fusion": {
+          "auc": 0.9024375479236451,
+          "tpr_at_test_roc_fpr_5pct": 0.576647564469914,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.07746478873239436,
+          "true_positive_rate": 0.7714899713467048
+        },
+        "resnet_gated": {
+          "auc": 0.9486233302393154,
+          "tpr_at_test_roc_fpr_5pct": 0.7693409742120344,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.09154929577464789,
+          "true_positive_rate": 0.8474212034383954
+        },
+        "clip_probe": {
+          "auc": 0.9973364542556197,
+          "tpr_at_test_roc_fpr_5pct": 0.9906876790830945,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9706303724928367
+        },
+        "clip_fusion": {
+          "auc": 0.9910786351345896,
+          "tpr_at_test_roc_fpr_5pct": 0.9813753581661891,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9691977077363897
+        },
+        "clip_gated": {
+          "auc": 0.9972809637192784,
+          "tpr_at_test_roc_fpr_5pct": 0.9906876790830945,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9591690544412608
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 1.0,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.0035211267605633804,
+          "true_positive_rate": 1.0
+        },
+        "resnet_probe": {
+          "auc": 0.9502426449816377,
+          "tpr_at_test_roc_fpr_5pct": 0.7750716332378224,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.09154929577464789,
+          "true_positive_rate": 0.8459885386819485
+        },
+        "resnet_fusion": {
+          "auc": 0.992440675572057,
+          "tpr_at_test_roc_fpr_5pct": 0.914756446991404,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.07746478873239436,
+          "true_positive_rate": 1.0
+        },
+        "resnet_gated": {
+          "auc": 0.9823640986319061,
+          "tpr_at_test_roc_fpr_5pct": 0.8868194842406877,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.09154929577464789,
+          "true_positive_rate": 0.995702005730659
+        },
+        "clip_probe": {
+          "auc": 0.9974196900601315,
+          "tpr_at_test_roc_fpr_5pct": 0.9914040114613181,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9727793696275072
+        },
+        "clip_fusion": {
+          "auc": 0.9996216554340369,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9906876790830945
+        },
+        "clip_gated": {
+          "auc": 0.9960853948908349,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9792263610315186
+        }
+      },
+      "payload_unmarked_mean": 0.5012983524355301,
+      "payload_unmarked_acceptance": 0.01002865329512894,
+      "payload_marked_mean": 0.9998209169054442,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "jpeg:1": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.49624682190564584,
+          "tpr_at_test_roc_fpr_5pct": 0.04154727793696275,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.008595988538681949
+        },
+        "resnet_probe": {
+          "auc": 0.9451551717179871,
+          "tpr_at_test_roc_fpr_5pct": 0.7929799426934098,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.09859154929577464,
+          "true_positive_rate": 0.8782234957020058
+        },
+        "resnet_fusion": {
+          "auc": 0.9110562371362849,
+          "tpr_at_test_roc_fpr_5pct": 0.5981375358166189,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.09507042253521127,
+          "true_positive_rate": 0.8037249283667621
+        },
+        "resnet_gated": {
+          "auc": 0.9447642156664917,
+          "tpr_at_test_roc_fpr_5pct": 0.7929799426934098,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.09859154929577464,
+          "true_positive_rate": 0.8782234957020058
+        },
+        "clip_probe": {
+          "auc": 0.9958709996367892,
+          "tpr_at_test_roc_fpr_5pct": 0.9842406876790831,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9727793696275072
+        },
+        "clip_fusion": {
+          "auc": 0.9889321602970257,
+          "tpr_at_test_roc_fpr_5pct": 0.9813753581661891,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9720630372492837
+        },
+        "clip_gated": {
+          "auc": 0.9957045280277654,
+          "tpr_at_test_roc_fpr_5pct": 0.9842406876790831,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.9584527220630372
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.9996039993542919,
+          "tpr_at_test_roc_fpr_5pct": 0.9992836676217765,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9978510028653295
+        },
+        "resnet_probe": {
+          "auc": 0.9464919891843899,
+          "tpr_at_test_roc_fpr_5pct": 0.7893982808022922,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.09859154929577464,
+          "true_positive_rate": 0.8767908309455588
+        },
+        "resnet_fusion": {
+          "auc": 0.9943803220468945,
+          "tpr_at_test_roc_fpr_5pct": 0.9340974212034384,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.09507042253521127,
+          "true_positive_rate": 1.0
+        },
+        "resnet_gated": {
+          "auc": 0.9765527260987127,
+          "tpr_at_test_roc_fpr_5pct": 0.9032951289398281,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.09859154929577464,
+          "true_positive_rate": 0.997134670487106
+        },
+        "clip_probe": {
+          "auc": 0.9959214455789176,
+          "tpr_at_test_roc_fpr_5pct": 0.9835243553008596,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9727793696275072
+        },
+        "clip_fusion": {
+          "auc": 0.9994829290931838,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9914040114613181
+        },
+        "clip_gated": {
+          "auc": 0.9957751523467453,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.9763610315186246
+        }
+      },
+      "payload_unmarked_mean": 0.4986568767908309,
+      "payload_unmarked_acceptance": 0.008595988538681949,
+      "payload_marked_mean": 0.998567335243553,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "jpeg:2": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.4962329492715607,
+          "tpr_at_test_roc_fpr_5pct": 0.0071633237822349575,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.0071633237822349575
+        },
+        "resnet_probe": {
+          "auc": 0.9455360385810566,
+          "tpr_at_test_roc_fpr_5pct": 0.7779369627507163,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.12323943661971831,
+          "true_positive_rate": 0.8904011461318052
+        },
+        "resnet_fusion": {
+          "auc": 0.9084229589571815,
+          "tpr_at_test_roc_fpr_5pct": 0.4899713467048711,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.1056338028169014,
+          "true_positive_rate": 0.8094555873925502
+        },
+        "resnet_gated": {
+          "auc": 0.9449584325436862,
+          "tpr_at_test_roc_fpr_5pct": 0.7779369627507163,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.12323943661971831,
+          "true_positive_rate": 0.8918338108882522
+        },
+        "clip_probe": {
+          "auc": 0.9951193550990758,
+          "tpr_at_test_roc_fpr_5pct": 0.9785100286532952,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9727793696275072
+        },
+        "clip_fusion": {
+          "auc": 0.9901832196618103,
+          "tpr_at_test_roc_fpr_5pct": 0.9756446991404012,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9720630372492837
+        },
+        "clip_gated": {
+          "auc": 0.9950260301061382,
+          "tpr_at_test_roc_fpr_5pct": 0.9785100286532952,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9563037249283668
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.9972103394002987,
+          "tpr_at_test_roc_fpr_5pct": 0.9813753581661891,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9813753581661891
+        },
+        "resnet_probe": {
+          "auc": 0.9469233019895877,
+          "tpr_at_test_roc_fpr_5pct": 0.7886819484240688,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.12323943661971831,
+          "true_positive_rate": 0.8825214899713467
+        },
+        "resnet_fusion": {
+          "auc": 0.9918428911578352,
+          "tpr_at_test_roc_fpr_5pct": 0.9340974212034384,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.1056338028169014,
+          "true_positive_rate": 0.9849570200573066
+        },
+        "resnet_gated": {
+          "auc": 0.9695583962226079,
+          "tpr_at_test_roc_fpr_5pct": 0.8918338108882522,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.12323943661971831,
+          "true_positive_rate": 0.9799426934097422
+        },
+        "clip_probe": {
+          "auc": 0.9950663868598411,
+          "tpr_at_test_roc_fpr_5pct": 0.9770773638968482,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9727793696275072
+        },
+        "clip_fusion": {
+          "auc": 0.9993669034262883,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9892550143266475
+        },
+        "clip_gated": {
+          "auc": 0.995432119940272,
+          "tpr_at_test_roc_fpr_5pct": 0.9878223495702005,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9749283667621776
+        }
+      },
+      "payload_unmarked_mean": 0.4970451289398281,
+      "payload_unmarked_acceptance": 0.0071633237822349575,
+      "payload_marked_mean": 0.9853599570200573,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "lowres:1": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.5100614431575125,
+          "tpr_at_test_roc_fpr_5pct": 0.03581661891117478,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.0035211267605633804,
+          "true_positive_rate": 0.011461318051575931
+        },
+        "resnet_probe": {
+          "auc": 0.9407184511077928,
+          "tpr_at_test_roc_fpr_5pct": 0.752865329512894,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.09154929577464789,
+          "true_positive_rate": 0.8316618911174785
+        },
+        "resnet_fusion": {
+          "auc": 0.9078882319706203,
+          "tpr_at_test_roc_fpr_5pct": 0.5959885386819485,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.08098591549295775,
+          "true_positive_rate": 0.745702005730659
+        },
+        "resnet_gated": {
+          "auc": 0.940731062593325,
+          "tpr_at_test_roc_fpr_5pct": 0.7535816618911175,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.09859154929577464,
+          "true_positive_rate": 0.8359598853868195
+        },
+        "clip_probe": {
+          "auc": 0.993921263973526,
+          "tpr_at_test_roc_fpr_5pct": 0.9734957020057307,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.03169014084507042,
+          "true_positive_rate": 0.9648997134670487
+        },
+        "clip_fusion": {
+          "auc": 0.9857288429718714,
+          "tpr_at_test_roc_fpr_5pct": 0.9699140401146131,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9613180515759312
+        },
+        "clip_gated": {
+          "auc": 0.9938556842487591,
+          "tpr_at_test_roc_fpr_5pct": 0.9734957020057307,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9484240687679083
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.9966049880947575,
+          "tpr_at_test_roc_fpr_5pct": 0.9820916905444126,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.0035211267605633804,
+          "true_positive_rate": 0.9498567335243553
+        },
+        "resnet_probe": {
+          "auc": 0.9412355220146091,
+          "tpr_at_test_roc_fpr_5pct": 0.7578796561604585,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.09154929577464789,
+          "true_positive_rate": 0.8373925501432665
+        },
+        "resnet_fusion": {
+          "auc": 0.9927610073045723,
+          "tpr_at_test_roc_fpr_5pct": 0.9290830945558739,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.08098591549295775,
+          "true_positive_rate": 0.9763610315186246
+        },
+        "resnet_gated": {
+          "auc": 0.9738387344122038,
+          "tpr_at_test_roc_fpr_5pct": 0.8782234957020058,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.09859154929577464,
+          "true_positive_rate": 0.9648997134670487
+        },
+        "clip_probe": {
+          "auc": 0.9938455950603333,
+          "tpr_at_test_roc_fpr_5pct": 0.9734957020057307,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.03169014084507042,
+          "true_positive_rate": 0.9656160458452722
+        },
+        "clip_fusion": {
+          "auc": 0.9991020622301142,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.02464788732394366,
+          "true_positive_rate": 0.9878223495702005
+        },
+        "clip_gated": {
+          "auc": 0.9952379030630776,
+          "tpr_at_test_roc_fpr_5pct": 0.9878223495702005,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.017605633802816902,
+          "true_positive_rate": 0.9670487106017192
+        }
+      },
+      "payload_unmarked_mean": 0.49637356733524357,
+      "payload_unmarked_acceptance": 0.011461318051575931,
+      "payload_marked_mean": 0.9487374641833811,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "lowres:2": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.5307745469954396,
+          "tpr_at_test_roc_fpr_5pct": 0.06375358166189111,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.0035211267605633804,
+          "true_positive_rate": 0.02005730659025788
+        },
+        "resnet_probe": {
+          "auc": 0.8939121837039428,
+          "tpr_at_test_roc_fpr_5pct": 0.6224928366762178,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.15140845070422534,
+          "true_positive_rate": 0.7922636103151862
+        },
+        "resnet_fusion": {
+          "auc": 0.8578181121110618,
+          "tpr_at_test_roc_fpr_5pct": 0.3982808022922636,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.10915492957746478,
+          "true_positive_rate": 0.6869627507163324
+        },
+        "resnet_gated": {
+          "auc": 0.8944065539368011,
+          "tpr_at_test_roc_fpr_5pct": 0.6246418338108882,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.15140845070422534,
+          "true_positive_rate": 0.8008595988538681
+        },
+        "clip_probe": {
+          "auc": 0.9792364502199442,
+          "tpr_at_test_roc_fpr_5pct": 0.9054441260744985,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.22887323943661972,
+          "true_positive_rate": 0.9777936962750716
+        },
+        "clip_fusion": {
+          "auc": 0.9284172081197788,
+          "tpr_at_test_roc_fpr_5pct": 0.40257879656160456,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.22183098591549297,
+          "true_positive_rate": 0.9756446991404012
+        },
+        "clip_gated": {
+          "auc": 0.9792616731910085,
+          "tpr_at_test_roc_fpr_5pct": 0.9068767908309455,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.15845070422535212,
+          "true_positive_rate": 0.9641833810888252
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.5086060777271076,
+          "tpr_at_test_roc_fpr_5pct": 0.0494269340974212,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.0035211267605633804,
+          "true_positive_rate": 0.0164756446991404
+        },
+        "resnet_probe": {
+          "auc": 0.8943409742120343,
+          "tpr_at_test_roc_fpr_5pct": 0.6239255014326648,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.15140845070422534,
+          "true_positive_rate": 0.7951289398280802
+        },
+        "resnet_fusion": {
+          "auc": 0.8529299003188184,
+          "tpr_at_test_roc_fpr_5pct": 0.3846704871060172,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.10915492957746478,
+          "true_positive_rate": 0.6805157593123209
+        },
+        "resnet_gated": {
+          "auc": 0.894542757980548,
+          "tpr_at_test_roc_fpr_5pct": 0.6246418338108882,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.15140845070422534,
+          "true_positive_rate": 0.7979942693409742
+        },
+        "clip_probe": {
+          "auc": 0.9790472779369627,
+          "tpr_at_test_roc_fpr_5pct": 0.9004297994269341,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.22887323943661972,
+          "true_positive_rate": 0.9749283667621776
+        },
+        "clip_fusion": {
+          "auc": 0.9241898381694177,
+          "tpr_at_test_roc_fpr_5pct": 0.3545845272206304,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.22183098591549297,
+          "true_positive_rate": 0.9727793696275072
+        },
+        "clip_gated": {
+          "auc": 0.9788707171395132,
+          "tpr_at_test_roc_fpr_5pct": 0.9004297994269341,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.15845070422535212,
+          "true_positive_rate": 0.9634670487106017
+        }
+      },
+      "payload_unmarked_mean": 0.5027757879656161,
+      "payload_unmarked_acceptance": 0.02005730659025788,
+      "payload_marked_mean": 0.4917621776504298,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "noise:1": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.5170343335082125,
+          "tpr_at_test_roc_fpr_5pct": 0.03939828080229226,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.009312320916905445
+        },
+        "resnet_probe": {
+          "auc": 0.9528128657330805,
+          "tpr_at_test_roc_fpr_5pct": 0.7535816618911175,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.8660458452722063
+        },
+        "resnet_fusion": {
+          "auc": 0.9192915371887486,
+          "tpr_at_test_roc_fpr_5pct": 0.6260744985673352,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.07394366197183098,
+          "true_positive_rate": 0.7915472779369628
+        },
+        "resnet_gated": {
+          "auc": 0.9524622664352879,
+          "tpr_at_test_roc_fpr_5pct": 0.754297994269341,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.8703438395415473
+        },
+        "clip_probe": {
+          "auc": 0.9958533435570444,
+          "tpr_at_test_roc_fpr_5pct": 0.9820916905444126,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9677650429799427
+        },
+        "clip_fusion": {
+          "auc": 0.9912905080915292,
+          "tpr_at_test_roc_fpr_5pct": 0.9734957020057307,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9663323782234957
+        },
+        "clip_gated": {
+          "auc": 0.9956389483029986,
+          "tpr_at_test_roc_fpr_5pct": 0.9820916905444126,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.9570200573065902
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.9998789297388918,
+          "tpr_at_test_roc_fpr_5pct": 0.9992836676217765,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9992836676217765
+        },
+        "resnet_probe": {
+          "auc": 0.9535645102707938,
+          "tpr_at_test_roc_fpr_5pct": 0.7585959885386819,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.8653295128939829
+        },
+        "resnet_fusion": {
+          "auc": 0.9945821058154082,
+          "tpr_at_test_roc_fpr_5pct": 0.9484240687679083,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.07394366197183098,
+          "true_positive_rate": 1.0
+        },
+        "resnet_gated": {
+          "auc": 0.9867024496549498,
+          "tpr_at_test_roc_fpr_5pct": 0.8989971346704871,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.08450704225352113,
+          "true_positive_rate": 0.997134670487106
+        },
+        "clip_probe": {
+          "auc": 0.9959164009847048,
+          "tpr_at_test_roc_fpr_5pct": 0.9828080229226361,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9656160458452722
+        },
+        "clip_fusion": {
+          "auc": 0.9997124581298681,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.9906876790830945
+        },
+        "clip_gated": {
+          "auc": 0.9959895476007911,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.9706303724928367
+        }
+      },
+      "payload_unmarked_mean": 0.49820916905444124,
+      "payload_unmarked_acceptance": 0.009312320916905445,
+      "payload_marked_mean": 0.9991941260744985,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "regenerate:2": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.5314164716090237,
+          "tpr_at_test_roc_fpr_5pct": 0.07163323782234957,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.025071633237822348
+        },
+        "resnet_probe": {
+          "auc": 0.9292924452157069,
+          "tpr_at_test_roc_fpr_5pct": 0.6912607449856734,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.13028169014084506,
+          "true_positive_rate": 0.8681948424068768
+        },
+        "resnet_fusion": {
+          "auc": 0.8954230396706889,
+          "tpr_at_test_roc_fpr_5pct": 0.4269340974212034,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.13380281690140844,
+          "true_positive_rate": 0.8252148997134671
+        },
+        "resnet_gated": {
+          "auc": 0.9292218208967271,
+          "tpr_at_test_roc_fpr_5pct": 0.6919770773638968,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.14084507042253522,
+          "true_positive_rate": 0.8710601719197708
+        },
+        "clip_probe": {
+          "auc": 0.9885159812744663,
+          "tpr_at_test_roc_fpr_5pct": 0.9512893982808023,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.13380281690140844,
+          "true_positive_rate": 0.9792263610315186
+        },
+        "clip_fusion": {
+          "auc": 0.9598626861455265,
+          "tpr_at_test_roc_fpr_5pct": 0.8424068767908309,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.14084507042253522,
+          "true_positive_rate": 0.9763610315186246
+        },
+        "clip_gated": {
+          "auc": 0.9880544009039913,
+          "tpr_at_test_roc_fpr_5pct": 0.9512893982808023,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.09507042253521127,
+          "true_positive_rate": 0.9641833810888252
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.5815950502441583,
+          "tpr_at_test_roc_fpr_5pct": 0.0988538681948424,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.03008595988538682
+        },
+        "resnet_probe": {
+          "auc": 0.9304602687759798,
+          "tpr_at_test_roc_fpr_5pct": 0.6883954154727794,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.13028169014084506,
+          "true_positive_rate": 0.8717765042979942
+        },
+        "resnet_fusion": {
+          "auc": 0.9028638161346302,
+          "tpr_at_test_roc_fpr_5pct": 0.4777936962750716,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.13380281690140844,
+          "true_positive_rate": 0.8459885386819485
+        },
+        "resnet_gated": {
+          "auc": 0.9313027160095242,
+          "tpr_at_test_roc_fpr_5pct": 0.6898280802292264,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.14084507042253522,
+          "true_positive_rate": 0.8739255014326648
+        },
+        "clip_probe": {
+          "auc": 0.9884377900641672,
+          "tpr_at_test_roc_fpr_5pct": 0.9469914040114613,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.13380281690140844,
+          "true_positive_rate": 0.9763610315186246
+        },
+        "clip_fusion": {
+          "auc": 0.9639235844868639,
+          "tpr_at_test_roc_fpr_5pct": 0.8660458452722063,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.14084507042253522,
+          "true_positive_rate": 0.9777936962750716
+        },
+        "clip_gated": {
+          "auc": 0.9879610759110538,
+          "tpr_at_test_roc_fpr_5pct": 0.9477077363896849,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.09507042253521127,
+          "true_positive_rate": 0.9677650429799427
+        }
+      },
+      "payload_unmarked_mean": 0.5497851002865329,
+      "payload_unmarked_acceptance": 0.025071633237822348,
+      "payload_marked_mean": 0.5708273638968482,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "resize:1": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.5078620000807135,
+          "tpr_at_test_roc_fpr_5pct": 0.03510028653295129,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.010744985673352435
+        },
+        "resnet_probe": {
+          "auc": 0.9529389805884014,
+          "tpr_at_test_roc_fpr_5pct": 0.8008595988538681,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.08098591549295775,
+          "true_positive_rate": 0.8753581661891118
+        },
+        "resnet_fusion": {
+          "auc": 0.9182069494329876,
+          "tpr_at_test_roc_fpr_5pct": 0.6196275071633238,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.07042253521126761,
+          "true_positive_rate": 0.7843839541547278
+        },
+        "resnet_gated": {
+          "auc": 0.9526539610153759,
+          "tpr_at_test_roc_fpr_5pct": 0.8015759312320917,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.08098591549295775,
+          "true_positive_rate": 0.8760744985673352
+        },
+        "clip_probe": {
+          "auc": 0.9968067718632714,
+          "tpr_at_test_roc_fpr_5pct": 0.9849570200573066,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9720630372492837
+        },
+        "clip_fusion": {
+          "auc": 0.9898654102264013,
+          "tpr_at_test_roc_fpr_5pct": 0.9763610315186246,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9691977077363897
+        },
+        "clip_gated": {
+          "auc": 0.9966150772831833,
+          "tpr_at_test_roc_fpr_5pct": 0.9835243553008596,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.0035211267605633804,
+          "true_positive_rate": 0.9620343839541547
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.9998272226482101,
+          "tpr_at_test_roc_fpr_5pct": 0.998567335243553,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.01056338028169014,
+          "true_positive_rate": 0.998567335243553
+        },
+        "resnet_probe": {
+          "auc": 0.9536754913434764,
+          "tpr_at_test_roc_fpr_5pct": 0.8030085959885387,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.08098591549295775,
+          "true_positive_rate": 0.8739255014326648
+        },
+        "resnet_fusion": {
+          "auc": 0.9945013923080027,
+          "tpr_at_test_roc_fpr_5pct": 0.9419770773638968,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.07042253521126761,
+          "true_positive_rate": 0.997134670487106
+        },
+        "resnet_gated": {
+          "auc": 0.981027281165503,
+          "tpr_at_test_roc_fpr_5pct": 0.9032951289398281,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.08098591549295775,
+          "true_positive_rate": 0.994269340974212
+        },
+        "clip_probe": {
+          "auc": 0.9970035110375721,
+          "tpr_at_test_roc_fpr_5pct": 0.9892550143266475,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9727793696275072
+        },
+        "clip_fusion": {
+          "auc": 0.9996847128616975,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.014084507042253521,
+          "true_positive_rate": 0.9935530085959885
+        },
+        "clip_gated": {
+          "auc": 0.9961585415069212,
+          "tpr_at_test_roc_fpr_5pct": 1.0,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.0035211267605633804,
+          "true_positive_rate": 0.9749283667621776
+        }
+      },
+      "payload_unmarked_mean": 0.49641833810888253,
+      "payload_unmarked_acceptance": 0.010744985673352435,
+      "payload_marked_mean": 0.9945379656160458,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    },
+    "spectral:1": {
+      "unmarked": {
+        "payload": {
+          "auc": 0.4919198212195811,
+          "tpr_at_test_roc_fpr_5pct": 0.044412607449856735,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.01002865329512894
+        },
+        "resnet_probe": {
+          "auc": 0.9011763993704347,
+          "tpr_at_test_roc_fpr_5pct": 0.6969914040114613,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.11971830985915492,
+          "true_positive_rate": 0.8030085959885387
+        },
+        "resnet_fusion": {
+          "auc": 0.8721195367044674,
+          "tpr_at_test_roc_fpr_5pct": 0.5787965616045845,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.09154929577464789,
+          "true_positive_rate": 0.7335243553008596
+        },
+        "resnet_gated": {
+          "auc": 0.900896424391622,
+          "tpr_at_test_roc_fpr_5pct": 0.6991404011461319,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.11971830985915492,
+          "true_positive_rate": 0.8065902578796562
+        },
+        "clip_probe": {
+          "auc": 0.9911845716130595,
+          "tpr_at_test_roc_fpr_5pct": 0.9434097421203438,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.1619718309859155,
+          "true_positive_rate": 0.9892550143266475
+        },
+        "clip_fusion": {
+          "auc": 0.9518947495863432,
+          "tpr_at_test_roc_fpr_5pct": 0.5580229226361032,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.14788732394366197,
+          "true_positive_rate": 0.9892550143266475
+        },
+        "clip_gated": {
+          "auc": 0.9908213608297349,
+          "tpr_at_test_roc_fpr_5pct": 0.9434097421203438,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.09859154929577464,
+          "true_positive_rate": 0.9828080229226361
+        }
+      },
+      "marked": {
+        "payload": {
+          "auc": 0.5095708563703135,
+          "tpr_at_test_roc_fpr_5pct": 0.04369627507163324,
+          "validation_threshold": 0.8125,
+          "false_positive_rate": 0.007042253521126761,
+          "true_positive_rate": 0.012893982808022923
+        },
+        "resnet_probe": {
+          "auc": 0.9005105129343395,
+          "tpr_at_test_roc_fpr_5pct": 0.6941260744985673,
+          "validation_threshold": 0.5688568949699402,
+          "false_positive_rate": 0.11971830985915492,
+          "true_positive_rate": 0.8008595988538681
+        },
+        "resnet_fusion": {
+          "auc": 0.8662879857944227,
+          "tpr_at_test_roc_fpr_5pct": 0.5931232091690545,
+          "validation_threshold": 0.4600671222132044,
+          "false_positive_rate": 0.09154929577464789,
+          "true_positive_rate": 0.7277936962750716
+        },
+        "resnet_gated": {
+          "auc": 0.900956959522176,
+          "tpr_at_test_roc_fpr_5pct": 0.6941260744985673,
+          "validation_threshold": 0.5526642141907999,
+          "false_positive_rate": 0.11971830985915492,
+          "true_positive_rate": 0.8044412607449857
+        },
+        "clip_probe": {
+          "auc": 0.9912173614754429,
+          "tpr_at_test_roc_fpr_5pct": 0.9426934097421203,
+          "validation_threshold": 0.43839988112449646,
+          "false_positive_rate": 0.1619718309859155,
+          "true_positive_rate": 0.9899713467048711
+        },
+        "clip_fusion": {
+          "auc": 0.9525480245369062,
+          "tpr_at_test_roc_fpr_5pct": 0.586676217765043,
+          "validation_threshold": 0.21099856169799006,
+          "false_positive_rate": 0.14788732394366197,
+          "true_positive_rate": 0.9892550143266475
+        },
+        "clip_gated": {
+          "auc": 0.9910231445982485,
+          "tpr_at_test_roc_fpr_5pct": 0.9426934097421203,
+          "validation_threshold": 0.7394894,
+          "false_positive_rate": 0.09859154929577464,
+          "true_positive_rate": 0.9820916905444126
+        }
+      },
+      "payload_unmarked_mean": 0.4970003581661891,
+      "payload_unmarked_acceptance": 0.01002865329512894,
+      "payload_marked_mean": 0.5036712034383954,
+      "rows_each_AI_variant": 1396,
+      "real_rows": 284
+    }
+  },
+  "original_heads_sha256": {
+    "clip_attack.npz": "84b0278fe5db2850d22ee9226a4a01439fa2c685f62e30dda9ee2c1876910b86",
+    "clip_full.npz": "30cf885fbf4030471c15443ce8808173764ff193e775a61f7bb11329901278d4",
+    "clip_fusion_full.npz": "6c176dd5b5f945b077b284435231d7059b062e536acece8edf16c96a314d17b4",
+    "clip_fusion_no_attacks.npz": "82e0d0af1b9ffda4762a19aa38c9c32f79bee50c4cfa9705c38258ac4d303dc4",
+    "clip_fusion_no_matched_reals.npz": "28e13f227c55ae47a6c8aa1107fb90f9bb0581be00a02f45e933a1126338b88f",
+    "clip_no_attacks.npz": "824b0ef326336ebb0e9a08a4903a72ff41f74de923fb84c43765ef9b882fc19d",
+    "clip_no_matched_reals.npz": "f13d00686002d8ef3fd9e33154314362d2b05815238ea89fd8ce78275d6176ef",
+    "resnet_attack.npz": "5c1d6dbb547483772fe07be63d644655a849292271a0e46fd9e161377b5024ab",
+    "resnet_full.npz": "db427c4aeab4edf07496cf28d6f5fb766ce48f91baee53797df41ddb42b5d9f7",
+    "resnet_fusion_full.npz": "73fe3fba271ca02092201a559d707e903e9a5cc8897f2916306e5a2a865e365c",
+    "resnet_fusion_no_attacks.npz": "3291eb409fe0f228d41706c17fcbd8c5b1dda008f7948aa8c5743f4cabe7c6e2",
+    "resnet_fusion_no_matched_reals.npz": "4fe5761d915a03c632f9ae6c0a82f78762e463250ecafd7a26fcfc1a64791bbf",
+    "resnet_no_attacks.npz": "f47f3503aefdd5cd7f4e3e820facc8d708b13552e53a497ba5cd00467b7e1876",
+    "resnet_no_matched_reals.npz": "8d09c4ee813804b8490b123ad423b6bda9984576a80f52a4b0feef25d189c129"
+  },
+  "unmarked_manifest_sha256": "3574b7deead5b539eba82206ea5403c19cb37f3a5a9f8b6b674b3db9ce621e52"
+}

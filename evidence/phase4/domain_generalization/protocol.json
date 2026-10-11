@@ -1,0 +1,35 @@
+{
+  "locked_at_utc": "2026-10-10T04:30:48.960610+00:00",
+  "seed": 20260920,
+  "source_assignments_sha256": "ddb3506eb53e1c1d4ecbf10ebc8c1ed1d425abef55bf0117b4435b165b1730d2",
+  "prior_split_assignments_sha256": "a13d79be60450cf932d2226b0c5dd4ae3df590aaaf018291fe9ad729884fe6ea",
+  "design": "Same synthetic sources, source split, and thirteen training conditions for all regimes. Real training sources:700 COCO,700 OpenImages,or350+350. Fusion fitting and threshold calibration use separate source halves of the existing validation split:75 real sources each. Every regime is compared against identical held-out150 COCO+150 OpenImages and the same AI test sources.",
+  "threshold": "Lowest calibration-real logit threshold retaining whole ties and empirical FPR<=5%; fixed before reading test scores. Fusion and probe fitting never see calibration sources.",
+  "probe": {
+    "model": "L2 logistic regression",
+    "C": 1.0,
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "max_iter": 3000,
+    "random_state": 0
+  },
+  "fusion": "L2 logistic regression on probe probability and payload agreement, fitted only to fusion-fit validation sources; gated fallback uses fixed13/16 bits.",
+  "copy_design": "Train,fusion-fit,calibration:13conditions/source. Test:16real or30AI copies/source, including fourteen matched unmarked AI edits and three attacks held out of fitting/calibration.",
+  "source_inference": "All embeddings are existing cached features. No new images or backbone inference.",
+  "bootstrap": {
+    "replicates": 1000,
+    "unit": "source including all copies",
+    "strata": "real collection and AI generator",
+    "seed": 20261014,
+    "interval": "percentile95%"
+  },
+  "caveat": "Retrospective diagnostic on an already examined source pool; not a new untouched test. Source clustering does not establish semantic independence or eliminate pretraining overlap. Midjourney never enters fitting or calibration.",
+  "script_sha256": "d6c8b5d8aded4056f5e89b20614ed48d8d230d764368467bb1e97f85a86c735b",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "python": "3.12.14"
+}

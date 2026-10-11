@@ -1,0 +1,62 @@
+{
+  "frozen_at_utc": "2026-10-09T09:25:12.278792+00:00",
+  "model": "<external-cache>",
+  "cached_revision": "1e9f017a7b1eaefb63a1900ea6c5953d2739fd21",
+  "conditions": [
+    "vae_only",
+    "diffusion_strength0p25",
+    "diffusion_strength0p50"
+  ],
+  "scheduler": "DDIM from cached scheduler config",
+  "steps": 20,
+  "effective_denoising_steps": {
+    "0.25": 5,
+    "0.50": 10
+  },
+  "strengths": [
+    0.25,
+    0.5
+  ],
+  "prompt": "",
+  "guidance_scale": 1.0,
+  "seed": 20261009,
+  "batch_size": 1,
+  "working_size": [
+    256,
+    256
+  ],
+  "unet_text_dtype": "float16",
+  "vae_dtype": "float32",
+  "planned_covers": 408,
+  "planned_outputs": 1224,
+  "source_count": 204,
+  "sources_per_generator": 68,
+  "payload": "1011010010110100",
+  "source_selection": "Frozen phase3 watermark pairs, default payload, both watermarks, AI only",
+  "reuses_previously_examined_sources": true,
+  "new_independent_dataset": false,
+  "label_interpretation": "Input-source provenance; outputs are regenerated AI-source covers",
+  "no_larger_run_real_controls": true,
+  "exact_zhao_reproduction": false,
+  "selected_covers_sha256": "1c8a4d8f0dc6b87dc8ddef0c7a937ddf72b5d781e336294a3bc6e22aa00c6d05",
+  "all_covers_sha256": "135e225811223db0533f775fac888e6aa4964f8fc90749e398ead824e975b20e",
+  "checkpoint_sha256": {
+    "model_index.json": "eaaa586611ebaf7e860145373536bcd7ea7c6f23d40ac63e03884596f19f8df0",
+    "scheduler\\scheduler_config.json": "81c61cd6937a8b6c4ddf9eef06b64dafbaa66409d083786dc9426bec7f37a105",
+    "text_encoder\\config.json": "f4b1867cbf991587483d691aed58c41b25c28df75ae5b7f391ceae51269dfe68",
+    "text_encoder\\model.safetensors": "c1ef1f8a6d40562315dbb7a5224876f07fc7a8b46cc0a383c4f5b1227ddfeb58",
+    "tokenizer\\merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+    "tokenizer\\special_tokens_map.json": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+    "tokenizer\\tokenizer_config.json": "19d7b034cb0cc3ce9766c2231373ab8aa8991fc72e2c8f76558bfaae3de0d563",
+    "tokenizer\\vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+    "unet\\config.json": "f0567294c259d420cb4505c4c0ee37ee304342e4581ac2c87362b2e87965bbeb",
+    "unet\\diffusion_pytorch_model.safetensors": "4e0868e8fcae7d4ea8f8cdd3051704b3b47d741dc8e8629552d1a07f6efb8e32",
+    "vae\\config.json": "cd56fdbf7a5c01c4bf331a3640395c48d5456dcc58374e7b3d24a7e3fe42d42a",
+    "vae\\diffusion_pytorch_model.safetensors": "68a430f8a51413e80ecec6c13fff4b6b63e57600a2ec661a016a14fd1037fa4b"
+  },
+  "runtime_mode": "auto",
+  "auto_memory_policy": "Try all models on CUDA; on CUDA out-of-memory, resume with model CPU offload using the same model/operators/seeds",
+  "attention": "Default torch2 SDPA attention processor",
+  "vae_slicing": true,
+  "driver_sha256": "4383ad9fb46801b6bccdf1e5634703782a87635a6de8041c88441d60230c03b8"
+}

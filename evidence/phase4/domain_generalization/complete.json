@@ -1,0 +1,43 @@
+{
+  "completed_at_utc": "2026-10-10T04:36:43.478789+00:00",
+  "backbones": [
+    "clip",
+    "resnet"
+  ],
+  "regimes": [
+    "coco_only",
+    "openimages_only",
+    "joint"
+  ],
+  "diagnostic_systems": 18,
+  "test_sources": 1705,
+  "test_rows": 46950,
+  "thresholds_selected_on_test": false,
+  "original_heads_unchanged": true,
+  "device": "CPU; existing cached features only",
+  "head_sha256": {
+    "clip/coco_only/fusion.npz": "cfec9548e96cd83d9428d6e41c3f04d31a59f415a5eb5330711411920f9cf272",
+    "clip/coco_only/probe.npz": "23e08428270fa39a6f10fdc1e5bdccda502d01490d30b807177fa7c00a5cba79",
+    "clip/joint/fusion.npz": "1f0857d7e8a3e448e8bcc26cc027759e86ec645f44b944fdd30769760df5795a",
+    "clip/joint/probe.npz": "658d0c5da3bccd26ecb1353884a22d96acb1be2b3c3974b4f44a2721e203570d",
+    "clip/openimages_only/fusion.npz": "c8d578aaed39371dcae1af7d44a1d7ee70d4d6aa70a8bf2a4f2e87e6a3154a26",
+    "clip/openimages_only/probe.npz": "21f5451402c7797eea86cca97edf48f459ba9db926925891ed19592aba85b35c",
+    "resnet/coco_only/fusion.npz": "c2bd87faff5e74a92478a2f3cce5d7033014ed0e67c1073f161fb3c7b0073d3f",
+    "resnet/coco_only/probe.npz": "19888772986d62e192fbc285c5a9ef8ea7d31b4e1f4d12699758795173058a90",
+    "resnet/joint/fusion.npz": "887115788420d6cc2f1e518919660a9afc82c837a190c32c132f57876f4e36b0",
+    "resnet/joint/probe.npz": "62693597ecaf13674c11d3cff9cf758c17a0549f70b711a66e2b7cb296a7c9fc",
+    "resnet/openimages_only/fusion.npz": "e5d123faa7446feb261cfd3b8dea2d5d352233391fda970cc17cf1921f8b405e",
+    "resnet/openimages_only/probe.npz": "b08388876244fff498d716851a19a0ba9f3f0e5c50fb4900d8a551bd2f77f07e"
+  },
+  "result_sha256": {
+    "protocol.json": "b9e064040cc53a25a8b1aa190d5e6dc3a62e0bd03a029344183ac0c7c1323e38",
+    "summary.json": "e937ab21c4537cd138560b7beb8b32e0674998b6c118e467e63521121af8c559",
+    "metrics.csv": "04b2c3867dbfc5ebf45b8146acebf8156737362df8cdade312cfeb1a8747357d",
+    "source_assignments.csv": "ddb3506eb53e1c1d4ecbf10ebc8c1ed1d425abef55bf0117b4435b165b1730d2",
+    "attack_scope_protocol.json": "6879a5f0a075a81076a1b422d4ebb758d89d1709877f0c233a213454881ad088",
+    "attack_scope_false_positives.csv": "1303cdac89d4b9540180aeff887275e8326f377e1d9453b0c836fac5001f9454",
+    "frozen_seed_thresholds.json": "82b6ee450fb589b214dcbba845aa0f3d7b746eac56a77c2212f7b468b41192a3"
+  },
+  "script_sha256": "df8b846b46b5f6c37d19b50c631720037e7813e7e4f18867146b17794878c1cc",
+  "inference": "All photograph rates, AUC differences, and generator TPRs retain fixed fitted heads and fixed calibration thresholds; intervals use source-cluster resampling."
+}

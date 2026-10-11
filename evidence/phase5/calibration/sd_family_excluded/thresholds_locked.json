@@ -1,0 +1,395 @@
+{
+  "locked_at_utc": "2026-10-10T10:22:43.869056+00:00",
+  "protocol_sha256": "f1aeede5a2379c99b4dc3d39ab6d470233d64fd8b1908628b3bf5458af7f91bf",
+  "heads_locked_sha256": "419afacf269b4e8ae2067f43eeaabbb581834e7e0bbf16339bf7d02a497d531e",
+  "models": {
+    "resnet": {
+      "probe_sha256": "6eff6ee171e662fc6916e4406a25668292e449b1eab2d4fb2c39ef67a339b457",
+      "fusion_sha256": "60ade026c8a760a11cd246ce89273b38efcc41c2ea8669549286eea1f598e20e",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": 0.8715274443282075,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 7.74856207161719,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.2318325843539935,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 7.74856207161719,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 11.112544100960823,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 6.052563354704761,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 11.112544100960823,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": 0.030898690882560587,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 2.86616767818275,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.7181876153685973,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.86616767818275,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 3.068570484913499,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 2.4909618725520186,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.068570484913499,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": 0.8715274443282075,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 7.74856207161719,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 3.2318325843539935,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 7.74856207161719,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 11.112544100960823,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 6.052563354704761,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 11.112544100960823,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    },
+    "clip": {
+      "probe_sha256": "35fa973aa05781896b0573aa07e87a39753f5359132fd77cc2aa6ef6776c97a2",
+      "fusion_sha256": "8ad313bf83f88552eed735a87bb46a12be2b4188767edea4f1a2801fb2c4d6ac",
+      "systems": {
+        "probe": {
+          "per_image_core13": {
+            "threshold_logit": -4.913841208876666,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 1.2464603348726753,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": -2.505839371496811,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 1.2464603348726753,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 2.2725779470222855,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.4429464387630113,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.2725779470222855,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "fusion": {
+          "per_image_core13": {
+            "threshold_logit": -2.8850868086694605,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 1.8204586695248253,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": -1.965069152581564,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 1.8204586695248253,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 3.0407492350223677,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 2.8060154170092506,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 3.0407492350223677,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        },
+        "gated": {
+          "per_image_core13": {
+            "threshold_logit": -4.529165701431648,
+            "comparison": ">=",
+            "calibration_copy_fpr": 0.049877063575693714,
+            "calibration_real_sources": 219,
+            "calibration_real_rows": 2847,
+            "infinite_threshold": false
+          },
+          "conformal_core13": {
+            "threshold_logit": 1.2464603348726753,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": -1.9650685468139466,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 1.2464603348726753,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          },
+          "conformal_all16": {
+            "threshold_logit": 2.2725779470222855,
+            "infinite_threshold": false,
+            "comparison": ">",
+            "collection_cuts": {
+              "coco": {
+                "threshold_logit": 1.7921741026402547,
+                "calibration_real_sources": 144,
+                "k_one_indexed": 138,
+                "finite_source_marginal_bound": 0.04827586206896552,
+                "calibration_source_any_fpr": 0.041666666666666664,
+                "comparison": ">",
+                "infinite_threshold": false
+              },
+              "openimages": {
+                "threshold_logit": 2.2725779470222855,
+                "calibration_real_sources": 75,
+                "k_one_indexed": 73,
+                "finite_source_marginal_bound": 0.039473684210526314,
+                "calibration_source_any_fpr": 0.02666666666666667,
+                "comparison": ">",
+                "infinite_threshold": false
+              }
+            },
+            "globally_deployable": true
+          }
+        }
+      }
+    }
+  },
+  "test_threshold_tuning": false,
+  "paired_test_scored": false,
+  "policy_count": 18,
+  "calibration_scope": "Source-disjoint real-negative calibration, COCO144 plus Open Images75. Same core13/all16 bundle rules as the parent Phase5 protocol."
+}

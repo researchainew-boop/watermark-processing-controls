@@ -1,0 +1,579 @@
+{
+  "target": "All evaluated payloads verify for one source",
+  "source_unit": true,
+  "common_success_probability_descriptive_assumption": true,
+  "measurements": [
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 2,
+      "ci95": [
+        0.001189513435005115,
+        0.03496451112408706
+      ]
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 204,
+      "ci95": [
+        0.9820797693375605,
+        1.0
+      ]
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 202,
+      "ci95": [
+        0.965035488875913,
+        0.9988104865649949
+      ]
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 1,
+      "ci95": [
+        0.00012409920094080966,
+        0.02700790299789122
+      ]
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 200,
+      "ci95": [
+        0.9505597115198683,
+        0.9946323066828633
+      ]
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 201,
+      "ci95": [
+        0.9576269395922906,
+        0.9969569650543231
+      ]
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 2,
+      "ci95": [
+        0.001189513435005115,
+        0.03496451112408706
+      ]
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 204,
+      "ci95": [
+        0.9820797693375605,
+        1.0
+      ]
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 2,
+      "ci95": [
+        0.001189513435005115,
+        0.03496451112408706
+      ]
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 204,
+      "ci95": [
+        0.9820797693375605,
+        1.0
+      ]
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 202,
+      "ci95": [
+        0.965035488875913,
+        0.9988104865649949
+      ]
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 3,
+      "ci95": [
+        0.0030430349456769647,
+        0.04237306040770941
+      ]
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 203,
+      "ci95": [
+        0.9729920970021088,
+        0.9998759007990592
+      ]
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 183,
+      "ci95": [
+        0.8469536277936414,
+        0.9351401531654407
+      ]
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 1,
+      "ci95": [
+        0.00012409920094080966,
+        0.02700790299789122
+      ]
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 201,
+      "ci95": [
+        0.9576269395922906,
+        0.9969569650543231
+      ]
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 148,
+      "ci95": [
+        0.6588066258049765,
+        0.7854918290738663
+      ]
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 1,
+      "ci95": [
+        0.00012409920094080966,
+        0.02700790299789122
+      ]
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 1,
+      "ci95": [
+        0.00012409920094080966,
+        0.02700790299789122
+      ]
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 3,
+      "ci95": [
+        0.0030430349456769647,
+        0.04237306040770941
+      ]
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 204,
+      "ci95": [
+        0.9820797693375605,
+        1.0
+      ]
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 197,
+      "ci95": [
+        0.9305813593037446,
+        0.9860948390704972
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 3,
+      "ci95": [
+        0.0030430349456769647,
+        0.04237306040770941
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 204,
+      "ci95": [
+        0.9820797693375605,
+        1.0
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 194,
+      "ci95": [
+        0.911700798303106,
+        0.9762460592878947
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 5,
+      "ci95": [
+        0.008005098786001,
+        0.05626785982337712
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 204,
+      "ci95": [
+        0.9820797693375605,
+        1.0
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 199,
+      "ci95": [
+        0.9437321401766229,
+        0.991994901213999
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 3,
+      "ci95": [
+        0.0030430349456769647,
+        0.04237306040770941
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 204,
+      "ci95": [
+        0.9820797693375605,
+        1.0
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 198,
+      "ci95": [
+        0.93708529011927,
+        0.9891314631117681
+      ]
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 3,
+      "ci95": [
+        0.0030430349456769647,
+        0.04237306040770941
+      ]
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "input_origin_label": 0,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "input_origin_label": 1,
+      "n_sources": 204,
+      "all_payload_successes": 0,
+      "ci95": [
+        0.0,
+        0.01792023066243955
+      ]
+    }
+  ]
+}

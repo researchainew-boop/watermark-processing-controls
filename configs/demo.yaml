@@ -1,0 +1,35 @@
+seed: 20260920
+data:
+  real_dir: data/demo/real
+  synthetic_dir: data/demo/synthetic
+  manifest: data/demo_manifest.csv
+  processed_dir: data/demo_processed
+  extensions: [".png"]
+  default_generator: demoA
+  heldout_generator: demoB
+  train_fraction: 0.60
+  val_fraction: 0.20
+image:
+  width: 128
+  height: 128
+watermark:
+  method: dwt_dct
+  payload: "10110100"
+  strength: 24.0
+attacks:
+  - {name: identity, severity: 0}
+  - {name: jpeg, severity: 1}
+  - {name: blur, severity: 1}
+  - {name: regenerate, severity: 1, hold_out: true}
+model:
+  backbone: resnet18
+  pretrained: false
+  batch_size: 8
+  device: cpu
+evaluation:
+  bootstrap_samples: 50
+  output_dir: outputs/demo
+decision:
+  max_real_fpr: 0.10
+  min_coverage: 0.50
+  shortcut_slack: 0.05

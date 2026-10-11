@@ -1,0 +1,61 @@
+{
+  "tau_active": 0.8125,
+  "margin": 0.48,
+  "coverage": 0.8521577380952381,
+  "counts": {
+    "AI_MARKED": 15316,
+    "AI_FORENSIC": 4432,
+    "REAL": 3158,
+    "ABSTAIN": 3974
+  },
+  "balanced_accuracy_decided": 0.9658377145554757,
+  "group_positive_rate": {
+    "R-C": {
+      "n": 284,
+      "positive_rate": 0.03169014084507042,
+      "abstain_rate": 0.2746478873239437,
+      "marked_rate": 0.007042253521126761,
+      "forensic_rate": 0.02464788732394366
+    },
+    "R-T": {
+      "n": 3976,
+      "positive_rate": 0.035211267605633804,
+      "abstain_rate": 0.35110663983903423,
+      "marked_rate": 0.008048289738430584,
+      "forensic_rate": 0.02716297786720322
+    },
+    "R-S": {
+      "n": 284,
+      "positive_rate": 0.02112676056338028,
+      "abstain_rate": 0.29577464788732394,
+      "marked_rate": 0.0,
+      "forensic_rate": 0.02112676056338028
+    },
+    "S-U": {
+      "n": 1396,
+      "positive_rate": 0.6583094555873925,
+      "abstain_rate": 0.29656160458452724,
+      "marked_rate": 0.01002865329512894,
+      "forensic_rate": 0.6482808022922636
+    },
+    "S-W": {
+      "n": 1396,
+      "positive_rate": 1.0,
+      "abstain_rate": 0.0,
+      "marked_rate": 1.0,
+      "forensic_rate": 0.0
+    },
+    "S-A": {
+      "n": 19544,
+      "positive_rate": 0.8840564879246827,
+      "abstain_rate": 0.10243553008595989,
+      "marked_rate": 0.7097830536225952,
+      "forensic_rate": 0.1742734343020876
+    }
+  },
+  "artifact_shortcut": {
+    "delta_positive_rate_rt_minus_rc": 0.0035211267605633825,
+    "spoof_accept_rate": 0.02112676056338028,
+    "spoof_marked_rate": 0.0
+  }
+}

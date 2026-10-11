@@ -1,0 +1,13 @@
+{
+  "completed_at_utc": "2026-10-11T05:32:39.924829+00:00",
+  "images": 8912,
+  "counts_per_role": {
+    "test": 7312,
+    "calibration": 1600
+  },
+  "manifest_sha256": "57c0f520e85525ec3e27f0b1cb185be3178aa3d1bd78659db731f4a1142dd478",
+  "cover_manifest_sha256": "62a5dbceceb6713bfd3bf032f6e7654ff643c4a4867bdf26f0c05f8301bcf481",
+  "protocol_sha256": "97e835b79d0e52d978acb34b951e5ed210993146d7d4986d3f53bb2e06cdc764",
+  "amendment_sha256": "3090b9ba4cf132cef1433cb980835dce99303175814c05ffec76ed7ceffc31cc",
+  "decoder_run": false
+}

@@ -1,0 +1,20 @@
+{
+  "completed_at_utc": "2026-10-11T05:22:48.482763+00:00",
+  "pairs": 200,
+  "sources": 400,
+  "copies": 1200,
+  "script_sha256": "01d43848475256ee108ecf622515388c420198085cfe02582b8aa41395357bc3",
+  "output_sha256": {
+    "runtime_protocol.json": "d9499657fb58ea653a94aa6b355b8062795bff9a69030d020268489926b36d0d",
+    "selection_complete.json": "fe24f86b799f212289074f392978fdb6cc911d9bc3ea9defcce32ac7a38bef1a",
+    "generation_complete.json": "dc616a52f3c6d14cdc1fccdc73bad80ae85f6c52387ad2fe2061de5c7159f3b1",
+    "generated_sources.csv": "dd0da49bd240f3f08cda32762d761a08ea165357ab900673914d2997ec33829b",
+    "manifest.csv": "1df3ce0a4a2acce6c48c1d8a07d4c24df559b3fa6defac38282249d3d4321ec4",
+    "resnet_inference.json": "7beab64f877695633d25ef3b5ac89b6c2cccdd08612459adbdd22a12afb59455",
+    "clip_inference.json": "4cefdf5a69c5ab3cd9541b97609b1119cbec0154d65e3e16c42b0d0b708ecb62",
+    "metrics.csv": "052e82e837bd5affaf41ea29848664e0f3f943f734d4cc53b6985d4b40e8dbc4",
+    "summary.json": "56f861603158ece0cbde8432096fdb15182f10543a2cd97de5a58a4347932ba4"
+  },
+  "test_refitting": false,
+  "test_threshold_tuning": false
+}

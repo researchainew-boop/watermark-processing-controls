@@ -1,0 +1,24 @@
+{
+  "frozen_at_utc": "2026-10-09T03:51:27.427461+00:00",
+  "agreement_threshold": 0.8125,
+  "bits_required": 13,
+  "payload_bits": 16,
+  "rule": "existing fusion if agreement >=13/16, otherwise exact passive probe",
+  "retrospective_old_test": true,
+  "fresh_test_tuning_allowed": false,
+  "marked_shares": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "prevalence_scope": "Clean paired unmarked/marked AI; real clean controls held fixed. No claim about unobserved unmarked attacks.",
+  "script_sha256": "0aa2a6c5f3e5738bb5cdb3eee1632c9fb3fbc89f0d5088b84ae7c21c833d430d"
+}

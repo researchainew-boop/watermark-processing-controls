@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-10-11T05:22:17.736925+00:00",
+  "manifest_sha256": "1df3ce0a4a2acce6c48c1d8a07d4c24df559b3fa6defac38282249d3d4321ec4",
+  "runtime_protocol_sha256": "d9499657fb58ea653a94aa6b355b8062795bff9a69030d020268489926b36d0d",
+  "model": "torchvision ResNet18_Weights.DEFAULT / ImageNet1K_V1",
+  "preprocessing": "<function image_to_tensor at 0x0000022A8607F4C0>",
+  "anchor_relative_l2": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "images": 1200,
+  "completed_at_utc": "2026-10-11T05:22:24.876419+00:00",
+  "embedding_sha256": "9ccd6e3b09e636f70dc2e410b63e39789780fc40cac4cc06d79e875ad7dd0747"
+}

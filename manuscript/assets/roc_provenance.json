@@ -1,0 +1,69 @@
+{
+  "created_at_utc": "2026-10-11T05:33:44.377029+00:00",
+  "evaluation_scope": "phase5_caption_paired_identity",
+  "condition": "identity",
+  "split": "test",
+  "training_regime": "joint",
+  "rows": 400,
+  "sources": 400,
+  "pairs": 200,
+  "real_sources": 200,
+  "generated_sources": 200,
+  "unmarked_only": true,
+  "saved_scores_only": true,
+  "refits": false,
+  "inference": false,
+  "test_threshold_tuning": false,
+  "curve_kind": "empirical step ROC, all thresholds retained",
+  "auc_computation": "ROC-AUC on raw saved logits, checked against locked summary",
+  "auc": {
+    "ResNet probe": 0.7291749999999999,
+    "ResNet fusion": 0.6638,
+    "ResNet gate": 0.7299500000000001,
+    "CLIP probe": 0.8200000000000001
+  },
+  "score_columns": {
+    "ResNet probe": "joint_resnet_probe_logit",
+    "ResNet fusion": "joint_resnet_fusion_logit",
+    "ResNet gate": "joint_resnet_gated_logit",
+    "CLIP probe": "joint_clip_probe_logit"
+  },
+  "display": {
+    "width_inches": 3.5,
+    "height_inches": 2.4,
+    "minimum_font_points": 8,
+    "FPR_scale": "log",
+    "FPR_left_edge": 0.001,
+    "zero_FPR_note": "FPR = 0 is drawn at the left edge.",
+    "smallest_nonzero_empirical_FPR": 0.005,
+    "reference_FPR": 0.05,
+    "threshold_selection": false
+  },
+  "identical_empirical_ROC_curves": [],
+  "script_sha256": "93964570948c126450badaedebdd309257f73835ced9be6f9b98e19d8faf0c8f",
+  "input_sha256": {
+    "outputs/phase5/paired_content/predictions.csv": "fde7254c38bb0ad58a78e9c25e6a2b0b1c04bbdeab7bf98086f7556af0029683",
+    "outputs/phase5/paired_content/manifest.csv": "1df3ce0a4a2acce6c48c1d8a07d4c24df559b3fa6defac38282249d3d4321ec4",
+    "outputs/phase5/paired_content/summary.json": "56f861603158ece0cbde8432096fdb15182f10543a2cd97de5a58a4347932ba4",
+    "outputs/phase5/paired_content/metrics.csv": "052e82e837bd5affaf41ea29848664e0f3f943f734d4cc53b6985d4b40e8dbc4",
+    "outputs/phase5/paired_content/complete.json": "5794888e161ea4edba17e30eb9a445d97699356639d7799f828fe2972e54c731",
+    "outputs/phase5/paired_content/runtime_protocol.json": "d9499657fb58ea653a94aa6b355b8062795bff9a69030d020268489926b36d0d",
+    "outputs/phase5/paired_content/resnet_inference.json": "7beab64f877695633d25ef3b5ac89b6c2cccdd08612459adbdd22a12afb59455",
+    "outputs/phase5/paired_content/clip_inference.json": "4cefdf5a69c5ab3cd9541b97609b1119cbec0154d65e3e16c42b0d0b708ecb62"
+  },
+  "locked_head_sha256": {
+    "outputs/phase3/controls/split_seeds/20260920/resnet_full.npz": "08cf3bd91ccc3124983752a989f4d68935e1f7ba4859fa676dd7ad9dbfa87e0f",
+    "outputs/phase5/calibration/20260920/resnet_fusion.npz": "c9f5af977eb673a83ecc692a53a022cc04be155dd2af81e2e1bd2b8850eae3f6",
+    "outputs/phase3/controls/split_seeds/20260920/clip_full.npz": "d57c6c892f3d4baf212bc2dc9decf3d5305fbee798102991a5c8dec3478f413d",
+    "outputs/phase5/calibration/20260920/clip_fusion.npz": "af8db3f3472949a351fa490314fadba372f6681a10550e9d6458c6c6f50c678f"
+  },
+  "archived_asset_sha256": {
+    "manuscript/archive/pre_phase5_resnet_roc.pdf": "4ea246ba456235b209729e4a4d296178843492df2bd9553adf47c79b9179c0ba",
+    "manuscript/archive/pre_phase5_resnet_roc.png": "9c274fb31586d9097cd10013167305b4919bd862680a022e14bbe27bf41a3522",
+    "manuscript/archive/pre_phase5_roc_provenance.json": "d90ea783a0017a56764575cde45d022d4b8b28918b49e64ec684c2c3caec2c92"
+  },
+  "output_sha256": {
+    "manuscript/assets/resnet_roc.pdf": "914fdb2ae286007c45ab7853e714428b9b0396c2048bb9468d76585025fc9fd9",
+    "manuscript/assets/resnet_roc.png": "f9ee57b9b2f8dc81a287d650c8f2b95581600c18ea409dfadbafc02d51afd0d6"
+  }
+}

@@ -1,0 +1,99 @@
+% Verified against primary publisher/proceedings and dataset pages on Oct. 7 and 9, 2026.
+% These are bibliography entries only; embed inside thebibliography in main.tex.
+
+% Primary: https://openaccess.thecvf.com/content/ICCV2025/html/Bui_TrustMark_Robust_Watermarking_and_Watermark_Removal_for_Arbitrary_Resolution_Images_ICCV_2025_paper.html
+\bibitem{trustmark}
+T.~Bui, S.~Agarwal, and J.~Collomosse, ``{TrustMark}: Robust watermarking and watermark removal for arbitrary resolution images,'' in \emph{Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV)}, 2025, pp.~18629--18639.
+
+% Primary: https://arxiv.org/abs/2108.01073 ; https://sde-image-editing.github.io/
+\bibitem{sdedit}
+C.~Meng \emph{et al.}, ``{SDEdit}: Guided image synthesis and editing with stochastic differential equations,'' in \emph{Proc. Int. Conf. Learn. Represent. (ICLR)}, 2022.
+
+% Primary: https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html
+\bibitem{ldm}
+R.~Rombach, A.~Blattmann, D.~Lorenz, P.~Esser, and B.~Ommer, ``High-resolution image synthesis with latent diffusion models,'' in \emph{Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)}, 2022, pp.~10684--10695.
+
+% Primary: https://openaccess.thecvf.com/content/ICCV2023/html/Fernandez_The_Stable_Signature_Rooting_Watermarks_in_Latent_Diffusion_Models_ICCV_2023_paper.html
+\bibitem{signature}
+P.~Fernandez, G.~Couairon, H.~J\'egou, M.~Douze, and T.~Furon, ``The stable signature: Rooting watermarks in latent diffusion models,'' in \emph{Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV)}, 2023, pp.~22466--22477.
+
+% Primary: https://proceedings.neurips.cc/paper_files/paper/2023/hash/b54d1757c190ba20dbc4f9e4a2f54149-Abstract-Conference.html
+\bibitem{treering}
+Y.~Wen, J.~Kirchenbauer, J.~Geiping, and T.~Goldstein, ``Tree-rings watermarks: Invisible fingerprints for diffusion images,'' in \emph{Adv. Neural Inf. Process. Syst.}, vol.~36, 2023.
+
+% Primary: https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_CNN-Generated_Images_Are_Surprisingly_Easy_to_Spot..._for_Now_CVPR_2020_paper.html
+\bibitem{cnndetect}
+S.-Y.~Wang, O.~Wang, R.~Zhang, A.~Owens, and A.~A. Efros, ``{CNN}-generated images are surprisingly easy to spot\ldots\ for now,'' in \emph{Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)}, 2020.
+
+% Primary: https://openaccess.thecvf.com/content/ICCV2023/html/Wang_DIRE_for_Diffusion-Generated_Image_Detection_ICCV_2023_paper.html
+\bibitem{dire}
+Z.~Wang \emph{et al.}, ``{DIRE} for diffusion-generated image detection,'' in \emph{Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV)}, 2023, pp.~22445--22455.
+
+% Primary: https://storage.googleapis.com/openimages/web/factsfigures_v7.html ; https://research.google/pubs/the-open-images-dataset-v4-unified-image-classification-object-detection-and-visual-relationship-detection-at-scale/
+\bibitem{openimages}
+A.~Kuznetsova \emph{et al.}, ``The {Open Images} dataset {V4}: Unified image classification, object detection, and visual relationship detection at scale,'' \emph{Int. J. Comput. Vis.}, 2020.
+
+% Primary: https://openaccess.thecvf.com/content/CVPR2023/html/Ojha_Towards_Universal_Fake_Image_Detectors_That_Generalize_Across_Generative_Models_CVPR_2023_paper.html
+\bibitem{univfd}
+U.~Ojha, Y.~Li, and Y.~J. Lee, ``Towards universal fake image detectors that generalize across generative models,'' in \emph{Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)}, 2023, pp.~24480--24489.
+
+% Primary: https://papers.neurips.cc/paper_files/paper/2023/hash/f4d4a021f9051a6c18183b059117e8b5-Abstract-Datasets_and_Benchmarks.html
+\bibitem{genimage}
+M.~Zhu \emph{et al.}, ``{GenImage}: A million-scale benchmark for detecting {AI}-generated image,'' in \emph{Adv. Neural Inf. Process. Syst.}, vol.~36, 2023.
+
+% Primary: https://proceedings.neurips.cc/paper_files/paper/2024/hash/10272bfd0371ef960ec557ed6c866058-Abstract-Conference.html
+\bibitem{zhao}
+X.~Zhao \emph{et al.}, ``Invisible image watermarks are provably removable using generative {AI},'' in \emph{Adv. Neural Inf. Process. Syst.}, vol.~37, 2024.
+
+% Primary: https://arxiv.org/abs/2405.08363 (authors' paper).
+\bibitem{unmarker}
+A.~Kassis and U.~Hengartner, ``{UnMarker}: A universal attack on defensive image watermarking,'' in \emph{Proc. IEEE Symp. Security Privacy}, 2025, doi:~10.1109/SP61157.2025.00005.
+
+% Primary: https://arxiv.org/abs/2303.14126 (authors' paper); https://doi.org/10.1109/ACCESS.2024.3356122 (published version).
+\bibitem{cifake}
+J.~J. Bird and A.~Lotfi, ``{CIFAKE}: Image classification and explainable identification of {AI}-generated synthetic images,'' \emph{IEEE Access}, vol.~12, pp.~15642--15650, 2024, doi:~10.1109/ACCESS.2024.3356122.
+
+% Primary: https://thescipub.com/abstract/jcssp.2007.740.746
+% Cite this as prior work on the DWT-DCT family; the project implements its own LL coefficient-order baseline.
+\bibitem{alhaj}
+A.~Al-Haj, ``Combined {DWT-DCT} digital image watermarking,'' \emph{J. Comput. Sci.}, vol.~3, no.~9, pp.~740--746, 2007, doi:~10.3844/jcssp.2007.740.746.
+
+% Primary: https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content
+\bibitem{nist}
+B.~Chandra, J.~Dunietz, K.~Roberts, Y.~Lee, P.~Fontana, and G.~Awad, ``Reducing risks posed by synthetic content: An overview of technical approaches to digital content transparency,'' Nat. Inst. Standards Technol., NIST AI 100-4, 2024, doi:~10.6028/NIST.AI.100-4.
+
+% Primary: https://www.ijcai.org/proceedings/2024/0673
+\bibitem{advmark}
+X.~Wu, X.~Liao, B.~Ou, Y.~Liu, and Z.~Qin, ``Are watermarks bugs for deepfake detectors? Rethinking proactive forensics,'' in \emph{Proc. 33rd Int. Joint Conf. Artif. Intell. (IJCAI)}, 2024, pp.~6089--6097, doi:~10.24963/ijcai.2024/673.
+
+% Primary: https://www.microsoft.com/en-us/research/wp-content/uploads/2014/09/LinECCV14coco.pdf
+\bibitem{coco}
+T.-Y.~Lin \emph{et al.}, ``Microsoft {COCO}: Common objects in context,'' in \emph{Proc. Eur. Conf. Comput. Vis. (ECCV)}, 2014, pp.~740--755.
+
+% Primary: https://aclanthology.org/2023.acl-long.51/
+\bibitem{diffusiondb}
+Z.~J. Wang, E.~Montoya, D.~Munechika, H.~Yang, B.~Hoover, and D.~H. Chau, ``{DiffusionDB}: A large-scale prompt gallery dataset for text-to-image generative models,'' in \emph{Proc. 61st Annu. Meeting Assoc. Comput. Linguistics}, 2023, pp.~893--911, doi:~10.18653/v1/2023.acl-long.51.
+
+% Primary card states MIT; this is the curator's declaration, not verification of every image's rights.
+\bibitem{dalle}
+ehristoforu, ``{DALL}$\cdot${E}~3 images,'' Hugging Face dataset, accessed Oct.~7, 2026. [Online]. Available: \url{https://huggingface.co/datasets/ehristoforu/dalle-3-images}
+
+% Primary card identifies curator Deepankar Sharma and Midjourney/ImageNet content; no explicit license is displayed.
+\bibitem{midjourney}
+D.~Sharma, ``{AI} generated images: {Midjourney},'' Hugging Face dataset, accessed Oct.~7, 2026. [Online]. Available: \url{https://huggingface.co/datasets/ideepankarsharma2003/AIGeneratedImages_Midjourney}
+
+% Primary: https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html
+\bibitem{resnet}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image recognition,'' in \emph{Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)}, 2016, pp.~770--778.
+
+% Primary: https://proceedings.mlr.press/v139/radford21a.html
+\bibitem{clip}
+A.~Radford \emph{et al.}, ``Learning transferable visual models from natural language supervision,'' in \emph{Proc. 38th Int. Conf. Mach. Learn.}, vol.~139, 2021, pp.~8748--8763.
+
+% Primary: https://arxiv.org/abs/2107.07511v6, verified Oct. 10, 2026.
+\bibitem{conformal}
+A.~N. Angelopoulos and S.~Bates, ``A gentle introduction to conformal prediction and distribution-free uncertainty quantification,'' arXiv:2107.07511v6, 2022.
+
+% Primary: https://arxiv.org/abs/2311.05556, verified Oct. 10, 2026.
+\bibitem{lcm}
+S.~Luo \emph{et al.}, ``{LCM-LoRA}: A universal stable-diffusion acceleration module,'' arXiv:2311.05556, 2023.

@@ -1,0 +1,47 @@
+{
+  "frozen_at_utc": "2026-10-09T04:09:30.795519+00:00",
+  "model": "<external-cache>",
+  "cached_revision": "1e9f017a7b1eaefb63a1900ea6c5953d2739fd21",
+  "conditions": [
+    "vae_only",
+    "diffusion_strength0p25",
+    "diffusion_strength0p50"
+  ],
+  "scheduler": "DDIM from cached scheduler config",
+  "steps": 20,
+  "strengths": [
+    0.25,
+    0.5
+  ],
+  "prompt": "",
+  "guidance_scale": 1.0,
+  "seed": 20261009,
+  "batch_size": 1,
+  "working_size": [
+    256,
+    256
+  ],
+  "unet_text_dtype": "float16",
+  "vae_dtype": "float32",
+  "planned_covers": 96,
+  "planned_outputs": 288,
+  "source_count": 48,
+  "source_selection": "Frozen watermark pairs; default payload and unmarked controls",
+  "label_interpretation": "Input-source provenance; reconstructed photographs have generated pixels",
+  "checkpoint_sha256": {
+    "model_index.json": "eaaa586611ebaf7e860145373536bcd7ea7c6f23d40ac63e03884596f19f8df0",
+    "scheduler\\scheduler_config.json": "81c61cd6937a8b6c4ddf9eef06b64dafbaa66409d083786dc9426bec7f37a105",
+    "text_encoder\\config.json": "f4b1867cbf991587483d691aed58c41b25c28df75ae5b7f391ceae51269dfe68",
+    "text_encoder\\model.safetensors": "c1ef1f8a6d40562315dbb7a5224876f07fc7a8b46cc0a383c4f5b1227ddfeb58",
+    "tokenizer\\merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+    "tokenizer\\special_tokens_map.json": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+    "tokenizer\\tokenizer_config.json": "19d7b034cb0cc3ce9766c2231373ab8aa8991fc72e2c8f76558bfaae3de0d563",
+    "tokenizer\\vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+    "unet\\config.json": "f0567294c259d420cb4505c4c0ee37ee304342e4581ac2c87362b2e87965bbeb",
+    "unet\\diffusion_pytorch_model.safetensors": "4e0868e8fcae7d4ea8f8cdd3051704b3b47d741dc8e8629552d1a07f6efb8e32",
+    "vae\\config.json": "cd56fdbf7a5c01c4bf331a3640395c48d5456dcc58374e7b3d24a7e3fe42d42a",
+    "vae\\diffusion_pytorch_model.safetensors": "68a430f8a51413e80ecec6c13fff4b6b63e57600a2ec661a016a14fd1037fa4b"
+  },
+  "covers_sha256": "4ec315af21f75334386f8065423e547127617d40a4581d11eeb8bda8fb2df1fd",
+  "exact_zhao_reproduction": false
+}

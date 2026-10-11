@@ -1,0 +1,5 @@
+# Recorded caption-paired ROC figure environment; Python 3.12.14
+matplotlib==3.9.3
+numpy==2.5.3
+scikit-learn==1.9.1
+scipy==1.18.1

@@ -1,0 +1,37 @@
+{
+  "completed_at_utc": "2026-10-10T04:27:55.152780+00:00",
+  "analysis_plan_sha256": "d20fd2e9a1f974152797bbc4f7851ade3bed694654ffbfdb4ed3e8b633dc6d50",
+  "reporting_script_sha256": "de0b44897b6c9ecea7f73f9bd014cbb20378d8f5346869e7761066b1e93bdb89",
+  "input_sha256": {
+    "outputs/phase3/watermarks/measurements.csv": "70a51467ea4fca4634997ef6fa89048869317b52c096a235479446167c9d3d0d",
+    "outputs/phase3/watermarks/base_covers.csv": "135e225811223db0533f775fac888e6aa4964f8fc90749e398ead824e975b20e",
+    "outputs/phase3/watermarks/attack_manifest.csv": "80efd3c2670cf22657689ea76b3253d5d7a88ac549b35315f85400900daee99a",
+    "outputs/phase3/watermarks/selection.json": "e8fa360054c06cb9002bc7793240bac3af1b9dda2423608b3b3b374d9a126cf2",
+    "outputs/phase3/watermarks/analysis_provenance.json": "95567f04dd2bb56f9a790b25b5000108e03b024963a28b1e8fc33c9b5bb62266"
+  },
+  "measurement_rows": 42432,
+  "transformed_covers": 21216,
+  "covers": 1632,
+  "conditions": 13,
+  "decoders_per_transformed_cover": 2,
+  "source_counts": {
+    "photograph": 204,
+    "unmarked_ai": 204
+  },
+  "matched_ai_covers_per_method_per_payload": 204,
+  "cross_method_rows": 15912,
+  "unmarked_control_measurement_rows": 10608,
+  "matched_marked_measurement_rows": 15912,
+  "saved_fixed_rule_verified_flags_recomputed": 42432,
+  "expected_trustmark_schema": 1,
+  "expected_trustmark_message_bits": 61,
+  "all_checks_passed": true,
+  "no_new_inference_or_test_calibration": true,
+  "outputs_sha256": {
+    "control_per_condition.csv": "842645a08eb5dfc4fd2ccc8030cd6dbc230a88092acb19b3c5d36e77f9e5cf1d",
+    "control_overall.csv": "62eeaffb23c66e582457cc145b04edeec81e22fa9d926b5a00df6e035d783d62",
+    "cross_method_acceptance.csv": "feb7b7eaf1dbd504f966b3155768cb98b79dfcd525ab01c2183dd1010a399ed1",
+    "table_ready.csv": "1a7edc09b0a05406168b5a4956d55444f2dceef3a615d522d5d97e0303d37111",
+    "summary.json": "ad867fa6af1324a5b6adbc05b26217ffe88355e8358177546fd9715cda35fdb7"
+  }
+}

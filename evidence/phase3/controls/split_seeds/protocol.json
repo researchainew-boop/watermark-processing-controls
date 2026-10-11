@@ -1,0 +1,41 @@
+{
+  "frozen_at_utc": "2026-10-09T05:50:00.174865+00:00",
+  "seeds": [
+    20260920,
+    20260921,
+    20260922,
+    20260923,
+    20260924
+  ],
+  "sources": 6823,
+  "seed_assignment_sha256": "a13d79be60450cf932d2226b0c5dd4ae3df590aaaf018291fe9ad729884fe6ea",
+  "source_pool_sha256": {
+    "old": "50500337f7ee26fb28fd29e564982bd32864895d9002d9c8f3ca761dc0ce3112",
+    "openimages": "d9839ff81f9665e30d807cd00d284db78c053d0eef983fd711a681ac001d67dd"
+  },
+  "source_unit": "Every derivative follows its source. Training/validation use13originalconditions; test uses30AI or16real rows. AllMidjourney always test.",
+  "heldout_rows_missing_CLIP": 6939,
+  "heldout_source_units_missing_CLIP": 2313,
+  "heldout_manifest_sha256": "50c5973786b34bdad1f01952e8c652e74f1ac9109497f4e599c49c8d5f72a12d",
+  "extra_ResNet_features_required": 0,
+  "test_rows_per_seed": 49158,
+  "train_rows_per_seed": 53326,
+  "validation_rows_per_seed": 11414,
+  "inference_performed_on_new_controls": false,
+  "caveat": "Retrospective diagnostic splits of previously examined original sources plus separately selected Open Images; excludes the fresh192.",
+  "calibration": "Fusion fitted only on validation, probe only on training; gate fixed13/16. Test-ROC TPR5 descriptive.",
+  "script_sha256": "9dcb31a1e8114b32c44da2933c57d72ddbe9a8e068a7c90a0ace8146980071d1",
+  "expanded_test_amendment_before_extra_inference": {
+    "amended_at_utc": "2026-10-09T06:10:34.940699+00:00",
+    "old_test_design": "16 conditions per source, edited AI marked only.",
+    "new_test_design": "16originalconditions/source plus14unmarkededits/AI source;30rows/AI and16rows/real.",
+    "reason": "Matched unmarked AI editing control in every seed test, keeping training/validation unchanged.",
+    "extra_unmarked_rows": 19600,
+    "extra_unmarked_source_units": 1400,
+    "manifest_sha256": "0a7b71132ce5405c732d2b0a55b79e2b76163b4d0804dffb7944b20e29cd8eae",
+    "extra_detector_inference_performed": false,
+    "training_or_validation_eligibility": false
+  },
+  "test_AI_sources_per_seed": 1405,
+  "test_real_sources_per_seed": 438
+}

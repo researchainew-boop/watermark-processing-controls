@@ -1,0 +1,9 @@
+{
+  "completed_at_utc": "2026-10-09T05:40:22.600774+00:00",
+  "sources": 1000,
+  "manifest_sha256": "d9839ff81f9665e30d807cd00d284db78c053d0eef983fd711a681ac001d67dd",
+  "inference_performed": false,
+  "selection": "SHA256 order by fixed seed; official unsigned S3 Open Images test subset; minimum side 256; exact raw pixel and 8x8 ahash <=2 exclusions against all original 6000, all fresh 192, and earlier selected new images.",
+  "processing": "Native pixels read as BGR, metadata rotation applied, INTER_AREA resize to 256 square, PNG; matches Experiment 1 processing. JPEG control remains Experiment 2.",
+  "orientation_audit_at_utc": "2026-10-09T05:41:15.422909+00:00"
+}

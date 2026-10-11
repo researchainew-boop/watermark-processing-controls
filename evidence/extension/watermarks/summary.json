@@ -1,0 +1,5329 @@
+{
+  "measurements": [
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4895833333333333,
+      "mean_raw_codeword_accuracy": 0.4895833333333333,
+      "mean_psnr_vs_input_cover": 30.287075380715766,
+      "mean_ssim_vs_input_cover": 0.9089573749990093
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9930555555555556,
+      "mean_raw_codeword_accuracy": 0.9930555555555556,
+      "mean_psnr_vs_input_cover": 30.048110730727064,
+      "mean_ssim_vs_input_cover": 0.9044759542444303
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4609375,
+      "mean_raw_codeword_accuracy": 0.4609375,
+      "mean_psnr_vs_input_cover": 28.840891232340965,
+      "mean_ssim_vs_input_cover": 0.8949310187442074
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9973958333333334,
+      "mean_raw_codeword_accuracy": 0.9973958333333334,
+      "mean_psnr_vs_input_cover": 28.507273616654743,
+      "mean_ssim_vs_input_cover": 0.856914741428807
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4921875,
+      "mean_raw_codeword_accuracy": 0.4921875,
+      "mean_psnr_vs_input_cover": 29.965970866100648,
+      "mean_ssim_vs_input_cover": 0.9109704155748481
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9973958333333334,
+      "mean_raw_codeword_accuracy": 0.9973958333333334,
+      "mean_psnr_vs_input_cover": 32.204391841249276,
+      "mean_ssim_vs_input_cover": 0.9361760116129677
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 32.05436404370569,
+      "mean_ssim_vs_input_cover": 0.9209706906779729
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.984375,
+      "mean_raw_codeword_accuracy": 0.984375,
+      "mean_psnr_vs_input_cover": 29.432666734277166,
+      "mean_ssim_vs_input_cover": 0.9203371096915163
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.5158333333333333,
+      "mean_psnr_vs_input_cover": 30.287075380715766,
+      "mean_ssim_vs_input_cover": 0.9089573749990093
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9993055555555556,
+      "mean_psnr_vs_input_cover": 30.31941060538088,
+      "mean_ssim_vs_input_cover": 0.9105363256220839
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4765625,
+      "mean_raw_codeword_accuracy": 0.5275000000000001,
+      "mean_psnr_vs_input_cover": 28.840891232340965,
+      "mean_ssim_vs_input_cover": 0.8949310187442074
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9995833333333334,
+      "mean_psnr_vs_input_cover": 28.78333733775392,
+      "mean_ssim_vs_input_cover": 0.8644650437564302
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.51875,
+      "mean_psnr_vs_input_cover": 29.965970866100648,
+      "mean_ssim_vs_input_cover": 0.9109704155748481
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.52211496848704,
+      "mean_ssim_vs_input_cover": 0.9425365741111005
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5078125,
+      "mean_raw_codeword_accuracy": 0.50125,
+      "mean_psnr_vs_input_cover": 32.05436404370569,
+      "mean_ssim_vs_input_cover": 0.9209706906779729
+    },
+    {
+      "condition": "blur_s1",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9983333333333334,
+      "mean_psnr_vs_input_cover": 29.652779509901677,
+      "mean_ssim_vs_input_cover": 0.9246073589987204
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4791666666666667,
+      "mean_raw_codeword_accuracy": 0.4791666666666667,
+      "mean_psnr_vs_input_cover": 27.969131833098924,
+      "mean_ssim_vs_input_cover": 0.8536411603871984
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9817708333333334,
+      "mean_raw_codeword_accuracy": 0.9817708333333334,
+      "mean_psnr_vs_input_cover": 27.6954257694345,
+      "mean_ssim_vs_input_cover": 0.8483373188092505
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.453125,
+      "mean_raw_codeword_accuracy": 0.453125,
+      "mean_psnr_vs_input_cover": 26.641257004605933,
+      "mean_ssim_vs_input_cover": 0.8341001114734656
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.984375,
+      "mean_raw_codeword_accuracy": 0.984375,
+      "mean_psnr_vs_input_cover": 26.4321742320389,
+      "mean_ssim_vs_input_cover": 0.7844990396393388
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4765625,
+      "mean_raw_codeword_accuracy": 0.4765625,
+      "mean_psnr_vs_input_cover": 27.643845255867802,
+      "mean_ssim_vs_input_cover": 0.8558240408845783
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9947916666666666,
+      "mean_raw_codeword_accuracy": 0.9947916666666666,
+      "mean_psnr_vs_input_cover": 29.69150665490417,
+      "mean_ssim_vs_input_cover": 0.8905266898407224
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5078125,
+      "mean_raw_codeword_accuracy": 0.5078125,
+      "mean_psnr_vs_input_cover": 29.622293238823037,
+      "mean_ssim_vs_input_cover": 0.8709993288035515
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9661458333333334,
+      "mean_raw_codeword_accuracy": 0.9661458333333334,
+      "mean_psnr_vs_input_cover": 26.962596421360434,
+      "mean_ssim_vs_input_cover": 0.8699862269476902
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.51,
+      "mean_psnr_vs_input_cover": 27.969131833098924,
+      "mean_ssim_vs_input_cover": 0.8536411603871984
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9990277777777778,
+      "mean_psnr_vs_input_cover": 27.881083941998547,
+      "mean_ssim_vs_input_cover": 0.8556235698360483
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.5175,
+      "mean_psnr_vs_input_cover": 26.641257004605933,
+      "mean_ssim_vs_input_cover": 0.8341001114734656
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9995833333333334,
+      "mean_psnr_vs_input_cover": 26.62527440242471,
+      "mean_ssim_vs_input_cover": 0.7931447683924979
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4921875,
+      "mean_raw_codeword_accuracy": 0.5075000000000001,
+      "mean_psnr_vs_input_cover": 27.643845255867802,
+      "mean_ssim_vs_input_cover": 0.8558240408845783
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 29.90091922046952,
+      "mean_ssim_vs_input_cover": 0.8986509746841156
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4921875,
+      "mean_raw_codeword_accuracy": 0.505,
+      "mean_psnr_vs_input_cover": 29.622293238823037,
+      "mean_ssim_vs_input_cover": 0.8709993288035515
+    },
+    {
+      "condition": "blur_s2",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9974999999999999,
+      "mean_psnr_vs_input_cover": 27.117058203101404,
+      "mean_ssim_vs_input_cover": 0.8750749664315313
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4947916666666667,
+      "mean_raw_codeword_accuracy": 0.4947916666666667,
+      "mean_psnr_vs_input_cover": 15.424652112937915,
+      "mean_ssim_vs_input_cover": 0.31769386573230474
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.4921875,
+      "mean_raw_codeword_accuracy": 0.4921875,
+      "mean_psnr_vs_input_cover": 14.702097444876062,
+      "mean_ssim_vs_input_cover": 0.337250154321529
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 14.43765505137249,
+      "mean_ssim_vs_input_cover": 0.275825781474342
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5,
+      "mean_raw_codeword_accuracy": 0.5,
+      "mean_psnr_vs_input_cover": 15.79744074012278,
+      "mean_ssim_vs_input_cover": 0.3316548130035836
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5,
+      "mean_raw_codeword_accuracy": 0.5,
+      "mean_psnr_vs_input_cover": 15.622721263449694,
+      "mean_ssim_vs_input_cover": 0.3083609227958518
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.484375,
+      "mean_psnr_vs_input_cover": 16.09662574540816,
+      "mean_ssim_vs_input_cover": 0.397021059321261
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.46875,
+      "mean_psnr_vs_input_cover": 16.213580023991565,
+      "mean_ssim_vs_input_cover": 0.3688948929267205
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.4921875,
+      "mean_raw_codeword_accuracy": 0.4921875,
+      "mean_psnr_vs_input_cover": 12.21222584909725,
+      "mean_ssim_vs_input_cover": 0.28307459063974244
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4348958333333333,
+      "mean_raw_codeword_accuracy": 0.49249999999999994,
+      "mean_psnr_vs_input_cover": 15.424652112937915,
+      "mean_ssim_vs_input_cover": 0.31769386573230474
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 14.728081232002019,
+      "mean_ssim_vs_input_cover": 0.3439221477794938
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4609375,
+      "mean_raw_codeword_accuracy": 0.49374999999999997,
+      "mean_psnr_vs_input_cover": 14.43765505137249,
+      "mean_ssim_vs_input_cover": 0.275825781474342
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 15.815130840942453,
+      "mean_ssim_vs_input_cover": 0.3390480692752358
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4453125,
+      "mean_raw_codeword_accuracy": 0.47750000000000004,
+      "mean_psnr_vs_input_cover": 15.622721263449694,
+      "mean_ssim_vs_input_cover": 0.3083609227958518
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 16.11461452572464,
+      "mean_ssim_vs_input_cover": 0.4056622096301838
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.3984375,
+      "mean_raw_codeword_accuracy": 0.50625,
+      "mean_psnr_vs_input_cover": 16.213580023991565,
+      "mean_ssim_vs_input_cover": 0.3688948929267205
+    },
+    {
+      "condition": "crop_s1",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 12.254498329338958,
+      "mean_ssim_vs_input_cover": 0.28705616443306187
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.484375,
+      "mean_psnr_vs_input_cover": 20.009715477728086,
+      "mean_ssim_vs_input_cover": 0.5185886225949247
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 1,
+      "expected_payload_match_rate": 0.041666666666666664,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.125
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0010543524454697472,
+        0.2112016834569731
+      ],
+      "mean_payload_bit_accuracy": 0.5833333333333334,
+      "mean_raw_codeword_accuracy": 0.5833333333333334,
+      "mean_psnr_vs_input_cover": 20.009381128254798,
+      "mean_ssim_vs_input_cover": 0.5518818759431535
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.421875,
+      "mean_raw_codeword_accuracy": 0.421875,
+      "mean_psnr_vs_input_cover": 19.154732490514718,
+      "mean_ssim_vs_input_cover": 0.5081575919301858
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.53125,
+      "mean_raw_codeword_accuracy": 0.53125,
+      "mean_psnr_vs_input_cover": 19.730533715452033,
+      "mean_ssim_vs_input_cover": 0.4847550567486707
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5390625,
+      "mean_raw_codeword_accuracy": 0.5390625,
+      "mean_psnr_vs_input_cover": 19.526614129019556,
+      "mean_ssim_vs_input_cover": 0.48209436492230257
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.6484375,
+      "mean_raw_codeword_accuracy": 0.6484375,
+      "mean_psnr_vs_input_cover": 21.12563561913652,
+      "mean_ssim_vs_input_cover": 0.5809756557199258
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4921875,
+      "mean_raw_codeword_accuracy": 0.4921875,
+      "mean_psnr_vs_input_cover": 21.34779981364999,
+      "mean_ssim_vs_input_cover": 0.5655139109322856
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 1,
+      "expected_payload_match_rate": 0.125,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.375
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0031597235312519063,
+        0.5265096708752065
+      ],
+      "mean_payload_bit_accuracy": 0.5703125,
+      "mean_raw_codeword_accuracy": 0.5703125,
+      "mean_psnr_vs_input_cover": 19.171974050175834,
+      "mean_ssim_vs_input_cover": 0.5899149153608639
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4661458333333333,
+      "mean_raw_codeword_accuracy": 0.51125,
+      "mean_psnr_vs_input_cover": 20.009715477728086,
+      "mean_ssim_vs_input_cover": 0.5185886225949247
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.5295833333333334,
+      "mean_psnr_vs_input_cover": 20.104263236221794,
+      "mean_ssim_vs_input_cover": 0.5627690546491112
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4609375,
+      "mean_raw_codeword_accuracy": 0.53,
+      "mean_psnr_vs_input_cover": 19.154732490514718,
+      "mean_ssim_vs_input_cover": 0.5081575919301858
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4765625,
+      "mean_raw_codeword_accuracy": 0.54125,
+      "mean_psnr_vs_input_cover": 19.812700672771896,
+      "mean_ssim_vs_input_cover": 0.49676947148416206
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5078125,
+      "mean_raw_codeword_accuracy": 0.5025,
+      "mean_psnr_vs_input_cover": 19.526614129019556,
+      "mean_ssim_vs_input_cover": 0.48209436492230257
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4921875,
+      "mean_raw_codeword_accuracy": 0.51125,
+      "mean_psnr_vs_input_cover": 21.26174192801374,
+      "mean_ssim_vs_input_cover": 0.5946101007294369
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4296875,
+      "mean_raw_codeword_accuracy": 0.50125,
+      "mean_psnr_vs_input_cover": 21.34779981364999,
+      "mean_ssim_vs_input_cover": 0.5655139109322856
+    },
+    {
+      "condition": "diffusion_strength0p25",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.53625,
+      "mean_psnr_vs_input_cover": 19.23834710787974,
+      "mean_ssim_vs_input_cover": 0.5969275917337349
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.5208333333333334,
+      "mean_raw_codeword_accuracy": 0.5208333333333334,
+      "mean_psnr_vs_input_cover": 15.197505307184999,
+      "mean_ssim_vs_input_cover": 0.3082141349389095
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 1,
+      "expected_payload_match_rate": 0.041666666666666664,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.125
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0010543524454697472,
+        0.2112016834569731
+      ],
+      "mean_payload_bit_accuracy": 0.5234375,
+      "mean_raw_codeword_accuracy": 0.5234375,
+      "mean_psnr_vs_input_cover": 15.603913711184518,
+      "mean_ssim_vs_input_cover": 0.35521596408836315
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5234375,
+      "mean_raw_codeword_accuracy": 0.5234375,
+      "mean_psnr_vs_input_cover": 14.115706500588033,
+      "mean_ssim_vs_input_cover": 0.27630643747450245
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 15.468210788286498,
+      "mean_ssim_vs_input_cover": 0.3136729370462007
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 15.371208864066997,
+      "mean_ssim_vs_input_cover": 0.29545662139084533
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 16.549808325921838,
+      "mean_ssim_vs_input_cover": 0.38492304946257827
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5234375,
+      "mean_raw_codeword_accuracy": 0.5234375,
+      "mean_psnr_vs_input_cover": 16.105600556899965,
+      "mean_ssim_vs_input_cover": 0.3528793459513806
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 1,
+      "expected_payload_match_rate": 0.125,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.375
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0031597235312519063,
+        0.5265096708752065
+      ],
+      "mean_payload_bit_accuracy": 0.5390625,
+      "mean_raw_codeword_accuracy": 0.5390625,
+      "mean_psnr_vs_input_cover": 14.793722019345212,
+      "mean_ssim_vs_input_cover": 0.36705190575631047
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4557291666666667,
+      "mean_raw_codeword_accuracy": 0.5179166666666667,
+      "mean_psnr_vs_input_cover": 15.197505307184999,
+      "mean_ssim_vs_input_cover": 0.3082141349389095
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4505208333333333,
+      "mean_raw_codeword_accuracy": 0.52875,
+      "mean_psnr_vs_input_cover": 15.608010847769213,
+      "mean_ssim_vs_input_cover": 0.36578615152244964
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5,
+      "mean_raw_codeword_accuracy": 0.5,
+      "mean_psnr_vs_input_cover": 14.115706500588033,
+      "mean_ssim_vs_input_cover": 0.27630643747450245
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4609375,
+      "mean_raw_codeword_accuracy": 0.5225,
+      "mean_psnr_vs_input_cover": 15.558282986308821,
+      "mean_ssim_vs_input_cover": 0.32863493718812353
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4296875,
+      "mean_raw_codeword_accuracy": 0.5387500000000001,
+      "mean_psnr_vs_input_cover": 15.371208864066997,
+      "mean_ssim_vs_input_cover": 0.29545662139084533
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4609375,
+      "mean_raw_codeword_accuracy": 0.5275000000000001,
+      "mean_psnr_vs_input_cover": 16.476718038879735,
+      "mean_ssim_vs_input_cover": 0.3954681300619047
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4375,
+      "mean_raw_codeword_accuracy": 0.515,
+      "mean_psnr_vs_input_cover": 16.105600556899965,
+      "mean_ssim_vs_input_cover": 0.3528793459513806
+    },
+    {
+      "condition": "diffusion_strength0p50",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4296875,
+      "mean_raw_codeword_accuracy": 0.5362499999999999,
+      "mean_psnr_vs_input_cover": 14.789031518119083,
+      "mean_ssim_vs_input_cover": 0.37325538731732066
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.5104166666666666,
+      "mean_raw_codeword_accuracy": 0.5104166666666666,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5,
+      "mean_raw_codeword_accuracy": 0.5,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.5254166666666668,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9997222222222223,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4609375,
+      "mean_raw_codeword_accuracy": 0.53125,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.51875,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5234375,
+      "mean_raw_codeword_accuracy": 0.52625,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "identity",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9991666666666666,
+      "mean_psnr_vs_input_cover": 361.2019990992196,
+      "mean_ssim_vs_input_cover": 1.0
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.5104166666666666,
+      "mean_raw_codeword_accuracy": 0.5104166666666666,
+      "mean_psnr_vs_input_cover": 31.208937549743798,
+      "mean_ssim_vs_input_cover": 0.9017101736167129
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 31.67115173584783,
+      "mean_ssim_vs_input_cover": 0.9187100632559925
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.484375,
+      "mean_psnr_vs_input_cover": 30.89916332417787,
+      "mean_ssim_vs_input_cover": 0.909506388777438
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 31.22859528515933,
+      "mean_ssim_vs_input_cover": 0.9125012360801695
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5234375,
+      "mean_raw_codeword_accuracy": 0.5234375,
+      "mean_psnr_vs_input_cover": 30.893925940598557,
+      "mean_ssim_vs_input_cover": 0.9121252142826604
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.12643431941647,
+      "mean_ssim_vs_input_cover": 0.9090090402507466
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5234375,
+      "mean_raw_codeword_accuracy": 0.5234375,
+      "mean_psnr_vs_input_cover": 31.833723384454956,
+      "mean_ssim_vs_input_cover": 0.8834989177900405
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 31.658425602967696,
+      "mean_ssim_vs_input_cover": 0.9346199134370617
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4869791666666667,
+      "mean_raw_codeword_accuracy": 0.5075,
+      "mean_psnr_vs_input_cover": 31.208937549743798,
+      "mean_ssim_vs_input_cover": 0.9017101736167129
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 68,
+      "expected_payload_match_rate": 0.9444444444444444,
+      "rate_ci95_source_bootstrap": [
+        0.8472222222222222,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9904513888888888,
+      "mean_raw_codeword_accuracy": 0.9841666666666669,
+      "mean_psnr_vs_input_cover": 31.84352876257072,
+      "mean_ssim_vs_input_cover": 0.9207098096617039
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.453125,
+      "mean_raw_codeword_accuracy": 0.49624999999999997,
+      "mean_psnr_vs_input_cover": 30.89916332417787,
+      "mean_ssim_vs_input_cover": 0.909506388777438
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 23,
+      "expected_payload_match_rate": 0.9583333333333334,
+      "rate_ci95_source_bootstrap": [
+        0.875,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9925,
+      "mean_psnr_vs_input_cover": 31.43163345129246,
+      "mean_ssim_vs_input_cover": 0.9147234020506851
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5625,
+      "mean_raw_codeword_accuracy": 0.5275,
+      "mean_psnr_vs_input_cover": 30.893925940598557,
+      "mean_ssim_vs_input_cover": 0.9121252142826604
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 21,
+      "expected_payload_match_rate": 0.875,
+      "rate_ci95_source_bootstrap": [
+        0.625,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9765625,
+      "mean_raw_codeword_accuracy": 0.9700000000000001,
+      "mean_psnr_vs_input_cover": 32.28802981172398,
+      "mean_ssim_vs_input_cover": 0.9112853961429982
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4453125,
+      "mean_raw_codeword_accuracy": 0.49875,
+      "mean_psnr_vs_input_cover": 31.833723384454956,
+      "mean_ssim_vs_input_cover": 0.8834989177900405
+    },
+    {
+      "condition": "jpeg_s1",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9947916666666666,
+      "mean_raw_codeword_accuracy": 0.9900000000000001,
+      "mean_psnr_vs_input_cover": 31.81092302469571,
+      "mean_ssim_vs_input_cover": 0.9361206307914283
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.5,
+      "mean_raw_codeword_accuracy": 0.5,
+      "mean_psnr_vs_input_cover": 29.834993388918704,
+      "mean_ssim_vs_input_cover": 0.8760922632043742
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9947916666666666,
+      "mean_raw_codeword_accuracy": 0.9947916666666666,
+      "mean_psnr_vs_input_cover": 30.074270215960073,
+      "mean_ssim_vs_input_cover": 0.8915341010806147
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4453125,
+      "mean_raw_codeword_accuracy": 0.4453125,
+      "mean_psnr_vs_input_cover": 29.41984748679782,
+      "mean_ssim_vs_input_cover": 0.882938440542252
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9921875,
+      "mean_raw_codeword_accuracy": 0.9921875,
+      "mean_psnr_vs_input_cover": 29.4812347208135,
+      "mean_ssim_vs_input_cover": 0.8783292043014091
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.53125,
+      "mean_raw_codeword_accuracy": 0.53125,
+      "mean_psnr_vs_input_cover": 29.440932623468157,
+      "mean_ssim_vs_input_cover": 0.8879501523802691
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9921875,
+      "mean_raw_codeword_accuracy": 0.9921875,
+      "mean_psnr_vs_input_cover": 30.68480256770844,
+      "mean_ssim_vs_input_cover": 0.8826018319998622
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5234375,
+      "mean_raw_codeword_accuracy": 0.5234375,
+      "mean_psnr_vs_input_cover": 30.644200056490135,
+      "mean_ssim_vs_input_cover": 0.8573881966906016
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 30.056773359358274,
+      "mean_ssim_vs_input_cover": 0.9136712669405723
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.453125,
+      "mean_raw_codeword_accuracy": 0.51125,
+      "mean_psnr_vs_input_cover": 29.834993388918704,
+      "mean_ssim_vs_input_cover": 0.8760922632043742
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 66,
+      "expected_payload_match_rate": 0.9166666666666666,
+      "rate_ci95_source_bootstrap": [
+        0.8194444444444443,
+        0.986111111111111
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9774305555555556,
+      "mean_raw_codeword_accuracy": 0.9743055555555556,
+      "mean_psnr_vs_input_cover": 30.245839793835493,
+      "mean_ssim_vs_input_cover": 0.8939162369769273
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4140625,
+      "mean_raw_codeword_accuracy": 0.505,
+      "mean_psnr_vs_input_cover": 29.41984748679782,
+      "mean_ssim_vs_input_cover": 0.882938440542252
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9869791666666666,
+      "mean_raw_codeword_accuracy": 0.9795833333333333,
+      "mean_psnr_vs_input_cover": 29.696223198712904,
+      "mean_ssim_vs_input_cover": 0.881348379314943
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.52125,
+      "mean_psnr_vs_input_cover": 29.440932623468157,
+      "mean_ssim_vs_input_cover": 0.8879501523802691
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 21,
+      "expected_payload_match_rate": 0.875,
+      "rate_ci95_source_bootstrap": [
+        0.625,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.96875,
+      "mean_raw_codeword_accuracy": 0.965,
+      "mean_psnr_vs_input_cover": 30.839593723133817,
+      "mean_ssim_vs_input_cover": 0.8851815200844824
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4765625,
+      "mean_raw_codeword_accuracy": 0.5075000000000001,
+      "mean_psnr_vs_input_cover": 30.644200056490135,
+      "mean_ssim_vs_input_cover": 0.8573881966906016
+    },
+    {
+      "condition": "jpeg_s2",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 21,
+      "expected_payload_match_rate": 0.875,
+      "rate_ci95_source_bootstrap": [
+        0.75,
+        0.9583333333333333
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9765625,
+      "mean_raw_codeword_accuracy": 0.9783333333333334,
+      "mean_psnr_vs_input_cover": 30.20170245965978,
+      "mean_ssim_vs_input_cover": 0.9152188115313568
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4947916666666667,
+      "mean_raw_codeword_accuracy": 0.4947916666666667,
+      "mean_psnr_vs_input_cover": 21.219682327939623,
+      "mean_ssim_vs_input_cover": 0.5194852992188439
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5104166666666666,
+      "mean_raw_codeword_accuracy": 0.5104166666666666,
+      "mean_psnr_vs_input_cover": 20.690321012886077,
+      "mean_ssim_vs_input_cover": 0.5292318717318314
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.484375,
+      "mean_psnr_vs_input_cover": 20.135702871236077,
+      "mean_ssim_vs_input_cover": 0.4808330885662044
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5104166666666666,
+      "mean_raw_codeword_accuracy": 0.5104166666666666,
+      "mean_psnr_vs_input_cover": 20.76574700470115,
+      "mean_ssim_vs_input_cover": 0.48691581362643105
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.578125,
+      "mean_raw_codeword_accuracy": 0.578125,
+      "mean_psnr_vs_input_cover": 21.04549779038975,
+      "mean_ssim_vs_input_cover": 0.5040058544176785
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5260416666666666,
+      "mean_raw_codeword_accuracy": 0.5260416666666666,
+      "mean_psnr_vs_input_cover": 22.3253224793049,
+      "mean_ssim_vs_input_cover": 0.5911799697614991
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.421875,
+      "mean_raw_codeword_accuracy": 0.421875,
+      "mean_psnr_vs_input_cover": 22.477846322193045,
+      "mean_ssim_vs_input_cover": 0.5736169546726486
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.4947916666666667,
+      "mean_raw_codeword_accuracy": 0.4947916666666667,
+      "mean_psnr_vs_input_cover": 18.979893554652183,
+      "mean_ssim_vs_input_cover": 0.509599831807564
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4921875,
+      "mean_raw_codeword_accuracy": 0.5241666666666667,
+      "mean_psnr_vs_input_cover": 21.219682327939623,
+      "mean_ssim_vs_input_cover": 0.5194852992188439
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.640625,
+      "mean_raw_codeword_accuracy": 0.6458333333333334,
+      "mean_psnr_vs_input_cover": 20.711103750307398,
+      "mean_ssim_vs_input_cover": 0.5357933741282206
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.5362499999999999,
+      "mean_psnr_vs_input_cover": 20.135702871236077,
+      "mean_ssim_vs_input_cover": 0.4808330885662044
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.6458333333333334,
+      "mean_raw_codeword_accuracy": 0.6525,
+      "mean_psnr_vs_input_cover": 20.784116785116993,
+      "mean_ssim_vs_input_cover": 0.4937894179177982
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5390625,
+      "mean_raw_codeword_accuracy": 0.52125,
+      "mean_psnr_vs_input_cover": 21.04549779038975,
+      "mean_ssim_vs_input_cover": 0.5040058544176785
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.6666666666666666,
+      "mean_raw_codeword_accuracy": 0.6737500000000001,
+      "mean_psnr_vs_input_cover": 22.336252286632273,
+      "mean_ssim_vs_input_cover": 0.5991029470519181
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.515,
+      "mean_psnr_vs_input_cover": 22.477846322193045,
+      "mean_ssim_vs_input_cover": 0.5736169546726486
+    },
+    {
+      "condition": "lowres_s2",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.609375,
+      "mean_raw_codeword_accuracy": 0.61125,
+      "mean_psnr_vs_input_cover": 19.01294217917292,
+      "mean_ssim_vs_input_cover": 0.5144877574149457
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.5338541666666666,
+      "mean_raw_codeword_accuracy": 0.5338541666666666,
+      "mean_psnr_vs_input_cover": 32.71646150918843,
+      "mean_ssim_vs_input_cover": 0.8609891683114376
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.632916417909115,
+      "mean_ssim_vs_input_cover": 0.8581682248835146
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.53125,
+      "mean_raw_codeword_accuracy": 0.53125,
+      "mean_psnr_vs_input_cover": 32.625277536394464,
+      "mean_ssim_vs_input_cover": 0.8796864885608899
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.60871325677289,
+      "mean_ssim_vs_input_cover": 0.8623144063516679
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 32.797521333872524,
+      "mean_ssim_vs_input_cover": 0.8607850070391942
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.63619635086482,
+      "mean_ssim_vs_input_cover": 0.8304382255481862
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5546875,
+      "mean_raw_codeword_accuracy": 0.5546875,
+      "mean_psnr_vs_input_cover": 32.7265856572983,
+      "mean_ssim_vs_input_cover": 0.8424960093342284
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.65383964608963,
+      "mean_ssim_vs_input_cover": 0.8817520427506894
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.5154166666666667,
+      "mean_psnr_vs_input_cover": 32.71646150918843,
+      "mean_ssim_vs_input_cover": 0.8609891683114376
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9991319444444444,
+      "mean_raw_codeword_accuracy": 0.9959722222222224,
+      "mean_psnr_vs_input_cover": 32.61782727024448,
+      "mean_ssim_vs_input_cover": 0.8548797389066244
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4609375,
+      "mean_raw_codeword_accuracy": 0.52,
+      "mean_psnr_vs_input_cover": 32.625277536394464,
+      "mean_ssim_vs_input_cover": 0.8796864885608899
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9973958333333334,
+      "mean_raw_codeword_accuracy": 0.9958333333333332,
+      "mean_psnr_vs_input_cover": 32.59382666928321,
+      "mean_ssim_vs_input_cover": 0.8587850653520418
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.50375,
+      "mean_psnr_vs_input_cover": 32.797521333872524,
+      "mean_ssim_vs_input_cover": 0.8607850070391942
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9966666666666667,
+      "mean_psnr_vs_input_cover": 32.62336897518805,
+      "mean_ssim_vs_input_cover": 0.826262511621708
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5234375,
+      "mean_raw_codeword_accuracy": 0.5225,
+      "mean_psnr_vs_input_cover": 32.7265856572983,
+      "mean_ssim_vs_input_cover": 0.8424960093342284
+    },
+    {
+      "condition": "noise_s1",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9954166666666667,
+      "mean_psnr_vs_input_cover": 32.63628616626221,
+      "mean_ssim_vs_input_cover": 0.8795916397461232
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.5052083333333334,
+      "mean_raw_codeword_accuracy": 0.5052083333333334,
+      "mean_psnr_vs_input_cover": 32.72139680263124,
+      "mean_ssim_vs_input_cover": 0.8612056277431144
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.63929699753901,
+      "mean_ssim_vs_input_cover": 0.8584349507656245
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 32.62967642005243,
+      "mean_ssim_vs_input_cover": 0.8797315348443169
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.61334742808216,
+      "mean_ssim_vs_input_cover": 0.862422533614609
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5078125,
+      "mean_raw_codeword_accuracy": 0.5078125,
+      "mean_psnr_vs_input_cover": 32.802803885202785,
+      "mean_ssim_vs_input_cover": 0.8609974903587291
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.643382189932105,
+      "mean_ssim_vs_input_cover": 0.830764762226499
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4921875,
+      "mean_raw_codeword_accuracy": 0.4921875,
+      "mean_psnr_vs_input_cover": 32.731710102638516,
+      "mean_ssim_vs_input_cover": 0.8428878580262971
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.66116137460276,
+      "mean_ssim_vs_input_cover": 0.8821175564557656
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.5,
+      "mean_raw_codeword_accuracy": 0.51375,
+      "mean_psnr_vs_input_cover": 32.72139680263124,
+      "mean_ssim_vs_input_cover": 0.8612056277431144
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 71,
+      "expected_payload_match_rate": 0.9861111111111112,
+      "rate_ci95_source_bootstrap": [
+        0.9583333333333334,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9991319444444444,
+      "mean_raw_codeword_accuracy": 0.9959722222222221,
+      "mean_psnr_vs_input_cover": 32.624240443722535,
+      "mean_ssim_vs_input_cover": 0.8551573884064056
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4609375,
+      "mean_raw_codeword_accuracy": 0.50125,
+      "mean_psnr_vs_input_cover": 32.62967642005243,
+      "mean_ssim_vs_input_cover": 0.8797315348443169
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9966666666666667,
+      "mean_psnr_vs_input_cover": 32.598940068024255,
+      "mean_ssim_vs_input_cover": 0.8588998393322457
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.49624999999999997,
+      "mean_psnr_vs_input_cover": 32.802803885202785,
+      "mean_ssim_vs_input_cover": 0.8609974903587291
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 23,
+      "expected_payload_match_rate": 0.9583333333333334,
+      "rate_ci95_source_bootstrap": [
+        0.875,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9973958333333334,
+      "mean_raw_codeword_accuracy": 0.9966666666666667,
+      "mean_psnr_vs_input_cover": 32.630422265850996,
+      "mean_ssim_vs_input_cover": 0.8266353856472982
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5703125,
+      "mean_raw_codeword_accuracy": 0.5437500000000001,
+      "mean_psnr_vs_input_cover": 32.731710102638516,
+      "mean_ssim_vs_input_cover": 0.8428878580262971
+    },
+    {
+      "condition": "noise_sigma6_seed20261009",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9945833333333333,
+      "mean_psnr_vs_input_cover": 32.64335899729236,
+      "mean_ssim_vs_input_cover": 0.8799369402396732
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4973958333333333,
+      "mean_raw_codeword_accuracy": 0.4973958333333333,
+      "mean_psnr_vs_input_cover": 32.71203215781475,
+      "mean_ssim_vs_input_cover": 0.8609270974146209
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.62957328367011,
+      "mean_ssim_vs_input_cover": 0.8581333928594668
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.484375,
+      "mean_psnr_vs_input_cover": 32.621357437878885,
+      "mean_ssim_vs_input_cover": 0.8794528903808854
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.604915274159296,
+      "mean_ssim_vs_input_cover": 0.8624961285825451
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5078125,
+      "mean_raw_codeword_accuracy": 0.5078125,
+      "mean_psnr_vs_input_cover": 32.79461270595171,
+      "mean_ssim_vs_input_cover": 0.8609244492618837
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.63311585605069,
+      "mean_ssim_vs_input_cover": 0.8302799745014325
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5,
+      "mean_raw_codeword_accuracy": 0.5,
+      "mean_psnr_vs_input_cover": 32.72012632961364,
+      "mean_ssim_vs_input_cover": 0.8424039526010938
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.650688720800325,
+      "mean_ssim_vs_input_cover": 0.8816240754944226
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4947916666666667,
+      "mean_raw_codeword_accuracy": 0.5108333333333334,
+      "mean_psnr_vs_input_cover": 32.71203215781475,
+      "mean_ssim_vs_input_cover": 0.8609270974146209
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9973958333333334,
+      "mean_raw_codeword_accuracy": 0.9961111111111111,
+      "mean_psnr_vs_input_cover": 32.61483954216371,
+      "mean_ssim_vs_input_cover": 0.8548460591910857
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4921875,
+      "mean_raw_codeword_accuracy": 0.5062500000000001,
+      "mean_psnr_vs_input_cover": 32.621357437878885,
+      "mean_ssim_vs_input_cover": 0.8794528903808854
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9979166666666668,
+      "mean_psnr_vs_input_cover": 32.5907867911509,
+      "mean_ssim_vs_input_cover": 0.858982879979938
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.48875,
+      "mean_psnr_vs_input_cover": 32.79461270595171,
+      "mean_ssim_vs_input_cover": 0.8609244492618837
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9921875,
+      "mean_raw_codeword_accuracy": 0.9958333333333332,
+      "mean_psnr_vs_input_cover": 32.620955591749585,
+      "mean_ssim_vs_input_cover": 0.8261419703340721
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5234375,
+      "mean_raw_codeword_accuracy": 0.5375,
+      "mean_psnr_vs_input_cover": 32.72012632961364,
+      "mean_ssim_vs_input_cover": 0.8424039526010938
+    },
+    {
+      "condition": "noise_sigma6_seed20261010",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9945833333333333,
+      "mean_psnr_vs_input_cover": 32.632776243590655,
+      "mean_ssim_vs_input_cover": 0.8794133272592468
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.5182291666666666,
+      "mean_raw_codeword_accuracy": 0.5182291666666666,
+      "mean_psnr_vs_input_cover": 32.699109169061806,
+      "mean_ssim_vs_input_cover": 0.860701898071275
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.61628487590924,
+      "mean_ssim_vs_input_cover": 0.8579036267511886
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.53125,
+      "mean_raw_codeword_accuracy": 0.53125,
+      "mean_psnr_vs_input_cover": 32.609213907941445,
+      "mean_ssim_vs_input_cover": 0.8794340127260103
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.5915145425113,
+      "mean_ssim_vs_input_cover": 0.8621535066548892
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5234375,
+      "mean_raw_codeword_accuracy": 0.5234375,
+      "mean_psnr_vs_input_cover": 32.780663355696504,
+      "mean_ssim_vs_input_cover": 0.8606568541568741
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.61851301290935,
+      "mean_ssim_vs_input_cover": 0.82981257093706
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5,
+      "mean_raw_codeword_accuracy": 0.5,
+      "mean_psnr_vs_input_cover": 32.707450243547456,
+      "mean_ssim_vs_input_cover": 0.8420148273309402
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 1.0,
+      "mean_psnr_vs_input_cover": 32.63882707230706,
+      "mean_ssim_vs_input_cover": 0.8817448026616166
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4635416666666667,
+      "mean_raw_codeword_accuracy": 0.5116666666666666,
+      "mean_psnr_vs_input_cover": 32.699109169061806,
+      "mean_ssim_vs_input_cover": 0.860701898071275
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 72,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9991319444444444,
+      "mean_raw_codeword_accuracy": 0.9974999999999999,
+      "mean_psnr_vs_input_cover": 32.60147556134203,
+      "mean_ssim_vs_input_cover": 0.854638985830203
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.546875,
+      "mean_raw_codeword_accuracy": 0.52,
+      "mean_psnr_vs_input_cover": 32.609213907941445,
+      "mean_ssim_vs_input_cover": 0.8794340127260103
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9983333333333334,
+      "mean_psnr_vs_input_cover": 32.57743948003633,
+      "mean_ssim_vs_input_cover": 0.8586221779699251
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.3984375,
+      "mean_raw_codeword_accuracy": 0.50125,
+      "mean_psnr_vs_input_cover": 32.780663355696504,
+      "mean_ssim_vs_input_cover": 0.8606568541568741
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.9973958333333334,
+      "mean_raw_codeword_accuracy": 0.9974999999999999,
+      "mean_psnr_vs_input_cover": 32.60617081905096,
+      "mean_ssim_vs_input_cover": 0.825703257791619
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4453125,
+      "mean_raw_codeword_accuracy": 0.5137499999999999,
+      "mean_psnr_vs_input_cover": 32.707450243547456,
+      "mean_ssim_vs_input_cover": 0.8420148273309402
+    },
+    {
+      "condition": "noise_sigma6_seed20261011",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 24,
+      "expected_payload_match_rate": 1.0,
+      "rate_ci95_source_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 1.0,
+      "mean_raw_codeword_accuracy": 0.9966666666666667,
+      "mean_psnr_vs_input_cover": 32.62081638493879,
+      "mean_ssim_vs_input_cover": 0.8795915217290649
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.5130208333333334,
+      "mean_raw_codeword_accuracy": 0.5130208333333334,
+      "mean_psnr_vs_input_cover": 13.90362778421578,
+      "mean_ssim_vs_input_cover": 0.08837635445629628
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 1,
+      "expected_payload_match_rate": 0.013888888888888888,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.041666666666666664
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5390625,
+      "mean_raw_codeword_accuracy": 0.5390625,
+      "mean_psnr_vs_input_cover": 13.594528361329559,
+      "mean_ssim_vs_input_cover": 0.084520344885086
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4765625,
+      "mean_raw_codeword_accuracy": 0.4765625,
+      "mean_psnr_vs_input_cover": 13.070971648859292,
+      "mean_ssim_vs_input_cover": 0.08015807586986681
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 1,
+      "expected_payload_match_rate": 0.041666666666666664,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.125
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5520833333333334,
+      "mean_raw_codeword_accuracy": 0.5520833333333334,
+      "mean_psnr_vs_input_cover": 14.393868292137427,
+      "mean_ssim_vs_input_cover": 0.09007772959851752
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.546875,
+      "mean_raw_codeword_accuracy": 0.546875,
+      "mean_psnr_vs_input_cover": 14.11355614191244,
+      "mean_ssim_vs_input_cover": 0.08202166019903692
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 14.871792049122178,
+      "mean_ssim_vs_input_cover": 0.1064176005391988
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 14.526355561875608,
+      "mean_ssim_vs_input_cover": 0.10294932729998518
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5494791666666666,
+      "mean_raw_codeword_accuracy": 0.5494791666666666,
+      "mean_psnr_vs_input_cover": 11.517924742729077,
+      "mean_ssim_vs_input_cover": 0.057065704517541706
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.49875,
+      "mean_psnr_vs_input_cover": 13.90362778421578,
+      "mean_ssim_vs_input_cover": 0.08837635445629628
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.6354166666666666,
+      "mean_raw_codeword_accuracy": 0.6455555555555557,
+      "mean_psnr_vs_input_cover": 13.629655451481044,
+      "mean_ssim_vs_input_cover": 0.08620771912445822
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5,
+      "mean_raw_codeword_accuracy": 0.52125,
+      "mean_psnr_vs_input_cover": 13.070971648859292,
+      "mean_ssim_vs_input_cover": 0.08015807586986681
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.6510416666666666,
+      "mean_raw_codeword_accuracy": 0.6608333333333333,
+      "mean_psnr_vs_input_cover": 14.425555438698458,
+      "mean_ssim_vs_input_cover": 0.09181299958400692
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4453125,
+      "mean_raw_codeword_accuracy": 0.48124999999999996,
+      "mean_psnr_vs_input_cover": 14.11355614191244,
+      "mean_ssim_vs_input_cover": 0.08202166019903692
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.6171875,
+      "mean_raw_codeword_accuracy": 0.6325,
+      "mean_psnr_vs_input_cover": 14.899181196992673,
+      "mean_ssim_vs_input_cover": 0.10826135427496249
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5078125,
+      "mean_raw_codeword_accuracy": 0.49375,
+      "mean_psnr_vs_input_cover": 14.526355561875608,
+      "mean_ssim_vs_input_cover": 0.10294932729998518
+    },
+    {
+      "condition": "regenerate_s2",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.6380208333333334,
+      "mean_raw_codeword_accuracy": 0.6433333333333334,
+      "mean_psnr_vs_input_cover": 11.564229718752001,
+      "mean_ssim_vs_input_cover": 0.058548803514405244
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4869791666666667,
+      "mean_raw_codeword_accuracy": 0.4869791666666667,
+      "mean_psnr_vs_input_cover": 23.508245640423826,
+      "mean_ssim_vs_input_cover": 0.7541582378093702
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 2,
+      "expected_payload_match_rate": 0.027777777777777776,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.06944444444444443
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5147569444444444,
+      "mean_raw_codeword_accuracy": 0.5147569444444444,
+      "mean_psnr_vs_input_cover": 22.683083374223948,
+      "mean_ssim_vs_input_cover": 0.7406039941862117
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5078125,
+      "mean_raw_codeword_accuracy": 0.5078125,
+      "mean_psnr_vs_input_cover": 22.189857187433667,
+      "mean_ssim_vs_input_cover": 0.7383846717153996
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.46875,
+      "mean_psnr_vs_input_cover": 23.224535496684666,
+      "mean_ssim_vs_input_cover": 0.796422814122911
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.515625,
+      "mean_raw_codeword_accuracy": 0.515625,
+      "mean_psnr_vs_input_cover": 23.631592006914893,
+      "mean_ssim_vs_input_cover": 0.7599654050927438
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 2,
+      "expected_payload_match_rate": 0.08333333333333333,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.16666666666666666
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5572916666666666,
+      "mean_raw_codeword_accuracy": 0.5572916666666666,
+      "mean_psnr_vs_input_cover": 24.169186614112565,
+      "mean_ssim_vs_input_cover": 0.7354575584466524
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4375,
+      "mean_raw_codeword_accuracy": 0.4375,
+      "mean_psnr_vs_input_cover": 24.703287726922923,
+      "mean_ssim_vs_input_cover": 0.7641246366199668
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5182291666666666,
+      "mean_raw_codeword_accuracy": 0.5182291666666666,
+      "mean_psnr_vs_input_cover": 20.655528011874612,
+      "mean_ssim_vs_input_cover": 0.6899316099890717
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4375,
+      "mean_raw_codeword_accuracy": 0.4995833333333333,
+      "mean_psnr_vs_input_cover": 23.508245640423826,
+      "mean_ssim_vs_input_cover": 0.7541582378093702
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 72,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.6423611111111112,
+      "mean_raw_codeword_accuracy": 0.6427777777777778,
+      "mean_psnr_vs_input_cover": 22.64093718299585,
+      "mean_ssim_vs_input_cover": 0.73649558828954
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.390625,
+      "mean_raw_codeword_accuracy": 0.4825,
+      "mean_psnr_vs_input_cover": 22.189857187433667,
+      "mean_ssim_vs_input_cover": 0.7383846717153996
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.6901041666666666,
+      "mean_raw_codeword_accuracy": 0.6758333333333333,
+      "mean_psnr_vs_input_cover": 23.15156387532781,
+      "mean_ssim_vs_input_cover": 0.7915603998440549
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.453125,
+      "mean_raw_codeword_accuracy": 0.50125,
+      "mean_psnr_vs_input_cover": 23.631592006914893,
+      "mean_ssim_vs_input_cover": 0.7599654050927438
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.5911458333333334,
+      "mean_raw_codeword_accuracy": 0.62875,
+      "mean_psnr_vs_input_cover": 24.118217331624194,
+      "mean_ssim_vs_input_cover": 0.7311332183399998
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.515,
+      "mean_psnr_vs_input_cover": 24.703287726922923,
+      "mean_ssim_vs_input_cover": 0.7641246366199668
+    },
+    {
+      "condition": "spectral_s1",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": null,
+      "mean_payload_bit_accuracy": 0.6458333333333334,
+      "mean_raw_codeword_accuracy": 0.62375,
+      "mean_psnr_vs_input_cover": 20.653030342035546,
+      "mean_ssim_vs_input_cover": 0.6867931466845651
+    },
+    {
+      "condition": "vae_only",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4947916666666667,
+      "mean_raw_codeword_accuracy": 0.4947916666666667,
+      "mean_psnr_vs_input_cover": 25.039917630192473,
+      "mean_ssim_vs_input_cover": 0.7206261769836043
+    },
+    {
+      "condition": "vae_only",
+      "detector": "dwt_dct",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 7,
+      "expected_payload_match_rate": 0.2916666666666667,
+      "rate_ci95_source_bootstrap": [
+        0.125,
+        0.5
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.1261520885236913,
+        0.5109478138578332
+      ],
+      "mean_payload_bit_accuracy": 0.6692708333333334,
+      "mean_raw_codeword_accuracy": 0.6692708333333334,
+      "mean_psnr_vs_input_cover": 25.2430304511774,
+      "mean_ssim_vs_input_cover": 0.7474169984835513
+    },
+    {
+      "condition": "vae_only",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4453125,
+      "mean_raw_codeword_accuracy": 0.4453125,
+      "mean_psnr_vs_input_cover": 24.00458658536679,
+      "mean_ssim_vs_input_cover": 0.712827506901311
+    },
+    {
+      "condition": "vae_only",
+      "detector": "dwt_dct",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 1,
+      "expected_payload_match_rate": 0.125,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.375
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0031597235312519063,
+        0.5265096708752065
+      ],
+      "mean_payload_bit_accuracy": 0.671875,
+      "mean_raw_codeword_accuracy": 0.671875,
+      "mean_psnr_vs_input_cover": 23.702134167537785,
+      "mean_ssim_vs_input_cover": 0.654119929926328
+    },
+    {
+      "condition": "vae_only",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.484375,
+      "mean_raw_codeword_accuracy": 0.484375,
+      "mean_psnr_vs_input_cover": 24.134705408964315,
+      "mean_ssim_vs_input_cover": 0.6995985841858183
+    },
+    {
+      "condition": "vae_only",
+      "detector": "dwt_dct",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 4,
+      "expected_payload_match_rate": 0.5,
+      "rate_ci95_source_bootstrap": [
+        0.125,
+        0.875
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.15701277048705797,
+        0.842987229512942
+      ],
+      "mean_payload_bit_accuracy": 0.7421875,
+      "mean_raw_codeword_accuracy": 0.7421875,
+      "mean_psnr_vs_input_cover": 26.810229483571447,
+      "mean_ssim_vs_input_cover": 0.7777150810995708
+    },
+    {
+      "condition": "vae_only",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.5546875,
+      "mean_raw_codeword_accuracy": 0.5546875,
+      "mean_psnr_vs_input_cover": 26.980460896246306,
+      "mean_ssim_vs_input_cover": 0.7494524398636839
+    },
+    {
+      "condition": "vae_only",
+      "detector": "dwt_dct",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 2,
+      "expected_payload_match_rate": 0.25,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.625
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.03185402624994421,
+        0.6508557944128242
+      ],
+      "mean_payload_bit_accuracy": 0.59375,
+      "mean_raw_codeword_accuracy": 0.59375,
+      "mean_psnr_vs_input_cover": 25.216727702422958,
+      "mean_ssim_vs_input_cover": 0.8104159844247549
+    },
+    {
+      "condition": "vae_only",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 0,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.4244791666666667,
+      "mean_raw_codeword_accuracy": 0.5195833333333333,
+      "mean_psnr_vs_input_cover": 25.039917630192473,
+      "mean_ssim_vs_input_cover": 0.7206261769836043
+    },
+    {
+      "condition": "vae_only",
+      "detector": "trustmark",
+      "generator": "all",
+      "input_origin_label": 1,
+      "n_sources": 24,
+      "n_outputs": 24,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.14247359772252563
+      ],
+      "mean_payload_bit_accuracy": 0.7135416666666666,
+      "mean_raw_codeword_accuracy": 0.7204166666666666,
+      "mean_psnr_vs_input_cover": 25.508028489714505,
+      "mean_ssim_vs_input_cover": 0.7613673658255845
+    },
+    {
+      "condition": "vae_only",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.4140625,
+      "mean_raw_codeword_accuracy": 0.52875,
+      "mean_psnr_vs_input_cover": 24.00458658536679,
+      "mean_ssim_vs_input_cover": 0.712827506901311
+    },
+    {
+      "condition": "vae_only",
+      "detector": "trustmark",
+      "generator": "stable-diffusion",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.671875,
+      "mean_raw_codeword_accuracy": 0.69375,
+      "mean_psnr_vs_input_cover": 23.896474565006724,
+      "mean_ssim_vs_input_cover": 0.66677811147879
+    },
+    {
+      "condition": "vae_only",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.390625,
+      "mean_raw_codeword_accuracy": 0.48,
+      "mean_psnr_vs_input_cover": 24.134705408964315,
+      "mean_ssim_vs_input_cover": 0.6995985841858183
+    },
+    {
+      "condition": "vae_only",
+      "detector": "trustmark",
+      "generator": "dalle-3",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.7265625,
+      "mean_raw_codeword_accuracy": 0.765,
+      "mean_psnr_vs_input_cover": 27.16515258406276,
+      "mean_ssim_vs_input_cover": 0.7951626412635509
+    },
+    {
+      "condition": "vae_only",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 0,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.46875,
+      "mean_raw_codeword_accuracy": 0.55,
+      "mean_psnr_vs_input_cover": 26.980460896246306,
+      "mean_ssim_vs_input_cover": 0.7494524398636839
+    },
+    {
+      "condition": "vae_only",
+      "detector": "trustmark",
+      "generator": "midjourney",
+      "input_origin_label": 1,
+      "n_sources": 8,
+      "n_outputs": 8,
+      "matches": 0,
+      "expected_payload_match_rate": 0.0,
+      "rate_ci95_source_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "rate_ci95_exact_binomial_one_output_per_source": [
+        0.0,
+        0.3694166475528192
+      ],
+      "mean_payload_bit_accuracy": 0.7421875,
+      "mean_raw_codeword_accuracy": 0.7025,
+      "mean_psnr_vs_input_cover": 25.462458320074035,
+      "mean_ssim_vs_input_cover": 0.8221613447344127
+    }
+  ],
+  "rate_ci": "2000 source bootstrap draws, payload repeats kept together; small source count",
+  "interpretation": "Origin labels denote input-source provenance. A diffusion-reconstructed photograph contains generated pixels; its payload match rate is not an authenticity false-positive rate.",
+  "comparison_limit": "Different embedding protocols: classical 16 bits at strength 12 versus TrustMark Q 100-bit BCH codeword / 61 data bits at default strength 1. No equal-capacity or equal-distortion claim.",
+  "thresholds_retuned": false,
+  "independent_new_dataset": false
+}

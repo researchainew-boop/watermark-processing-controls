@@ -1,0 +1,28 @@
+{
+  "completed_at_utc": "2026-10-10T10:25:42.696052+00:00",
+  "fit_count": 4,
+  "calibration_policy_count": 18,
+  "CPU_only": true,
+  "test_threshold_tuning": false,
+  "earlier_heads_unchanged": true,
+  "completed_script_sha256": "c0bb871c07aed32a88f1d1e623378e6654ad83aca43b7a6ad493b505c0d3bf8b",
+  "output_sha256": {
+    "protocol.json": "f1aeede5a2379c99b4dc3d39ab6d470233d64fd8b1908628b3bf5458af7f91bf",
+    "source_roles.csv": "5d1d42a9f2c19e88e0174f486723b4ecc346ad2c46240cecac35bbf66886ccd7",
+    "heads_locked.json": "419afacf269b4e8ae2067f43eeaabbb581834e7e0bbf16339bf7d02a497d531e",
+    "thresholds_locked.json": "7a31e39a2ba903f75e4930bf9bcff85df3e193a99084c54c74e02566a54bbc4e",
+    "analysis_started.json": "73f5751abe89dcfd2e2fbbb948d1ca717f0e0b8366ac25b37a8ccc709227a729",
+    "per_seed_metrics.csv": "fdb1da7766f4381b0e7be998459a231ef9e49a3177216ae2d0fc8ee3e20edde9",
+    "mean_std_ci.csv": "5464323efa70efa6591daf6d93e903a7b66447615cc8a3a15ef440b665239491",
+    "paired_policy_differences.csv": "f1aad27c8364a910ad3373297936516b6799727fe66c54a86eb2829be71ec47c",
+    "summary.json": "d61836abeee6dece95610622a36dfcbff63921c4493ce993fd073991df3ed8fa",
+    "source_event_interval_protocol.json": "6af0b52bf8c7cb6ef7c920314bc2acf67e1cc9c54262ebe4426654f454963a74",
+    "source_event_intervals.csv": "4babfe8ec1d844a18b54ca76aee1c99f83e88d272d091a75151a3d0dbd3c2572"
+  },
+  "new_heads_sha256": {
+    "outputs/phase5/calibration/sd_family_excluded/clip_fusion.npz": "8ad313bf83f88552eed735a87bb46a12be2b4188767edea4f1a2801fb2c4d6ac",
+    "outputs/phase5/calibration/sd_family_excluded/clip_probe.npz": "35fa973aa05781896b0573aa07e87a39753f5359132fd77cc2aa6ef6776c97a2",
+    "outputs/phase5/calibration/sd_family_excluded/resnet_fusion.npz": "60ade026c8a760a11cd246ce89273b38efcc41c2ea8669549286eea1f598e20e",
+    "outputs/phase5/calibration/sd_family_excluded/resnet_probe.npz": "6eff6ee171e662fc6916e4406a25668292e449b1eab2d4fb2c39ef67a339b457"
+  }
+}

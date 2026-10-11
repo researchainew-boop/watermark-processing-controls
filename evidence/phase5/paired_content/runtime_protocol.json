@@ -1,0 +1,50 @@
+{
+  "locked_at_utc": "2026-10-10T10:25:36.660221+00:00",
+  "generation_or_detector_scores_observed": false,
+  "primary": "Identity unmarked origin AUC of the independently calibrated joint probes; additional SD-family-excluded probes report restricted DALL-E-only synthetic fitting.",
+  "secondary": "JPEG50 and lowres32; separately calibrated probe/fusion/gate decisions under all three fixed policies. Caption pairs are the bootstrap unit.",
+  "legacy_protocol": "Retained unchanged. This prescoring supplement makes independently calibrated Phase5 heads the primary comparison; previously frozen original heads remain archived.",
+  "test_threshold_tuning": false,
+  "generation_assets_sha256": "bba504ba0103de43485a9f0f470995544f017fcb31d122735c27a051e666c169",
+  "input_sha256": {
+    "outputs/phase5/paired_content/protocol.json": "6a169ffed0556a74ac310f9f37809c5290555c6932e74724a9cb425dbcbd5bca",
+    "outputs/phase5/paired_content/generation_assets_lock.json": "bba504ba0103de43485a9f0f470995544f017fcb31d122735c27a051e666c169",
+    "outputs/phase5/paired_content/selection_complete.json": "fe24f86b799f212289074f392978fdb6cc911d9bc3ea9defcce32ac7a38bef1a",
+    "outputs/phase5/paired_content/source_pairs.csv": "868434d65ac0adeac61bc14c84700f9562941ea3b20d02c1b81c21688bdb7e6f",
+    "outputs/phase5/calibration/protocol.json": "8bcd10e73004978f45121e513a5fab897c5fbee66b2d4b37dbf6c58f1eb00658",
+    "outputs/phase5/calibration/heads_locked.json": "001a9c691c4407a26aeae219381705b92bae14c08ca5f529c99e0b9b238ce94d",
+    "outputs/phase5/calibration/thresholds_locked.json": "8e732edb8642a4f41545ad98f86cae1c486d8ba4447fcab36c8650c21be80784",
+    "outputs/phase5/calibration/sd_family_excluded/protocol.json": "f1aeede5a2379c99b4dc3d39ab6d470233d64fd8b1908628b3bf5458af7f91bf",
+    "outputs/phase5/calibration/sd_family_excluded/heads_locked.json": "419afacf269b4e8ae2067f43eeaabbb581834e7e0bbf16339bf7d02a497d531e",
+    "outputs/phase5/calibration/sd_family_excluded/thresholds_locked.json": "7a31e39a2ba903f75e4930bf9bcff85df3e193a99084c54c74e02566a54bbc4e",
+    "outputs/phase3/controls/split_seeds/20260920/resnet_full.npz": "08cf3bd91ccc3124983752a989f4d68935e1f7ba4859fa676dd7ad9dbfa87e0f",
+    "outputs/phase5/calibration/20260920/resnet_fusion.npz": "c9f5af977eb673a83ecc692a53a022cc04be155dd2af81e2e1bd2b8850eae3f6",
+    "outputs/phase5/calibration/sd_family_excluded/resnet_probe.npz": "6eff6ee171e662fc6916e4406a25668292e449b1eab2d4fb2c39ef67a339b457",
+    "outputs/phase5/calibration/sd_family_excluded/resnet_fusion.npz": "60ade026c8a760a11cd246ce89273b38efcc41c2ea8669549286eea1f598e20e",
+    "outputs/phase3/controls/split_seeds/20260920/clip_full.npz": "d57c6c892f3d4baf212bc2dc9decf3d5305fbee798102991a5c8dec3478f413d",
+    "outputs/phase5/calibration/20260920/clip_fusion.npz": "af8db3f3472949a351fa490314fadba372f6681a10550e9d6458c6c6f50c678f",
+    "outputs/phase5/calibration/sd_family_excluded/clip_probe.npz": "35fa973aa05781896b0573aa07e87a39753f5359132fd77cc2aa6ef6776c97a2",
+    "outputs/phase5/calibration/sd_family_excluded/clip_fusion.npz": "8ad313bf83f88552eed735a87bb46a12be2b4188767edea4f1a2801fb2c4d6ac"
+  },
+  "heads": {
+    "joint_resnet": [
+      "outputs/phase3/controls/split_seeds/20260920/resnet_full.npz",
+      "outputs/phase5/calibration/20260920/resnet_fusion.npz"
+    ],
+    "SD_excluded_resnet": [
+      "outputs/phase5/calibration/sd_family_excluded/resnet_probe.npz",
+      "outputs/phase5/calibration/sd_family_excluded/resnet_fusion.npz"
+    ],
+    "joint_clip": [
+      "outputs/phase3/controls/split_seeds/20260920/clip_full.npz",
+      "outputs/phase5/calibration/20260920/clip_fusion.npz"
+    ],
+    "SD_excluded_clip": [
+      "outputs/phase5/calibration/sd_family_excluded/clip_probe.npz",
+      "outputs/phase5/calibration/sd_family_excluded/clip_fusion.npz"
+    ]
+  },
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261012,
+  "runtime_driver_sha256": "01d43848475256ee108ecf622515388c420198085cfe02582b8aa41395357bc3"
+}

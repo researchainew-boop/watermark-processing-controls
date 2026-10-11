@@ -1,0 +1,49 @@
+{
+  "locked_at_utc": "2026-10-11T05:33:42.268937+00:00",
+  "nominal_FPR": 0.05,
+  "records": [
+    {
+      "method": "dwt_dct",
+      "query_rule": "default",
+      "threshold": 0.2938044462352991,
+      "calibration_images": 1600,
+      "calibration_sources": 400,
+      "accepted_images": 80,
+      "empirical_FPR": 0.05
+    },
+    {
+      "method": "dwt_dct",
+      "query_rule": "any3",
+      "threshold": 0.4477905460516922,
+      "calibration_images": 1600,
+      "calibration_sources": 400,
+      "accepted_images": 80,
+      "empirical_FPR": 0.05
+    },
+    {
+      "method": "trustmark",
+      "query_rule": "default",
+      "threshold": 0.14726526010781527,
+      "calibration_images": 1600,
+      "calibration_sources": 400,
+      "accepted_images": 80,
+      "empirical_FPR": 0.05
+    },
+    {
+      "method": "trustmark",
+      "query_rule": "any3",
+      "threshold": 0.29283346072770655,
+      "calibration_images": 1600,
+      "calibration_sources": 400,
+      "accepted_images": 80,
+      "empirical_FPR": 0.05
+    }
+  ],
+  "manifest_sha256": "57c0f520e85525ec3e27f0b1cb185be3178aa3d1bd78659db731f4a1142dd478",
+  "protocol_sha256": "97e835b79d0e52d978acb34b951e5ed210993146d7d4986d3f53bb2e06cdc764",
+  "amendment_sha256": "3090b9ba4cf132cef1433cb980835dce99303175814c05ffec76ed7ceffc31cc",
+  "calibration_scores_sha256": "c51644f70b30b5298bee399263d50a8f504d240947230fde227ec49c0f5b1232",
+  "calibration_raw_sha256": "3887a0bacc7140b1990ecd229cdb4cc11d68f1e83a2ebc67e45f90f309fb0daa",
+  "test_decoding_has_not_started": true,
+  "whole_ties": true
+}

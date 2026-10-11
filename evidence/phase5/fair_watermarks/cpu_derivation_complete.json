@@ -1,0 +1,9 @@
+{
+  "started_at_utc": "2026-10-10T10:37:55.238488+00:00",
+  "completed_at_utc": "2026-10-10T10:45:17.125661+00:00",
+  "images": 6464,
+  "manifest_sha256": "45446ec85d93a334348f85cbff07d55895aaa42b7034826243f6f7969f9b10b9",
+  "cpu_covers_sha256": "12b0df492b589a9d64af2fd7859f128ad979ef2c7933a868c47dd15fffa59afd",
+  "amendment_sha256": "3090b9ba4cf132cef1433cb980835dce99303175814c05ffec76ed7ceffc31cc",
+  "decoder_run": false
+}

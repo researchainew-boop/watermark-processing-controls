@@ -1,0 +1,99 @@
+{
+  "locked_at_utc": "2026-10-10T10:19:32.980753+00:00",
+  "seed": 20260920,
+  "parent_protocol_sha256": "8bcd10e73004978f45121e513a5fab897c5fbee66b2d4b37dbf6c58f1eb00658",
+  "source_roles_sha256": "5d1d42a9f2c19e88e0174f486723b4ecc346ad2c46240cecac35bbf66886ccd7",
+  "heldout_AI_families": [
+    "stable-diffusion",
+    "midjourney"
+  ],
+  "training_rule": "Train new balanced L2 logistic probes on unchanged core13 cached vectors for all original locked training photographs and DALL-E 3 sources only. Exclude every Stable Diffusion and Midjourney source from probe training, fusion fitting and calibration. Midjourney stays in original tests. New fusion fits the existing source-disjoint validation fusion-fit half, also excluding SD. Real-negative calibration uses the same independent COCO144/Open Images75 source half and the same three prespecified policies.",
+  "probe_hyperparameters": {
+    "class_weight": "balanced",
+    "penalty": "L2",
+    "C": 1.0,
+    "max_iter": 3000,
+    "random_state": 0
+  },
+  "role_counts": [
+    {
+      "role": "calibration",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "role": "calibration",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "role": "calibration",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "role": "excluded_generator_from_fitting_and_calibration",
+      "collection": "stable-diffusion",
+      "sources": 1667
+    },
+    {
+      "role": "fusion_fit",
+      "collection": "coco",
+      "sources": 144
+    },
+    {
+      "role": "fusion_fit",
+      "collection": "dalle-3",
+      "sources": 73
+    },
+    {
+      "role": "fusion_fit",
+      "collection": "openimages",
+      "sources": 75
+    },
+    {
+      "role": "test",
+      "collection": "coco",
+      "sources": 288
+    },
+    {
+      "role": "test",
+      "collection": "dalle-3",
+      "sources": 148
+    },
+    {
+      "role": "test",
+      "collection": "midjourney",
+      "sources": 962
+    },
+    {
+      "role": "test",
+      "collection": "openimages",
+      "sources": 150
+    },
+    {
+      "role": "test",
+      "collection": "stable-diffusion",
+      "sources": 295
+    },
+    {
+      "role": "train",
+      "collection": "coco",
+      "sources": 1344
+    },
+    {
+      "role": "train",
+      "collection": "dalle-3",
+      "sources": 685
+    },
+    {
+      "role": "train",
+      "collection": "openimages",
+      "sources": 700
+    }
+  ],
+  "caveat": "DALL-E-only synthetic training is a restricted, different training mix, so a difference from the original detector cannot isolate the effect of generator holdout. The frozen ImageNet/CLIP backbone may have prior exposure to related generators or internet imagery; this control guarantees no SD-family supervised feature-head fitting, not generator ignorance of pretrained representations. The original source pool and new400 have already been examined. Future caption-paired SD images are to be scored after this head/threshold lock without retuning.",
+  "test_threshold_tuning": false,
+  "paired_test_scored": false,
+  "script_sha256_at_lock": "ecc16785ab2fe24c20a0ee14b269eef36b0a10c5d012dd5c735811b936778a19"
+}

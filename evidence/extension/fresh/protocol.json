@@ -1,0 +1,35 @@
+{
+  "frozen_at_utc": "2026-10-09T04:06:04.345313+00:00",
+  "seed": 20261009,
+  "planned_sources": {
+    "openimages": 48,
+    "coco": 48,
+    "dalle-3": 96
+  },
+  "selection": "SHA256 order; source availability/minimum side256/old and within-new hash screening only",
+  "models_sha256": {
+    "clip_attack.npz": "84b0278fe5db2850d22ee9226a4a01439fa2c685f62e30dda9ee2c1876910b86",
+    "clip_full.npz": "30cf885fbf4030471c15443ce8808173764ff193e775a61f7bb11329901278d4",
+    "clip_fusion_full.npz": "6c176dd5b5f945b077b284435231d7059b062e536acece8edf16c96a314d17b4",
+    "clip_fusion_no_attacks.npz": "82e0d0af1b9ffda4762a19aa38c9c32f79bee50c4cfa9705c38258ac4d303dc4",
+    "clip_fusion_no_matched_reals.npz": "28e13f227c55ae47a6c8aa1107fb90f9bb0581be00a02f45e933a1126338b88f",
+    "clip_no_attacks.npz": "824b0ef326336ebb0e9a08a4903a72ff41f74de923fb84c43765ef9b882fc19d",
+    "clip_no_matched_reals.npz": "f13d00686002d8ef3fd9e33154314362d2b05815238ea89fd8ce78275d6176ef",
+    "resnet_attack.npz": "5c1d6dbb547483772fe07be63d644655a849292271a0e46fd9e161377b5024ab",
+    "resnet_full.npz": "db427c4aeab4edf07496cf28d6f5fb766ce48f91baee53797df41ddb42b5d9f7",
+    "resnet_fusion_full.npz": "73fe3fba271ca02092201a559d707e903e9a5cc8897f2916306e5a2a865e365c",
+    "resnet_fusion_no_attacks.npz": "3291eb409fe0f228d41706c17fcbd8c5b1dda008f7948aa8c5743f4cabe7c6e2",
+    "resnet_fusion_no_matched_reals.npz": "4fe5761d915a03c632f9ae6c0a82f78762e463250ecafd7a26fcfc1a64791bbf",
+    "resnet_no_attacks.npz": "f47f3503aefdd5cd7f4e3e820facc8d708b13552e53a497ba5cd00467b7e1876",
+    "resnet_no_matched_reals.npz": "8d09c4ee813804b8490b123ad423b6bda9984576a80f52a4b0feef25d189c129"
+  },
+  "gate_threshold": 0.8125,
+  "jpeg_quality": 95,
+  "jpeg_library": "4.10.0",
+  "processing": "RGB->BGR, INTER_AREA resize256x256, OpenCV JPEG95 encode/decode for every source",
+  "fresh_ai_scope": "Unused items in the same DALL-E3 archive, not an unseen synthetic collection",
+  "tuning_on_this_sample": false,
+  "untouched_means": "No prior detector inference on these sources; pretrained-model overlap cannot be ruled out",
+  "inference_passes_allowed": 1,
+  "script_sha256": "d43787e05fe047b109adbd590e135202fbeef5894d67ff77fc1df6d447fdab5a"
+}

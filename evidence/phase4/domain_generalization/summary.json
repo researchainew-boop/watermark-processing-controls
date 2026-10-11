@@ -1,0 +1,3725 @@
+{
+  "completed_at_utc": "2026-10-10T04:33:37.878409+00:00",
+  "seed": 20260920,
+  "protocol_sha256": "b9e064040cc53a25a8b1aa190d5e6dc3a62e0bd03a029344183ac0c7c1323e38",
+  "models": {
+    "resnet_coco_only": {
+      "backbone": "resnet",
+      "regime": "coco_only",
+      "thresholds": {
+        "selected_at_utc": "2026-10-10T04:30:58.899098+00:00",
+        "test_inference_performed": false,
+        "calibration_scope": "Separate held-out validation-source half, never used in either fitted head.",
+        "real_sources": 75,
+        "real_rows": 975,
+        "AI_sources": 220,
+        "systems": {
+          "probe": {
+            "threshold_logit": 3.865643075053214,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.7926573426573427
+          },
+          "fusion": {
+            "threshold_logit": 0.8892890600248435,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.8734265734265734
+          },
+          "gated": {
+            "threshold_logit": 3.865643075053214,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.8479020979020979
+          }
+        },
+        "heads_sha256": {
+          "probe.npz": "19888772986d62e192fbc285c5a9ef8ea7d31b4e1f4d12699758795173058a90",
+          "fusion.npz": "c2bd87faff5e74a92478a2f3cce5d7033014ed0e67c1073f161fb3c7b0073d3f"
+        }
+      },
+      "systems": {
+        "probe": {
+          "auc": 0.8914355278766312,
+          "auc_ci95": [
+            0.8744393952649269,
+            0.9073069361654804
+          ],
+          "test_fpr": 0.11770833333333333,
+          "test_fpr_ci95": [
+            0.089375,
+            0.14708854166666668
+          ],
+          "test_tpr": 0.7332858837485172,
+          "test_tpr_ci95": [
+            0.7137514827995255,
+            0.7507010676156584
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": 3.865643075053214,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.07541666666666667,
+              "rate_ci95": [
+                0.04415625,
+                0.11
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.16,
+              "rate_ci95": [
+                0.11497916666666667,
+                0.20753124999999997
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.767909604519774,
+              "rate_ci95": [
+                0.726319209039548,
+                0.8058757062146893
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.8128378378378378,
+              "rate_ci95": [
+                0.7659853603603604,
+                0.8619425675675676
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.7104296604296604,
+              "rate_ci95": [
+                0.6844360706860707,
+                0.7328837491337491
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.7829194883370956,
+              "rate_ci95": [
+                0.7516854778028593,
+                0.8126448457486832
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.7104296604296604,
+              "rate_ci95": [
+                0.6844360706860707,
+                0.7328837491337491
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.7306558210472801,
+              "rate_ci95": [
+                0.7105681240467717,
+                0.7481507371631926
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.7351296390442298,
+              "rate_ci95": [
+                0.7163662938485003,
+                0.7521148957803763
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "fusion": {
+          "auc": 0.8951857058125742,
+          "auc_ci95": [
+            0.8804815421115065,
+            0.9091403524120205
+          ],
+          "test_fpr": 0.08729166666666667,
+          "test_fpr_ci95": [
+            0.06624479166666666,
+            0.10833854166666666
+          ],
+          "test_tpr": 0.6208303677342824,
+          "test_tpr_ci95": [
+            0.6080409252669039,
+            0.6323155397390273
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": 0.8892890600248435,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.0575,
+              "rate_ci95": [
+                0.03375,
+                0.08251041666666666
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.11708333333333333,
+              "rate_ci95": [
+                0.08582291666666667,
+                0.15084375
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.6404519774011299,
+              "rate_ci95": [
+                0.614454802259887,
+                0.6638615819209039
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.6686936936936937,
+              "rate_ci95": [
+                0.6423254504504504,
+                0.6945945945945946
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.6074497574497575,
+              "rate_ci95": [
+                0.5909528759528759,
+                0.6226273388773389
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.6498871331828442,
+              "rate_ci95": [
+                0.6296463506395786,
+                0.6678047404063204
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.6074497574497575,
+              "rate_ci95": [
+                0.5909528759528759,
+                0.6226273388773389
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.4494153533299441,
+              "rate_ci95": [
+                0.4340035587188612,
+                0.46410777834265377
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.7842399593289273,
+              "rate_ci95": [
+                0.7719776309100153,
+                0.7958312150482969
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "gated": {
+          "auc": 0.8882633699090549,
+          "auc_ci95": [
+            0.8682346517892449,
+            0.9072836864867536
+          ],
+          "test_fpr": 0.116875,
+          "test_fpr_ci95": [
+            0.08895833333333333,
+            0.14541666666666667
+          ],
+          "test_tpr": 0.7592645314353499,
+          "test_tpr_ci95": [
+            0.7417502965599051,
+            0.7746405693950178
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": 3.865643075053214,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.075,
+              "rate_ci95": [
+                0.044145833333333336,
+                0.10958333333333334
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.15875,
+              "rate_ci95": [
+                0.11291666666666667,
+                0.20584375
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.7931073446327683,
+              "rate_ci95": [
+                0.7559293785310734,
+                0.8266723163841808
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.834009009009009,
+              "rate_ci95": [
+                0.7909853603603604,
+                0.8756756756756757
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.7373873873873874,
+              "rate_ci95": [
+                0.7148579348579349,
+                0.7572435897435897
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.8067720090293454,
+              "rate_ci95": [
+                0.7792287434161024,
+                0.8330398796087284
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.7373873873873874,
+              "rate_ci95": [
+                0.7148579348579349,
+                0.7572435897435897
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.7243009659379767,
+              "rate_ci95": [
+                0.7043187595322826,
+                0.7415887137773259
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.7907981698017286,
+              "rate_ci95": [
+                0.7748805287239451,
+                0.8061006609049314
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        }
+      },
+      "attack_scope_false_positives": {
+        "matched_13_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.11512820512820512,
+              "fpr_ci95": [
+                0.08486538461538462,
+                0.14669871794871792
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.07923076923076923,
+              "fpr_ci95": [
+                0.05640384615384615,
+                0.10231410256410256
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": 0.8892890600248435,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.11435897435897435,
+              "fpr_ci95": [
+                0.08384615384615385,
+                0.14615384615384616
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.07230769230769231,
+              "fpr_ci95": [
+                0.04,
+                0.1082307692307692
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.05076923076923077,
+              "fpr_ci95": [
+                0.025628205128205128,
+                0.07794871794871795
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 0.8892890600248435,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.07179487179487179,
+              "fpr_ci95": [
+                0.03998717948717949,
+                0.1076923076923077
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.15794871794871795,
+              "fpr_ci95": [
+                0.10973076923076923,
+                0.21128205128205127
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.1076923076923077,
+              "fpr_ci95": [
+                0.07435897435897436,
+                0.14462820512820512
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 0.8892890600248435,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.15692307692307692,
+              "fpr_ci95": [
+                0.1081923076923077,
+                0.2092820512820512
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            }
+          }
+        },
+        "heldout_3_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.1288888888888889,
+              "fpr_ci95": [
+                0.10108333333333333,
+                0.15666666666666668
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.12222222222222222,
+              "fpr_ci95": [
+                0.1,
+                0.14555555555555555
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": 0.8892890600248435,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.12777777777777777,
+              "fpr_ci95": [
+                0.10108333333333333,
+                0.15555555555555556
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.08888888888888889,
+              "fpr_ci95": [
+                0.057777777777777775,
+                0.12222222222222222
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.08666666666666667,
+              "fpr_ci95": [
+                0.06216666666666667,
+                0.11555555555555555
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 0.8892890600248435,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.08888888888888889,
+              "fpr_ci95": [
+                0.057777777777777775,
+                0.12222222222222222
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.1688888888888889,
+              "fpr_ci95": [
+                0.12444444444444444,
+                0.21338888888888885
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.15777777777777777,
+              "fpr_ci95": [
+                0.12,
+                0.19333333333333333
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 0.8892890600248435,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.16666666666666666,
+              "fpr_ci95": [
+                0.12444444444444444,
+                0.2111666666666666
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 3.865643075053214,
+              "threshold_changed": false
+            }
+          }
+        }
+      }
+    },
+    "resnet_openimages_only": {
+      "backbone": "resnet",
+      "regime": "openimages_only",
+      "thresholds": {
+        "selected_at_utc": "2026-10-10T04:31:32.015636+00:00",
+        "test_inference_performed": false,
+        "calibration_scope": "Separate held-out validation-source half, never used in either fitted head.",
+        "real_sources": 75,
+        "real_rows": 975,
+        "AI_sources": 220,
+        "systems": {
+          "probe": {
+            "threshold_logit": 3.5139657660965913,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.7335664335664336
+          },
+          "fusion": {
+            "threshold_logit": 0.1078661039986315,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9251748251748252
+          },
+          "gated": {
+            "threshold_logit": 3.5139657660965913,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.83006993006993
+          }
+        },
+        "heads_sha256": {
+          "probe.npz": "b08388876244fff498d716851a19a0ba9f3f0e5c50fb4900d8a551bd2f77f07e",
+          "fusion.npz": "e5d123faa7446feb261cfd3b8dea2d5d352233391fda970cc17cf1921f8b405e"
+        }
+      },
+      "systems": {
+        "probe": {
+          "auc": 0.9023134638196915,
+          "auc_ci95": [
+            0.8861487561783313,
+            0.9179189798339265
+          ],
+          "test_fpr": 0.075625,
+          "test_fpr_ci95": [
+            0.053947916666666665,
+            0.10125520833333333
+          ],
+          "test_tpr": 0.6827283511269276,
+          "test_tpr_ci95": [
+            0.6630604982206406,
+            0.7015201660735468
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": 3.5139657660965913,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.08708333333333333,
+              "rate_ci95": [
+                0.05333333333333334,
+                0.12501041666666665
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.06416666666666666,
+              "rate_ci95": [
+                0.034583333333333334,
+                0.09708333333333333
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.6698305084745763,
+              "rate_ci95": [
+                0.6242937853107344,
+                0.7126751412429378
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.7531531531531531,
+              "rate_ci95": [
+                0.6975056306306306,
+                0.8067792792792793
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.6758489258489259,
+              "rate_ci95": [
+                0.651719507969508,
+                0.699481981981982
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.6976674191121144,
+              "rate_ci95": [
+                0.6616234010534237,
+                0.7325131677953348
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.6758489258489259,
+              "rate_ci95": [
+                0.651719507969508,
+                0.699481981981982
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.6779867819013726,
+              "rate_ci95": [
+                0.6585091509913574,
+                0.6965607524148448
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.6867819013726487,
+              "rate_ci95": [
+                0.667207676664972,
+                0.7052414844941536
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "fusion": {
+          "auc": 0.9041177540529853,
+          "auc_ci95": [
+            0.8917263788799921,
+            0.9158545850632661
+          ],
+          "test_fpr": 0.081875,
+          "test_fpr_ci95": [
+            0.06436979166666666,
+            0.10083854166666666
+          ],
+          "test_tpr": 0.6714827995255042,
+          "test_tpr_ci95": [
+            0.6620403321470937,
+            0.6805711743772241
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": 0.1078661039986315,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.09916666666666667,
+              "rate_ci95": [
+                0.07208333333333333,
+                0.13085416666666663
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.06458333333333334,
+              "rate_ci95": [
+                0.04415625,
+                0.08916666666666667
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.6738983050847458,
+              "rate_ci95": [
+                0.6535593220338983,
+                0.6931073446327684
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.6936936936936937,
+              "rate_ci95": [
+                0.6666666666666666,
+                0.7195945945945946
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.6673250173250174,
+              "rate_ci95": [
+                0.6555743243243243,
+                0.6786910949410949
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.6805116629044394,
+              "rate_ci95": [
+                0.6638017306245297,
+                0.6961719337848006
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.6673250173250174,
+              "rate_ci95": [
+                0.6555743243243243,
+                0.6786910949410949
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.4809862735129639,
+              "rate_ci95": [
+                0.46537620742247077,
+                0.4964006100660905
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.8523640061006609,
+              "rate_ci95": [
+                0.8470767666497204,
+                0.8569928825622776
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "gated": {
+          "auc": 0.9114697064056939,
+          "auc_ci95": [
+            0.8934978710705812,
+            0.9281488865411229
+          ],
+          "test_fpr": 0.07520833333333334,
+          "test_fpr_ci95": [
+            0.05352604166666667,
+            0.10063020833333333
+          ],
+          "test_tpr": 0.7211150652431791,
+          "test_tpr_ci95": [
+            0.7029655990510083,
+            0.7383659549228944
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": 3.5139657660965913,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.08666666666666667,
+              "rate_ci95": [
+                0.05332291666666667,
+                0.12416666666666666
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.06375,
+              "rate_ci95": [
+                0.03457291666666667,
+                0.09583333333333334
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.7159322033898305,
+              "rate_ci95": [
+                0.6769463276836158,
+                0.7523276836158191
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.7894144144144144,
+              "rate_ci95": [
+                0.739634009009009,
+                0.8346903153153153
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.7121968121968122,
+              "rate_ci95": [
+                0.6910247747747748,
+                0.7331306306306306
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.7404815650865312,
+              "rate_ci95": [
+                0.7088750940556809,
+                0.7708069977426636
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.7121968121968122,
+              "rate_ci95": [
+                0.6910247747747748,
+                0.7331306306306306
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.6719877986781901,
+              "rate_ci95": [
+                0.6520589730554144,
+                0.6902974072191154
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.7661921708185053,
+              "rate_ci95": [
+                0.7499669547534317,
+                0.7825114387391967
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        }
+      },
+      "attack_scope_false_positives": {
+        "matched_13_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.07205128205128206,
+              "fpr_ci95": [
+                0.04717307692307692,
+                0.09847435897435897
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.07179487179487179,
+              "fpr_ci95": [
+                0.05333333333333334,
+                0.0917948717948718
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": 0.1078661039986315,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.07205128205128206,
+              "fpr_ci95": [
+                0.04742948717948718,
+                0.09846794871794871
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.0841025641025641,
+              "fpr_ci95": [
+                0.048205128205128206,
+                0.1236025641025641
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.08974358974358974,
+              "fpr_ci95": [
+                0.06101282051282051,
+                0.12205128205128205
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 0.1078661039986315,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.0841025641025641,
+              "fpr_ci95": [
+                0.048205128205128206,
+                0.1236025641025641
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.06,
+              "fpr_ci95": [
+                0.028192307692307694,
+                0.09487179487179487
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.05384615384615385,
+              "fpr_ci95": [
+                0.03280769230769231,
+                0.07744871794871794
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 0.1078661039986315,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.06,
+              "fpr_ci95": [
+                0.028192307692307694,
+                0.09487179487179487
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            }
+          }
+        },
+        "heldout_3_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.09111111111111111,
+              "fpr_ci95": [
+                0.06888888888888889,
+                0.11555555555555555
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.12555555555555556,
+              "fpr_ci95": [
+                0.1,
+                0.15222222222222223
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": 0.1078661039986315,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.08888888888888889,
+              "fpr_ci95": [
+                0.06777777777777778,
+                0.11222222222222222
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.1,
+              "fpr_ci95": [
+                0.06666666666666667,
+                0.13783333333333328
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.14,
+              "fpr_ci95": [
+                0.10444444444444445,
+                0.18
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 0.1078661039986315,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.09777777777777778,
+              "fpr_ci95": [
+                0.06661111111111111,
+                0.13555555555555557
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.08222222222222222,
+              "fpr_ci95": [
+                0.0555,
+                0.11333333333333333
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.1111111111111111,
+              "fpr_ci95": [
+                0.07777777777777778,
+                0.14888888888888888
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 0.1078661039986315,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.08,
+              "fpr_ci95": [
+                0.05333333333333334,
+                0.1111111111111111
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 3.5139657660965913,
+              "threshold_changed": false
+            }
+          }
+        }
+      }
+    },
+    "resnet_joint": {
+      "backbone": "resnet",
+      "regime": "joint",
+      "thresholds": {
+        "selected_at_utc": "2026-10-10T04:31:59.915310+00:00",
+        "test_inference_performed": false,
+        "calibration_scope": "Separate held-out validation-source half, never used in either fitted head.",
+        "real_sources": 75,
+        "real_rows": 975,
+        "AI_sources": 220,
+        "systems": {
+          "probe": {
+            "threshold_logit": 2.067174136738174,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.8101398601398602
+          },
+          "fusion": {
+            "threshold_logit": -0.14639707222081189,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9262237762237763
+          },
+          "gated": {
+            "threshold_logit": 2.067174136738174,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.8958041958041958
+          }
+        },
+        "heads_sha256": {
+          "probe.npz": "62693597ecaf13674c11d3cff9cf758c17a0549f70b711a66e2b7cb296a7c9fc",
+          "fusion.npz": "887115788420d6cc2f1e518919660a9afc82c837a190c32c132f57876f4e36b0"
+        }
+      },
+      "systems": {
+        "probe": {
+          "auc": 0.9155081652827205,
+          "auc_ci95": [
+            0.9016354191379993,
+            0.9285517065786872
+          ],
+          "test_fpr": 0.10041666666666667,
+          "test_fpr_ci95": [
+            0.07603645833333332,
+            0.12833333333333333
+          ],
+          "test_tpr": 0.7636536180308422,
+          "test_tpr_ci95": [
+            0.7453594306049822,
+            0.7811892052194543
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": 2.067174136738174,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.09041666666666667,
+              "rate_ci95": [
+                0.05915625,
+                0.12835416666666663
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.11041666666666666,
+              "rate_ci95": [
+                0.07247916666666666,
+                0.15
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.7875706214689265,
+              "rate_ci95": [
+                0.7499406779661018,
+                0.8237316384180791
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.8067567567567567,
+              "rate_ci95": [
+                0.7567567567567568,
+                0.8572128378378379
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.7496881496881497,
+              "rate_ci95": [
+                0.7263998613998613,
+                0.7705509355509356
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.7939804364183597,
+              "rate_ci95": [
+                0.7638769751693002,
+                0.8240782543265613
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.7496881496881497,
+              "rate_ci95": [
+                0.7263998613998613,
+                0.7705509355509356
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.7619725470259278,
+              "rate_ci95": [
+                0.7436184544992374,
+                0.779517031011693
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.7644128113879004,
+              "rate_ci95": [
+                0.7466179461108287,
+                0.7817501270971022
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "fusion": {
+          "auc": 0.9126935201660735,
+          "auc_ci95": [
+            0.901138765569395,
+            0.923798960063266
+          ],
+          "test_fpr": 0.07604166666666666,
+          "test_fpr_ci95": [
+            0.05853645833333333,
+            0.095625
+          ],
+          "test_tpr": 0.6770581257413998,
+          "test_tpr_ci95": [
+            0.6684650059311982,
+            0.6858635824436535
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": -0.14639707222081189,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.07375,
+              "rate_ci95": [
+                0.04958333333333333,
+                0.10041666666666667
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.07833333333333334,
+              "rate_ci95": [
+                0.05541666666666667,
+                0.10375
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.6872316384180791,
+              "rate_ci95": [
+                0.6673389830508474,
+                0.7063305084745762
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.6934684684684684,
+              "rate_ci95": [
+                0.6677759009009009,
+                0.7182545045045046
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.6714137214137215,
+              "rate_ci95": [
+                0.6598397435897436,
+                0.6830232155232155
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.6893152746425885,
+              "rate_ci95": [
+                0.672607223476298,
+                0.7050413844996237
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.6714137214137215,
+              "rate_ci95": [
+                0.6598397435897436,
+                0.6830232155232155
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.48851042196237926,
+              "rate_ci95": [
+                0.4741230299949161,
+                0.5031520081342146
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.8563294356888663,
+              "rate_ci95": [
+                0.8513459583121504,
+                0.860958312150483
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "gated": {
+          "auc": 0.9249786328588374,
+          "auc_ci95": [
+            0.910145355871886,
+            0.9391957756277185
+          ],
+          "test_fpr": 0.10041666666666667,
+          "test_fpr_ci95": [
+            0.07603645833333332,
+            0.12833333333333333
+          ],
+          "test_tpr": 0.8052194543297746,
+          "test_tpr_ci95": [
+            0.7896998813760379,
+            0.819888493475682
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": 2.067174136738174,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.09041666666666667,
+              "rate_ci95": [
+                0.05915625,
+                0.12835416666666663
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.11041666666666666,
+              "rate_ci95": [
+                0.07247916666666666,
+                0.15
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.8277966101694916,
+              "rate_ci95": [
+                0.7976129943502824,
+                0.8583079096045197
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.8502252252252253,
+              "rate_ci95": [
+                0.8096846846846847,
+                0.8909966216216216
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.7913721413721414,
+              "rate_ci95": [
+                0.7708532571032571,
+                0.8107163894663895
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.8352896914973664,
+              "rate_ci95": [
+                0.8096933784800602,
+                0.8604984951091046
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.7913721413721414,
+              "rate_ci95": [
+                0.7708532571032571,
+                0.8107163894663895
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.7624300965937977,
+              "rate_ci95": [
+                0.7440760040671073,
+                0.7799694966954753
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.8455516014234875,
+              "rate_ci95": [
+                0.8317234367056431,
+                0.8587709710218607
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        }
+      },
+      "attack_scope_false_positives": {
+        "matched_13_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.09384615384615384,
+              "fpr_ci95": [
+                0.06691025641025641,
+                0.12307692307692308
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.06666666666666667,
+              "fpr_ci95": [
+                0.048198717948717947,
+                0.0874423076923077
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": -0.14639707222081189,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.09384615384615384,
+              "fpr_ci95": [
+                0.06691025641025641,
+                0.12307692307692308
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.08564102564102564,
+              "fpr_ci95": [
+                0.05282051282051282,
+                0.12615384615384614
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.06717948717948719,
+              "fpr_ci95": [
+                0.04051282051282051,
+                0.09692307692307692
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -0.14639707222081189,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.08564102564102564,
+              "fpr_ci95": [
+                0.05282051282051282,
+                0.12615384615384614
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.10205128205128206,
+              "fpr_ci95": [
+                0.06051282051282051,
+                0.14414102564102563
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.06615384615384616,
+              "fpr_ci95": [
+                0.04205128205128205,
+                0.09385897435897435
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -0.14639707222081189,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.10205128205128206,
+              "fpr_ci95": [
+                0.06051282051282051,
+                0.14414102564102563
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            }
+          }
+        },
+        "heldout_3_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.1288888888888889,
+              "fpr_ci95": [
+                0.10222222222222223,
+                0.15666666666666668
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.11666666666666667,
+              "fpr_ci95": [
+                0.09333333333333334,
+                0.14333333333333334
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": -0.14639707222081189,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.1288888888888889,
+              "fpr_ci95": [
+                0.10222222222222223,
+                0.15666666666666668
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.1111111111111111,
+              "fpr_ci95": [
+                0.07555555555555556,
+                0.14888888888888888
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.10222222222222223,
+              "fpr_ci95": [
+                0.06883333333333333,
+                0.13777777777777778
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -0.14639707222081189,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.1111111111111111,
+              "fpr_ci95": [
+                0.07555555555555556,
+                0.14888888888888888
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.14666666666666667,
+              "fpr_ci95": [
+                0.10888888888888888,
+                0.18888888888888888
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.13111111111111112,
+              "fpr_ci95": [
+                0.09555555555555556,
+                0.1688888888888889
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -0.14639707222081189,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.14666666666666667,
+              "fpr_ci95": [
+                0.10888888888888888,
+                0.18888888888888888
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 2.067174136738174,
+              "threshold_changed": false
+            }
+          }
+        }
+      }
+    },
+    "clip_coco_only": {
+      "backbone": "clip",
+      "regime": "coco_only",
+      "thresholds": {
+        "selected_at_utc": "2026-10-10T04:32:28.817901+00:00",
+        "test_inference_performed": false,
+        "calibration_scope": "Separate held-out validation-source half, never used in either fitted head.",
+        "real_sources": 75,
+        "real_rows": 975,
+        "AI_sources": 220,
+        "systems": {
+          "probe": {
+            "threshold_logit": -1.161930684785696,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9912587412587412
+          },
+          "fusion": {
+            "threshold_logit": -2.778697952354002,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9986013986013986
+          },
+          "gated": {
+            "threshold_logit": -1.161930684785696,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9972027972027973
+          }
+        },
+        "heads_sha256": {
+          "probe.npz": "23e08428270fa39a6f10fdc1e5bdccda502d01490d30b807177fa7c00a5cba79",
+          "fusion.npz": "cfec9548e96cd83d9428d6e41c3f04d31a59f415a5eb5330711411920f9cf272"
+        }
+      },
+      "systems": {
+        "probe": {
+          "auc": 0.9768458629893239,
+          "auc_ci95": [
+            0.9696114016162515,
+            0.9824933288849347
+          ],
+          "test_fpr": 0.22979166666666667,
+          "test_fpr_ci95": [
+            0.19624479166666667,
+            0.269171875
+          ],
+          "test_tpr": 0.9800948991696322,
+          "test_tpr_ci95": [
+            0.9740438908659549,
+            0.9852212336892052
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": -1.161930684785696,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.1,
+              "rate_ci95": [
+                0.06998958333333334,
+                0.13083333333333333
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.3595833333333333,
+              "rate_ci95": [
+                0.2978958333333333,
+                0.42417708333333337
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.9697175141242937,
+              "rate_ci95": [
+                0.9510564971751413,
+                0.9842966101694914
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.9977477477477478,
+              "rate_ci95": [
+                0.9941441441441441,
+                1.0
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.9805613305613305,
+              "rate_ci95": [
+                0.9738704088704089,
+                0.9866276853776854
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.9790820165537999,
+              "rate_ci95": [
+                0.9662904439428142,
+                0.9887885628291949
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.9805613305613305,
+              "rate_ci95": [
+                0.9738704088704089,
+                0.9866276853776854
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.9800203355363498,
+              "rate_ci95": [
+                0.9740721911540416,
+                0.9852071682765633
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.9801728520589731,
+              "rate_ci95": [
+                0.9742742755465176,
+                0.9852058973055414
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "fusion": {
+          "auc": 0.9577078094108343,
+          "auc_ci95": [
+            0.9484176135577304,
+            0.9655662564254647
+          ],
+          "test_fpr": 0.23583333333333334,
+          "test_fpr_ci95": [
+            0.20311979166666666,
+            0.27376562499999996
+          ],
+          "test_tpr": 0.9877342823250297,
+          "test_tpr_ci95": [
+            0.9841731909845789,
+            0.9909134045077106
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": -2.778697952354002,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.10916666666666666,
+              "rate_ci95": [
+                0.07873958333333334,
+                0.14167708333333331
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.3625,
+              "rate_ci95": [
+                0.30373958333333334,
+                0.4258958333333333
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.9811299435028249,
+              "rate_ci95": [
+                0.9693728813559321,
+                0.9898305084745763
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.9981981981981982,
+              "rate_ci95": [
+                0.9954954954954955,
+                1.0
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.9881496881496882,
+              "rate_ci95": [
+                0.9840609840609841,
+                0.9916839916839917
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.9868322046651617,
+              "rate_ci95": [
+                0.9788525206922498,
+                0.9926260346124905
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.9881496881496882,
+              "rate_ci95": [
+                0.9840609840609841,
+                0.9916839916839917
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.9798678190137264,
+              "rate_ci95": [
+                0.9739184036603965,
+                0.9851054905948144
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.9950686324351805,
+              "rate_ci95": [
+                0.9936947127605491,
+                0.9963917132689375
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "gated": {
+          "auc": 0.9670543248319495,
+          "auc_ci95": [
+            0.9551962360369712,
+            0.9759889908313563
+          ],
+          "test_fpr": 0.23,
+          "test_fpr_ci95": [
+            0.196453125,
+            0.2693802083333333
+          ],
+          "test_tpr": 0.9854092526690391,
+          "test_tpr_ci95": [
+            0.9809489916963227,
+            0.9893712930011862
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": -1.161930684785696,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.1,
+              "rate_ci95": [
+                0.06998958333333334,
+                0.13083333333333333
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.36,
+              "rate_ci95": [
+                0.29790625,
+                0.42459375
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.9767231638418079,
+              "rate_ci95": [
+                0.9613531073446329,
+                0.988587570621469
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.9979729729729729,
+              "rate_ci95": [
+                0.9948198198198198,
+                1.0
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.9861399861399861,
+              "rate_ci95": [
+                0.9807683645183645,
+                0.9906800069300069
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.9838224228743416,
+              "rate_ci95": [
+                0.9735854025583145,
+                0.9915744920993228
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.9861399861399861,
+              "rate_ci95": [
+                0.9807683645183645,
+                0.9906800069300069
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.9800711743772242,
+              "rate_ci95": [
+                0.9741230299949161,
+                0.9852084392475852
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.9903914590747331,
+              "rate_ci95": [
+                0.9867310625317742,
+                0.993493899339095
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        }
+      },
+      "attack_scope_false_positives": {
+        "matched_13_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.18461538461538463,
+              "fpr_ci95": [
+                0.14923076923076922,
+                0.22385897435897434
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.18871794871794872,
+              "fpr_ci95": [
+                0.1548653846153846,
+                0.2282051282051282
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": -2.778697952354002,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.18461538461538463,
+              "fpr_ci95": [
+                0.14923076923076922,
+                0.22385897435897434
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.06,
+              "fpr_ci95": [
+                0.031782051282051284,
+                0.09025641025641026
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.06717948717948719,
+              "fpr_ci95": [
+                0.038461538461538464,
+                0.09846153846153846
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -2.778697952354002,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.06,
+              "fpr_ci95": [
+                0.031782051282051284,
+                0.09025641025641026
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.30923076923076925,
+              "fpr_ci95": [
+                0.24614102564102566,
+                0.3779487179487179
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.31025641025641026,
+              "fpr_ci95": [
+                0.2481923076923077,
+                0.3779487179487179
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -2.778697952354002,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.30923076923076925,
+              "fpr_ci95": [
+                0.24614102564102566,
+                0.3779487179487179
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            }
+          }
+        },
+        "heldout_3_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.4255555555555556,
+              "fpr_ci95": [
+                0.38333333333333336,
+                0.4711111111111111
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.44,
+              "fpr_ci95": [
+                0.4,
+                0.4844722222222222
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": -2.778697952354002,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.4266666666666667,
+              "fpr_ci95": [
+                0.38441666666666663,
+                0.4711111111111111
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.2733333333333333,
+              "fpr_ci95": [
+                0.22,
+                0.3244444444444444
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.2911111111111111,
+              "fpr_ci95": [
+                0.23777777777777778,
+                0.3466666666666667
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -2.778697952354002,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.2733333333333333,
+              "fpr_ci95": [
+                0.22,
+                0.3244444444444444
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.5777777777777777,
+              "fpr_ci95": [
+                0.5155,
+                0.6445
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.5888888888888889,
+              "fpr_ci95": [
+                0.5288888888888889,
+                0.6555555555555556
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -2.778697952354002,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.58,
+              "fpr_ci95": [
+                0.5177777777777778,
+                0.6467222222222221
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -1.161930684785696,
+              "threshold_changed": false
+            }
+          }
+        }
+      }
+    },
+    "clip_openimages_only": {
+      "backbone": "clip",
+      "regime": "openimages_only",
+      "thresholds": {
+        "selected_at_utc": "2026-10-10T04:32:56.279653+00:00",
+        "test_inference_performed": false,
+        "calibration_scope": "Separate held-out validation-source half, never used in either fitted head.",
+        "real_sources": 75,
+        "real_rows": 975,
+        "AI_sources": 220,
+        "systems": {
+          "probe": {
+            "threshold_logit": 1.2770058385307128,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9545454545454546
+          },
+          "fusion": {
+            "threshold_logit": -0.5921598839055395,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9912587412587412
+          },
+          "gated": {
+            "threshold_logit": 1.2770058385307128,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9748251748251748
+          }
+        },
+        "heads_sha256": {
+          "probe.npz": "21f5451402c7797eea86cca97edf48f459ba9db926925891ed19592aba85b35c",
+          "fusion.npz": "c8d578aaed39371dcae1af7d44a1d7ee70d4d6aa70a8bf2a4f2e87e6a3154a26"
+        }
+      },
+      "systems": {
+        "probe": {
+          "auc": 0.9813173685251089,
+          "auc_ci95": [
+            0.9762843347172796,
+            0.985694962559312
+          ],
+          "test_fpr": 0.09,
+          "test_fpr_ci95": [
+            0.07125,
+            0.10979687499999999
+          ],
+          "test_tpr": 0.9426809015421115,
+          "test_tpr_ci95": [
+            0.9336393831553974,
+            0.9515065243179123
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": 1.2770058385307128,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.10708333333333334,
+              "rate_ci95": [
+                0.07873958333333334,
+                0.14083333333333334
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.07291666666666667,
+              "rate_ci95": [
+                0.05040625,
+                0.09708333333333333
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.9329943502824859,
+              "rate_ci95": [
+                0.9108446327683616,
+                0.9546920903954802
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.9693693693693693,
+              "rate_ci95": [
+                0.9452702702702702,
+                0.9900900900900901
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.9415453915453915,
+              "rate_ci95": [
+                0.9302434164934166,
+                0.9518399168399169
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.9451467268623025,
+              "rate_ci95": [
+                0.9288167795334838,
+                0.9619281414597441
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.9415453915453915,
+              "rate_ci95": [
+                0.9302434164934166,
+                0.9518399168399169
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.9422979156075242,
+              "rate_ci95": [
+                0.9336553126588714,
+                0.9509926283680732
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.9420945602440265,
+              "rate_ci95": [
+                0.9330439755973564,
+                0.9508426537874937
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "fusion": {
+          "auc": 0.9658554319889284,
+          "auc_ci95": [
+            0.9594462356662713,
+            0.971746622800514
+          ],
+          "test_fpr": 0.09979166666666667,
+          "test_fpr_ci95": [
+            0.08061979166666666,
+            0.11958854166666666
+          ],
+          "test_tpr": 0.9454092526690392,
+          "test_tpr_ci95": [
+            0.940070581257414,
+            0.9509371293001186
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": -0.5921598839055395,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.11541666666666667,
+              "rate_ci95": [
+                0.08623958333333333,
+                0.14791666666666667
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.08416666666666667,
+              "rate_ci95": [
+                0.06041666666666667,
+                0.11125
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.93954802259887,
+              "rate_ci95": [
+                0.9262118644067797,
+                0.9532203389830508
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.9646396396396396,
+              "rate_ci95": [
+                0.9504504504504504,
+                0.9777027027027027
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.9442480942480942,
+              "rate_ci95": [
+                0.9375926888426888,
+                0.9508012820512821
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.9479307750188112,
+              "rate_ci95": [
+                0.9383690744920993,
+                0.9581640331075997
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.9442480942480942,
+              "rate_ci95": [
+                0.9375926888426888,
+                0.9508012820512821
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.9153024911032028,
+              "rate_ci95": [
+                0.9065582104728013,
+                0.9246059989832232
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.9733604473817997,
+              "rate_ci95": [
+                0.9705630401626842,
+                0.9760053380782918
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "gated": {
+          "auc": 0.9791294780545671,
+          "auc_ci95": [
+            0.9726729681939501,
+            0.9844436967427836
+          ],
+          "test_fpr": 0.09041666666666667,
+          "test_fpr_ci95": [
+            0.07145833333333333,
+            0.11020833333333334
+          ],
+          "test_tpr": 0.9536892052194543,
+          "test_tpr_ci95": [
+            0.9460474495848161,
+            0.9609733096085409
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": 1.2770058385307128,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.1075,
+              "rate_ci95": [
+                0.07875,
+                0.14085416666666664
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.07333333333333333,
+              "rate_ci95": [
+                0.050812500000000003,
+                0.09751041666666665
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.943728813559322,
+              "rate_ci95": [
+                0.9242881355932203,
+                0.9621497175141243
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.9731981981981982,
+              "rate_ci95": [
+                0.9513400900900901,
+                0.9916722972972973
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.9537422037422038,
+              "rate_ci95": [
+                0.9440029452529453,
+                0.9625788288288288
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.9535741158765989,
+              "rate_ci95": [
+                0.9385985703536494,
+                0.9683276899924755
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.9537422037422038,
+              "rate_ci95": [
+                0.9440029452529453,
+                0.9625788288288288
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.9425012709710219,
+              "rate_ci95": [
+                0.9340073716319267,
+                0.9511985256736146
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.9634977122521606,
+              "rate_ci95": [
+                0.9566840366039654,
+                0.97010930350788
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        }
+      },
+      "attack_scope_false_positives": {
+        "matched_13_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.052307692307692305,
+              "fpr_ci95": [
+                0.03358974358974359,
+                0.07282692307692307
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.05846153846153846,
+              "fpr_ci95": [
+                0.03973717948717949,
+                0.07872435897435898
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": -0.5921598839055395,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.052564102564102565,
+              "fpr_ci95": [
+                0.033846153846153845,
+                0.07333333333333333
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.06769230769230769,
+              "fpr_ci95": [
+                0.038974358974358976,
+                0.10257692307692307
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.07179487179487179,
+              "fpr_ci95": [
+                0.04256410256410256,
+                0.10358974358974359
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -0.5921598839055395,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.06769230769230769,
+              "fpr_ci95": [
+                0.038974358974358976,
+                0.10257692307692307
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.036923076923076927,
+              "fpr_ci95": [
+                0.01641025641025641,
+                0.06155128205128204
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.04512820512820513,
+              "fpr_ci95": [
+                0.022038461538461538,
+                0.07282051282051281
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -0.5921598839055395,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.03743589743589744,
+              "fpr_ci95": [
+                0.016923076923076923,
+                0.06257692307692307
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            }
+          }
+        },
+        "heldout_3_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.25333333333333335,
+              "fpr_ci95": [
+                0.21888888888888888,
+                0.28888888888888886
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.2788888888888889,
+              "fpr_ci95": [
+                0.24444444444444444,
+                0.31333333333333335
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": -0.5921598839055395,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.2544444444444444,
+              "fpr_ci95": [
+                0.22108333333333335,
+                0.29
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.2777777777777778,
+              "fpr_ci95": [
+                0.22666666666666666,
+                0.3288888888888889
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.30444444444444446,
+              "fpr_ci95": [
+                0.2577777777777778,
+                0.35555555555555557
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -0.5921598839055395,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.28,
+              "fpr_ci95": [
+                0.2288888888888889,
+                0.3333333333333333
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.2288888888888889,
+              "fpr_ci95": [
+                0.18,
+                0.27555555555555555
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.25333333333333335,
+              "fpr_ci95": [
+                0.20444444444444446,
+                0.30227777777777776
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -0.5921598839055395,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.2288888888888889,
+              "fpr_ci95": [
+                0.18,
+                0.27555555555555555
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": 1.2770058385307128,
+              "threshold_changed": false
+            }
+          }
+        }
+      }
+    },
+    "clip_joint": {
+      "backbone": "clip",
+      "regime": "joint",
+      "thresholds": {
+        "selected_at_utc": "2026-10-10T04:33:18.662786+00:00",
+        "test_inference_performed": false,
+        "calibration_scope": "Separate held-out validation-source half, never used in either fitted head.",
+        "real_sources": 75,
+        "real_rows": 975,
+        "AI_sources": 220,
+        "systems": {
+          "probe": {
+            "threshold_logit": -0.24453924964852813,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9632867132867133
+          },
+          "fusion": {
+            "threshold_logit": -2.043201724743481,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9944055944055944
+          },
+          "gated": {
+            "threshold_logit": -0.24453924964852813,
+            "calibration_fpr": 0.04923076923076923,
+            "calibration_tpr": 0.9807692307692307
+          }
+        },
+        "heads_sha256": {
+          "probe.npz": "658d0c5da3bccd26ecb1353884a22d96acb1be2b3c3974b4f44a2721e203570d",
+          "fusion.npz": "1f0857d7e8a3e448e8bcc26cc027759e86ec645f44b944fdd30769760df5795a"
+        }
+      },
+      "systems": {
+        "probe": {
+          "auc": 0.9817974149861606,
+          "auc_ci95": [
+            0.9759740117141162,
+            0.9869066066132859
+          ],
+          "test_fpr": 0.10958333333333334,
+          "test_fpr_ci95": [
+            0.0875,
+            0.13500520833333335
+          ],
+          "test_tpr": 0.9579833926453144,
+          "test_tpr_ci95": [
+            0.949844009489917,
+            0.9657413997627521
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": -0.24453924964852813,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.07791666666666666,
+              "rate_ci95": [
+                0.054989583333333335,
+                0.10459374999999999
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.14125,
+              "rate_ci95": [
+                0.105,
+                0.18708333333333332
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.9549152542372882,
+              "rate_ci95": [
+                0.9345734463276837,
+                0.9725423728813559
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.9786036036036037,
+              "rate_ci95": [
+                0.956525900900901,
+                0.9952702702702703
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.9557519057519057,
+              "rate_ci95": [
+                0.945213963963964,
+                0.9655959805959806
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.9628291948833709,
+              "rate_ci95": [
+                0.9469507148231754,
+                0.9766779533483823
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.9557519057519057,
+              "rate_ci95": [
+                0.945213963963964,
+                0.9655959805959806
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.957956278596848,
+              "rate_ci95": [
+                0.9500216065073716,
+                0.9657358922216573
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.957956278596848,
+              "rate_ci95": [
+                0.9499733096085409,
+                0.9659379766141332
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "fusion": {
+          "auc": 0.9692912168841439,
+          "auc_ci95": [
+            0.9623497962386318,
+            0.9757409975533808
+          ],
+          "test_fpr": 0.11833333333333333,
+          "test_fpr_ci95": [
+            0.0975,
+            0.14147395833333332
+          ],
+          "test_tpr": 0.9735468564650059,
+          "test_tpr_ci95": [
+            0.9685409252669039,
+            0.9783167259786477
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": -2.043201724743481,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.09166666666666666,
+              "rate_ci95": [
+                0.06790625,
+                0.11875
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.145,
+              "rate_ci95": [
+                0.11125,
+                0.18584374999999997
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.971864406779661,
+              "rate_ci95": [
+                0.9601129943502825,
+                0.9826016949152542
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.9858108108108108,
+              "rate_ci95": [
+                0.9720664414414414,
+                0.9968468468468469
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.9721760221760222,
+              "rate_ci95": [
+                0.9658307345807345,
+                0.9781011781011781
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.9765237020316027,
+              "rate_ci95": [
+                0.9668905191873589,
+                0.9847253574115876
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.9721760221760222,
+              "rate_ci95": [
+                0.9658307345807345,
+                0.9781011781011781
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.9566344687341128,
+              "rate_ci95": [
+                0.9482968988307067,
+                0.9646670055922725
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.9897305541433655,
+              "rate_ci95": [
+                0.9877478393492628,
+                0.9916115912557194
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        },
+        "gated": {
+          "auc": 0.9772658857255833,
+          "auc_ci95": [
+            0.9687070203143535,
+            0.9843357748863186
+          ],
+          "test_fpr": 0.10958333333333334,
+          "test_fpr_ci95": [
+            0.0875,
+            0.13500520833333335
+          ],
+          "test_tpr": 0.9663819691577699,
+          "test_tpr_ci95": [
+            0.9595954922894424,
+            0.9729080664294187
+          ],
+          "test_rows": 46950,
+          "test_sources": 1705,
+          "real_sources": 300,
+          "AI_sources": 1405,
+          "threshold_logit": -0.24453924964852813,
+          "bootstrap_replicates": 1000,
+          "test_threshold_retuned": false,
+          "subgroups": {
+            "coco": {
+              "rate": 0.07791666666666666,
+              "rate_ci95": [
+                0.054989583333333335,
+                0.10459374999999999
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "openimages": {
+              "rate": 0.14125,
+              "rate_ci95": [
+                0.105,
+                0.18708333333333332
+              ],
+              "sources": 150,
+              "rows": 2400,
+              "rate_kind": "FPR"
+            },
+            "stable-diffusion": {
+              "rate": 0.9628248587570621,
+              "rate_ci95": [
+                0.9457570621468926,
+                0.9779689265536723
+              ],
+              "sources": 295,
+              "rows": 8850,
+              "rate_kind": "TPR"
+            },
+            "dalle-3": {
+              "rate": 0.984009009009009,
+              "rate_ci95": [
+                0.9682376126126127,
+                0.9959515765765766
+              ],
+              "sources": 148,
+              "rows": 4440,
+              "rate_kind": "TPR"
+            },
+            "midjourney": {
+              "rate": 0.9647609147609147,
+              "rate_ci95": [
+                0.9559589397089397,
+                0.972972972972973
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "seen_generators": {
+              "rate": 0.9699021820917983,
+              "rate_ci95": [
+                0.957334462001505,
+                0.9808935289691497
+              ],
+              "sources": 443,
+              "rows": 13290,
+              "rate_kind": "TPR"
+            },
+            "heldout_midjourney": {
+              "rate": 0.9647609147609147,
+              "rate_ci95": [
+                0.9559589397089397,
+                0.972972972972973
+              ],
+              "sources": 962,
+              "rows": 28860,
+              "rate_kind": "TPR"
+            },
+            "unmarked_AI_edits": {
+              "rate": 0.9580071174377224,
+              "rate_ci95": [
+                0.9501232841891205,
+                0.9657854600915099
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            },
+            "marked_AI_edits": {
+              "rate": 0.9741230299949161,
+              "rate_ci95": [
+                0.9682193695983732,
+                0.9797153024911032
+              ],
+              "sources": 1405,
+              "rows": 19670,
+              "rate_kind": "TPR"
+            }
+          },
+          "calibration_fpr": 0.04923076923076923
+        }
+      },
+      "attack_scope_false_positives": {
+        "matched_13_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.06948717948717949,
+              "fpr_ci95": [
+                0.047685897435897434,
+                0.09487179487179487
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.0741025641025641,
+              "fpr_ci95": [
+                0.053064102564102565,
+                0.09641666666666666
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": -2.043201724743481,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.06948717948717949,
+              "fpr_ci95": [
+                0.047685897435897434,
+                0.09487179487179487
+              ],
+              "real_sources": 300,
+              "real_rows": 3900,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.03948717948717949,
+              "fpr_ci95": [
+                0.016923076923076923,
+                0.06462820512820512
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.04974358974358974,
+              "fpr_ci95": [
+                0.02666666666666667,
+                0.0758974358974359
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -2.043201724743481,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.03948717948717949,
+              "fpr_ci95": [
+                0.016923076923076923,
+                0.06462820512820512
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.09948717948717949,
+              "fpr_ci95": [
+                0.06256410256410257,
+                0.14667948717948717
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.09846153846153846,
+              "fpr_ci95": [
+                0.0641025641025641,
+                0.14103846153846153
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -2.043201724743481,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.09948717948717949,
+              "fpr_ci95": [
+                0.06256410256410257,
+                0.14667948717948717
+              ],
+              "real_sources": 150,
+              "real_rows": 1950,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            }
+          }
+        },
+        "heldout_3_conditions": {
+          "overall": {
+            "probe": {
+              "fpr": 0.2833333333333333,
+              "fpr_ci95": [
+                0.24994444444444444,
+                0.32222222222222224
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.31,
+              "fpr_ci95": [
+                0.27444444444444444,
+                0.3477777777777778
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": -2.043201724743481,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.2833333333333333,
+              "fpr_ci95": [
+                0.24994444444444444,
+                0.32222222222222224
+              ],
+              "real_sources": 300,
+              "real_rows": 900,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            }
+          },
+          "coco": {
+            "probe": {
+              "fpr": 0.24444444444444444,
+              "fpr_ci95": [
+                0.19777777777777777,
+                0.2956111111111111
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.2733333333333333,
+              "fpr_ci95": [
+                0.22444444444444445,
+                0.32449999999999996
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -2.043201724743481,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.24444444444444444,
+              "fpr_ci95": [
+                0.19777777777777777,
+                0.2956111111111111
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            }
+          },
+          "openimages": {
+            "probe": {
+              "fpr": 0.32222222222222224,
+              "fpr_ci95": [
+                0.2688888888888889,
+                0.37777777777777777
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            },
+            "fusion": {
+              "fpr": 0.3466666666666667,
+              "fpr_ci95": [
+                0.2911111111111111,
+                0.4022222222222222
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -2.043201724743481,
+              "threshold_changed": false
+            },
+            "gated": {
+              "fpr": 0.32222222222222224,
+              "fpr_ci95": [
+                0.2688888888888889,
+                0.37777777777777777
+              ],
+              "real_sources": 150,
+              "real_rows": 450,
+              "threshold_logit": -0.24453924964852813,
+              "threshold_changed": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "paired_auc_differences": {
+    "resnet_joint_minus_coco_only_probe": {
+      "difference": 0.024072637406089337,
+      "ci95": [
+        0.014787233096085383,
+        0.034473407720442904
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "resnet_joint_minus_coco_only_fusion": {
+      "difference": 0.01750781435349935,
+      "ci95": [
+        0.008470419755832365,
+        0.027500811462040295
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "resnet_joint_minus_coco_only_gated": {
+      "difference": 0.03671526294978256,
+      "ci95": [
+        0.0249004837633452,
+        0.04910612383847369
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "resnet_joint_minus_openimages_only_probe": {
+      "difference": 0.013194701463029035,
+      "ci95": [
+        0.004498126482799514,
+        0.02248140470541722
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "resnet_joint_minus_openimages_only_fusion": {
+      "difference": 0.00857576611308819,
+      "ci95": [
+        0.0015443972419928592,
+        0.015633940910438914
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "resnet_joint_minus_openimages_only_gated": {
+      "difference": 0.0135089264531435,
+      "ci95": [
+        0.0028613820927244214,
+        0.02514056037465408
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "clip_joint_minus_coco_only_probe": {
+      "difference": 0.004951551996836723,
+      "ci95": [
+        0.0017203373368920277,
+        0.008360659104389085
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "clip_joint_minus_coco_only_fusion": {
+      "difference": 0.011583407473309548,
+      "ci95": [
+        0.004697565119612562,
+        0.018669580367734286
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "clip_joint_minus_coco_only_gated": {
+      "difference": 0.010211560893633731,
+      "ci95": [
+        0.004097042432779777,
+        0.016876970393436216
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "clip_joint_minus_openimages_only_probe": {
+      "difference": 0.00048004646105170856,
+      "ci95": [
+        -0.0026634691330564785,
+        0.0036437259045077513
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "clip_joint_minus_openimages_only_fusion": {
+      "difference": 0.0034357848952154546,
+      "ci95": [
+        -0.0018397988335310338,
+        0.008609327797548366
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    },
+    "clip_joint_minus_openimages_only_gated": {
+      "difference": -0.0018635923289838097,
+      "ci95": [
+        -0.007099138617042325,
+        0.0027159046312772773
+      ],
+      "method": "Paired source-cluster bootstrap on identical test copies, stratified by collection."
+    }
+  },
+  "test_sources": 1705,
+  "test_rows": 46950,
+  "test_real_sources_each_collection": 150,
+  "test_AI_sources": 1405,
+  "bootstrap_replicates": 1000,
+  "caveat": "Retrospective diagnostics using cached features on previously examined source pools. Independent source halves prevent fitting/calibration leakage within this diagnostic; independent collection transfer remains empirical, not guaranteed.",
+  "original_heads_unchanged": true,
+  "attack_scope_protocol_sha256": "6879a5f0a075a81076a1b422d4ebb758d89d1709877f0c233a213454881ad088"
+}

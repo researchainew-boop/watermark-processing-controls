@@ -1,0 +1,66 @@
+{
+  "frozen_at_utc": "2026-10-10T04:37:19.316419+00:00",
+  "status": "retrospective amendment fixed before JPEG-only fits",
+  "parent_protocol_sha256": "ede3cb5fbe38263122ec1fe3c69cd240c71598fec4920c54ad31e21f1fff095a",
+  "preserved_primary_complete_sha256": "69358af947ba995f92c986b423292cbf60fd011621b3a0c5f97d8643b85956fb",
+  "initial_script_snapshot_sha256": "6c68035e7f5207927d81bfbc33c18a3a1a823735082ac679d938b144ff2409a5",
+  "script_sha256": "94bb539cbac7d765f3be41c8cbe49e0cb57f142259e8152ba3044ddfd69cc134",
+  "variant": "jpeg_only",
+  "seeds": [
+    20260920,
+    20260921,
+    20260922,
+    20260923,
+    20260924
+  ],
+  "backbones": [
+    "resnet",
+    "clip"
+  ],
+  "rows_per_seed": 53326,
+  "replacement": "Within each real source's eleven R-T slots in original manifest order, alternate cached JPEG severity 1 (quality 70; six slots) and severity 2 (quality 50; five slots). Keep R-C and R-S, all AI rows, labels, source identities, slots and row order unchanged.",
+  "fixed_before_new_fits": [
+    "JPEG qualities",
+    "six/five repetition counts",
+    "original slot order",
+    "source assignments",
+    "fit hyperparameters",
+    "validation operating point",
+    "test cohort",
+    "shared bootstrap resamples"
+  ],
+  "unchanged_fit_parameters": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": null,
+    "max_iter": 3000,
+    "multi_class": "deprecated",
+    "n_jobs": null,
+    "penalty": "l2",
+    "random_state": 0,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "unchanged_operating_point": "Select the smallest validation logit threshold with empirical validation FPR <=0.05 (no randomized ties), maximizing attainable validation TPR. Evaluate unchanged on test. Test-ROC TPR5 is separately descriptive and never used for threshold selection.",
+  "unchanged_bootstrap": {
+    "replicates": 2000,
+    "seed": 20261010,
+    "unit": "Unique source in the union of all five test cohorts, retaining every derivative and its membership in each split.",
+    "stratification": "Resample sources within collection (COCO, Open Images, Stable Diffusion, DALL-E 3, Midjourney), using the same source multiplicities for every head and every split.",
+    "estimator": "Paired differences per split and arithmetic mean of the five split metric differences; percentiles across shared source-cluster resamples.",
+    "conditioning": "Fitted heads, validation-selected thresholds and cohort membership remain fixed; no training or threshold uncertainty is included. Individual split counts fluctuate when restricting union resamples. The same Midjourney holdout and overlapping sources are not treated as independent replications."
+  },
+  "selection": "A prespecified narrow JPEG augmentation baseline requested after completion of the clean-repeat comparison; no JPEG-only head or test result was inspected before this amendment.",
+  "limitation": "JPEG-only has two distinct transformed vectors per real source rather than eleven diverse edits. Equal slots and class weighting do not equalize augmentation information or diversity; this cannot isolate the unique benefit of exact transformation matching.",
+  "helper_source_sha256": {
+    "scripts/phase3_analyze_controls.py": "02f0115ac31d9d54adc78f5ab9e8ef062c71b5c854b3a6ad65ac4257073267b4",
+    "scripts/prepare_conference.py": "711168b40b6257fc36abaa5143810236658f020f62908b0136edebd3fe0b8a88",
+    "scripts/evaluate_encoding_controls.py": "6f6f6684a491870de728d99f913f8530798c9bb4ea4b7963fa3bb2ae9d36de78",
+    "src/aiwstudy/attacks.py": "51546649126dd0594c451e81885be32068c47e37aa08b1265238ca893476137d"
+  }
+}

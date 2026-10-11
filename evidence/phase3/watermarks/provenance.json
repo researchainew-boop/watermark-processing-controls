@@ -1,0 +1,81 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "trustmark": "0.9.2",
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "lightning": "2.5.0.post0",
+    "torchmetrics": "1.6.3",
+    "numpy": "1.26.4",
+    "pandas": "3.0.1",
+    "Pillow": "12.3.0",
+    "scipy": "1.14.1",
+    "scikit-image": "0.25.0",
+    "omegaconf": "2.3.0",
+    "einops": "0.8.1"
+  },
+  "device": "cpu",
+  "cuda": {
+    "available": true,
+    "torch_cuda": "12.1",
+    "device": "NVIDIA GeForce GTX 1050 Ti",
+    "capability": [
+      6,
+      1
+    ],
+    "compiled_architectures": [
+      "sm_50",
+      "sm_60",
+      "sm_61",
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90"
+    ]
+  },
+  "checkpoints": [
+    {
+      "filename": "trustmark_Q.yaml",
+      "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/trustmark_Q.yaml",
+      "bytes": 2009,
+      "official_md5": "fe40df84a7feeebfceb7a7678d7e6ec6",
+      "actual_md5": "fe40df84a7feeebfceb7a7678d7e6ec6",
+      "sha256": "43f37103f92efa8bd6b1c5902bb537cc12a981dc699fca19d9bb7de8c62d03d9"
+    },
+    {
+      "filename": "decoder_Q.ckpt",
+      "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/decoder_Q.ckpt",
+      "bytes": 47652460,
+      "official_md5": "4ced90e9cfe13e3295ad082887fe9187",
+      "actual_md5": "4ced90e9cfe13e3295ad082887fe9187",
+      "sha256": "e3d9cea5406a26590735719f8f15cb10802b11852ae69047eaf4cf17214df781"
+    },
+    {
+      "filename": "encoder_Q.ckpt",
+      "url": "https://cai-watermark.adobe.net/watermarking/trustmark-models/encoder_Q.ckpt",
+      "bytes": 17302074,
+      "official_md5": "700328b8754db934b2f6cb5e5185d81f",
+      "actual_md5": "700328b8754db934b2f6cb5e5185d81f",
+      "sha256": "dc382c3f6b4fd568b27d6fbb763d6ffc2d2587126d84afe9d5ee95b4c5d99826"
+    }
+  ],
+  "trustmark_variant": "Q",
+  "trustmark_ECC": "BCH5",
+  "data_capacity": 61,
+  "expected_message": "1011010010110100000000000000000000000000000000000000000000000",
+  "codeword_bits": 100,
+  "trustmark_strength": 1.0,
+  "dwt_strength": 12.0,
+  "dwt_threshold": 0.8125,
+  "code_sha256": {
+    "scripts\\benchmark_watermarks.py": "92359a35be43b76780c073f070891bfe6e42f7efa6125396e08edbac91cb1101",
+    "src\\aiwstudy\\attacks.py": "51546649126dd0594c451e81885be32068c47e37aa08b1265238ca893476137d",
+    "src\\aiwstudy\\watermark.py": "6b62834c2a14c4a5cb450c743e3169616c05231a6f29dcce52f4d8eca5e39415"
+  },
+  "sources": 408,
+  "ai_sources": 204,
+  "covers": 1632,
+  "driver_sha256": "a9139099f6d2ac44b8504061dee3e19b510f194594becfa98411c13d1f79001c"
+}

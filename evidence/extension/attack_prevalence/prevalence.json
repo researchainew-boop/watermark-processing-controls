@@ -1,0 +1,6378 @@
+{
+  "scope": "Matched original-payload marked/unmarked transformed outcomes; same expected string throughout, source-clustered and collection-stratified; input provenance labels for VAE/diffusion",
+  "source_count": 48,
+  "selected_counterfactual_rows": 1152,
+  "archived_inference_rows": 1776,
+  "expected_payload": "1011010010110100",
+  "bootstrap_samples": 2000,
+  "conditions": {
+    "blur_s1": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9652777777777778,
+        "fusion_auc": 0.96875,
+        "gated_auc": 0.9652777777777778,
+        "fusion_gain": 0.00347222222222221,
+        "fusion_gain_ci95": [
+          -0.03125,
+          0.04340277777777768
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9654513888888889,
+        "fusion_auc": 0.971875,
+        "gated_auc": 0.9682291666666667,
+        "fusion_gain": 0.006423611111111116,
+        "fusion_gain_ci95": [
+          -0.02604600694444448,
+          0.04635850694444443
+        ],
+        "gated_gain": 0.002777777777777768,
+        "gated_gain_ci95": [
+          0.0,
+          0.007118055555555558
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9656250000000001,
+        "fusion_auc": 0.9750000000000001,
+        "gated_auc": 0.9711805555555556,
+        "fusion_gain": 0.009375000000000022,
+        "fusion_gain_ci95": [
+          -0.021874999999999933,
+          0.049661458333333255
+        ],
+        "gated_gain": 0.005555555555555536,
+        "gated_gain_ci95": [
+          0.0,
+          0.014236111111111116
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9657986111111111,
+        "fusion_auc": 0.978125,
+        "gated_auc": 0.9741319444444444,
+        "fusion_gain": 0.012326388888888928,
+        "fusion_gain_ci95": [
+          -0.01701388888888887,
+          0.052452256944444345
+        ],
+        "gated_gain": 0.008333333333333304,
+        "gated_gain_ci95": [
+          0.0,
+          0.021354166666666678
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9659722222222222,
+        "fusion_auc": 0.98125,
+        "gated_auc": 0.9770833333333333,
+        "fusion_gain": 0.015277777777777724,
+        "fusion_gain_ci95": [
+          -0.012161458333333366,
+          0.05659722222222223
+        ],
+        "gated_gain": 0.011111111111111072,
+        "gated_gain_ci95": [
+          0.0,
+          0.028472222222222232
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9661458333333333,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9800347222222222,
+        "fusion_gain": 0.01822916666666674,
+        "fusion_gain_ci95": [
+          -0.0078125,
+          0.059895833333333315
+        ],
+        "gated_gain": 0.01388888888888895,
+        "gated_gain_ci95": [
+          0.0,
+          0.03559027777777779
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9663194444444445,
+        "fusion_auc": 0.9875,
+        "gated_auc": 0.9829861111111111,
+        "fusion_gain": 0.021180555555555536,
+        "fusion_gain_ci95": [
+          -0.005208333333333303,
+          0.06494791666666658
+        ],
+        "gated_gain": 0.016666666666666607,
+        "gated_gain_ci95": [
+          0.0,
+          0.042708333333333355
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9664930555555555,
+        "fusion_auc": 0.990625,
+        "gated_auc": 0.9859374999999999,
+        "fusion_gain": 0.024131944444444442,
+        "fusion_gain_ci95": [
+          -0.0029513888888888385,
+          0.07032552083333321
+        ],
+        "gated_gain": 0.019444444444444375,
+        "gated_gain_ci95": [
+          0.0,
+          0.04982638888888891
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9666666666666667,
+        "fusion_auc": 0.99375,
+        "gated_auc": 0.9888888888888889,
+        "fusion_gain": 0.027083333333333348,
+        "fusion_gain_ci95": [
+          -0.001388888888888839,
+          0.07500868055555551
+        ],
+        "gated_gain": 0.022222222222222254,
+        "gated_gain_ci95": [
+          0.0,
+          0.056944444444444464
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9668402777777777,
+        "fusion_auc": 0.996875,
+        "gated_auc": 0.9918402777777777,
+        "fusion_gain": 0.030034722222222254,
+        "fusion_gain_ci95": [
+          -0.00034722222222222093,
+          0.0812543402777778
+        ],
+        "gated_gain": 0.025000000000000022,
+        "gated_gain_ci95": [
+          0.0,
+          0.06406250000000002
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9670138888888888,
+        "fusion_auc": 1.0,
+        "gated_auc": 0.9947916666666666,
+        "fusion_gain": 0.03298611111111116,
+        "fusion_gain_ci95": [
+          0.0,
+          0.08680555555555558
+        ],
+        "gated_gain": 0.02777777777777779,
+        "gated_gain_ci95": [
+          0.0,
+          0.07118055555555558
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.01388888888888884,
+        "fusion_gain_ci95": [
+          -0.04861111111111116,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9859375,
+        "gated_auc": 0.9984375,
+        "fusion_gain": -0.012326388888888817,
+        "fusion_gain_ci95": [
+          -0.04341145833333338,
+          0.0
+        ],
+        "gated_gain": 0.00017361111111113825,
+        "gated_gain_ci95": [
+          0.0,
+          0.001041666666666663
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.998263888888889,
+        "fusion_auc": 0.9875,
+        "gated_auc": 0.9986111111111111,
+        "fusion_gain": -0.010763888888888906,
+        "fusion_gain_ci95": [
+          -0.03819444444444449,
+          0.0
+        ],
+        "gated_gain": 0.0003472222222221655,
+        "gated_gain_ci95": [
+          0.0,
+          0.002083333333333326
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9890625,
+        "gated_auc": 0.9987847222222221,
+        "fusion_gain": -0.009201388888888884,
+        "fusion_gain_ci95": [
+          -0.032812499999999994,
+          0.0
+        ],
+        "gated_gain": 0.0005208333333333037,
+        "gated_gain_ci95": [
+          0.0,
+          0.0031249999999999893
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.990625,
+        "gated_auc": 0.9989583333333333,
+        "fusion_gain": -0.007638888888888862,
+        "fusion_gain_ci95": [
+          -0.028124999999999997,
+          0.0
+        ],
+        "gated_gain": 0.000694444444444442,
+        "gated_gain_ci95": [
+          0.0,
+          0.004166666666666652
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9921875,
+        "gated_auc": 0.9991319444444444,
+        "fusion_gain": -0.0060763888888888395,
+        "fusion_gain_ci95": [
+          -0.023437499999999944,
+          0.0
+        ],
+        "gated_gain": 0.0008680555555555802,
+        "gated_gain_ci95": [
+          0.0,
+          0.005208333333333315
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.99375,
+        "gated_auc": 0.9993055555555556,
+        "fusion_gain": -0.004513888888888817,
+        "fusion_gain_ci95": [
+          -0.017369791666666686,
+          0.0
+        ],
+        "gated_gain": 0.0010416666666667185,
+        "gated_gain_ci95": [
+          0.0,
+          0.006249999999999979
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9953125,
+        "gated_auc": 0.9994791666666667,
+        "fusion_gain": -0.002951388888888795,
+        "fusion_gain_ci95": [
+          -0.012499999999999987,
+          0.0006944444444444108
+        ],
+        "gated_gain": 0.0012152777777778567,
+        "gated_gain_ci95": [
+          0.0,
+          0.007291666666666642
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.996875,
+        "gated_auc": 0.9996527777777777,
+        "fusion_gain": -0.001388888888888884,
+        "fusion_gain_ci95": [
+          -0.008333333333333325,
+          0.0027864583333333183
+        ],
+        "gated_gain": 0.001388888888888884,
+        "gated_gain_ci95": [
+          0.0,
+          0.008333333333333304
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9984375,
+        "gated_auc": 0.9998263888888889,
+        "fusion_gain": 0.00017361111111113825,
+        "fusion_gain_ci95": [
+          -0.0038194444444444413,
+          0.006427951388888891
+        ],
+        "gated_gain": 0.0015625000000000222,
+        "gated_gain_ci95": [
+          0.0,
+          0.009374999999999967
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 1.0,
+        "gated_auc": 1.0,
+        "fusion_gain": 0.0017361111111111605,
+        "fusion_gain_ci95": [
+          0.0,
+          0.01041666666666663
+        ],
+        "gated_gain": 0.0017361111111111605,
+        "gated_gain_ci95": [
+          0.0,
+          0.01041666666666663
+        ]
+      }
+    ],
+    "blur_s2": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9774305555555556,
+        "fusion_auc": 0.96875,
+        "gated_auc": 0.9774305555555556,
+        "fusion_gain": -0.00868055555555558,
+        "fusion_gain_ci95": [
+          -0.03819444444444442,
+          0.02083333333333326
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9770833333333334,
+        "fusion_auc": 0.971875,
+        "gated_auc": 0.9793402777777779,
+        "fusion_gain": -0.00520833333333337,
+        "fusion_gain_ci95": [
+          -0.031427951388888875,
+          0.022916666666666596
+        ],
+        "gated_gain": 0.002256944444444464,
+        "gated_gain_ci95": [
+          0.0,
+          0.005902777777777779
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9767361111111112,
+        "fusion_auc": 0.9750000000000001,
+        "gated_auc": 0.9812500000000002,
+        "fusion_gain": -0.0017361111111111605,
+        "fusion_gain_ci95": [
+          -0.025008680555555645,
+          0.026388888888888865
+        ],
+        "gated_gain": 0.004513888888888928,
+        "gated_gain_ci95": [
+          0.0,
+          0.011805555555555559
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9763888888888889,
+        "fusion_auc": 0.978125,
+        "gated_auc": 0.9831597222222221,
+        "fusion_gain": 0.0017361111111111605,
+        "fusion_gain_ci95": [
+          -0.019097222222222175,
+          0.029340277777777726
+        ],
+        "gated_gain": 0.0067708333333332815,
+        "gated_gain_ci95": [
+          0.0,
+          0.01770833333333334
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9760416666666667,
+        "fusion_auc": 0.98125,
+        "gated_auc": 0.9850694444444444,
+        "fusion_gain": 0.005208333333333259,
+        "fusion_gain_ci95": [
+          -0.013541666666666629,
+          0.03333333333333337
+        ],
+        "gated_gain": 0.009027777777777746,
+        "gated_gain_ci95": [
+          0.0,
+          0.023611111111111117
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9756944444444444,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9869791666666667,
+        "fusion_gain": 0.00868055555555558,
+        "fusion_gain_ci95": [
+          -0.00868055555555558,
+          0.0390625
+        ],
+        "gated_gain": 0.011284722222222321,
+        "gated_gain_ci95": [
+          0.0,
+          0.029513888888888895
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9753472222222223,
+        "fusion_auc": 0.9875,
+        "gated_auc": 0.9888888888888889,
+        "fusion_gain": 0.01215277777777779,
+        "fusion_gain_ci95": [
+          -0.005208333333333325,
+          0.04374999999999998
+        ],
+        "gated_gain": 0.013541666666666674,
+        "gated_gain_ci95": [
+          0.0,
+          0.03541666666666668
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9750000000000001,
+        "fusion_auc": 0.990625,
+        "gated_auc": 0.9907986111111111,
+        "fusion_gain": 0.015624999999999889,
+        "fusion_gain_ci95": [
+          -0.0026041666666666735,
+          0.048958333333333354
+        ],
+        "gated_gain": 0.015798611111111027,
+        "gated_gain_ci95": [
+          0.0,
+          0.04131944444444446
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9746527777777778,
+        "fusion_auc": 0.99375,
+        "gated_auc": 0.9927083333333333,
+        "fusion_gain": 0.01909722222222221,
+        "fusion_gain_ci95": [
+          -0.0013888888888888837,
+          0.0548611111111111
+        ],
+        "gated_gain": 0.01805555555555549,
+        "gated_gain_ci95": [
+          0.0,
+          0.047222222222222235
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9743055555555555,
+        "fusion_auc": 0.996875,
+        "gated_auc": 0.9946180555555555,
+        "fusion_gain": 0.02256944444444442,
+        "fusion_gain_ci95": [
+          -0.0005251736111111143,
+          0.06111545138888887
+        ],
+        "gated_gain": 0.020312499999999956,
+        "gated_gain_ci95": [
+          0.0,
+          0.05312500000000001
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9739583333333334,
+        "fusion_auc": 1.0,
+        "gated_auc": 0.9965277777777778,
+        "fusion_gain": 0.02604166666666663,
+        "fusion_gain_ci95": [
+          0.0,
+          0.0677517361111109
+        ],
+        "gated_gain": 0.02256944444444442,
+        "gated_gain_ci95": [
+          0.0,
+          0.05902777777777779
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9930555555555556,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.005208333333333259,
+        "fusion_gain_ci95": [
+          -0.02430555555555558,
+          0.0017361111111111605
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.99375,
+        "gated_auc": 0.9984375,
+        "fusion_gain": -0.004513888888888817,
+        "fusion_gain_ci95": [
+          -0.021875000000000023,
+          0.0020833333333333814
+        ],
+        "gated_gain": 0.00017361111111113825,
+        "gated_gain_ci95": [
+          0.0,
+          0.001041666666666663
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.998263888888889,
+        "fusion_auc": 0.9944444444444445,
+        "gated_auc": 0.9986111111111111,
+        "fusion_gain": -0.0038194444444444864,
+        "fusion_gain_ci95": [
+          -0.019444444444444466,
+          0.0024305555555556024
+        ],
+        "gated_gain": 0.0003472222222221655,
+        "gated_gain_ci95": [
+          0.0,
+          0.002083333333333326
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9951388888888889,
+        "gated_auc": 0.9987847222222221,
+        "fusion_gain": -0.0031249999999999334,
+        "fusion_gain_ci95": [
+          -0.01666666666666663,
+          0.00278645833333333
+        ],
+        "gated_gain": 0.0005208333333333037,
+        "gated_gain_ci95": [
+          0.0,
+          0.0031249999999999893
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9958333333333333,
+        "gated_auc": 0.9989583333333333,
+        "fusion_gain": -0.0024305555555554914,
+        "fusion_gain_ci95": [
+          -0.013541666666666629,
+          0.0034722222222221453
+        ],
+        "gated_gain": 0.000694444444444442,
+        "gated_gain_ci95": [
+          0.0,
+          0.004166666666666652
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9965277777777778,
+        "gated_auc": 0.9991319444444444,
+        "fusion_gain": -0.0017361111111110494,
+        "fusion_gain_ci95": [
+          -0.010416666666666685,
+          0.0034722222222222654
+        ],
+        "gated_gain": 0.0008680555555555802,
+        "gated_gain_ci95": [
+          0.0,
+          0.005208333333333315
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9972222222222222,
+        "gated_auc": 0.9993055555555556,
+        "fusion_gain": -0.0010416666666666075,
+        "fusion_gain_ci95": [
+          -0.008333333333333347,
+          0.004861111111111095
+        ],
+        "gated_gain": 0.0010416666666667185,
+        "gated_gain_ci95": [
+          0.0,
+          0.006249999999999979
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9979166666666667,
+        "gated_auc": 0.9994791666666667,
+        "fusion_gain": -0.0003472222222221655,
+        "fusion_gain_ci95": [
+          -0.00625000000000001,
+          0.005902777777777758
+        ],
+        "gated_gain": 0.0012152777777778567,
+        "gated_gain_ci95": [
+          0.0,
+          0.007291666666666642
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9986111111111111,
+        "gated_auc": 0.9996527777777777,
+        "fusion_gain": 0.0003472222222222765,
+        "fusion_gain_ci95": [
+          -0.0041666666666666735,
+          0.006944444444444399
+        ],
+        "gated_gain": 0.001388888888888884,
+        "gated_gain_ci95": [
+          0.0,
+          0.008333333333333304
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9993055555555556,
+        "gated_auc": 0.9998263888888889,
+        "fusion_gain": 0.0010416666666667185,
+        "fusion_gain_ci95": [
+          -0.0020833333333333368,
+          0.008333333333333293
+        ],
+        "gated_gain": 0.0015625000000000222,
+        "gated_gain_ci95": [
+          0.0,
+          0.009374999999999967
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 1.0,
+        "gated_auc": 1.0,
+        "fusion_gain": 0.0017361111111111605,
+        "fusion_gain_ci95": [
+          0.0,
+          0.01041666666666663
+        ],
+        "gated_gain": 0.0017361111111111605,
+        "gated_gain_ci95": [
+          0.0,
+          0.01041666666666663
+        ]
+      }
+    ],
+    "crop_s1": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9583333333333334,
+        "fusion_auc": 0.9114583333333334,
+        "gated_auc": 0.9583333333333334,
+        "fusion_gain": -0.046875,
+        "fusion_gain_ci95": [
+          -0.10421006944444451,
+          -0.00347222222222221
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9585069444444445,
+        "fusion_auc": 0.909375,
+        "gated_auc": 0.9585069444444445,
+        "fusion_gain": -0.049131944444444464,
+        "fusion_gain_ci95": [
+          -0.10764322916666669,
+          -0.006072048611111077
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9586805555555556,
+        "fusion_auc": 0.9072916666666667,
+        "gated_auc": 0.9586805555555556,
+        "fusion_gain": -0.05138888888888893,
+        "fusion_gain_ci95": [
+          -0.11041666666666664,
+          -0.007977430555555543
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9588541666666667,
+        "fusion_auc": 0.9052083333333334,
+        "gated_auc": 0.9588541666666667,
+        "fusion_gain": -0.05364583333333328,
+        "fusion_gain_ci95": [
+          -0.11302517361111111,
+          -0.009713541666666714
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9590277777777778,
+        "fusion_auc": 0.903125,
+        "gated_auc": 0.9590277777777778,
+        "fusion_gain": -0.05590277777777786,
+        "fusion_gain_ci95": [
+          -0.11632812499999995,
+          -0.01110243055555567
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9592013888888888,
+        "fusion_auc": 0.9010416666666667,
+        "gated_auc": 0.9592013888888888,
+        "fusion_gain": -0.0581597222222221,
+        "fusion_gain_ci95": [
+          -0.1189453125,
+          -0.013020833333333315
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9593750000000001,
+        "fusion_auc": 0.8989583333333333,
+        "gated_auc": 0.9593750000000001,
+        "fusion_gain": -0.060416666666666785,
+        "fusion_gain_ci95": [
+          -0.12326388888888887,
+          -0.013541666666666653
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9595486111111111,
+        "fusion_auc": 0.8968750000000001,
+        "gated_auc": 0.9595486111111111,
+        "fusion_gain": -0.06267361111111103,
+        "fusion_gain_ci95": [
+          -0.12570312499999997,
+          -0.014405381944444432
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9597222222222223,
+        "fusion_auc": 0.8947916666666667,
+        "gated_auc": 0.9597222222222223,
+        "fusion_gain": -0.0649305555555556,
+        "fusion_gain_ci95": [
+          -0.12986111111111115,
+          -0.01458333333333337
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9598958333333333,
+        "fusion_auc": 0.8927083333333334,
+        "gated_auc": 0.9598958333333333,
+        "fusion_gain": -0.06718749999999984,
+        "fusion_gain_ci95": [
+          -0.13333767361111107,
+          -0.015620659722222246
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9600694444444444,
+        "fusion_auc": 0.890625,
+        "gated_auc": 0.9600694444444444,
+        "fusion_gain": -0.06944444444444442,
+        "fusion_gain_ci95": [
+          -0.1371527777777778,
+          -0.015625
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9913194444444444,
+        "fusion_auc": 0.9722222222222222,
+        "gated_auc": 0.9913194444444444,
+        "fusion_gain": -0.01909722222222221,
+        "fusion_gain_ci95": [
+          -0.06770833333333337,
+          0.005208333333333259
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9911458333333334,
+        "fusion_auc": 0.9725694444444445,
+        "gated_auc": 0.9911458333333334,
+        "fusion_gain": -0.018576388888888906,
+        "fusion_gain_ci95": [
+          -0.06371961805555555,
+          0.0031293402777777973
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9909722222222224,
+        "fusion_auc": 0.9729166666666667,
+        "gated_auc": 0.9909722222222224,
+        "fusion_gain": -0.018055555555555713,
+        "fusion_gain_ci95": [
+          -0.060078124999999954,
+          0.002777777777777768
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9907986111111111,
+        "fusion_auc": 0.9732638888888888,
+        "gated_auc": 0.9907986111111111,
+        "fusion_gain": -0.0175347222222223,
+        "fusion_gain_ci95": [
+          -0.057990451388888906,
+          0.0020833333333333272
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.990625,
+        "fusion_auc": 0.973611111111111,
+        "gated_auc": 0.990625,
+        "fusion_gain": -0.017013888888888995,
+        "fusion_gain_ci95": [
+          -0.05523437500000004,
+          0.001736111111111117
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9904513888888888,
+        "fusion_auc": 0.9739583333333333,
+        "gated_auc": 0.9904513888888888,
+        "fusion_gain": -0.01649305555555558,
+        "fusion_gain_ci95": [
+          -0.05297309027777778,
+          0.0017361111111110507
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9902777777777778,
+        "fusion_auc": 0.9743055555555555,
+        "gated_auc": 0.9902777777777778,
+        "fusion_gain": -0.015972222222222276,
+        "fusion_gain_ci95": [
+          -0.05138888888888891,
+          0.001041666666666652
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9901041666666666,
+        "fusion_auc": 0.9746527777777778,
+        "gated_auc": 0.9901041666666666,
+        "fusion_gain": -0.01545138888888875,
+        "fusion_gain_ci95": [
+          -0.050004340277777795,
+          0.0010416666666667193
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9899305555555555,
+        "fusion_auc": 0.975,
+        "gated_auc": 0.9899305555555555,
+        "fusion_gain": -0.014930555555555558,
+        "fusion_gain_ci95": [
+          -0.04861979166666672,
+          0.0013975694444444365
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9897569444444444,
+        "fusion_auc": 0.9753472222222223,
+        "gated_auc": 0.9897569444444444,
+        "fusion_gain": -0.014409722222222143,
+        "fusion_gain_ci95": [
+          -0.048263888888888884,
+          0.0026128472222221068
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9895833333333334,
+        "fusion_auc": 0.9756944444444444,
+        "gated_auc": 0.9895833333333334,
+        "fusion_gain": -0.01388888888888895,
+        "fusion_gain_ci95": [
+          -0.04861111111111105,
+          0.005208333333333259
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "diffusion_strength0p25": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9670138888888888,
+        "fusion_auc": 0.9322916666666666,
+        "gated_auc": 0.9670138888888888,
+        "fusion_gain": -0.03472222222222221,
+        "fusion_gain_ci95": [
+          -0.07638888888888895,
+          -0.00694444444444442
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9647569444444444,
+        "fusion_auc": 0.9307291666666666,
+        "gated_auc": 0.9649305555555555,
+        "fusion_gain": -0.03402777777777777,
+        "fusion_gain_ci95": [
+          -0.07482638888888885,
+          -0.006423611111111138
+        ],
+        "gated_gain": 0.00017361111111113825,
+        "gated_gain_ci95": [
+          0.0,
+          0.001041666666666663
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9625,
+        "fusion_auc": 0.9291666666666667,
+        "gated_auc": 0.9628472222222223,
+        "fusion_gain": -0.033333333333333326,
+        "fusion_gain_ci95": [
+          -0.075,
+          -0.005555555555555601
+        ],
+        "gated_gain": 0.0003472222222222765,
+        "gated_gain_ci95": [
+          0.0,
+          0.002083333333333326
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9602430555555554,
+        "fusion_auc": 0.9276041666666667,
+        "gated_auc": 0.9607638888888889,
+        "fusion_gain": -0.03263888888888877,
+        "fusion_gain_ci95": [
+          -0.0744965277777778,
+          -0.003993055555555578
+        ],
+        "gated_gain": 0.0005208333333334147,
+        "gated_gain_ci95": [
+          0.0,
+          0.0031249999999999893
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9579861111111111,
+        "fusion_auc": 0.9260416666666667,
+        "gated_auc": 0.9586805555555555,
+        "fusion_gain": -0.03194444444444444,
+        "fusion_gain_ci95": [
+          -0.07571180555555562,
+          -0.0013888888888889497
+        ],
+        "gated_gain": 0.000694444444444442,
+        "gated_gain_ci95": [
+          0.0,
+          0.004166666666666652
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9557291666666666,
+        "fusion_auc": 0.9244791666666666,
+        "gated_auc": 0.9565972222222222,
+        "fusion_gain": -0.03125,
+        "fusion_gain_ci95": [
+          -0.07725694444444442,
+          0.0017361111111110494
+        ],
+        "gated_gain": 0.0008680555555555802,
+        "gated_gain_ci95": [
+          0.0,
+          0.005208333333333315
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9534722222222223,
+        "fusion_auc": 0.9229166666666666,
+        "gated_auc": 0.9545138888888889,
+        "fusion_gain": -0.03055555555555567,
+        "fusion_gain_ci95": [
+          -0.0784809027777778,
+          0.005208333333333372
+        ],
+        "gated_gain": 0.0010416666666666075,
+        "gated_gain_ci95": [
+          0.0,
+          0.006249999999999979
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9512152777777778,
+        "fusion_auc": 0.9213541666666667,
+        "gated_auc": 0.9524305555555556,
+        "fusion_gain": -0.029861111111111116,
+        "fusion_gain_ci95": [
+          -0.08038628472222217,
+          0.009726562500000013
+        ],
+        "gated_gain": 0.0012152777777777457,
+        "gated_gain_ci95": [
+          0.0,
+          0.007291666666666642
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9489583333333332,
+        "fusion_auc": 0.9197916666666667,
+        "gated_auc": 0.9503472222222222,
+        "fusion_gain": -0.029166666666666563,
+        "fusion_gain_ci95": [
+          -0.08368055555555555,
+          0.014939236111111089
+        ],
+        "gated_gain": 0.001388888888888995,
+        "gated_gain_ci95": [
+          0.0,
+          0.008333333333333304
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9467013888888889,
+        "fusion_auc": 0.9182291666666667,
+        "gated_auc": 0.9482638888888889,
+        "fusion_gain": -0.028472222222222232,
+        "fusion_gain_ci95": [
+          -0.08733072916666668,
+          0.020143229166666606
+        ],
+        "gated_gain": 0.0015625000000000222,
+        "gated_gain_ci95": [
+          0.0,
+          0.009374999999999967
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9444444444444444,
+        "fusion_auc": 0.9166666666666666,
+        "gated_auc": 0.9461805555555556,
+        "fusion_gain": -0.02777777777777779,
+        "fusion_gain_ci95": [
+          -0.09201388888888884,
+          0.02430555555555558
+        ],
+        "gated_gain": 0.0017361111111111605,
+        "gated_gain_ci95": [
+          0.0,
+          0.01041666666666663
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9583333333333334,
+        "fusion_auc": 0.9114583333333334,
+        "gated_auc": 0.9583333333333334,
+        "fusion_gain": -0.046875,
+        "fusion_gain_ci95": [
+          -0.13372395833333336,
+          0.00520833333333337
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9565972222222223,
+        "fusion_auc": 0.9133680555555556,
+        "gated_auc": 0.9572916666666667,
+        "fusion_gain": -0.04322916666666676,
+        "fusion_gain_ci95": [
+          -0.12885850694444442,
+          0.00799045138888887
+        ],
+        "gated_gain": 0.000694444444444331,
+        "gated_gain_ci95": [
+          0.0,
+          0.002777777777777779
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9548611111111112,
+        "fusion_auc": 0.9152777777777779,
+        "gated_auc": 0.95625,
+        "fusion_gain": -0.039583333333333304,
+        "fusion_gain_ci95": [
+          -0.12365451388888885,
+          0.011119791666666688
+        ],
+        "gated_gain": 0.001388888888888884,
+        "gated_gain_ci95": [
+          0.0,
+          0.005555555555555558
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.953125,
+        "fusion_auc": 0.9171875,
+        "gated_auc": 0.9552083333333333,
+        "fusion_gain": -0.035937499999999956,
+        "fusion_gain_ci95": [
+          -0.11859809027777775,
+          0.015282118055555531
+        ],
+        "gated_gain": 0.002083333333333326,
+        "gated_gain_ci95": [
+          0.0,
+          0.008333333333333338
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9513888888888888,
+        "fusion_auc": 0.9190972222222222,
+        "gated_auc": 0.9541666666666666,
+        "fusion_gain": -0.03229166666666661,
+        "fusion_gain_ci95": [
+          -0.11285590277777782,
+          0.01875868055555555
+        ],
+        "gated_gain": 0.002777777777777768,
+        "gated_gain_ci95": [
+          0.0,
+          0.011111111111111117
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9496527777777778,
+        "fusion_auc": 0.9210069444444444,
+        "gated_auc": 0.953125,
+        "fusion_gain": -0.02864583333333337,
+        "fusion_gain_ci95": [
+          -0.10766059027777784,
+          0.023437499999999944
+        ],
+        "gated_gain": 0.00347222222222221,
+        "gated_gain_ci95": [
+          0.0,
+          0.013888888888888895
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9479166666666667,
+        "fusion_auc": 0.9229166666666667,
+        "gated_auc": 0.9520833333333334,
+        "fusion_gain": -0.025000000000000022,
+        "fusion_gain_ci95": [
+          -0.10211805555555553,
+          0.02848090277777772
+        ],
+        "gated_gain": 0.004166666666666652,
+        "gated_gain_ci95": [
+          0.0,
+          0.016666666666666677
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9461805555555556,
+        "fusion_auc": 0.924826388888889,
+        "gated_auc": 0.9510416666666666,
+        "fusion_gain": -0.021354166666666563,
+        "fusion_gain_ci95": [
+          -0.09813368055555557,
+          0.03403645833333335
+        ],
+        "gated_gain": 0.004861111111110983,
+        "gated_gain_ci95": [
+          0.0,
+          0.019444444444444455
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9444444444444444,
+        "fusion_auc": 0.9267361111111111,
+        "gated_auc": 0.95,
+        "fusion_gain": -0.017708333333333326,
+        "fusion_gain_ci95": [
+          -0.09618923611111119,
+          0.03993055555555559
+        ],
+        "gated_gain": 0.005555555555555536,
+        "gated_gain_ci95": [
+          0.0,
+          0.022222222222222233
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9427083333333334,
+        "fusion_auc": 0.9286458333333334,
+        "gated_auc": 0.9489583333333333,
+        "fusion_gain": -0.014062499999999978,
+        "fusion_gain_ci95": [
+          -0.09238281250000006,
+          0.045490451388888895
+        ],
+        "gated_gain": 0.006249999999999978,
+        "gated_gain_ci95": [
+          0.0,
+          0.025000000000000012
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9409722222222222,
+        "fusion_auc": 0.9305555555555556,
+        "gated_auc": 0.9479166666666666,
+        "fusion_gain": -0.01041666666666663,
+        "fusion_gain_ci95": [
+          -0.08858506944444451,
+          0.05208333333333337
+        ],
+        "gated_gain": 0.00694444444444442,
+        "gated_gain_ci95": [
+          0.0,
+          0.02777777777777779
+        ]
+      }
+    ],
+    "diffusion_strength0p50": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.8177083333333334,
+        "fusion_auc": 0.7795138888888888,
+        "gated_auc": 0.8177083333333334,
+        "fusion_gain": -0.03819444444444453,
+        "fusion_gain_ci95": [
+          -0.11805555555555558,
+          0.04861111111111105
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.810763888888889,
+        "fusion_auc": 0.7737847222222222,
+        "gated_auc": 0.8109375000000001,
+        "fusion_gain": -0.036979166666666785,
+        "fusion_gain_ci95": [
+          -0.11372395833333339,
+          0.04775173611111107
+        ],
+        "gated_gain": 0.00017361111111113825,
+        "gated_gain_ci95": [
+          0.0,
+          0.001041666666666663
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.8038194444444445,
+        "fusion_auc": 0.7680555555555556,
+        "gated_auc": 0.8041666666666668,
+        "fusion_gain": -0.03576388888888893,
+        "fusion_gain_ci95": [
+          -0.11041666666666666,
+          0.04756944444444442
+        ],
+        "gated_gain": 0.0003472222222222765,
+        "gated_gain_ci95": [
+          0.0,
+          0.002083333333333326
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.796875,
+        "fusion_auc": 0.7623263888888888,
+        "gated_auc": 0.7973958333333333,
+        "fusion_gain": -0.03454861111111118,
+        "fusion_gain_ci95": [
+          -0.1083333333333333,
+          0.0470529513888888
+        ],
+        "gated_gain": 0.0005208333333333037,
+        "gated_gain_ci95": [
+          0.0,
+          0.0031249999999999893
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.7899305555555556,
+        "fusion_auc": 0.7565972222222221,
+        "gated_auc": 0.790625,
+        "fusion_gain": -0.03333333333333344,
+        "fusion_gain_ci95": [
+          -0.1062673611111111,
+          0.04618923611111102
+        ],
+        "gated_gain": 0.000694444444444442,
+        "gated_gain_ci95": [
+          0.0,
+          0.004166666666666652
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.7829861111111112,
+        "fusion_auc": 0.7508680555555556,
+        "gated_auc": 0.7838541666666667,
+        "fusion_gain": -0.03211805555555558,
+        "fusion_gain_ci95": [
+          -0.10503472222222227,
+          0.046006944444444475
+        ],
+        "gated_gain": 0.0008680555555555802,
+        "gated_gain_ci95": [
+          0.0,
+          0.005208333333333315
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.7760416666666666,
+        "fusion_auc": 0.7451388888888888,
+        "gated_auc": 0.7770833333333333,
+        "fusion_gain": -0.030902777777777835,
+        "fusion_gain_ci95": [
+          -0.10486979166666668,
+          0.04756944444444447
+        ],
+        "gated_gain": 0.0010416666666667185,
+        "gated_gain_ci95": [
+          0.0,
+          0.006249999999999979
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.7690972222222222,
+        "fusion_auc": 0.7394097222222222,
+        "gated_auc": 0.7703125,
+        "fusion_gain": -0.029687499999999978,
+        "fusion_gain_ci95": [
+          -0.10591579861111107,
+          0.05141059027777764
+        ],
+        "gated_gain": 0.0012152777777777457,
+        "gated_gain_ci95": [
+          0.0,
+          0.007291666666666642
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.7621527777777777,
+        "fusion_auc": 0.7336805555555556,
+        "gated_auc": 0.7635416666666668,
+        "fusion_gain": -0.02847222222222212,
+        "fusion_gain_ci95": [
+          -0.10662326388888888,
+          0.05243923611111107
+        ],
+        "gated_gain": 0.001388888888889106,
+        "gated_gain_ci95": [
+          0.0,
+          0.008333333333333304
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.7552083333333334,
+        "fusion_auc": 0.7279513888888889,
+        "gated_auc": 0.7567708333333334,
+        "fusion_gain": -0.027256944444444486,
+        "fusion_gain_ci95": [
+          -0.10781249999999995,
+          0.056423611111111105
+        ],
+        "gated_gain": 0.0015625000000000222,
+        "gated_gain_ci95": [
+          0.0,
+          0.009374999999999967
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.7482638888888888,
+        "fusion_auc": 0.7222222222222222,
+        "gated_auc": 0.75,
+        "fusion_gain": -0.02604166666666663,
+        "fusion_gain_ci95": [
+          -0.11111111111111105,
+          0.06076388888888884
+        ],
+        "gated_gain": 0.0017361111111111605,
+        "gated_gain_ci95": [
+          0.0,
+          0.01041666666666663
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.8854166666666666,
+        "fusion_auc": 0.8055555555555556,
+        "gated_auc": 0.8854166666666666,
+        "fusion_gain": -0.07986111111111105,
+        "fusion_gain_ci95": [
+          -0.18229166666666663,
+          0.00347222222222221
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.8850694444444445,
+        "fusion_auc": 0.8072916666666667,
+        "gated_auc": 0.8850694444444445,
+        "fusion_gain": -0.07777777777777772,
+        "fusion_gain_ci95": [
+          -0.1781336805555556,
+          0.0036458333333333273
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.8847222222222223,
+        "fusion_auc": 0.8090277777777778,
+        "gated_auc": 0.8847222222222223,
+        "fusion_gain": -0.07569444444444451,
+        "fusion_gain_ci95": [
+          -0.17398437500000002,
+          0.002786458333333298
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.884375,
+        "fusion_auc": 0.810763888888889,
+        "gated_auc": 0.884375,
+        "fusion_gain": -0.07361111111111107,
+        "fusion_gain_ci95": [
+          -0.17138888888888887,
+          0.0027994791666665943
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.8840277777777779,
+        "fusion_auc": 0.8125,
+        "gated_auc": 0.8840277777777779,
+        "fusion_gain": -0.07152777777777786,
+        "fusion_gain_ci95": [
+          -0.1694618055555555,
+          0.003819444444444421
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.8836805555555556,
+        "fusion_auc": 0.8142361111111112,
+        "gated_auc": 0.8836805555555556,
+        "fusion_gain": -0.06944444444444442,
+        "fusion_gain_ci95": [
+          -0.16666666666666663,
+          0.005208333333333315
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.8833333333333333,
+        "fusion_auc": 0.8159722222222223,
+        "gated_auc": 0.8833333333333333,
+        "fusion_gain": -0.06736111111111098,
+        "fusion_gain_ci95": [
+          -0.1631944444444444,
+          0.00660590277777774
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.882986111111111,
+        "fusion_auc": 0.8177083333333333,
+        "gated_auc": 0.882986111111111,
+        "fusion_gain": -0.06527777777777777,
+        "fusion_gain_ci95": [
+          -0.16095052083333333,
+          0.00834201388888879
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.8826388888888889,
+        "fusion_auc": 0.8194444444444444,
+        "gated_auc": 0.8826388888888889,
+        "fusion_gain": -0.06319444444444444,
+        "fusion_gain_ci95": [
+          -0.15973090277777777,
+          0.01007812499999995
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.8822916666666666,
+        "fusion_auc": 0.8211805555555556,
+        "gated_auc": 0.8822916666666666,
+        "fusion_gain": -0.061111111111111005,
+        "fusion_gain_ci95": [
+          -0.15955729166666677,
+          0.012161458333333245
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.8819444444444444,
+        "fusion_auc": 0.8229166666666666,
+        "gated_auc": 0.8819444444444444,
+        "fusion_gain": -0.05902777777777779,
+        "fusion_gain_ci95": [
+          -0.1597222222222222,
+          0.015625
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "identity": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9409722222222222,
+        "fusion_auc": 0.9357638888888888,
+        "gated_auc": 0.9409722222222222,
+        "fusion_gain": -0.00520833333333337,
+        "fusion_gain_ci95": [
+          -0.05555555555555547,
+          0.04513888888888884
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9409722222222223,
+        "fusion_auc": 0.9416666666666667,
+        "gated_auc": 0.9427083333333334,
+        "fusion_gain": 0.000694444444444331,
+        "fusion_gain_ci95": [
+          -0.044969618055555535,
+          0.04845486111111103
+        ],
+        "gated_gain": 0.0017361111111110494,
+        "gated_gain_ci95": [
+          -0.0038237847222222306,
+          0.007816840277777754
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9409722222222222,
+        "fusion_auc": 0.9475694444444445,
+        "gated_auc": 0.9444444444444444,
+        "fusion_gain": 0.006597222222222254,
+        "fusion_gain_ci95": [
+          -0.0361111111111111,
+          0.05347222222222224
+        ],
+        "gated_gain": 0.00347222222222221,
+        "gated_gain_ci95": [
+          -0.007647569444444461,
+          0.01563368055555551
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9409722222222222,
+        "fusion_auc": 0.9534722222222222,
+        "gated_auc": 0.9461805555555556,
+        "fusion_gain": 0.012499999999999956,
+        "fusion_gain_ci95": [
+          -0.02760416666666667,
+          0.059375000000000004
+        ],
+        "gated_gain": 0.00520833333333337,
+        "gated_gain_ci95": [
+          -0.011471354166666692,
+          0.023450520833333266
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9409722222222222,
+        "fusion_auc": 0.959375,
+        "gated_auc": 0.9479166666666667,
+        "fusion_gain": 0.018402777777777768,
+        "fusion_gain_ci95": [
+          -0.019105902777777784,
+          0.06703124999999999
+        ],
+        "gated_gain": 0.006944444444444531,
+        "gated_gain_ci95": [
+          -0.015295138888888922,
+          0.03126736111111102
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9409722222222222,
+        "fusion_auc": 0.9652777777777777,
+        "gated_auc": 0.9496527777777778,
+        "fusion_gain": 0.02430555555555547,
+        "fusion_gain_ci95": [
+          -0.013020833333333315,
+          0.07552083333333326
+        ],
+        "gated_gain": 0.00868055555555558,
+        "gated_gain_ci95": [
+          -0.01911892361111115,
+          0.039084201388888774
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9409722222222222,
+        "fusion_auc": 0.9711805555555555,
+        "gated_auc": 0.9513888888888888,
+        "fusion_gain": 0.03020833333333328,
+        "fusion_gain_ci95": [
+          -0.008333333333333347,
+          0.08298611111111111
+        ],
+        "gated_gain": 0.01041666666666663,
+        "gated_gain_ci95": [
+          -0.022942708333333384,
+          0.04690104166666653
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9409722222222222,
+        "fusion_auc": 0.9770833333333333,
+        "gated_auc": 0.953125,
+        "fusion_gain": 0.036111111111111094,
+        "fusion_gain_ci95": [
+          -0.0039930555555555015,
+          0.09080295138888882
+        ],
+        "gated_gain": 0.01215277777777779,
+        "gated_gain_ci95": [
+          -0.026766493055555618,
+          0.05471788194444429
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9409722222222221,
+        "fusion_auc": 0.9829861111111111,
+        "gated_auc": 0.9548611111111112,
+        "fusion_gain": 0.04201388888888902,
+        "fusion_gain_ci95": [
+          -0.002083333333333281,
+          0.10000868055555551
+        ],
+        "gated_gain": 0.013888888888889062,
+        "gated_gain_ci95": [
+          -0.030590277777777845,
+          0.06253472222222203
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9409722222222222,
+        "fusion_auc": 0.9888888888888888,
+        "gated_auc": 0.9565972222222222,
+        "fusion_gain": 0.04791666666666661,
+        "fusion_gain_ci95": [
+          0.0003472222222222557,
+          0.11059027777777773
+        ],
+        "gated_gain": 0.015625,
+        "gated_gain_ci95": [
+          -0.03441406250000008,
+          0.07035156249999978
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9409722222222222,
+        "fusion_auc": 0.9947916666666666,
+        "gated_auc": 0.9583333333333334,
+        "fusion_gain": 0.05381944444444442,
+        "fusion_gain_ci95": [
+          0.00347222222222221,
+          0.12152777777777779
+        ],
+        "gated_gain": 0.01736111111111116,
+        "gated_gain_ci95": [
+          -0.0382378472222223,
+          0.07816840277777755
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 0.9861111111111112,
+        "gated_auc": 1.0,
+        "fusion_gain": -0.01388888888888884,
+        "fusion_gain_ci95": [
+          -0.04861111111111116,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 0.9875,
+        "gated_auc": 1.0,
+        "fusion_gain": -0.012499999999999956,
+        "fusion_gain_ci95": [
+          -0.043750000000000046,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 0.9888888888888889,
+        "gated_auc": 1.0,
+        "fusion_gain": -0.011111111111111072,
+        "fusion_gain_ci95": [
+          -0.03888888888888893,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 0.9902777777777778,
+        "gated_auc": 1.0,
+        "fusion_gain": -0.009722222222222188,
+        "fusion_gain_ci95": [
+          -0.03402777777777781,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 0.9916666666666667,
+        "gated_auc": 1.0,
+        "fusion_gain": -0.008333333333333304,
+        "fusion_gain_ci95": [
+          -0.029166666666666695,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 0.9930555555555556,
+        "gated_auc": 1.0,
+        "fusion_gain": -0.00694444444444442,
+        "fusion_gain_ci95": [
+          -0.02430555555555558,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 0.9944444444444445,
+        "gated_auc": 1.0,
+        "fusion_gain": -0.005555555555555536,
+        "fusion_gain_ci95": [
+          -0.01944444444444446,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 0.9958333333333333,
+        "gated_auc": 1.0,
+        "fusion_gain": -0.004166666666666652,
+        "fusion_gain_ci95": [
+          -0.014583333333333346,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 0.9972222222222222,
+        "gated_auc": 1.0,
+        "fusion_gain": -0.002777777777777768,
+        "fusion_gain_ci95": [
+          -0.00972222222222223,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 0.9986111111111111,
+        "gated_auc": 1.0,
+        "fusion_gain": -0.001388888888888884,
+        "fusion_gain_ci95": [
+          -0.004861111111111115,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 1.0,
+        "gated_auc": 1.0,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "jpeg_s1": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9479166666666666,
+        "fusion_auc": 0.9444444444444444,
+        "gated_auc": 0.9479166666666666,
+        "fusion_gain": -0.00347222222222221,
+        "fusion_gain_ci95": [
+          -0.04340277777777768,
+          0.03125
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9473958333333333,
+        "fusion_auc": 0.9494791666666667,
+        "gated_auc": 0.9520833333333334,
+        "fusion_gain": 0.002083333333333326,
+        "fusion_gain_ci95": [
+          -0.032643229166666635,
+          0.03767795138888891
+        ],
+        "gated_gain": 0.004687500000000067,
+        "gated_gain_ci95": [
+          0.000520833333333337,
+          0.010421006944444429
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.946875,
+        "fusion_auc": 0.9545138888888889,
+        "gated_auc": 0.95625,
+        "fusion_gain": 0.007638888888888862,
+        "fusion_gain_ci95": [
+          -0.02257812500000002,
+          0.04410590277777774
+        ],
+        "gated_gain": 0.009375000000000022,
+        "gated_gain_ci95": [
+          0.001041666666666674,
+          0.020842013888888858
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9463541666666666,
+        "fusion_auc": 0.9595486111111111,
+        "gated_auc": 0.9604166666666667,
+        "fusion_gain": 0.013194444444444509,
+        "fusion_gain_ci95": [
+          -0.014240451388888912,
+          0.05156249999999998
+        ],
+        "gated_gain": 0.014062500000000089,
+        "gated_gain_ci95": [
+          0.0015625000000000114,
+          0.03126302083333329
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9458333333333333,
+        "fusion_auc": 0.9645833333333333,
+        "gated_auc": 0.9645833333333333,
+        "fusion_gain": 0.018750000000000044,
+        "fusion_gain_ci95": [
+          -0.007291666666666627,
+          0.05833333333333335
+        ],
+        "gated_gain": 0.018750000000000044,
+        "gated_gain_ci95": [
+          0.002083333333333348,
+          0.041684027777777716
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9453125,
+        "fusion_auc": 0.9696180555555556,
+        "gated_auc": 0.96875,
+        "fusion_gain": 0.02430555555555558,
+        "fusion_gain_ci95": [
+          -0.001736111111111105,
+          0.06599392361111103
+        ],
+        "gated_gain": 0.0234375,
+        "gated_gain_ci95": [
+          0.002604166666666685,
+          0.05210503472222214
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9447916666666667,
+        "fusion_auc": 0.9746527777777777,
+        "gated_auc": 0.9729166666666667,
+        "fusion_gain": 0.029861111111111005,
+        "fusion_gain_ci95": [
+          0.0,
+          0.0739583333333334
+        ],
+        "gated_gain": 0.028124999999999956,
+        "gated_gain_ci95": [
+          0.0031250000000000227,
+          0.06252604166666657
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9442708333333334,
+        "fusion_auc": 0.9796875,
+        "gated_auc": 0.9770833333333333,
+        "fusion_gain": 0.03541666666666665,
+        "fusion_gain_ci95": [
+          0.0012152777777777583,
+          0.08333333333333334
+        ],
+        "gated_gain": 0.03281249999999991,
+        "gated_gain_ci95": [
+          0.0036458333333333594,
+          0.07294704861111101
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9437500000000001,
+        "fusion_auc": 0.9847222222222223,
+        "gated_auc": 0.98125,
+        "fusion_gain": 0.04097222222222219,
+        "fusion_gain_ci95": [
+          0.0024305555555556024,
+          0.09445312499999997
+        ],
+        "gated_gain": 0.03749999999999987,
+        "gated_gain_ci95": [
+          0.004166666666666696,
+          0.08336805555555543
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9432291666666667,
+        "fusion_auc": 0.9897569444444444,
+        "gated_auc": 0.9854166666666666,
+        "fusion_gain": 0.046527777777777724,
+        "fusion_gain_ci95": [
+          0.0036458333333333707,
+          0.10573350694444443
+        ],
+        "gated_gain": 0.04218749999999993,
+        "gated_gain_ci95": [
+          0.004687500000000034,
+          0.09378906249999985
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9427083333333334,
+        "fusion_auc": 0.9947916666666666,
+        "gated_auc": 0.9895833333333334,
+        "fusion_gain": 0.05208333333333326,
+        "fusion_gain_ci95": [
+          0.00520833333333337,
+          0.11805555555555558
+        ],
+        "gated_gain": 0.046875,
+        "gated_gain_ci95": [
+          0.00520833333333337,
+          0.10421006944444428
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9930555555555556,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.005208333333333259,
+        "fusion_gain_ci95": [
+          -0.02083333333333337,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.99375,
+        "gated_auc": 0.9984375,
+        "fusion_gain": -0.004513888888888817,
+        "fusion_gain_ci95": [
+          -0.018750000000000034,
+          0.0
+        ],
+        "gated_gain": 0.00017361111111113825,
+        "gated_gain_ci95": [
+          0.0,
+          0.001041666666666663
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.998263888888889,
+        "fusion_auc": 0.9944444444444445,
+        "gated_auc": 0.9986111111111111,
+        "fusion_gain": -0.0038194444444444864,
+        "fusion_gain_ci95": [
+          -0.016666666666666698,
+          0.0
+        ],
+        "gated_gain": 0.0003472222222221655,
+        "gated_gain_ci95": [
+          0.0,
+          0.002083333333333326
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9951388888888889,
+        "gated_auc": 0.9987847222222221,
+        "fusion_gain": -0.0031249999999999334,
+        "fusion_gain_ci95": [
+          -0.014583333333333358,
+          0.0005208333333333482
+        ],
+        "gated_gain": 0.0005208333333333037,
+        "gated_gain_ci95": [
+          0.0,
+          0.0031249999999999893
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9958333333333333,
+        "gated_auc": 0.9989583333333333,
+        "fusion_gain": -0.0024305555555554914,
+        "fusion_gain_ci95": [
+          -0.012161458333333302,
+          0.0007031249999999709
+        ],
+        "gated_gain": 0.000694444444444442,
+        "gated_gain_ci95": [
+          0.0,
+          0.004166666666666652
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9965277777777778,
+        "gated_auc": 0.9991319444444444,
+        "fusion_gain": -0.0017361111111110494,
+        "fusion_gain_ci95": [
+          -0.008723958333333354,
+          0.001736111111111105
+        ],
+        "gated_gain": 0.0008680555555555802,
+        "gated_gain_ci95": [
+          0.0,
+          0.005208333333333315
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9972222222222222,
+        "gated_auc": 0.9993055555555556,
+        "fusion_gain": -0.0010416666666666075,
+        "fusion_gain_ci95": [
+          -0.006944444444444462,
+          0.003125000000000003
+        ],
+        "gated_gain": 0.0010416666666667185,
+        "gated_gain_ci95": [
+          0.0,
+          0.006249999999999979
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9979166666666667,
+        "gated_auc": 0.9994791666666667,
+        "fusion_gain": -0.0003472222222221655,
+        "fusion_gain_ci95": [
+          -0.00486979166666668,
+          0.004518229166666682
+        ],
+        "gated_gain": 0.0012152777777778567,
+        "gated_gain_ci95": [
+          0.0,
+          0.007291666666666642
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9986111111111111,
+        "gated_auc": 0.9996527777777777,
+        "fusion_gain": 0.0003472222222222765,
+        "fusion_gain_ci95": [
+          -0.0031249999999999993,
+          0.006249999999999956
+        ],
+        "gated_gain": 0.001388888888888884,
+        "gated_gain_ci95": [
+          0.0,
+          0.008333333333333304
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9993055555555556,
+        "gated_auc": 0.9998263888888889,
+        "fusion_gain": 0.0010416666666667185,
+        "fusion_gain_ci95": [
+          -0.0015624999999999997,
+          0.008342013888888802
+        ],
+        "gated_gain": 0.0015625000000000222,
+        "gated_gain_ci95": [
+          0.0,
+          0.009374999999999967
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 1.0,
+        "gated_auc": 1.0,
+        "fusion_gain": 0.0017361111111111605,
+        "fusion_gain_ci95": [
+          0.0,
+          0.01041666666666663
+        ],
+        "gated_gain": 0.0017361111111111605,
+        "gated_gain_ci95": [
+          0.0,
+          0.01041666666666663
+        ]
+      }
+    ],
+    "jpeg_s2": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9618055555555556,
+        "fusion_auc": 0.9496527777777778,
+        "gated_auc": 0.9618055555555556,
+        "fusion_gain": -0.01215277777777779,
+        "fusion_gain_ci95": [
+          -0.07118055555555547,
+          0.04340277777777768
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9614583333333334,
+        "fusion_auc": 0.9545138888888889,
+        "gated_auc": 0.9649305555555556,
+        "fusion_gain": -0.006944444444444531,
+        "fusion_gain_ci95": [
+          -0.06111979166666665,
+          0.04602430555555543
+        ],
+        "gated_gain": 0.00347222222222221,
+        "gated_gain_ci95": [
+          0.0,
+          0.008680555555555547
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9611111111111111,
+        "fusion_auc": 0.9593750000000001,
+        "gated_auc": 0.9680555555555557,
+        "fusion_gain": -0.0017361111111110494,
+        "fusion_gain_ci95": [
+          -0.05139756944444442,
+          0.050694444444444424
+        ],
+        "gated_gain": 0.006944444444444531,
+        "gated_gain_ci95": [
+          0.0,
+          0.017361111111111095
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.960763888888889,
+        "fusion_auc": 0.9642361111111111,
+        "gated_auc": 0.9711805555555556,
+        "fusion_gain": 0.003472222222222099,
+        "fusion_gain_ci95": [
+          -0.041497395833333325,
+          0.055559895833333296
+        ],
+        "gated_gain": 0.01041666666666663,
+        "gated_gain_ci95": [
+          0.0,
+          0.026041666666666644
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9604166666666667,
+        "fusion_auc": 0.9690972222222223,
+        "gated_auc": 0.9743055555555555,
+        "fusion_gain": 0.00868055555555558,
+        "fusion_gain_ci95": [
+          -0.03194444444444444,
+          0.0604427083333332
+        ],
+        "gated_gain": 0.01388888888888884,
+        "gated_gain_ci95": [
+          0.0,
+          0.03472222222222219
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9600694444444444,
+        "fusion_auc": 0.9739583333333333,
+        "gated_auc": 0.9774305555555556,
+        "fusion_gain": 0.01388888888888884,
+        "fusion_gain_ci95": [
+          -0.0234375,
+          0.06597222222222227
+        ],
+        "gated_gain": 0.01736111111111116,
+        "gated_gain_ci95": [
+          0.0,
+          0.043402777777777735
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9597222222222221,
+        "fusion_auc": 0.9788194444444445,
+        "gated_auc": 0.9805555555555556,
+        "fusion_gain": 0.01909722222222232,
+        "fusion_gain_ci95": [
+          -0.015624999999999993,
+          0.07292534722222223
+        ],
+        "gated_gain": 0.02083333333333348,
+        "gated_gain_ci95": [
+          0.0,
+          0.05208333333333329
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.959375,
+        "fusion_auc": 0.9836805555555554,
+        "gated_auc": 0.9836805555555556,
+        "fusion_gain": 0.02430555555555547,
+        "fusion_gain_ci95": [
+          -0.00972222222222225,
+          0.0781336805555555
+        ],
+        "gated_gain": 0.02430555555555558,
+        "gated_gain_ci95": [
+          0.0,
+          0.06076388888888883
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9590277777777778,
+        "fusion_auc": 0.9885416666666667,
+        "gated_auc": 0.9868055555555556,
+        "fusion_gain": 0.02951388888888884,
+        "fusion_gain_ci95": [
+          -0.004861111111111115,
+          0.08403645833333337
+        ],
+        "gated_gain": 0.02777777777777779,
+        "gated_gain_ci95": [
+          0.0,
+          0.06944444444444438
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9586805555555555,
+        "fusion_auc": 0.9934027777777777,
+        "gated_auc": 0.9899305555555555,
+        "fusion_gain": 0.03472222222222221,
+        "fusion_gain_ci95": [
+          -0.0015624999999999997,
+          0.0920225694444444
+        ],
+        "gated_gain": 0.03125,
+        "gated_gain_ci95": [
+          0.0,
+          0.07812499999999993
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9583333333333334,
+        "fusion_auc": 0.9982638888888888,
+        "gated_auc": 0.9930555555555556,
+        "fusion_gain": 0.03993055555555547,
+        "fusion_gain_ci95": [
+          0.0,
+          0.09895833333333337
+        ],
+        "gated_gain": 0.03472222222222221,
+        "gated_gain_ci95": [
+          0.0,
+          0.08680555555555547
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9947916666666666,
+        "fusion_auc": 0.9809027777777778,
+        "gated_auc": 0.9947916666666666,
+        "fusion_gain": -0.01388888888888884,
+        "fusion_gain_ci95": [
+          -0.05208333333333326,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9947916666666666,
+        "fusion_auc": 0.9828125,
+        "gated_auc": 0.9953124999999999,
+        "fusion_gain": -0.011979166666666652,
+        "fusion_gain_ci95": [
+          -0.04531250000000003,
+          0.0
+        ],
+        "gated_gain": 0.0005208333333333037,
+        "gated_gain_ci95": [
+          0.0,
+          0.002083333333333337
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9947916666666667,
+        "fusion_auc": 0.9847222222222223,
+        "gated_auc": 0.9958333333333333,
+        "fusion_gain": -0.010069444444444464,
+        "fusion_gain_ci95": [
+          -0.038541666666666696,
+          0.0
+        ],
+        "gated_gain": 0.0010416666666666075,
+        "gated_gain_ci95": [
+          0.0,
+          0.004166666666666674
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9947916666666666,
+        "fusion_auc": 0.9866319444444445,
+        "gated_auc": 0.9963541666666667,
+        "fusion_gain": -0.008159722222222165,
+        "fusion_gain_ci95": [
+          -0.03177083333333336,
+          0.0
+        ],
+        "gated_gain": 0.0015625000000000222,
+        "gated_gain_ci95": [
+          0.0,
+          0.006250000000000012
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9947916666666666,
+        "fusion_auc": 0.9885416666666667,
+        "gated_auc": 0.996875,
+        "fusion_gain": -0.006249999999999978,
+        "fusion_gain_ci95": [
+          -0.025694444444444485,
+          0.000694444444444442
+        ],
+        "gated_gain": 0.002083333333333326,
+        "gated_gain_ci95": [
+          0.0,
+          0.008333333333333349
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9947916666666666,
+        "fusion_auc": 0.9904513888888888,
+        "gated_auc": 0.9973958333333333,
+        "fusion_gain": -0.00434027777777779,
+        "fusion_gain_ci95": [
+          -0.01914062500000004,
+          0.0026041666666666297
+        ],
+        "gated_gain": 0.0026041666666666297,
+        "gated_gain_ci95": [
+          0.0,
+          0.010416666666666685
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9947916666666666,
+        "fusion_auc": 0.9923611111111111,
+        "gated_auc": 0.9979166666666667,
+        "fusion_gain": -0.0024305555555554914,
+        "fusion_gain_ci95": [
+          -0.014583333333333323,
+          0.004522569444444436
+        ],
+        "gated_gain": 0.0031250000000000444,
+        "gated_gain_ci95": [
+          0.0,
+          0.012500000000000023
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9947916666666666,
+        "fusion_auc": 0.9942708333333333,
+        "gated_auc": 0.9984375,
+        "fusion_gain": -0.0005208333333333037,
+        "fusion_gain_ci95": [
+          -0.00903645833333336,
+          0.007816840277777768
+        ],
+        "gated_gain": 0.003645833333333348,
+        "gated_gain_ci95": [
+          0.0,
+          0.014583333333333361
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9947916666666667,
+        "fusion_auc": 0.9961805555555556,
+        "gated_auc": 0.9989583333333334,
+        "fusion_gain": 0.001388888888888884,
+        "fusion_gain_ci95": [
+          -0.004861111111111115,
+          0.012499999999999957
+        ],
+        "gated_gain": 0.004166666666666652,
+        "gated_gain_ci95": [
+          0.0,
+          0.016666666666666698
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9947916666666666,
+        "fusion_auc": 0.9980902777777778,
+        "gated_auc": 0.9994791666666667,
+        "fusion_gain": 0.0032986111111111827,
+        "fusion_gain_ci95": [
+          -0.0013888888888888842,
+          0.016666666666666708
+        ],
+        "gated_gain": 0.004687500000000067,
+        "gated_gain_ci95": [
+          0.0,
+          0.018750000000000034
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9947916666666666,
+        "fusion_auc": 1.0,
+        "gated_auc": 1.0,
+        "fusion_gain": 0.00520833333333337,
+        "fusion_gain_ci95": [
+          0.0,
+          0.02083333333333337
+        ],
+        "gated_gain": 0.00520833333333337,
+        "gated_gain_ci95": [
+          0.0,
+          0.02083333333333337
+        ]
+      }
+    ],
+    "lowres_s2": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.75,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.08680555555555558,
+        "fusion_gain_ci95": [
+          -0.18576388888888884,
+          0.00694444444444442
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.7506944444444446,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.08611111111111103,
+        "fusion_gain_ci95": [
+          -0.18249131944444452,
+          0.004348958333333212
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.751388888888889,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.08541666666666659,
+        "fusion_gain_ci95": [
+          -0.17848958333333334,
+          0.0003645833333332466
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.7520833333333332,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.08472222222222237,
+        "fusion_gain_ci95": [
+          -0.17535156249999995,
+          -0.0027734375000000276
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.7527777777777778,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.08402777777777781,
+        "fusion_gain_ci95": [
+          -0.17222222222222217,
+          -0.005555555555555535
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.7534722222222222,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.08333333333333337,
+        "fusion_gain_ci95": [
+          -0.1675347222222222,
+          -0.00692274305555565
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.7541666666666667,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.08263888888888893,
+        "fusion_gain_ci95": [
+          -0.16458333333333328,
+          -0.006597222222222272
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.7548611111111111,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.08194444444444449,
+        "fusion_gain_ci95": [
+          -0.16112847222222226,
+          -0.008502604166666752
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.7555555555555555,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.08125000000000004,
+        "fusion_gain_ci95": [
+          -0.1600694444444445,
+          -0.009722222222222212
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.75625,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.0805555555555556,
+        "fusion_gain_ci95": [
+          -0.1569791666666667,
+          -0.010585937499999993
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.8368055555555556,
+        "fusion_auc": 0.7569444444444444,
+        "gated_auc": 0.8368055555555556,
+        "fusion_gain": -0.07986111111111116,
+        "fusion_gain_ci95": [
+          -0.15451388888888895,
+          -0.01210937500000025
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9496527777777778,
+        "fusion_auc": 0.828125,
+        "gated_auc": 0.9496527777777778,
+        "fusion_gain": -0.12152777777777779,
+        "fusion_gain_ci95": [
+          -0.23441840277777778,
+          -0.03472222222222221
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9496527777777778,
+        "fusion_auc": 0.8274305555555557,
+        "gated_auc": 0.9496527777777778,
+        "fusion_gain": -0.12222222222222212,
+        "fusion_gain_ci95": [
+          -0.23733506944444444,
+          -0.03454861111111109
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9496527777777779,
+        "fusion_auc": 0.8267361111111112,
+        "gated_auc": 0.9496527777777779,
+        "fusion_gain": -0.12291666666666667,
+        "fusion_gain_ci95": [
+          -0.2388975694444445,
+          -0.034366319444444474
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9496527777777779,
+        "fusion_auc": 0.8260416666666666,
+        "gated_auc": 0.9496527777777779,
+        "fusion_gain": -0.12361111111111134,
+        "fusion_gain_ci95": [
+          -0.24201388888888886,
+          -0.03420138888888889
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9496527777777779,
+        "fusion_auc": 0.8253472222222222,
+        "gated_auc": 0.9496527777777779,
+        "fusion_gain": -0.12430555555555567,
+        "fusion_gain_ci95": [
+          -0.2448003472222222,
+          -0.03402777777777775
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9496527777777778,
+        "fusion_auc": 0.8246527777777778,
+        "gated_auc": 0.9496527777777778,
+        "fusion_gain": -0.125,
+        "fusion_gain_ci95": [
+          -0.2456814236111111,
+          -0.03385416666666663
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9496527777777779,
+        "fusion_auc": 0.8239583333333333,
+        "gated_auc": 0.9496527777777779,
+        "fusion_gain": -0.12569444444444455,
+        "fusion_gain_ci95": [
+          -0.24723958333333335,
+          -0.033671875000000004
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9496527777777779,
+        "fusion_auc": 0.8232638888888889,
+        "gated_auc": 0.9496527777777779,
+        "fusion_gain": -0.126388888888889,
+        "fusion_gain_ci95": [
+          -0.24948350694444446,
+          -0.033502604166666644
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9496527777777778,
+        "fusion_auc": 0.8225694444444445,
+        "gated_auc": 0.9496527777777778,
+        "fusion_gain": -0.12708333333333333,
+        "fusion_gain_ci95": [
+          -0.25140625000000005,
+          -0.03298611111111105
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9496527777777778,
+        "fusion_auc": 0.821875,
+        "gated_auc": 0.9496527777777778,
+        "fusion_gain": -0.12777777777777777,
+        "fusion_gain_ci95": [
+          -0.2545138888888889,
+          -0.0321137152777778
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9496527777777778,
+        "fusion_auc": 0.8211805555555556,
+        "gated_auc": 0.9496527777777778,
+        "fusion_gain": -0.1284722222222222,
+        "fusion_gain_ci95": [
+          -0.2569444444444444,
+          -0.03125
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "noise_s1": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9548611111111112,
+        "fusion_auc": 0.9305555555555556,
+        "gated_auc": 0.9548611111111112,
+        "fusion_gain": -0.02430555555555558,
+        "fusion_gain_ci95": [
+          -0.07118055555555558,
+          0.02083333333333337
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.954513888888889,
+        "fusion_auc": 0.9369791666666667,
+        "gated_auc": 0.9581597222222223,
+        "fusion_gain": -0.0175347222222223,
+        "fusion_gain_ci95": [
+          -0.060768229166666674,
+          0.023958333333333373
+        ],
+        "gated_gain": 0.003645833333333348,
+        "gated_gain_ci95": [
+          0.0,
+          0.009375000000000001
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9541666666666667,
+        "fusion_auc": 0.9434027777777778,
+        "gated_auc": 0.9614583333333334,
+        "fusion_gain": -0.010763888888888906,
+        "fusion_gain_ci95": [
+          -0.05,
+          0.02917534722222225
+        ],
+        "gated_gain": 0.007291666666666696,
+        "gated_gain_ci95": [
+          0.0,
+          0.018750000000000003
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9538194444444446,
+        "fusion_auc": 0.9498263888888889,
+        "gated_auc": 0.9647569444444445,
+        "fusion_gain": -0.003993055555555625,
+        "fusion_gain_ci95": [
+          -0.040108506944444414,
+          0.03576822916666663
+        ],
+        "gated_gain": 0.010937499999999933,
+        "gated_gain_ci95": [
+          0.0,
+          0.028125000000000004
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9534722222222222,
+        "fusion_auc": 0.95625,
+        "gated_auc": 0.9680555555555556,
+        "fusion_gain": 0.002777777777777879,
+        "fusion_gain_ci95": [
+          -0.03125,
+          0.04375868055555555
+        ],
+        "gated_gain": 0.014583333333333393,
+        "gated_gain_ci95": [
+          0.0,
+          0.037500000000000006
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.953125,
+        "fusion_auc": 0.9626736111111112,
+        "gated_auc": 0.9713541666666667,
+        "fusion_gain": 0.00954861111111116,
+        "fusion_gain_ci95": [
+          -0.022569444444444475,
+          0.05123697916666661
+        ],
+        "gated_gain": 0.01822916666666674,
+        "gated_gain_ci95": [
+          0.0,
+          0.046875
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9527777777777777,
+        "fusion_auc": 0.9690972222222223,
+        "gated_auc": 0.9746527777777778,
+        "fusion_gain": 0.016319444444444553,
+        "fusion_gain_ci95": [
+          -0.015624999999999972,
+          0.0618055555555555
+        ],
+        "gated_gain": 0.02187500000000009,
+        "gated_gain_ci95": [
+          0.0,
+          0.05625000000000001
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9524305555555556,
+        "fusion_auc": 0.9755208333333334,
+        "gated_auc": 0.9779513888888889,
+        "fusion_gain": 0.023090277777777835,
+        "fusion_gain_ci95": [
+          -0.010416666666666661,
+          0.07066840277777775
+        ],
+        "gated_gain": 0.025520833333333326,
+        "gated_gain_ci95": [
+          0.0,
+          0.065625
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9520833333333333,
+        "fusion_auc": 0.9819444444444445,
+        "gated_auc": 0.9812500000000001,
+        "fusion_gain": 0.029861111111111227,
+        "fusion_gain_ci95": [
+          -0.005902777777777767,
+          0.0826475694444444
+        ],
+        "gated_gain": 0.029166666666666785,
+        "gated_gain_ci95": [
+          0.0,
+          0.07500000000000001
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.951736111111111,
+        "fusion_auc": 0.9883680555555555,
+        "gated_auc": 0.984548611111111,
+        "fusion_gain": 0.03663194444444451,
+        "fusion_gain_ci95": [
+          -0.0022569444444444416,
+          0.09513888888888884
+        ],
+        "gated_gain": 0.03281250000000002,
+        "gated_gain_ci95": [
+          0.0,
+          0.084375
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9513888888888888,
+        "fusion_auc": 0.9947916666666666,
+        "gated_auc": 0.9878472222222222,
+        "fusion_gain": 0.04340277777777779,
+        "fusion_gain_ci95": [
+          0.0,
+          0.10594618055555532
+        ],
+        "gated_gain": 0.03645833333333337,
+        "gated_gain_ci95": [
+          0.0,
+          0.09375
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9774305555555556,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.02083333333333326,
+        "fusion_gain_ci95": [
+          -0.06944444444444442,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9796875,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.018576388888888795,
+        "fusion_gain_ci95": [
+          -0.061822916666666644,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.998263888888889,
+        "fusion_auc": 0.9819444444444445,
+        "gated_auc": 0.998263888888889,
+        "fusion_gain": -0.016319444444444442,
+        "fusion_gain_ci95": [
+          -0.05420138888888892,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9842013888888889,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.014062499999999978,
+        "fusion_gain_ci95": [
+          -0.047408854166666695,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9864583333333333,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.011805555555555514,
+        "fusion_gain_ci95": [
+          -0.0396006944444445,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9887152777777778,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.00954861111111105,
+        "fusion_gain_ci95": [
+          -0.031293402777777826,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9909722222222223,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.007291666666666585,
+        "fusion_gain_ci95": [
+          -0.024999999999999994,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9932291666666666,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.005034722222222232,
+        "fusion_gain_ci95": [
+          -0.018229166666666626,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9954861111111111,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.002777777777777768,
+        "fusion_gain_ci95": [
+          -0.011805555555555555,
+          0.0010416666666666968
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9977430555555555,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.0005208333333333037,
+        "fusion_gain_ci95": [
+          -0.005559895833333334,
+          0.0045138888888888624
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 1.0,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": 0.0017361111111111605,
+        "fusion_gain_ci95": [
+          0.0,
+          0.01041666666666663
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "noise_sigma6_seed20261009": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9513888888888888,
+        "fusion_auc": 0.9288194444444444,
+        "gated_auc": 0.9513888888888888,
+        "fusion_gain": -0.02256944444444442,
+        "fusion_gain_ci95": [
+          -0.06770833333333337,
+          0.01909722222222221
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9519097222222221,
+        "fusion_auc": 0.9350694444444445,
+        "gated_auc": 0.9520833333333333,
+        "fusion_gain": -0.016840277777777635,
+        "fusion_gain_ci95": [
+          -0.05730034722222231,
+          0.022569444444444375
+        ],
+        "gated_gain": 0.00017361111111113825,
+        "gated_gain_ci95": [
+          -0.004687500000000001,
+          0.004861111111111116
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9524305555555556,
+        "fusion_auc": 0.9413194444444445,
+        "gated_auc": 0.9527777777777777,
+        "fusion_gain": -0.011111111111111072,
+        "fusion_gain_ci95": [
+          -0.046883680555555536,
+          0.025703124999999973
+        ],
+        "gated_gain": 0.0003472222222221655,
+        "gated_gain_ci95": [
+          -0.009375000000000001,
+          0.009722222222222233
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.952951388888889,
+        "fusion_auc": 0.9475694444444445,
+        "gated_auc": 0.9534722222222223,
+        "fusion_gain": -0.005381944444444509,
+        "fusion_gain_ci95": [
+          -0.03594618055555559,
+          0.030564236111111046
+        ],
+        "gated_gain": 0.0005208333333333037,
+        "gated_gain_ci95": [
+          -0.014062500000000002,
+          0.014583333333333351
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9534722222222223,
+        "fusion_auc": 0.9538194444444444,
+        "gated_auc": 0.9541666666666666,
+        "fusion_gain": 0.0003472222222221655,
+        "fusion_gain_ci95": [
+          -0.028124999999999997,
+          0.03472222222222219
+        ],
+        "gated_gain": 0.000694444444444331,
+        "gated_gain_ci95": [
+          -0.018750000000000003,
+          0.019444444444444466
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9539930555555556,
+        "fusion_auc": 0.9600694444444444,
+        "gated_auc": 0.9548611111111112,
+        "fusion_gain": 0.0060763888888888395,
+        "fusion_gain_ci95": [
+          -0.020833333333333315,
+          0.041666666666666685
+        ],
+        "gated_gain": 0.0008680555555555802,
+        "gated_gain_ci95": [
+          -0.0234375,
+          0.02430555555555558
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9545138888888889,
+        "fusion_auc": 0.9663194444444444,
+        "gated_auc": 0.9555555555555555,
+        "fusion_gain": 0.011805555555555514,
+        "fusion_gain_ci95": [
+          -0.014244791666666643,
+          0.04999999999999999
+        ],
+        "gated_gain": 0.0010416666666666075,
+        "gated_gain_ci95": [
+          -0.028125000000000004,
+          0.029166666666666702
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9550347222222222,
+        "fusion_auc": 0.9725694444444444,
+        "gated_auc": 0.95625,
+        "fusion_gain": 0.017534722222222188,
+        "fusion_gain_ci95": [
+          -0.009374999999999998,
+          0.05835069444444436
+        ],
+        "gated_gain": 0.0012152777777778567,
+        "gated_gain_ci95": [
+          -0.0328125,
+          0.034027777777777816
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9555555555555555,
+        "fusion_auc": 0.9788194444444445,
+        "gated_auc": 0.9569444444444444,
+        "fusion_gain": 0.023263888888888973,
+        "fusion_gain_ci95": [
+          -0.006249999999999999,
+          0.0684027777777777
+        ],
+        "gated_gain": 0.001388888888888884,
+        "gated_gain_ci95": [
+          -0.037500000000000006,
+          0.03888888888888893
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9560763888888889,
+        "fusion_auc": 0.9850694444444444,
+        "gated_auc": 0.9576388888888889,
+        "fusion_gain": 0.028993055555555536,
+        "fusion_gain_ci95": [
+          -0.0029513888888888836,
+          0.07883246527777768
+        ],
+        "gated_gain": 0.0015625000000000222,
+        "gated_gain_ci95": [
+          -0.0421875,
+          0.043750000000000046
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9565972222222222,
+        "fusion_auc": 0.9913194444444444,
+        "gated_auc": 0.9583333333333334,
+        "fusion_gain": 0.03472222222222221,
+        "fusion_gain_ci95": [
+          0.0,
+          0.09027777777777779
+        ],
+        "gated_gain": 0.0017361111111111605,
+        "gated_gain_ci95": [
+          -0.046875,
+          0.04861111111111116
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9965277777777778,
+        "fusion_auc": 0.9791666666666666,
+        "gated_auc": 0.9965277777777778,
+        "fusion_gain": -0.01736111111111116,
+        "fusion_gain_ci95": [
+          -0.05034722222222221,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9965277777777778,
+        "fusion_auc": 0.9809027777777778,
+        "gated_auc": 0.9965277777777778,
+        "fusion_gain": -0.015625,
+        "fusion_gain_ci95": [
+          -0.04531249999999999,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9965277777777779,
+        "fusion_auc": 0.9826388888888888,
+        "gated_auc": 0.9965277777777779,
+        "fusion_gain": -0.013888888888889062,
+        "fusion_gain_ci95": [
+          -0.04027777777777777,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9965277777777779,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9965277777777779,
+        "fusion_gain": -0.012152777777777901,
+        "fusion_gain_ci95": [
+          -0.03524305555555554,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9965277777777778,
+        "fusion_auc": 0.986111111111111,
+        "gated_auc": 0.9965277777777778,
+        "fusion_gain": -0.01041666666666674,
+        "fusion_gain_ci95": [
+          -0.030208333333333323,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9965277777777778,
+        "fusion_auc": 0.9878472222222222,
+        "gated_auc": 0.9965277777777778,
+        "fusion_gain": -0.00868055555555558,
+        "fusion_gain_ci95": [
+          -0.025173611111111105,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9965277777777778,
+        "fusion_auc": 0.9895833333333333,
+        "gated_auc": 0.9965277777777778,
+        "fusion_gain": -0.006944444444444531,
+        "fusion_gain_ci95": [
+          -0.02013888888888888,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9965277777777777,
+        "fusion_auc": 0.9913194444444444,
+        "gated_auc": 0.9965277777777777,
+        "fusion_gain": -0.005208333333333259,
+        "fusion_gain_ci95": [
+          -0.01510416666666666,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9965277777777778,
+        "fusion_auc": 0.9930555555555556,
+        "gated_auc": 0.9965277777777778,
+        "fusion_gain": -0.00347222222222221,
+        "fusion_gain_ci95": [
+          -0.01006944444444444,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9965277777777777,
+        "fusion_auc": 0.9947916666666666,
+        "gated_auc": 0.9965277777777777,
+        "fusion_gain": -0.0017361111111110494,
+        "fusion_gain_ci95": [
+          -0.00503472222222222,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9965277777777778,
+        "fusion_auc": 0.9965277777777778,
+        "gated_auc": 0.9965277777777778,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "noise_sigma6_seed20261010": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9600694444444444,
+        "fusion_auc": 0.953125,
+        "gated_auc": 0.9600694444444444,
+        "fusion_gain": -0.00694444444444442,
+        "fusion_gain_ci95": [
+          -0.05555555555555558,
+          0.02777777777777779
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9602430555555556,
+        "fusion_auc": 0.9572916666666667,
+        "gated_auc": 0.9630208333333333,
+        "fusion_gain": -0.002951388888888906,
+        "fusion_gain_ci95": [
+          -0.044275173611111135,
+          0.029179687499999937
+        ],
+        "gated_gain": 0.002777777777777768,
+        "gated_gain_ci95": [
+          0.0,
+          0.007291666666666663
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9604166666666667,
+        "fusion_auc": 0.9614583333333334,
+        "gated_auc": 0.9659722222222222,
+        "fusion_gain": 0.0010416666666667185,
+        "fusion_gain_ci95": [
+          -0.03333333333333326,
+          0.03125
+        ],
+        "gated_gain": 0.005555555555555536,
+        "gated_gain_ci95": [
+          0.0,
+          0.014583333333333327
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9605902777777777,
+        "fusion_auc": 0.965625,
+        "gated_auc": 0.968923611111111,
+        "fusion_gain": 0.005034722222222232,
+        "fusion_gain_ci95": [
+          -0.02430555555555551,
+          0.033511284722222236
+        ],
+        "gated_gain": 0.008333333333333304,
+        "gated_gain_ci95": [
+          0.0,
+          0.02187499999999999
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.960763888888889,
+        "fusion_auc": 0.9697916666666667,
+        "gated_auc": 0.971875,
+        "fusion_gain": 0.009027777777777746,
+        "fusion_gain_ci95": [
+          -0.014939236111111113,
+          0.036814236111111044
+        ],
+        "gated_gain": 0.011111111111111072,
+        "gated_gain_ci95": [
+          0.0,
+          0.029166666666666653
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9609375,
+        "fusion_auc": 0.9739583333333333,
+        "gated_auc": 0.9748263888888888,
+        "fusion_gain": 0.01302083333333326,
+        "fusion_gain_ci95": [
+          -0.0069444444444444215,
+          0.041666666666666685
+        ],
+        "gated_gain": 0.01388888888888884,
+        "gated_gain_ci95": [
+          0.0,
+          0.036458333333333315
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.961111111111111,
+        "fusion_auc": 0.9781249999999999,
+        "gated_auc": 0.9777777777777779,
+        "fusion_gain": 0.017013888888888884,
+        "fusion_gain_ci95": [
+          -0.00034722222222222793,
+          0.04862847222222218
+        ],
+        "gated_gain": 0.01666666666666683,
+        "gated_gain_ci95": [
+          0.0,
+          0.04374999999999998
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9612847222222223,
+        "fusion_auc": 0.9822916666666667,
+        "gated_auc": 0.9807291666666667,
+        "fusion_gain": 0.021006944444444398,
+        "fusion_gain_ci95": [
+          0.0,
+          0.056605902777777696
+        ],
+        "gated_gain": 0.019444444444444375,
+        "gated_gain_ci95": [
+          0.0,
+          0.051041666666666645
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9614583333333333,
+        "fusion_auc": 0.9864583333333333,
+        "gated_auc": 0.9836805555555556,
+        "fusion_gain": 0.025000000000000022,
+        "fusion_gain_ci95": [
+          0.0,
+          0.06493055555555552
+        ],
+        "gated_gain": 0.022222222222222254,
+        "gated_gain_ci95": [
+          0.0,
+          0.058333333333333307
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9616319444444446,
+        "fusion_auc": 0.990625,
+        "gated_auc": 0.9866319444444445,
+        "fusion_gain": 0.028993055555555425,
+        "fusion_gain_ci95": [
+          0.0,
+          0.07430989583333335
+        ],
+        "gated_gain": 0.02499999999999991,
+        "gated_gain_ci95": [
+          0.0,
+          0.06562499999999998
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9618055555555556,
+        "fusion_auc": 0.9947916666666666,
+        "gated_auc": 0.9895833333333334,
+        "fusion_gain": 0.03298611111111105,
+        "fusion_gain_ci95": [
+          0.0,
+          0.0833767361111109
+        ],
+        "gated_gain": 0.02777777777777779,
+        "gated_gain_ci95": [
+          0.0,
+          0.07291666666666663
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9895833333333334,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.00868055555555547,
+        "fusion_gain_ci95": [
+          -0.03472222222222221,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9904513888888888,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.0078125,
+        "fusion_gain_ci95": [
+          -0.03124999999999999,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.998263888888889,
+        "fusion_auc": 0.9913194444444445,
+        "gated_auc": 0.998263888888889,
+        "fusion_gain": -0.00694444444444442,
+        "fusion_gain_ci95": [
+          -0.02777777777777777,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9921875,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.0060763888888888395,
+        "fusion_gain_ci95": [
+          -0.024305555555555546,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9930555555555556,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.005208333333333259,
+        "fusion_gain_ci95": [
+          -0.020833333333333325,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9939236111111112,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.004340277777777679,
+        "fusion_gain_ci95": [
+          -0.017361111111111105,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9947916666666666,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.00347222222222221,
+        "fusion_gain_ci95": [
+          -0.013888888888888881,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9956597222222221,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.0026041666666667407,
+        "fusion_gain_ci95": [
+          -0.010416666666666661,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9965277777777778,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.0017361111111110494,
+        "fusion_gain_ci95": [
+          -0.006944444444444441,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9973958333333333,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.0008680555555555802,
+        "fusion_gain_ci95": [
+          -0.0034722222222222203,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9982638888888888,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "noise_sigma6_seed20261011": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.953125,
+        "fusion_auc": 0.9583333333333334,
+        "gated_auc": 0.953125,
+        "fusion_gain": 0.00520833333333337,
+        "fusion_gain_ci95": [
+          -0.04166666666666674,
+          0.05729166666666663
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9529513888888889,
+        "fusion_auc": 0.9621527777777779,
+        "gated_auc": 0.9567708333333333,
+        "fusion_gain": 0.009201388888888995,
+        "fusion_gain_ci95": [
+          -0.035941840277777796,
+          0.06093749999999997
+        ],
+        "gated_gain": 0.0038194444444444864,
+        "gated_gain_ci95": [
+          0.0,
+          0.009379340277777756
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9527777777777778,
+        "fusion_auc": 0.9659722222222222,
+        "gated_auc": 0.9604166666666667,
+        "fusion_gain": 0.013194444444444398,
+        "fusion_gain_ci95": [
+          -0.029166666666666674,
+          0.06458333333333331
+        ],
+        "gated_gain": 0.007638888888888862,
+        "gated_gain_ci95": [
+          0.0,
+          0.01875868055555551
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9526041666666667,
+        "fusion_auc": 0.9697916666666666,
+        "gated_auc": 0.9640625,
+        "fusion_gain": 0.01718749999999991,
+        "fusion_gain_ci95": [
+          -0.021875,
+          0.06927517361111102
+        ],
+        "gated_gain": 0.011458333333333348,
+        "gated_gain_ci95": [
+          0.0,
+          0.028138020833333267
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9524305555555556,
+        "fusion_auc": 0.9736111111111111,
+        "gated_auc": 0.9677083333333334,
+        "fusion_gain": 0.021180555555555536,
+        "fusion_gain_ci95": [
+          -0.016675347222222227,
+          0.07397569444444442
+        ],
+        "gated_gain": 0.015277777777777835,
+        "gated_gain_ci95": [
+          0.0,
+          0.03751736111111102
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9522569444444444,
+        "fusion_auc": 0.9774305555555556,
+        "gated_auc": 0.9713541666666667,
+        "fusion_gain": 0.02517361111111116,
+        "fusion_gain_ci95": [
+          -0.013020833333333315,
+          0.078125
+        ],
+        "gated_gain": 0.01909722222222232,
+        "gated_gain_ci95": [
+          0.0,
+          0.04689670138888877
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9520833333333334,
+        "fusion_auc": 0.98125,
+        "gated_auc": 0.9750000000000001,
+        "fusion_gain": 0.029166666666666563,
+        "fusion_gain_ci95": [
+          -0.00972222222222223,
+          0.08368923611111112
+        ],
+        "gated_gain": 0.022916666666666696,
+        "gated_gain_ci95": [
+          0.0,
+          0.05627604166666653
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9519097222222223,
+        "fusion_auc": 0.9850694444444443,
+        "gated_auc": 0.9786458333333333,
+        "fusion_gain": 0.03315972222222208,
+        "fusion_gain_ci95": [
+          -0.006427951388888941,
+          0.09062934027777769
+        ],
+        "gated_gain": 0.02673611111111107,
+        "gated_gain_ci95": [
+          0.0,
+          0.06565538194444429
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.951736111111111,
+        "fusion_auc": 0.9888888888888889,
+        "gated_auc": 0.9822916666666667,
+        "fusion_gain": 0.03715277777777792,
+        "fusion_gain_ci95": [
+          -0.0038194444444444413,
+          0.09653645833333331
+        ],
+        "gated_gain": 0.03055555555555567,
+        "gated_gain_ci95": [
+          0.0,
+          0.07503472222222204
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9515625,
+        "fusion_auc": 0.9927083333333333,
+        "gated_auc": 0.9859375,
+        "fusion_gain": 0.041145833333333326,
+        "fusion_gain_ci95": [
+          -0.001740451388888893,
+          0.10504774305555552
+        ],
+        "gated_gain": 0.034375000000000044,
+        "gated_gain_ci95": [
+          0.0,
+          0.08441406249999979
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9513888888888888,
+        "fusion_auc": 0.9965277777777778,
+        "gated_auc": 0.9895833333333334,
+        "fusion_gain": 0.04513888888888895,
+        "fusion_gain_ci95": [
+          0.0,
+          0.11284722222222221
+        ],
+        "gated_gain": 0.03819444444444453,
+        "gated_gain_ci95": [
+          0.0,
+          0.09379340277777753
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.9982638888888888,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.00694444444444442,
+          0.00694444444444442
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9984375,
+        "fusion_auc": 0.9984375,
+        "gated_auc": 0.9984375,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.006249999999999978,
+          0.006249999999999978
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9986111111111111,
+        "fusion_auc": 0.9986111111111111,
+        "gated_auc": 0.9986111111111111,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.005555555555555536,
+          0.005555555555555536
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9987847222222221,
+        "fusion_auc": 0.9987847222222221,
+        "gated_auc": 0.9987847222222221,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.004861111111111094,
+          0.004861111111111094
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9989583333333333,
+        "fusion_auc": 0.9989583333333333,
+        "gated_auc": 0.9989583333333333,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.004166666666666652,
+          0.004166666666666652
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9991319444444444,
+        "fusion_auc": 0.9991319444444444,
+        "gated_auc": 0.9991319444444444,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.00347222222222221,
+          0.00347222222222221
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9993055555555556,
+        "fusion_auc": 0.9993055555555556,
+        "gated_auc": 0.9993055555555556,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.0027777777777777675,
+          0.0027777777777777675
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9994791666666667,
+        "fusion_auc": 0.9994791666666667,
+        "gated_auc": 0.9994791666666667,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.0020833333333333255,
+          0.0020833333333333255
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9996527777777777,
+        "fusion_auc": 0.9996527777777777,
+        "gated_auc": 0.9996527777777777,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.0013888888888888837,
+          0.0013888888888888837
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9998263888888889,
+        "fusion_auc": 0.9998263888888889,
+        "gated_auc": 0.9998263888888889,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.0006944444444444419,
+          0.0006944444444444419
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 1.0,
+        "fusion_auc": 1.0,
+        "gated_auc": 1.0,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "regenerate_s2": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9618055555555556,
+        "fusion_auc": 0.9496527777777778,
+        "gated_auc": 0.9618055555555556,
+        "fusion_gain": -0.01215277777777779,
+        "fusion_gain_ci95": [
+          -0.0538628472222223,
+          0.02083333333333337
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9616319444444446,
+        "fusion_auc": 0.9508680555555556,
+        "gated_auc": 0.9616319444444446,
+        "fusion_gain": -0.010763888888888906,
+        "fusion_gain_ci95": [
+          -0.05070312500000007,
+          0.019791666666666655
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9614583333333334,
+        "fusion_auc": 0.9520833333333334,
+        "gated_auc": 0.9614583333333334,
+        "fusion_gain": -0.009375000000000022,
+        "fusion_gain_ci95": [
+          -0.04689236111111114,
+          0.020486111111111094
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9612847222222223,
+        "fusion_auc": 0.9532986111111111,
+        "gated_auc": 0.9612847222222223,
+        "fusion_gain": -0.007986111111111138,
+        "fusion_gain_ci95": [
+          -0.04444444444444441,
+          0.02065972222222222
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.961111111111111,
+        "fusion_auc": 0.9545138888888889,
+        "gated_auc": 0.961111111111111,
+        "fusion_gain": -0.006597222222222143,
+        "fusion_gain_ci95": [
+          -0.03994791666666667,
+          0.021874999999999978
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9609375,
+        "fusion_auc": 0.9557291666666667,
+        "gated_auc": 0.9609375,
+        "fusion_gain": -0.005208333333333259,
+        "fusion_gain_ci95": [
+          -0.037326388888888895,
+          0.02256944444444442
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.960763888888889,
+        "fusion_auc": 0.9569444444444444,
+        "gated_auc": 0.960763888888889,
+        "fusion_gain": -0.0038194444444445974,
+        "fusion_gain_ci95": [
+          -0.03506944444444442,
+          0.02327256944444442
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9605902777777777,
+        "fusion_auc": 0.9581597222222222,
+        "gated_auc": 0.9605902777777777,
+        "fusion_gain": -0.0024305555555554914,
+        "fusion_gain_ci95": [
+          -0.0321223958333333,
+          0.024999999999999994
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9604166666666667,
+        "fusion_auc": 0.959375,
+        "gated_auc": 0.9604166666666667,
+        "fusion_gain": -0.0010416666666667185,
+        "fusion_gain_ci95": [
+          -0.029878472222222247,
+          0.02604166666666663
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9602430555555554,
+        "fusion_auc": 0.9605902777777778,
+        "gated_auc": 0.9602430555555554,
+        "fusion_gain": 0.0003472222222223875,
+        "fusion_gain_ci95": [
+          -0.02814236111111112,
+          0.027608506944444472
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9600694444444444,
+        "fusion_auc": 0.9618055555555556,
+        "gated_auc": 0.9600694444444444,
+        "fusion_gain": 0.0017361111111111605,
+        "fusion_gain_ci95": [
+          -0.02777777777777779,
+          0.02951388888888895
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9427083333333334,
+        "fusion_auc": 0.9131944444444444,
+        "gated_auc": 0.9427083333333334,
+        "fusion_gain": -0.02951388888888895,
+        "fusion_gain_ci95": [
+          -0.07465277777777779,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9434027777777778,
+        "fusion_auc": 0.9166666666666667,
+        "gated_auc": 0.9434027777777778,
+        "fusion_gain": -0.02673611111111107,
+        "fusion_gain_ci95": [
+          -0.06979166666666663,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9440972222222224,
+        "fusion_auc": 0.920138888888889,
+        "gated_auc": 0.9440972222222224,
+        "fusion_gain": -0.023958333333333415,
+        "fusion_gain_ci95": [
+          -0.06459201388888895,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9447916666666667,
+        "fusion_auc": 0.923611111111111,
+        "gated_auc": 0.9447916666666667,
+        "fusion_gain": -0.021180555555555647,
+        "fusion_gain_ci95": [
+          -0.06146701388888892,
+          0.0026085069444443756
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9454861111111112,
+        "fusion_auc": 0.9270833333333333,
+        "gated_auc": 0.9454861111111112,
+        "fusion_gain": -0.01840277777777799,
+        "fusion_gain_ci95": [
+          -0.05763888888888884,
+          0.006249999999999934
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9461805555555556,
+        "fusion_auc": 0.9305555555555556,
+        "gated_auc": 0.9461805555555556,
+        "fusion_gain": -0.015625,
+        "fusion_gain_ci95": [
+          -0.0546875,
+          0.01128472222222221
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9468750000000001,
+        "fusion_auc": 0.9340277777777778,
+        "gated_auc": 0.9468750000000001,
+        "fusion_gain": -0.012847222222222343,
+        "fusion_gain_ci95": [
+          -0.05243923611111116,
+          0.016666666666666677
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9475694444444445,
+        "fusion_auc": 0.9375,
+        "gated_auc": 0.9475694444444445,
+        "fusion_gain": -0.010069444444444464,
+        "fusion_gain_ci95": [
+          -0.050177951388888926,
+          0.02291666666666661
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9482638888888889,
+        "fusion_auc": 0.9409722222222221,
+        "gated_auc": 0.9482638888888889,
+        "fusion_gain": -0.007291666666666807,
+        "fusion_gain_ci95": [
+          -0.04827256944444444,
+          0.029166666666666657
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9489583333333333,
+        "fusion_auc": 0.9444444444444444,
+        "gated_auc": 0.9489583333333333,
+        "fusion_gain": -0.004513888888888928,
+        "fusion_gain_ci95": [
+          -0.046184895833333295,
+          0.03593749999999997
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9496527777777778,
+        "fusion_auc": 0.9479166666666666,
+        "gated_auc": 0.9496527777777778,
+        "fusion_gain": -0.0017361111111111605,
+        "fusion_gain_ci95": [
+          -0.04513888888888884,
+          0.04340277777777768
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spectral_s1": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.90625,
+        "fusion_auc": 0.8697916666666666,
+        "gated_auc": 0.90625,
+        "fusion_gain": -0.03645833333333337,
+        "fusion_gain_ci95": [
+          -0.09552951388888893,
+          0.01393229166666649
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9057291666666667,
+        "fusion_auc": 0.8692708333333333,
+        "gated_auc": 0.9057291666666667,
+        "fusion_gain": -0.03645833333333337,
+        "fusion_gain_ci95": [
+          -0.09375434027777772,
+          0.011640624999999908
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9052083333333334,
+        "fusion_auc": 0.86875,
+        "gated_auc": 0.9052083333333334,
+        "fusion_gain": -0.03645833333333337,
+        "fusion_gain_ci95": [
+          -0.09167534722222233,
+          0.009730902777777741
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9046874999999999,
+        "fusion_auc": 0.8682291666666666,
+        "gated_auc": 0.9046874999999999,
+        "fusion_gain": -0.03645833333333326,
+        "fusion_gain_ci95": [
+          -0.08888888888888886,
+          0.006948784722222215
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9041666666666666,
+        "fusion_auc": 0.8677083333333333,
+        "gated_auc": 0.9041666666666666,
+        "fusion_gain": -0.03645833333333326,
+        "fusion_gain_ci95": [
+          -0.08750868055555552,
+          0.004861111111111071
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9036458333333333,
+        "fusion_auc": 0.8671875,
+        "gated_auc": 0.9036458333333333,
+        "fusion_gain": -0.03645833333333326,
+        "fusion_gain_ci95": [
+          -0.0859375,
+          0.0026258680555554547
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.903125,
+        "fusion_auc": 0.8666666666666667,
+        "gated_auc": 0.903125,
+        "fusion_gain": -0.03645833333333326,
+        "fusion_gain_ci95": [
+          -0.08438368055555559,
+          0.002083333333333327
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9026041666666667,
+        "fusion_auc": 0.8661458333333334,
+        "gated_auc": 0.9026041666666667,
+        "fusion_gain": -0.03645833333333326,
+        "fusion_gain_ci95": [
+          -0.08333333333333331,
+          0.001041666666666671
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9020833333333333,
+        "fusion_auc": 0.8656250000000001,
+        "gated_auc": 0.9020833333333333,
+        "fusion_gain": -0.03645833333333326,
+        "fusion_gain_ci95": [
+          -0.0829947916666667,
+          -0.0003385416666666804
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9015624999999999,
+        "fusion_auc": 0.8651041666666667,
+        "gated_auc": 0.9015624999999999,
+        "fusion_gain": -0.03645833333333326,
+        "fusion_gain_ci95": [
+          -0.08437499999999998,
+          0.0005251736111110909
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9010416666666666,
+        "fusion_auc": 0.8645833333333334,
+        "gated_auc": 0.9010416666666666,
+        "fusion_gain": -0.03645833333333326,
+        "fusion_gain_ci95": [
+          -0.08680555555555547,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9965277777777778,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9965277777777778,
+        "fusion_gain": -0.01215277777777779,
+        "fusion_gain_ci95": [
+          -0.04513888888888895,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9967013888888889,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9967013888888889,
+        "fusion_gain": -0.012326388888888928,
+        "fusion_gain_ci95": [
+          -0.04462673611111113,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9968750000000001,
+        "fusion_auc": 0.9843750000000001,
+        "gated_auc": 0.9968750000000001,
+        "fusion_gain": -0.012499999999999956,
+        "fusion_gain_ci95": [
+          -0.04479166666666665,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9970486111111112,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9970486111111112,
+        "fusion_gain": -0.012673611111111205,
+        "fusion_gain_ci95": [
+          -0.045316840277777826,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9972222222222222,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9972222222222222,
+        "fusion_gain": -0.012847222222222232,
+        "fusion_gain_ci95": [
+          -0.04584201388888891,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9973958333333333,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9973958333333333,
+        "fusion_gain": -0.01302083333333326,
+        "fusion_gain_ci95": [
+          -0.04516059027777778,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9975694444444444,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9975694444444444,
+        "fusion_gain": -0.013194444444444398,
+        "fusion_gain_ci95": [
+          -0.04687499999999998,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9977430555555555,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9977430555555555,
+        "fusion_gain": -0.013368055555555536,
+        "fusion_gain_ci95": [
+          -0.04741319444444441,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9979166666666667,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9979166666666667,
+        "fusion_gain": -0.013541666666666674,
+        "fusion_gain_ci95": [
+          -0.047925347222222234,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9980902777777778,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9980902777777778,
+        "fusion_gain": -0.013715277777777812,
+        "fusion_gain_ci95": [
+          -0.0494791666666667,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9982638888888888,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": -0.01388888888888884,
+        "fusion_gain_ci95": [
+          -0.05034722222222221,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "vae_only": [
+      {
+        "backbone": "resnet",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.9322916666666666,
+        "gated_auc": 0.9357638888888888,
+        "fusion_gain": -0.00347222222222221,
+        "fusion_gain_ci95": [
+          -0.05555555555555558,
+          0.03819444444444442
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.9357638888888888,
+        "gated_auc": 0.9362847222222221,
+        "fusion_gain": 0.0,
+        "fusion_gain_ci95": [
+          -0.044796006944444466,
+          0.037851562500000054
+        ],
+        "gated_gain": 0.0005208333333333037,
+        "gated_gain_ci95": [
+          -0.0015625,
+          0.003125
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.9392361111111112,
+        "gated_auc": 0.9368055555555556,
+        "fusion_gain": 0.003472222222222321,
+        "fusion_gain_ci95": [
+          -0.03472222222222226,
+          0.03716145833333328
+        ],
+        "gated_gain": 0.0010416666666667185,
+        "gated_gain_ci95": [
+          -0.003125,
+          0.00625
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.9427083333333334,
+        "gated_auc": 0.9373263888888889,
+        "fusion_gain": 0.006944444444444531,
+        "fusion_gain_ci95": [
+          -0.026041666666666657,
+          0.038719618055555544
+        ],
+        "gated_gain": 0.0015625000000000222,
+        "gated_gain_ci95": [
+          -0.004687500000000001,
+          0.009375000000000001
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.9461805555555556,
+        "gated_auc": 0.9378472222222222,
+        "fusion_gain": 0.01041666666666674,
+        "fusion_gain_ci95": [
+          -0.01736111111111109,
+          0.04166666666666661
+        ],
+        "gated_gain": 0.002083333333333326,
+        "gated_gain_ci95": [
+          -0.00625,
+          0.0125
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.9496527777777777,
+        "gated_auc": 0.9383680555555556,
+        "fusion_gain": 0.01388888888888884,
+        "fusion_gain_ci95": [
+          -0.012174479166666677,
+          0.04516059027777772
+        ],
+        "gated_gain": 0.0026041666666667407,
+        "gated_gain_ci95": [
+          -0.0078125,
+          0.015625
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.953125,
+        "gated_auc": 0.9388888888888889,
+        "fusion_gain": 0.01736111111111116,
+        "fusion_gain_ci95": [
+          -0.010069444444444398,
+          0.05035590277777777
+        ],
+        "gated_gain": 0.0031250000000000444,
+        "gated_gain_ci95": [
+          -0.009375000000000001,
+          0.018750000000000003
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.9565972222222221,
+        "gated_auc": 0.9394097222222222,
+        "fusion_gain": 0.02083333333333326,
+        "fusion_gain_ci95": [
+          -0.007994791666666647,
+          0.05625
+        ],
+        "gated_gain": 0.003645833333333348,
+        "gated_gain_ci95": [
+          -0.010937500000000001,
+          0.021875000000000002
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.9600694444444444,
+        "gated_auc": 0.9399305555555555,
+        "fusion_gain": 0.02430555555555558,
+        "fusion_gain_ci95": [
+          -0.0069531249999999776,
+          0.06388888888888888
+        ],
+        "gated_gain": 0.004166666666666652,
+        "gated_gain_ci95": [
+          -0.0125,
+          0.025
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.9635416666666665,
+        "gated_auc": 0.9404513888888889,
+        "fusion_gain": 0.02777777777777768,
+        "fusion_gain_ci95": [
+          -0.008515625000000073,
+          0.07240451388888888
+        ],
+        "gated_gain": 0.004687500000000067,
+        "gated_gain_ci95": [
+          -0.0140625,
+          0.028125
+        ]
+      },
+      {
+        "backbone": "resnet",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9357638888888888,
+        "fusion_auc": 0.9670138888888888,
+        "gated_auc": 0.9409722222222222,
+        "fusion_gain": 0.03125,
+        "fusion_gain_ci95": [
+          -0.01041666666666663,
+          0.08333333333333326
+        ],
+        "gated_gain": 0.00520833333333337,
+        "gated_gain_ci95": [
+          -0.015625,
+          0.03125
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.0,
+        "sources": 48,
+        "probe_auc": 0.9878472222222222,
+        "fusion_auc": 0.9479166666666666,
+        "gated_auc": 0.9878472222222222,
+        "fusion_gain": -0.03993055555555558,
+        "fusion_gain_ci95": [
+          -0.09375,
+          0.0
+        ],
+        "gated_gain": 0.0,
+        "gated_gain_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.1,
+        "sources": 48,
+        "probe_auc": 0.9880208333333333,
+        "fusion_auc": 0.953125,
+        "gated_auc": 0.9888888888888889,
+        "fusion_gain": -0.03489583333333335,
+        "fusion_gain_ci95": [
+          -0.08281250000000005,
+          0.0
+        ],
+        "gated_gain": 0.0008680555555555802,
+        "gated_gain_ci95": [
+          0.0,
+          0.0031336805555555085
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.2,
+        "sources": 48,
+        "probe_auc": 0.9881944444444446,
+        "fusion_auc": 0.9583333333333333,
+        "gated_auc": 0.9899305555555556,
+        "fusion_gain": -0.029861111111111338,
+        "fusion_gain_ci95": [
+          -0.07222222222222222,
+          0.0
+        ],
+        "gated_gain": 0.0017361111111110494,
+        "gated_gain_ci95": [
+          0.0,
+          0.006267361111111017
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.30000000000000004,
+        "sources": 48,
+        "probe_auc": 0.9883680555555556,
+        "fusion_auc": 0.9635416666666666,
+        "gated_auc": 0.9909722222222221,
+        "fusion_gain": -0.024826388888888995,
+        "fusion_gain_ci95": [
+          -0.06076822916666668,
+          0.0
+        ],
+        "gated_gain": 0.0026041666666665186,
+        "gated_gain_ci95": [
+          0.0,
+          0.009401041666666526
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.4,
+        "sources": 48,
+        "probe_auc": 0.9885416666666667,
+        "fusion_auc": 0.96875,
+        "gated_auc": 0.9920138888888889,
+        "fusion_gain": -0.019791666666666652,
+        "fusion_gain_ci95": [
+          -0.05069444444444446,
+          0.0
+        ],
+        "gated_gain": 0.00347222222222221,
+        "gated_gain_ci95": [
+          0.0,
+          0.012534722222222034
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.5,
+        "sources": 48,
+        "probe_auc": 0.9887152777777778,
+        "fusion_auc": 0.9739583333333333,
+        "gated_auc": 0.9930555555555556,
+        "fusion_gain": -0.01475694444444453,
+        "fusion_gain_ci95": [
+          -0.039930555555555525,
+          0.0008680555555555802
+        ],
+        "gated_gain": 0.00434027777777779,
+        "gated_gain_ci95": [
+          0.0,
+          0.01566840277777754
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.6000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9888888888888889,
+        "fusion_auc": 0.9791666666666666,
+        "gated_auc": 0.9940972222222222,
+        "fusion_gain": -0.009722222222222299,
+        "fusion_gain_ci95": [
+          -0.02952256944444443,
+          0.005555555555555605
+        ],
+        "gated_gain": 0.005208333333333259,
+        "gated_gain_ci95": [
+          0.0,
+          0.018802083333333053
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.7000000000000001,
+        "sources": 48,
+        "probe_auc": 0.9890625,
+        "fusion_auc": 0.984375,
+        "gated_auc": 0.9951388888888888,
+        "fusion_gain": -0.004687499999999956,
+        "fusion_gain_ci95": [
+          -0.020833333333333322,
+          0.01198350694444441
+        ],
+        "gated_gain": 0.0060763888888888395,
+        "gated_gain_ci95": [
+          0.0,
+          0.02193576388888856
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.8,
+        "sources": 48,
+        "probe_auc": 0.9892361111111112,
+        "fusion_auc": 0.9895833333333333,
+        "gated_auc": 0.9961805555555556,
+        "fusion_gain": 0.00034722222222205446,
+        "fusion_gain_ci95": [
+          -0.012855902777777803,
+          0.019097222222222234
+        ],
+        "gated_gain": 0.00694444444444442,
+        "gated_gain_ci95": [
+          0.0,
+          0.025069444444444068
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 0.9,
+        "sources": 48,
+        "probe_auc": 0.9894097222222222,
+        "fusion_auc": 0.9947916666666666,
+        "gated_auc": 0.9972222222222222,
+        "fusion_gain": 0.005381944444444398,
+        "fusion_gain_ci95": [
+          -0.006249999999999999,
+          0.02864583333333333
+        ],
+        "gated_gain": 0.0078125,
+        "gated_gain_ci95": [
+          0.0,
+          0.028203124999999576
+        ]
+      },
+      {
+        "backbone": "clip",
+        "marked_share": 1.0,
+        "sources": 48,
+        "probe_auc": 0.9895833333333334,
+        "fusion_auc": 1.0,
+        "gated_auc": 0.9982638888888888,
+        "fusion_gain": 0.01041666666666663,
+        "fusion_gain_ci95": [
+          0.0,
+          0.03819444444444442
+        ],
+        "gated_gain": 0.00868055555555547,
+        "gated_gain_ci95": [
+          0.0,
+          0.03133680555555508
+        ]
+      }
+    ]
+  }
+}

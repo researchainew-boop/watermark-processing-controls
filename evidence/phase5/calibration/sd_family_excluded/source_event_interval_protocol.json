@@ -1,0 +1,8 @@
+{
+  "saved_at_utc": "2026-10-10T10:28:53.111241+00:00",
+  "input_metrics_sha256": "fdb1da7766f4381b0e7be998459a231ef9e49a3177216ae2d0fc8ee3e20edde9",
+  "retrospective_secondary_analysis": true,
+  "thresholds_changed": false,
+  "purpose": "Ordinary fixed-threshold source bootstrap degenerates at zero observed events. Add collection-specific two-sided 95% Clopper-Pearson intervals for source-any error counts, requiring independent identically distributed future source bundles within the given collection. These are descriptive conditional-risk intervals; no threshold or model is selected using them.",
+  "across_seed_rule": "Report each seed separately. Overlapping sources and model-dependent events are not pooled as independent successes. The original source bootstrap remains the across-seed mean interval."
+}

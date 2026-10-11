@@ -1,0 +1,21 @@
+{
+  "retained_sources": 5823,
+  "derived_variants": 80739,
+  "test_variants": 26880,
+  "counts": {
+    "test|dalle-3": 134,
+    "test|midjourney": 962,
+    "test|real": 284,
+    "test|stable-diffusion": 300,
+    "train|dalle-3": 700,
+    "train|real": 1345,
+    "train|stable-diffusion": 1370,
+    "val|dalle-3": 145,
+    "val|real": 291,
+    "val|stable-diffusion": 292
+  },
+  "test_variants_per_source": 16,
+  "fit_variants_per_source": 13,
+  "held_out_three_conditions_excluded_from_train_and_validation": true,
+  "table_i_matches_independent_manifests": true
+}

@@ -1,0 +1,29 @@
+{
+  "selected_at_utc": "2026-10-10T04:32:28.817901+00:00",
+  "test_inference_performed": false,
+  "calibration_scope": "Separate held-out validation-source half, never used in either fitted head.",
+  "real_sources": 75,
+  "real_rows": 975,
+  "AI_sources": 220,
+  "systems": {
+    "probe": {
+      "threshold_logit": -1.161930684785696,
+      "calibration_fpr": 0.04923076923076923,
+      "calibration_tpr": 0.9912587412587412
+    },
+    "fusion": {
+      "threshold_logit": -2.778697952354002,
+      "calibration_fpr": 0.04923076923076923,
+      "calibration_tpr": 0.9986013986013986
+    },
+    "gated": {
+      "threshold_logit": -1.161930684785696,
+      "calibration_fpr": 0.04923076923076923,
+      "calibration_tpr": 0.9972027972027973
+    }
+  },
+  "heads_sha256": {
+    "probe.npz": "23e08428270fa39a6f10fdc1e5bdccda502d01490d30b807177fa7c00a5cba79",
+    "fusion.npz": "cfec9548e96cd83d9428d6e41c3f04d31a59f415a5eb5330711411920f9cf272"
+  }
+}

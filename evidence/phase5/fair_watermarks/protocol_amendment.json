@@ -1,0 +1,23 @@
+{
+  "locked_at_utc": "2026-10-10T10:27:02.884811+00:00",
+  "quantization": "stochastic_rounding_v1",
+  "reason": "Nearest-integer quantization cannot always reach40\u00b10.1dB with scalar gain; first preparation stopped at39.873250152390234dB before decoding",
+  "authorization": "Root approved deterministic stochastic rounding for both methods before any scoring",
+  "original_protocol_sha256": "97e835b79d0e52d978acb34b951e5ed210993146d7d4986d3f53bb2e06cdc764",
+  "source_manifest_sha256": "92b0dedd550f70e59e3255fe82842e6b4136309c3e163293fee26cfa318df63e",
+  "seed_manifest_sha256": "26f994e0f7f2b70581a7eb222e700d8be8e7829370840783f3b2de70f673da28",
+  "seed_derivation": "uint64 from first16hex SHA256(f'{20261015}|stochastic_rounding_v1|{source_id}|{payload}'); method excluded so both methods use identical uniforms for each source/payload",
+  "generator": "numpy.random.Generator(PCG64(seed)); one float64 uniform[0,1) array with cover shape256x256x3, fixed across every gain-search evaluation",
+  "pixels": "BGR uint8 cover and encoded reference; float64 full-channel residual/gain; floor(cover+gain*residual+uniform); clip[0,255]; uint8 output",
+  "target_PSNR_dB": 40.0,
+  "tolerance_dB": 0.1,
+  "gain_bracket": [
+    0.0,
+    64.0
+  ],
+  "binary_search_steps": 48,
+  "interpretation": "Residual gain and stochastic quantization are outside both original/default encoding configurations",
+  "selection_criterion": "Image PSNR only; no decoder output, new seed search, recovery selection, or source changes",
+  "decoding_has_not_started": true,
+  "driver_sha256": "94b47d7a39c174051ec0d0848bf6b5394649f9a76f161809c46430cb1ffa28fe"
+}

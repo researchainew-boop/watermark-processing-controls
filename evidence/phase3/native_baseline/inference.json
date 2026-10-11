@@ -1,0 +1,11 @@
+{
+  "started_at_utc": "2026-10-09T05:45:43.459051+00:00",
+  "completed_at_utc": "2026-10-09T05:46:21.898761+00:00",
+  "rows": 192,
+  "device": "cuda",
+  "batch_size": 4,
+  "dtype": "float32",
+  "models_refitted": false,
+  "thresholds_retuned": false,
+  "predictions_sha256": "5be86a1cb7cd481fabdf90d66ec14519cddcc0c03c737809635009bdcb1600e6"
+}

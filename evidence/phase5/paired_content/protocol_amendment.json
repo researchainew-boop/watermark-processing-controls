@@ -1,0 +1,9 @@
+{
+  "amended_at_utc": "2026-10-10T10:15:18.286697+00:00",
+  "superseded_protocol_sha256": "3bf579814972a08a103a4cf1104ecf6b1b0ac59dc8d6860df471cced34ccc850",
+  "reason": "Before source selection or generation, replace the 50-step guided DDIM draft with the official 8-step LCM-LoRA accelerated SD1.5-family pipeline to fit available compute.",
+  "source_selection_performed": false,
+  "generation_performed": false,
+  "detector_scores_observed_for_new_pairs": false,
+  "parameter_selection_based_on_detector_results": false
+}

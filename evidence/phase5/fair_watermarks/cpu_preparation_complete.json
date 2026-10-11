@@ -1,0 +1,11 @@
+{
+  "completed_at_utc": "2026-10-10T10:35:45.461524+00:00",
+  "source_count": 1004,
+  "covers": 1616,
+  "sources_sha256": "92b0dedd550f70e59e3255fe82842e6b4136309c3e163293fee26cfa318df63e",
+  "base_manifest_sha256": "19769e5a2dc256040404cce2431f4daf4441d535131a121ff33fc921a59e19ea",
+  "covers_sha256": "12b0df492b589a9d64af2fd7859f128ad979ef2c7933a868c47dd15fffa59afd",
+  "decoder_run": false,
+  "driver_sha256": "de94b0c83c15d8a51a74d3b799ba5c33b59620ba4f90bf7835c2dbd74f2d609b",
+  "amendment_sha256": "3090b9ba4cf132cef1433cb980835dce99303175814c05ffec76ed7ceffc31cc"
+}

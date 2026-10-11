@@ -1,0 +1,13 @@
+{
+  "baseline": "UniversalFakeDetect released ViT-L/14 head",
+  "head_sha256": "477100745713bcc957beb2b40859536859b6483fd6301b3b9293151b194c7847",
+  "backbone_sha256": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+  "official_model_code_sha256": "c071d011e92226f1ca0a6f7c5098d8d7d08eadc7d6db125a81b52fc234b1ec59",
+  "preprocessing": "Compose(\n    CenterCrop(size=(224, 224))\n    ToTensor()\n    Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711))\n)",
+  "feature_normalization": false,
+  "classifier_threshold_logit": 0.0,
+  "test_tuning": false,
+  "batch_size": 4,
+  "dtype": "float32",
+  "input_rows": 3312
+}

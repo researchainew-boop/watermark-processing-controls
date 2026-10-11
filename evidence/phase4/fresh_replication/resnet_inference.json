@@ -1,0 +1,23 @@
+{
+  "completed_at_utc": "2026-10-10T04:48:15.024968+00:00",
+  "test_inference_started_at_utc": "2026-10-10T04:47:59.702326+00:00",
+  "device": "cuda",
+  "model": "torchvision ResNet18_Weights.DEFAULT / ImageNet1K_V1",
+  "preprocessing": "<function image_to_tensor at 0x00000241317D80E0>",
+  "images": 2560,
+  "manifest_sha256": "502318071d193118eacdc5521b89a386d81e5df576f56694ce3c5f4fae4a1473",
+  "embedding_sha256": "37bf4d10edbdf840be67d59f2e9e25c456798adc2dd845dbbacba28ced218427",
+  "anchor_cosine": [
+    1.0000000000000002,
+    1.0,
+    0.9999999999999998,
+    1.0000000000000002
+  ],
+  "anchor_relative_l2": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "checkpoint_sha256": null
+}

@@ -1,0 +1,19 @@
+{
+  "completed_at_utc": "2026-10-11T05:21:44.381485+00:00",
+  "pairs": 200,
+  "generated_sources_sha256": "dd0da49bd240f3f08cda32762d761a08ea165357ab900673914d2997ec33829b",
+  "runtime_protocol_sha256": "d9499657fb58ea653a94aa6b355b8062795bff9a69030d020268489926b36d0d",
+  "total_runtime_seconds": 1190.8009091,
+  "candidate_resampling": false,
+  "scores_observed_during_generation": false,
+  "runtime_modes": {
+    "resident": 200
+  },
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "diffusers": "0.35.1",
+    "transformers": "4.46.3",
+    "peft": "0.17.0",
+    "accelerate": "1.2.1"
+  }
+}

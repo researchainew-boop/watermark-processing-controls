@@ -1,0 +1,35 @@
+{
+  "analysis_version": 1,
+  "status": "Fixed before this reporting script reads outcome counts; retrospective analysis of an already examined experiment, not preregistration",
+  "analysis_scope": "Existing 204-AI/204-COCO local watermark measurements only; no new decoding, threshold selection, model fitting, or image generation",
+  "inputs": [
+    "outputs/phase3/watermarks/measurements.csv",
+    "outputs/phase3/watermarks/base_covers.csv",
+    "outputs/phase3/watermarks/attack_manifest.csv",
+    "outputs/phase3/watermarks/selection.json",
+    "outputs/phase3/watermarks/analysis_provenance.json"
+  ],
+  "payloads": [
+    "1011010010110100",
+    "0100101101001011",
+    "1100101000110101"
+  ],
+  "control_queries": "For each unmarked real photograph and unmarked AI source, query each fixed payload and also accept if any of the three fixed payloads matches. Queries reuse stored bits/decoded messages.",
+  "classical_rule": "At least 13 of 16 decoded bits agree with the queried payload",
+  "learned_rule": "Saved ECC valid, decoded schema 1 (BCH5), and full saved decoded message equals queried 16 bits plus 45 zeros",
+  "per_condition_intervals": "Two-sided 95% Clopper-Pearson source intervals, one transformed cover per distinct source and query",
+  "overall_average": "Equal-weight mean over the 13 frozen conditions for each source, then average over sources; 2,000 source bootstrap draws using seed 20261010. These 13 repeated transforms are not independent images.",
+  "overall_any_condition": "Descriptive proportion of sources accepted at least once among the 13 conditions with exact source interval; distinct from the pooled condition rate",
+  "cross_mark_queries": "Matching payload of an image marked by the other watermark; report as cross-method acceptance, not photographic false positives",
+  "table_conditions": [
+    "identity",
+    "jpeg_s2",
+    "crop_s1",
+    "lowres_s2",
+    "regenerate_s2",
+    "spectral_s1",
+    "overall_equal_condition_mean"
+  ],
+  "operating_point_constraint": "All 204-source inputs are test sources. No independent learned-watermark validation scores exist here, and exact ECC/message verification has no stored equivalent soft calibration score. Do not select matched-FPR thresholds from these test outcomes or claim an equal-FPR robustness comparison.",
+  "scope_limits": "COCO controls only; each selected source has one unmarked cover; shared attacks may create dependent outcomes. The public unkeyed payload and public learned embedding algorithm do not authenticate authorship. Large regeneration results have no 204-source real/unmarked controls and are excluded from these false-positive summaries."
+}

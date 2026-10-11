@@ -1,0 +1,24 @@
+{
+  "original_files": 6000,
+  "retained_sources": 5823,
+  "excluded_sources": 177,
+  "pairs": 403,
+  "exact_pairs": 5,
+  "cross_split_pairs_before": 189,
+  "cross_generator_pairs_before": 107,
+  "cross_split_pairs_after": 0,
+  "rule": "Connected components of raw/standardized exact pixel equality or 8x8 mean hash Hamming distance <=2; one representative, priority train then validation then test then lexical source_id. All original splits retained; no score-dependent filtering.",
+  "caution": "Average hash similarity is conservative screening; it can cluster distinct photographs with similar layouts. This audit does not establish that every candidate was a semantic duplicate.",
+  "sources_by_split_generator": {
+    "test|dalle-3": 134,
+    "test|midjourney": 962,
+    "test|real": 284,
+    "test|stable-diffusion": 300,
+    "train|dalle-3": 700,
+    "train|real": 1345,
+    "train|stable-diffusion": 1370,
+    "val|dalle-3": 145,
+    "val|real": 291,
+    "val|stable-diffusion": 292
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "model": "torchvision ResNet18_Weights.DEFAULT / ImageNet1K_V1",
+  "preprocessing": "<function image_to_tensor at 0x000001D31D9F4C20>",
+  "sources_count": 4,
+  "cosine": [
+    1.0000000000000002,
+    1.0,
+    0.9999999999999998,
+    1.0000000000000002
+  ],
+  "relative_l2": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "timestamp_utc": "2026-10-09T09:23:26.193098+00:00"
+}

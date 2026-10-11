@@ -1,0 +1,47 @@
+{
+  "all_checks_passed": true,
+  "status": "complete_unambiguous",
+  "completed_at_utc": "2026-10-10T10:28:16.184424+00:00",
+  "counts": {
+    "pairs": 200,
+    "planned_origins": 400,
+    "planned_copies": 1200,
+    "prior_acquisition_records": 7592,
+    "prior_coco_ids": 2128
+  },
+  "fields": [
+    "pair_id",
+    "real_source_id",
+    "ai_source_id",
+    "public_coco_image_id",
+    "archive_filename",
+    "archive_entry",
+    "caption_annotation_id",
+    "generation_seed",
+    "split",
+    "native_file_sha256",
+    "real_standardized_pixel_sha256",
+    "real_standardized_file_sha256"
+  ],
+  "files_sha256": {
+    "public_pair_index.csv": "1f71388f68d1111800f684f1953787372e8a300f7137303f604155d261dd69b4"
+  },
+  "protocol_sha256": "6a169ffed0556a74ac310f9f37809c5290555c6932e74724a9cb425dbcbd5bca",
+  "selection_complete_sha256": "fe24f86b799f212289074f392978fdb6cc911d9bc3ea9defcce32ac7a38bef1a",
+  "source_pairs_sha256": "868434d65ac0adeac61bc14c84700f9562941ea3b20d02c1b81c21688bdb7e6f",
+  "caption_archive_sha256": "113a836d90195ee1f884e704da6304dfaaecff1f023f49b6ca93c4aaae470268",
+  "captions_val2017_json_sha256": "afe3b30e403dd7f228e2373023abbd60042a6e10ec6874d3652df034d289ebb9",
+  "checks": {
+    "public_field_allowlist": true,
+    "minimum_caption_id": true,
+    "deterministic_seeds_and_pseudonyms": true,
+    "prior_coco_id_and_source_pseudonym_intersections_zero": true,
+    "native_archive_bytes_verified": true,
+    "standardized_real_files_verified": true,
+    "all_pairs_unique_and_test_only": true,
+    "source_protocol_and_selection_unchanged": true
+  },
+  "scope": "Local unpublished public locators/fingerprints only. No caption or prompt text, local paths, URLs, usernames, author metadata or image bytes. Generated images and measurement completion are not claimed by this preparation index.",
+  "reproduction": "Reacquire official COCO val2017 and captions_val2017.json; use each image ID and minimum caption annotation ID with the protocol's fixed Photograph-prefix and generation seed. Generation asset/model hashes are in the separate frozen protocol/lock.",
+  "script_sha256": "24269bdedb554607b76b1d761c95b4bfc184898e5756afab22f94d5aee6885c8"
+}

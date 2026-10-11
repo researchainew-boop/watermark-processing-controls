@@ -1,0 +1,20 @@
+{
+  "frozen_at_utc": "2026-10-09T05:30:02.484208+00:00",
+  "benchmark": "same 192 previously locked fresh sources",
+  "source_selection_changed": false,
+  "fresh_manifest_sha256": "3a3d930c7eb4f3ca717f31cc258d906f125bfd02de5832ed38469f6436637765",
+  "native_manifest_sha256": "c335c00eb16b0dbca84812ebc6db8acf40f78e9945718f4a33c132c7b9202374",
+  "script_sha256": "4a8ebe74a9c051f0ca403183ae924fc8e475b2df394ef39cede60519a1c5af31",
+  "native_preparation": "Original archive/S3 pixels; same metadata rotation as fresh run; RGB conversion; lossless PNG; no resize or re-encoding",
+  "official_transform": "CenterCrop(224), ToTensor, CLIP mean (.48145466,.4578275,.40821073), std (.26862954,.26130258,.27577711); no Resize",
+  "feature_normalization": false,
+  "backbone_sha256": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+  "head_sha256": "477100745713bcc957beb2b40859536859b6483fd6301b3b9293151b194c7847",
+  "official_model_code_sha256": "c071d011e92226f1ca0a6f7c5098d8d7d08eadc7d6db125a81b52fc234b1ec59",
+  "classifier_threshold_logit": 0.0,
+  "test_tuning": false,
+  "score_polarity_changed": false,
+  "comparison": "native pixels versus archived INTER_AREA 256x256 plus common JPEG95; resizing and JPEG both differ",
+  "bootstrap": "2000 paired source draws stratified by collection, seed 20261009",
+  "fresh_pipeline_rerun": false
+}

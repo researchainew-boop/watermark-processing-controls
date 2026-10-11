@@ -1,0 +1,25 @@
+{
+  "started_at_utc": "2026-10-10T10:19:56.393338+00:00",
+  "manifest_sha256": "a4393773155c516fed330aed1b22c5fc83690e8d3e6b53392f4c258e36379449",
+  "protocol_sha256": "8bcd10e73004978f45121e513a5fab897c5fbee66b2d4b37dbf6c58f1eb00658",
+  "images": 792,
+  "device": "cuda",
+  "checkpoint_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+  "model": "ViT-B-32 / GELU / OpenAI parameter checkpoint",
+  "preprocessing": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    <function _convert_to_rgb at 0x000001AA7D8F2980>\n    ToTensor()\n    Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711))\n)",
+  "anchor_cosine": [
+    0.9999999999986361,
+    0.9999999999993023,
+    0.9999999999981614,
+    0.9999999999986949
+  ],
+  "anchor_relative_l2": [
+    1.6647668769752172e-06,
+    1.2088946441107938e-06,
+    1.9180386919651766e-06,
+    1.6160918919253865e-06
+  ],
+  "completed_at_utc": "2026-10-10T10:20:10.629048+00:00",
+  "embedding_sha256": "6802dc43f03e1ab9c11b07adb27b9dffc7f8e16c532aa940320d18f101549a6f",
+  "script_sha256": "959586e4f16a8558b7d1c9bfa6431dc5da44d2dc6d1bf5c151d5e28a049865fe"
+}

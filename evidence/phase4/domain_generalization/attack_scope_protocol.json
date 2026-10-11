@@ -1,0 +1,22 @@
+{
+  "analysis_locked_at_utc": "2026-10-10T04:36:40.305390+00:00",
+  "purpose": "Describe fixed-threshold photograph false positives on the thirteen calibration-matched conditions separately from three held-out attacks. No head or threshold changes; test data already examined in the main retrospective diagnostic.",
+  "heldout_conditions": [
+    [
+      "lowres",
+      2
+    ],
+    [
+      "regenerate",
+      2
+    ],
+    [
+      "spectral",
+      1
+    ]
+  ],
+  "bootstrap_replicates": 1000,
+  "unit": "source, stratified by collection",
+  "bootstrap_seed": 20261014,
+  "input_summary_sha256": "91dccc2366a36255d171be5e0e460f90df5ed8d431636ea8aced4b02ff5ca3ba"
+}

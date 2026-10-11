@@ -1,0 +1,8 @@
+# Recorded CPU correction environment; Python 3.12.14
+numpy==2.5.3
+pandas==3.0.1
+scikit-learn==1.9.1
+scipy==1.18.1
+opencv-python-headless==5.0.0.93
+PyWavelets==1.10.0
+PyYAML==6.0.3

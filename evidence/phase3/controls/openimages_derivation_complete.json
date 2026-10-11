@@ -1,0 +1,7 @@
+{
+  "completed_at_utc": "2026-10-09T05:45:20.749874+00:00",
+  "rows": 16000,
+  "sources": 1000,
+  "manifest_sha256": "5317926252a748c8b76c4698116c8938213cbf839138a5e485f60750bab57cf1",
+  "inference_performed": false
+}

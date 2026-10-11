@@ -1,0 +1,5778 @@
+{
+  "completed_at_utc": "2026-10-10T04:50:49.694310+00:00",
+  "source_count": 400,
+  "images": 2560,
+  "replication": "new items in existing five collections, not new generators",
+  "models_refitted": false,
+  "thresholds_retuned": false,
+  "protocol_sha256": "c05030cc990ec668e0225bc2e1099ba83075cbb5b99859b2c52ea9740bb9b45e",
+  "manifest_sha256": "502318071d193118eacdc5521b89a386d81e5df576f56694ce3c5f4fae4a1473",
+  "calibration_sha256": "82b6ee450fb589b214dcbba845aa0f3d7b746eac56a77c2212f7b468b41192a3",
+  "model_hashes_unchanged": true,
+  "bootstrap": "2000 source-cluster draws stratified by collection; CIs conditional on frozen models",
+  "bootstrap_draws_sha256": "33c99a28bc123a9334357bae7bb4604f50477f92db03d7e354ba67a01961fed3",
+  "measurements": [
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "system": "resnet_probe",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.9567301432291667,
+      "auc_ci95": [
+        0.9404368896484375,
+        0.9701848551432292
+      ],
+      "threshold_logit": 1.2988744508349708,
+      "test_TPR": 0.809375,
+      "test_TPR_ci95": [
+        0.7655989583333334,
+        0.853125
+      ],
+      "test_FPR": 0.0515625,
+      "test_FPR_ci95": [
+        0.0296875,
+        0.0765625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 21,
+          "AI_decision_rate": 0.065625,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 12,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 259,
+          "AI_decision_rate": 0.809375,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 267,
+          "AI_decision_rate": 0.834375,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 251,
+          "AI_decision_rate": 0.784375,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "system": "resnet_fusion",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.9119938151041665,
+      "auc_ci95": [
+        0.8865009765624999,
+        0.9340127360026041
+      ],
+      "threshold_logit": 0.08026192525835363,
+      "test_TPR": 0.628125,
+      "test_TPR_ci95": [
+        0.5885416666666666,
+        0.66875
+      ],
+      "test_FPR": 0.0578125,
+      "test_FPR_ci95": [
+        0.034375,
+        0.084375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 21,
+          "AI_decision_rate": 0.065625,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 16,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 201,
+          "AI_decision_rate": 0.628125,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 212,
+          "AI_decision_rate": 0.6625,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 190,
+          "AI_decision_rate": 0.59375,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "system": "resnet_gated",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.9561100260416666,
+      "auc_ci95": [
+        0.9397302652994791,
+        0.9697372639973958
+      ],
+      "threshold_logit": 1.3198032395995833,
+      "test_TPR": 0.8083333333333333,
+      "test_TPR_ci95": [
+        0.7645833333333333,
+        0.8520833333333333
+      ],
+      "test_FPR": 0.0515625,
+      "test_FPR_ci95": [
+        0.0296875,
+        0.0765625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 21,
+          "AI_decision_rate": 0.065625,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 12,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 259,
+          "AI_decision_rate": 0.809375,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 266,
+          "AI_decision_rate": 0.83125,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 251,
+          "AI_decision_rate": 0.784375,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "system": "clip_probe",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.9884635416666666,
+      "auc_ci95": [
+        0.981061767578125,
+        0.9935176188151041
+      ],
+      "threshold_logit": -0.9228053386747905,
+      "test_TPR": 0.9864583333333333,
+      "test_TPR_ci95": [
+        0.9729166666666667,
+        0.9958333333333333
+      ],
+      "test_FPR": 0.1421875,
+      "test_FPR_ci95": [
+        0.10625,
+        0.1796875
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 38,
+          "AI_decision_rate": 0.11875,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 53,
+          "AI_decision_rate": 0.165625,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 309,
+          "AI_decision_rate": 0.965625,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 319,
+          "AI_decision_rate": 0.996875,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 319,
+          "AI_decision_rate": 0.996875,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "system": "clip_fusion",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.9536393229166668,
+      "auc_ci95": [
+        0.9370929361979167,
+        0.9684095865885416
+      ],
+      "threshold_logit": -2.250890742456865,
+      "test_TPR": 0.9822916666666667,
+      "test_TPR_ci95": [
+        0.96875,
+        0.9927083333333333
+      ],
+      "test_FPR": 0.1578125,
+      "test_FPR_ci95": [
+        0.1203125,
+        0.1921875
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 44,
+          "AI_decision_rate": 0.1375,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 57,
+          "AI_decision_rate": 0.178125,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 307,
+          "AI_decision_rate": 0.959375,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 318,
+          "AI_decision_rate": 0.99375,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 318,
+          "AI_decision_rate": 0.99375,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "system": "clip_gated",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.9882405598958333,
+      "auc_ci95": [
+        0.9808025309244792,
+        0.9933823242187501
+      ],
+      "threshold_logit": -0.8570607987016075,
+      "test_TPR": 0.9864583333333333,
+      "test_TPR_ci95": [
+        0.9729166666666667,
+        0.9958333333333333
+      ],
+      "test_FPR": 0.1421875,
+      "test_FPR_ci95": [
+        0.10625,
+        0.1796875
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 38,
+          "AI_decision_rate": 0.11875,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 53,
+          "AI_decision_rate": 0.165625,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 309,
+          "AI_decision_rate": 0.965625,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 319,
+          "AI_decision_rate": 0.996875,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 319,
+          "AI_decision_rate": 0.996875,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "system": "resnet_probe",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.95908203125,
+      "auc_ci95": [
+        0.9431043701171875,
+        0.9720807698567708
+      ],
+      "threshold_logit": 1.2988744508349708,
+      "test_TPR": 0.8197916666666667,
+      "test_TPR_ci95": [
+        0.779140625,
+        0.8604166666666667
+      ],
+      "test_FPR": 0.0515625,
+      "test_FPR_ci95": [
+        0.0296875,
+        0.0765625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 21,
+          "AI_decision_rate": 0.065625,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 12,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 262,
+          "AI_decision_rate": 0.81875,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 270,
+          "AI_decision_rate": 0.84375,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 255,
+          "AI_decision_rate": 0.796875,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "system": "resnet_fusion",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.9495035807291667,
+      "auc_ci95": [
+        0.9354533691406249,
+        0.9626164143880208
+      ],
+      "threshold_logit": 0.08026192525835363,
+      "test_TPR": 0.8104166666666667,
+      "test_TPR_ci95": [
+        0.7864583333333334,
+        0.834375
+      ],
+      "test_FPR": 0.0578125,
+      "test_FPR_ci95": [
+        0.034375,
+        0.084375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 21,
+          "AI_decision_rate": 0.065625,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 16,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 262,
+          "AI_decision_rate": 0.81875,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 264,
+          "AI_decision_rate": 0.825,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 252,
+          "AI_decision_rate": 0.7875,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "system": "resnet_gated",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.9734407552083333,
+      "auc_ci95": [
+        0.9617996419270833,
+        0.9826011962890624
+      ],
+      "threshold_logit": 1.3198032395995833,
+      "test_TPR": 0.890625,
+      "test_TPR_ci95": [
+        0.8635416666666667,
+        0.9166927083333332
+      ],
+      "test_FPR": 0.0515625,
+      "test_FPR_ci95": [
+        0.0296875,
+        0.0765625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 21,
+          "AI_decision_rate": 0.065625,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 12,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 283,
+          "AI_decision_rate": 0.884375,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 295,
+          "AI_decision_rate": 0.921875,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 277,
+          "AI_decision_rate": 0.865625,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "system": "clip_probe",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.988193359375,
+      "auc_ci95": [
+        0.9806245524088542,
+        0.9932947591145833
+      ],
+      "threshold_logit": -0.9228053386747905,
+      "test_TPR": 0.9864583333333333,
+      "test_TPR_ci95": [
+        0.9729166666666667,
+        0.9958333333333333
+      ],
+      "test_FPR": 0.1421875,
+      "test_FPR_ci95": [
+        0.10625,
+        0.1796875
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 38,
+          "AI_decision_rate": 0.11875,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 53,
+          "AI_decision_rate": 0.165625,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 309,
+          "AI_decision_rate": 0.965625,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 319,
+          "AI_decision_rate": 0.996875,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 319,
+          "AI_decision_rate": 0.996875,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "system": "clip_fusion",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.9758837890625,
+      "auc_ci95": [
+        0.9670195312500001,
+        0.9837322998046876
+      ],
+      "threshold_logit": -2.250890742456865,
+      "test_TPR": 0.99375,
+      "test_TPR_ci95": [
+        0.9875,
+        0.9989583333333333
+      ],
+      "test_FPR": 0.1578125,
+      "test_FPR_ci95": [
+        0.1203125,
+        0.1921875
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 44,
+          "AI_decision_rate": 0.1375,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 57,
+          "AI_decision_rate": 0.178125,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 316,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 320,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 318,
+          "AI_decision_rate": 0.99375,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "system": "clip_gated",
+      "sources": 400,
+      "images": 1600,
+      "auc": 0.9907454427083333,
+      "auc_ci95": [
+        0.9852928873697917,
+        0.9950782470703126
+      ],
+      "threshold_logit": -0.8570607987016075,
+      "test_TPR": 0.9947916666666666,
+      "test_TPR_ci95": [
+        0.9885416666666667,
+        0.9989583333333333
+      ],
+      "test_FPR": 0.1421875,
+      "test_FPR_ci95": [
+        0.10625,
+        0.1796875
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 38,
+          "AI_decision_rate": 0.11875,
+          "exact_ci95": null
+        },
+        "openimages": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 53,
+          "AI_decision_rate": 0.165625,
+          "exact_ci95": null
+        },
+        "stable-diffusion": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 316,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": null
+        },
+        "dalle-3": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 320,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": null
+        },
+        "midjourney": {
+          "images": 320,
+          "sources": 80,
+          "AI_decisions": 319,
+          "AI_decision_rate": 0.996875,
+          "exact_ci95": null
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "system": "resnet_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9653125000000001,
+      "auc_ci95": [
+        0.9483307291666667,
+        0.9798203125
+      ],
+      "threshold_logit": 1.2988744508349708,
+      "test_TPR": 0.8083333333333333,
+      "test_TPR_ci95": [
+        0.7583333333333333,
+        0.8583333333333333
+      ],
+      "test_FPR": 0.03125,
+      "test_FPR_ci95": [
+        0.00625,
+        0.0625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 2,
+          "AI_decision_rate": 0.025,
+          "exact_ci95": [
+            0.003042086164809598,
+            0.08740715593059228
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 65,
+          "AI_decision_rate": 0.8125,
+          "exact_ci95": [
+            0.7096721043523087,
+            0.8910863118524706
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 64,
+          "AI_decision_rate": 0.8,
+          "exact_ci95": [
+            0.6956311329945357,
+            0.8811409135950147
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 65,
+          "AI_decision_rate": 0.8125,
+          "exact_ci95": [
+            0.7096721043523087,
+            0.8910863118524706
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "system": "resnet_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9230208333333333,
+      "auc_ci95": [
+        0.893587890625,
+        0.9486731770833334
+      ],
+      "threshold_logit": 0.08026192525835363,
+      "test_TPR": 0.6125,
+      "test_TPR_ci95": [
+        0.5541666666666667,
+        0.675
+      ],
+      "test_FPR": 0.0375,
+      "test_FPR_ci95": [
+        0.0125,
+        0.06875
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 52,
+          "AI_decision_rate": 0.65,
+          "exact_ci95": [
+            0.5352031145206643,
+            0.7533280635274646
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 46,
+          "AI_decision_rate": 0.575,
+          "exact_ci95": [
+            0.45938881143093807,
+            0.684890234547658
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 49,
+          "AI_decision_rate": 0.6125,
+          "exact_ci95": [
+            0.4969755425018991,
+            0.7194348668752177
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "system": "resnet_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9641406250000001,
+      "auc_ci95": [
+        0.9465091145833333,
+        0.9789609375
+      ],
+      "threshold_logit": 1.3198032395995833,
+      "test_TPR": 0.8041666666666667,
+      "test_TPR_ci95": [
+        0.7541666666666667,
+        0.8541666666666666
+      ],
+      "test_FPR": 0.03125,
+      "test_FPR_ci95": [
+        0.00625,
+        0.0625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 2,
+          "AI_decision_rate": 0.025,
+          "exact_ci95": [
+            0.003042086164809598,
+            0.08740715593059228
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 65,
+          "AI_decision_rate": 0.8125,
+          "exact_ci95": [
+            0.7096721043523087,
+            0.8910863118524706
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 63,
+          "AI_decision_rate": 0.7875,
+          "exact_ci95": [
+            0.681714191440344,
+            0.8710635049024182
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 65,
+          "AI_decision_rate": 0.8125,
+          "exact_ci95": [
+            0.7096721043523087,
+            0.8910863118524706
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "system": "clip_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.994453125,
+      "auc_ci95": [
+        0.9873170572916666,
+        0.9985677083333333
+      ],
+      "threshold_logit": -0.9228053386747905,
+      "test_TPR": 0.9833333333333333,
+      "test_TPR_ci95": [
+        0.9625,
+        0.9958333333333333
+      ],
+      "test_FPR": 0.08125,
+      "test_FPR_ci95": [
+        0.04375,
+        0.125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 8,
+          "AI_decision_rate": 0.1,
+          "exact_ci95": [
+            0.04417094015362905,
+            0.18756510746343166
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 77,
+          "AI_decision_rate": 0.9625,
+          "exact_ci95": [
+            0.8942980149834914,
+            0.9921988127342833
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "system": "clip_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9686979166666666,
+      "auc_ci95": [
+        0.94636328125,
+        0.9869811197916666
+      ],
+      "threshold_logit": -2.250890742456865,
+      "test_TPR": 0.975,
+      "test_TPR_ci95": [
+        0.9541666666666667,
+        0.9916666666666667
+      ],
+      "test_FPR": 0.08125,
+      "test_FPR_ci95": [
+        0.0375,
+        0.125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 8,
+          "AI_decision_rate": 0.1,
+          "exact_ci95": [
+            0.04417094015362905,
+            0.18756510746343166
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 76,
+          "AI_decision_rate": 0.95,
+          "exact_ci95": [
+            0.876901263556847,
+            0.9862106060235382
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "system": "clip_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9941666666666668,
+      "auc_ci95": [
+        0.9867708333333334,
+        0.9984375
+      ],
+      "threshold_logit": -0.8570607987016075,
+      "test_TPR": 0.9833333333333333,
+      "test_TPR_ci95": [
+        0.9625,
+        0.9958333333333333
+      ],
+      "test_FPR": 0.08125,
+      "test_FPR_ci95": [
+        0.04375,
+        0.125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 8,
+          "AI_decision_rate": 0.1,
+          "exact_ci95": [
+            0.04417094015362905,
+            0.18756510746343166
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 77,
+          "AI_decision_rate": 0.9625,
+          "exact_ci95": [
+            0.8942980149834914,
+            0.9921988127342833
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "system": "resnet_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9684895833333332,
+      "auc_ci95": [
+        0.9520305989583333,
+        0.9819544270833334
+      ],
+      "threshold_logit": 1.2988744508349708,
+      "test_TPR": 0.825,
+      "test_TPR_ci95": [
+        0.775,
+        0.875
+      ],
+      "test_FPR": 0.03125,
+      "test_FPR_ci95": [
+        0.00625,
+        0.0625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 2,
+          "AI_decision_rate": 0.025,
+          "exact_ci95": [
+            0.003042086164809598,
+            0.08740715593059228
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 66,
+          "AI_decision_rate": 0.825,
+          "exact_ci95": [
+            0.7238459604789864,
+            0.9008894901605713
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 65,
+          "AI_decision_rate": 0.8125,
+          "exact_ci95": [
+            0.7096721043523087,
+            0.8910863118524706
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 67,
+          "AI_decision_rate": 0.8375,
+          "exact_ci95": [
+            0.738163106174887,
+            0.9105383582774708
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "system": "resnet_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9989843749999999,
+      "auc_ci95": [
+        0.997421875,
+        1.0
+      ],
+      "threshold_logit": 0.08026192525835363,
+      "test_TPR": 1.0,
+      "test_TPR_ci95": [
+        1.0,
+        1.0
+      ],
+      "test_FPR": 0.0375,
+      "test_FPR_ci95": [
+        0.0125,
+        0.06875
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "system": "resnet_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9922656249999999,
+      "auc_ci95": [
+        0.9790364583333333,
+        0.9995572916666666
+      ],
+      "threshold_logit": 1.3198032395995833,
+      "test_TPR": 0.9666666666666667,
+      "test_TPR_ci95": [
+        0.9416666666666667,
+        0.9875
+      ],
+      "test_FPR": 0.03125,
+      "test_FPR_ci95": [
+        0.00625,
+        0.0625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 2,
+          "AI_decision_rate": 0.025,
+          "exact_ci95": [
+            0.003042086164809598,
+            0.08740715593059228
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 75,
+          "AI_decision_rate": 0.9375,
+          "exact_ci95": [
+            0.8601429247023609,
+            0.9793969276979898
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 78,
+          "AI_decision_rate": 0.975,
+          "exact_ci95": [
+            0.9125928440694077,
+            0.9969579138351904
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "system": "clip_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9940625000000001,
+      "auc_ci95": [
+        0.9868203125,
+        0.998333984375
+      ],
+      "threshold_logit": -0.9228053386747905,
+      "test_TPR": 0.9791666666666666,
+      "test_TPR_ci95": [
+        0.9583333333333334,
+        0.9958333333333333
+      ],
+      "test_FPR": 0.08125,
+      "test_FPR_ci95": [
+        0.04375,
+        0.125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 8,
+          "AI_decision_rate": 0.1,
+          "exact_ci95": [
+            0.04417094015362905,
+            0.18756510746343166
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 76,
+          "AI_decision_rate": 0.95,
+          "exact_ci95": [
+            0.876901263556847,
+            0.9862106060235382
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "system": "clip_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9990885416666666,
+      "auc_ci95": [
+        0.9978125,
+        0.9998177083333334
+      ],
+      "threshold_logit": -2.250890742456865,
+      "test_TPR": 1.0,
+      "test_TPR_ci95": [
+        1.0,
+        1.0
+      ],
+      "test_FPR": 0.08125,
+      "test_FPR_ci95": [
+        0.0375,
+        0.125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 8,
+          "AI_decision_rate": 0.1,
+          "exact_ci95": [
+            0.04417094015362905,
+            0.18756510746343166
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "system": "clip_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9990885416666667,
+      "auc_ci95": [
+        0.9977604166666667,
+        0.99984375
+      ],
+      "threshold_logit": -0.8570607987016075,
+      "test_TPR": 1.0,
+      "test_TPR_ci95": [
+        1.0,
+        1.0
+      ],
+      "test_FPR": 0.08125,
+      "test_FPR_ci95": [
+        0.04375,
+        0.125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 8,
+          "AI_decision_rate": 0.1,
+          "exact_ci95": [
+            0.04417094015362905,
+            0.18756510746343166
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "system": "resnet_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9683854166666668,
+      "auc_ci95": [
+        0.9524446614583333,
+        0.9814075520833334
+      ],
+      "threshold_logit": 1.2988744508349708,
+      "test_TPR": 0.8333333333333334,
+      "test_TPR_ci95": [
+        0.7875,
+        0.8791666666666667
+      ],
+      "test_FPR": 0.03125,
+      "test_FPR_ci95": [
+        0.00625,
+        0.0625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 1,
+          "AI_decision_rate": 0.0125,
+          "exact_ci95": [
+            0.00031642252763270626,
+            0.06768778446392242
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 65,
+          "AI_decision_rate": 0.8125,
+          "exact_ci95": [
+            0.7096721043523087,
+            0.8910863118524706
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 68,
+          "AI_decision_rate": 0.85,
+          "exact_ci95": [
+            0.7526358884071023,
+            0.9200184386902861
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 67,
+          "AI_decision_rate": 0.8375,
+          "exact_ci95": [
+            0.738163106174887,
+            0.9105383582774708
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "system": "resnet_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9299479166666667,
+      "auc_ci95": [
+        0.8996028645833334,
+        0.95580859375
+      ],
+      "threshold_logit": 0.08026192525835363,
+      "test_TPR": 0.65,
+      "test_TPR_ci95": [
+        0.5916666666666667,
+        0.7125
+      ],
+      "test_FPR": 0.05625,
+      "test_FPR_ci95": [
+        0.01875,
+        0.09375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 49,
+          "AI_decision_rate": 0.6125,
+          "exact_ci95": [
+            0.4969755425018991,
+            0.7194348668752177
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 57,
+          "AI_decision_rate": 0.7125,
+          "exact_ci95": [
+            0.6004548866879794,
+            0.808239528028035
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 50,
+          "AI_decision_rate": 0.625,
+          "exact_ci95": [
+            0.5096452355928875,
+            0.7308068300531949
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "system": "resnet_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9681770833333333,
+      "auc_ci95": [
+        0.9522389322916667,
+        0.9812773437500001
+      ],
+      "threshold_logit": 1.3198032395995833,
+      "test_TPR": 0.8333333333333334,
+      "test_TPR_ci95": [
+        0.7875,
+        0.8791666666666667
+      ],
+      "test_FPR": 0.03125,
+      "test_FPR_ci95": [
+        0.00625,
+        0.0625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 1,
+          "AI_decision_rate": 0.0125,
+          "exact_ci95": [
+            0.00031642252763270626,
+            0.06768778446392242
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 65,
+          "AI_decision_rate": 0.8125,
+          "exact_ci95": [
+            0.7096721043523087,
+            0.8910863118524706
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 68,
+          "AI_decision_rate": 0.85,
+          "exact_ci95": [
+            0.7526358884071023,
+            0.9200184386902861
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 67,
+          "AI_decision_rate": 0.8375,
+          "exact_ci95": [
+            0.738163106174887,
+            0.9105383582774708
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "system": "clip_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9932812499999999,
+      "auc_ci95": [
+        0.9866139322916666,
+        0.9979694010416666
+      ],
+      "threshold_logit": -0.9228053386747905,
+      "test_TPR": 0.9833333333333333,
+      "test_TPR_ci95": [
+        0.9666666666666667,
+        0.9958333333333333
+      ],
+      "test_FPR": 0.0625,
+      "test_FPR_ci95": [
+        0.03109375000000001,
+        0.1
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 7,
+          "AI_decision_rate": 0.0875,
+          "exact_ci95": [
+            0.03590635898955875,
+            0.17200833841988475
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 76,
+          "AI_decision_rate": 0.95,
+          "exact_ci95": [
+            0.876901263556847,
+            0.9862106060235382
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "system": "clip_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9804947916666666,
+      "auc_ci95": [
+        0.964609375,
+        0.9929954427083334
+      ],
+      "threshold_logit": -2.250890742456865,
+      "test_TPR": 0.975,
+      "test_TPR_ci95": [
+        0.9541666666666667,
+        0.9916666666666667
+      ],
+      "test_FPR": 0.0875,
+      "test_FPR_ci95": [
+        0.04375,
+        0.13125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 9,
+          "AI_decision_rate": 0.1125,
+          "exact_ci95": [
+            0.052751513145687524,
+            0.20284659191699014
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 75,
+          "AI_decision_rate": 0.9375,
+          "exact_ci95": [
+            0.8601429247023609,
+            0.9793969276979898
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "system": "clip_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9932291666666667,
+      "auc_ci95": [
+        0.986328125,
+        0.9979427083333333
+      ],
+      "threshold_logit": -0.8570607987016075,
+      "test_TPR": 0.9833333333333333,
+      "test_TPR_ci95": [
+        0.9666666666666667,
+        0.9958333333333333
+      ],
+      "test_FPR": 0.0625,
+      "test_FPR_ci95": [
+        0.03109375000000001,
+        0.1
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 7,
+          "AI_decision_rate": 0.0875,
+          "exact_ci95": [
+            0.03590635898955875,
+            0.17200833841988475
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 76,
+          "AI_decision_rate": 0.95,
+          "exact_ci95": [
+            0.876901263556847,
+            0.9862106060235382
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "system": "resnet_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9700520833333334,
+      "auc_ci95": [
+        0.9546608072916667,
+        0.9826829427083333
+      ],
+      "threshold_logit": 1.2988744508349708,
+      "test_TPR": 0.8416666666666667,
+      "test_TPR_ci95": [
+        0.7958333333333333,
+        0.8875
+      ],
+      "test_FPR": 0.03125,
+      "test_FPR_ci95": [
+        0.00625,
+        0.0625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 1,
+          "AI_decision_rate": 0.0125,
+          "exact_ci95": [
+            0.00031642252763270626,
+            0.06768778446392242
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 66,
+          "AI_decision_rate": 0.825,
+          "exact_ci95": [
+            0.7238459604789864,
+            0.9008894901605713
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 68,
+          "AI_decision_rate": 0.85,
+          "exact_ci95": [
+            0.7526358884071023,
+            0.9200184386902861
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 68,
+          "AI_decision_rate": 0.85,
+          "exact_ci95": [
+            0.7526358884071023,
+            0.9200184386902861
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "system": "resnet_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9985937500000001,
+      "auc_ci95": [
+        0.9966666666666667,
+        0.9997916666666666
+      ],
+      "threshold_logit": 0.08026192525835363,
+      "test_TPR": 1.0,
+      "test_TPR_ci95": [
+        1.0,
+        1.0
+      ],
+      "test_FPR": 0.05625,
+      "test_FPR_ci95": [
+        0.01875,
+        0.09375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "system": "resnet_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9966927083333333,
+      "auc_ci95": [
+        0.992734375,
+        0.999271484375
+      ],
+      "threshold_logit": 1.3198032395995833,
+      "test_TPR": 0.9875,
+      "test_TPR_ci95": [
+        0.9708333333333333,
+        1.0
+      ],
+      "test_FPR": 0.03125,
+      "test_FPR_ci95": [
+        0.00625,
+        0.0625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 1,
+          "AI_decision_rate": 0.0125,
+          "exact_ci95": [
+            0.00031642252763270626,
+            0.06768778446392242
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "system": "clip_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.99296875,
+      "auc_ci95": [
+        0.9858587239583333,
+        0.9978645833333334
+      ],
+      "threshold_logit": -0.9228053386747905,
+      "test_TPR": 0.9875,
+      "test_TPR_ci95": [
+        0.9708333333333333,
+        1.0
+      ],
+      "test_FPR": 0.0625,
+      "test_FPR_ci95": [
+        0.03109375000000001,
+        0.1
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 7,
+          "AI_decision_rate": 0.0875,
+          "exact_ci95": [
+            0.03590635898955875,
+            0.17200833841988475
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 77,
+          "AI_decision_rate": 0.9625,
+          "exact_ci95": [
+            0.8942980149834914,
+            0.9921988127342833
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "system": "clip_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9995833333333334,
+      "auc_ci95": [
+        0.9988541666666667,
+        0.999974609375
+      ],
+      "threshold_logit": -2.250890742456865,
+      "test_TPR": 1.0,
+      "test_TPR_ci95": [
+        1.0,
+        1.0
+      ],
+      "test_FPR": 0.0875,
+      "test_FPR_ci95": [
+        0.04375,
+        0.13125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 9,
+          "AI_decision_rate": 0.1125,
+          "exact_ci95": [
+            0.052751513145687524,
+            0.20284659191699014
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "system": "clip_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9989322916666667,
+      "auc_ci95": [
+        0.9976041666666666,
+        0.9998177083333334
+      ],
+      "threshold_logit": -0.8570607987016075,
+      "test_TPR": 1.0,
+      "test_TPR_ci95": [
+        1.0,
+        1.0
+      ],
+      "test_FPR": 0.0625,
+      "test_FPR_ci95": [
+        0.03109375000000001,
+        0.1
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 7,
+          "AI_decision_rate": 0.0875,
+          "exact_ci95": [
+            0.03590635898955875,
+            0.17200833841988475
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "system": "resnet_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9642708333333333,
+      "auc_ci95": [
+        0.94700390625,
+        0.9786210937500001
+      ],
+      "threshold_logit": 1.2988744508349708,
+      "test_TPR": 0.8166666666666667,
+      "test_TPR_ci95": [
+        0.7666666666666667,
+        0.8666666666666667
+      ],
+      "test_FPR": 0.04375,
+      "test_FPR_ci95": [
+        0.01875,
+        0.08125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 67,
+          "AI_decision_rate": 0.8375,
+          "exact_ci95": [
+            0.738163106174887,
+            0.9105383582774708
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 66,
+          "AI_decision_rate": 0.825,
+          "exact_ci95": [
+            0.7238459604789864,
+            0.9008894901605713
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 63,
+          "AI_decision_rate": 0.7875,
+          "exact_ci95": [
+            0.681714191440344,
+            0.8710635049024182
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "system": "resnet_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.922109375,
+      "auc_ci95": [
+        0.8940345052083334,
+        0.9482825520833333
+      ],
+      "threshold_logit": 0.08026192525835363,
+      "test_TPR": 0.6375,
+      "test_TPR_ci95": [
+        0.5791666666666667,
+        0.7
+      ],
+      "test_FPR": 0.0375,
+      "test_FPR_ci95": [
+        0.0125,
+        0.06875
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 2,
+          "AI_decision_rate": 0.025,
+          "exact_ci95": [
+            0.003042086164809598,
+            0.08740715593059228
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 52,
+          "AI_decision_rate": 0.65,
+          "exact_ci95": [
+            0.5352031145206643,
+            0.7533280635274646
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 54,
+          "AI_decision_rate": 0.675,
+          "exact_ci95": [
+            0.5610629543955516,
+            0.7755404148225468
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 47,
+          "AI_decision_rate": 0.5875,
+          "exact_ci95": [
+            0.47184834042520446,
+            0.6964754070624058
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "system": "resnet_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9639843749999999,
+      "auc_ci95": [
+        0.9468209635416667,
+        0.9784381510416666
+      ],
+      "threshold_logit": 1.3198032395995833,
+      "test_TPR": 0.8166666666666667,
+      "test_TPR_ci95": [
+        0.7666666666666667,
+        0.8666666666666667
+      ],
+      "test_FPR": 0.04375,
+      "test_FPR_ci95": [
+        0.01875,
+        0.08125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 67,
+          "AI_decision_rate": 0.8375,
+          "exact_ci95": [
+            0.738163106174887,
+            0.9105383582774708
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 66,
+          "AI_decision_rate": 0.825,
+          "exact_ci95": [
+            0.7238459604789864,
+            0.9008894901605713
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 63,
+          "AI_decision_rate": 0.7875,
+          "exact_ci95": [
+            0.681714191440344,
+            0.8710635049024182
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "system": "clip_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9929427083333333,
+      "auc_ci95": [
+        0.9854420572916667,
+        0.9977604166666667
+      ],
+      "threshold_logit": -0.9228053386747905,
+      "test_TPR": 0.9875,
+      "test_TPR_ci95": [
+        0.9708333333333333,
+        1.0
+      ],
+      "test_FPR": 0.0875,
+      "test_FPR_ci95": [
+        0.04375,
+        0.1375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 10,
+          "AI_decision_rate": 0.125,
+          "exact_ci95": [
+            0.06160209655843423,
+            0.21788913406943622
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 77,
+          "AI_decision_rate": 0.9625,
+          "exact_ci95": [
+            0.8942980149834914,
+            0.9921988127342833
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "system": "clip_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9765364583333334,
+      "auc_ci95": [
+        0.9600501302083334,
+        0.9903391927083334
+      ],
+      "threshold_logit": -2.250890742456865,
+      "test_TPR": 0.9875,
+      "test_TPR_ci95": [
+        0.9708333333333333,
+        1.0
+      ],
+      "test_FPR": 0.1,
+      "test_FPR_ci95": [
+        0.05625,
+        0.14375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 12,
+          "AI_decision_rate": 0.15,
+          "exact_ci95": [
+            0.07998156130971384,
+            0.24736411159289762
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 77,
+          "AI_decision_rate": 0.9625,
+          "exact_ci95": [
+            0.8942980149834914,
+            0.9921988127342833
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "system": "clip_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.992890625,
+      "auc_ci95": [
+        0.985390625,
+        0.997734375
+      ],
+      "threshold_logit": -0.8570607987016075,
+      "test_TPR": 0.9875,
+      "test_TPR_ci95": [
+        0.9708333333333333,
+        1.0
+      ],
+      "test_FPR": 0.0875,
+      "test_FPR_ci95": [
+        0.04375,
+        0.1375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 10,
+          "AI_decision_rate": 0.125,
+          "exact_ci95": [
+            0.06160209655843423,
+            0.21788913406943622
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 77,
+          "AI_decision_rate": 0.9625,
+          "exact_ci95": [
+            0.8942980149834914,
+            0.9921988127342833
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "system": "resnet_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.967890625,
+      "auc_ci95": [
+        0.951296875,
+        0.981302734375
+      ],
+      "threshold_logit": 1.2988744508349708,
+      "test_TPR": 0.825,
+      "test_TPR_ci95": [
+        0.775,
+        0.8708333333333333
+      ],
+      "test_FPR": 0.04375,
+      "test_FPR_ci95": [
+        0.01875,
+        0.08125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 66,
+          "AI_decision_rate": 0.825,
+          "exact_ci95": [
+            0.7238459604789864,
+            0.9008894901605713
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 68,
+          "AI_decision_rate": 0.85,
+          "exact_ci95": [
+            0.7526358884071023,
+            0.9200184386902861
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 64,
+          "AI_decision_rate": 0.8,
+          "exact_ci95": [
+            0.6956311329945357,
+            0.8811409135950147
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "system": "resnet_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.927734375,
+      "auc_ci95": [
+        0.8998359375,
+        0.9542981770833334
+      ],
+      "threshold_logit": 0.08026192525835363,
+      "test_TPR": 0.6333333333333333,
+      "test_TPR_ci95": [
+        0.575,
+        0.6958333333333333
+      ],
+      "test_FPR": 0.0375,
+      "test_FPR_ci95": [
+        0.0125,
+        0.06875
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 2,
+          "AI_decision_rate": 0.025,
+          "exact_ci95": [
+            0.003042086164809598,
+            0.08740715593059228
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 54,
+          "AI_decision_rate": 0.675,
+          "exact_ci95": [
+            0.5610629543955516,
+            0.7755404148225468
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 51,
+          "AI_decision_rate": 0.6375,
+          "exact_ci95": [
+            0.5223872787351916,
+            0.742105104628382
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 47,
+          "AI_decision_rate": 0.5875,
+          "exact_ci95": [
+            0.47184834042520446,
+            0.6964754070624058
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "system": "resnet_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9675520833333333,
+      "auc_ci95": [
+        0.9510110677083333,
+        0.9809654947916666
+      ],
+      "threshold_logit": 1.3198032395995833,
+      "test_TPR": 0.825,
+      "test_TPR_ci95": [
+        0.775,
+        0.8708333333333333
+      ],
+      "test_FPR": 0.04375,
+      "test_FPR_ci95": [
+        0.01875,
+        0.08125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 3,
+          "AI_decision_rate": 0.0375,
+          "exact_ci95": [
+            0.007801187265716697,
+            0.10570198501650858
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 66,
+          "AI_decision_rate": 0.825,
+          "exact_ci95": [
+            0.7238459604789864,
+            0.9008894901605713
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 68,
+          "AI_decision_rate": 0.85,
+          "exact_ci95": [
+            0.7526358884071023,
+            0.9200184386902861
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 64,
+          "AI_decision_rate": 0.8,
+          "exact_ci95": [
+            0.6956311329945357,
+            0.8811409135950147
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "system": "clip_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9929947916666667,
+      "auc_ci95": [
+        0.985572265625,
+        0.997734375
+      ],
+      "threshold_logit": -0.9228053386747905,
+      "test_TPR": 0.9875,
+      "test_TPR_ci95": [
+        0.9708333333333333,
+        1.0
+      ],
+      "test_FPR": 0.0875,
+      "test_FPR_ci95": [
+        0.04375,
+        0.1375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 10,
+          "AI_decision_rate": 0.125,
+          "exact_ci95": [
+            0.06160209655843423,
+            0.21788913406943622
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 77,
+          "AI_decision_rate": 0.9625,
+          "exact_ci95": [
+            0.8942980149834914,
+            0.9921988127342833
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "system": "clip_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9754166666666667,
+      "auc_ci95": [
+        0.9575240885416667,
+        0.9900299479166667
+      ],
+      "threshold_logit": -2.250890742456865,
+      "test_TPR": 0.9875,
+      "test_TPR_ci95": [
+        0.9708333333333333,
+        1.0
+      ],
+      "test_FPR": 0.1,
+      "test_FPR_ci95": [
+        0.05625,
+        0.14375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 12,
+          "AI_decision_rate": 0.15,
+          "exact_ci95": [
+            0.07998156130971384,
+            0.24736411159289762
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 78,
+          "AI_decision_rate": 0.975,
+          "exact_ci95": [
+            0.9125928440694077,
+            0.9969579138351904
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        }
+      }
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "system": "clip_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9929427083333333,
+      "auc_ci95": [
+        0.9855201822916666,
+        0.997708984375
+      ],
+      "threshold_logit": -0.8570607987016075,
+      "test_TPR": 0.9875,
+      "test_TPR_ci95": [
+        0.9708333333333333,
+        1.0
+      ],
+      "test_FPR": 0.0875,
+      "test_FPR_ci95": [
+        0.04375,
+        0.1375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 4,
+          "AI_decision_rate": 0.05,
+          "exact_ci95": [
+            0.01378939397646181,
+            0.12309873644315295
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 10,
+          "AI_decision_rate": 0.125,
+          "exact_ci95": [
+            0.06160209655843423,
+            0.21788913406943622
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 77,
+          "AI_decision_rate": 0.9625,
+          "exact_ci95": [
+            0.8942980149834914,
+            0.9921988127342833
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "system": "resnet_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.923984375,
+      "auc_ci95": [
+        0.898173828125,
+        0.9477910156249999
+      ],
+      "threshold_logit": 1.2988744508349708,
+      "test_TPR": 0.7791666666666667,
+      "test_TPR_ci95": [
+        0.7291666666666666,
+        0.8291666666666667
+      ],
+      "test_FPR": 0.1,
+      "test_FPR_ci95": [
+        0.05625,
+        0.15
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 11,
+          "AI_decision_rate": 0.1375,
+          "exact_ci95": [
+            0.0706878327038787,
+            0.23272087082472576
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 62,
+          "AI_decision_rate": 0.775,
+          "exact_ci95": [
+            0.667913679938749,
+            0.8608627895010683
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 69,
+          "AI_decision_rate": 0.8625,
+          "exact_ci95": [
+            0.7672791291752742,
+            0.9293121672961213
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 56,
+          "AI_decision_rate": 0.7,
+          "exact_ci95": [
+            0.5872406769186241,
+            0.7974260708533272
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "system": "resnet_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.8713802083333333,
+      "auc_ci95": [
+        0.8354915364583333,
+        0.9064661458333333
+      ],
+      "threshold_logit": 0.08026192525835363,
+      "test_TPR": 0.6125,
+      "test_TPR_ci95": [
+        0.55,
+        0.675
+      ],
+      "test_FPR": 0.1,
+      "test_FPR_ci95": [
+        0.05625,
+        0.14375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 9,
+          "AI_decision_rate": 0.1125,
+          "exact_ci95": [
+            0.052751513145687524,
+            0.20284659191699014
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 7,
+          "AI_decision_rate": 0.0875,
+          "exact_ci95": [
+            0.03590635898955875,
+            0.17200833841988475
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 48,
+          "AI_decision_rate": 0.6,
+          "exact_ci95": [
+            0.48437694049548946,
+            0.7079906437446897
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 55,
+          "AI_decision_rate": 0.6875,
+          "exact_ci95": [
+            0.5741109261435506,
+            0.7865253688912327
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 44,
+          "AI_decision_rate": 0.55,
+          "exact_ci95": [
+            0.43467397909415284,
+            0.6615136155101846
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "system": "resnet_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9230729166666667,
+      "auc_ci95": [
+        0.897412109375,
+        0.9468509114583333
+      ],
+      "threshold_logit": 1.3198032395995833,
+      "test_TPR": 0.7791666666666667,
+      "test_TPR_ci95": [
+        0.7291666666666666,
+        0.8291666666666667
+      ],
+      "test_FPR": 0.1,
+      "test_FPR_ci95": [
+        0.05625,
+        0.15
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 11,
+          "AI_decision_rate": 0.1375,
+          "exact_ci95": [
+            0.0706878327038787,
+            0.23272087082472576
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 62,
+          "AI_decision_rate": 0.775,
+          "exact_ci95": [
+            0.667913679938749,
+            0.8608627895010683
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 69,
+          "AI_decision_rate": 0.8625,
+          "exact_ci95": [
+            0.7672791291752742,
+            0.9293121672961213
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 56,
+          "AI_decision_rate": 0.7,
+          "exact_ci95": [
+            0.5872406769186241,
+            0.7974260708533272
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "system": "clip_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.97203125,
+      "auc_ci95": [
+        0.95765625,
+        0.983984375
+      ],
+      "threshold_logit": -0.9228053386747905,
+      "test_TPR": 0.9916666666666667,
+      "test_TPR_ci95": [
+        0.9791666666666666,
+        1.0
+      ],
+      "test_FPR": 0.3375,
+      "test_FPR_ci95": [
+        0.2625,
+        0.40625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 26,
+          "AI_decision_rate": 0.325,
+          "exact_ci95": [
+            0.22445958517745332,
+            0.4389370456044483
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 28,
+          "AI_decision_rate": 0.35,
+          "exact_ci95": [
+            0.24667193647253535,
+            0.4647968854793358
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "system": "clip_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.8939583333333334,
+      "auc_ci95": [
+        0.8564042968750001,
+        0.9271165364583333
+      ],
+      "threshold_logit": -2.250890742456865,
+      "test_TPR": 0.9916666666666667,
+      "test_TPR_ci95": [
+        0.9791666666666666,
+        1.0
+      ],
+      "test_FPR": 0.3625,
+      "test_FPR_ci95": [
+        0.2875,
+        0.43125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 30,
+          "AI_decision_rate": 0.375,
+          "exact_ci95": [
+            0.269193169946805,
+            0.4903547644071125
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 28,
+          "AI_decision_rate": 0.35,
+          "exact_ci95": [
+            0.24667193647253535,
+            0.4647968854793358
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "system": "clip_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9712760416666666,
+      "auc_ci95": [
+        0.9566126302083334,
+        0.983490234375
+      ],
+      "threshold_logit": -0.8570607987016075,
+      "test_TPR": 0.9916666666666667,
+      "test_TPR_ci95": [
+        0.9791666666666666,
+        1.0
+      ],
+      "test_FPR": 0.3375,
+      "test_FPR_ci95": [
+        0.2625,
+        0.40625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 26,
+          "AI_decision_rate": 0.325,
+          "exact_ci95": [
+            0.22445958517745332,
+            0.4389370456044483
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 28,
+          "AI_decision_rate": 0.35,
+          "exact_ci95": [
+            0.24667193647253535,
+            0.4647968854793358
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "system": "resnet_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.92453125,
+      "auc_ci95": [
+        0.8988255208333333,
+        0.948255859375
+      ],
+      "threshold_logit": 1.2988744508349708,
+      "test_TPR": 0.7875,
+      "test_TPR_ci95": [
+        0.7375,
+        0.8375
+      ],
+      "test_FPR": 0.1,
+      "test_FPR_ci95": [
+        0.05625,
+        0.15
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 11,
+          "AI_decision_rate": 0.1375,
+          "exact_ci95": [
+            0.0706878327038787,
+            0.23272087082472576
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 64,
+          "AI_decision_rate": 0.8,
+          "exact_ci95": [
+            0.6956311329945357,
+            0.8811409135950147
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 69,
+          "AI_decision_rate": 0.8625,
+          "exact_ci95": [
+            0.7672791291752742,
+            0.9293121672961213
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 56,
+          "AI_decision_rate": 0.7,
+          "exact_ci95": [
+            0.5872406769186241,
+            0.7974260708533272
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "system": "resnet_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.8595572916666665,
+      "auc_ci95": [
+        0.8211184895833333,
+        0.8969544270833334
+      ],
+      "threshold_logit": 0.08026192525835363,
+      "test_TPR": 0.6083333333333333,
+      "test_TPR_ci95": [
+        0.5498958333333334,
+        0.6666666666666666
+      ],
+      "test_FPR": 0.1,
+      "test_FPR_ci95": [
+        0.05625,
+        0.14375
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 9,
+          "AI_decision_rate": 0.1125,
+          "exact_ci95": [
+            0.052751513145687524,
+            0.20284659191699014
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 7,
+          "AI_decision_rate": 0.0875,
+          "exact_ci95": [
+            0.03590635898955875,
+            0.17200833841988475
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 48,
+          "AI_decision_rate": 0.6,
+          "exact_ci95": [
+            0.48437694049548946,
+            0.7079906437446897
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 53,
+          "AI_decision_rate": 0.6625,
+          "exact_ci95": [
+            0.5480943856258318,
+            0.7644738620163491
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 45,
+          "AI_decision_rate": 0.5625,
+          "exact_ci95": [
+            0.44699757138818025,
+            0.673236046566221
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "system": "resnet_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9238020833333334,
+      "auc_ci95": [
+        0.8982278645833333,
+        0.9474511718749999
+      ],
+      "threshold_logit": 1.3198032395995833,
+      "test_TPR": 0.7833333333333333,
+      "test_TPR_ci95": [
+        0.7333333333333333,
+        0.8333333333333334
+      ],
+      "test_FPR": 0.1,
+      "test_FPR_ci95": [
+        0.05625,
+        0.15
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 11,
+          "AI_decision_rate": 0.1375,
+          "exact_ci95": [
+            0.0706878327038787,
+            0.23272087082472576
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 5,
+          "AI_decision_rate": 0.0625,
+          "exact_ci95": [
+            0.020603072302010236,
+            0.13985707529763897
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 63,
+          "AI_decision_rate": 0.7875,
+          "exact_ci95": [
+            0.681714191440344,
+            0.8710635049024182
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 69,
+          "AI_decision_rate": 0.8625,
+          "exact_ci95": [
+            0.7672791291752742,
+            0.9293121672961213
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 56,
+          "AI_decision_rate": 0.7,
+          "exact_ci95": [
+            0.5872406769186241,
+            0.7974260708533272
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "system": "clip_probe",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9715104166666667,
+      "auc_ci95": [
+        0.9570826822916666,
+        0.9834375
+      ],
+      "threshold_logit": -0.9228053386747905,
+      "test_TPR": 0.9916666666666667,
+      "test_TPR_ci95": [
+        0.9791666666666666,
+        1.0
+      ],
+      "test_FPR": 0.3375,
+      "test_FPR_ci95": [
+        0.2625,
+        0.40625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 26,
+          "AI_decision_rate": 0.325,
+          "exact_ci95": [
+            0.22445958517745332,
+            0.4389370456044483
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 28,
+          "AI_decision_rate": 0.35,
+          "exact_ci95": [
+            0.24667193647253535,
+            0.4647968854793358
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "system": "clip_fusion",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.8847135416666667,
+      "auc_ci95": [
+        0.845623046875,
+        0.9196100260416666
+      ],
+      "threshold_logit": -2.250890742456865,
+      "test_TPR": 0.9875,
+      "test_TPR_ci95": [
+        0.9708333333333333,
+        1.0
+      ],
+      "test_FPR": 0.3625,
+      "test_FPR_ci95": [
+        0.2875,
+        0.43125
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 30,
+          "AI_decision_rate": 0.375,
+          "exact_ci95": [
+            0.269193169946805,
+            0.4903547644071125
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 28,
+          "AI_decision_rate": 0.35,
+          "exact_ci95": [
+            0.24667193647253535,
+            0.4647968854793358
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 78,
+          "AI_decision_rate": 0.975,
+          "exact_ci95": [
+            0.9125928440694077,
+            0.9969579138351904
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        }
+      }
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "system": "clip_gated",
+      "sources": 400,
+      "images": 400,
+      "auc": 0.9712239583333334,
+      "auc_ci95": [
+        0.956533203125,
+        0.9835169270833334
+      ],
+      "threshold_logit": -0.8570607987016075,
+      "test_TPR": 0.9916666666666667,
+      "test_TPR_ci95": [
+        0.9791666666666666,
+        1.0
+      ],
+      "test_FPR": 0.3375,
+      "test_FPR_ci95": [
+        0.2625,
+        0.40625
+      ],
+      "per_collection": {
+        "coco": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 26,
+          "AI_decision_rate": 0.325,
+          "exact_ci95": [
+            0.22445958517745332,
+            0.4389370456044483
+          ]
+        },
+        "openimages": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 28,
+          "AI_decision_rate": 0.35,
+          "exact_ci95": [
+            0.24667193647253535,
+            0.4647968854793358
+          ]
+        },
+        "stable-diffusion": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        },
+        "dalle-3": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 80,
+          "AI_decision_rate": 1.0,
+          "exact_ci95": [
+            0.9549359649323077,
+            1.0
+          ]
+        },
+        "midjourney": {
+          "images": 80,
+          "sources": 80,
+          "AI_decisions": 79,
+          "AI_decision_rate": 0.9875,
+          "exact_ci95": [
+            0.9323122155360776,
+            0.9996835774723672
+          ]
+        }
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": -0.0006201171875001021,
+      "auc_difference_ci95": [
+        -0.0012402343749999822,
+        -0.00012695312499999556
+      ],
+      "fixed_threshold_TPR_difference": -0.0010416666666666075,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.0031250000000000444,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": -0.04473632812500017,
+      "auc_difference_ci95": [
+        -0.05671390787760421,
+        -0.033792805989583355
+      ],
+      "fixed_threshold_TPR_difference": -0.1812499999999999,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.21250000000000002,
+        -0.15104166666666663
+      ],
+      "fixed_threshold_FPR_difference": 0.0062500000000000056,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.0062500000000000056,
+        0.018750000000000003
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": 0.04411621093750007,
+      "auc_difference_ci95": [
+        0.03326611328125005,
+        0.05600797526041668
+      ],
+      "fixed_threshold_TPR_difference": 0.1802083333333333,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.14895833333333341,
+        0.2114583333333333
+      ],
+      "fixed_threshold_FPR_difference": -0.0062500000000000056,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.018750000000000003,
+        0.0062500000000000056
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": -0.00022298177083335258,
+      "auc_difference_ci95": [
+        -0.0004427083333333748,
+        -7.6497395833372e-05
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": -0.03482421874999986,
+      "auc_difference_ci95": [
+        -0.04801822916666663,
+        -0.022739054361979247
+      ],
+      "fixed_threshold_TPR_difference": -0.004166666666666652,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.01041666666666663,
+        0.0010416666666667185
+      ],
+      "fixed_threshold_FPR_difference": 0.015625,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.03125
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": 0.034601236979166505,
+      "auc_difference_ci95": [
+        0.022554321289062526,
+        0.04776704915364579
+      ],
+      "fixed_threshold_TPR_difference": 0.004166666666666652,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.0010416666666667185,
+        0.01041666666666663
+      ],
+      "fixed_threshold_FPR_difference": -0.015625,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.03125,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": 0.014358723958333264,
+      "auc_difference_ci95": [
+        0.009006795247395857,
+        0.020567708333333275
+      ],
+      "fixed_threshold_TPR_difference": 0.0708333333333333,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.05104166666666665,
+        0.09166666666666667
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": -0.009578450520833282,
+      "auc_difference_ci95": [
+        -0.016580403645833356,
+        -0.0023055826822916833
+      ],
+      "fixed_threshold_TPR_difference": -0.009375000000000022,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.04270833333333335,
+        0.023984374999999936
+      ],
+      "fixed_threshold_FPR_difference": 0.0062500000000000056,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.0062500000000000056,
+        0.018750000000000003
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": 0.023937174479166545,
+      "auc_difference_ci95": [
+        0.016932169596354196,
+        0.03129764811197912
+      ],
+      "fixed_threshold_TPR_difference": 0.08020833333333333,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.05625000000000002,
+        0.10312500000000002
+      ],
+      "fixed_threshold_FPR_difference": -0.0062500000000000056,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.018750000000000003,
+        0.0062500000000000056
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": 0.0025520833333333437,
+      "auc_difference_ci95": [
+        -0.0008170979817708673,
+        0.006499633789062469
+      ],
+      "fixed_threshold_TPR_difference": 0.008333333333333304,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.002083333333333326,
+        0.016666666666666607
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": -0.012309570312500018,
+      "auc_difference_ci95": [
+        -0.018841064453124966,
+        -0.0055594889322917165
+      ],
+      "fixed_threshold_TPR_difference": 0.007291666666666696,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.015625
+      ],
+      "fixed_threshold_FPR_difference": 0.015625,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.03125
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "overall",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 1600,
+      "auc_difference": 0.014861653645833361,
+      "auc_difference_ci95": [
+        0.008858927408854106,
+        0.021417968749999947
+      ],
+      "fixed_threshold_TPR_difference": 0.0010416666666666075,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.002083333333333326,
+        0.005208333333333259
+      ],
+      "fixed_threshold_FPR_difference": -0.015625,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.03125,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.0011718750000000444,
+      "auc_difference_ci95": [
+        -0.0029173177083333447,
+        0.0
+      ],
+      "fixed_threshold_TPR_difference": -0.004166666666666652,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.012500000000000067,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.04229166666666684,
+      "auc_difference_ci95": [
+        -0.06062890625000004,
+        -0.02588541666666666
+      ],
+      "fixed_threshold_TPR_difference": -0.1958333333333333,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.25,
+        -0.1416666666666666
+      ],
+      "fixed_threshold_FPR_difference": 0.006249999999999999,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.012500000000000004,
+        0.031249999999999997
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.041119791666666794,
+      "auc_difference_ci95": [
+        0.02505143229166664,
+        0.05904427083333333
+      ],
+      "fixed_threshold_TPR_difference": 0.19166666666666665,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.13749999999999996,
+        0.24583333333333335
+      ],
+      "fixed_threshold_FPR_difference": -0.006249999999999999,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.031249999999999997,
+        0.012500000000000004
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.00028645833333329485,
+      "auc_difference_ci95": [
+        -0.0008854166666666385,
+        0.0
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.025755208333333446,
+      "auc_difference_ci95": [
+        -0.044927734375,
+        -0.009893229166666673
+      ],
+      "fixed_threshold_TPR_difference": -0.008333333333333304,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.02083333333333337,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.025,
+        0.025
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.02546875000000015,
+      "auc_difference_ci95": [
+        0.009712239583333379,
+        0.044427734375
+      ],
+      "fixed_threshold_TPR_difference": 0.008333333333333304,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.02083333333333337
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.025,
+        0.025
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.023776041666666692,
+      "auc_difference_ci95": [
+        0.011925130208333256,
+        0.03781315104166669
+      ],
+      "fixed_threshold_TPR_difference": 0.14166666666666672,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.09999999999999998,
+        0.1875
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.030494791666666687,
+      "auc_difference_ci95": [
+        0.01762955729166662,
+        0.045626953125000015
+      ],
+      "fixed_threshold_TPR_difference": 0.17500000000000004,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.125,
+        0.22499999999999998
+      ],
+      "fixed_threshold_FPR_difference": 0.006249999999999999,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.012500000000000004,
+        0.031249999999999997
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.0067187499999999956,
+      "auc_difference_ci95": [
+        -0.0189583333333333,
+        0.00015625000000007994
+      ],
+      "fixed_threshold_TPR_difference": -0.033333333333333326,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.05833333333333335,
+        -0.012499999999999956
+      ],
+      "fixed_threshold_FPR_difference": -0.006249999999999999,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.031249999999999997,
+        0.012500000000000004
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.005026041666666647,
+      "auc_difference_ci95": [
+        0.0014322916666665853,
+        0.011249999999999982
+      ],
+      "fixed_threshold_TPR_difference": 0.02083333333333337,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.004166666666666652,
+        0.04166666666666663
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.005026041666666536,
+      "auc_difference_ci95": [
+        0.001379557291666636,
+        0.011458333333333348
+      ],
+      "fixed_threshold_TPR_difference": 0.02083333333333337,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.004166666666666652,
+        0.04166666666666663
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.025,
+        0.025
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "identity",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 1.1102230246251565e-16,
+      "auc_difference_ci95": [
+        -0.00033854166666669183,
+        0.00028645833333340587
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.025,
+        0.025
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.00020833333333347692,
+      "auc_difference_ci95": [
+        -0.0008593749999999956,
+        0.00010416666666668295
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.038437500000000124,
+      "auc_difference_ci95": [
+        -0.05776171874999998,
+        -0.021328125000000028
+      ],
+      "fixed_threshold_TPR_difference": -0.18333333333333335,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.23750000000000004,
+        -0.12916666666666665
+      ],
+      "fixed_threshold_FPR_difference": 0.025,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.05625
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.03822916666666665,
+      "auc_difference_ci95": [
+        0.021220703125000014,
+        0.05755273437499994
+      ],
+      "fixed_threshold_TPR_difference": 0.18333333333333335,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.12916666666666665,
+        0.23750000000000004
+      ],
+      "fixed_threshold_FPR_difference": -0.025,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.05625,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -5.208333333317494e-05,
+      "auc_difference_ci95": [
+        -0.00026041666666665186,
+        0.0
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.01278645833333325,
+      "auc_difference_ci95": [
+        -0.0251829427083333,
+        -0.0031510416666666874
+      ],
+      "fixed_threshold_TPR_difference": -0.008333333333333304,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.025000000000000022,
+        0.008333333333333304
+      ],
+      "fixed_threshold_FPR_difference": 0.024999999999999994,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.006249999999999992,
+        0.05
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.012734375000000075,
+      "auc_difference_ci95": [
+        0.0031243489583333782,
+        0.02515624999999999
+      ],
+      "fixed_threshold_TPR_difference": 0.008333333333333304,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.008333333333333304,
+        0.025000000000000022
+      ],
+      "fixed_threshold_FPR_difference": -0.024999999999999994,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.05,
+        -0.006249999999999992
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.026640624999999973,
+      "auc_difference_ci95": [
+        0.016015624999999978,
+        0.03908984374999997
+      ],
+      "fixed_threshold_TPR_difference": 0.14583333333333337,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.10000000000000009,
+        0.1876041666666661
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.028541666666666687,
+      "auc_difference_ci95": [
+        0.016901041666666616,
+        0.0425032552083333
+      ],
+      "fixed_threshold_TPR_difference": 0.15833333333333333,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.11250000000000004,
+        0.20416666666666672
+      ],
+      "fixed_threshold_FPR_difference": 0.025,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.05625
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.001901041666666714,
+      "auc_difference_ci95": [
+        -0.004427083333333306,
+        5.208333333328874e-05
+      ],
+      "fixed_threshold_TPR_difference": -0.012499999999999956,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.029166666666666674,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": -0.025,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.05625,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.005963541666666794,
+      "auc_difference_ci95": [
+        0.001822916666666674,
+        0.012059244791666682
+      ],
+      "fixed_threshold_TPR_difference": 0.012499999999999956,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.029166666666666674
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.006614583333333424,
+      "auc_difference_ci95": [
+        0.002083333333333326,
+        0.013125651041666716
+      ],
+      "fixed_threshold_TPR_difference": 0.012499999999999956,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.029166666666666674
+      ],
+      "fixed_threshold_FPR_difference": 0.024999999999999994,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.006249999999999992,
+        0.05
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "jpeg",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.0006510416666666297,
+      "auc_difference_ci95": [
+        -0.0016145833333333082,
+        -7.812499999992895e-05
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": -0.024999999999999994,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.05,
+        -0.006249999999999992
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.00028645833333340587,
+      "auc_difference_ci95": [
+        -0.0010416666666667185,
+        0.0
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.04216145833333329,
+      "auc_difference_ci95": [
+        -0.060783203125000004,
+        -0.025180989583333417
+      ],
+      "fixed_threshold_TPR_difference": -0.1791666666666667,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.2333333333333334,
+        -0.125
+      ],
+      "fixed_threshold_FPR_difference": -0.006249999999999999,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.03125,
+        0.012500000000000004
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.041874999999999885,
+      "auc_difference_ci95": [
+        0.025077473958333284,
+        0.06059960937500006
+      ],
+      "fixed_threshold_TPR_difference": 0.1791666666666667,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.125,
+        0.2333333333333334
+      ],
+      "fixed_threshold_FPR_difference": 0.006249999999999999,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.012500000000000004,
+        0.03125
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -5.2083333333285964e-05,
+      "auc_difference_ci95": [
+        -0.0002350260416666749,
+        0.0
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.016406249999999956,
+      "auc_difference_ci95": [
+        -0.029794921874999995,
+        -0.004712239583333384
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.012500000000000011,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.018750000000000003,
+        0.05
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.01635416666666667,
+      "auc_difference_ci95": [
+        0.0046855468749999575,
+        0.029718750000000033
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": -0.012500000000000011,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.05,
+        0.018750000000000003
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.00033854166666669183,
+      "auc_difference_ci95": [
+        -0.0011458333333332904,
+        0.0
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.040156250000000004,
+      "auc_difference_ci95": [
+        -0.05916927083333337,
+        -0.02330664062500001
+      ],
+      "fixed_threshold_TPR_difference": -0.19166666666666665,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.25,
+        -0.13749999999999996
+      ],
+      "fixed_threshold_FPR_difference": -0.006249999999999999,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.03125,
+        0.012500000000000004
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.03981770833333331,
+      "auc_difference_ci95": [
+        0.023252604166666614,
+        0.05851692708333329
+      ],
+      "fixed_threshold_TPR_difference": 0.19166666666666665,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.13749999999999996,
+        0.25
+      ],
+      "fixed_threshold_FPR_difference": 0.006249999999999999,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.012500000000000004,
+        0.03125
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -5.2083333333396986e-05,
+      "auc_difference_ci95": [
+        -0.0002083333333333659,
+        0.0
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.017578125,
+      "auc_difference_ci95": [
+        -0.03216145833333328,
+        -0.006353515624999995
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.012500000000000067,
+        0.012500000000000067
+      ],
+      "fixed_threshold_FPR_difference": 0.012500000000000011,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.018750000000000003,
+        0.05
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "crop",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.017526041666666603,
+      "auc_difference_ci95": [
+        0.006276041666666732,
+        0.032110677083333324
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.012500000000000067,
+        0.012500000000000067
+      ],
+      "fixed_threshold_FPR_difference": -0.012500000000000011,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.05,
+        0.018750000000000003
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.0009114583333332815,
+      "auc_difference_ci95": [
+        -0.0029954427083333816,
+        0.0004954427083333232
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.052604166666666674,
+      "auc_difference_ci95": [
+        -0.07349479166666667,
+        -0.03137825520833334
+      ],
+      "fixed_threshold_TPR_difference": -0.16666666666666663,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.22499999999999998,
+        -0.11249999999999993
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.031250000000000014,
+        0.03749999999999999
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.05169270833333339,
+      "auc_difference_ci95": [
+        0.03119466145833338,
+        0.072630859375
+      ],
+      "fixed_threshold_TPR_difference": 0.16666666666666663,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.11249999999999993,
+        0.22499999999999998
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.03749999999999999,
+        0.031250000000000014
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.0007552083333334236,
+      "auc_difference_ci95": [
+        -0.00182356770833334,
+        -0.00010351562499991218
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.0780729166666666,
+      "auc_difference_ci95": [
+        -0.10961263020833323,
+        -0.049190104166666686
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.024999999999999967,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.006250000000000033,
+        0.0625
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "unmarked",
+      "backbone": "clip",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.07731770833333318,
+      "auc_difference_ci95": [
+        0.04859114583333332,
+        0.10890885416666664
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": -0.024999999999999967,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.0625,
+        0.006250000000000033
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.0007291666666666696,
+      "auc_difference_ci95": [
+        -0.0028912760416667017,
+        0.0009121093750000523
+      ],
+      "fixed_threshold_TPR_difference": -0.004166666666666652,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.012500000000000067,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.06497395833333353,
+      "auc_difference_ci95": [
+        -0.0873697916666667,
+        -0.04351432291666673
+      ],
+      "fixed_threshold_TPR_difference": -0.1791666666666667,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.23749999999999993,
+        -0.125
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.031250000000000014,
+        0.03749999999999999
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "backbone": "resnet",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.06424479166666686,
+      "auc_difference_ci95": [
+        0.042916666666666714,
+        0.08635611979166662
+      ],
+      "fixed_threshold_TPR_difference": 0.17500000000000004,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.12083333333333335,
+        0.2333333333333334
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.03749999999999999,
+        0.031250000000000014
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "gated-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.00028645833333329485,
+      "auc_difference_ci95": [
+        -0.0017187499999999911,
+        0.001094401041666667
+      ],
+      "fixed_threshold_TPR_difference": 0.0,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.0,
+      "fixed_threshold_FPR_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "fusion-minus-probe",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": -0.086796875,
+      "auc_difference_ci95": [
+        -0.12198046874999997,
+        -0.05530794270833335
+      ],
+      "fixed_threshold_TPR_difference": -0.004166666666666652,
+      "fixed_threshold_TPR_difference_ci95": [
+        -0.012500000000000067,
+        0.0
+      ],
+      "fixed_threshold_FPR_difference": 0.024999999999999967,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.006250000000000033,
+        0.0625
+      ],
+      "paired_source_draws": true
+    },
+    {
+      "attack": "lowres",
+      "AI_mark": "marked",
+      "backbone": "clip",
+      "comparison": "gated-minus-fusion",
+      "sources": 400,
+      "images": 400,
+      "auc_difference": 0.0865104166666667,
+      "auc_difference_ci95": [
+        0.054970703125000075,
+        0.12185156249999997
+      ],
+      "fixed_threshold_TPR_difference": 0.004166666666666652,
+      "fixed_threshold_TPR_difference_ci95": [
+        0.0,
+        0.012500000000000067
+      ],
+      "fixed_threshold_FPR_difference": -0.024999999999999967,
+      "fixed_threshold_FPR_difference_ci95": [
+        -0.0625,
+        0.006250000000000033
+      ],
+      "paired_source_draws": true
+    }
+  ]
+}

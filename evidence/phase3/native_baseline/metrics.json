@@ -1,0 +1,91 @@
+{
+  "overall": {
+    "native_auc": 0.6592881944444445,
+    "common256_jpeg95_auc": 0.4422743055555556,
+    "paired_auc_difference": 0.21701388888888895,
+    "sources": 192,
+    "real_sources": 96,
+    "ai_sources": 96,
+    "native_auc_ci95": [
+      0.5834364149305556,
+      0.7327501085069443
+    ],
+    "common256_jpeg95_auc_ci95": [
+      0.3639295789930555,
+      0.5284396701388889
+    ],
+    "paired_auc_difference_ci95": [
+      0.14734429253472214,
+      0.2914577907986109
+    ],
+    "native_threshold0": {
+      "fpr": 0.03125,
+      "tpr": 0.20833333333333334
+    },
+    "common256_jpeg95_threshold0": {
+      "fpr": 0.0,
+      "tpr": 0.0
+    }
+  },
+  "per_real_collection": {
+    "coco": {
+      "native_auc": 0.7530381944444444,
+      "common256_jpeg95_auc": 0.5084635416666667,
+      "paired_auc_difference": 0.24457465277777768,
+      "sources": 144,
+      "real_sources": 48,
+      "ai_sources": 96,
+      "native_auc_ci95": [
+        0.666015625,
+        0.8352918836805555
+      ],
+      "common256_jpeg95_auc_ci95": [
+        0.4142795138888889,
+        0.6061252170138889
+      ],
+      "paired_auc_difference_ci95": [
+        0.1582031250000001,
+        0.32986653645833325
+      ],
+      "native_threshold0": {
+        "fpr": 0.0,
+        "tpr": 0.20833333333333334
+      },
+      "common256_jpeg95_threshold0": {
+        "fpr": 0.0,
+        "tpr": 0.0
+      }
+    },
+    "openimages": {
+      "native_auc": 0.5655381944444445,
+      "common256_jpeg95_auc": 0.37608506944444436,
+      "paired_auc_difference": 0.18945312500000017,
+      "sources": 144,
+      "real_sources": 48,
+      "ai_sources": 96,
+      "native_auc_ci95": [
+        0.468310546875,
+        0.6592881944444444
+      ],
+      "common256_jpeg95_auc_ci95": [
+        0.2769097222222222,
+        0.48352322048611107
+      ],
+      "paired_auc_difference_ci95": [
+        0.09327256944444444,
+        0.2812608506944444
+      ],
+      "native_threshold0": {
+        "fpr": 0.0625,
+        "tpr": 0.20833333333333334
+      },
+      "common256_jpeg95_threshold0": {
+        "fpr": 0.0,
+        "tpr": 0.0
+      }
+    }
+  },
+  "no_test_tuning": true,
+  "cause_of_failures_confirmed": false,
+  "interpretation": "The paired preprocessing contrast jointly changes image size and JPEG re-encoding. No polarity reversal or selection based on the observed score is performed."
+}

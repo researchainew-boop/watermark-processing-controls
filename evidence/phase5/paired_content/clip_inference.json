@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-10-11T05:22:29.277430+00:00",
+  "manifest_sha256": "1df3ce0a4a2acce6c48c1d8a07d4c24df559b3fa6defac38282249d3d4321ec4",
+  "runtime_protocol_sha256": "d9499657fb58ea653a94aa6b355b8062795bff9a69030d020268489926b36d0d",
+  "model": "ViT-B-32 / GELU / OpenAI parameter checkpoint",
+  "preprocessing": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    <function _convert_to_rgb at 0x0000022AFF630CC0>\n    ToTensor()\n    Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711))\n)",
+  "anchor_relative_l2": [
+    1.6647668769752172e-06,
+    1.2088946441107938e-06,
+    1.9180386919651766e-06,
+    1.6160918919253865e-06
+  ],
+  "images": 1200,
+  "completed_at_utc": "2026-10-11T05:22:45.826433+00:00",
+  "embedding_sha256": "dc599e860df573c79cdb6084a8d67f188038beb9acf8448a2434f32f4263bc9a"
+}

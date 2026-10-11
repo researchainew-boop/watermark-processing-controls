@@ -1,0 +1,34 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "opencv-python-headless": "5.0.0.93",
+    "PyWavelets": "1.10.0",
+    "PyYAML": "6.0.3"
+  },
+  "input_sha256": {
+    "data\\manifest.csv": "7c5361d091364090d7604707a2156c1ab566c8ab921788f7af5bff562ea7e5d4",
+    "data\\manifest_derived.csv": "d62d3f2ca6d3fb62230a33b4d06b53f877917aec4089913be3ccd72d488a4618",
+    "configs\\study.yaml": "20f230b336391cd01b5209d6179c1ef3673ae43c271b67554b5ef1dfc4682d79",
+    "scripts\\prepare_conference.py": "711168b40b6257fc36abaa5143810236658f020f62908b0136edebd3fe0b8a88",
+    "outputs\\resnet_embeddings.npz": "ddc593320bb9dbb9bfc8f855e1ed63e2f909e45984c3551e36e36458db462eb4",
+    "outputs\\clip_train_embeddings.npz": "373b4ebbc3885d98185fa14cdba54a39b82ecd9e228e5b45161e91acbf27dd97",
+    "outputs\\clip_eval_embeddings.npz": "06bc0828450bcec544511e2e137a9baa0f9bf0c81e5a318692a87dc61738c109",
+    "outputs\\active_scores.csv": "eb2d90a7cd2e94ad53597057ce8301086c9a2ec64309c7fe6019b1431e955ea1",
+    "src\\aiwstudy\\evaluation.py": "84bc47ea32f6d2440642766e2f419b257cb6549790548b813efb784c695fee3d",
+    "src\\aiwstudy\\decision.py": "7e74d10adeb7786bc3cd9d0d7ec2b2defcdb560e33487333b0dc7a9c10b33ad9",
+    "src\\aiwstudy\\attacks.py": "51546649126dd0594c451e81885be32068c47e37aa08b1265238ca893476137d"
+  },
+  "notes": "Frozen embeddings and derived images reused from original run; all logistic probes and fusion refit after source filtering. No backbone fine-tuning. Selection and analyses are retrospective.",
+  "original_fit_script_sha256": "83c053f48e97954d2d8439e1dc5c70c45cd40f4dc287fb314deb180ef096e2d5",
+  "statistics_refresh": "Float64 linear decision scores for every logistic model; raw payload agreement for active. Probabilities, fits, fusion inputs and validation thresholds unchanged.",
+  "post_run_source_cleanup": {
+    "recorded_refresh_script_sha256": "6f7a0ae67044d90ee1fc4dace9d88e3ed0161f1708229eeb92f1bfc10b3f72c8",
+    "current_reproduction_script_sha256": "711168b40b6257fc36abaa5143810236658f020f62908b0136edebd3fe0b8a88",
+    "change": "Portable provenance-key lookup after the statistics run; no fitting, score, threshold or bootstrap logic changed."
+  }
+}

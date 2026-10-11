@@ -1,0 +1,36 @@
+{
+  "completed_at_utc": "2026-10-10T10:28:07.841062+00:00",
+  "fit_count": 10,
+  "calibration_policy_count": 90,
+  "CPU_only": true,
+  "test_threshold_tuning": false,
+  "earlier_heads_unchanged": true,
+  "completed_script_sha256": "c0bb871c07aed32a88f1d1e623378e6654ad83aca43b7a6ad493b505c0d3bf8b",
+  "output_sha256": {
+    "protocol.json": "8bcd10e73004978f45121e513a5fab897c5fbee66b2d4b37dbf6c58f1eb00658",
+    "source_roles.csv": "78adbbbb9bad2514eb6ffced6e7754eb3843d857d513e7446040e61f53671118",
+    "heads_locked.json": "001a9c691c4407a26aeae219381705b92bae14c08ca5f529c99e0b9b238ce94d",
+    "thresholds_locked.json": "8e732edb8642a4f41545ad98f86cae1c486d8ba4447fcab36c8650c21be80784",
+    "analysis_started.json": "cfb2e48df626607a4608cc3b19fa89098ce62defbd22269390c6582f902d3010",
+    "per_seed_metrics.csv": "78db7e7e5833e930b35618c8f4d6bdddbc1f3de50e5566a54f791520ccbe304f",
+    "mean_std_ci.csv": "c53c61d388f5e4337c3335e4e8bcb5952227b8762ee69a26e356c2ee8a942239",
+    "paired_policy_differences.csv": "7001f9cc1d7678bb0e857f0c476e2402ffb9745bfed78e347afa907df360c81c",
+    "summary.json": "88dc193c7f2f77660fb4da474bbc61fa2a846aaf62ce03ef6f5cab0a7df445e4",
+    "missing_features.json": "b1372b3df07100169531cf43e54521cf27c1132fb63c861b100be7338ade9e6a",
+    "calibration_extra_manifest.csv": "a4393773155c516fed330aed1b22c5fc83690e8d3e6b53392f4c258e36379449",
+    "source_event_interval_protocol.json": "aaa93093e00bd1acc6a8d9d5feb047a4f9278bb1804c86203aebb91e3250d2ed",
+    "source_event_intervals.csv": "7fb6597c8eaa96339854a47b846b1435b06bc8a8b42062c2fd4331602388c8fe"
+  },
+  "new_heads_sha256": {
+    "outputs/phase5/calibration/20260920/clip_fusion.npz": "af8db3f3472949a351fa490314fadba372f6681a10550e9d6458c6c6f50c678f",
+    "outputs/phase5/calibration/20260920/resnet_fusion.npz": "c9f5af977eb673a83ecc692a53a022cc04be155dd2af81e2e1bd2b8850eae3f6",
+    "outputs/phase5/calibration/20260921/clip_fusion.npz": "b10b981200006553e9bb76979a2ff6c37985f450eebb10dbbf9b93c9f115842f",
+    "outputs/phase5/calibration/20260921/resnet_fusion.npz": "6bc4b5bafc8ec49b6ab24addf372f9222885b926e58a042be1697ad45f9c691e",
+    "outputs/phase5/calibration/20260922/clip_fusion.npz": "747b5bda5bd5027dc46e0b09d080e3191245947f24d2b51965186c1bdc1ba178",
+    "outputs/phase5/calibration/20260922/resnet_fusion.npz": "c6db850e4835adaaa8776736020a72f408ba1bef813a8bcf58f0823cae02ce98",
+    "outputs/phase5/calibration/20260923/clip_fusion.npz": "686c95b78f5c05ddcb3f5fdbbe2634cba6dba0e0d6d0ec3d673b26ea27676db7",
+    "outputs/phase5/calibration/20260923/resnet_fusion.npz": "81ce9a63b26e72229a418695a03007086e265387e1540f20f7c2110924fdefb5",
+    "outputs/phase5/calibration/20260924/clip_fusion.npz": "b69265c7345a984c872098399e590c7f762f9ad45dbbe4b8a07d1a03a43b948a",
+    "outputs/phase5/calibration/20260924/resnet_fusion.npz": "d70129a89633e257812f08c1227a326baf472a0ad00a61ef7fb4f4ab4e959b8d"
+  }
+}

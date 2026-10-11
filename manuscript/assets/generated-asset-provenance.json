@@ -1,0 +1,137 @@
+{
+  "project_generated": true,
+  "dataset_images_used": false,
+  "purpose": "Paper pipeline illustration only; excluded from all benchmark measurements",
+  "creation_tool": "OpenAI built-in image generation",
+  "mode": "new original image",
+  "creation_prompt": "Create a single original photorealistic image for an academic image watermark experiment illustration. A blue glazed ceramic cup, a ripe pear, and a folded woven cloth on a weathered wooden table beside a garden window. Natural side lighting, visible fine wood grain and ceramic texture, soft green foliage in the background. Balanced composition with all main objects in the central area. Square composition. No people, no lettering, no logos, no watermarks, no border, no infographic or labels. This will be processed afterward by the actual research algorithms, so provide only the clean original image.",
+  "original_image": "manuscript/assets/generated-original.png",
+  "original_file_sha256": "7e2596b5fd581b3947332fc30705696171645bd7792180b915d4167841acddca",
+  "payload": "1011010010110100",
+  "watermark": "Project DWT-DCT implementation, strength12, verification>=13/16",
+  "standardization": "OpenCV resize INTER_AREA to256x256",
+  "jpeg50": "Project JPEG severity2: OpenCV quality50",
+  "crop": "Project crop severity1:12pixels from each256pixel side, INTER_LINEAR restore",
+  "lowres32": "Project lowres severity2: INTER_AREA to32x32, INTER_LINEAR restore",
+  "diffusion": "Same cached SD1.5-family img2img protocol as Experiment3, strength0.50",
+  "figure_images": [
+    {
+      "condition": "original",
+      "path": "manuscript/assets/example_original.png",
+      "file_sha256": "6b1e5401ff8064a9ad0974f04f32ecdc0f41612924ef28909fb7169c39e0e31c",
+      "decoded_bits": "0111001110001101",
+      "agreement_bits": 7,
+      "verified": false,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "condition": "marked",
+      "path": "manuscript/assets/example_marked.png",
+      "file_sha256": "32af9baf82364eed112d36741379919ea69a1aabf7deabcebf66e97d71aeac6f",
+      "decoded_bits": "1011010010110100",
+      "agreement_bits": 16,
+      "verified": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "condition": "jpeg50",
+      "path": "manuscript/assets/example_jpeg50.png",
+      "file_sha256": "f32f7b773e61c432d3553a156096845913cb56f0f03f67222616bf91158b5fd1",
+      "decoded_bits": "1011010010110100",
+      "agreement_bits": 16,
+      "verified": true,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "condition": "crop",
+      "path": "manuscript/assets/example_crop.png",
+      "file_sha256": "0dde9aefb4a1069593715b57e976c6c1857e25ca15b235e2dda66337779503ac",
+      "decoded_bits": "1101101011000011",
+      "agreement_bits": 5,
+      "verified": false,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "condition": "lowres32",
+      "path": "manuscript/assets/example_lowres32.png",
+      "file_sha256": "614baaab1d64c8836500c1c4f5f71935d40cc8ba3503fe6d2e3605deb016a72f",
+      "decoded_bits": "0101111010111110",
+      "agreement_bits": 9,
+      "verified": false,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "condition": "diffusion0p50",
+      "path": "manuscript/assets/example_diffusion0p50.png",
+      "file_sha256": "c3cbd0f9fddfb80a8f39e6f092f51ca81d4360024a00e5268a2a19fd78359398",
+      "decoded_bits": "1001100000000010",
+      "agreement_bits": 8,
+      "verified": false,
+      "size": [
+        256,
+        256
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "path": "manuscript/assets/generated-original.png",
+      "sha256": "7e2596b5fd581b3947332fc30705696171645bd7792180b915d4167841acddca"
+    },
+    {
+      "path": "manuscript/assets/example_original.png",
+      "sha256": "6b1e5401ff8064a9ad0974f04f32ecdc0f41612924ef28909fb7169c39e0e31c"
+    },
+    {
+      "path": "manuscript/assets/example_marked.png",
+      "sha256": "32af9baf82364eed112d36741379919ea69a1aabf7deabcebf66e97d71aeac6f"
+    },
+    {
+      "path": "manuscript/assets/example_jpeg50.png",
+      "sha256": "f32f7b773e61c432d3553a156096845913cb56f0f03f67222616bf91158b5fd1"
+    },
+    {
+      "path": "manuscript/assets/example_crop.png",
+      "sha256": "0dde9aefb4a1069593715b57e976c6c1857e25ca15b235e2dda66337779503ac"
+    },
+    {
+      "path": "manuscript/assets/example_lowres32.png",
+      "sha256": "614baaab1d64c8836500c1c4f5f71935d40cc8ba3503fe6d2e3605deb016a72f"
+    },
+    {
+      "path": "manuscript/assets/example_diffusion0p50.png",
+      "sha256": "c3cbd0f9fddfb80a8f39e6f092f51ca81d4360024a00e5268a2a19fd78359398"
+    },
+    {
+      "path": "manuscript/assets/example_measurements.json",
+      "sha256": "cd8e4948feb5e282806071d407334c2ba57a4db2387d9ea8219402a2e4a80b68"
+    },
+    {
+      "path": "manuscript/assets/pipeline_examples.pdf",
+      "sha256": "17ae1988762b128552a521a685971b116939dbd0da747d45fe0a1551dbd08063"
+    },
+    {
+      "path": "manuscript/assets/pipeline_examples.png",
+      "sha256": "aac4a5aad3462a42116093e3834a691d1f255d816f21f94de087e9879a4cb7ef"
+    }
+  ],
+  "figure_example_only": true,
+  "excluded_from_quantitative_benchmark": true,
+  "driver_sha256": "4383ad9fb46801b6bccdf1e5634703782a87635a6de8041c88441d60230c03b8",
+  "pipeline_figure_driver_sha256": "6955fc7e820cd847b10ce7e4d563a726ee8de8cb2166dbcaeb53417affaec915"
+}
