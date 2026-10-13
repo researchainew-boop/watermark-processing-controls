@@ -1,0 +1,66 @@
+{
+  "payload16": "1011010010110100",
+  "method": "dwt_dct",
+  "strength": 12.0,
+  "figure_example_only": true,
+  "excluded_from_quantitative_benchmark": true,
+  "diffusion_parameters": {
+    "cached_revision": "1e9f017a7b1eaefb63a1900ea6c5953d2739fd21",
+    "scheduler": "DDIM",
+    "num_inference_steps": 20,
+    "strength": 0.5,
+    "guidance_scale": 1.0,
+    "prompt": "",
+    "seed": 20261009
+  },
+  "images": [
+    {
+      "condition": "original",
+      "label": "Original",
+      "path": "manuscript/assets/example_original.png",
+      "bits": "0111001110001101",
+      "agreement_count": 7,
+      "verified": false
+    },
+    {
+      "condition": "marked",
+      "label": "Marked",
+      "path": "manuscript/assets/example_marked.png",
+      "bits": "1011010010110100",
+      "agreement_count": 16,
+      "verified": true
+    },
+    {
+      "condition": "jpeg50",
+      "label": "JPEG 50",
+      "path": "manuscript/assets/example_jpeg50.png",
+      "bits": "1011010010110100",
+      "agreement_count": 16,
+      "verified": true
+    },
+    {
+      "condition": "crop",
+      "label": "Crop (12 px)",
+      "path": "manuscript/assets/example_crop.png",
+      "bits": "1101101011000011",
+      "agreement_count": 5,
+      "verified": false
+    },
+    {
+      "condition": "lowres32",
+      "label": "Low-res 32",
+      "path": "manuscript/assets/example_lowres32.png",
+      "bits": "0101111010111110",
+      "agreement_count": 9,
+      "verified": false
+    },
+    {
+      "condition": "diffusion0p50",
+      "label": "Diffusion 0.50",
+      "path": "manuscript/assets/example_diffusion0p50.png",
+      "bits": "1001100000000010",
+      "agreement_count": 8,
+      "verified": false
+    }
+  ]
+}

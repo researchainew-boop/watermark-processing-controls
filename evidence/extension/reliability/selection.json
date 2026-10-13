@@ -1,0 +1,207 @@
+{
+  "choices": {
+    "resnet": {
+      "full": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.11780694732476302,
+          "held_source_auc": 0.9911037170848768
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.11780694732476302,
+            "held_source_auc": 0.9911037170848768
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.1244356597689181,
+            "held_source_auc": 0.9892866962480451
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.12465247161580548,
+            "held_source_auc": 0.989138728866198
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.12466608326157295,
+            "held_source_auc": 0.989125932944812
+          }
+        ]
+      },
+      "payload_only": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.12309110007272374,
+          "held_source_auc": 0.98988545230767
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.12309110007272374,
+            "held_source_auc": 0.98988545230767
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.12448772855590859,
+            "held_source_auc": 0.9892526823624695
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.12465425141050945,
+            "held_source_auc": 0.9891365884575298
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.1246662199754097,
+            "held_source_auc": 0.989125560699826
+          }
+        ]
+      },
+      "uncertainty_only": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.12123075854576038,
+          "held_source_auc": 0.9902394572891454
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.12123075854576038,
+            "held_source_auc": 0.9902394572891454
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.12465749540358825,
+            "held_source_auc": 0.9891355182531958
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.12466659398213797,
+            "held_source_auc": 0.9891252349854636
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.12466743245924122,
+            "held_source_auc": 0.9891245835567385
+          }
+        ]
+      }
+    },
+    "clip": {
+      "full": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.03524350576031592,
+          "held_source_auc": 0.9990870691723779
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.03524350576031592,
+            "held_source_auc": 0.9990870691723779
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.03687265524975672,
+            "held_source_auc": 0.998860837282271
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.0369287106247001,
+            "held_source_auc": 0.9988553001381076
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.036933153681142826,
+            "held_source_auc": 0.9988539042194108
+          }
+        ]
+      },
+      "payload_only": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.03662129435011163,
+          "held_source_auc": 0.998926771175377
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.03662129435011163,
+            "held_source_auc": 0.998926771175377
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.03690027784287668,
+            "held_source_auc": 0.9988606511597782
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.03693046801318034,
+            "held_source_auc": 0.998855811974963
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.036933320978467535,
+            "held_source_auc": 0.9988539972806573
+          }
+        ]
+      },
+      "uncertainty_only": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.03609830189124305,
+          "held_source_auc": 0.9989352862794266
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.03609830189124305,
+            "held_source_auc": 0.9989352862794266
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.03691463014857067,
+            "held_source_auc": 0.9988533458519322
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.036931994406914706,
+            "held_source_auc": 0.9988551140156147
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.03693347266711084,
+            "held_source_auc": 0.9988538576887876
+          }
+        ]
+      }
+    }
+  },
+  "thresholds": {
+    "resnet": {
+      "calibrated_passive": 0.5292869997616417,
+      "refit_static_fusion": 0.4600671039099725,
+      "constant_mixture": 0.4716145578309056,
+      "logit_payload_fusion": 0.5015719496108079,
+      "reliability_mixture": 0.4900588328990315,
+      "payload_only_gate": 0.40893102442846685,
+      "uncertainty_only_gate": 0.43590726106954236,
+      "probe": 0.5688569,
+      "original_fusion": 0.4600671222132044
+    },
+    "clip": {
+      "calibrated_passive": 0.4414977103398489,
+      "refit_static_fusion": 0.21099856232583192,
+      "constant_mixture": 0.18800771996226448,
+      "logit_payload_fusion": 0.40228565620375095,
+      "reliability_mixture": 0.33491035610339387,
+      "payload_only_gate": 0.3402860399032702,
+      "uncertainty_only_gate": 0.20365324954645708,
+      "probe": 0.43839988,
+      "original_fusion": 0.21099856169799
+    }
+  },
+  "test_was_not_loaded_during_selection": true
+}

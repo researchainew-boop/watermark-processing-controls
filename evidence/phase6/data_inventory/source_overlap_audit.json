@@ -1,0 +1,11 @@
+{
+  "recorded_at_utc": "2026-10-11T13:15:24.047180+00:00",
+  "preceding_records": 11505,
+  "selected_source_count": 1800,
+  "public_ID_overlap": 0,
+  "exact_native_or_direct256_pixel_overlap": 0,
+  "average_hash_HD_le2_overlap": 0,
+  "minimum_average_hash_HD_to_preceding_or_earlier_selected": 3,
+  "exclusion_manifest_sha256": "ed5be19861bab28a18928cf97b1a0211735bc5eb195b48b2934616844a5374a1",
+  "scores_observed": false
+}

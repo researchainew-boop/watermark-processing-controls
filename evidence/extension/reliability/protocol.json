@@ -1,0 +1,47 @@
+{
+  "design": "Smooth validation-trained mixture of calibrated passive and static-fusion experts",
+  "retrospective": true,
+  "limitations": "Designed after previous test results were examined; grouped CV prevents extension selection on held-out rows but does not create a fresh untouched test or establish novelty.",
+  "seed": 20261008,
+  "folds": 5,
+  "selection_metric": "mean held-source class-balanced log loss",
+  "ridge_candidates": [
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "gate_features": [
+    "payload agreement centered on 0.5",
+    "absolute passive logit normalized by training-fold 90th percentile",
+    "their interaction"
+  ],
+  "forbidden_fit_features": [
+    "attack identity",
+    "generator identity",
+    "test labels"
+  ],
+  "held_out_attacks": [
+    [
+      "lowres",
+      2
+    ],
+    [
+      "regenerate",
+      2
+    ],
+    [
+      "spectral",
+      1
+    ]
+  ],
+  "held_out_generator": "midjourney",
+  "bootstrap_samples": 2000,
+  "validation_input_sha256": "dc520f804cc18a971ff16d4da8e80b041645104e3dcc2e707afa208a3daa58ef",
+  "script_sha256": "2861c7385ab088bfac7ee3addf3b89817c1d3008246fcd80d8f8e01debd7a658",
+  "falsifiable_criteria": [
+    "Greater full-test ROC-AUC than passive alone",
+    "No more than 0.005 lower AUC than passive on the prior reduced-recovery diagnostic slice",
+    "Compare against logit+payload logistic and constant-mixture baselines; report failures"
+  ]
+}

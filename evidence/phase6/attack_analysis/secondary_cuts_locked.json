@@ -1,0 +1,1655 @@
+{
+  "locked_at_utc": "2026-10-12T16:26:18.467315+00:00",
+  "inputs": {
+    "script_sha256": "ccdc62702a2373667d3456b25188e3aee9b468441ff43683effdd4b93095444e",
+    "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+    "model_fit_sha256": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+    "calibration_features_sha256": "02eeef842fdd574ef6ee391babd46ae5292f5d26e43f7d1f981c928c7008beda"
+  },
+  "conditions": [
+    "waves_pgd8_raw",
+    "waves_pgd8_budget35",
+    "waves_reconstruction_q3_raw",
+    "waves_reconstruction_q3_budget35",
+    "sd15_ddim_s005_raw",
+    "sd15_ddim_s005_budget35",
+    "noise6_seed20261011",
+    "noise6_seed20261012",
+    "noise6_seed20261013"
+  ],
+  "sources": 100,
+  "policies": {
+    "dwt_dct/resnet": {
+      "hard_13_gate": {
+        "threshold": 36.849687825353165,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.10638289984994
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.849687825353165
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.742160014631565
+      },
+      "no_full_match": {
+        "threshold": 36.861502100704264,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.111839292067985
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.861502100704264
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.73517267751585
+      },
+      "no_null": {
+        "threshold": 36.8504029036503,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.117888056068606
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.8504029036503
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.6280934689682
+      },
+      "no_pair": {
+        "threshold": 36.862732166233336,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.1199261847309225
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.862732166233336
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.745066942964186
+      },
+      "no_stability": {
+        "threshold": 36.85523012712658,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.117242192856213
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.85523012712658
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.708961975089
+      },
+      "old_capped_positive": {
+        "threshold": 36.849687825353165,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.10638289984994
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.849687825353165
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.742160014631565
+      },
+      "old_reliability_mixture": {
+        "threshold": 10.00107163264505,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.763325120955013
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 10.00107163264505
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0011111111111111111,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 10.58274380742756
+      },
+      "primary": {
+        "threshold": 36.86158119682368,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.118543330671356
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.86158119682368
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.74402408302301
+      },
+      "probe": {
+        "threshold": 36.849687825353165,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.10638289984994
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.849687825353165
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.742160014631565
+      },
+      "simple_confidence": {
+        "threshold": 37.099687825353165,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.10638289984994
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 37.099687825353165
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.589057122792475
+      },
+      "static_fusion": {
+        "threshold": 2.1356175243378552,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.5278001475811
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.1356175243378552
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 2.766343080437082
+      },
+      "unconstrained_full_logistic": {
+        "threshold": 14.546316517949165,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.0326000502135422
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 14.546316517949165
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 15.850860634854351
+      },
+      "watermark_only_agreement": {
+        "threshold": 0.875,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.8125
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.875
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0,
+          "real_source_fpr": 0.0,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.1875
+      },
+      "watermark_only_full_match": {
+        "threshold": 0.0,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.0
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.0
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0,
+          "real_source_fpr": 0.0,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.0
+      },
+      "watermark_only_margin": {
+        "threshold": 0.5303227217924233,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.3937446141357922
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.5303227217924233
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.015555555555555553,
+          "real_source_fpr": 0.02,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.31775886471213716
+      }
+    },
+    "dwt_dct/clip": {
+      "hard_13_gate": {
+        "threshold": 15.30978556785144,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.816319726500656
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.30978556785144
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.87056969433472
+      },
+      "no_full_match": {
+        "threshold": 15.32584094709585,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.82629834726585
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.32584094709585
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.877674713820255
+      },
+      "no_null": {
+        "threshold": 15.440064415556662,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.8298059764456895
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.440064415556662
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.97655673538249
+      },
+      "no_pair": {
+        "threshold": 15.32456914361841,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.825011029392949
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.32456914361841
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.86766807657846
+      },
+      "no_stability": {
+        "threshold": 15.34699772145446,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.8604924329781896
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.34699772145446
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.893151066178664
+      },
+      "old_capped_positive": {
+        "threshold": 15.30978556785144,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.816319726500656
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.30978556785144
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.87056969433472
+      },
+      "old_reliability_mixture": {
+        "threshold": 2.737979418952026,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.3333009386063148
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.737979418952026
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.003333333333333333,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 6.887829344004019
+      },
+      "primary": {
+        "threshold": 15.32869110892879,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.8264114262050164
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.32869110892879
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.875527653649357
+      },
+      "probe": {
+        "threshold": 15.30978556785144,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.816319726500656
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.30978556785144
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.87056969433472
+      },
+      "simple_confidence": {
+        "threshold": 15.639768828622255,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 3.191319726500656
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.639768828622255
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.825602184819655
+      },
+      "static_fusion": {
+        "threshold": 2.3120560026377994,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.2369192943236427
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.3120560026377994
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0011111111111111111,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 6.956603194248261
+      },
+      "unconstrained_full_logistic": {
+        "threshold": 3.6215310510114636,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": -1.2184597624001523
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 3.6215310510114636
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 6.847892999341521
+      },
+      "watermark_only_agreement": {
+        "threshold": 0.875,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.8125
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.875
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0,
+          "real_source_fpr": 0.0,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.1875
+      },
+      "watermark_only_full_match": {
+        "threshold": 0.0,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.0
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.0
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0,
+          "real_source_fpr": 0.0,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.0
+      },
+      "watermark_only_margin": {
+        "threshold": 0.5303227217924233,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.3937446141357922
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.5303227217924233
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.015555555555555553,
+          "real_source_fpr": 0.02,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.31775886471213716
+      }
+    },
+    "trustmark/resnet": {
+      "hard_13_gate": {
+        "threshold": 36.849687825353165,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.10638289984994
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.849687825353165
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.742160014631565
+      },
+      "no_full_match": {
+        "threshold": 36.85295162805112,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.114798394732527
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.85295162805112
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.736524627377136
+      },
+      "no_null": {
+        "threshold": 36.85004401381419,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.131775131132974
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.85004401381419
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.72847293393141
+      },
+      "no_pair": {
+        "threshold": 36.85119215316816,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.1127992340953075
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.85119215316816
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.73874032297856
+      },
+      "no_stability": {
+        "threshold": 36.85223036207051,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.116548498997483
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.85223036207051
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.739367527720105
+      },
+      "old_capped_positive": {
+        "threshold": 36.849687825353165,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.10638289984994
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.849687825353165
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.71108512842972
+      },
+      "old_reliability_mixture": {
+        "threshold": 10.698248214187407,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.8858909616924766
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 10.698248214187407
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0011111111111111111,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 11.28281209533189
+      },
+      "primary": {
+        "threshold": 36.8516899875227,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.11338061227504
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.8516899875227
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.73929415933948
+      },
+      "probe": {
+        "threshold": 36.849687825353165,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.10638289984994
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 36.849687825353165
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.742160014631565
+      },
+      "simple_confidence": {
+        "threshold": 37.193437825353165,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 6.41888289984994
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 37.193437825353165
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 36.82430405893936
+      },
+      "static_fusion": {
+        "threshold": 1.9461950167411204,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.756217008617218
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.9461950167411204
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.003333333333333333,
+          "real_source_fpr": 0.02,
+          "unmarked_groups": []
+        },
+        "abstention_width": 2.5653547422111096
+      },
+      "unconstrained_full_logistic": {
+        "threshold": 14.779913402879185,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.8214092537198563
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 14.779913402879185
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 16.362603999267805
+      },
+      "watermark_only_agreement": {
+        "threshold": 0.875,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.875
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.8125
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0,
+          "real_source_fpr": 0.0,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.1875
+      },
+      "watermark_only_full_match": {
+        "threshold": 0.0,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.0
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.0
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0,
+          "real_source_fpr": 0.0,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.0
+      },
+      "watermark_only_margin": {
+        "threshold": 0.5018355363923994,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.5018355363923994
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.4170871410246928
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0044444444444444444,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.3629002630234108
+      }
+    },
+    "trustmark/clip": {
+      "hard_13_gate": {
+        "threshold": 15.30978556785144,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.816319726500656
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.30978556785144
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.87056969433472
+      },
+      "no_full_match": {
+        "threshold": 15.334484097913952,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.8497907548878274
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.334484097913952
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.874258610116346
+      },
+      "no_null": {
+        "threshold": 15.338834643101078,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.882932601866703
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.338834643101078
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.88785395986834
+      },
+      "no_pair": {
+        "threshold": 15.330289663942802,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.8453432727628565
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.330289663942802
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.88323485499708
+      },
+      "no_stability": {
+        "threshold": 15.32120161790849,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.8425565792766094
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.32120161790849
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.877266152549524
+      },
+      "old_capped_positive": {
+        "threshold": 15.30978556785144,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.816319726500656
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.30978556785144
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.87056969433472
+      },
+      "old_reliability_mixture": {
+        "threshold": 2.592170804199018,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.7334308510105587
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.592170804199018
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0044444444444444444,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 6.7808767309991484
+      },
+      "primary": {
+        "threshold": 15.319595021862416,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.8355851436780393
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.319595021862416
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.87702140505069
+      },
+      "probe": {
+        "threshold": 15.30978556785144,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.816319726500656
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.30978556785144
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.87056969433472
+      },
+      "simple_confidence": {
+        "threshold": 15.49728556785144,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 3.331944726500656
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 15.49728556785144
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0077777777777777776,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 17.752877913379237
+      },
+      "static_fusion": {
+        "threshold": 2.0288441956941043,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 1.6457257569504882
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 2.0288441956941043
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0044444444444444444,
+          "real_source_fpr": 0.02,
+          "unmarked_groups": []
+        },
+        "abstention_width": 6.681514136818946
+      },
+      "unconstrained_full_logistic": {
+        "threshold": 3.4684447629882484,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": -0.6320310243228462
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 3.4684447629882484
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0022222222222222222,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 6.590309694629124
+      },
+      "watermark_only_agreement": {
+        "threshold": 0.875,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.875
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.8125
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0,
+          "real_source_fpr": 0.0,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.1875
+      },
+      "watermark_only_full_match": {
+        "threshold": 0.0,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.0
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.0
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0,
+          "real_source_fpr": 0.0,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.0
+      },
+      "watermark_only_margin": {
+        "threshold": 0.5018355363923994,
+        "strict_exceedance": true,
+        "collection_cuts": [
+          {
+            "collection": "coco",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.5018355363923994
+          },
+          {
+            "collection": "openimages",
+            "sources": 50,
+            "rank": 49,
+            "threshold": 0.4170871410246928
+          }
+        ],
+        "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+        "calibration_rates": {
+          "marked_tpr": null,
+          "unmarked_tpr": null,
+          "real_image_fpr": 0.0044444444444444444,
+          "real_source_fpr": 0.01,
+          "unmarked_groups": []
+        },
+        "abstention_width": 0.3629002630234108
+      }
+    }
+  },
+  "test_read": false,
+  "secondary_only": true,
+  "scope": "Input-source provenance after attacks, including diffusion-reconstructed photographs; this is not a camera-origin claim.",
+  "no_primary_threshold_changes": true
+}

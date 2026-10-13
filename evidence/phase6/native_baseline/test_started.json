@@ -1,0 +1,14 @@
+{
+  "started_at_utc": "2026-10-12T11:53:44.920222+00:00",
+  "role": "test",
+  "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+  "manifest_sha256": "28d5ed8a82adfdb9f40de4d29746ad74751d0b6b340220a752bd8994f95c9d75",
+  "rows": 2000,
+  "device": "cuda",
+  "batch_size": 4,
+  "block_size": 128,
+  "models_refitted": false,
+  "polarity_retuned": false,
+  "dtype": "float32",
+  "plan_sha256": "3ef1bf2f7ba26adc1fd2f60a032836c60552ef671f320e2bb806a6d670deff09"
+}

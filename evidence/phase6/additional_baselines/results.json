@@ -1,0 +1,4623 @@
+{
+  "secondary_only": true,
+  "bootstrap_samples": 2000,
+  "original_primary_comparator_unchanged": true,
+  "systems": {
+    "dwt_dct/resnet": {
+      "probe": {
+        "marked_tpr": 0.024722222222222222,
+        "unmarked_tpr": 0.024583333333333332,
+        "real_image_fpr": 0.02125,
+        "real_source_fpr": 0.0375,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.05,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.045,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.06,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.024722222222222222,
+            "ci95": [
+              0.015833333333333335,
+              0.034166666666666665
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.024583333333333332,
+            "ci95": [
+              0.015416666666666667,
+              0.035
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.02125,
+            "ci95": [
+              0.010625,
+              0.03375
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.0375,
+            "ci95": [
+              0.02,
+              0.0575
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.024583333333333332,
+              "ci95": [
+                0.015416666666666667,
+                0.035
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.024618055555555553,
+              "ci95": [
+                0.015554687499999999,
+                0.03455121527777777
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.024652777777777777,
+              "ci95": [
+                0.015694444444444445,
+                0.03423784722222221
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.024687499999999998,
+              "ci95": [
+                0.01572916666666667,
+                0.03406510416666665
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.024722222222222222,
+              "ci95": [
+                0.015833333333333335,
+                0.034166666666666665
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "abstention_width": 7.063068793084226,
+          "calibration_rates": {
+            "marked_tpr": null,
+            "real_image_fpr": 0.014375,
+            "real_source_fpr": 0.02625,
+            "unmarked_groups": [],
+            "unmarked_tpr": null
+          },
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 3.90627985812192
+            },
+            {
+              "collection": "openimages",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 7.055312233186465
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+          "strict_exceedance": true,
+          "threshold": 7.055312233186465
+        }
+      },
+      "primary": {
+        "marked_tpr": 0.46180555555555564,
+        "unmarked_tpr": 0.024583333333333332,
+        "real_image_fpr": 0.02125,
+        "real_source_fpr": 0.0375,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.05,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.045,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.06,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.46180555555555564,
+            "ci95": [
+              0.45069444444444445,
+              0.47277777777777774
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.4370833333333333,
+              "ci95": [
+                0.4254131944444444,
+                0.4483333333333333
+              ],
+              "one_sided_lower95": 0.4275
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.43708333333333343,
+                "ci95": [
+                  0.4254131944444444,
+                  0.4483333333333333
+                ]
+              },
+              "full_message_union": {
+                "estimate": -0.02999999999999997,
+                "ci95": [
+                  -0.03889236111111119,
+                  -0.021663194444444412
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.4055555555555556,
+                "ci95": [
+                  0.39166666666666666,
+                  0.41902777777777783
+                ]
+              }
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.024583333333333332,
+            "ci95": [
+              0.015416666666666667,
+              0.035
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.0012499999999999976,
+                "ci95": [
+                  -0.0008333333333333318,
+                  0.003333333333333334
+                ]
+              }
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.02125,
+            "ci95": [
+              0.010625,
+              0.03375
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.0012500000000000011,
+                "ci95": [
+                  0.0,
+                  0.0031250000000000028
+                ]
+              }
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.0375,
+            "ci95": [
+              0.02,
+              0.0575
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.024583333333333332,
+              "ci95": [
+                0.015416666666666667,
+                0.035
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.13388888888888892,
+              "ci95": [
+                0.12562326388888886,
+                0.14284895833333333
+              ],
+              "gain_vs_probe": 0.10927083333333337,
+              "gain_ci95": [
+                0.1063532986111111,
+                0.11208333333333333
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.2431944444444445,
+              "ci95": [
+                0.23465104166666662,
+                0.2517361111111111
+              ],
+              "gain_vs_probe": 0.21854166666666672,
+              "gain_ci95": [
+                0.2127065972222222,
+                0.22416666666666665
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.3525000000000001,
+              "ci95": [
+                0.343125,
+                0.36166666666666664
+              ],
+              "gain_vs_probe": 0.3278125000000001,
+              "gain_ci95": [
+                0.31905989583333333,
+                0.33625
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.46180555555555564,
+              "ci95": [
+                0.45069444444444445,
+                0.47277777777777774
+              ],
+              "gain_vs_probe": 0.43708333333333343,
+              "gain_ci95": [
+                0.4254131944444444,
+                0.4483333333333333
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "abstention_width": 7.064600266490586,
+          "calibration_rates": {
+            "marked_tpr": null,
+            "real_image_fpr": 0.014375,
+            "real_source_fpr": 0.02625,
+            "unmarked_groups": [],
+            "unmarked_tpr": null
+          },
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 3.912814812961492
+            },
+            {
+              "collection": "openimages",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 7.071205011164575
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+          "strict_exceedance": true,
+          "threshold": 7.071205011164575
+        }
+      },
+      "full_message_union": {
+        "marked_tpr": 0.4918055555555556,
+        "unmarked_tpr": 0.024583333333333332,
+        "real_image_fpr": 0.02125,
+        "real_source_fpr": 0.0375,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.05,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.045,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.06,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.4918055555555556,
+            "ci95": [
+              0.48457986111111107,
+              0.49902777777777774
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.46708333333333335,
+              "ci95": [
+                0.45888888888888885,
+                0.47513888888888883
+              ],
+              "one_sided_lower95": 0.46
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.024583333333333332,
+            "ci95": [
+              0.015416666666666667,
+              0.035
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.02125,
+            "ci95": [
+              0.010625,
+              0.03375
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.0375,
+            "ci95": [
+              0.02,
+              0.0575
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.024583333333333332,
+              "ci95": [
+                0.015416666666666667,
+                0.035
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.1413888888888889,
+              "ci95": [
+                0.13340277777777776,
+                0.15000086805555554
+              ],
+              "gain_vs_probe": 0.11677083333333335,
+              "gain_ci95": [
+                0.11472222222222223,
+                0.1187847222222222
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.25819444444444445,
+              "ci95": [
+                0.25104166666666666,
+                0.26590277777777777
+              ],
+              "gain_vs_probe": 0.23354166666666668,
+              "gain_ci95": [
+                0.22944444444444445,
+                0.2375694444444444
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.37500000000000006,
+              "ci95": [
+                0.36822916666666666,
+                0.38208333333333333
+              ],
+              "gain_vs_probe": 0.3503125000000001,
+              "gain_ci95": [
+                0.3441666666666666,
+                0.3563541666666666
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.4918055555555556,
+              "ci95": [
+                0.48457986111111107,
+                0.49902777777777774
+              ],
+              "gain_vs_probe": 0.4670833333333334,
+              "gain_ci95": [
+                0.4588888888888889,
+                0.4751388888888888
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "threshold": 0.9991379305089417,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.980281449050356
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9991379305089417
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        }
+      },
+      "tuned_confidence": {
+        "marked_tpr": 0.05625,
+        "unmarked_tpr": 0.023333333333333334,
+        "real_image_fpr": 0.02,
+        "real_source_fpr": 0.0375,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.005,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.035,
+            "tpr_minus_probe": 0.005,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.045,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.04,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.055,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.05625,
+            "ci95": [
+              0.042916666666666665,
+              0.06958333333333333
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.03152777777777777,
+              "ci95": [
+                0.02346875,
+                0.040138888888888884
+              ],
+              "one_sided_lower95": 0.024444444444444446
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.023333333333333334,
+            "ci95": [
+              0.014583333333333334,
+              0.03334374999999994
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": -0.00125,
+              "ci95": [
+                -0.0033333333333333335,
+                0.0008333333333333334
+              ],
+              "one_sided_lower95": -0.002916666666666667
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.02,
+            "ci95": [
+              0.01,
+              0.031875
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": -0.00125,
+              "ci95": [
+                -0.003125,
+                0.0
+              ],
+              "one_sided_lower95": -0.003125
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.0375,
+            "ci95": [
+              0.02,
+              0.0575
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.023333333333333334,
+              "ci95": [
+                0.014583333333333334,
+                0.03334374999999994
+              ],
+              "gain_vs_probe": -0.0012499999999999976,
+              "gain_ci95": [
+                -0.003333333333333334,
+                0.0008333333333333318
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.0315625,
+              "ci95": [
+                0.021908854166666665,
+                0.04159722222222222
+              ],
+              "gain_vs_probe": 0.0069444444444444475,
+              "gain_ci95": [
+                0.004340277777777776,
+                0.009549479166666663
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.03979166666666667,
+              "ci95": [
+                0.029437500000000002,
+                0.05034895833333333
+              ],
+              "gain_vs_probe": 0.015138888888888893,
+              "gain_ci95": [
+                0.010901041666666668,
+                0.01951388888888889
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.04802083333333334,
+              "ci95": [
+                0.0363515625,
+                0.05979166666666667
+              ],
+              "gain_vs_probe": 0.02333333333333334,
+              "gain_ci95": [
+                0.017187499999999998,
+                0.02979427083333332
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.05625,
+              "ci95": [
+                0.042916666666666665,
+                0.06958333333333333
+              ],
+              "gain_vs_probe": 0.03152777777777778,
+              "gain_ci95": [
+                0.023468749999999997,
+                0.04013888888888889
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "threshold": 8.199060554557674,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 4.668727354085063
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 8.199060554557674
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        }
+      }
+    },
+    "dwt_dct/clip": {
+      "probe": {
+        "marked_tpr": 0.01736111111111111,
+        "unmarked_tpr": 0.015416666666666667,
+        "real_image_fpr": 0.018125,
+        "real_source_fpr": 0.04,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.01736111111111111,
+            "ci95": [
+              0.010972222222222223,
+              0.024864583333333315
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.015416666666666667,
+            "ci95": [
+              0.009166666666666667,
+              0.0225
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.018125,
+            "ci95": [
+              0.00875,
+              0.029375
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.04,
+            "ci95": [
+              0.0225,
+              0.06
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.015416666666666667,
+              "ci95": [
+                0.009166666666666667,
+                0.0225
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.015902777777777776,
+              "ci95": [
+                0.009895833333333333,
+                0.0228142361111111
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.016388888888888887,
+              "ci95": [
+                0.010416666666666666,
+                0.023541666666666666
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.016874999999999998,
+              "ci95": [
+                0.010833333333333334,
+                0.024166666666666666
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.01736111111111111,
+              "ci95": [
+                0.010972222222222223,
+                0.024864583333333315
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "abstention_width": 9.756913402705873,
+          "calibration_rates": {
+            "marked_tpr": null,
+            "real_image_fpr": 0.0096875,
+            "real_source_fpr": 0.02375,
+            "unmarked_groups": [],
+            "unmarked_tpr": null
+          },
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 4.498251096252163
+            },
+            {
+              "collection": "openimages",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 9.134064859227545
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+          "strict_exceedance": true,
+          "threshold": 9.134064859227545
+        }
+      },
+      "primary": {
+        "marked_tpr": 0.11652777777777779,
+        "unmarked_tpr": 0.015416666666666667,
+        "real_image_fpr": 0.018125,
+        "real_source_fpr": 0.0425,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.11652777777777779,
+            "ci95": [
+              0.1008298611111111,
+              0.13347569444444443
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.09916666666666667,
+              "ci95": [
+                0.08597222222222223,
+                0.11333333333333333
+              ],
+              "one_sided_lower95": 0.08763888888888888
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.09916666666666668,
+                "ci95": [
+                  0.08597222222222223,
+                  0.11333333333333331
+                ]
+              },
+              "full_message_union": {
+                "estimate": -0.3756944444444444,
+                "ci95": [
+                  -0.39055555555555554,
+                  -0.3597187500000001
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.09791666666666668,
+                "ci95": [
+                  0.08471875000000001,
+                  0.11208333333333331
+                ]
+              }
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.015416666666666667,
+            "ci95": [
+              0.009166666666666667,
+              0.0225
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.0008333333333333335,
+                "ci95": [
+                  0.0,
+                  0.0020833333333333346
+                ]
+              }
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.018125,
+            "ci95": [
+              0.00875,
+              0.02875
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.001875,
+                0.001875
+              ],
+              "one_sided_lower95": -0.00125
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  -0.0018749999999999982,
+                  0.001875
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  -0.0018749999999999982,
+                  0.001875
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.0012499999999999976,
+                "ci95": [
+                  0.0,
+                  0.0031249999999999993
+                ]
+              }
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.0425,
+            "ci95": [
+              0.025,
+              0.0625
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0025,
+              "ci95": [
+                0.0,
+                0.0075
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0025000000000000022,
+                "ci95": [
+                  0.0,
+                  0.0075
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0025000000000000022,
+                "ci95": [
+                  0.0,
+                  0.0075
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.0025000000000000022,
+                "ci95": [
+                  0.0,
+                  0.0075
+                ]
+              }
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.015416666666666667,
+              "ci95": [
+                0.009166666666666667,
+                0.0225
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.04069444444444445,
+              "ci95": [
+                0.03326388888888889,
+                0.04895833333333333
+              ],
+              "gain_vs_probe": 0.024791666666666674,
+              "gain_ci95": [
+                0.021493055555555557,
+                0.028333333333333335
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.06597222222222222,
+              "ci95": [
+                0.05597222222222223,
+                0.07687673611111111
+              ],
+              "gain_vs_probe": 0.04958333333333334,
+              "gain_ci95": [
+                0.042986111111111114,
+                0.05666666666666666
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.09125000000000001,
+              "ci95": [
+                0.07854166666666666,
+                0.10520833333333332
+              ],
+              "gain_vs_probe": 0.07437500000000001,
+              "gain_ci95": [
+                0.06447916666666667,
+                0.08499999999999999
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.11652777777777779,
+              "ci95": [
+                0.1008298611111111,
+                0.13347569444444443
+              ],
+              "gain_vs_probe": 0.09916666666666668,
+              "gain_ci95": [
+                0.08597222222222223,
+                0.11333333333333331
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "abstention_width": 9.794561562522624,
+          "calibration_rates": {
+            "marked_tpr": null,
+            "real_image_fpr": 0.0096875,
+            "real_source_fpr": 0.02375,
+            "unmarked_groups": [],
+            "unmarked_tpr": null
+          },
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 4.531318468109537
+            },
+            {
+              "collection": "openimages",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 9.225331218274755
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+          "strict_exceedance": true,
+          "threshold": 9.225331218274755
+        }
+      },
+      "full_message_union": {
+        "marked_tpr": 0.49222222222222217,
+        "unmarked_tpr": 0.015416666666666667,
+        "real_image_fpr": 0.018125,
+        "real_source_fpr": 0.04,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.49222222222222217,
+            "ci95": [
+              0.485,
+              0.4993055555555555
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.4748611111111111,
+              "ci95": [
+                0.46791666666666665,
+                0.48125
+              ],
+              "one_sided_lower95": 0.46888888888888897
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.015416666666666667,
+            "ci95": [
+              0.009166666666666667,
+              0.0225
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.018125,
+            "ci95": [
+              0.00875,
+              0.029375
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.04,
+            "ci95": [
+              0.0225,
+              0.06
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.015416666666666667,
+              "ci95": [
+                0.009166666666666667,
+                0.0225
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.13461805555555553,
+              "ci95": [
+                0.12902690972222222,
+                0.14086805555555557
+              ],
+              "gain_vs_probe": 0.11871527777777775,
+              "gain_ci95": [
+                0.11697916666666666,
+                0.12031250000000002
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.25381944444444443,
+              "ci95": [
+                0.24805555555555553,
+                0.25972395833333334
+              ],
+              "gain_vs_probe": 0.23743055555555553,
+              "gain_ci95": [
+                0.23395833333333332,
+                0.24062500000000003
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.3730208333333333,
+              "ci95": [
+                0.3667708333333333,
+                0.3793776041666667
+              ],
+              "gain_vs_probe": 0.35614583333333333,
+              "gain_ci95": [
+                0.3509375,
+                0.3609375000000001
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.49222222222222217,
+              "ci95": [
+                0.485,
+                0.4993055555555555
+              ],
+              "gain_vs_probe": 0.47486111111111107,
+              "gain_ci95": [
+                0.46791666666666665,
+                0.48125000000000007
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "threshold": 0.9998920856584563,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9889940371175501
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9998920856584563
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        }
+      },
+      "tuned_confidence": {
+        "marked_tpr": 0.01861111111111111,
+        "unmarked_tpr": 0.014583333333333334,
+        "real_image_fpr": 0.016875,
+        "real_source_fpr": 0.04,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.01861111111111111,
+            "ci95": [
+              0.011944444444444445,
+              0.026527777777777775
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0012499999999999998,
+              "ci95": [
+                -0.0002777777777777777,
+                0.0029166666666666664
+              ],
+              "one_sided_lower95": -7.054542135639009e-20
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.014583333333333334,
+            "ci95": [
+              0.00875,
+              0.02125
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": -0.0008333333333333334,
+              "ci95": [
+                -0.0020833333333333333,
+                0.0
+              ],
+              "one_sided_lower95": -0.0020833333333333333
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.016875,
+            "ci95": [
+              0.0075,
+              0.026875
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": -0.00125,
+              "ci95": [
+                -0.003125,
+                0.0
+              ],
+              "one_sided_lower95": -0.003125
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.04,
+            "ci95": [
+              0.0225,
+              0.06
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.014583333333333334,
+              "ci95": [
+                0.00875,
+                0.02125
+              ],
+              "gain_vs_probe": -0.0008333333333333335,
+              "gain_ci95": [
+                -0.0020833333333333346,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.015590277777777776,
+              "ci95": [
+                0.009791666666666667,
+                0.022362847222222215
+              ],
+              "gain_vs_probe": -0.0003125000000000003,
+              "gain_ci95": [
+                -0.0013888888888888874,
+                0.00048611111111111077
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.01659722222222222,
+              "ci95": [
+                0.010623263888888889,
+                0.023680555555555552
+              ],
+              "gain_vs_probe": 0.00020833333333333467,
+              "gain_ci95": [
+                -0.0006944444444444454,
+                0.0011111111111111113
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.017604166666666667,
+              "ci95": [
+                0.011351562499999999,
+                0.025104166666666667
+              ],
+              "gain_vs_probe": 0.0007291666666666696,
+              "gain_ci95": [
+                -0.00031250000000000386,
+                0.0019791666666666655
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.01861111111111111,
+              "ci95": [
+                0.011944444444444445,
+                0.026527777777777775
+              ],
+              "gain_vs_probe": 0.0012500000000000011,
+              "gain_ci95": [
+                -0.00027777777777777263,
+                0.0029166666666666646
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "threshold": 9.640135368986224,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 4.717001096252163
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 9.640135368986224
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        }
+      }
+    },
+    "trustmark/resnet": {
+      "probe": {
+        "marked_tpr": 0.020972222222222222,
+        "unmarked_tpr": 0.024583333333333332,
+        "real_image_fpr": 0.02125,
+        "real_source_fpr": 0.0375,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.05,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.045,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.06,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.020972222222222222,
+            "ci95": [
+              0.012916666666666667,
+              0.03055902777777776
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.024583333333333332,
+            "ci95": [
+              0.015416666666666667,
+              0.034583333333333334
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.02125,
+            "ci95": [
+              0.010625,
+              0.033125
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.0375,
+            "ci95": [
+              0.02,
+              0.0575
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.024583333333333332,
+              "ci95": [
+                0.015416666666666667,
+                0.034583333333333334
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.023680555555555555,
+              "ci95": [
+                0.015242187499999999,
+                0.03340711805555553
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.02277777777777778,
+              "ci95": [
+                0.014442708333333333,
+                0.03222222222222222
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.021875,
+              "ci95": [
+                0.013437500000000002,
+                0.03145833333333333
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.020972222222222222,
+              "ci95": [
+                0.012916666666666667,
+                0.03055902777777776
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "abstention_width": 7.063068793084226,
+          "calibration_rates": {
+            "marked_tpr": null,
+            "real_image_fpr": 0.014375,
+            "real_source_fpr": 0.02625,
+            "unmarked_groups": [],
+            "unmarked_tpr": null
+          },
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 3.90627985812192
+            },
+            {
+              "collection": "openimages",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 7.055312233186465
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+          "strict_exceedance": true,
+          "threshold": 7.055312233186465
+        }
+      },
+      "primary": {
+        "marked_tpr": 0.7440277777777777,
+        "unmarked_tpr": 0.024583333333333332,
+        "real_image_fpr": 0.02125,
+        "real_source_fpr": 0.0375,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.05,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.045,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.06,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.7440277777777777,
+            "ci95": [
+              0.7273611111111111,
+              0.7605624999999998
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.7230555555555556,
+              "ci95": [
+                0.704861111111111,
+                0.7408333333333333
+              ],
+              "one_sided_lower95": 0.7079097222222221
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.7230555555555556,
+                "ci95": [
+                  0.7048611111111112,
+                  0.7408333333333333
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.025833333333333264,
+                "ci95": [
+                  0.009583333333333388,
+                  0.04166666666666663
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.7055555555555555,
+                "ci95": [
+                  0.68625,
+                  0.7240277777777777
+                ]
+              }
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.024583333333333332,
+            "ci95": [
+              0.015416666666666667,
+              0.034583333333333334
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.001666666666666667,
+                "ci95": [
+                  0.0004166666666666659,
+                  0.003333333333333334
+                ]
+              }
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.02125,
+            "ci95": [
+              0.010625,
+              0.033125
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.0375,
+            "ci95": [
+              0.02,
+              0.0575
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.024583333333333332,
+              "ci95": [
+                0.015416666666666667,
+                0.034583333333333334
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.20444444444444443,
+              "ci95": [
+                0.19586805555555556,
+                0.21347309027777772
+              ],
+              "gain_vs_probe": 0.18076388888888886,
+              "gain_ci95": [
+                0.1762152777777778,
+                0.18520833333333334
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.3843055555555555,
+              "ci95": [
+                0.3744444444444444,
+                0.394375
+              ],
+              "gain_vs_probe": 0.3615277777777777,
+              "gain_ci95": [
+                0.3524305555555556,
+                0.37041666666666667
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.5641666666666666,
+              "ci95": [
+                0.5511458333333334,
+                0.5769817708333335
+              ],
+              "gain_vs_probe": 0.5422916666666666,
+              "gain_ci95": [
+                0.5286458333333335,
+                0.555625
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.7440277777777777,
+              "ci95": [
+                0.7273611111111111,
+                0.7605624999999998
+              ],
+              "gain_vs_probe": 0.7230555555555556,
+              "gain_ci95": [
+                0.7048611111111112,
+                0.7408333333333333
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "abstention_width": 7.047619838932894,
+          "calibration_rates": {
+            "marked_tpr": null,
+            "real_image_fpr": 0.014375,
+            "real_source_fpr": 0.02625,
+            "unmarked_groups": [],
+            "unmarked_tpr": null
+          },
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 3.9130379207976858
+            },
+            {
+              "collection": "openimages",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 7.05989461395292
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+          "strict_exceedance": true,
+          "threshold": 7.05989461395292
+        }
+      },
+      "full_message_union": {
+        "marked_tpr": 0.7181944444444445,
+        "unmarked_tpr": 0.024583333333333332,
+        "real_image_fpr": 0.02125,
+        "real_source_fpr": 0.0375,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.05,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.045,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.06,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.7181944444444445,
+            "ci95": [
+              0.7094444444444444,
+              0.7265277777777778
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.6972222222222223,
+              "ci95": [
+                0.685138888888889,
+                0.7084756944444445
+              ],
+              "one_sided_lower95": 0.6873611111111111
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.024583333333333332,
+            "ci95": [
+              0.015416666666666667,
+              0.034583333333333334
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.02125,
+            "ci95": [
+              0.010625,
+              0.033125
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.0375,
+            "ci95": [
+              0.02,
+              0.0575
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.024583333333333332,
+              "ci95": [
+                0.015416666666666667,
+                0.034583333333333334
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.1979861111111111,
+              "ci95": [
+                0.19065972222222222,
+                0.20604166666666668
+              ],
+              "gain_vs_probe": 0.17430555555555555,
+              "gain_ci95": [
+                0.17128472222222224,
+                0.17711892361111115
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.3713888888888889,
+              "ci95": [
+                0.36465104166666673,
+                0.37847395833333336
+              ],
+              "gain_vs_probe": 0.3486111111111111,
+              "gain_ci95": [
+                0.3425694444444445,
+                0.3542378472222223
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.5447916666666667,
+              "ci95": [
+                0.5375000000000001,
+                0.5521874999999999
+              ],
+              "gain_vs_probe": 0.5229166666666667,
+              "gain_ci95": [
+                0.5138541666666667,
+                0.5313567708333334
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.7181944444444445,
+              "ci95": [
+                0.7094444444444444,
+                0.7265277777777778
+              ],
+              "gain_vs_probe": 0.6972222222222223,
+              "gain_ci95": [
+                0.685138888888889,
+                0.7084756944444446
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "threshold": 0.9991379305089417,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.980281449050356
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9991379305089417
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        }
+      },
+      "tuned_confidence": {
+        "marked_tpr": 0.03847222222222222,
+        "unmarked_tpr": 0.022916666666666665,
+        "real_image_fpr": 0.02125,
+        "real_source_fpr": 0.0375,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.045,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.04,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.06,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.03847222222222222,
+            "ci95": [
+              0.026944444444444448,
+              0.05083680555555554
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0175,
+              "ci95": [
+                0.011663194444444443,
+                0.02361111111111111
+              ],
+              "one_sided_lower95": 0.01263888888888889
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.022916666666666665,
+            "ci95": [
+              0.014166666666666666,
+              0.0325
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": -0.0016666666666666668,
+              "ci95": [
+                -0.0033333333333333335,
+                -0.0004166666666666667
+              ],
+              "one_sided_lower95": -0.0033333333333333335
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.02125,
+            "ci95": [
+              0.010625,
+              0.033125
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.0375,
+            "ci95": [
+              0.02,
+              0.0575
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.022916666666666665,
+              "ci95": [
+                0.014166666666666666,
+                0.0325
+              ],
+              "gain_vs_probe": -0.001666666666666667,
+              "gain_ci95": [
+                -0.003333333333333334,
+                -0.0004166666666666659
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.026805555555555555,
+              "ci95": [
+                0.017847222222222223,
+                0.036702256944444435
+              ],
+              "gain_vs_probe": 0.0031249999999999993,
+              "gain_ci95": [
+                0.001597222222222222,
+                0.004687499999999997
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.03069444444444444,
+              "ci95": [
+                0.021041666666666667,
+                0.04132118055555555
+              ],
+              "gain_vs_probe": 0.007916666666666662,
+              "gain_ci95": [
+                0.0052777777777777805,
+                0.010696180555555553
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.034583333333333334,
+              "ci95": [
+                0.0240625,
+                0.04614583333333333
+              ],
+              "gain_vs_probe": 0.012708333333333335,
+              "gain_ci95": [
+                0.008437500000000007,
+                0.017083333333333332
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.03847222222222222,
+              "ci95": [
+                0.026944444444444448,
+                0.05083680555555554
+              ],
+              "gain_vs_probe": 0.017499999999999998,
+              "gain_ci95": [
+                0.011663194444444443,
+                0.02361111111111111
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "threshold": 7.629208732161709,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 4.334906764046494
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 7.629208732161709
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        }
+      }
+    },
+    "trustmark/clip": {
+      "probe": {
+        "marked_tpr": 0.018194444444444447,
+        "unmarked_tpr": 0.015416666666666667,
+        "real_image_fpr": 0.018125,
+        "real_source_fpr": 0.04,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.018194444444444447,
+            "ci95": [
+              0.011802083333333331,
+              0.025416666666666667
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.015416666666666667,
+            "ci95": [
+              0.009583333333333333,
+              0.022083333333333333
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.018125,
+            "ci95": [
+              0.009375,
+              0.029375
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.04,
+            "ci95": [
+              0.0225,
+              0.06
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.015416666666666667,
+              "ci95": [
+                0.009583333333333333,
+                0.022083333333333333
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.01611111111111111,
+              "ci95": [
+                0.010277777777777778,
+                0.022674479166666664
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.016805555555555556,
+              "ci95": [
+                0.011041666666666667,
+                0.02347222222222222
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.0175,
+              "ci95": [
+                0.011458333333333333,
+                0.024377604166666653
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.018194444444444447,
+              "ci95": [
+                0.011802083333333331,
+                0.025416666666666667
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "abstention_width": 9.756913402705873,
+          "calibration_rates": {
+            "marked_tpr": null,
+            "real_image_fpr": 0.0096875,
+            "real_source_fpr": 0.02375,
+            "unmarked_groups": [],
+            "unmarked_tpr": null
+          },
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 4.498251096252163
+            },
+            {
+              "collection": "openimages",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 9.134064859227545
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+          "strict_exceedance": true,
+          "threshold": 9.134064859227545
+        }
+      },
+      "primary": {
+        "marked_tpr": 0.20458333333333334,
+        "unmarked_tpr": 0.015416666666666667,
+        "real_image_fpr": 0.018125,
+        "real_source_fpr": 0.04,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.20458333333333334,
+            "ci95": [
+              0.18,
+              0.23069444444444442
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.18638888888888888,
+              "ci95": [
+                0.16402430555555556,
+                0.20958680555555553
+              ],
+              "one_sided_lower95": 0.1673611111111111
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.18638888888888888,
+                "ci95": [
+                  0.16402430555555556,
+                  0.20958680555555556
+                ]
+              },
+              "full_message_union": {
+                "estimate": -0.5193055555555556,
+                "ci95": [
+                  -0.5429166666666666,
+                  -0.49402777777777784
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": -0.14833333333333332,
+                "ci95": [
+                  -0.16542013888888896,
+                  -0.1325000000000001
+                ]
+              }
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.015416666666666667,
+            "ci95": [
+              0.009583333333333333,
+              0.022083333333333333
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.005000000000000001,
+                "ci95": [
+                  -0.0004166666666666659,
+                  0.010416666666666666
+                ]
+              }
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.018125,
+            "ci95": [
+              0.009375,
+              0.029375
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.0031249999999999993,
+                "ci95": [
+                  -0.0012499999999999994,
+                  0.0075000000000000015
+                ]
+              }
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.04,
+            "ci95": [
+              0.0225,
+              0.06
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            },
+            "comparisons": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "full_message_union": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "tuned_confidence": {
+                "estimate": 0.0,
+                "ci95": [
+                  -0.012500000000000004,
+                  0.015
+                ]
+              }
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.015416666666666667,
+              "ci95": [
+                0.009583333333333333,
+                0.022083333333333333
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.06270833333333334,
+              "ci95": [
+                0.05392361111111112,
+                0.0721875
+              ],
+              "gain_vs_probe": 0.04659722222222223,
+              "gain_ci95": [
+                0.04100607638888889,
+                0.0523967013888889
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.11,
+              "ci95": [
+                0.09631770833333335,
+                0.12409895833333331
+              ],
+              "gain_vs_probe": 0.09319444444444444,
+              "gain_ci95": [
+                0.08201215277777778,
+                0.10479340277777778
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.15729166666666666,
+              "ci95": [
+                0.1382265625,
+                0.17729427083333332
+              ],
+              "gain_vs_probe": 0.13979166666666665,
+              "gain_ci95": [
+                0.12301822916666666,
+                0.15719010416666668
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.20458333333333334,
+              "ci95": [
+                0.18,
+                0.23069444444444442
+              ],
+              "gain_vs_probe": 0.18638888888888888,
+              "gain_ci95": [
+                0.16402430555555556,
+                0.20958680555555556
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "abstention_width": 9.757254928320927,
+          "calibration_rates": {
+            "marked_tpr": null,
+            "real_image_fpr": 0.0096875,
+            "real_source_fpr": 0.02375,
+            "unmarked_groups": [],
+            "unmarked_tpr": null
+          },
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 4.505221166288388
+            },
+            {
+              "collection": "openimages",
+              "rank": 381,
+              "sources": 400,
+              "threshold": 9.147604153915227
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee.",
+          "strict_exceedance": true,
+          "threshold": 9.147604153915227
+        }
+      },
+      "full_message_union": {
+        "marked_tpr": 0.7238888888888889,
+        "unmarked_tpr": 0.015416666666666667,
+        "real_image_fpr": 0.018125,
+        "real_source_fpr": 0.04,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.005,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.025,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.03,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.7238888888888889,
+            "ci95": [
+              0.7148611111111112,
+              0.7331944444444444
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.7056944444444445,
+              "ci95": [
+                0.6955555555555556,
+                0.7145833333333333
+              ],
+              "one_sided_lower95": 0.6975
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.015416666666666667,
+            "ci95": [
+              0.009583333333333333,
+              0.022083333333333333
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.018125,
+            "ci95": [
+              0.009375,
+              0.029375
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.04,
+            "ci95": [
+              0.0225,
+              0.06
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "one_sided_lower95": 0.0
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.015416666666666667,
+              "ci95": [
+                0.009583333333333333,
+                0.022083333333333333
+              ],
+              "gain_vs_probe": 0.0,
+              "gain_ci95": [
+                0.0,
+                0.0
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.19253472222222223,
+              "ci95": [
+                0.18701302083333335,
+                0.19868142361111113
+              ],
+              "gain_vs_probe": 0.17642361111111113,
+              "gain_ci95": [
+                0.1738888888888889,
+                0.17864583333333334
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.3696527777777778,
+              "ci95": [
+                0.36375,
+                0.37625173611111107
+              ],
+              "gain_vs_probe": 0.3528472222222222,
+              "gain_ci95": [
+                0.3477777777777778,
+                0.3572916666666667
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.5467708333333334,
+              "ci95": [
+                0.5393723958333334,
+                0.5544791666666665
+              ],
+              "gain_vs_probe": 0.5292708333333335,
+              "gain_ci95": [
+                0.5216666666666667,
+                0.5359375
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.7238888888888889,
+              "ci95": [
+                0.7148611111111112,
+                0.7331944444444444
+              ],
+              "gain_vs_probe": 0.7056944444444445,
+              "gain_ci95": [
+                0.6955555555555557,
+                0.7145833333333332
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "threshold": 0.9998920856584563,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9889940371175501
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9998920856584563
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        }
+      },
+      "tuned_confidence": {
+        "marked_tpr": 0.35291666666666666,
+        "unmarked_tpr": 0.010416666666666666,
+        "real_image_fpr": 0.015,
+        "real_source_fpr": 0.04,
+        "unmarked_groups": [
+          {
+            "collection": "ADM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.015
+          },
+          {
+            "collection": "ADM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "ADM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": -0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "ADM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": -0.01,
+            "harmful_switch_rate": 0.01
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.005,
+            "harmful_switch_rate": 0.005
+          },
+          {
+            "collection": "BigGAN",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.0,
+            "tpr_minus_probe": -0.02,
+            "harmful_switch_rate": 0.02
+          },
+          {
+            "collection": "VQDM",
+            "condition": "crop",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": -0.01,
+            "harmful_switch_rate": 0.02
+          },
+          {
+            "collection": "VQDM",
+            "condition": "identity",
+            "sources": 200,
+            "tpr": 0.02,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.01
+          },
+          {
+            "collection": "VQDM",
+            "condition": "jpeg50",
+            "sources": 200,
+            "tpr": 0.01,
+            "tpr_minus_probe": 0.0,
+            "harmful_switch_rate": 0.0
+          },
+          {
+            "collection": "VQDM",
+            "condition": "lowres32",
+            "sources": 200,
+            "tpr": 0.015,
+            "tpr_minus_probe": -0.015,
+            "harmful_switch_rate": 0.015
+          }
+        ],
+        "source_bootstrap": {
+          "marked_tpr": {
+            "estimate": 0.35291666666666666,
+            "ci95": [
+              0.32527430555555553,
+              0.3823611111111111
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": 0.33472222222222225,
+              "ci95": [
+                0.30875,
+                0.3623611111111111
+              ],
+              "one_sided_lower95": 0.3129097222222222
+            }
+          },
+          "unmarked_tpr": {
+            "estimate": 0.010416666666666666,
+            "ci95": [
+              0.005,
+              0.01625
+            ],
+            "sources": 600,
+            "minus_probe": {
+              "estimate": -0.005,
+              "ci95": [
+                -0.010416666666666666,
+                0.0004166666666666667
+              ],
+              "one_sided_lower95": -0.009583333333333333
+            }
+          },
+          "real_image_fpr": {
+            "estimate": 0.015,
+            "ci95": [
+              0.0075,
+              0.02375
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": -0.003125,
+              "ci95": [
+                -0.0075,
+                0.00125
+              ],
+              "one_sided_lower95": -0.006875
+            }
+          },
+          "real_source_fpr": {
+            "estimate": 0.04,
+            "ci95": [
+              0.0225,
+              0.06
+            ],
+            "sources": 400,
+            "minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.015,
+                0.0125
+              ],
+              "one_sided_lower95": -0.0125
+            }
+          },
+          "marked_shares_secondary": [
+            {
+              "marked_share": 0.0,
+              "tpr": 0.010416666666666666,
+              "ci95": [
+                0.005,
+                0.01625
+              ],
+              "gain_vs_probe": -0.005000000000000001,
+              "gain_ci95": [
+                -0.010416666666666666,
+                0.0004166666666666659
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.25,
+              "tpr": 0.09604166666666666,
+              "ci95": [
+                0.08729166666666667,
+                0.10545138888888889
+              ],
+              "gain_vs_probe": 0.07993055555555556,
+              "gain_ci95": [
+                0.07239322916666666,
+                0.08757031250000001
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.5,
+              "tpr": 0.18166666666666667,
+              "ci95": [
+                0.16708159722222224,
+                0.19688020833333336
+              ],
+              "gain_vs_probe": 0.16486111111111112,
+              "gain_ci95": [
+                0.1514548611111111,
+                0.17847569444444442
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 0.75,
+              "tpr": 0.26729166666666665,
+              "ci95": [
+                0.2465546875,
+                0.2894791666666667
+              ],
+              "gain_vs_probe": 0.24979166666666663,
+              "gain_ci95": [
+                0.23010416666666672,
+                0.2702161458333333
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            },
+            {
+              "marked_share": 1.0,
+              "tpr": 0.35291666666666666,
+              "ci95": [
+                0.32527430555555553,
+                0.3823611111111111
+              ],
+              "gain_vs_probe": 0.3347222222222222,
+              "gain_ci95": [
+                0.30875,
+                0.36236111111111113
+              ],
+              "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning."
+            }
+          ]
+        },
+        "policy": {
+          "threshold": 13.247536975279122,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 7.797095647004432
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 13.247536975279122
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        }
+      }
+    }
+  }
+}

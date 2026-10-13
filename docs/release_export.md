@@ -1,162 +1,188 @@
 # Anonymous reviewer export
 
-The clean reviewer snapshot is publicly hosted at
+The existing public repository is
 [watermark-processing-controls](https://github.com/researchainew-boop/watermark-processing-controls).
-Its public `main` commit was verified without authentication. The local
-`release/publication.json` records the verified repository/commit URLs and
-published ZIP, manifest and source/PDF fingerprints; this receipt stays
-outside the clean package to avoid a circular hash dependency.
-`release/anonymous-code.zip` is the local export, and
-`release/package_check.json` records its fingerprint, member count and
-publication status. Hosting supplies reviewer access; independent
-reproduction and benchmark-image redistribution remain separate.
-Source/PDF changes require refreshed checks, packaging and a published
-snapshot update. The immutable manifest describes only its own snapshot.
+Its previous publication receipt describes the previous snapshot. A new Phase 6
+release is complete only when a new checked ZIP, matching manuscript receipt,
+and verified public commit are recorded. Preparing an export does not claim that
+its new contents have already been published.
 
-## Included evidence and public identifiers
+`release/anonymous-code.zip` and `release/package_check.json` describe the current
+local export. `release/publication.json` records the externally verified revision,
+ZIP and manuscript fingerprints outside the package to avoid a circular hash.
+Every receipt applies to its own bytes. Source, PDF, figure or evidence changes
+require refreshed checks and a new package/publication receipt.
 
-The packager copies study source code, portable configuration, explicitly
-listed method/reproduction documents, the anonymous manuscript source and
-bibliography, recorded dependency versions and selected aggregate evidence.
-Every Phase 5 aggregate CSV has an exact column allowlist. Aggregate JSONs
-have an exact file allowlist; machine-specific paths are sanitized and
-source/image/cover/pair identifier lists are replaced by counts. Input and
-output file hashes can refer to excluded research files without including
-their contents.
+## Evidence and exclusions
 
-The audited public reproduction index is a separate exception to the
-aggregate-only rule. `public_source_index.csv` identifies public archive
-members, parquet rows or photographic IDs with pseudonymous study identifiers,
-retention/split flags and fingerprints. Original and five-seed split CSVs
-share the audited identifier pool. The index is copied only after its saved
-mapping checks and file hashes pass the explicit field validation.
+The final export requires completed Phases 3, 4, 5 and 6. Earlier numerical gates
+are retained. Unsuccessful gates, adverse transfer findings, collection/processing
+controls, caption-paired results and equal-budget watermark comparisons remain
+historical evidence; they are not renamed fresh Phase 6 tests. The new hypothesis
+may fail. A final release requires truthful reporting of its actual frozen status.
 
-`public_pair_index.csv` has exactly 200 records. Its only fields are
-`pair_id`, `real_source_id`, `ai_source_id`, `public_coco_image_id`,
-`archive_filename`, `archive_entry`, `caption_annotation_id`,
-`generation_seed`, `split`, `native_file_sha256`,
-`real_standardized_pixel_sha256`, and `real_standardized_file_sha256`.
-The packager checks deterministic pseudonyms/seeds, unique test-only pairs,
-relative COCO archive entries, prior-image nonoverlap and the audit/protocol/
-selection hashes. Caption annotation IDs identify public COCO annotations;
-caption and prompt text are absent. Pairing metadata enables reacquisition
-subject to dataset terms and model availability.
+Included files are study code, portable configuration, listed method/data/
+reproduction/attack/related-work/review documents, anonymous manuscript source,
+first-party synthetic test sources, recorded dependencies, and explicitly listed
+aggregate evidence. Phase 6 includes
+fusion coefficients and normalization constants in small aggregate JSON files,
+selection/cut receipts, the confirmatory assessment, separately labeled attack
+diagnostics, the published native-detector comparison, and the two additional
+simple comparators sealed before final inference. Original and amended protocol
+receipts remain distinguishable.
 
-Dataset images, generated benchmark images, private `source_pairs.csv`,
-captions/prompts, acquisition URLs, source predictions, embeddings, model
-checkpoints, fitted heads, caches and third-party downloaded code are excluded.
-The project-generated figure illustration and aggregate ROC figure can be
-supplied explicitly with their provenance; they do not permit copying
-benchmark images. The initial fair-watermark driver snapshot is an internal
-archive and is excluded.
+JSON source/image/cover/pair lists are reduced to counts and author paths are
+sanitized. Aggregate CSVs have explicit file and field allowlists. Grouped attack
+PSNR/SSIM is flattened to condition, marking method and eight summary statistics;
+unavailable/infinite numeric values become empty cells. Receipt hashes can refer
+to excluded inputs without releasing their contents.
 
-The approved ROC depicts the completed caption-paired identity test, with
-200 pairs and 400 unmarked sources. Its saved-score, completion, head and
-output-file fingerprints must pass before packaging. The earlier expanded-
-test ROC remains only in the local manuscript archive. Aggregate-only
-postgeneration overlap and sensitivity reports may be released: all 200
-locked primary pairs remain in the primary analysis, while the 197-pair
-coarse-hash sensitivity is explicitly post hoc. Flagged identifiers and
-per-image predictions are excluded.
+Dataset and generated benchmark pixels, captions/prompts, private acquisition
+manifests, per-image predictions, decoder outputs, feature vectors,
+pretrained network checkpoint weights, caches, credentials and downloaded
+third-party code are excluded. Syntax/inventory checks do not claim independent
+execution. `phase6_reproducibility.md` describes required inputs and the
+exact-reproduction limitation.
 
-## Final build and checks
+## Public reproduction indices
 
-Require all requested phases, then supply the approved figure assets:
+Earlier audited public-source and split indices, and the 200-pair public COCO
+image/caption-ID and deterministic-seed index, remain in `reproduction_index/`.
+The latter contains annotation IDs, not caption or prompt text.
 
-    python scripts/package_anonymous_release.py --require-completed-phase3 --require-completed-phase4 --require-completed-phase5 --generated-asset manuscript/assets/generated-original.png --generated-asset manuscript/assets/pipeline_examples.pdf --asset-provenance manuscript/assets/generated-asset-provenance.json --paper-asset manuscript/assets/resnet_roc.pdf
+The Phase 6 index is separately located at
+`reproduction_index/phase6/public_source_index.csv`. Its 1,800 pseudonymous records
+map 800 calibration and 1,000 final sources to public releases. Its exact 23-field
+allowlist is:
 
-The Phase 5 flag checks completed matching, independent calibration,
-supervised SD-family-exclusion, paired-content and fair-watermark artifacts
-through `check_phase5()`. An unfinished stage refuses a final build. The flag
-also requires the audited public pair index. It does not substitute for
-compiling and inspecting the final manuscript PDF.
+```text
+source_id collection generator family label role public_id public_repository
+public_revision public_row original_release input_file_sha256 raw_pixel_sha256
+native_height native_width output_sha256 base_pixel_sha256
+diagnostic_output_sha256 diagnostic_base_pixel_sha256 primary_processing
+common_bottleneck_pixels jpeg_quality License
+```
 
-Copied paths are made portable. Research archives remain unchanged. Thus
-original input/script hashes describe the measured run; the released-file
-manifest describes the portable copies. The package checks copied Python
-syntax, its exact inventory, identifying paths, allowed binary assets, ZIP
-CRC and every member hash. These are export checks, not new model/data tests.
-Unexpected stale export files cause an error instead of recursive deletion.
+The export checks unique 24-hex pseudonyms, registered collection/role quotas,
+origin-label consistency, release identities, dimensions, processing constants,
+all fingerprint fields, and the saved mapping audit and its input hashes. Private
+image/profile/acquisition URLs and machine paths are refused. The `License` field
+alone may contain the audited public Creative Commons or Flickr Commons license
+URLs. This exception supplies license facts and grants no new rights.
 
-## Reviewer access and publication
+## Figures and completed reporting
 
-The repository link above was verified after successful publication;
-`release/publication.json` records the published revision. Future updates
-must pass the same unauthenticated public-commit check. Account ownership,
-repository visibility and intended reviewer access must agree. For anonymous
-review, inspect the account/repository name, commit metadata, README and
-downloaded snapshot for identifying information as part of choosing a suitable
-host. A public account can reveal author identity even if code paths are clean.
+Approved Phase 6 figures are `phase6_pipeline`, `phase6_roc_tm_resnet`, and
+`phase6_marked_share_tm_resnet`, each as PDF and PNG. All six output hashes must
+match completed reporting provenance. Checks bind the reporting implementation,
+full input/output receipts, four root/source registrations, calibration cuts,
+2,000-draw evaluation and separately labeled attack report. ROC AUCs and marked-
+share points must equal the saved primary evaluator. Final reporting requires
+`--attack-analysis`: a primary-only intermediate report is refused. All 19
+completed aggregate CSV outputs are checked.
 
-This export assigns no new license. Authors may publish their permitted
-original code while third-party dataset/model/code terms continue to apply;
-image redistribution and a full benchmark release require their own rights
-review. A successful upload must record the commit/release URL and the ZIP
-hash, then update the manuscript only with a working reviewer-access link.
+Older `resnet_roc.pdf/png` may be requested separately and still needs its original
+caption-paired saved-score provenance. Explicit project-generated illustrations
+retain their original no-dataset-images provenance. These allowances do not
+permit benchmark image redistribution.
 
-## Local GitHub staging procedure
+## Final local checks and build
 
-The author-side `scripts/publish_reviewer_release.py` uses only the finished
-`release/anonymous-code.zip`. It never copies the project checkout or its Git
-history. This deployment helper and `release/publication.json` are excluded
-from the research snapshot; they are local author tools, not prerequisites
-for running the released study code.
+Complete all numerical stages, build the final PDF, inspect all five rendered
+pages and embedded fonts, and review every claim against saved results and
+failures. Only after those reviews use both operator flags:
 
-Before staging, complete the numerical audit and final manuscript review:
+```text
+python scripts/check_phase6_submission.py --manuscript --pages 5 --references COUNT --visual-reviewed --claims-reviewed
+```
 
-    python scripts/check_phase5_submission.py --component all --manuscript --pages 5 --references 24 --visual-reviewed
+Replace `COUNT` with the actual reviewed reference count. The final gate is
+`outputs/phase6/submission_check.json`; Phase 5 paper counts/claims are not the
+final manuscript gate. It binds current source/PDF bytes, completed evidence,
+actual primary success/failure status and reporting-provenance SHA256.
 
-Use `--visual-reviewed` only after inspecting every final rendered PDF page.
-Then rebuild the ZIP with all three completion flags and the approved assets
-shown above. Staging requires its verified member hashes and exact inventory,
-completed phase records, public-index allowlists, and the matching five-page,
-24-reference, six-table, three-figure submission check. Source/PDF changes
-after those checks require new checks and a refreshed ZIP.
+A final build with the three PDF figures is:
 
-Replace `ACCOUNT` with the intended GitHub owner. These commands remain local:
+```text
+python scripts/package_anonymous_release.py --require-completed-phase3 --require-completed-phase4 --require-completed-phase5 --require-completed-phase6 --paper-asset manuscript/assets/phase6_pipeline.pdf --paper-asset manuscript/assets/phase6_roc_tm_resnet.pdf --paper-asset manuscript/assets/phase6_marked_share_tm_resnet.pdf
+```
 
-    python scripts/publish_reviewer_release.py --owner ACCOUNT --check-only
-    python scripts/publish_reviewer_release.py --owner ACCOUNT
+Request approved PNG counterparts or older figures with more `--paper-asset`
+arguments. Approved generated illustrations use `--generated-asset` plus their
+`--asset-provenance`. Before replacing the existing Phase 5 ZIP/check, the packager
+copies that verified pair and manifest into a dated `release/history/phase5-.../`
+directory. The previous `release/anonymous-code/` stays intact; new copies use
+`release/anonymous-code-phase6/` with the compatible ZIP member prefix.
+Unexpected stale members cause refusal. No recursive deletion occurs.
 
-The second command extracts the audited ZIP to
-`release/publication_staging/<full-zip-sha256>/repository/` and creates a new
-local Git commit. Commit author and committer are both
-`Anonymous Research Authors <anonymous@example.invalid>`. Hooks, signing,
-global attributes/configuration, inherited Git checkout paths and tracing
-are disabled for this staging operation. The working-tree bytes and committed
-Git blobs must both match every approved ZIP member. `.tools`, private data,
-predictions, embeddings and model files cannot be added. Preparation receipts
-are stored alongside the staging repository, never inside it.
+Portable substitutions affect copied files only. Original code/input hashes
+describe the measured run; `release_manifest.json` hashes the released copies.
+Export checks cover syntax, inventory, privacy fields, allowed binaries, archive
+CRC and every member fingerprint. They do not run models or reproduce the study.
 
-Only this explicitly invoked command permits external repository creation
-and pushing; it must be run after reviewing the prepared result:
+## Publication procedure
 
-    python scripts/publish_reviewer_release.py --owner ACCOUNT --publish
+The author-side publisher accepts only the checked final ZIP, never the research
+checkout or its Git history. It requires all phase gates, public-index/aggregate
+allowlists, matching Phase 6 source/PDF and reporting receipt, five pages, embedded
+fonts, actual table/figure/reference counts, and visual/claim reviews. Hypothesis
+failure is accepted when reported faithfully.
 
-The default repository name is `watermark-processing-controls`; specify
-`--repository NAME` to use another reviewed name. The authenticated GitHub
-login must match `--owner`. The procedure refuses an existing repository
-without its own matching publication/attempt receipt, creates a public empty
-repository, pushes only the clean commit, and verifies the public main commit
-through an unauthenticated GitHub API request. Its default branch is checked
-and set to `main` if necessary so the repository link opens the released code.
-No passwords or tokens are
-command arguments or publication-receipt fields. The existing local GitHub
-CLI authentication supplies credentials to GitHub.
+```text
+python scripts/publish_reviewer_release.py --owner ACCOUNT --check-only
+python scripts/publish_reviewer_release.py --owner ACCOUNT
+```
 
-Successful publication writes `release/publication.json`, updates the local
-package report, and records the working repository/commit URL, ZIP/manifest
-hashes, exact commit attribution and the submission-check/source/PDF hashes.
-An interrupted external operation leaves `publication_attempt.json` without
-claiming verified publication; retrying the same reviewed command can resume
-that recorded attempt. No existing external repository is deleted.
+The second command prepares a clean local repository under
+`release/publication_staging/<full-zip-sha256>/repository/`. Anonymous attribution,
+disabled inherited hooks/signing/configuration, approved working-tree bytes and
+matching committed blobs are checked. Receipts stay outside that tree. The public
+account/repository identity still needs to suit the intended review venue; local
+anonymous attribution cannot hide an identifying public account.
 
-To publish a revised clean ZIP to this procedure's previously recorded
-repository, refresh its final checks/package and invoke `--publish --update`.
-The remote main commit must still match the prior receipt. Only that public
-release history is fetched; the new approved tree becomes a normal descendant
-commit, with no force push. Changes by another contributor cause a refusal
-for inspection. Publication metadata stays outside the clean snapshot to
-avoid a receipt/snapshot hash dependency. Adding the verified URL to the
-paper changes the source/PDF hashes and therefore requires rechecking before
-a subsequent code-snapshot update.
+External publication occurs only on explicit invocation:
+
+```text
+python scripts/publish_reviewer_release.py --owner ACCOUNT --publish
+```
+
+For this procedure's previously recorded repository use `--publish --update`.
+Its current remote commit must match the prior receipt; updates are normal
+descendant commits without force push. The default repository name is
+`watermark-processing-controls`; `--repository NAME` selects another reviewed
+name. The authenticated login must match `ACCOUNT`. Only the approved staged
+tree is pushed, then its public main commit is checked without authentication.
+To update an existing private repository while preserving its visibility, use
+`--publish --update --private-update`. This mode never creates a repository or
+changes visibility/default branch. It verifies the remote main commit using the
+authenticated account and records private visibility separately from public
+reviewer access. The author chose this private update mode for the final Phase 6
+snapshot; the repository link alone does not give reviewers access.
+Interrupted operations retain an attempt receipt without claiming success.
+Credentials never enter command arguments or the package.
+
+This export assigns no new code/image license. Third-party dataset/model/code
+terms continue to apply. Public code access, exact independent reproduction and
+a licensed full benchmark release are separate outcomes.
+
+## Study-owned decision parameters and current illustration
+
+The final Phase 6 snapshot includes two 2,842-byte study-owned linear heads,
+encoded in `decision_parameters/passive_heads.json`. A separate schema checker
+requires only float32 coefficients of shape (1,512), a scalar float32 intercept,
+and classes [0,1]; original bytes must match the sealed protocol. The publisher
+independently repeats this check. No pretrained network, training feature or
+source metadata is exported in this exception. The replay helper restores the
+exact NPZ bytes without refitting, and refuses to replace different local heads.
+
+The new `phase6_demo_strip.pdf/png` reuses the earlier project-generated
+illustration and its measured decoded bits without new inference. Its separate
+provenance binds the old image/measurement records and every original/derived
+illustration image. Include these using `--generated-asset` and
+`--asset-provenance manuscript/assets/phase6_demo_provenance.json`.
+The illustration's classical strength12/diffusion strength0.50 setting is excluded
+from every benchmark and differs from the primary Phase 6 settings.
+
+Calibration-manifest byte restoration and interrupted uncommitted attack files
+are disclosed in `phase6_runtime_environment_repair.md`. Original receipts,
+scientific drivers, registered cuts and already committed inputs remain unchanged.

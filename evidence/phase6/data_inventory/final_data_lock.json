@@ -1,0 +1,33 @@
+{
+  "created_at_utc": "2026-10-12T11:10:49.463828+00:00",
+  "scope": "Supplemental data-only inventory receipt; original selections and root/model locks unchanged",
+  "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+  "separate_root_source_receipt_sha256": "665924683bc9fe74ae4bd2e0e992d070d45c97bbe7beda892785b4deb4954474",
+  "source_selection_completed_at_utc": "2026-10-11T13:15:34.973380+00:00",
+  "receipt_added_after_independent_photograph_calibration": true,
+  "no_model_score_read_or_used_in_receipt_creation": true,
+  "source_IDs_roles_labels_and_pixels_changed_count": 0,
+  "full_sources": 1800,
+  "calibration_sources": 800,
+  "test_sources": 1000,
+  "public_index_rows": 1800,
+  "input_sha256": {
+    "primary_source_manifest.csv": "137150d57cfc625bfd99a9d47d6a2f6f2528f6bae4390f44745992206c4c55a1",
+    "calibration_source_manifest.csv": "469873ead86f30def2cc416b6394f859f2a32379708d8b7b0b4bea6c6bd527a6",
+    "final_test_source_manifest.csv": "7f75da88829a99edc2f72990913849bfd192878eb1ff2ea22333bfeed7dbbb05",
+    "public_source_index.csv": "a53ca8d491a3f90ed6698d845c01d7d0e11213a27f12cdf43ab4a711479e5055",
+    "sampling_protocol.json": "49e9b913da254e317b4db78dec7855433f6ae9cafa7475bf1ff61de7b6774008",
+    "sampling_protocol.root_frozen_original.json": "b2a55e6df0ce3ee395f51dbe37b91187feeb54f6fa89c72207a066df16402ff2",
+    "selection_complete.json": "380537d6fbcb6cc4cad23241a1a260fab9c46a608ef1038f819f1b61a486ac00",
+    "source_overlap_audit.json": "c727ec184e7e70e835051fab2a25895e11bd5ce209bfda0cefe3818043e25f7a",
+    "coco_image_licenses.csv": "5dbbe34b70fab159d2701264655217596486c8406b416a6e7d50e7299ac4669c",
+    "preceding_source_exclusions.csv": "ed5be19861bab28a18928cf97b1a0211735bc5eb195b48b2934616844a5374a1",
+    "public_index_audit.json": "1d029bd99677b93ecc819e1e51c54e509c98a27807f71b9d9cb77f87452d3d22"
+  },
+  "release_designation": {
+    "public_metadata_only": "public_source_index.csv",
+    "internal_private_acquisition_paths": "primary/calibration/final_test_source_manifest.csv; do not publish those private-path CSVs"
+  },
+  "restricted_image_bytes_in_this_receipt": false,
+  "new_source_selection_performed": false
+}

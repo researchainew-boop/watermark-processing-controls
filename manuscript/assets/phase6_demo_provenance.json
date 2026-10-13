@@ -1,0 +1,102 @@
+{
+  "project_generated": true,
+  "dataset_images_used": false,
+  "excluded_from_every_benchmark": true,
+  "new_inference_performed": false,
+  "illustration_only": true,
+  "method": "dwt_dct",
+  "strength": 12.0,
+  "diffusion_parameters": {
+    "cached_revision": "1e9f017a7b1eaefb63a1900ea6c5953d2739fd21",
+    "scheduler": "DDIM",
+    "num_inference_steps": 20,
+    "strength": 0.5,
+    "guidance_scale": 1.0,
+    "prompt": "",
+    "seed": 20261009
+  },
+  "payload": "1011010010110100",
+  "not_the_primary_TrustMark_or_matched_40dB_setting": true,
+  "no_pixel_reencoding_or_new_decoding": true,
+  "layout_script_sha256": "37f5d04ed08ea00991344da427bf7a80cf9ee65108fe2df0581e5d5303494ee1",
+  "inputs": {
+    "generated-asset-provenance.json": "eead18a3b8be8871cab4b1006d9fcfa66a1b6d2a23b97a617f14c0247f81d4c1",
+    "example_measurements.json": "cd8e4948feb5e282806071d407334c2ba57a4db2387d9ea8219402a2e4a80b68"
+  },
+  "assets": [
+    {
+      "path": "manuscript/assets/phase6_demo_strip.pdf",
+      "sha256": "55341a188cd5a2f5f8c6df8c5ec8ae0537c2821ff07a3a18cfd873dfc7a8803e"
+    },
+    {
+      "path": "manuscript/assets/phase6_demo_strip.png",
+      "sha256": "112e6404a1a96d3e0f285cdac729e9f1e0d773d006995f560425108f5564d774"
+    },
+    {
+      "path": "manuscript/assets/example_original.png",
+      "sha256": "6b1e5401ff8064a9ad0974f04f32ecdc0f41612924ef28909fb7169c39e0e31c"
+    },
+    {
+      "path": "manuscript/assets/example_marked.png",
+      "sha256": "32af9baf82364eed112d36741379919ea69a1aabf7deabcebf66e97d71aeac6f"
+    },
+    {
+      "path": "manuscript/assets/example_jpeg50.png",
+      "sha256": "f32f7b773e61c432d3553a156096845913cb56f0f03f67222616bf91158b5fd1"
+    },
+    {
+      "path": "manuscript/assets/example_crop.png",
+      "sha256": "0dde9aefb4a1069593715b57e976c6c1857e25ca15b235e2dda66337779503ac"
+    },
+    {
+      "path": "manuscript/assets/example_lowres32.png",
+      "sha256": "614baaab1d64c8836500c1c4f5f71935d40cc8ba3503fe6d2e3605deb016a72f"
+    },
+    {
+      "path": "manuscript/assets/example_diffusion0p50.png",
+      "sha256": "c3cbd0f9fddfb80a8f39e6f092f51ca81d4360024a00e5268a2a19fd78359398"
+    },
+    {
+      "path": "manuscript/assets/generated-original.png",
+      "sha256": "7e2596b5fd581b3947332fc30705696171645bd7792180b915d4167841acddca"
+    }
+  ],
+  "original_image_assets": [
+    {
+      "path": "manuscript/assets/example_original.png",
+      "sha256": "6b1e5401ff8064a9ad0974f04f32ecdc0f41612924ef28909fb7169c39e0e31c",
+      "bits": "0111001110001101",
+      "agreement_count": 7
+    },
+    {
+      "path": "manuscript/assets/example_marked.png",
+      "sha256": "32af9baf82364eed112d36741379919ea69a1aabf7deabcebf66e97d71aeac6f",
+      "bits": "1011010010110100",
+      "agreement_count": 16
+    },
+    {
+      "path": "manuscript/assets/example_jpeg50.png",
+      "sha256": "f32f7b773e61c432d3553a156096845913cb56f0f03f67222616bf91158b5fd1",
+      "bits": "1011010010110100",
+      "agreement_count": 16
+    },
+    {
+      "path": "manuscript/assets/example_crop.png",
+      "sha256": "0dde9aefb4a1069593715b57e976c6c1857e25ca15b235e2dda66337779503ac",
+      "bits": "1101101011000011",
+      "agreement_count": 5
+    },
+    {
+      "path": "manuscript/assets/example_lowres32.png",
+      "sha256": "614baaab1d64c8836500c1c4f5f71935d40cc8ba3503fe6d2e3605deb016a72f",
+      "bits": "0101111010111110",
+      "agreement_count": 9
+    },
+    {
+      "path": "manuscript/assets/example_diffusion0p50.png",
+      "sha256": "c3cbd0f9fddfb80a8f39e6f092f51ca81d4360024a00e5268a2a19fd78359398",
+      "bits": "1001100000000010",
+      "agreement_count": 8
+    }
+  ]
+}

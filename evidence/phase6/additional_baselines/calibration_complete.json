@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-12T11:27:36.543035+00:00",
+  "inputs": {
+    "script_sha256": "bd18c25099b8e7028f30b407257379be7d15c366c3447f986219c84d909f1386",
+    "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+    "fit_sha256": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+    "development_features_sha256": "627b43725f6ef176cdcc2abdeeef62e4bd5e93968c61567ebcf3463172ebb7bf",
+    "calibration_features_sha256": "3441e937339ccc5b6b8c27cd8cc4e5d79fa2a409dfec6d0e4ebdd7d173ae4356"
+  },
+  "cuts_sha256": "72d273f7b1a44e22c24ddb473ea8f0f8abca7884da09bfac473b8f07cdeed493",
+  "final_test_scores_observed": false
+}

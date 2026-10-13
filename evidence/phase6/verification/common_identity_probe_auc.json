@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-10-13T04:06:37.796806+00:00",
+  "secondary_posthoc_diagnostic": true,
+  "new_inference_or_threshold_selection": false,
+  "sources": 1000,
+  "AI_sources": 600,
+  "photographic_sources": 400,
+  "processing": "Exact common128-to256 JPEG95 unmarked identity inputs",
+  "resnet_probe_auc": 0.6283166666666666,
+  "clip_probe_auc": 0.6462125,
+  "UFD_common_auc": 0.8914500000000001,
+  "inputs_sha256": {
+    "core_features": "d9501319a7f438e8b037bbe1876ea6e195b7b1afad5b8b283c2985e86cef0cd3",
+    "native_metrics": "67d117e6b489a5bb3f634f3a983968c6f66dcc79d69f2124af8c4bb52f8936ab"
+  },
+  "cut_independent_AUC_comparison": true,
+  "fixed_operating_cut_procedures_differ": true
+}

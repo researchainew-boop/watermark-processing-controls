@@ -1,0 +1,52 @@
+{
+  "planned_at_utc": "2026-10-11T12:48:35.327991+00:00",
+  "detector_scores_observed": false,
+  "detector": "Released UniversalFakeDetect CLIP ViT-L/14 linear head, unchanged official weights",
+  "source_manifest": "outputs/phase6/data_inventory/primary_source_manifest.csv",
+  "required_source_counts": {
+    "calibration": {
+      "coco": 400,
+      "openimages": 400
+    },
+    "test": {
+      "coco": 200,
+      "openimages": 200,
+      "BigGAN": 200,
+      "ADM": 200,
+      "VQDM": 200
+    }
+  },
+  "representations": {
+    "native": "Original decoded pixels, metadata rotation applied by inventory, lossless storage, no resize or re-encoding",
+    "common": "Exact frozen common128->256 JPEG95 base image, as fixed in root source protocol"
+  },
+  "official_transform": "CenterCrop224; ToTensor; CLIP mean(.48145466,.4578275,.40821073) std(.26862954,.26130258,.27577711); no Resize",
+  "native_small_image_behavior": "Official CenterCrop zero padding when a dimension is below224; report source counts/padding by family",
+  "feature_normalization": false,
+  "score": "Released linear head logit, larger means synthetic; no polarity tuning",
+  "threshold_calibration": {
+    "negative_sources": 800,
+    "alpha": 0.05,
+    "rank_one_based": "ceil((n+1)*(1-alpha))",
+    "decision": "strict logit>cut",
+    "independent_cut_per_representation": true,
+    "pooling": "COCO400+OpenImages400 negatives; no synthetic calibration data",
+    "test_tuning": false
+  },
+  "additional_original_cut": "logit>=0 retained as descriptive released-head diagnostic",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261019,
+    "unit": "independent source",
+    "stratification": "collection",
+    "native_common_paired": true
+  },
+  "model_asset_sha256": {
+    ".tools/extension-assets/ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+    ".tools/extension-assets/univfd_fc_weights.pth": "477100745713bcc957beb2b40859536859b6483fd6301b3b9293151b194c7847",
+    ".tools/extension-assets/official_clip_model.py": "c071d011e92226f1ca0a6f7c5098d8d7d08eadc7d6db125a81b52fc234b1ec59"
+  },
+  "implementation_sha256": "3e1e0c401bbef4048ea856660232166d24160661af13aa94e5fd82292eb637d4",
+  "previous_driver_sha256": "4a8ebe74a9c051f0ca403183ae924fc8e475b2df394ef39cede60519a1c5af31",
+  "fresh_test_inferred": false
+}

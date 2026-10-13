@@ -1,0 +1,177 @@
+{
+  "created_at_utc": "2026-10-13T04:33:05.582196+00:00",
+  "secondary_posthoc_diagnostic": true,
+  "new_inference_fitting_or_cut_selection": false,
+  "bound": 16,
+  "identity": "z+B <= t prevents strict acceptance for any learned correction in[0,B]",
+  "rows": [
+    {
+      "policy": "core_cuts_diagnostic",
+      "condition": "noise6_seed20261011",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 0.03333333333333333,
+      "native_full_recovered_fraction": 1.0,
+      "full_recovered_but_origin_rejected_fraction": 0.03333333333333333
+    },
+    {
+      "policy": "core_cuts_diagnostic",
+      "condition": "noise6_seed20261012",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 0.03888888888888889,
+      "native_full_recovered_fraction": 0.9777777777777777,
+      "full_recovered_but_origin_rejected_fraction": 0.03888888888888889
+    },
+    {
+      "policy": "core_cuts_diagnostic",
+      "condition": "noise6_seed20261013",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 0.03333333333333333,
+      "native_full_recovered_fraction": 0.9833333333333333,
+      "full_recovered_but_origin_rejected_fraction": 0.03333333333333333
+    },
+    {
+      "policy": "core_cuts_diagnostic",
+      "condition": "sd15_ddim_s005_budget35",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 0.06111111111111111,
+      "native_full_recovered_fraction": 0.9222222222222223,
+      "full_recovered_but_origin_rejected_fraction": 0.05555555555555555
+    },
+    {
+      "policy": "core_cuts_diagnostic",
+      "condition": "sd15_ddim_s005_raw",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 0.05555555555555555,
+      "native_full_recovered_fraction": 0.4777777777777778,
+      "full_recovered_but_origin_rejected_fraction": 0.03333333333333333
+    },
+    {
+      "policy": "core_cuts_diagnostic",
+      "condition": "waves_pgd8_budget35",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 0.85,
+      "native_full_recovered_fraction": 0.9611111111111111,
+      "full_recovered_but_origin_rejected_fraction": 0.8166666666666667
+    },
+    {
+      "policy": "core_cuts_diagnostic",
+      "condition": "waves_pgd8_raw",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 0.8888888888888888,
+      "native_full_recovered_fraction": 0.8555555555555555,
+      "full_recovered_but_origin_rejected_fraction": 0.7666666666666667
+    },
+    {
+      "policy": "core_cuts_diagnostic",
+      "condition": "waves_reconstruction_q3_budget35",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 0.044444444444444446,
+      "native_full_recovered_fraction": 0.8833333333333333,
+      "full_recovered_but_origin_rejected_fraction": 0.044444444444444446
+    },
+    {
+      "policy": "core_cuts_diagnostic",
+      "condition": "waves_reconstruction_q3_raw",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 0.044444444444444446,
+      "native_full_recovered_fraction": 0.8722222222222222,
+      "full_recovered_but_origin_rejected_fraction": 0.044444444444444446
+    },
+    {
+      "policy": "attack_family_source_cuts",
+      "condition": "noise6_seed20261011",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 1.0,
+      "native_full_recovered_fraction": 1.0,
+      "full_recovered_but_origin_rejected_fraction": 1.0
+    },
+    {
+      "policy": "attack_family_source_cuts",
+      "condition": "noise6_seed20261012",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 1.0,
+      "native_full_recovered_fraction": 0.9777777777777777,
+      "full_recovered_but_origin_rejected_fraction": 0.9777777777777777
+    },
+    {
+      "policy": "attack_family_source_cuts",
+      "condition": "noise6_seed20261013",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 1.0,
+      "native_full_recovered_fraction": 0.9833333333333333,
+      "full_recovered_but_origin_rejected_fraction": 0.9833333333333333
+    },
+    {
+      "policy": "attack_family_source_cuts",
+      "condition": "sd15_ddim_s005_budget35",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 1.0,
+      "native_full_recovered_fraction": 0.9222222222222223,
+      "full_recovered_but_origin_rejected_fraction": 0.9222222222222223
+    },
+    {
+      "policy": "attack_family_source_cuts",
+      "condition": "sd15_ddim_s005_raw",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 1.0,
+      "native_full_recovered_fraction": 0.4777777777777778,
+      "full_recovered_but_origin_rejected_fraction": 0.4777777777777778
+    },
+    {
+      "policy": "attack_family_source_cuts",
+      "condition": "waves_pgd8_budget35",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 1.0,
+      "native_full_recovered_fraction": 0.9611111111111111,
+      "full_recovered_but_origin_rejected_fraction": 0.9611111111111111
+    },
+    {
+      "policy": "attack_family_source_cuts",
+      "condition": "waves_pgd8_raw",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 0.9944444444444445,
+      "native_full_recovered_fraction": 0.8555555555555555,
+      "full_recovered_but_origin_rejected_fraction": 0.8555555555555555
+    },
+    {
+      "policy": "attack_family_source_cuts",
+      "condition": "waves_reconstruction_q3_budget35",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 1.0,
+      "native_full_recovered_fraction": 0.8833333333333333,
+      "full_recovered_but_origin_rejected_fraction": 0.8833333333333333
+    },
+    {
+      "policy": "attack_family_source_cuts",
+      "condition": "waves_reconstruction_q3_raw",
+      "AI_sources": 60,
+      "marked_images": 180,
+      "cap_infeasible_fraction": 1.0,
+      "native_full_recovered_fraction": 0.8722222222222222,
+      "full_recovered_but_origin_rejected_fraction": 0.8722222222222222
+    }
+  ],
+  "input_sha256": {
+    "outputs/phase6/test_attacks/features.csv": "4a7e1b148e32055cff7925ebc10ef92f988ada51d85a350655a6e9af5805edf3",
+    "outputs/phase6/attack_analysis/complete.json": "474782704efa0ea47fa79fdd2c107601e4f302b1a8de965dc65696619ce5197b",
+    "outputs/phase6/fusion_v2/calibration.json": "f560beba08d3f3be95316e396ba779eb37079f3c643a4281b78d1199df4f61ce",
+    "outputs/phase6/attack_analysis/secondary_cuts_locked.json": "1e762e11bee7b9a5ce2acfea373670d9ba8ecc58724ba8afc3b6c5c81ea44a9e"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema": "phase6_independent_final_method_review_v1",
+  "audited_utc": "2026-10-12T11:08:13.966Z",
+  "reviewer": "method_review independent agent",
+  "scope": "Frozen learner, deployment features, runtime/freeze/command guards, primary calibration receipts and supplemental secondary reporting; no fresh test outcomes.",
+  "conclusion": "Authorized synthetic/focused checks and immutable artifact checks passed. No unresolved blocking arithmetic or execution guard finding in the audited path. Prospective scientific claims remain untested by this review.",
+  "tests": {
+    "synthetic_fusion": {
+      "command": "python scripts/test_phase6_fusion.py",
+      "passed": 11,
+      "failures": 0,
+      "exit_code": 0,
+      "reported_seconds": 1.117
+    },
+    "feature_attack_native": {
+      "command": "python -m pytest tests/test_phase6_features.py tests/test_phase6_attacks.py tests/test_phase6_native_baseline.py --basetemp tmp/phase6-verification-03 -q -p no:cacheprovider",
+      "passed": 12,
+      "failures": 0,
+      "exit_code": 0,
+      "reported_seconds": 5.65
+    },
+    "secondary_guards": {
+      "command": "python -m pytest tests/test_phase6_attack_reporting.py --basetemp tmp/phase6-verification-03-attack -q -p no:cacheprovider",
+      "passed": 13,
+      "failures": 0,
+      "exit_code": 0,
+      "reported_seconds": 5.2
+    },
+    "total_passed": 36,
+    "execution_environment": {
+      "python": "<external-cache>",
+      "pythonpath": [
+        ".tools/gpu-deps",
+        ".tools/extension-deps",
+        ".tools/research-deps",
+        ".tools/fresh-deps",
+        ".tools/phase6-test-deps",
+        "src",
+        "scripts"
+      ],
+      "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1"
+    }
+  },
+  "immutable_artifacts": {
+    "root_lock_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+    "root_inputs_checked": 33,
+    "all_root_input_hashes_match": true,
+    "fitted_outputs_checked": 5,
+    "all_fitted_output_hashes_match": true,
+    "actual_passive_checkpoint_hashes_match": {
+      "clip": true,
+      "resnet": true
+    },
+    "original_protocol_preserved": true,
+    "only_sampling_score_separation_amended": true,
+    "learner_script_matches_fit": true,
+    "preceding_detailed_audit": "outputs/phase6/verification/method_audit.json"
+  },
+  "confirmatory_guard": {
+    "receipt": "outputs/phase6/confirmatory_command_v2_locked.json",
+    "guard_sha256": "28f7ed64e43f4231915b52a31566db54b4a8a9d30a6886ff77df3fe6a9add1af",
+    "wrapper_hash_matches": true,
+    "learner_hash_matches": true,
+    "root_hash_matches": true,
+    "test_source_receipt_hash_matches": true,
+    "source_manifest_hash_matches": true,
+    "initial_guard_hash_matches": true,
+    "fixed_2000_draws": true,
+    "fixed_fresh_test_name": true,
+    "registered_source_ids_unique_count": 1,
+    "registered_counts": {
+      "calibration/coco": 400,
+      "calibration/openimages": 400,
+      "test/coco": 200,
+      "test/openimages": 200,
+      "test/BigGAN": 200,
+      "test/ADM": 200,
+      "test/VQDM": 200
+    }
+  },
+  "secondary_arithmetic": {
+    "synthetic_sources": 100,
+    "conditions": 9,
+    "sources_per_collection": 50,
+    "conformal_order_rank": 49,
+    "synthetic_cut": 48,
+    "strict_source_exceedances": 2,
+    "registered_query_and_cover_guard_tests_passed": true,
+    "changed_policy_and_dependency_tests_passed": true,
+    "calibration_resume_does_not_rescore": true
+  },
+  "primary_calibration_receipts": {
+    "locked_utc": "2026-10-12T06:08:55.138381+00:00",
+    "feature_sha256": "3441e937339ccc5b6b8c27cd8cc4e5d79fa2a409dfec6d0e4ebdd7d173ae4356",
+    "calibration_json_hash_matches": true,
+    "calibration_source_hash_matches": true,
+    "threshold_lock_hash_matches": true,
+    "fit_complete_hash_matches": true
+  },
+  "resolved_findings": [
+    {
+      "issue": "Passive dependencies and pre-score amendment provenance",
+      "status": "resolved",
+      "evidence": "All root hashes and actual full passive checkpoint hashes match; original protocol and score-free sampling amendment preserved."
+    },
+    {
+      "issue": "Fixed confirmatory population and bootstrap command",
+      "status": "resolved",
+      "evidence": "Supplemental phase6_confirm.py and v2 guard bind exact registered metadata/source receipts, declared families/quotas, inference receipt, and 2000 draws."
+    },
+    {
+      "issue": "Secondary feature-family and policy-lock guards",
+      "status": "resolved",
+      "evidence": "Supplemental script validates registered queries, metadata, fixed marking states, complete nine-condition cover/decoder coverage, frozen inference dependencies and externally hashed cut receipt; 13 guard/resume tests passed."
+    },
+    {
+      "issue": "Nominal target versus realized FPR success criterion",
+      "status": "resolved",
+      "evidence": "Frozen evaluation plan and learner require actual final photographic source FPR <= .05 in addition to gain/noninferiority endpoints."
+    }
+  ],
+  "limitations": [
+    "Implementation checks do not establish scientific performance, novelty or conference acceptance. Fresh-test outcomes were not read.",
+    "Source-max split-conformal calibration is marginal within the declared exchangeable photographic collection and fixed query/view family; it is not a guarantee for every realized split or arbitrary shift.",
+    "Hashes cannot establish source independence, semantic deduplication, exchangeability or pretrained-model exposure. Legacy development blocks do not independently certify their original full ResNet checkpoint SHA.",
+    "Percentile source-bootstrap gain and nonzero-harm noninferiority intervals are approximate and conditional on fixed fitted models/thresholds; secondary multi-model/family/condition comparisons are descriptive.",
+    "The pooled zero-harm bound requires zero any-view harmful source events and source independence at fixed quotas. With 200 sources per family, zero events do not certify a simultaneous 1% family harm margin.",
+    "GenImage versus COCO/Open Images is not caption paired. Common encoding/resolution processing does not eliminate semantic or collection confounding.",
+    "Registered-message recovery and photographic calibration do not authenticate an issuer or certify unmarked-AI/wrong-payload null rates.",
+    "Core cuts on extra conditions are outside their calibration family. Secondary cuts cover only the declared attack family and fixed independent photographic subset.",
+    "Diffusion-reconstructed photographs contain generated pixels and retain input-provenance labels. Equal PSNR is not semantic/perceptual equivalence; budget adaptations differ from native published attacks.",
+    "Descriptive abstention/risk-coverage has no selective-risk or shift-detection guarantee."
+  ],
+  "changes": {
+    "frozen_code": false,
+    "fitted_models": false,
+    "scientific_choices": false,
+    "new_authorized_test_file": "tests/test_phase6_attack_reporting.py"
+  },
+  "outcomes_access": {
+    "development_audit_read": true,
+    "calibration_receipts_read": true,
+    "fresh_calibration_values_analyzed": false,
+    "fresh_test_outcomes_read": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "locked_at_utc": "2026-10-11T13:20:42.541230+00:00",
+  "original_protocol_sha256": "a0bb581898c76ccdd8181ca0c182285a18da75af140adf536103e0fe399f49ca",
+  "before_any_fresh_scores": true,
+  "backbone_sha256": {
+    "resnet": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "clip": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31"
+  },
+  "resnet_provenance": "TorchVision IMAGENET1K_V1 resnet18-f37072fd.pth",
+  "clip_provenance": "timm/vit_base_patch32_clip_224.openai revision a6f597a30f7b82c51704746581f9a4e41421e878",
+  "development_identity_evidence": "Official ResNet V1 identity and prior anchor equivalence; CLIP full SHA matches Phase3/4/5 provenance. Legacy development blocks do not retrospectively certify their full ResNet SHA."
+}

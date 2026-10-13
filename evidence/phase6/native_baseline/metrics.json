@@ -1,0 +1,377 @@
+{
+  "completed_at_utc": "2026-10-12T11:58:24.176814+00:00",
+  "overall": {
+    "sources": 1000,
+    "AI_sources": 600,
+    "real_sources": 400,
+    "metrics": {
+      "native": {
+        "threshold_logit": -0.26214913,
+        "AUC": 0.9192416666666667,
+        "TPR": 0.6316666666666667,
+        "FPR": 0.0375,
+        "AUC_ci95": [
+          0.9041936458333334,
+          0.9341175
+        ],
+        "TPR_ci95": [
+          0.5966666666666667,
+          0.665
+        ],
+        "FPR_ci95": [
+          0.02,
+          0.055
+        ],
+        "released_threshold0_TPR": 0.6083333333333333,
+        "released_threshold0_FPR": 0.0325
+      },
+      "common": {
+        "threshold_logit": -0.7844037,
+        "AUC": 0.8914500000000001,
+        "TPR": 0.555,
+        "FPR": 0.04,
+        "AUC_ci95": [
+          0.8714308333333334,
+          0.909504895833333
+        ],
+        "TPR_ci95": [
+          0.5166666666666667,
+          0.5933749999999998
+        ],
+        "FPR_ci95": [
+          0.0225,
+          0.06
+        ],
+        "released_threshold0_TPR": 0.4816666666666667,
+        "released_threshold0_FPR": 0.03
+      }
+    },
+    "paired_native_minus_common_AUC": 0.02779166666666666,
+    "paired_native_minus_common_AUC_ci95": [
+      0.012390937499999916,
+      0.0434292708333334
+    ]
+  },
+  "per_fresh_generator": {
+    "BigGAN": {
+      "sources": 600,
+      "AI_sources": 200,
+      "real_sources": 400,
+      "metrics": {
+        "native": {
+          "threshold_logit": -0.26214913,
+          "AUC": 0.967925,
+          "TPR": 0.825,
+          "FPR": 0.0375,
+          "AUC_ci95": [
+            0.9550615625000002,
+            0.9795887499999999
+          ],
+          "TPR_ci95": [
+            0.77,
+            0.88
+          ],
+          "FPR_ci95": [
+            0.02,
+            0.055
+          ],
+          "released_threshold0_TPR": 0.8,
+          "released_threshold0_FPR": 0.0325
+        },
+        "common": {
+          "threshold_logit": -0.7844037,
+          "AUC": 0.9403625,
+          "TPR": 0.745,
+          "FPR": 0.04,
+          "AUC_ci95": [
+            0.9185874999999999,
+            0.9602384375
+          ],
+          "TPR_ci95": [
+            0.685,
+            0.805
+          ],
+          "FPR_ci95": [
+            0.0225,
+            0.06
+          ],
+          "released_threshold0_TPR": 0.71,
+          "released_threshold0_FPR": 0.03
+        }
+      },
+      "paired_native_minus_common_AUC": 0.027562500000000045,
+      "paired_native_minus_common_AUC_ci95": [
+        0.01339906249999986,
+        0.04328749999999992
+      ]
+    },
+    "ADM": {
+      "sources": 600,
+      "AI_sources": 200,
+      "real_sources": 400,
+      "metrics": {
+        "native": {
+          "threshold_logit": -0.26214913,
+          "AUC": 0.845925,
+          "TPR": 0.36,
+          "FPR": 0.0375,
+          "AUC_ci95": [
+            0.8160096875,
+            0.8766412499999999
+          ],
+          "TPR_ci95": [
+            0.295,
+            0.425
+          ],
+          "FPR_ci95": [
+            0.02,
+            0.055
+          ],
+          "released_threshold0_TPR": 0.32,
+          "released_threshold0_FPR": 0.0325
+        },
+        "common": {
+          "threshold_logit": -0.7844037,
+          "AUC": 0.8360000000000001,
+          "TPR": 0.365,
+          "FPR": 0.04,
+          "AUC_ci95": [
+            0.8025446875,
+            0.8690790624999999
+          ],
+          "TPR_ci95": [
+            0.3,
+            0.435
+          ],
+          "FPR_ci95": [
+            0.0225,
+            0.06
+          ],
+          "released_threshold0_TPR": 0.265,
+          "released_threshold0_FPR": 0.03
+        }
+      },
+      "paired_native_minus_common_AUC": 0.009924999999999962,
+      "paired_native_minus_common_AUC_ci95": [
+        -0.014300624999999983,
+        0.035362812499999965
+      ]
+    },
+    "VQDM": {
+      "sources": 600,
+      "AI_sources": 200,
+      "real_sources": 400,
+      "metrics": {
+        "native": {
+          "threshold_logit": -0.26214913,
+          "AUC": 0.943875,
+          "TPR": 0.71,
+          "FPR": 0.0375,
+          "AUC_ci95": [
+            0.9238615625000001,
+            0.9615018750000001
+          ],
+          "TPR_ci95": [
+            0.645,
+            0.77
+          ],
+          "FPR_ci95": [
+            0.02,
+            0.055
+          ],
+          "released_threshold0_TPR": 0.705,
+          "released_threshold0_FPR": 0.0325
+        },
+        "common": {
+          "threshold_logit": -0.7844037,
+          "AUC": 0.8979874999999999,
+          "TPR": 0.555,
+          "FPR": 0.04,
+          "AUC_ci95": [
+            0.8689612500000001,
+            0.9225025000000001
+          ],
+          "TPR_ci95": [
+            0.485,
+            0.62
+          ],
+          "FPR_ci95": [
+            0.0225,
+            0.06
+          ],
+          "released_threshold0_TPR": 0.47,
+          "released_threshold0_FPR": 0.03
+        }
+      },
+      "paired_native_minus_common_AUC": 0.04588750000000008,
+      "paired_native_minus_common_AUC_ci95": [
+        0.027260937500000075,
+        0.06704031249999995
+      ]
+    }
+  },
+  "per_real_collection": {
+    "coco": {
+      "sources": 800,
+      "AI_sources": 600,
+      "real_sources": 200,
+      "metrics": {
+        "native": {
+          "threshold_logit": -0.26214913,
+          "AUC": 0.9558583333333333,
+          "TPR": 0.6316666666666667,
+          "FPR": 0.005,
+          "AUC_ci95": [
+            0.94206625,
+            0.9682668750000002
+          ],
+          "TPR_ci95": [
+            0.5966666666666667,
+            0.6683333333333333
+          ],
+          "FPR_ci95": [
+            0.0,
+            0.015
+          ],
+          "released_threshold0_TPR": 0.6083333333333333,
+          "released_threshold0_FPR": 0.005
+        },
+        "common": {
+          "threshold_logit": -0.7844037,
+          "AUC": 0.9106666666666667,
+          "TPR": 0.555,
+          "FPR": 0.035,
+          "AUC_ci95": [
+            0.8896218749999999,
+            0.9307879166666666
+          ],
+          "TPR_ci95": [
+            0.5166666666666667,
+            0.5916666666666667
+          ],
+          "FPR_ci95": [
+            0.01,
+            0.065
+          ],
+          "released_threshold0_TPR": 0.4816666666666667,
+          "released_threshold0_FPR": 0.025
+        }
+      },
+      "paired_native_minus_common_AUC": 0.04519166666666652,
+      "paired_native_minus_common_AUC_ci95": [
+        0.028757499999999887,
+        0.061917291666666506
+      ]
+    },
+    "openimages": {
+      "sources": 800,
+      "AI_sources": 600,
+      "real_sources": 200,
+      "metrics": {
+        "native": {
+          "threshold_logit": -0.26214913,
+          "AUC": 0.8826249999999999,
+          "TPR": 0.6316666666666667,
+          "FPR": 0.07,
+          "AUC_ci95": [
+            0.8590941666666665,
+            0.9053958333333334
+          ],
+          "TPR_ci95": [
+            0.5966666666666667,
+            0.6683333333333333
+          ],
+          "FPR_ci95": [
+            0.035,
+            0.105
+          ],
+          "released_threshold0_TPR": 0.6083333333333333,
+          "released_threshold0_FPR": 0.06
+        },
+        "common": {
+          "threshold_logit": -0.7844037,
+          "AUC": 0.8722333333333333,
+          "TPR": 0.555,
+          "FPR": 0.045,
+          "AUC_ci95": [
+            0.846583125,
+            0.8980437499999999
+          ],
+          "TPR_ci95": [
+            0.5166666666666667,
+            0.5916666666666667
+          ],
+          "FPR_ci95": [
+            0.02,
+            0.075
+          ],
+          "released_threshold0_TPR": 0.4816666666666667,
+          "released_threshold0_FPR": 0.035
+        }
+      },
+      "paired_native_minus_common_AUC": 0.010391666666666577,
+      "paired_native_minus_common_AUC_ci95": [
+        -0.014290000000000089,
+        0.034074999999999855
+      ]
+    }
+  },
+  "test_tuning": false,
+  "polarity_changed": false,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261019,
+  "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+  "test_predictions_sha256": "edf740baeeb4cd92ea3dbbf878d421eb6152c566df3781e2add39c445fff06c2",
+  "native_padding": [
+    {
+      "role": "calibration",
+      "collection": "coco",
+      "sources": 400,
+      "padded_sources": 2,
+      "mean_padding_fraction": 0.0008705357142857142
+    },
+    {
+      "role": "calibration",
+      "collection": "openimages",
+      "sources": 400,
+      "padded_sources": 0,
+      "mean_padding_fraction": 0.0
+    },
+    {
+      "role": "test",
+      "collection": "ADM",
+      "sources": 200,
+      "padded_sources": 0,
+      "mean_padding_fraction": 0.0
+    },
+    {
+      "role": "test",
+      "collection": "BigGAN",
+      "sources": 200,
+      "padded_sources": 200,
+      "mean_padding_fraction": 0.6734693877551021
+    },
+    {
+      "role": "test",
+      "collection": "VQDM",
+      "sources": 200,
+      "padded_sources": 0,
+      "mean_padding_fraction": 0.0
+    },
+    {
+      "role": "test",
+      "collection": "coco",
+      "sources": 200,
+      "padded_sources": 2,
+      "mean_padding_fraction": 0.0012723214285714284
+    },
+    {
+      "role": "test",
+      "collection": "openimages",
+      "sources": 200,
+      "padded_sources": 0,
+      "mean_padding_fraction": 0.0
+    }
+  ],
+  "interpretation": "Native and common preprocessing jointly differ in resolution, geometry and JPEG processing; native128 images invoke officialCenterCrop padding. Contrast is descriptive, not a causal attribution of detector failure."
+}

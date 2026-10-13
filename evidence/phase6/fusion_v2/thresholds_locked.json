@@ -1,0 +1,7 @@
+{
+  "calibration_json_sha256": "f560beba08d3f3be95316e396ba779eb37079f3c643a4281b78d1199df4f61ce",
+  "fit_complete_sha256": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+  "frozen_utc": "2026-10-12T06:08:55.138381+00:00",
+  "schema": "phase6_paired_fusion_v1",
+  "test_read": false
+}

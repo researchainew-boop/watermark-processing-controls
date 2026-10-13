@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-13T02:34:53.373061+00:00",
+  "preexisting_features_receipt_sha256": "a16dfcb4a456eed99daefe3e570d83bd75ff8949d1061db8f57806dc4cc291e6",
+  "reserialized_sha256": "780758bb789e303f60a80ea70aab585fc4f46f567b0ee1956ca6c3435f544aa5",
+  "restored_sha256": "ad163e04046e027428806a920086d9e4bce80f89943aa02c2e70790251eed36d",
+  "images_unchanged_and_hash_checked": 900,
+  "method": "Recompute pixel quality/budget metadata; replay known single earlier read_csv stage; accept only original sealed SHA",
+  "scores_models_cuts_or_receipts_changed": false,
+  "script_sha256": "4a36a36115c22dd6198296aa014c08fcffbf530b349aca1019179275b38db244"
+}

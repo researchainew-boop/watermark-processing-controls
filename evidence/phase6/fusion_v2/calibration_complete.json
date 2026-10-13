@@ -1,0 +1,13 @@
+{
+  "calibration_features_sha256": "3441e937339ccc5b6b8c27cd8cc4e5d79fa2a409dfec6d0e4ebdd7d173ae4356",
+  "final_test_read": false,
+  "fit_complete_sha256": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+  "frozen_utc": "2026-10-12T06:08:55.138381+00:00",
+  "outputs_sha256": {
+    "calibration.json": "f560beba08d3f3be95316e396ba779eb37079f3c643a4281b78d1199df4f61ce",
+    "calibration_sources.csv": "cb81abc1dad5222d982d4e2565d6b9545f97a94f398b21b10a3d880637448b1b",
+    "thresholds_locked.json": "75dc0e32d5655c246498d23995d2f1ae60b2313d068566feb2804668fcb9f792"
+  },
+  "schema": "phase6_paired_fusion_v1",
+  "script_sha256": "54db8455ad6f13a09ab01c53e6ef3d22f29a03a2ee3a9db9573cb373e0175d20"
+}

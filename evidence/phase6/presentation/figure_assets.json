@@ -1,0 +1,60 @@
+{
+  "measurement_figures_available": true,
+  "evaluation_receipt_sha256": "73d46df578130ec71bd4a3470d1e698c2fc4b0df2bc4f13af19e4f3db5d708c4",
+  "assets": [
+    {
+      "path": "manuscript/assets/phase6_pipeline.pdf",
+      "format": "pdf",
+      "sha256": "5506cea34bbeb706f93b4c90ea4c846f70e45ae9263f958d048d401bf22e4208",
+      "title": "Actual paired fusion and independent source calibration",
+      "reporting_script_sha256": "4e47e4021d0895a3f39f3353ce2a9ab08330fefe5d515b5f9c22fe0dc6402430",
+      "width_pixels": null,
+      "height_pixels": null
+    },
+    {
+      "path": "manuscript/assets/phase6_pipeline.png",
+      "format": "png",
+      "sha256": "00b926ed5a2dd6b35c5d568dc9f7dbab3e6cc0e80f5f836bd51aaffa6f9de102",
+      "title": "Actual paired fusion and independent source calibration",
+      "reporting_script_sha256": "4e47e4021d0895a3f39f3353ce2a9ab08330fefe5d515b5f9c22fe0dc6402430",
+      "width_pixels": 2126,
+      "height_pixels": 820
+    },
+    {
+      "path": "manuscript/assets/phase6_roc_tm_resnet.pdf",
+      "format": "pdf",
+      "sha256": "01073058621e7d1eb77eba2a9f65580ebfd0905c91bc115461e44428446f5a61",
+      "title": "Separate image ROCs and deployed source-FPR operating points",
+      "reporting_script_sha256": "4e47e4021d0895a3f39f3353ce2a9ab08330fefe5d515b5f9c22fe0dc6402430",
+      "width_pixels": null,
+      "height_pixels": null
+    },
+    {
+      "path": "manuscript/assets/phase6_roc_tm_resnet.png",
+      "format": "png",
+      "sha256": "ac79d78cad84a5996f21741152bedf877abc017e1cf0ce9406bc84114ff55788",
+      "title": "Separate image ROCs and deployed source-FPR operating points",
+      "reporting_script_sha256": "4e47e4021d0895a3f39f3353ce2a9ab08330fefe5d515b5f9c22fe0dc6402430",
+      "width_pixels": 2121,
+      "height_pixels": 802
+    },
+    {
+      "path": "manuscript/assets/phase6_marked_share_tm_resnet.pdf",
+      "format": "pdf",
+      "sha256": "7eb2de5f89b2fe1fb032a2c3a32ee20fa49d6fc45256f93c796eb235b8e106c5",
+      "title": "Fixed-cut paired marked-share TPR gains with source intervals",
+      "reporting_script_sha256": "4e47e4021d0895a3f39f3353ce2a9ab08330fefe5d515b5f9c22fe0dc6402430",
+      "width_pixels": null,
+      "height_pixels": null
+    },
+    {
+      "path": "manuscript/assets/phase6_marked_share_tm_resnet.png",
+      "format": "png",
+      "sha256": "0872c941b395d3fe371f8d87b0835af3ff2bbd64b2d2d69ccc6d92fe4ab48a3e",
+      "title": "Fixed-cut paired marked-share TPR gains with source intervals",
+      "reporting_script_sha256": "4e47e4021d0895a3f39f3353ce2a9ab08330fefe5d515b5f9c22fe0dc6402430",
+      "width_pixels": 1011,
+      "height_pixels": 708
+    }
+  ]
+}

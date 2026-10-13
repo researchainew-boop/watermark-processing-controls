@@ -1,0 +1,80 @@
+{
+  "recorded_at_utc": "2026-10-11T12:29:58.216856+00:00",
+  "seed": 20261011,
+  "planned_sources": {
+    "calibration": {
+      "coco": 400,
+      "openimages": 400
+    },
+    "test": {
+      "coco": 200,
+      "openimages": 200,
+      "BigGAN": 200,
+      "ADM": 200,
+      "VQDM": 200
+    }
+  },
+  "genimage_repository": "nebula/GenImage-arrow",
+  "genimage_revision": "3f4b9f921a673be09a93b335ed728cea0c6ecf33",
+  "family_definitions": {
+    "BigGAN": "GAN",
+    "ADM": "pixel-space guided diffusion",
+    "VQDM": "discrete latent diffusion"
+  },
+  "selection": "SHA256(phase6|seed|collection|public ID) order; first eligible sources until fixed quota",
+  "eligibility": "Known source-ID exclusion, decode availability, native minimum side 128, exact native/base pixel hash exclusion, 64-bit average hash Hamming distance <=2 exclusion against preceding and selected sources",
+  "real_role_assignment": "Within each real collection, first 400 eligible ordered IDs are calibration, next 200 test",
+  "processing": "Primary: decoded/oriented native BGR -> INTER_AREA 128x128 -> INTER_LINEAR 256x256 -> common OpenCV JPEG95 encode/decode -> PNG",
+  "scores_observed": false,
+  "detector_or_watermark_imported": false,
+  "final_test_may_be_scored_only_after_method_lock": true,
+  "study_fit_families": [
+    "Stable Diffusion",
+    "DALL-E3"
+  ],
+  "preceding_test_families": [
+    "Midjourney",
+    "Realistic Vision SD1.x/LCM"
+  ],
+  "exposure_caveat": "Unseen refers to study supervised fitting/development. Public benchmark or pretraining exposure of frozen backbones and external detectors is not excluded.",
+  "content_caveat": "GenImage ImageNet-class generation is not COCO-caption-paired; common JPEG processing removes file encoding differences but not collection/content differences.",
+  "preceding_tables_sha256": {
+    "outputs/conference_clean/source_audit.csv": "7934f56b61befa7fa20f91157a450aef5af556a8d6e9bf4d702982b477b6746f",
+    "outputs/extension/fresh/manifest.csv": "3a3d930c7eb4f3ca717f31cc258d906f125bfd02de5832ed38469f6436637765",
+    "outputs/phase3/controls/openimages_sources.csv": "d9839ff81f9665e30d807cd00d284db78c053d0eef983fd711a681ac001d67dd",
+    "outputs/phase4/fresh_replication/sources.csv": "f1463a5d5509de21e491655dcb99be2f34b6747991fe7d4c4a8d3b0c812460d3",
+    "outputs/phase5/paired_content/exclusion_manifest.csv": "db51467b6af0996290f65ea2896326ffa2c63683361222029a88e5efcdc0a94c",
+    "outputs/phase5/paired_content/source_pairs.csv": "868434d65ac0adeac61bc14c84700f9562941ea3b20d02c1b81c21688bdb7e6f",
+    "outputs/phase5/paired_content/generated_sources.csv": "dd0da49bd240f3f08cda32762d761a08ea165357ab900673914d2997ec33829b",
+    "outputs/phase5/fair_watermarks/base_sources.csv": "19769e5a2dc256040404cce2431f4daf4441d535131a121ff33fc921a59e19ea",
+    "outputs/phase5/calibration/calibration_extra_manifest.csv": "a4393773155c516fed330aed1b22c5fc83690e8d3e6b53392f4c258e36379449"
+  },
+  "exclusion_manifest_sha256": "ed5be19861bab28a18928cf97b1a0211735bc5eb195b48b2934616844a5374a1",
+  "script_sha256_at_sampling": "fd0808e137e2fbad090c42a239cdf26e7b4a0e6ea9db375b060337ca0fe0b799",
+  "prescore_amendments": [
+    {
+      "name": "available-pilot-demo-exclusions",
+      "recorded_at_utc": "2026-10-11T12:46:54.152929+00:00",
+      "additional_available_originals": 1048,
+      "source_pair_public_ID_namespace_corrected": true,
+      "scores_observed": false,
+      "reason": "Audit all available preceding study/pilot/demo originals, including the superseded CIFAKE pilot retained in processed/base"
+    },
+    {
+      "name": "common128-before-marking",
+      "recorded_at_utc": "2026-10-11T12:50:55.247247+00:00",
+      "prior_manifest_sha256": "cc2b98f9baaff9175b2eaee45a20c163915575eb0267e417462f042580ec593b",
+      "reason": "BigGAN native outputs are 128 pixels; use the same 128-pixel bottleneck for every calibration/test origin before watermarking",
+      "source_ids_or_roles_changed_count": 0,
+      "scores_observed": false,
+      "primary_processing": "OpenCV decoded/oriented native BGR -> INTER_AREA 128x128 -> INTER_LINEAR 256x256 -> common JPEG95 encode/decode -> PNG",
+      "diagnostic_processing": "Native directly INTER_AREA 256x256 -> same JPEG95 encode/decode -> PNG",
+      "screening_processing_unchanged": "Duplicate screening uses original native and native-to256 standardized hashes; no resampling of fixed selected IDs"
+    }
+  ],
+  "preceding_audit_records": 11505,
+  "original_direct256_processing": "OpenCV BGR decode; Open Images metadata CCW rotation; INTER_AREA resize 256 square; common OpenCV JPEG95 encode/decode; PNG storage",
+  "diagnostic_processing": "Decoded/oriented native BGR -> INTER_AREA 256x256 -> same OpenCV JPEG95 encode/decode -> PNG",
+  "negative_label_caveat": "COCO/Open Images source-collection ground truth, not an individual forensic certificate of camera capture or photographic style",
+  "score_separation": "Source sampling never uses model scores. Independent real calibration may be scored after its immutable manifest is delivered; no final test score is computed by this preparation driver, and final test inference requires a separately locked method."
+}

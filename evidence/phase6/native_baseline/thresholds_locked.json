@@ -1,0 +1,31 @@
+{
+  "locked_at_utc": "2026-10-12T11:06:02.195490+00:00",
+  "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+  "alpha": 0.05,
+  "decision": "strict logit>cut",
+  "test_scores_observed": false,
+  "calibration_predictions_sha256": "3fb3b920157401e65f555597dd648ce81426c302eb71fed5aed3ae084f335f71",
+  "cuts": {
+    "native": {
+      "threshold_logit": -0.26214913,
+      "rank_one_based": 761,
+      "negative_sources": 800,
+      "calibration_FPR": 0.04875,
+      "per_collection_FPR": {
+        "coco": 0.0025,
+        "openimages": 0.095
+      }
+    },
+    "common": {
+      "threshold_logit": -0.7844037,
+      "rank_one_based": 761,
+      "negative_sources": 800,
+      "calibration_FPR": 0.04875,
+      "per_collection_FPR": {
+        "coco": 0.035,
+        "openimages": 0.0625
+      }
+    }
+  },
+  "conditionality": "Marginal negative calibration under source exchangeability; no unconditional guarantee under collection or processing shift"
+}

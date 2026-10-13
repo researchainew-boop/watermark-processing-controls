@@ -1,0 +1,70 @@
+{
+  "completed_at_utc": "2026-10-12T06:16:17.826806+00:00",
+  "role": "calibration",
+  "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+  "predictions_sha256": "3fb3b920157401e65f555597dd648ce81426c302eb71fed5aed3ae084f335f71",
+  "rows": 1600,
+  "blocks": [
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/000000.npz",
+      "sha256": "3b7395deaef2878dac88235aae80282ef2cab58a3bef0a5d5dfca9588930856b"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/000128.npz",
+      "sha256": "ac3e1916ef481e429c13ba260c5b99b483130df57ab97c4472ff8df5e99634a3"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/000256.npz",
+      "sha256": "fc369c2d3642f9bc6006bca0e21a7d0a04917752e95bc66c5ad42f89625b9997"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/000384.npz",
+      "sha256": "d3f6b03a8355a1cf6bd3d49a2193807276e34f6d5a37e0828c06ad9ddbb7cc4f"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/000512.npz",
+      "sha256": "0a54a2fc555361cd3490537ec7fa71fff54a4baa3167fadc566835bc6beccef1"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/000640.npz",
+      "sha256": "b5c97fd0676d3f5ee2bfcb288570308b5c59484240084030ddaa3a341e07a9e5"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/000768.npz",
+      "sha256": "cabb11327e8cacfbe1e6d60d8a17025397a873a4ff9a14bbe54faf8efa8bd30c"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/000896.npz",
+      "sha256": "94e62dc8bc4b605a2edbadf614b6be6090597336c76e00c84226d928bcde6344"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/001024.npz",
+      "sha256": "db812eb0f078ad8606d541a6cab9cede88a341e553f7e2dc41986816e14af339"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/001152.npz",
+      "sha256": "b390ce1f6669cbf4cacd9df2dda95b33686d0796fe4622338d4acf6213067060"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/001280.npz",
+      "sha256": "41f3b89dbe742a4490fcc757d599b3ba36023850441a625f02435b92de101260"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/001408.npz",
+      "sha256": "b14e009342aafed971aa92e07a3d7d5556a58529fd3b650ac6999e07d29d5010"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/calibration_blocks/001536.npz",
+      "sha256": "13114a481f900a1ee2114188afd36cbd691dfda7c58f1a98aef307efb754cd4c"
+    }
+  ],
+  "elapsed_seconds": 211.71444670000005,
+  "dtype": "float32",
+  "device": "cuda",
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "numpy": "1.26.4",
+    "pillow": "12.3.0"
+  }
+}

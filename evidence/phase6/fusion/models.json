@@ -1,0 +1,1894 @@
+{
+  "dwt_dct/clip": {
+    "hard_13_gate": {
+      "kind": "hard_gate",
+      "static": {
+        "kind": "static",
+        "optimizer": {
+          "converged": true,
+          "iterations": 14
+        },
+        "parameters": [
+          -4.365503763731228,
+          7.13064539007219,
+          -2.2514142903691328
+        ]
+      }
+    },
+    "no_full_match": {
+      "bound": 8.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5168495783730159,
+        0.5028366815476191,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.9588913690476191,
+        0.9819901990039008
+      ],
+      "null_strength": 1.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 29,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.42173145000748646
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -5.987439022739017,
+        0.3620443556687164,
+        0.4930791766660391,
+        0.9274806969693106,
+        -0.8204044804768361,
+        1.8021837969818386,
+        0.7521261990504748,
+        0.35780433062009825,
+        0.09103737293560196
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.21890042334834378,
+        0.21954727820508657,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.06288385481457061,
+        0.08758440632362888
+      ],
+      "variant": "no_full_match",
+      "z_mean": 2.8286076609807,
+      "z_scale": 13.812854963283124
+    },
+    "no_null": {
+      "bound": 8.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5168495783730159,
+        0.5028366815476191,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.9588913690476191,
+        0.9819901990039008,
+        0.07787698412698413,
+        0.07738095238095238,
+        0.0,
+        0.5168495783730159
+      ],
+      "null_strength": 0.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 32,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.40565186689861926
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -4.567849721985689,
+        1.2126800870120913,
+        0.37538186122196604,
+        0.8935751263325086,
+        -0.5418572353508556,
+        1.0684734822646473,
+        0.18555342258763602,
+        0.5158004456909737,
+        0.19266875438526349,
+        1.3272248995943257,
+        1.3230001577900348,
+        0.0,
+        0.3758228634801474
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.21890042334834378,
+        0.21954727820508657,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.06288385481457061,
+        0.08758440632362888,
+        0.2679779085489503,
+        0.26719494866027904,
+        1e-08,
+        0.21890042334834378
+      ],
+      "variant": "no_null",
+      "z_mean": 2.8286076609807,
+      "z_scale": 13.812854963283124
+    },
+    "no_pair": {
+      "bound": 8.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5168495783730159,
+        0.5028366815476191,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.9588913690476191,
+        0.9819901990039008,
+        0.07787698412698413,
+        0.07738095238095238,
+        0.0,
+        0.5168495783730159
+      ],
+      "null_strength": 10.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 38,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.3830654915668406
+      },
+      "pair_strength": 0.0,
+      "parameters": [
+        -5.339814800556931,
+        0.04433591116899134,
+        -0.006365543148813698,
+        0.006212147201910998,
+        -0.04302229789130425,
+        0.1523787865300105,
+        0.30494534347674007,
+        0.06910922971952267,
+        0.011339963344956487,
+        1.551893914507121,
+        1.546527928897346,
+        0.0,
+        -0.00635235925858081
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.21890042334834378,
+        0.21954727820508657,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.06288385481457061,
+        0.08758440632362888,
+        0.2679779085489503,
+        0.26719494866027904,
+        1e-08,
+        0.21890042334834378
+      ],
+      "variant": "no_pair",
+      "z_mean": 2.8286076609807,
+      "z_scale": 13.812854963283124
+    },
+    "no_stability": {
+      "bound": 8.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "full_match",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5168495783730159,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.07787698412698413,
+        0.0,
+        0.5168495783730159
+      ],
+      "null_strength": 1.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 28,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.41950416259646994
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -5.154329530627758,
+        0.25039381105163633,
+        0.389810505028544,
+        -0.4500267777885024,
+        1.4091247985254107,
+        0.7881692107969092,
+        1.5106778253669046,
+        0.0,
+        0.39022590651587136
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.21890042334834378,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.2679779085489503,
+        1e-08,
+        0.21890042334834378
+      ],
+      "variant": "no_stability",
+      "z_mean": 2.8286076609807,
+      "z_scale": 13.812854963283124
+    },
+    "old_capped_positive": {
+      "adaptation": "Local capped positive-evidence formula refitted with frozen passive score and source-level max-query calibration.",
+      "cap": 1.7745629619545387,
+      "coefficient": 0.0,
+      "fit_threshold": 5.543331137317762,
+      "kind": "capped"
+    },
+    "old_reliability_mixture": {
+      "adaptation": "Local smooth reliability-mixture formula refitted on identical Phase6 fitting sources; passive expert remains frozen.",
+      "kind": "reliability",
+      "logit_scale": 22.674522280984064,
+      "optimizer": {
+        "converged": true,
+        "iterations": 8
+      },
+      "parameters": [
+        2.7039031009943226,
+        0.34899788994040404,
+        -3.8138343013443716,
+        1.0047812929588245
+      ],
+      "static": {
+        "kind": "static",
+        "optimizer": {
+          "converged": true,
+          "iterations": 14
+        },
+        "parameters": [
+          -4.365503763731228,
+          7.13064539007219,
+          -2.2514142903691328
+        ]
+      }
+    },
+    "primary": {
+      "bound": 8.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5168495783730159,
+        0.5028366815476191,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.9588913690476191,
+        0.9819901990039008,
+        0.07787698412698413,
+        0.07738095238095238,
+        0.0,
+        0.5168495783730159
+      ],
+      "null_strength": 1.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 33,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.41717716408594374
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -5.005674876692604,
+        0.33092999914114185,
+        0.2726393565646434,
+        0.664671313487235,
+        -0.6203271436832641,
+        1.4036105426826688,
+        0.6205084188720069,
+        0.3591726071093609,
+        0.09279541320049398,
+        1.4550934290531792,
+        1.4497010181570797,
+        0.0,
+        0.2726515052222444
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.21890042334834378,
+        0.21954727820508657,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.06288385481457061,
+        0.08758440632362888,
+        0.2679779085489503,
+        0.26719494866027904,
+        1e-08,
+        0.21890042334834378
+      ],
+      "variant": "primary",
+      "z_mean": 2.8286076609807,
+      "z_scale": 13.812854963283124
+    },
+    "probe": {
+      "kind": "probe"
+    },
+    "simple_confidence": {
+      "kind": "simple_confidence"
+    },
+    "static_fusion": {
+      "kind": "static",
+      "optimizer": {
+        "converged": true,
+        "iterations": 14
+      },
+      "parameters": [
+        -4.365503763731228,
+        7.13064539007219,
+        -2.2514142903691328
+      ]
+    },
+    "unconstrained_full_logistic": {
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "full_logistic",
+      "mean": [
+        0.5168495783730159,
+        0.5028366815476191,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.9588913690476191,
+        0.9819901990039008,
+        0.07787698412698413,
+        0.07738095238095238,
+        0.0,
+        0.5168495783730159
+      ],
+      "optimizer": {
+        "converged": true,
+        "iterations": 58
+      },
+      "parameters": [
+        -0.8776841720578353,
+        4.840969752387484,
+        -0.20742300150678405,
+        0.7570116766366974,
+        -0.40527771175223803,
+        0.832690003605464,
+        1.0172996482003231,
+        -0.30182095045066015,
+        0.1746966091337769,
+        0.3893367808590335,
+        0.3893607393608207,
+        0.0,
+        -0.20742300150679374
+      ],
+      "scale": [
+        0.21890042334834378,
+        0.21954727820508657,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.06288385481457061,
+        0.08758440632362888,
+        0.2679779085489503,
+        0.26719494866027904,
+        1e-08,
+        0.21890042334834378
+      ],
+      "z_mean": 2.8286076609807,
+      "z_scale": 13.812854963283124
+    },
+    "watermark_only_agreement": {
+      "feature": "agreement",
+      "kind": "watermark_only"
+    },
+    "watermark_only_full_match": {
+      "feature": "full_match",
+      "kind": "watermark_only"
+    },
+    "watermark_only_margin": {
+      "feature": "signed_margin",
+      "kind": "watermark_only"
+    }
+  },
+  "dwt_dct/resnet": {
+    "hard_13_gate": {
+      "kind": "hard_gate",
+      "static": {
+        "kind": "static",
+        "optimizer": {
+          "converged": true,
+          "iterations": 11
+        },
+        "parameters": [
+          -2.044909974502284,
+          4.717954058861801,
+          -2.866274869809367
+        ]
+      }
+    },
+    "no_full_match": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5168495783730159,
+        0.5028366815476191,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.9588913690476191,
+        0.9819901990039008
+      ],
+      "null_strength": 1.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 32,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.5010794924749247
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -6.65119409711872,
+        0.02599012123681131,
+        0.4778885696249194,
+        0.9448139055419507,
+        -0.7848522551383594,
+        2.029396957255968,
+        0.8293278202082106,
+        0.35411043855584695,
+        0.043328838081631224
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.21890042334834378,
+        0.21954727820508657,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.06288385481457061,
+        0.08758440632362888
+      ],
+      "variant": "no_full_match",
+      "z_mean": 0.7741025253650394,
+      "z_scale": 7.469691747317751
+    },
+    "no_null": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5168495783730159,
+        0.5028366815476191,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.9588913690476191,
+        0.9819901990039008,
+        0.07787698412698413,
+        0.07738095238095238,
+        0.0,
+        0.5168495783730159
+      ],
+      "null_strength": 0.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 32,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.47816207718870496
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -4.84582966471646,
+        -0.7634067024760153,
+        0.3555336289524926,
+        0.8294023039133536,
+        -0.39224144548122586,
+        1.8917752959008824,
+        0.9928182065482468,
+        0.2871801754783074,
+        0.05601050253795996,
+        1.4084198544049862,
+        1.4035020474289375,
+        0.0,
+        0.3541057148563077
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.21890042334834378,
+        0.21954727820508657,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.06288385481457061,
+        0.08758440632362888,
+        0.2679779085489503,
+        0.26719494866027904,
+        1e-08,
+        0.21890042334834378
+      ],
+      "variant": "no_null",
+      "z_mean": 0.7741025253650394,
+      "z_scale": 7.469691747317751
+    },
+    "no_pair": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5168495783730159,
+        0.5028366815476191,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.9588913690476191,
+        0.9819901990039008,
+        0.07787698412698413,
+        0.07738095238095238,
+        0.0,
+        0.5168495783730159
+      ],
+      "null_strength": 10.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 42,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.46759986670781994
+      },
+      "pair_strength": 0.0,
+      "parameters": [
+        -5.89929787374833,
+        -0.01093291549259584,
+        -0.004230780348570508,
+        0.0003002767558345853,
+        -0.06608999985196533,
+        0.24685392358728242,
+        0.3640378566042184,
+        0.07571499612656134,
+        -0.00729346490066489,
+        1.7143445942691593,
+        1.7084168985607144,
+        0.0,
+        -0.0042454254300877785
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.21890042334834378,
+        0.21954727820508657,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.06288385481457061,
+        0.08758440632362888,
+        0.2679779085489503,
+        0.26719494866027904,
+        1e-08,
+        0.21890042334834378
+      ],
+      "variant": "no_pair",
+      "z_mean": 0.7741025253650394,
+      "z_scale": 7.469691747317751
+    },
+    "no_stability": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "full_match",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5168495783730159,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.07787698412698413,
+        0.0,
+        0.5168495783730159
+      ],
+      "null_strength": 1.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 34,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.500852803069687
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -5.948007094342948,
+        -0.08894137024874055,
+        0.5090608924428338,
+        -0.5636937756573509,
+        1.9964401111280266,
+        1.0120330322001567,
+        1.7283506202742154,
+        0.0,
+        0.5078684737458552
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.21890042334834378,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.2679779085489503,
+        1e-08,
+        0.21890042334834378
+      ],
+      "variant": "no_stability",
+      "z_mean": 0.7741025253650394,
+      "z_scale": 7.469691747317751
+    },
+    "old_capped_positive": {
+      "adaptation": "Local capped positive-evidence formula refitted with frozen passive score and source-level max-query calibration.",
+      "cap": 4.426508675340148,
+      "coefficient": 2.8824207824473245,
+      "fit_threshold": 5.153634251258093,
+      "kind": "capped"
+    },
+    "old_reliability_mixture": {
+      "adaptation": "Local smooth reliability-mixture formula refitted on identical Phase6 fitting sources; passive expert remains frozen.",
+      "kind": "reliability",
+      "logit_scale": 11.951238858874706,
+      "optimizer": {
+        "converged": true,
+        "iterations": 9
+      },
+      "parameters": [
+        2.7009610592885474,
+        -0.19248269341422924,
+        -3.587561950903432,
+        0.8733145595127902
+      ],
+      "static": {
+        "kind": "static",
+        "optimizer": {
+          "converged": true,
+          "iterations": 11
+        },
+        "parameters": [
+          -2.044909974502284,
+          4.717954058861801,
+          -2.866274869809367
+        ]
+      }
+    },
+    "primary": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5168495783730159,
+        0.5028366815476191,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.9588913690476191,
+        0.9819901990039008,
+        0.07787698412698413,
+        0.07738095238095238,
+        0.0,
+        0.5168495783730159
+      ],
+      "null_strength": 10.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 38,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.5074763820249143
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -5.888310471532125,
+        -0.015275036930615023,
+        -0.003721580713606127,
+        0.02259416696575645,
+        -0.10108503573204737,
+        0.43449090257139167,
+        0.40907627389081513,
+        0.11911837920661099,
+        0.002542222836322434,
+        1.7155217130507994,
+        1.7057283153528753,
+        0.0,
+        -0.004829853782809882
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.21890042334834378,
+        0.21954727820508657,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.06288385481457061,
+        0.08758440632362888,
+        0.2679779085489503,
+        0.26719494866027904,
+        1e-08,
+        0.21890042334834378
+      ],
+      "variant": "primary",
+      "z_mean": 0.7741025253650394,
+      "z_scale": 7.469691747317751
+    },
+    "probe": {
+      "kind": "probe"
+    },
+    "simple_confidence": {
+      "kind": "simple_confidence"
+    },
+    "static_fusion": {
+      "kind": "static",
+      "optimizer": {
+        "converged": true,
+        "iterations": 11
+      },
+      "parameters": [
+        -2.044909974502284,
+        4.717954058861801,
+        -2.866274869809367
+      ]
+    },
+    "unconstrained_full_logistic": {
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "full_logistic",
+      "mean": [
+        0.5168495783730159,
+        0.5028366815476191,
+        0.02502832139369236,
+        -0.4593627570948723,
+        0.4790955702975247,
+        0.9588913690476191,
+        0.9819901990039008,
+        0.07787698412698413,
+        0.07738095238095238,
+        0.0,
+        0.5168495783730159
+      ],
+      "optimizer": {
+        "converged": true,
+        "iterations": 21
+      },
+      "parameters": [
+        -1.0685364601987692,
+        3.1626512631061194,
+        -0.04137954404603245,
+        1.0019582565742629,
+        -0.027747692225262494,
+        0.6635973790323005,
+        0.5578484447603463,
+        -0.17413588254426923,
+        0.03293877311970884,
+        0.4293816046874439,
+        0.4278632408558797,
+        0.0,
+        -0.04137954404603351
+      ],
+      "scale": [
+        0.21890042334834378,
+        0.21954727820508657,
+        0.35061408312758724,
+        0.4516470055067488,
+        0.2774812277014138,
+        0.06288385481457061,
+        0.08758440632362888,
+        0.2679779085489503,
+        0.26719494866027904,
+        1e-08,
+        0.21890042334834378
+      ],
+      "z_mean": 0.7741025253650394,
+      "z_scale": 7.469691747317751
+    },
+    "watermark_only_agreement": {
+      "feature": "agreement",
+      "kind": "watermark_only"
+    },
+    "watermark_only_full_match": {
+      "feature": "full_match",
+      "kind": "watermark_only"
+    },
+    "watermark_only_margin": {
+      "feature": "signed_margin",
+      "kind": "watermark_only"
+    }
+  },
+  "trustmark/clip": {
+    "hard_13_gate": {
+      "kind": "hard_gate",
+      "static": {
+        "kind": "static",
+        "optimizer": {
+          "converged": true,
+          "iterations": 14
+        },
+        "parameters": [
+          -4.484105606758254,
+          7.114313063629376,
+          -1.8652430419015174
+        ]
+      }
+    },
+    "no_full_match": {
+      "bound": 8.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5149584573412699,
+        0.4848090277777778,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.8592819940476191,
+        0.8385835334684955
+      ],
+      "null_strength": 1.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 25,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.38187708792957376
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -3.854288625143332,
+        0.09980786379533467,
+        -0.08821046260397919,
+        0.015475445723908408,
+        0.8295898289003089,
+        0.39395180983763467,
+        2.9500359684721342,
+        0.19142636220349188,
+        0.05055576447260547
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.22514058757697408,
+        0.22485589270237807,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.14317501367856442,
+        0.20891362038982586
+      ],
+      "variant": "no_full_match",
+      "z_mean": 2.9202872408046128,
+      "z_scale": 13.91531861098849
+    },
+    "no_null": {
+      "bound": 8.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5149584573412699,
+        0.4848090277777778,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.8592819940476191,
+        0.8385835334684955,
+        0.09399801587301587,
+        0.09226190476190477,
+        0.29910714285714285,
+        0.5932291666666667
+      ],
+      "null_strength": 0.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 20,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "objective": 0.37505363000586356
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -2.420312315657555,
+        -0.053557389150821665,
+        -0.1858831782796383,
+        -0.024511752042586783,
+        0.7400480442739562,
+        -0.019861739572298625,
+        1.8695187798428576,
+        0.227895984446637,
+        0.152539915719965,
+        0.779612064831921,
+        0.7716266426924488,
+        1.2260460233571957,
+        1.4108192463488518
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.22514058757697408,
+        0.22485589270237807,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.14317501367856442,
+        0.20891362038982586,
+        0.2918259564962516,
+        0.28939531041744604,
+        0.4578668583212587,
+        0.15665919138226025
+      ],
+      "variant": "no_null",
+      "z_mean": 2.9202872408046128,
+      "z_scale": 13.91531861098849
+    },
+    "no_pair": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5149584573412699,
+        0.4848090277777778,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.8592819940476191,
+        0.8385835334684955,
+        0.09399801587301587,
+        0.09226190476190477,
+        0.29910714285714285,
+        0.5932291666666667
+      ],
+      "null_strength": 1.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 33,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.37676867186040525
+      },
+      "pair_strength": 0.0,
+      "parameters": [
+        -3.5858266526402547,
+        0.019992709635363266,
+        -0.20782424028061786,
+        -0.05324924573226277,
+        0.08055472499696331,
+        0.27068392251111106,
+        2.1724095497546805,
+        0.2485741684358086,
+        0.05424242600036931,
+        1.154580964680077,
+        1.1427745287545132,
+        0.7464823599001502,
+        1.0349777409827492
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.22514058757697408,
+        0.22485589270237807,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.14317501367856442,
+        0.20891362038982586,
+        0.2918259564962516,
+        0.28939531041744604,
+        0.4578668583212587,
+        0.15665919138226025
+      ],
+      "variant": "no_pair",
+      "z_mean": 2.9202872408046128,
+      "z_scale": 13.91531861098849
+    },
+    "no_stability": {
+      "bound": 8.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "full_match",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5149584573412699,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.09399801587301587,
+        0.29910714285714285,
+        0.5932291666666667
+      ],
+      "null_strength": 10.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 21,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.38143770235043906
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -3.807713931200701,
+        0.04683331265781834,
+        -0.2805386841272744,
+        0.709694654618243,
+        0.14716809820177085,
+        2.6558201403110515,
+        1.2265732407566403,
+        0.5568017166270363,
+        1.593044021805519
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.22514058757697408,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.2918259564962516,
+        0.4578668583212587,
+        0.15665919138226025
+      ],
+      "variant": "no_stability",
+      "z_mean": 2.9202872408046128,
+      "z_scale": 13.91531861098849
+    },
+    "old_capped_positive": {
+      "adaptation": "Local capped positive-evidence formula refitted with frozen passive score and source-level max-query calibration.",
+      "cap": 2.6823805267411798,
+      "coefficient": 0.0,
+      "fit_threshold": 5.543331137317762,
+      "kind": "capped"
+    },
+    "old_reliability_mixture": {
+      "adaptation": "Local smooth reliability-mixture formula refitted on identical Phase6 fitting sources; passive expert remains frozen.",
+      "kind": "reliability",
+      "logit_scale": 22.858397692536162,
+      "optimizer": {
+        "converged": true,
+        "iterations": 8
+      },
+      "parameters": [
+        2.7015040183210965,
+        0.2142562438753381,
+        -3.8798582846512404,
+        1.0538296235277032
+      ],
+      "static": {
+        "kind": "static",
+        "optimizer": {
+          "converged": true,
+          "iterations": 14
+        },
+        "parameters": [
+          -4.484105606758254,
+          7.114313063629376,
+          -1.8652430419015174
+        ]
+      }
+    },
+    "primary": {
+      "bound": 8.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5149584573412699,
+        0.4848090277777778,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.8592819940476191,
+        0.8385835334684955,
+        0.09399801587301587,
+        0.09226190476190477,
+        0.29910714285714285,
+        0.5932291666666667
+      ],
+      "null_strength": 10.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 24,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.38059688857577434
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -3.5584191544679116,
+        0.06573108726982169,
+        -0.27785135439092107,
+        -0.0024008374678614205,
+        0.7162345544599764,
+        0.19550492549321735,
+        2.4886015100294503,
+        0.22080321269378278,
+        0.008457848794466764,
+        1.1464229519046036,
+        1.1346880893076174,
+        0.5887519536484253,
+        1.575606536844358
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.22514058757697408,
+        0.22485589270237807,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.14317501367856442,
+        0.20891362038982586,
+        0.2918259564962516,
+        0.28939531041744604,
+        0.4578668583212587,
+        0.15665919138226025
+      ],
+      "variant": "primary",
+      "z_mean": 2.9202872408046128,
+      "z_scale": 13.91531861098849
+    },
+    "probe": {
+      "kind": "probe"
+    },
+    "simple_confidence": {
+      "kind": "simple_confidence"
+    },
+    "static_fusion": {
+      "kind": "static",
+      "optimizer": {
+        "converged": true,
+        "iterations": 14
+      },
+      "parameters": [
+        -4.484105606758254,
+        7.114313063629376,
+        -1.8652430419015174
+      ]
+    },
+    "unconstrained_full_logistic": {
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "full_logistic",
+      "mean": [
+        0.5149584573412699,
+        0.4848090277777778,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.8592819940476191,
+        0.8385835334684955,
+        0.09399801587301587,
+        0.09226190476190477,
+        0.29910714285714285,
+        0.5932291666666667
+      ],
+      "optimizer": {
+        "converged": true,
+        "iterations": 55
+      },
+      "parameters": [
+        -0.15287770422741132,
+        4.740729994722478,
+        0.019431860210766247,
+        -0.7698220763208474,
+        1.0120741413915835,
+        0.2227692897538077,
+        0.7504881065539724,
+        0.026629785466687535,
+        -0.11179449137045569,
+        0.10302206694676445,
+        0.09771922161505305,
+        0.6284544807107737,
+        1.0379465409697437
+      ],
+      "scale": [
+        0.22514058757697408,
+        0.22485589270237807,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.14317501367856442,
+        0.20891362038982586,
+        0.2918259564962516,
+        0.28939531041744604,
+        0.4578668583212587,
+        0.15665919138226025
+      ],
+      "z_mean": 2.9202872408046128,
+      "z_scale": 13.91531861098849
+    },
+    "watermark_only_agreement": {
+      "feature": "agreement",
+      "kind": "watermark_only"
+    },
+    "watermark_only_full_match": {
+      "feature": "full_match",
+      "kind": "watermark_only"
+    },
+    "watermark_only_margin": {
+      "feature": "signed_margin",
+      "kind": "watermark_only"
+    }
+  },
+  "trustmark/resnet": {
+    "hard_13_gate": {
+      "kind": "hard_gate",
+      "static": {
+        "kind": "static",
+        "optimizer": {
+          "converged": true,
+          "iterations": 11
+        },
+        "parameters": [
+          -1.9823424173069408,
+          4.6329623243203155,
+          -2.8176994749398028
+        ]
+      }
+    },
+    "no_full_match": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5149584573412699,
+        0.4848090277777778,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.8592819940476191,
+        0.8385835334684955
+      ],
+      "null_strength": 10.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 35,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.4481394747774814
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -4.9968846203652335,
+        -0.19935986847396928,
+        -0.16553664428694004,
+        -0.06507442973290167,
+        1.3825297769319012,
+        0.721912704595744,
+        3.9418770955134557,
+        0.22614407646315032,
+        -0.051138908306341636
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.22514058757697408,
+        0.22485589270237807,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.14317501367856442,
+        0.20891362038982586
+      ],
+      "variant": "no_full_match",
+      "z_mean": 0.7785218363613938,
+      "z_scale": 7.500981856032984
+    },
+    "no_null": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5149584573412699,
+        0.4848090277777778,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.8592819940476191,
+        0.8385835334684955,
+        0.09399801587301587,
+        0.09226190476190477,
+        0.29910714285714285,
+        0.5932291666666667
+      ],
+      "null_strength": 0.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 21,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.43245377374244265
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -2.744048806945541,
+        -0.7549744606505753,
+        -0.45697453682594624,
+        0.11582658513322136,
+        0.6937097028636802,
+        -0.07951153925855961,
+        2.0706574543682055,
+        0.08144279288104989,
+        -0.11218544667722757,
+        0.8833777641936233,
+        0.8743541661678934,
+        1.44138429087803,
+        1.6229171945323801
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.22514058757697408,
+        0.22485589270237807,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.14317501367856442,
+        0.20891362038982586,
+        0.2918259564962516,
+        0.28939531041744604,
+        0.4578668583212587,
+        0.15665919138226025
+      ],
+      "variant": "no_null",
+      "z_mean": 0.7785218363613938,
+      "z_scale": 7.500981856032984
+    },
+    "no_pair": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5149584573412699,
+        0.4848090277777778,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.8592819940476191,
+        0.8385835334684955,
+        0.09399801587301587,
+        0.09226190476190477,
+        0.29910714285714285,
+        0.5932291666666667
+      ],
+      "null_strength": 10.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 30,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.43757493945662534
+      },
+      "pair_strength": 0.0,
+      "parameters": [
+        -3.9432895417264495,
+        -0.0778423873761943,
+        -0.293315552968767,
+        -0.06213529906926984,
+        0.7649665060937639,
+        0.3632980241900624,
+        2.79760675486898,
+        0.24244920857275032,
+        0.0008385645587509207,
+        1.2701985943634264,
+        1.2572130413899953,
+        0.6151560480766182,
+        1.80069295606874
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.22514058757697408,
+        0.22485589270237807,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.14317501367856442,
+        0.20891362038982586,
+        0.2918259564962516,
+        0.28939531041744604,
+        0.4578668583212587,
+        0.15665919138226025
+      ],
+      "variant": "no_pair",
+      "z_mean": 0.7785218363613938,
+      "z_scale": 7.500981856032984
+    },
+    "no_stability": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "full_match",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5149584573412699,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.09399801587301587,
+        0.29910714285714285,
+        0.5932291666666667
+      ],
+      "null_strength": 10.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 26,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "objective": 0.44047313888285883
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -4.21799768144444,
+        -0.03343350939914305,
+        -0.33781645517915315,
+        0.8188130026026863,
+        0.26721119848612135,
+        2.9588320546389264,
+        1.3585978511173658,
+        0.5882703814883797,
+        1.8613770750746814
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.22514058757697408,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.2918259564962516,
+        0.4578668583212587,
+        0.15665919138226025
+      ],
+      "variant": "no_stability",
+      "z_mean": 0.7785218363613938,
+      "z_scale": 7.500981856032984
+    },
+    "old_capped_positive": {
+      "adaptation": "Local capped positive-evidence formula refitted with frozen passive score and source-level max-query calibration.",
+      "cap": 7.692653243000207,
+      "coefficient": 3.3662701374574686,
+      "fit_threshold": 5.153634251258093,
+      "kind": "capped"
+    },
+    "old_reliability_mixture": {
+      "adaptation": "Local smooth reliability-mixture formula refitted on identical Phase6 fitting sources; passive expert remains frozen.",
+      "kind": "reliability",
+      "logit_scale": 11.943584830744625,
+      "optimizer": {
+        "converged": true,
+        "iterations": 9
+      },
+      "parameters": [
+        2.6636030294190594,
+        -0.4029864404085547,
+        -3.7136370616977605,
+        0.7235717086567413
+      ],
+      "static": {
+        "kind": "static",
+        "optimizer": {
+          "converged": true,
+          "iterations": 11
+        },
+        "parameters": [
+          -1.9823424173069408,
+          4.6329623243203155,
+          -2.8176994749398028
+        ]
+      }
+    },
+    "primary": {
+      "bound": 16.0,
+      "eligible": true,
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "correction",
+      "mean": [
+        0.5149584573412699,
+        0.4848090277777778,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.8592819940476191,
+        0.8385835334684955,
+        0.09399801587301587,
+        0.09226190476190477,
+        0.29910714285714285,
+        0.5932291666666667
+      ],
+      "null_strength": 10.0,
+      "optimizer": {
+        "converged": true,
+        "iterations": 30,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "objective": 0.4394821314626444
+      },
+      "pair_strength": 0.25,
+      "parameters": [
+        -3.9404262828060066,
+        -0.02639843299693079,
+        -0.3286881291304735,
+        -0.008404307167042099,
+        0.8551003157185494,
+        0.3123713456602541,
+        2.792501007791885,
+        0.21639650480168598,
+        -0.012338425043565044,
+        1.2693774657314054,
+        1.2564017320866379,
+        0.6091249046459536,
+        1.8457907242821787
+      ],
+      "ridge": 0.001,
+      "scale": [
+        0.22514058757697408,
+        0.22485589270237807,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.14317501367856442,
+        0.20891362038982586,
+        0.2918259564962516,
+        0.28939531041744604,
+        0.4578668583212587,
+        0.15665919138226025
+      ],
+      "variant": "primary",
+      "z_mean": 0.7785218363613938,
+      "z_scale": 7.500981856032984
+    },
+    "probe": {
+      "kind": "probe"
+    },
+    "simple_confidence": {
+      "kind": "simple_confidence"
+    },
+    "static_fusion": {
+      "kind": "static",
+      "optimizer": {
+        "converged": true,
+        "iterations": 11
+      },
+      "parameters": [
+        -1.9823424173069408,
+        4.6329623243203155,
+        -2.8176994749398028
+      ]
+    },
+    "unconstrained_full_logistic": {
+      "features": [
+        "agreement",
+        "min_view_agreement",
+        "signed_margin",
+        "q10_margin",
+        "mean_abs_margin",
+        "stability",
+        "margin_stability",
+        "full_match",
+        "full_match_views",
+        "ecc_valid",
+        "codeword_agreement"
+      ],
+      "include_logit": true,
+      "kind": "full_logistic",
+      "mean": [
+        0.5149584573412699,
+        0.4848090277777778,
+        0.04999579747300472,
+        -0.3994968977994423,
+        0.9098472182716554,
+        0.8592819940476191,
+        0.8385835334684955,
+        0.09399801587301587,
+        0.09226190476190477,
+        0.29910714285714285,
+        0.5932291666666667
+      ],
+      "optimizer": {
+        "converged": true,
+        "iterations": 67
+      },
+      "parameters": [
+        0.37998674700869023,
+        3.3930394231486507,
+        -0.06492817281884995,
+        -0.9121341388436666,
+        0.7231169802669141,
+        -0.13406599563280824,
+        0.9564808888741755,
+        -0.11612370912242954,
+        0.0837959622754056,
+        0.3175422819066145,
+        0.16913944113473153,
+        0.6145214168267799,
+        1.615201969112876
+      ],
+      "scale": [
+        0.22514058757697408,
+        0.22485589270237807,
+        0.4649479850762602,
+        0.5353995925108849,
+        0.9748289698915185,
+        0.14317501367856442,
+        0.20891362038982586,
+        0.2918259564962516,
+        0.28939531041744604,
+        0.4578668583212587,
+        0.15665919138226025
+      ],
+      "z_mean": 0.7785218363613938,
+      "z_scale": 7.500981856032984
+    },
+    "watermark_only_agreement": {
+      "feature": "agreement",
+      "kind": "watermark_only"
+    },
+    "watermark_only_full_match": {
+      "feature": "full_match",
+      "kind": "watermark_only"
+    },
+    "watermark_only_margin": {
+      "feature": "signed_margin",
+      "kind": "watermark_only"
+    }
+  }
+}

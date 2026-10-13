@@ -1,0 +1,503 @@
+{
+  "scope": "Four fixed common conditions; fresh TrustMark/ResNet, image ROCs separate from deployed source operating points",
+  "images": 11200,
+  "sources": 1000,
+  "conditions": [
+    "identity",
+    "jpeg50",
+    "crop",
+    "lowres32"
+  ],
+  "ROC_states": {
+    "marked": {
+      "positive_images": 7200,
+      "real_images": 1600,
+      "positive_sources": 600,
+      "real_sources": 400,
+      "log_axis_left_edge": 0.0003125,
+      "zero_FPR_display": "Zero-FPR segments shown at the left display edge; their actual FPR remains zero",
+      "methods": {
+        "probe": {
+          "auc": 0.6078836805555556,
+          "maximum_TPR_at_zero_image_FPR": 0.0016666666666666668
+        },
+        "old_capped_positive": {
+          "auc": 0.74136875,
+          "maximum_TPR_at_zero_image_FPR": 0.005
+        },
+        "hard_13_gate": {
+          "auc": 0.6403300347222223,
+          "maximum_TPR_at_zero_image_FPR": 0.0016666666666666668
+        },
+        "unconstrained_full_logistic": {
+          "auc": 0.9531678819444445,
+          "maximum_TPR_at_zero_image_FPR": 0.5616666666666666
+        },
+        "primary": {
+          "auc": 0.9257301215277778,
+          "maximum_TPR_at_zero_image_FPR": 0.42055555555555557
+        }
+      }
+    },
+    "unmarked": {
+      "positive_images": 2400,
+      "real_images": 1600,
+      "positive_sources": 600,
+      "real_sources": 400,
+      "log_axis_left_edge": 0.0003125,
+      "zero_FPR_display": "Zero-FPR segments shown at the left display edge; their actual FPR remains zero",
+      "methods": {
+        "probe": {
+          "auc": 0.61394140625,
+          "maximum_TPR_at_zero_image_FPR": 0.0025
+        },
+        "old_capped_positive": {
+          "auc": 0.6138950520833333,
+          "maximum_TPR_at_zero_image_FPR": 0.002916666666666667
+        },
+        "hard_13_gate": {
+          "auc": 0.6138791666666666,
+          "maximum_TPR_at_zero_image_FPR": 0.0025
+        },
+        "unconstrained_full_logistic": {
+          "auc": 0.6090729166666666,
+          "maximum_TPR_at_zero_image_FPR": 0.0016666666666666668
+        },
+        "primary": {
+          "auc": 0.61399375,
+          "maximum_TPR_at_zero_image_FPR": 0.0025
+        }
+      }
+    }
+  },
+  "operating_points": [
+    {
+      "system": "probe",
+      "photographic_source_FPR_any_view": 0.0375,
+      "source_balanced_marked_TPR": 0.020972222222222222,
+      "source_balanced_unmarked_TPR": 0.024583333333333332,
+      "threshold": 7.055312233186465,
+      "real_sources": 400,
+      "source_TPR_definition": "Mean acceptance across covers/views within an AI source, then across sources; not any-view AI TPR"
+    },
+    {
+      "system": "old_capped_positive",
+      "photographic_source_FPR_any_view": 0.0375,
+      "source_balanced_marked_TPR": 0.0775,
+      "source_balanced_unmarked_TPR": 0.02375,
+      "threshold": 7.175829736294538,
+      "real_sources": 400,
+      "source_TPR_definition": "Mean acceptance across covers/views within an AI source, then across sources; not any-view AI TPR"
+    },
+    {
+      "system": "hard_13_gate",
+      "photographic_source_FPR_any_view": 0.0375,
+      "source_balanced_marked_TPR": 0.020972222222222222,
+      "source_balanced_unmarked_TPR": 0.024583333333333332,
+      "threshold": 7.055312233186465,
+      "real_sources": 400,
+      "source_TPR_definition": "Mean acceptance across covers/views within an AI source, then across sources; not any-view AI TPR"
+    },
+    {
+      "system": "unconstrained_full_logistic",
+      "photographic_source_FPR_any_view": 0.0325,
+      "source_balanced_marked_TPR": 0.7690277777777778,
+      "source_balanced_unmarked_TPR": 0.024166666666666666,
+      "threshold": 1.9034760866604237,
+      "real_sources": 400,
+      "source_TPR_definition": "Mean acceptance across covers/views within an AI source, then across sources; not any-view AI TPR"
+    },
+    {
+      "system": "primary",
+      "photographic_source_FPR_any_view": 0.0375,
+      "source_balanced_marked_TPR": 0.7440277777777777,
+      "source_balanced_unmarked_TPR": 0.024583333333333332,
+      "threshold": 7.05989461395292,
+      "real_sources": 400,
+      "source_TPR_definition": "Mean acceptance across covers/views within an AI source, then across sources; not any-view AI TPR"
+    }
+  ],
+  "ROC_artifact": {
+    "pdf": "manuscript/assets/phase6_roc_tm_resnet.pdf",
+    "pdf_sha256": "01073058621e7d1eb77eba2a9f65580ebfd0905c91bc115461e44428446f5a61",
+    "png": "manuscript/assets/phase6_roc_tm_resnet.png",
+    "png_sha256": "ac79d78cad84a5996f21741152bedf877abc017e1cf0ce9406bc84114ff55788",
+    "png_width": 2121,
+    "png_height": 802,
+    "title": "Separate image ROCs and deployed source-FPR operating points",
+    "reporting_script_sha256": "4e47e4021d0895a3f39f3353ce2a9ab08330fefe5d515b5f9c22fe0dc6402430"
+  },
+  "marked_share": {
+    "probe": [
+      {
+        "ci95": [
+          0.015416666666666667,
+          0.034583333333333334
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.0,
+        "tpr": 0.024583333333333332
+      },
+      {
+        "ci95": [
+          0.015242187499999999,
+          0.03340711805555553
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.25,
+        "tpr": 0.023680555555555555
+      },
+      {
+        "ci95": [
+          0.014442708333333333,
+          0.03222222222222222
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.5,
+        "tpr": 0.02277777777777778
+      },
+      {
+        "ci95": [
+          0.013437500000000002,
+          0.03145833333333333
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.75,
+        "tpr": 0.021875
+      },
+      {
+        "ci95": [
+          0.012916666666666667,
+          0.03055902777777776
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 1.0,
+        "tpr": 0.020972222222222222
+      }
+    ],
+    "old_capped_positive": [
+      {
+        "ci95": [
+          0.015,
+          0.03375
+        ],
+        "gain_ci95": [
+          -0.002083333333333333,
+          0.0
+        ],
+        "gain_vs_probe": -0.0008333333333333318,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.0,
+        "tpr": 0.02375
+      },
+      {
+        "ci95": [
+          0.02739496527777778,
+          0.04739756944444443
+        ],
+        "gain_ci95": [
+          0.010451388888888892,
+          0.016459201388888883
+        ],
+        "gain_vs_probe": 0.013506944444444443,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.25,
+        "tpr": 0.0371875
+      },
+      {
+        "ci95": [
+          0.03902777777777778,
+          0.06284722222222222
+        ],
+        "gain_ci95": [
+          0.02201388888888889,
+          0.03381944444444443
+        ],
+        "gain_vs_probe": 0.027847222222222225,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.5,
+        "tpr": 0.050625
+      },
+      {
+        "ci95": [
+          0.05051822916666666,
+          0.07833333333333332
+        ],
+        "gain_ci95": [
+          0.033125,
+          0.05125260416666665
+        ],
+        "gain_vs_probe": 0.042187499999999996,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.75,
+        "tpr": 0.0640625
+      },
+      {
+        "ci95": [
+          0.06152430555555556,
+          0.09361458333333332
+        ],
+        "gain_ci95": [
+          0.044305555555555556,
+          0.06888888888888889
+        ],
+        "gain_vs_probe": 0.056527777777777774,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 1.0,
+        "tpr": 0.0775
+      }
+    ],
+    "hard_13_gate": [
+      {
+        "ci95": [
+          0.015416666666666667,
+          0.034583333333333334
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.0,
+        "tpr": 0.024583333333333332
+      },
+      {
+        "ci95": [
+          0.015242187499999999,
+          0.03340711805555553
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.25,
+        "tpr": 0.023680555555555555
+      },
+      {
+        "ci95": [
+          0.014442708333333333,
+          0.03222222222222222
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.5,
+        "tpr": 0.02277777777777778
+      },
+      {
+        "ci95": [
+          0.013437500000000002,
+          0.03145833333333333
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.75,
+        "tpr": 0.021875
+      },
+      {
+        "ci95": [
+          0.012916666666666667,
+          0.03055902777777776
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 1.0,
+        "tpr": 0.020972222222222222
+      }
+    ],
+    "unconstrained_full_logistic": [
+      {
+        "ci95": [
+          0.015416666666666667,
+          0.034166666666666665
+        ],
+        "gain_ci95": [
+          -0.004583333333333332,
+          0.003333333333333334
+        ],
+        "gain_vs_probe": -0.0004166666666666659,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.0,
+        "tpr": 0.024166666666666666
+      },
+      {
+        "ci95": [
+          0.20204861111111116,
+          0.2191328125
+        ],
+        "gain_ci95": [
+          0.18159635416666667,
+          0.19170225694444443
+        ],
+        "gain_vs_probe": 0.18670138888888888,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.25,
+        "tpr": 0.21038194444444444
+      },
+      {
+        "ci95": [
+          0.3875694444444445,
+          0.4052100694444444
+        ],
+        "gain_ci95": [
+          0.3655555555555556,
+          0.38159722222222225
+        ],
+        "gain_vs_probe": 0.3738194444444444,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.5,
+        "tpr": 0.3965972222222222
+      },
+      {
+        "ci95": [
+          0.5715625000000001,
+          0.5930234375
+        ],
+        "gain_ci95": [
+          0.5492708333333335,
+          0.5720859375
+        ],
+        "gain_vs_probe": 0.5609375,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.75,
+        "tpr": 0.5828125
+      },
+      {
+        "ci95": [
+          0.7552743055555555,
+          0.7823611111111111
+        ],
+        "gain_ci95": [
+          0.7327777777777778,
+          0.7626388888888889
+        ],
+        "gain_vs_probe": 0.7480555555555556,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 1.0,
+        "tpr": 0.7690277777777778
+      }
+    ],
+    "primary": [
+      {
+        "ci95": [
+          0.015416666666666667,
+          0.034583333333333334
+        ],
+        "gain_ci95": [
+          0.0,
+          0.0
+        ],
+        "gain_vs_probe": 0.0,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.0,
+        "tpr": 0.024583333333333332
+      },
+      {
+        "ci95": [
+          0.19586805555555556,
+          0.21347309027777772
+        ],
+        "gain_ci95": [
+          0.1762152777777778,
+          0.18520833333333334
+        ],
+        "gain_vs_probe": 0.18076388888888886,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.25,
+        "tpr": 0.20444444444444443
+      },
+      {
+        "ci95": [
+          0.3744444444444444,
+          0.394375
+        ],
+        "gain_ci95": [
+          0.3524305555555556,
+          0.37041666666666667
+        ],
+        "gain_vs_probe": 0.3615277777777777,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.5,
+        "tpr": 0.3843055555555555
+      },
+      {
+        "ci95": [
+          0.5511458333333334,
+          0.5769817708333335
+        ],
+        "gain_ci95": [
+          0.5286458333333335,
+          0.555625
+        ],
+        "gain_vs_probe": 0.5422916666666666,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 0.75,
+        "tpr": 0.5641666666666666
+      },
+      {
+        "ci95": [
+          0.7273611111111111,
+          0.7605624999999998
+        ],
+        "gain_ci95": [
+          0.7048611111111112,
+          0.7408333333333333
+        ],
+        "gain_vs_probe": 0.7230555555555556,
+        "interpretation": "Fixed-cut reweighting of paired marked and unmarked source outcomes; no threshold retuning.",
+        "marked_share": 1.0,
+        "tpr": 0.7440277777777777
+      }
+    ]
+  },
+  "marked_share_artifact": {
+    "pdf": "manuscript/assets/phase6_marked_share_tm_resnet.pdf",
+    "pdf_sha256": "7eb2de5f89b2fe1fb032a2c3a32ee20fa49d6fc45256f93c796eb235b8e106c5",
+    "png": "manuscript/assets/phase6_marked_share_tm_resnet.png",
+    "png_sha256": "0872c941b395d3fe371f8d87b0835af3ff2bbd64b2d2d69ccc6d92fe4ab48a3e",
+    "png_width": 1011,
+    "png_height": 708,
+    "title": "Fixed-cut paired marked-share TPR gains with source intervals",
+    "reporting_script_sha256": "4e47e4021d0895a3f39f3353ce2a9ab08330fefe5d515b5f9c22fe0dc6402430"
+  },
+  "marked_share_interpretation": "Descriptive reweighting of paired states at unchanged independently calibrated cuts; not measured real-world prevalence or a prevalence-dependent recalibration"
+}

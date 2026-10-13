@@ -1,0 +1,16 @@
+{
+  "bootstrap_samples": 2000,
+  "calibration_complete_sha256": "8bb9f2f39f5fa8f0002da9b71f119403852c67d95230bffa8deafbfb3d95c6d3",
+  "completed_utc": "2026-10-12T11:52:41.195026+00:00",
+  "fit_complete_sha256": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+  "outputs_sha256": {
+    "predictions.csv": "5c5679f705dd8e76a43a90932d3102d7e845fb5af1050a2117c5ae6c8e694e5a",
+    "results.json": "1d2fe00c4077951a27219f7fc88fea4c358dba804ba184292d08eab96e8f15f7",
+    "test_sources.csv": "ac2c6eeb627d7d7be03b1f7e0b9784e4977985488c8275b6258a8fa9c8e23ff6"
+  },
+  "retuning": false,
+  "schema": "phase6_paired_fusion_v1",
+  "script_sha256": "54db8455ad6f13a09ab01c53e6ef3d22f29a03a2ee3a9db9573cb373e0175d20",
+  "source_count": 1000,
+  "test_features_sha256": "d9501319a7f438e8b037bbe1876ea6e195b7b1afad5b8b283c2985e86cef0cd3"
+}

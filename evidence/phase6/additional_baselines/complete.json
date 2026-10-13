@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-12T11:53:40.676808+00:00",
+  "script_sha256": "bd18c25099b8e7028f30b407257379be7d15c366c3447f986219c84d909f1386",
+  "test_features_sha256": "d9501319a7f438e8b037bbe1876ea6e195b7b1afad5b8b283c2985e86cef0cd3",
+  "calibration_complete_sha256": "38a01d04011401c2583be1862beff1eb14f1a6d913c5e8dd72d111f0595c1572",
+  "outputs_sha256": {
+    "results.json": "fe90a7eab792632cd54e4a0bc6412471a0f70f9887dbda39ce6401d1d1c9b76c"
+  },
+  "primary_retuned": false
+}

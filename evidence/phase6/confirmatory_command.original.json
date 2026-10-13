@@ -1,0 +1,10 @@
+{
+  "locked_at_utc": "2026-10-12T06:06:48.941259+00:00",
+  "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+  "test_source_receipt_sha256": "665924683bc9fe74ae4bd2e0e992d070d45c97bbe7beda892785b4deb4954474",
+  "wrapper_sha256": "d35b1c0d69bb64c3570b9d9553af423860e3cbb477eedab7c5aa2bf1fd9ed252",
+  "learner_sha256": "54db8455ad6f13a09ab01c53e6ef3d22f29a03a2ee3a9db9573cb373e0175d20",
+  "bootstrap_samples": 2000,
+  "evaluation_name": "fresh_test",
+  "changes_to_models_or_endpoints": false
+}

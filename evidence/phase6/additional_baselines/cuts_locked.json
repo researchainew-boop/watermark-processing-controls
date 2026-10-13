@@ -1,0 +1,1195 @@
+{
+  "locked_at_utc": "2026-10-12T11:27:36.538067+00:00",
+  "inputs": {
+    "script_sha256": "bd18c25099b8e7028f30b407257379be7d15c366c3447f986219c84d909f1386",
+    "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+    "fit_sha256": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+    "development_features_sha256": "627b43725f6ef176cdcc2abdeeef62e4bd5e93968c61567ebcf3463172ebb7bf",
+    "calibration_features_sha256": "3441e937339ccc5b6b8c27cd8cc4e5d79fa2a409dfec6d0e4ebdd7d173ae4356"
+  },
+  "systems": {
+    "dwt_dct/resnet": {
+      "full_message_union": {
+        "model": {
+          "kind": "full_message_union"
+        },
+        "policy": {
+          "threshold": 0.9991379305089417,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.980281449050356
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9991379305089417
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        },
+        "tuning_candidates": []
+      },
+      "tuned_confidence": {
+        "model": {
+          "kind": "tuned_confidence",
+          "bound": 4.0
+        },
+        "policy": {
+          "threshold": 8.199060554557674,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 4.668727354085063
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 8.199060554557674
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        },
+        "tuning_candidates": [
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 1.0
+            },
+            "feasible": false,
+            "tuning_cut": 6.043434846525682,
+            "tuning_rates": {
+              "marked_tpr": 0.7107843137254901,
+              "unmarked_tpr": 0.6470588235294118,
+              "real_image_fpr": 0.035,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.4117647058823529,
+                  "tpr_minus_probe": -0.058823529411764705,
+                  "harmful_switch_rate": 0.058823529411764705
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.5294117647058824,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 2.0
+            },
+            "feasible": false,
+            "tuning_cut": 6.114460287741131,
+            "tuning_rates": {
+              "marked_tpr": 0.7745098039215685,
+              "unmarked_tpr": 0.6470588235294118,
+              "real_image_fpr": 0.035,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.4117647058823529,
+                  "tpr_minus_probe": -0.058823529411764705,
+                  "harmful_switch_rate": 0.058823529411764705
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.5294117647058824,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 4.0
+            },
+            "feasible": true,
+            "tuning_cut": 6.265252509055722,
+            "tuning_rates": {
+              "marked_tpr": 0.8431372549019608,
+              "unmarked_tpr": 0.6617647058823529,
+              "real_image_fpr": 0.04,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.47058823529411764,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.058823529411764705
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.5294117647058824,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 8.0
+            },
+            "feasible": false,
+            "tuning_cut": 7.536413706432424,
+            "tuning_rates": {
+              "marked_tpr": 0.8676470588235294,
+              "unmarked_tpr": 0.6470588235294118,
+              "real_image_fpr": 0.0375,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.47058823529411764,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.058823529411764705
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.5294117647058824,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.7647058823529411,
+                  "tpr_minus_probe": -0.058823529411764705,
+                  "harmful_switch_rate": 0.058823529411764705
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.058823529411764705
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 16.0
+            },
+            "feasible": false,
+            "tuning_cut": 9.725130419725373,
+            "tuning_rates": {
+              "marked_tpr": 0.9607843137254903,
+              "unmarked_tpr": 0.5882352941176471,
+              "real_image_fpr": 0.04,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.35294117647058826,
+                  "tpr_minus_probe": -0.11764705882352941,
+                  "harmful_switch_rate": 0.17647058823529413
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.5294117647058824,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.6470588235294118,
+                  "tpr_minus_probe": -0.17647058823529413,
+                  "harmful_switch_rate": 0.17647058823529413
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.058823529411764705
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "dwt_dct/clip": {
+      "full_message_union": {
+        "model": {
+          "kind": "full_message_union"
+        },
+        "policy": {
+          "threshold": 0.9998920856584563,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9889940371175501
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9998920856584563
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        },
+        "tuning_candidates": []
+      },
+      "tuned_confidence": {
+        "model": {
+          "kind": "tuned_confidence",
+          "bound": 1.0
+        },
+        "policy": {
+          "threshold": 9.640135368986224,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 4.717001096252163
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 9.640135368986224
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        },
+        "tuning_candidates": [
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 1.0
+            },
+            "feasible": true,
+            "tuning_cut": 8.444560077434707,
+            "tuning_rates": {
+              "marked_tpr": 0.9166666666666666,
+              "unmarked_tpr": 0.8823529411764706,
+              "real_image_fpr": 0.04,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 2.0
+            },
+            "feasible": true,
+            "tuning_cut": 8.553935077434707,
+            "tuning_rates": {
+              "marked_tpr": 0.9166666666666666,
+              "unmarked_tpr": 0.8970588235294118,
+              "real_image_fpr": 0.04,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.9411764705882353,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 4.0
+            },
+            "feasible": false,
+            "tuning_cut": 8.918901531638513,
+            "tuning_rates": {
+              "marked_tpr": 0.9264705882352942,
+              "unmarked_tpr": 0.8823529411764706,
+              "real_image_fpr": 0.0375,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": -0.058823529411764705,
+                  "harmful_switch_rate": 0.058823529411764705
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.9411764705882353,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 8.0
+            },
+            "feasible": false,
+            "tuning_cut": 10.275645048320724,
+            "tuning_rates": {
+              "marked_tpr": 0.9705882352941176,
+              "unmarked_tpr": 0.8676470588235294,
+              "real_image_fpr": 0.035,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.7647058823529411,
+                  "tpr_minus_probe": -0.11764705882352941,
+                  "harmful_switch_rate": 0.11764705882352941
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.9411764705882353,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 16.0
+            },
+            "feasible": false,
+            "tuning_cut": 13.500293495504806,
+            "tuning_rates": {
+              "marked_tpr": 0.9950980392156863,
+              "unmarked_tpr": 0.8529411764705882,
+              "real_image_fpr": 0.0325,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.7647058823529411,
+                  "tpr_minus_probe": -0.11764705882352941,
+                  "harmful_switch_rate": 0.11764705882352941
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": -0.058823529411764705,
+                  "harmful_switch_rate": 0.058823529411764705
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.9411764705882353,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "trustmark/resnet": {
+      "full_message_union": {
+        "model": {
+          "kind": "full_message_union"
+        },
+        "policy": {
+          "threshold": 0.9991379305089417,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.980281449050356
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9991379305089417
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        },
+        "tuning_candidates": []
+      },
+      "tuned_confidence": {
+        "model": {
+          "kind": "tuned_confidence",
+          "bound": 2.0
+        },
+        "policy": {
+          "threshold": 7.629208732161709,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 4.334906764046494
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 7.629208732161709
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        },
+        "tuning_candidates": [
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 1.0
+            },
+            "feasible": true,
+            "tuning_cut": 5.871559846525682,
+            "tuning_rates": {
+              "marked_tpr": 0.6862745098039216,
+              "unmarked_tpr": 0.6617647058823529,
+              "real_image_fpr": 0.035,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.47058823529411764,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.5294117647058824,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 2.0
+            },
+            "feasible": true,
+            "tuning_cut": 6.159341055685342,
+            "tuning_rates": {
+              "marked_tpr": 0.7696078431372549,
+              "unmarked_tpr": 0.6617647058823529,
+              "real_image_fpr": 0.035,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.47058823529411764,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.5294117647058824,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 4.0
+            },
+            "feasible": false,
+            "tuning_cut": 6.859773555202321,
+            "tuning_rates": {
+              "marked_tpr": 0.8137254901960784,
+              "unmarked_tpr": 0.6470588235294118,
+              "real_image_fpr": 0.035,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.47058823529411764,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.5294117647058824,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.7647058823529411,
+                  "tpr_minus_probe": -0.058823529411764705,
+                  "harmful_switch_rate": 0.058823529411764705
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 8.0
+            },
+            "feasible": false,
+            "tuning_cut": 7.484773555202321,
+            "tuning_rates": {
+              "marked_tpr": 0.9166666666666667,
+              "unmarked_tpr": 0.6617647058823529,
+              "real_image_fpr": 0.035,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.47058823529411764,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.5882352941176471,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.7647058823529411,
+                  "tpr_minus_probe": -0.058823529411764705,
+                  "harmful_switch_rate": 0.058823529411764705
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8235294117647058,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 16.0
+            },
+            "feasible": false,
+            "tuning_cut": 9.682503788081272,
+            "tuning_rates": {
+              "marked_tpr": 0.9852941176470589,
+              "unmarked_tpr": 0.5882352941176471,
+              "real_image_fpr": 0.035,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.35294117647058826,
+                  "tpr_minus_probe": -0.11764705882352941,
+                  "harmful_switch_rate": 0.11764705882352941
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.47058823529411764,
+                  "tpr_minus_probe": -0.058823529411764705,
+                  "harmful_switch_rate": 0.11764705882352941
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.6470588235294118,
+                  "tpr_minus_probe": -0.17647058823529413,
+                  "harmful_switch_rate": 0.17647058823529413
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "trustmark/clip": {
+      "full_message_union": {
+        "model": {
+          "kind": "full_message_union"
+        },
+        "policy": {
+          "threshold": 0.9998920856584563,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9889940371175501
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 0.9998920856584563
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        },
+        "tuning_candidates": []
+      },
+      "tuned_confidence": {
+        "model": {
+          "kind": "tuned_confidence",
+          "bound": 16.0
+        },
+        "policy": {
+          "threshold": 13.247536975279122,
+          "strict_exceedance": true,
+          "collection_cuts": [
+            {
+              "collection": "coco",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 7.797095647004432
+            },
+            {
+              "collection": "openimages",
+              "sources": 400,
+              "rank": 381,
+              "threshold": 13.247536975279122
+            }
+          ],
+          "interpretation": "Marginal source-level control conditional on a fixed scoring function, registered query/view family and within-collection source exchangeability; no realized-split or arbitrary-shift guarantee."
+        },
+        "tuning_candidates": [
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 1.0
+            },
+            "feasible": true,
+            "tuning_cut": 8.335185077434707,
+            "tuning_rates": {
+              "marked_tpr": 0.9019607843137255,
+              "unmarked_tpr": 0.8823529411764706,
+              "real_image_fpr": 0.04,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 2.0
+            },
+            "feasible": true,
+            "tuning_cut": 8.335185077434707,
+            "tuning_rates": {
+              "marked_tpr": 0.9215686274509804,
+              "unmarked_tpr": 0.8970588235294118,
+              "real_image_fpr": 0.04,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.9411764705882353,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 4.0
+            },
+            "feasible": true,
+            "tuning_cut": 8.335185077434707,
+            "tuning_rates": {
+              "marked_tpr": 0.9509803921568628,
+              "unmarked_tpr": 0.9117647058823529,
+              "real_image_fpr": 0.045,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.9411764705882353,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.9411764705882353,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 8.0
+            },
+            "feasible": true,
+            "tuning_cut": 9.074077027475973,
+            "tuning_rates": {
+              "marked_tpr": 0.9950980392156863,
+              "unmarked_tpr": 0.9117647058823529,
+              "real_image_fpr": 0.045,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.9411764705882353,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.9411764705882353,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          },
+          {
+            "model": {
+              "kind": "tuned_confidence",
+              "bound": 16.0
+            },
+            "feasible": true,
+            "tuning_cut": 10.824077027475973,
+            "tuning_rates": {
+              "marked_tpr": 1.0,
+              "unmarked_tpr": 0.8970588235294118,
+              "real_image_fpr": 0.04,
+              "real_source_fpr": 0.05,
+              "unmarked_groups": [
+                {
+                  "collection": "dalle-3",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "dalle-3",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "identity",
+                  "sources": 17,
+                  "tpr": 0.8823529411764706,
+                  "tpr_minus_probe": 0.0,
+                  "harmful_switch_rate": 0.0
+                },
+                {
+                  "collection": "stable-diffusion",
+                  "condition": "jpeg50",
+                  "sources": 17,
+                  "tpr": 0.9411764705882353,
+                  "tpr_minus_probe": 0.058823529411764705,
+                  "harmful_switch_rate": 0.0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "test_read": false,
+  "secondary_only": true,
+  "reason": "Additional simple-comparator gap identified before any final test inference; original primary model, comparator and endpoints unchanged",
+  "registered_rules": {
+    "full_message_union": "score2 if any registered native full match, otherwise sigmoid(probe logit); independently calibrated source cut",
+    "tuned_confidence": "probe logit+B*max_query((2*agreement-1)_+*stability); B in same1,2,4,8,16 range, tuneonly with same harm/FPR constraints"
+  }
+}

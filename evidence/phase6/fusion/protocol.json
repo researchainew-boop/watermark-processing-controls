@@ -1,0 +1,83 @@
+{
+  "aggregation": "Maximum over the same three registered query scores per received image; calibration source maxima cover declared conditions.",
+  "base_heads_sha256": {
+    "clip": "30cf885fbf4030471c15443ce8808173764ff193e775a61f7bb11329901278d4",
+    "resnet": "db427c4aeab4edf07496cf28d6f5fb766ce48f91baee53797df41ddb42b5d9f7"
+  },
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 20261011,
+  "confirmatory_primary": {
+    "fresh_AI_collections": 3,
+    "fresh_AI_sources": 600,
+    "marked_gain": "Two-sided paired source-bootstrap CI lower > 0 versus probe",
+    "secondary": "CLIP, DWT, per-family/condition, marked shares, attacks, abstention and verification",
+    "strongest_baseline_gain": "Two-sided paired CI lower > 0 versus the baseline with greatest marked tune TPR, frozen before final scores",
+    "system": "trustmark/resnet",
+    "unmarked_noninferiority": "One-sided paired loss upper < .01; zero any-view harm has a conditional pooled finite-sample bound",
+    "views": [
+      "identity",
+      "jpeg50",
+      "crop",
+      "lowres32"
+    ]
+  },
+  "constraint_role": "Assess selected model at unchanged tune cuts on all four views; never select a different model from this result.",
+  "correction_bounds": [
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0
+  ],
+  "created_utc": "2026-10-11T13:01:06.944780+00:00",
+  "design_status": "Retrospective design; existing sources are development, final test must be new and locked.",
+  "development_features_sha256": "627b43725f6ef176cdcc2abdeeef62e4bd5e93968c61567ebcf3463172ebb7bf",
+  "final_calibration": "Independent negative sources, frozen scoring functions, strict source-max split-conformal cut per photographic collection; no unseen-shift guarantee.",
+  "forbidden_prediction_inputs": [
+    "source identity",
+    "role",
+    "collection",
+    "origin label",
+    "embedded payload",
+    "condition",
+    "clean reference",
+    "sibling edits"
+  ],
+  "null_strengths": [
+    1.0,
+    10.0
+  ],
+  "pair_strength": 0.25,
+  "pre_fresh_grid_amendment": "Expanded B to8 and16 before fresh scores because frozen passive logits can be strongly negative; selection remains development-only.",
+  "prediction_inputs": [
+    "agreement",
+    "min_view_agreement",
+    "signed_margin",
+    "q10_margin",
+    "mean_abs_margin",
+    "stability",
+    "margin_stability",
+    "full_match",
+    "full_match_views",
+    "ecc_valid",
+    "codeword_agreement",
+    "frozen passive logit"
+  ],
+  "primary_common_conditions": [
+    "identity",
+    "jpeg50",
+    "crop",
+    "lowres32"
+  ],
+  "registered_queries": [
+    "0100101101001011",
+    "1011010010110100",
+    "1100101000110101"
+  ],
+  "ridge": 0.001,
+  "risk": 0.05,
+  "schema": "phase6_paired_fusion_v1",
+  "script_sha256": "48de44fcaf81fe8b1abb9f01372439a23b2f296274da1e7a47adaf7c51102102",
+  "selection": "Marked source-balanced tune TPR at empirical5% source FPR; require <=1pp unmarked TPR loss in each seen collection/condition; B=0 if none feasible.",
+  "unmarked_tpr_tolerance": 0.01
+}

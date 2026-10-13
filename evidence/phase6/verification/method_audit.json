@@ -1,0 +1,134 @@
+{
+  "audited_utc": "2026-10-11T13:21:52.418990+00:00",
+  "checks": {
+    "CLIP_matches_preceding_record": true,
+    "ResNet_matches_official_V1_hash_prefix": true,
+    "analytic_gradient_pass": true,
+    "analytic_gradient_scaled_max_error": 1.1546201142780528e-08,
+    "fit_artifact_hashes": {
+      "constraint_diagnostic.json": true,
+      "development_sources.csv": true,
+      "models.json": true,
+      "protocol.json": true,
+      "selection.json": true
+    },
+    "initial_source_archive_matches_receipt": true,
+    "legacy_development_backbone_hash_missing": true,
+    "null_weights_sum": 1.0,
+    "pair_source_and_condition_match": true,
+    "pair_weights_sum": 1.0,
+    "passive_checkpoint_identity_now": {
+      "clip": {
+        "path": "<external-cache>",
+        "sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31"
+      },
+      "resnet": {
+        "path": "<external-cache>",
+        "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+      }
+    },
+    "previous_synthetic_suite": "11 tests passed after v2 comparator correction",
+    "primary_baseline_eligibility": {
+      "hard_13_gate": true,
+      "old_capped_positive": true,
+      "old_reliability_mixture": false,
+      "probe": true,
+      "simple_confidence": true,
+      "static_fusion": false,
+      "unconstrained_full_logistic": false
+    },
+    "primary_system_fixed": "trustmark/resnet",
+    "root_input_hashes": {
+      ".tools/extension-assets/ViT-L-14.pt": true,
+      ".tools/extension-assets/official_clip_model.py": true,
+      ".tools/extension-assets/univfd_fc_weights.pth": true,
+      "docs/phase6_evaluation_plan.md": true,
+      "outputs/conference_clean/clip_full.npz": true,
+      "outputs/conference_clean/resnet_full.npz": true,
+      "outputs/phase6/data_inventory/calibration_source_manifest.csv": true,
+      "outputs/phase6/data_inventory/sampling_protocol.json": true,
+      "outputs/phase6/data_inventory/sampling_protocol.root_frozen_original.json": true,
+      "outputs/phase6/development/features.csv": true,
+      "outputs/phase6/development/preparation.json": true,
+      "outputs/phase6/frozen_protocol.original.json": true,
+      "outputs/phase6/fusion_v2/constraint_diagnostic.json": true,
+      "outputs/phase6/fusion_v2/development_sources.csv": true,
+      "outputs/phase6/fusion_v2/fit_complete.json": true,
+      "outputs/phase6/fusion_v2/models.json": true,
+      "outputs/phase6/fusion_v2/protocol.json": true,
+      "outputs/phase6/fusion_v2/selection.json": true,
+      "outputs/phase6/native_baseline/plan.json": true,
+      "outputs/phase6/passive_dependencies_locked.json": true,
+      "scripts/benchmark_watermarks.py": true,
+      "scripts/evaluate_encoding_controls.py": true,
+      "scripts/phase5_fair_watermarks.py": true,
+      "scripts/phase6_attacks.py": true,
+      "scripts/phase6_dependency_repair.py": true,
+      "scripts/phase6_features.py": true,
+      "scripts/phase6_freeze.py": true,
+      "scripts/phase6_fusion.py": true,
+      "scripts/phase6_native_baseline.py": true,
+      "scripts/phase6_runtime.py": true,
+      "src/aiwstudy/attacks.py": true,
+      "src/aiwstudy/models.py": true,
+      "src/aiwstudy/watermark.py": true
+    },
+    "strongest_feasible_origin_baseline": "old_capped_positive",
+    "test_suite": "scripts/test_phase6_fusion.py",
+    "v2_models_identical_to_initial_fit": true,
+    "watermark_only_excluded_from_primary_origin_comparator": true,
+    "weights_sum": 1.0,
+    "zero_harm_fixed_quota_600_upper95": 0.0049804433803613485
+  },
+  "code_edited": false,
+  "findings": [
+    {
+      "issue": "Root protocol does not yet seal the actual ResNet18/ViT-B-32 passive backbone files; block dependencies alone do not pin a new stage to development identity.",
+      "severity": "material_dependency",
+      "status": "root_repair_pending"
+    },
+    {
+      "issue": "sampling_protocol.json no longer matches the original frozen root lock; preserve original and document score-free metadata repair.",
+      "severity": "hard_lock",
+      "status": "root_repair_pending"
+    },
+    {
+      "issue": "Code success additionally requires realized real-source FPR<=.05; prose plan currently asks disclosure only. Code is stricter.",
+      "severity": "claim_mapping",
+      "status": "document_before_outcomes"
+    },
+    {
+      "issue": "Generic evaluate CLI does not enforce the fixed family names/locked source-ID set or bootstrap count2000; planned wrapper must validate these. The feature stage must also join passed manifest source IDs/roles to the locked core source list.",
+      "severity": "command_guard",
+      "status": "wrapper_check_needed"
+    }
+  ],
+  "fit_complete_sha256": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+  "fresh_calibration_or_test_outcomes_read": false,
+  "frozen_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+  "learner_script_sha256": "54db8455ad6f13a09ab01c53e6ef3d22f29a03a2ee3a9db9573cb373e0175d20",
+  "limits": [
+    "Calibration assumptions and independent-source assumptions are conditional and cannot be established by hashes.",
+    "Fresh GenImage versus COCO/Open Images is not caption paired; common128/JPEG95 removes shared encoding/resolution differences, not semantic/collection confounding.",
+    "Native message recovery and photographic margin calibration do not authenticate an issuer or certify wrong-payload/unmarked-AI null rates.",
+    "Risk-coverage is descriptive; no shift-detection or selective-risk guarantee."
+  ],
+  "manual_math_review": {
+    "conformal_cut": "ceil((n+1)*.95) per collection, strict score>cut, max of collection cuts; n400 rank381; conditional marginal source-level control under within-collection exchangeability",
+    "correction": "z + B*max_q sigmoid(theta*x_q); derivative B*sigma*(1-sigma) on active argmax; finite-difference independently checked",
+    "leading_zero_payload": "All feature parsing is dtype=str; three exact registered queries per decoder/image are validated; synthetic leading-zero case passed.",
+    "no_clean_or_label_feature": "Only received pixels plus received JPEG90 view and passive logit enter prediction; labels/embedded payload/condition select offline pairs and reports only.",
+    "nonzero_harm": "Paired bootstrap NI is approximate; conservative family-binomial bound is separately labeled. No exact pooled nonzero-mixture binomial certificate is claimed.",
+    "pair_gradient": "softplus(-(c_m-c_u)); negative derivative on marked correction, positive derivative on unmarked counterpart",
+    "two_gain_tests": "Both gain tests must pass; intersection requirement does not select the favorable comparison.",
+    "unit": "Source-balanced weights and source maxima; query/cover counts do not become independent source counts",
+    "zero_harm": "At the fixed primary600-source design, zero any-view harmful switches gives 1-.05^(1/600) by log concavity under source independence, allowing heterogeneous family risks. n200 family claims remain unresolved."
+  },
+  "model_refit": false,
+  "primary_metadata_provenance_links": [
+    "https://github.com/pytorch/vision/blob/v0.20.1/torchvision/models/resnet.py",
+    "https://huggingface.co/timm/vit_base_patch32_clip_224.openai/tree/a6f597a30f7b82c51704746581f9a4e41421e878"
+  ],
+  "schema": "phase6_method_audit_v1",
+  "scope": "Read-only implementation/protocol audit; synthetic arithmetic checks only"
+}

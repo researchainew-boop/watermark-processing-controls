@@ -1,0 +1,347 @@
+{
+  "reporting_script_sha256": "4e47e4021d0895a3f39f3353ce2a9ab08330fefe5d515b5f9c22fe0dc6402430",
+  "fit_receipt_sha256": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+  "report_stage": "Primary plus separately labeled secondary attack presentation",
+  "release_readiness_claim": false,
+  "calibration_receipt_sha256": "8bb9f2f39f5fa8f0002da9b71f119403852c67d95230bffa8deafbfb3d95c6d3",
+  "evaluation_receipts": {
+    "fresh_test": {
+      "folder": "outputs/phase6/fusion_v2/evaluations/fresh_test",
+      "receipt_sha256": "73d46df578130ec71bd4a3470d1e698c2fc4b0df2bc4f13af19e4f3db5d708c4",
+      "receipt": {
+        "bootstrap_samples": 2000,
+        "calibration_complete_sha256": "8bb9f2f39f5fa8f0002da9b71f119403852c67d95230bffa8deafbfb3d95c6d3",
+        "completed_utc": "2026-10-12T11:52:41.195026+00:00",
+        "fit_complete_sha256": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+        "outputs_sha256": {
+          "predictions.csv": "5c5679f705dd8e76a43a90932d3102d7e845fb5af1050a2117c5ae6c8e694e5a",
+          "results.json": "1d2fe00c4077951a27219f7fc88fea4c358dba804ba184292d08eab96e8f15f7",
+          "test_sources.csv": "ac2c6eeb627d7d7be03b1f7e0b9784e4977985488c8275b6258a8fa9c8e23ff6"
+        },
+        "retuning": false,
+        "schema": "phase6_paired_fusion_v1",
+        "script_sha256": "54db8455ad6f13a09ab01c53e6ef3d22f29a03a2ee3a9db9573cb373e0175d20",
+        "source_count": 1000,
+        "test_features_sha256": "d9501319a7f438e8b037bbe1876ea6e195b7b1afad5b8b283c2985e86cef0cd3"
+      }
+    }
+  },
+  "source_registration": {
+    "registered_test_sources": 1000,
+    "evaluated_sources": 1000,
+    "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+    "source_lock_sha256": "665924683bc9fe74ae4bd2e0e992d070d45c97bbe7beda892785b4deb4954474",
+    "source_inventory_sha256": "137150d57cfc625bfd99a9d47d6a2f6f2528f6bae4390f44745992206c4c55a1",
+    "all_registered_test_sources_present": true
+  },
+  "secondary_attack_analysis": {
+    "secondary_only": true,
+    "folder": "outputs/phase6/attack_analysis",
+    "complete_receipt_sha256": "474782704efa0ea47fa79fdd2c107601e4f302b1a8de965dc65696619ce5197b",
+    "cut_receipt_sha256": "7159e0f27c207a9ce464132aa689d83f5ada77f677d6f8eeb847d82e3a1afba0",
+    "secondary_cuts_sha256": "1e762e11bee7b9a5ce2acfea373670d9ba8ecc58724ba8afc3b6c5c81ea44a9e",
+    "policies": [
+      "core_cuts_diagnostic",
+      "attack_family_source_cuts"
+    ],
+    "no_primary_cuts_changed": true,
+    "interpretation": "Extra attack/noise family is never remapped to confirmatory fresh_test. Core cuts are out-of-family diagnostics; separate attack cuts cover only their fixed secondary family under assumptions.",
+    "quality_interpretation": "Copied attack-input pixel PSNR/SSIM summaries; shared pixel budgets do not imply shared semantic distortion"
+  },
+  "additional_secondary_baselines": {
+    "secondary_only": true,
+    "original_primary_comparator_unchanged": true,
+    "folder": "outputs/phase6/additional_baselines",
+    "complete_receipt_sha256": "a780ae9b6179dd3500d994300ecba5ab821621094db37fe6ff461b3a11abe757",
+    "calibration_receipt_sha256": "38a01d04011401c2583be1862beff1eb14f1a6d913c5e8dd72d111f0595c1572",
+    "cuts_sha256": "72d273f7b1a44e22c24ddb473ea8f0f8abca7884da09bfac473b8f07cdeed493",
+    "results_sha256": "fe90a7eab792632cd54e4a0bc6412471a0f70f9887dbda39ce6401d1d1c9b76c",
+    "locked_at_utc": "2026-10-12T11:27:36.538067+00:00",
+    "first_test_scores_started_utc": "2026-10-12T11:37:08.021039+00:00",
+    "score_reconstruction_or_inference": false,
+    "registered_rules": {
+      "full_message_union": "score2 if any registered native full match, otherwise sigmoid(probe logit); independently calibrated source cut",
+      "tuned_confidence": "probe logit+B*max_query((2*agreement-1)_+*stability); B in same1,2,4,8,16 range, tuneonly with same harm/FPR constraints"
+    },
+    "interpretation": "Comparators influence empirical novelty and utility interpretation without replacing the original confirmatory endpoint/comparator",
+    "decision_boundary_ties": "Not available from aggregate-only additional results; original saved-score tie counts are reported separately"
+  },
+  "source_protocol_receipts": {
+    "root_method_protocol": {
+      "sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+      "content": {
+        "frozen_at_utc": "2026-10-11T13:10:23.294925+00:00",
+        "learner_output": "outputs/phase6/fusion_v2",
+        "primary": "TrustMark+ResNet;marked TPR gains over probe and strongest tune-feasible origin-fusion baseline;unmarked loss<=.01",
+        "source_FPR_target": 0.05,
+        "registered_payloads": [
+          "0100101101001011",
+          "1011010010110100",
+          "1100101000110101"
+        ],
+        "calibration_sources": 800,
+        "test_AI_sources_per_family": 200,
+        "test_real_sources_per_collection": 200,
+        "families": [
+          "BigGAN",
+          "ADM",
+          "VQDM"
+        ],
+        "primary_conditions": [
+          "identity",
+          "jpeg50",
+          "crop",
+          "lowres32"
+        ],
+        "initial_hypothesis_and_models_locked_before_fresh_scores": true,
+        "no_acceptance_or_novelty_rating_guarantee": true,
+        "input_sha256": {
+          "docs/phase6_evaluation_plan.md": "3428b58c2c04337efe9602060fff73a7a27c62d1e49e1ea77b05121fd00f737d",
+          "scripts/phase6_features.py": "5d075d52a321f348113fb8b5a969e6df6f797d4b34aad02c465b1d2f52a66b43",
+          "scripts/phase6_runtime.py": "40ff23be357e9fbd04980ffc2f680a1e7eb891f9733b3d3d2b14a51d8639939e",
+          "scripts/phase6_freeze.py": "58b48148e4f01bacf1a809e42508339c395f49a04f3c262968a75d7923e72a03",
+          "scripts/phase6_fusion.py": "54db8455ad6f13a09ab01c53e6ef3d22f29a03a2ee3a9db9573cb373e0175d20",
+          "scripts/phase6_attacks.py": "a35d7adcfc7705cdbeb74e622058341e81231231e78baccff36db5ac62d791d6",
+          "scripts/phase6_native_baseline.py": "3e1e0c401bbef4048ea856660232166d24160661af13aa94e5fd82292eb637d4",
+          "scripts/benchmark_watermarks.py": "92359a35be43b76780c073f070891bfe6e42f7efa6125396e08edbac91cb1101",
+          "scripts/evaluate_encoding_controls.py": "6f6f6684a491870de728d99f913f8530798c9bb4ea4b7963fa3bb2ae9d36de78",
+          "scripts/phase5_fair_watermarks.py": "ea05702c8a3a9e6953cdf74e5dae41f4caf09867968fd777e3cd41006d0446e3",
+          "src/aiwstudy/watermark.py": "6b62834c2a14c4a5cb450c743e3169616c05231a6f29dcce52f4d8eca5e39415",
+          "src/aiwstudy/attacks.py": "51546649126dd0594c451e81885be32068c47e37aa08b1265238ca893476137d",
+          "src/aiwstudy/models.py": "44856de44ee66124336bf954c7dd1e62b9bd27ba394db147720b207b556ec6c9",
+          "outputs/phase6/development/preparation.json": "2d179e377abf845566f5916675dc3200bfc65de6d231174ccf867a4dbc99411f",
+          "outputs/phase6/development/features.csv": "627b43725f6ef176cdcc2abdeeef62e4bd5e93968c61567ebcf3463172ebb7bf",
+          "outputs/phase6/data_inventory/sampling_protocol.json": "49e9b913da254e317b4db78dec7855433f6ae9cafa7475bf1ff61de7b6774008",
+          "outputs/phase6/data_inventory/calibration_source_manifest.csv": "469873ead86f30def2cc416b6394f859f2a32379708d8b7b0b4bea6c6bd527a6",
+          "outputs/phase6/native_baseline/plan.json": "3ef1bf2f7ba26adc1fd2f60a032836c60552ef671f320e2bb806a6d670deff09",
+          "outputs/conference_clean/resnet_full.npz": "db427c4aeab4edf07496cf28d6f5fb766ce48f91baee53797df41ddb42b5d9f7",
+          "outputs/conference_clean/clip_full.npz": "30cf885fbf4030471c15443ce8808173764ff193e775a61f7bb11329901278d4",
+          ".tools/extension-assets/ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+          ".tools/extension-assets/univfd_fc_weights.pth": "477100745713bcc957beb2b40859536859b6483fd6301b3b9293151b194c7847",
+          ".tools/extension-assets/official_clip_model.py": "c071d011e92226f1ca0a6f7c5098d8d7d08eadc7d6db125a81b52fc234b1ec59",
+          "outputs/phase6/fusion_v2/fit_complete.json": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+          "outputs/phase6/fusion_v2/constraint_diagnostic.json": "3f95e27e9037492d763ccf4aeac4d73e2990fa354731a296018c31341e5054d4",
+          "outputs/phase6/fusion_v2/development_sources.csv": "0282e4fe7cbc8a40447dfe32fa98654633844e894b938bfd04a05f748c4936b6",
+          "outputs/phase6/fusion_v2/models.json": "96453192d3d7d712f1d1acc079d43eae86fca495bd7b3e33ce93eb03d11bef56",
+          "outputs/phase6/fusion_v2/protocol.json": "73f34388ffc2659e2a30c37d6a78e4ec7f0566150f8126d50113c3a92c83929c",
+          "outputs/phase6/fusion_v2/selection.json": "dae6794bb944b52f32d6b34afef4923bb829d34570471f908bc8b032a9fecbc0",
+          "scripts/phase6_dependency_repair.py": "6211e4b62816aaf5c48e8285b33ad71868af6de22d9f33a36b94d3c68388c4b0",
+          "outputs/phase6/passive_dependencies_locked.json": "26699f2db216df49c4aa8722bab2179c045fe5f7cef10ed551ad3175be8a04d3",
+          "outputs/phase6/frozen_protocol.original.json": "a0bb581898c76ccdd8181ca0c182285a18da75af140adf536103e0fe399f49ca",
+          "outputs/phase6/data_inventory/sampling_protocol.root_frozen_original.json": "b2a55e6df0ce3ee395f51dbe37b91187feeb54f6fa89c72207a066df16402ff2"
+        },
+        "score_free_amendment": {
+          "utc": "2026-10-11T13:20:42.558363+00:00",
+          "original_protocol_sha256": "a0bb581898c76ccdd8181ca0c182285a18da75af140adf536103e0fe399f49ca",
+          "changes": [
+            "Seal actual passive backbone dependencies at final-stage entry, including cache reuse",
+            "Check supplied prospective manifest roles, IDs and metadata against registered sources",
+            "State existing implementation's realized source FPR<=.05 success criterion before outcomes",
+            "Accept only added score_separation sampling explanation; no scientific sampling changes"
+          ],
+          "fitted_parameters_changed": false,
+          "candidate_selection_changed": false,
+          "sampling_changed": false,
+          "fresh_detector_or_watermark_scores_observed": false
+        }
+      }
+    },
+    "root_source_lock": {
+      "sha256": "665924683bc9fe74ae4bd2e0e992d070d45c97bbe7beda892785b4deb4954474",
+      "content": {
+        "locked_at_utc": "2026-10-12T06:04:51.324549+00:00",
+        "protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+        "source_manifest_sha256": "137150d57cfc625bfd99a9d47d6a2f6f2528f6bae4390f44745992206c4c55a1",
+        "source_count": 1800,
+        "test_scoring_started": false,
+        "counts": [
+          {
+            "role": "calibration",
+            "collection": "coco",
+            "n": 400
+          },
+          {
+            "role": "calibration",
+            "collection": "openimages",
+            "n": 400
+          },
+          {
+            "role": "test",
+            "collection": "ADM",
+            "n": 200
+          },
+          {
+            "role": "test",
+            "collection": "BigGAN",
+            "n": 200
+          },
+          {
+            "role": "test",
+            "collection": "VQDM",
+            "n": 200
+          },
+          {
+            "role": "test",
+            "collection": "coco",
+            "n": 200
+          },
+          {
+            "role": "test",
+            "collection": "openimages",
+            "n": 200
+          }
+        ],
+        "selection": "previously frozen hash-order sampling/eligibility rules;no model scores used"
+      }
+    },
+    "sampling_protocol": {
+      "sha256": "49e9b913da254e317b4db78dec7855433f6ae9cafa7475bf1ff61de7b6774008",
+      "content": {
+        "recorded_at_utc": "2026-10-11T12:29:58.216856+00:00",
+        "seed": 20261011,
+        "planned_sources": {
+          "calibration": {
+            "coco": 400,
+            "openimages": 400
+          },
+          "test": {
+            "coco": 200,
+            "openimages": 200,
+            "BigGAN": 200,
+            "ADM": 200,
+            "VQDM": 200
+          }
+        },
+        "genimage_repository": "nebula/GenImage-arrow",
+        "genimage_revision": "3f4b9f921a673be09a93b335ed728cea0c6ecf33",
+        "family_definitions": {
+          "BigGAN": "GAN",
+          "ADM": "pixel-space guided diffusion",
+          "VQDM": "discrete latent diffusion"
+        },
+        "selection": "SHA256(phase6|seed|collection|public ID) order; first eligible sources until fixed quota",
+        "eligibility": "Known source-ID exclusion, decode availability, native minimum side 128, exact native/base pixel hash exclusion, 64-bit average hash Hamming distance <=2 exclusion against preceding and selected sources",
+        "real_role_assignment": "Within each real collection, first 400 eligible ordered IDs are calibration, next 200 test",
+        "processing": "Primary: decoded/oriented native BGR -> INTER_AREA 128x128 -> INTER_LINEAR 256x256 -> common OpenCV JPEG95 encode/decode -> PNG",
+        "scores_observed": false,
+        "detector_or_watermark_imported": false,
+        "final_test_may_be_scored_only_after_method_lock": true,
+        "study_fit_families": [
+          "Stable Diffusion",
+          "DALL-E3"
+        ],
+        "preceding_test_families": [
+          "Midjourney",
+          "Realistic Vision SD1.x/LCM"
+        ],
+        "exposure_caveat": "Unseen refers to study supervised fitting/development. Public benchmark or pretraining exposure of frozen backbones and external detectors is not excluded.",
+        "content_caveat": "GenImage ImageNet-class generation is not COCO-caption-paired; common JPEG processing removes file encoding differences but not collection/content differences.",
+        "preceding_tables_sha256": {
+          "outputs/conference_clean/source_audit.csv": "7934f56b61befa7fa20f91157a450aef5af556a8d6e9bf4d702982b477b6746f",
+          "outputs/extension/fresh/manifest.csv": "3a3d930c7eb4f3ca717f31cc258d906f125bfd02de5832ed38469f6436637765",
+          "outputs/phase3/controls/openimages_sources.csv": "d9839ff81f9665e30d807cd00d284db78c053d0eef983fd711a681ac001d67dd",
+          "outputs/phase4/fresh_replication/sources.csv": "f1463a5d5509de21e491655dcb99be2f34b6747991fe7d4c4a8d3b0c812460d3",
+          "outputs/phase5/paired_content/exclusion_manifest.csv": "db51467b6af0996290f65ea2896326ffa2c63683361222029a88e5efcdc0a94c",
+          "outputs/phase5/paired_content/source_pairs.csv": "868434d65ac0adeac61bc14c84700f9562941ea3b20d02c1b81c21688bdb7e6f",
+          "outputs/phase5/paired_content/generated_sources.csv": "dd0da49bd240f3f08cda32762d761a08ea165357ab900673914d2997ec33829b",
+          "outputs/phase5/fair_watermarks/base_sources.csv": "19769e5a2dc256040404cce2431f4daf4441d535131a121ff33fc921a59e19ea",
+          "outputs/phase5/calibration/calibration_extra_manifest.csv": "a4393773155c516fed330aed1b22c5fc83690e8d3e6b53392f4c258e36379449"
+        },
+        "exclusion_manifest_sha256": "ed5be19861bab28a18928cf97b1a0211735bc5eb195b48b2934616844a5374a1",
+        "script_sha256_at_sampling": "fd0808e137e2fbad090c42a239cdf26e7b4a0e6ea9db375b060337ca0fe0b799",
+        "prescore_amendments": [
+          {
+            "name": "available-pilot-demo-exclusions",
+            "recorded_at_utc": "2026-10-11T12:46:54.152929+00:00",
+            "additional_available_originals": 1048,
+            "source_pair_public_ID_namespace_corrected": true,
+            "scores_observed": false,
+            "reason": "Audit all available preceding study/pilot/demo originals, including the superseded CIFAKE pilot retained in processed/base"
+          },
+          {
+            "name": "common128-before-marking",
+            "recorded_at_utc": "2026-10-11T12:50:55.247247+00:00",
+            "prior_manifest_sha256": "cc2b98f9baaff9175b2eaee45a20c163915575eb0267e417462f042580ec593b",
+            "reason": "BigGAN native outputs are 128 pixels; use the same 128-pixel bottleneck for every calibration/test origin before watermarking",
+            "source_ids_or_roles_changed_count": 0,
+            "scores_observed": false,
+            "primary_processing": "OpenCV decoded/oriented native BGR -> INTER_AREA 128x128 -> INTER_LINEAR 256x256 -> common JPEG95 encode/decode -> PNG",
+            "diagnostic_processing": "Native directly INTER_AREA 256x256 -> same JPEG95 encode/decode -> PNG",
+            "screening_processing_unchanged": "Duplicate screening uses original native and native-to256 standardized hashes; no resampling of fixed selected IDs"
+          }
+        ],
+        "preceding_audit_records": 11505,
+        "original_direct256_processing": "OpenCV BGR decode; Open Images metadata CCW rotation; INTER_AREA resize 256 square; common OpenCV JPEG95 encode/decode; PNG storage",
+        "diagnostic_processing": "Decoded/oriented native BGR -> INTER_AREA 256x256 -> same OpenCV JPEG95 encode/decode -> PNG",
+        "negative_label_caveat": "COCO/Open Images source-collection ground truth, not an individual forensic certificate of camera capture or photographic style",
+        "score_separation": "Source sampling never uses model scores. Independent real calibration may be scored after its immutable manifest is delivered; no final test score is computed by this preparation driver, and final test inference requires a separately locked method."
+      }
+    },
+    "source_selection_receipt": {
+      "sha256": "380537d6fbcb6cc4cad23241a1a260fab9c46a608ef1038f819f1b61a486ac00",
+      "content": {
+        "completed_at_utc": "2026-10-11T13:15:34.973380+00:00",
+        "sources": 1800,
+        "real_calibration_sources": 800,
+        "real_test_sources": 400,
+        "ai_test_sources": 600,
+        "AI_per_family": 200,
+        "manifest_sha256": "137150d57cfc625bfd99a9d47d6a2f6f2528f6bae4390f44745992206c4c55a1",
+        "sampling_protocol_sha256": "49e9b913da254e317b4db78dec7855433f6ae9cafa7475bf1ff61de7b6774008",
+        "primary_processing": "common128-before-marking",
+        "calibration_manifest_sha256": "469873ead86f30def2cc416b6394f859f2a32379708d8b7b0b4bea6c6bd527a6",
+        "scores_observed": false,
+        "detector_or_watermark_inference_performed": false,
+        "scores_observed_scope": "No test/model score is used or computed by this source-preparation driver. Independent calibration inference by the method owner is allowed after delivery of its immutable source manifest.",
+        "source_preparation_used_any_model_score": false,
+        "test_inference_performed_by_preparation": false,
+        "method_lock_required_before_test_inference": true,
+        "script_sha256": "876e7aaf05cc2c951c48f5e439897f5ac9753c30544bd79a95bf4453feefec4a",
+        "OpenCV_version": "4.10.0",
+        "raw_assets_bytes": 5101098589,
+        "stored_native_and_common_JPEG95_bytes": 1274447682,
+        "precision_limits": "At true FPR 5%, 400 final independent photographs yield approximate SE 1.09 percentage points; per-source-collection n=200 gives SE 1.54 points. TPR worst-case SE at n=200 per family is 3.54 points. Edited versions do not multiply independent source count. Zero of 200 events has a two-sided 95% binomial upper bound about 1.83%. Calibration empirical quantile granularity is 1/801 pooled or 1/401 per real collection, conditional on exchangeability.",
+        "diagnostic_processing": "native-to256-JPEG95",
+        "primary_and_diagnostic_views": 3600,
+        "source_ids_or_roles_changed_in_amendment_count": 0,
+        "all_fixed_source_quotas_completed": true,
+        "calibration_sources_available": 800,
+        "stored_native_and_primary_and_diagnostic_bytes": 1453271175
+      }
+    }
+  },
+  "primary_intervals": "Copied from frozen evaluator, never replaced by newly chosen analysis",
+  "secondary_intervals": "2,000 deterministic collection-stratified source draws; derivatives/payloads/seeds remain together; descriptive",
+  "score_or_threshold_refitting": false,
+  "inference_performed": false,
+  "pipeline": {
+    "pdf": "manuscript/assets/phase6_pipeline.pdf",
+    "pdf_sha256": "5506cea34bbeb706f93b4c90ea4c846f70e45ae9263f958d048d401bf22e4208",
+    "png": "manuscript/assets/phase6_pipeline.png",
+    "png_sha256": "00b926ed5a2dd6b35c5d568dc9f7dbab3e6cc0e80f5f836bd51aaffa6f9de102",
+    "png_width": 2126,
+    "png_height": 820,
+    "title": "Actual paired fusion and independent source calibration",
+    "reporting_script_sha256": "4e47e4021d0895a3f39f3353ce2a9ab08330fefe5d515b5f9c22fe0dc6402430",
+    "measurements_used": false,
+    "registered_query_count": 3,
+    "evaluated_common_conditions": [
+      "identity",
+      "jpeg50",
+      "crop",
+      "lowres32"
+    ],
+    "internal_received_view": "JPEG90; not a clean reference or an additional claimed test condition"
+  },
+  "processing_caveat": "Primary common128 round trip then JPEG95; native-to256 processing is a separate diagnostic",
+  "scope_caveats": [
+    "GenImage/photo collections are not caption paired",
+    "Supervised-family holdout does not exclude backbone pretraining exposure",
+    "Nominal source FPR is marginal under fixed-family within-collection exchangeability",
+    "Margin evidence/native message recovery do not authenticate an issuer",
+    "Unmarked and real false-positive changes are retained, including ineligible comparators",
+    "Extra attacks/payloads/seeds do not enlarge the independent source count"
+  ],
+  "independent_source_counts": 1000,
+  "confirmatory_coverage_valid": true
+}

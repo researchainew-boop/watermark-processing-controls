@@ -1,0 +1,5586 @@
+{
+  "protocol": {
+    "design": "Smooth validation-trained mixture of calibrated passive and static-fusion experts",
+    "retrospective": true,
+    "limitations": "Designed after previous test results were examined; grouped CV prevents extension selection on held-out rows but does not create a fresh untouched test or establish novelty.",
+    "seed": 20261008,
+    "folds": 5,
+    "selection_metric": "mean held-source class-balanced log loss",
+    "ridge_candidates": [
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "gate_features": [
+      "payload agreement centered on 0.5",
+      "absolute passive logit normalized by training-fold 90th percentile",
+      "their interaction"
+    ],
+    "forbidden_fit_features": [
+      "attack identity",
+      "generator identity",
+      "test labels"
+    ],
+    "held_out_attacks": [
+      [
+        "lowres",
+        2
+      ],
+      [
+        "regenerate",
+        2
+      ],
+      [
+        "spectral",
+        1
+      ]
+    ],
+    "held_out_generator": "midjourney",
+    "bootstrap_samples": 2000,
+    "validation_input_sha256": "dc520f804cc18a971ff16d4da8e80b041645104e3dcc2e707afa208a3daa58ef",
+    "script_sha256": "2861c7385ab088bfac7ee3addf3b89817c1d3008246fcd80d8f8e01debd7a658",
+    "falsifiable_criteria": [
+      "Greater full-test ROC-AUC than passive alone",
+      "No more than 0.005 lower AUC than passive on the prior reduced-recovery diagnostic slice",
+      "Compare against logit+payload logistic and constant-mixture baselines; report failures"
+    ]
+  },
+  "selection": {
+    "resnet": {
+      "full": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.11780694732476302,
+          "held_source_auc": 0.9911037170848768
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.11780694732476302,
+            "held_source_auc": 0.9911037170848768
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.1244356597689181,
+            "held_source_auc": 0.9892866962480451
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.12465247161580548,
+            "held_source_auc": 0.989138728866198
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.12466608326157295,
+            "held_source_auc": 0.989125932944812
+          }
+        ]
+      },
+      "payload_only": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.12309110007272374,
+          "held_source_auc": 0.98988545230767
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.12309110007272374,
+            "held_source_auc": 0.98988545230767
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.12448772855590859,
+            "held_source_auc": 0.9892526823624695
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.12465425141050945,
+            "held_source_auc": 0.9891365884575298
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.1246662199754097,
+            "held_source_auc": 0.989125560699826
+          }
+        ]
+      },
+      "uncertainty_only": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.12123075854576038,
+          "held_source_auc": 0.9902394572891454
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.12123075854576038,
+            "held_source_auc": 0.9902394572891454
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.12465749540358825,
+            "held_source_auc": 0.9891355182531958
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.12466659398213797,
+            "held_source_auc": 0.9891252349854636
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.12466743245924122,
+            "held_source_auc": 0.9891245835567385
+          }
+        ]
+      }
+    },
+    "clip": {
+      "full": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.03524350576031592,
+          "held_source_auc": 0.9990870691723779
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.03524350576031592,
+            "held_source_auc": 0.9990870691723779
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.03687265524975672,
+            "held_source_auc": 0.998860837282271
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.0369287106247001,
+            "held_source_auc": 0.9988553001381076
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.036933153681142826,
+            "held_source_auc": 0.9988539042194108
+          }
+        ]
+      },
+      "payload_only": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.03662129435011163,
+          "held_source_auc": 0.998926771175377
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.03662129435011163,
+            "held_source_auc": 0.998926771175377
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.03690027784287668,
+            "held_source_auc": 0.9988606511597782
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.03693046801318034,
+            "held_source_auc": 0.998855811974963
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.036933320978467535,
+            "held_source_auc": 0.9988539972806573
+          }
+        ]
+      },
+      "uncertainty_only": {
+        "selected": {
+          "ridge": 0.001,
+          "held_source_balanced_log_loss": 0.03609830189124305,
+          "held_source_auc": 0.9989352862794266
+        },
+        "candidates": [
+          {
+            "ridge": 0.001,
+            "held_source_balanced_log_loss": 0.03609830189124305,
+            "held_source_auc": 0.9989352862794266
+          },
+          {
+            "ridge": 0.01,
+            "held_source_balanced_log_loss": 0.03691463014857067,
+            "held_source_auc": 0.9988533458519322
+          },
+          {
+            "ridge": 0.1,
+            "held_source_balanced_log_loss": 0.036931994406914706,
+            "held_source_auc": 0.9988551140156147
+          },
+          {
+            "ridge": 1.0,
+            "held_source_balanced_log_loss": 0.03693347266711084,
+            "held_source_auc": 0.9988538576887876
+          }
+        ]
+      }
+    }
+  },
+  "thresholds": {
+    "resnet": {
+      "calibrated_passive": 0.5292869997616417,
+      "refit_static_fusion": 0.4600671039099725,
+      "constant_mixture": 0.4716145578309056,
+      "logit_payload_fusion": 0.5015719496108079,
+      "reliability_mixture": 0.4900588328990315,
+      "payload_only_gate": 0.40893102442846685,
+      "uncertainty_only_gate": 0.43590726106954236,
+      "probe": 0.5688569,
+      "original_fusion": 0.4600671222132044
+    },
+    "clip": {
+      "calibrated_passive": 0.4414977103398489,
+      "refit_static_fusion": 0.21099856232583192,
+      "constant_mixture": 0.18800771996226448,
+      "logit_payload_fusion": 0.40228565620375095,
+      "reliability_mixture": 0.33491035610339387,
+      "payload_only_gate": 0.3402860399032702,
+      "uncertainty_only_gate": 0.20365324954645708,
+      "probe": 0.43839988,
+      "original_fusion": 0.21099856169799
+    }
+  },
+  "test_input_sha256": "78584bb2566b58c77ea7be70773d7a0131f72d868d4cd2b255d321211538a5af",
+  "results": {
+    "resnet": {
+      "full_test": {
+        "rows": 26880,
+        "sources": 1680,
+        "systems": {
+          "calibrated_passive": {
+            "roc_auc": 0.9426567477595695,
+            "average_precision": 0.9871673425456076,
+            "balanced_accuracy": 0.8772804718713427,
+            "precision": 0.9765006385696041,
+            "recall": 0.8557933381088825,
+            "f1": 0.912171029085443,
+            "false_positive_rate": 0.10123239436619719,
+            "equal_error_rate": 0.12502238538681948,
+            "brier_score": 0.09914426668598068,
+            "tpr_at_fpr_1pct": 0.4792263610315186,
+            "tpr_at_fpr_5pct": 0.7529996418338109,
+            "threshold": 0.5292869997616417,
+            "n": 26880,
+            "balanced_log_loss": 0.31683363161336736,
+            "roc_auc_ci95": [
+              0.9309661711285577,
+              0.9536315348973993
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": -0.021961118711282812,
+                "ci95": [
+                  -0.028463037691670856,
+                  -0.015823738784448257
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.02920608215689202,
+                "ci95": [
+                  -0.03606364613771675,
+                  -0.022692510484085496
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.022855095686493687,
+                "ci95": [
+                  -0.029221073075045886,
+                  -0.016799816776791217
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "refit_static_fusion": {
+            "roc_auc": 0.9646178664708523,
+            "average_precision": 0.9926159919681589,
+            "balanced_accuracy": 0.9185588098793334,
+            "precision": 0.9819858562691132,
+            "recall": 0.9200841690544412,
+            "f1": 0.9500277366863905,
+            "false_positive_rate": 0.08296654929577464,
+            "equal_error_rate": 0.08212031861657051,
+            "brier_score": 0.07635117939110542,
+            "tpr_at_fpr_1pct": 0.6612643266475645,
+            "tpr_at_fpr_5pct": 0.8203796561604585,
+            "threshold": 0.4600671039099725,
+            "n": 26880,
+            "balanced_log_loss": 0.23795422402481992,
+            "roc_auc_ci95": [
+              0.9580861783498155,
+              0.9705543173528997
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.021961118711282812,
+                "ci95": [
+                  0.015823738784448253,
+                  0.028463037691670853
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.007244963445609209,
+                "ci95": [
+                  -0.009551452540654667,
+                  -0.005158793061720285
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.000893976975210875,
+                "ci95": [
+                  -0.00112266064825558,
+                  -0.0006695979568762807
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.021961118711282812,
+              "ci95": [
+                0.015823738784448253,
+                0.028463037691670853
+              ]
+            }
+          },
+          "constant_mixture": {
+            "roc_auc": 0.9655118434460632,
+            "average_precision": 0.9927590755522274,
+            "balanced_accuracy": 0.9186221825941321,
+            "precision": 0.9820737128925857,
+            "recall": 0.9197707736389685,
+            "f1": 0.9499017454629523,
+            "false_positive_rate": 0.08252640845070422,
+            "equal_error_rate": 0.08169877971265993,
+            "brier_score": 0.07582211338984476,
+            "tpr_at_fpr_1pct": 0.6581751432664756,
+            "tpr_at_fpr_5pct": 0.8195290114613181,
+            "threshold": 0.4716145578309056,
+            "n": 26880,
+            "balanced_log_loss": 0.2341511136180809,
+            "roc_auc_ci95": [
+              0.958912354796479,
+              0.9714891075092095
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.022855095686493687,
+                "ci95": [
+                  0.016799816776791213,
+                  0.029221073075045876
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.000893976975210875,
+                "ci95": [
+                  0.0006695979568762805,
+                  0.00112266064825558
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.006350986470398334,
+                "ci95": [
+                  -0.008673289062815276,
+                  -0.004322914515488743
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.022855095686493687,
+              "ci95": [
+                0.016799816776791213,
+                0.029221073075045876
+              ]
+            }
+          },
+          "logit_payload_fusion": {
+            "roc_auc": 0.9718628299164616,
+            "average_precision": 0.9942002364461733,
+            "balanced_accuracy": 0.9155818687194802,
+            "precision": 0.9876660341555977,
+            "recall": 0.8855211318051576,
+            "f1": 0.9338086020490062,
+            "false_positive_rate": 0.05435739436619718,
+            "equal_error_rate": 0.08491628495903789,
+            "brier_score": 0.07896040831420247,
+            "tpr_at_fpr_1pct": 0.7551934097421203,
+            "tpr_at_fpr_5pct": 0.8773728510028653,
+            "threshold": 0.5015719496108079,
+            "n": 26880,
+            "balanced_log_loss": 0.22591813627549465,
+            "roc_auc_ci95": [
+              0.9664553978458638,
+              0.9768200745665905
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.02920608215689202,
+                "ci95": [
+                  0.022692510484085493,
+                  0.036063646137716746
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.007244963445609209,
+                "ci95": [
+                  0.005158793061720285,
+                  0.009551452540654665
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.006350986470398334,
+                "ci95": [
+                  0.004322914515488741,
+                  0.008673289062815275
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.02920608215689202,
+              "ci95": [
+                0.022692510484085493,
+                0.036063646137716746
+              ]
+            }
+          },
+          "reliability_mixture": {
+            "roc_auc": 0.9694686674735915,
+            "average_precision": 0.9935618783845156,
+            "balanced_accuracy": 0.9215530918317931,
+            "precision": 0.9817191569973952,
+            "recall": 0.9280533667621776,
+            "f1": 0.9541322409150538,
+            "false_positive_rate": 0.08494718309859155,
+            "equal_error_rate": 0.08143204679365593,
+            "brier_score": 0.06772142651821914,
+            "tpr_at_fpr_1pct": 0.6721436246418339,
+            "tpr_at_fpr_5pct": 0.8339452005730659,
+            "threshold": 0.4900588328990315,
+            "n": 26880,
+            "balanced_log_loss": 0.21822295397643582,
+            "roc_auc_ci95": [
+              0.9632237793126394,
+              0.9753661833498755
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.02681191971402197,
+                "ci95": [
+                  0.020915687893872405,
+                  0.03297975490050792
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.004850801002739158,
+                "ci95": [
+                  0.0040174550989733465,
+                  0.005721921138331528
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0023941624428700514,
+                "ci95": [
+                  -0.004239635358995411,
+                  -0.0006918289022615629
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.003956824027528283,
+                "ci95": [
+                  0.0032257209395115116,
+                  0.004731173919243034
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.02681191971402197,
+              "ci95": [
+                0.020915687893872405,
+                0.03297975490050792
+              ]
+            }
+          },
+          "payload_only_gate": {
+            "roc_auc": 0.9674538447217149,
+            "average_precision": 0.9931167062692802,
+            "balanced_accuracy": 0.9214008081439928,
+            "precision": 0.9806227071771235,
+            "recall": 0.9334706303724928,
+            "f1": 0.9564658929308684,
+            "false_positive_rate": 0.09066901408450705,
+            "equal_error_rate": 0.08005550314782679,
+            "brier_score": 0.07242230295751124,
+            "tpr_at_fpr_1pct": 0.6594734957020058,
+            "tpr_at_fpr_5pct": 0.8201110315186246,
+            "threshold": 0.40893102442846685,
+            "n": 26880,
+            "balanced_log_loss": 0.22576799992931848,
+            "roc_auc_ci95": [
+              0.9608780772418808,
+              0.9735348796347997
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.024797096962145382,
+                "ci95": [
+                  0.018802955923330998,
+                  0.03104276989249023
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0028359782508625697,
+                "ci95": [
+                  0.0022430817725569013,
+                  0.0034604485192066686
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.00440898519474664,
+                "ci95": [
+                  -0.006648311355586481,
+                  -0.0024362500736984207
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0019420012756516947,
+                "ci95": [
+                  0.0015418878570153728,
+                  0.002366477522628074
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.024797096962145382,
+              "ci95": [
+                0.018802955923330998,
+                0.03104276989249023
+              ]
+            }
+          },
+          "uncertainty_only_gate": {
+            "roc_auc": 0.9677705999157553,
+            "average_precision": 0.9931837862904102,
+            "balanced_accuracy": 0.9199864300415674,
+            "precision": 0.9811517332828187,
+            "recall": 0.927560888252149,
+            "f1": 0.9536039768019884,
+            "false_positive_rate": 0.08758802816901408,
+            "equal_error_rate": 0.08340732071512166,
+            "brier_score": 0.07296401692671818,
+            "tpr_at_fpr_1pct": 0.6617568051575932,
+            "tpr_at_fpr_5pct": 0.8245881088825215,
+            "threshold": 0.43590726106954236,
+            "n": 26880,
+            "balanced_log_loss": 0.22666751933745521,
+            "roc_auc_ci95": [
+              0.9611744358212537,
+              0.9738121093986466
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.02511385215618578,
+                "ci95": [
+                  0.01920165769306915,
+                  0.031251592939002606
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0031527334449029665,
+                "ci95": [
+                  0.0025737600958882943,
+                  0.003770760032357964
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.004092230000706243,
+                "ci95": [
+                  -0.006153037874340494,
+                  -0.002240089254241849
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0022587564696920914,
+                "ci95": [
+                  0.0018268049617209015,
+                  0.002697789376053044
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.02511385215618578,
+              "ci95": [
+                0.01920165769306915,
+                0.031251592939002606
+              ]
+            }
+          },
+          "probe": {
+            "roc_auc": 0.9426567477595695,
+            "average_precision": 0.9871673425456076,
+            "balanced_accuracy": 0.8772804718713427,
+            "precision": 0.9765006385696041,
+            "recall": 0.8557933381088825,
+            "f1": 0.912171029085443,
+            "false_positive_rate": 0.10123239436619719,
+            "equal_error_rate": 0.12502238538681948,
+            "brier_score": 0.10501182499353197,
+            "tpr_at_fpr_1pct": 0.4792263610315186,
+            "tpr_at_fpr_5pct": 0.7529996418338109,
+            "threshold": 0.5688569,
+            "n": 26880,
+            "balanced_log_loss": 0.41060641085503313,
+            "roc_auc_ci95": [
+              0.9309661711285577,
+              0.9536315348973993
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": -0.021961118711282812,
+                "ci95": [
+                  -0.028463037691670856,
+                  -0.015823738784448257
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.02920608215689202,
+                "ci95": [
+                  -0.03606364613771675,
+                  -0.022692510484085496
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.022855095686493687,
+                "ci95": [
+                  -0.029221073075045886,
+                  -0.016799816776791217
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "original_fusion": {
+            "roc_auc": 0.9646178664708523,
+            "average_precision": 0.9926159919681589,
+            "balanced_accuracy": 0.9185588098793334,
+            "precision": 0.9819858562691132,
+            "recall": 0.9200841690544412,
+            "f1": 0.9500277366863905,
+            "false_positive_rate": 0.08296654929577464,
+            "equal_error_rate": 0.08212031861657051,
+            "brier_score": 0.07635117927288318,
+            "tpr_at_fpr_1pct": 0.6612643266475645,
+            "tpr_at_fpr_5pct": 0.8203796561604585,
+            "threshold": 0.4600671222132044,
+            "n": 26880,
+            "balanced_log_loss": 0.23795422409966605,
+            "roc_auc_ci95": [
+              0.9580861783498155,
+              0.9705543173528997
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.021961118711282812,
+                "ci95": [
+                  0.015823738784448253,
+                  0.028463037691670853
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.007244963445609209,
+                "ci95": [
+                  -0.009551452540654667,
+                  -0.005158793061720285
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.000893976975210875,
+                "ci95": [
+                  -0.00112266064825558,
+                  -0.0006695979568762807
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.021961118711282812,
+              "ci95": [
+                0.015823738784448253,
+                0.028463037691670853
+              ]
+            }
+          }
+        }
+      },
+      "reduced_recovery": {
+        "rows": 6720,
+        "sources": 1680,
+        "systems": {
+          "calibrated_passive": {
+            "roc_auc": 0.9223069433794745,
+            "average_precision": 0.9828372852491819,
+            "balanced_accuracy": 0.8569643145405383,
+            "precision": 0.9714404836356055,
+            "recall": 0.8345272206303725,
+            "f1": 0.897794046816299,
+            "false_positive_rate": 0.12059859154929578,
+            "equal_error_rate": 0.1461292828604867,
+            "brier_score": 0.11538082565120217,
+            "tpr_at_fpr_1pct": 0.46239255014326647,
+            "tpr_at_fpr_5pct": 0.7106017191977078,
+            "threshold": 0.5292869997616417,
+            "n": 6720,
+            "balanced_log_loss": 0.368868504638346,
+            "roc_auc_ci95": [
+              0.9104480403643206,
+              0.9342320842812967
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.04046844417147577,
+                "ci95": [
+                  0.03381508157108837,
+                  0.04707458267017947
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.020518098742887014,
+                "ci95": [
+                  0.016553299921304325,
+                  0.024708438218854586
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.03662296576738355,
+                "ci95": [
+                  0.030239808185610825,
+                  0.042990875274930354
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "refit_static_fusion": {
+            "roc_auc": 0.8818384992079987,
+            "average_precision": 0.9689956291988117,
+            "balanced_accuracy": 0.8300173534040922,
+            "precision": 0.9738532110091743,
+            "recall": 0.7603868194842407,
+            "f1": 0.8539823008849557,
+            "false_positive_rate": 0.10035211267605634,
+            "equal_error_rate": 0.15305298841761167,
+            "brier_score": 0.196468285496877,
+            "tpr_at_fpr_1pct": 0.14810171919770773,
+            "tpr_at_fpr_5pct": 0.4885386819484241,
+            "threshold": 0.4600671039099725,
+            "n": 6720,
+            "balanced_log_loss": 0.5279435660010474,
+            "roc_auc_ci95": [
+              0.8663673731253027,
+              0.8967307718985835
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.04046844417147577,
+                "ci95": [
+                  -0.04707458267017948,
+                  -0.033815081571088375
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.019950345428588756,
+                "ci95": [
+                  -0.02503604126099715,
+                  -0.015066476716675346
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0038454784040922174,
+                "ci95": [
+                  -0.004585189323620825,
+                  -0.0031556222633075453
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.04046844417147577,
+              "ci95": [
+                -0.04707458267017948,
+                -0.033815081571088375
+              ]
+            }
+          },
+          "constant_mixture": {
+            "roc_auc": 0.885683977612091,
+            "average_precision": 0.9700726878805748,
+            "balanced_accuracy": 0.8295696456677024,
+            "precision": 0.9738231917336395,
+            "recall": 0.7594914040114613,
+            "f1": 0.8534057752288963,
+            "false_positive_rate": 0.10035211267605634,
+            "equal_error_rate": 0.15225468138342949,
+            "brier_score": 0.19290955507190652,
+            "tpr_at_fpr_1pct": 0.17388968481375358,
+            "tpr_at_fpr_5pct": 0.4910458452722063,
+            "threshold": 0.4716145578309056,
+            "n": 6720,
+            "balanced_log_loss": 0.5097668193840604,
+            "roc_auc_ci95": [
+              0.8701439987300235,
+              0.9004283609293655
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.03662296576738355,
+                "ci95": [
+                  -0.042990875274930354,
+                  -0.03023980818561083
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0038454784040922174,
+                "ci95": [
+                  0.003155622263307545,
+                  0.0045851893236208245
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.01610486702449654,
+                "ci95": [
+                  -0.021041400511774114,
+                  -0.011371118342396756
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.03662296576738355,
+              "ci95": [
+                -0.042990875274930354,
+                -0.03023980818561083
+              ]
+            }
+          },
+          "logit_payload_fusion": {
+            "roc_auc": 0.9017888446365875,
+            "average_precision": 0.9777683418701522,
+            "balanced_accuracy": 0.8098805944549821,
+            "precision": 0.9823971006989386,
+            "recall": 0.6796203438395415,
+            "f1": 0.8034296602095904,
+            "false_positive_rate": 0.05985915492957746,
+            "equal_error_rate": 0.1692133459784495,
+            "brier_score": 0.20908032943430904,
+            "tpr_at_fpr_1pct": 0.4276504297994269,
+            "tpr_at_fpr_5pct": 0.6486389684813754,
+            "threshold": 0.5015719496108079,
+            "n": 6720,
+            "balanced_log_loss": 0.5203946450262686,
+            "roc_auc_ci95": [
+              0.8890812950545322,
+              0.9143037301306046
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.020518098742887014,
+                "ci95": [
+                  -0.024708438218854586,
+                  -0.016553299921304325
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.019950345428588756,
+                "ci95": [
+                  0.015066476716675343,
+                  0.02503604126099715
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.01610486702449654,
+                "ci95": [
+                  0.011371118342396755,
+                  0.02104140051177411
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.020518098742887014,
+              "ci95": [
+                -0.024708438218854586,
+                -0.016553299921304325
+              ]
+            }
+          },
+          "reliability_mixture": {
+            "roc_auc": 0.902568865016748,
+            "average_precision": 0.9750645161392273,
+            "balanced_accuracy": 0.8440905101093668,
+            "precision": 0.9743872819606977,
+            "recall": 0.7902936962750716,
+            "f1": 0.8727380599228716,
+            "false_positive_rate": 0.10211267605633803,
+            "equal_error_rate": 0.14977021873360508,
+            "brier_score": 0.16468427265668859,
+            "tpr_at_fpr_1pct": 0.19251432664756446,
+            "tpr_at_fpr_5pct": 0.6088825214899714,
+            "threshold": 0.4900588328990315,
+            "n": 6720,
+            "balanced_log_loss": 0.440477214064814,
+            "roc_auc_ci95": [
+              0.8883228521378991,
+              0.9167245560126519
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.019738078362726452,
+                "ci95": [
+                  -0.024586563975543728,
+                  -0.01500678103812711
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.020730365808749318,
+                "ci95": [
+                  0.018003725196360877,
+                  0.02332859588134104
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0007800203801605621,
+                "ci95": [
+                  -0.003175970106995757,
+                  0.00443957001770647
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0168848874046571,
+                "ci95": [
+                  0.014641245012157512,
+                  0.01913454389932004
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.019738078362726452,
+              "ci95": [
+                -0.024586563975543728,
+                -0.01500678103812711
+              ]
+            }
+          },
+          "payload_only_gate": {
+            "roc_auc": 0.8937442933027968,
+            "average_precision": 0.9718588866328062,
+            "balanced_accuracy": 0.8443603958997539,
+            "precision": 0.9721920486639148,
+            "recall": 0.8013968481375359,
+            "f1": 0.8785707273976637,
+            "false_positive_rate": 0.11267605633802817,
+            "equal_error_rate": 0.15056852576778723,
+            "brier_score": 0.18129304963332565,
+            "tpr_at_fpr_1pct": 0.17263610315186245,
+            "tpr_at_fpr_5pct": 0.49373209169054444,
+            "threshold": 0.40893102442846685,
+            "n": 6720,
+            "balanced_log_loss": 0.47384195458776734,
+            "roc_auc_ci95": [
+              0.878323603309506,
+              0.9085917636910287
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.028562650076677687,
+                "ci95": [
+                  -0.034646485872613944,
+                  -0.022797049353787437
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.011905794094798083,
+                "ci95": [
+                  0.009941868539766498,
+                  0.013813667508273087
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.008044551333790673,
+                "ci95": [
+                  -0.012954655876700041,
+                  -0.003620438268039519
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.008060315690705866,
+                "ci95": [
+                  0.00665222362560027,
+                  0.009446479535342446
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.028562650076677687,
+              "ci95": [
+                -0.034646485872613944,
+                -0.022797049353787437
+              ]
+            }
+          },
+          "uncertainty_only_gate": {
+            "roc_auc": 0.8953024423402881,
+            "average_precision": 0.973141464997781,
+            "balanced_accuracy": 0.8422479720731264,
+            "precision": 0.9733362714852358,
+            "recall": 0.7910100286532952,
+            "f1": 0.8727524204702628,
+            "false_positive_rate": 0.10651408450704225,
+            "equal_error_rate": 0.15056852576778723,
+            "brier_score": 0.17774592373516748,
+            "tpr_at_fpr_1pct": 0.18051575931232092,
+            "tpr_at_fpr_5pct": 0.5693051575931232,
+            "threshold": 0.43590726106954236,
+            "n": 6720,
+            "balanced_log_loss": 0.47062535489569585,
+            "roc_auc_ci95": [
+              0.8803202261113241,
+              0.9098165399317466
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.02700450103918639,
+                "ci95": [
+                  -0.032344645415472786,
+                  -0.021617855751089664
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.01346394313228938,
+                "ci95": [
+                  0.011693125037834397,
+                  0.015246407145415516
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.006486402296299376,
+                "ci95": [
+                  -0.010641212852869324,
+                  -0.0026025258598510828
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.009618464728197162,
+                "ci95": [
+                  0.00832000982434721,
+                  0.010883369139442696
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.02700450103918639,
+              "ci95": [
+                -0.032344645415472786,
+                -0.021617855751089664
+              ]
+            }
+          },
+          "probe": {
+            "roc_auc": 0.9223069433794745,
+            "average_precision": 0.9828372852491819,
+            "balanced_accuracy": 0.8569643145405383,
+            "precision": 0.9714404836356055,
+            "recall": 0.8345272206303725,
+            "f1": 0.897794046816299,
+            "false_positive_rate": 0.12059859154929578,
+            "equal_error_rate": 0.1461292828604867,
+            "brier_score": 0.12195198116491975,
+            "tpr_at_fpr_1pct": 0.46239255014326647,
+            "tpr_at_fpr_5pct": 0.7106017191977078,
+            "threshold": 0.5688569,
+            "n": 6720,
+            "balanced_log_loss": 0.4741070392054193,
+            "roc_auc_ci95": [
+              0.9104480403643206,
+              0.9342320842812967
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.04046844417147577,
+                "ci95": [
+                  0.03381508157108837,
+                  0.04707458267017947
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.020518098742887014,
+                "ci95": [
+                  0.016553299921304325,
+                  0.024708438218854586
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.03662296576738355,
+                "ci95": [
+                  0.030239808185610825,
+                  0.042990875274930354
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "original_fusion": {
+            "roc_auc": 0.8818384992079987,
+            "average_precision": 0.9689956291988117,
+            "balanced_accuracy": 0.8300173534040922,
+            "precision": 0.9738532110091743,
+            "recall": 0.7603868194842407,
+            "f1": 0.8539823008849557,
+            "false_positive_rate": 0.10035211267605634,
+            "equal_error_rate": 0.15305298841761167,
+            "brier_score": 0.1964682851557581,
+            "tpr_at_fpr_1pct": 0.14810171919770773,
+            "tpr_at_fpr_5pct": 0.4885386819484241,
+            "threshold": 0.4600671222132044,
+            "n": 6720,
+            "balanced_log_loss": 0.5279435661299621,
+            "roc_auc_ci95": [
+              0.8663673731253027,
+              0.8967307718985835
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.04046844417147577,
+                "ci95": [
+                  -0.04707458267017948,
+                  -0.033815081571088375
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.019950345428588756,
+                "ci95": [
+                  -0.02503604126099715,
+                  -0.015066476716675346
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0038454784040922174,
+                "ci95": [
+                  -0.004585189323620825,
+                  -0.0031556222633075453
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.04046844417147577,
+              "ci95": [
+                -0.04707458267017948,
+                -0.033815081571088375
+              ]
+            }
+          }
+        }
+      },
+      "held_out_attacks": {
+        "rows": 5040,
+        "sources": 1680,
+        "systems": {
+          "calibrated_passive": {
+            "roc_auc": 0.9087147046558243,
+            "average_precision": 0.9794609702501023,
+            "balanced_accuracy": 0.8443927653792862,
+            "precision": 0.9679685304860915,
+            "recall": 0.8225883476599809,
+            "f1": 0.8893765328514264,
+            "false_positive_rate": 0.13380281690140844,
+            "equal_error_rate": 0.15849946863607628,
+            "brier_score": 0.12388942832913098,
+            "tpr_at_fpr_1pct": 0.3292741165234002,
+            "tpr_at_fpr_5pct": 0.6769340974212035,
+            "threshold": 0.5292869997616417,
+            "n": 5040,
+            "balanced_log_loss": 0.4027099872210861,
+            "roc_auc_ci95": [
+              0.8951975393029941,
+              0.921864595524436
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.035866224087601095,
+                "ci95": [
+                  0.02812487388514461,
+                  0.0437094120357292
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.02002283519647019,
+                "ci95": [
+                  0.01494283774118763,
+                  0.025071675276107354
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.03232575971588858,
+                "ci95": [
+                  0.025055364421485846,
+                  0.03973815333100153
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "refit_static_fusion": {
+            "roc_auc": 0.8728484805682232,
+            "average_precision": 0.9669434857979098,
+            "balanced_accuracy": 0.8199651586693033,
+            "precision": 0.9706971005552129,
+            "recall": 0.751432664756447,
+            "f1": 0.8471063257065948,
+            "false_positive_rate": 0.11150234741784038,
+            "equal_error_rate": 0.16666666666666663,
+            "brier_score": 0.2014774712250708,
+            "tpr_at_fpr_1pct": 0.14302769818529132,
+            "tpr_at_fpr_5pct": 0.49570200573065903,
+            "threshold": 0.4600671039099725,
+            "n": 5040,
+            "balanced_log_loss": 0.5486630390553342,
+            "roc_auc_ci95": [
+              0.8558012903511486,
+              0.8890634878997
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.035866224087601095,
+                "ci95": [
+                  -0.04370941203572921,
+                  -0.028124873885144612
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.015843388891130905,
+                "ci95": [
+                  -0.021413167399814328,
+                  -0.010652277241929721
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.003540464371712515,
+                "ci95": [
+                  -0.004343689885252219,
+                  -0.0027363980924707543
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.035866224087601095,
+              "ci95": [
+                -0.04370941203572921,
+                -0.028124873885144612
+              ]
+            }
+          },
+          "constant_mixture": {
+            "roc_auc": 0.8763889449399357,
+            "average_precision": 0.9680338505050863,
+            "balanced_accuracy": 0.8192488262910798,
+            "precision": 0.9706427688504327,
+            "recall": 0.75,
+            "f1": 0.8461745689655172,
+            "false_positive_rate": 0.11150234741784038,
+            "equal_error_rate": 0.16560225728775713,
+            "brier_score": 0.1981061395470357,
+            "tpr_at_fpr_1pct": 0.17335243553008595,
+            "tpr_at_fpr_5pct": 0.49498567335243554,
+            "threshold": 0.4716145578309056,
+            "n": 5040,
+            "balanced_log_loss": 0.5299502569591901,
+            "roc_auc_ci95": [
+              0.859452770827448,
+              0.8926898294815054
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.03232575971588858,
+                "ci95": [
+                  -0.03973815333100154,
+                  -0.025055364421485846
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.003540464371712515,
+                "ci95": [
+                  0.0027363980924707543,
+                  0.004343689885252219
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.01230292451941839,
+                "ci95": [
+                  -0.017493875021859916,
+                  -0.007426273255579358
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.03232575971588858,
+              "ci95": [
+                -0.03973815333100154,
+                -0.025055364421485846
+              ]
+            }
+          },
+          "logit_payload_fusion": {
+            "roc_auc": 0.8886918694593541,
+            "average_precision": 0.9744955171578609,
+            "balanced_accuracy": 0.8013052046760025,
+            "precision": 0.980385288966725,
+            "recall": 0.6683381088825215,
+            "f1": 0.7948317478347295,
+            "false_positive_rate": 0.06572769953051644,
+            "equal_error_rate": 0.18643306832398399,
+            "brier_score": 0.21748033578272147,
+            "tpr_at_fpr_1pct": 0.32951289398280803,
+            "tpr_at_fpr_5pct": 0.626552053486151,
+            "threshold": 0.5015719496108079,
+            "n": 5040,
+            "balanced_log_loss": 0.5496512558480263,
+            "roc_auc_ci95": [
+              0.8738543516351212,
+              0.902733987897458
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.02002283519647019,
+                "ci95": [
+                  -0.025071675276107354,
+                  -0.014942837741187633
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.015843388891130905,
+                "ci95": [
+                  0.01065227724192972,
+                  0.021413167399814324
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.01230292451941839,
+                "ci95": [
+                  0.007426273255579355,
+                  0.017493875021859912
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.02002283519647019,
+              "ci95": [
+                -0.025071675276107354,
+                -0.014942837741187633
+              ]
+            }
+          },
+          "reliability_mixture": {
+            "roc_auc": 0.891562804076929,
+            "average_precision": 0.9723236021932855,
+            "balanced_accuracy": 0.8316753433687127,
+            "precision": 0.9713090257023311,
+            "recall": 0.7760267430754537,
+            "f1": 0.8627555083620918,
+            "false_positive_rate": 0.11267605633802817,
+            "equal_error_rate": 0.16335404980023405,
+            "brier_score": 0.17294552784049488,
+            "tpr_at_fpr_1pct": 0.19555873925501432,
+            "tpr_at_fpr_5pct": 0.5575453677172875,
+            "threshold": 0.4900588328990315,
+            "n": 5040,
+            "balanced_log_loss": 0.4644338028259549,
+            "roc_auc_ci95": [
+              0.8753598196949927,
+              0.9066755885920426
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.017151900578895263,
+                "ci95": [
+                  -0.022927022097564715,
+                  -0.011503566528108463
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.018714323508705832,
+                "ci95": [
+                  0.01565169431104296,
+                  0.021706769789382657
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0028709346175749273,
+                "ci95": [
+                  -0.0015301095013250028,
+                  0.006934138058212352
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.015173859136993317,
+                "ci95": [
+                  0.012667571610817404,
+                  0.017678906533758375
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.017151900578895263,
+              "ci95": [
+                -0.022927022097564715,
+                -0.011503566528108463
+              ]
+            }
+          },
+          "payload_only_gate": {
+            "roc_auc": 0.8840418746160503,
+            "average_precision": 0.9697635036351281,
+            "balanced_accuracy": 0.8330895112797126,
+            "precision": 0.9689786362306116,
+            "recall": 0.7905921680993314,
+            "f1": 0.8707429322813938,
+            "false_positive_rate": 0.12441314553990611,
+            "equal_error_rate": 0.16429907044943975,
+            "brier_score": 0.18714843473796672,
+            "tpr_at_fpr_1pct": 0.17096466093600765,
+            "tpr_at_fpr_5pct": 0.4933142311365807,
+            "threshold": 0.40893102442846685,
+            "n": 5040,
+            "balanced_log_loss": 0.4938322525517628,
+            "roc_auc_ci95": [
+              0.8671683655738954,
+              0.9000527580478093
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.02467283003977394,
+                "ci95": [
+                  -0.03151409151342311,
+                  -0.018070822459430244
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.011193394047827154,
+                "ci95": [
+                  0.009042063788333282,
+                  0.013296029960405464
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.004649994843303751,
+                "ci95": [
+                  -0.009847678477743238,
+                  0.00020223918326900278
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.007652929676114639,
+                "ci95": [
+                  0.006038624496101053,
+                  0.009150501544766836
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.02467283003977394,
+              "ci95": [
+                -0.03151409151342311,
+                -0.018070822459430244
+              ]
+            }
+          },
+          "uncertainty_only_gate": {
+            "roc_auc": 0.8846727291478895,
+            "average_precision": 0.970553536903918,
+            "balanced_accuracy": 0.8308799790144881,
+            "precision": 0.9702646446625037,
+            "recall": 0.7791308500477555,
+            "f1": 0.8642563898821348,
+            "false_positive_rate": 0.11737089201877934,
+            "equal_error_rate": 0.16441845917914366,
+            "brier_score": 0.1850819696121773,
+            "tpr_at_fpr_1pct": 0.18982808022922637,
+            "tpr_at_fpr_5pct": 0.5136103151862464,
+            "threshold": 0.43590726106954236,
+            "n": 5040,
+            "balanced_log_loss": 0.4936214068225658,
+            "roc_auc_ci95": [
+              0.8681107167919968,
+              0.9003570802000799
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.024041975507934743,
+                "ci95": [
+                  -0.030655823871916642,
+                  -0.017625321733008636
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.011824248579666352,
+                "ci95": [
+                  0.00988757281030982,
+                  0.013714514082265004
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.004019140311464553,
+                "ci95": [
+                  -0.008504373102672023,
+                  0.0002058124375030301
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.008283784207953837,
+                "ci95": [
+                  0.006880181919277575,
+                  0.009644906809529568
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.024041975507934743,
+              "ci95": [
+                -0.030655823871916642,
+                -0.017625321733008636
+              ]
+            }
+          },
+          "probe": {
+            "roc_auc": 0.9087147046558243,
+            "average_precision": 0.9794609702501023,
+            "balanced_accuracy": 0.8443927653792862,
+            "precision": 0.9679685304860915,
+            "recall": 0.8225883476599809,
+            "f1": 0.8893765328514264,
+            "false_positive_rate": 0.13380281690140844,
+            "equal_error_rate": 0.15849946863607628,
+            "brier_score": 0.13083884049176422,
+            "tpr_at_fpr_1pct": 0.3292741165234002,
+            "tpr_at_fpr_5pct": 0.6769340974212035,
+            "threshold": 0.5688569,
+            "n": 5040,
+            "balanced_log_loss": 0.5191117740887108,
+            "roc_auc_ci95": [
+              0.8951975393029941,
+              0.921864595524436
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.035866224087601095,
+                "ci95": [
+                  0.02812487388514461,
+                  0.0437094120357292
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.02002283519647019,
+                "ci95": [
+                  0.01494283774118763,
+                  0.025071675276107354
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.03232575971588858,
+                "ci95": [
+                  0.025055364421485846,
+                  0.03973815333100153
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "original_fusion": {
+            "roc_auc": 0.8728484805682232,
+            "average_precision": 0.9669434857979098,
+            "balanced_accuracy": 0.8199651586693033,
+            "precision": 0.9706971005552129,
+            "recall": 0.751432664756447,
+            "f1": 0.8471063257065948,
+            "false_positive_rate": 0.11150234741784038,
+            "equal_error_rate": 0.16666666666666663,
+            "brier_score": 0.20147747087468004,
+            "tpr_at_fpr_1pct": 0.14302769818529132,
+            "tpr_at_fpr_5pct": 0.49570200573065903,
+            "threshold": 0.4600671222132044,
+            "n": 5040,
+            "balanced_log_loss": 0.5486630392197782,
+            "roc_auc_ci95": [
+              0.8558012903511486,
+              0.8890634878997
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.035866224087601095,
+                "ci95": [
+                  -0.04370941203572921,
+                  -0.028124873885144612
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.015843388891130905,
+                "ci95": [
+                  -0.021413167399814328,
+                  -0.010652277241929721
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.003540464371712515,
+                "ci95": [
+                  -0.004343689885252219,
+                  -0.0027363980924707543
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.035866224087601095,
+              "ci95": [
+                -0.04370941203572921,
+                -0.028124873885144612
+              ]
+            }
+          }
+        }
+      },
+      "held_out_generator": {
+        "rows": 19936,
+        "sources": 1246,
+        "systems": {
+          "calibrated_passive": {
+            "roc_auc": 0.934321160526046,
+            "average_precision": 0.9792017294917216,
+            "balanced_accuracy": 0.8659963288044275,
+            "precision": 0.9653744824990591,
+            "recall": 0.8332250519750519,
+            "f1": 0.894445025630296,
+            "false_positive_rate": 0.10123239436619719,
+            "equal_error_rate": 0.13557664856080348,
+            "brier_score": 0.11030448505826176,
+            "tpr_at_fpr_1pct": 0.45536642411642414,
+            "tpr_at_fpr_5pct": 0.729989604989605,
+            "threshold": 0.5292869997616417,
+            "n": 19936,
+            "balanced_log_loss": 0.3444086287942883,
+            "roc_auc_ci95": [
+              0.9203153162923258,
+              0.9472162449832179
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": -0.025695309297312008,
+                "ci95": [
+                  -0.03335689513289777,
+                  -0.018472931023478415
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.033351006261712834,
+                "ci95": [
+                  -0.04137402223649194,
+                  -0.02602123570914837
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.026699337706985293,
+                "ci95": [
+                  -0.03413468723063101,
+                  -0.019721485739001905
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "refit_static_fusion": {
+            "roc_auc": 0.960016469823358,
+            "average_precision": 0.988250763911785,
+            "balanced_accuracy": 0.913655758616146,
+            "precision": 0.97379760911871,
+            "recall": 0.9102780665280665,
+            "f1": 0.9409670920080591,
+            "false_positive_rate": 0.08296654929577464,
+            "equal_error_rate": 0.0860006387075049,
+            "brier_score": 0.08213865377674692,
+            "tpr_at_fpr_1pct": 0.6457250519750519,
+            "tpr_at_fpr_5pct": 0.8034043659043659,
+            "threshold": 0.4600671039099725,
+            "n": 19936,
+            "balanced_log_loss": 0.25693751011909693,
+            "roc_auc_ci95": [
+              0.952578437512296,
+              0.9667698308729064
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.025695309297312008,
+                "ci95": [
+                  0.018472931023478415,
+                  0.03335689513289775
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.007655696964400827,
+                "ci95": [
+                  -0.009995263631841323,
+                  -0.005350731302363946
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0010040284096732854,
+                "ci95": [
+                  -0.0012781602781808954,
+                  -0.00072096154189292
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.025695309297312008,
+              "ci95": [
+                0.018472931023478415,
+                0.03335689513289775
+              ]
+            }
+          },
+          "constant_mixture": {
+            "roc_auc": 0.9610204982330313,
+            "average_precision": 0.9884567847377083,
+            "balanced_accuracy": 0.9137134070012591,
+            "precision": 0.9739239274042139,
+            "recall": 0.9099532224532224,
+            "f1": 0.9408524502065629,
+            "false_positive_rate": 0.08252640845070422,
+            "equal_error_rate": 0.0858581190887529,
+            "brier_score": 0.08173968550446016,
+            "tpr_at_fpr_1pct": 0.6422817047817048,
+            "tpr_at_fpr_5pct": 0.802299896049896,
+            "threshold": 0.4716145578309056,
+            "n": 19936,
+            "balanced_log_loss": 0.2524575265308765,
+            "roc_auc_ci95": [
+              0.9534438057925417,
+              0.9678427817730675
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.026699337706985293,
+                "ci95": [
+                  0.01972148573900189,
+                  0.034134687230631
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0010040284096732854,
+                "ci95": [
+                  0.00072096154189292,
+                  0.0012781602781808954
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.006651668554727541,
+                "ci95": [
+                  -0.009015921834851994,
+                  -0.004356898950387607
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.026699337706985293,
+              "ci95": [
+                0.01972148573900189,
+                0.034134687230631
+              ]
+            }
+          },
+          "logit_payload_fusion": {
+            "roc_auc": 0.9676721667877588,
+            "average_precision": 0.9905730123943393,
+            "balanced_accuracy": 0.9093142861848849,
+            "precision": 0.98194972230342,
+            "recall": 0.8729859667359667,
+            "f1": 0.9242674370614941,
+            "false_positive_rate": 0.05435739436619718,
+            "equal_error_rate": 0.09172018205909054,
+            "brier_score": 0.08449514866822569,
+            "tpr_at_fpr_1pct": 0.7379158004158004,
+            "tpr_at_fpr_5pct": 0.8642151767151767,
+            "threshold": 0.5015719496108079,
+            "n": 19936,
+            "balanced_log_loss": 0.2477439620136792,
+            "roc_auc_ci95": [
+              0.9611319424840689,
+              0.9735772354962839
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.033351006261712834,
+                "ci95": [
+                  0.02602123570914837,
+                  0.04137402223649194
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.007655696964400827,
+                "ci95": [
+                  0.005350731302363946,
+                  0.009995263631841321
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.006651668554727541,
+                "ci95": [
+                  0.004356898950387605,
+                  0.009015921834851994
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.033351006261712834,
+              "ci95": [
+                0.02602123570914837,
+                0.04137402223649194
+              ]
+            }
+          },
+          "reliability_mixture": {
+            "roc_auc": 0.9652257420399475,
+            "average_precision": 0.9896111359068173,
+            "balanced_accuracy": 0.9160763045006003,
+            "precision": 0.9733829816577024,
+            "recall": 0.9170997920997921,
+            "f1": 0.9444035592426574,
+            "false_positive_rate": 0.08494718309859155,
+            "equal_error_rate": 0.0838283011478434,
+            "brier_score": 0.07475291200307276,
+            "tpr_at_fpr_1pct": 0.6558601871101871,
+            "tpr_at_fpr_5pct": 0.8151637214137214,
+            "threshold": 0.4900588328990315,
+            "n": 19936,
+            "balanced_log_loss": 0.23525483936650232,
+            "roc_auc_ci95": [
+              0.9575471179753613,
+              0.9719696608787993
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.03090458151390152,
+                "ci95": [
+                  0.02420026519972872,
+                  0.03817956000727932
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.005209272216589511,
+                "ci95": [
+                  0.004176312917664846,
+                  0.006236146944361026
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0024464247478113155,
+                "ci95": [
+                  -0.0044740472746496755,
+                  -0.00048531983587138714
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.004205243806916226,
+                "ci95": [
+                  0.003342163339721879,
+                  0.005049703288108364
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.03090458151390152,
+              "ci95": [
+                0.02420026519972872,
+                0.03817956000727932
+              ]
+            }
+          },
+          "payload_only_gate": {
+            "roc_auc": 0.96318411418681,
+            "average_precision": 0.9889899712090605,
+            "balanced_accuracy": 0.9163663765336301,
+            "precision": 0.9718290598290599,
+            "recall": 0.9234017671517671,
+            "f1": 0.9469967018689409,
+            "false_positive_rate": 0.09066901408450705,
+            "equal_error_rate": 0.08561814624754768,
+            "brier_score": 0.07867401916088725,
+            "tpr_at_fpr_1pct": 0.6437759875259875,
+            "tpr_at_fpr_5pct": 0.8030795218295218,
+            "threshold": 0.40893102442846685,
+            "n": 19936,
+            "balanced_log_loss": 0.24282477793523927,
+            "roc_auc_ci95": [
+              0.9555042008258131,
+              0.970024379247565
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.02886295366076408,
+                "ci95": [
+                  0.022009604046527714,
+                  0.036098092287401046
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0031676443634520712,
+                "ci95": [
+                  0.0024072384653473777,
+                  0.00393007803492443
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.004488052600948755,
+                "ci95": [
+                  -0.006744200861271391,
+                  -0.0022667303563127703
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.002163615953778786,
+                "ci95": [
+                  0.0016446124896141695,
+                  0.0026973088898842312
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.02886295366076408,
+              "ci95": [
+                0.022009604046527714,
+                0.036098092287401046
+              ]
+            }
+          },
+          "uncertainty_only_gate": {
+            "roc_auc": 0.9634111190009077,
+            "average_precision": 0.9890484684386093,
+            "balanced_accuracy": 0.9143985534830605,
+            "precision": 0.9725574019168448,
+            "recall": 0.9163851351351351,
+            "f1": 0.9436360595417294,
+            "false_positive_rate": 0.08758802816901408,
+            "equal_error_rate": 0.08648058438991536,
+            "brier_score": 0.07970228946032712,
+            "tpr_at_fpr_1pct": 0.645335239085239,
+            "tpr_at_fpr_5pct": 0.8060031185031185,
+            "threshold": 0.43590726106954236,
+            "n": 19936,
+            "balanced_log_loss": 0.24482754625520198,
+            "roc_auc_ci95": [
+              0.955703081320482,
+              0.9701934171949577
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.029089958474861732,
+                "ci95": [
+                  0.022404622734212586,
+                  0.03628853999002126
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0033946491775497245,
+                "ci95": [
+                  0.002670773403986143,
+                  0.0041098146046807775
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.004261047786851102,
+                "ci95": [
+                  -0.006413798907334317,
+                  -0.00215444468477313
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.002390620767876439,
+                "ci95": [
+                  0.0018891302168356882,
+                  0.002903080525529045
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.029089958474861732,
+              "ci95": [
+                0.022404622734212586,
+                0.03628853999002126
+              ]
+            }
+          },
+          "probe": {
+            "roc_auc": 0.934321160526046,
+            "average_precision": 0.9792017294917216,
+            "balanced_accuracy": 0.8659963288044275,
+            "precision": 0.9653744824990591,
+            "recall": 0.8332250519750519,
+            "f1": 0.894445025630296,
+            "false_positive_rate": 0.10123239436619719,
+            "equal_error_rate": 0.13557664856080348,
+            "brier_score": 0.11782075026839683,
+            "tpr_at_fpr_1pct": 0.45536642411642414,
+            "tpr_at_fpr_5pct": 0.729989604989605,
+            "threshold": 0.5688569,
+            "n": 19936,
+            "balanced_log_loss": 0.4541528320330523,
+            "roc_auc_ci95": [
+              0.9203153162923258,
+              0.9472162449832179
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": -0.025695309297312008,
+                "ci95": [
+                  -0.03335689513289777,
+                  -0.018472931023478415
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.033351006261712834,
+                "ci95": [
+                  -0.04137402223649194,
+                  -0.02602123570914837
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.026699337706985293,
+                "ci95": [
+                  -0.03413468723063101,
+                  -0.019721485739001905
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "original_fusion": {
+            "roc_auc": 0.960016469823358,
+            "average_precision": 0.988250763911785,
+            "balanced_accuracy": 0.913655758616146,
+            "precision": 0.97379760911871,
+            "recall": 0.9102780665280665,
+            "f1": 0.9409670920080591,
+            "false_positive_rate": 0.08296654929577464,
+            "equal_error_rate": 0.0860006387075049,
+            "brier_score": 0.0821386536664586,
+            "tpr_at_fpr_1pct": 0.6457250519750519,
+            "tpr_at_fpr_5pct": 0.8034043659043659,
+            "threshold": 0.4600671222132044,
+            "n": 19936,
+            "balanced_log_loss": 0.25693751017499994,
+            "roc_auc_ci95": [
+              0.952578437512296,
+              0.9667698308729064
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.025695309297312008,
+                "ci95": [
+                  0.018472931023478415,
+                  0.03335689513289775
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.007655696964400827,
+                "ci95": [
+                  -0.009995263631841323,
+                  -0.005350731302363946
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0010040284096732854,
+                "ci95": [
+                  -0.0012781602781808954,
+                  -0.00072096154189292
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.025695309297312008,
+              "ci95": [
+                0.018472931023478415,
+                0.03335689513289775
+              ]
+            }
+          }
+        }
+      },
+      "clean_unmarked": {
+        "rows": 1680,
+        "sources": 1680,
+        "systems": {
+          "calibrated_passive": {
+            "roc_auc": 0.9508429516929657,
+            "average_precision": 0.9891598596189437,
+            "balanced_accuracy": 0.887157472052948,
+            "precision": 0.981101068200493,
+            "recall": 0.8553008595988538,
+            "f1": 0.9138920780711826,
+            "false_positive_rate": 0.08098591549295775,
+            "equal_error_rate": 0.11967290851123938,
+            "brier_score": 0.10024371338434483,
+            "tpr_at_fpr_1pct": 0.4670487106017192,
+            "tpr_at_fpr_5pct": 0.7822349570200573,
+            "threshold": 0.5292869997616417,
+            "n": 1680,
+            "balanced_log_loss": 0.2976158262106182,
+            "roc_auc_ci95": [
+              0.9388944519552846,
+              0.9619452207514427
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.04332801969409572,
+                "ci95": [
+                  0.030690869788934094,
+                  0.057754550223979934
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.014510775253238517,
+                "ci95": [
+                  0.008405681222002501,
+                  0.020940173634932772
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0391990193308851,
+                "ci95": [
+                  0.02682147685540178,
+                  0.053561609629121515
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "refit_static_fusion": {
+            "roc_auc": 0.90751493199887,
+            "average_precision": 0.9736461830954685,
+            "balanced_accuracy": 0.8463265264942088,
+            "precision": 0.9791477787851315,
+            "recall": 0.7736389684813754,
+            "f1": 0.8643457382953181,
+            "false_positive_rate": 0.08098591549295775,
+            "equal_error_rate": 0.1200310747003511,
+            "brier_score": 0.18885139894238326,
+            "tpr_at_fpr_1pct": 0.08667621776504297,
+            "tpr_at_fpr_5pct": 0.5565902578796562,
+            "threshold": 0.4600671039099725,
+            "n": 1680,
+            "balanced_log_loss": 0.48629133863308077,
+            "roc_auc_ci95": [
+              0.8856735416078131,
+              0.9275085505871907
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.04332801969409572,
+                "ci95": [
+                  -0.05775455022397994,
+                  -0.030690869788934098
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.028817244440857204,
+                "ci95": [
+                  -0.039270211166713795,
+                  -0.01994058729165819
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.004129000363210622,
+                "ci95": [
+                  -0.005589473445256005,
+                  -0.0027465923766092065
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.04332801969409572,
+              "ci95": [
+                -0.05775455022397994,
+                -0.030690869788934098
+              ]
+            }
+          },
+          "constant_mixture": {
+            "roc_auc": 0.9116439323620806,
+            "average_precision": 0.9747050586672561,
+            "balanced_accuracy": 0.8477591912506558,
+            "precision": 0.979223125564589,
+            "recall": 0.7765042979942693,
+            "f1": 0.8661606072712744,
+            "false_positive_rate": 0.08098591549295775,
+            "equal_error_rate": 0.11967290851123938,
+            "brier_score": 0.18493380926156996,
+            "tpr_at_fpr_1pct": 0.1511461318051576,
+            "tpr_at_fpr_5pct": 0.5544412607449857,
+            "threshold": 0.4716145578309056,
+            "n": 1680,
+            "balanced_log_loss": 0.46931091064861286,
+            "roc_auc_ci95": [
+              0.8900601946204447,
+              0.9309381810202187
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.0391990193308851,
+                "ci95": [
+                  -0.053561609629121515,
+                  -0.026821476855401784
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.004129000363210622,
+                "ci95": [
+                  0.0027465923766092056,
+                  0.005589473445256004
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.02468824407764658,
+                "ci95": [
+                  -0.03463763418620601,
+                  -0.01627840106541829
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.0391990193308851,
+              "ci95": [
+                -0.053561609629121515,
+                -0.026821476855401784
+              ]
+            }
+          },
+          "logit_payload_fusion": {
+            "roc_auc": 0.9363321764397272,
+            "average_precision": 0.9854051346378743,
+            "balanced_accuracy": 0.826773679325235,
+            "precision": 0.9841112214498511,
+            "recall": 0.7098853868194842,
+            "f1": 0.8248023304203079,
+            "false_positive_rate": 0.056338028169014086,
+            "equal_error_rate": 0.13387848581460107,
+            "brier_score": 0.19167570292915803,
+            "tpr_at_fpr_1pct": 0.46346704871060174,
+            "tpr_at_fpr_5pct": 0.6969914040114613,
+            "threshold": 0.5015719496108079,
+            "n": 1680,
+            "balanced_log_loss": 0.4557911551781799,
+            "roc_auc_ci95": [
+              0.9219625237095928,
+              0.9500460949796198
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.014510775253238517,
+                "ci95": [
+                  -0.020940173634932772,
+                  -0.008405681222002507
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.028817244440857204,
+                "ci95": [
+                  0.019940587291658186,
+                  0.03927021116671379
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.02468824407764658,
+                "ci95": [
+                  0.016278401065418287,
+                  0.034637634186206
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.014510775253238517,
+              "ci95": [
+                -0.020940173634932772,
+                -0.008405681222002507
+              ]
+            }
+          },
+          "reliability_mixture": {
+            "roc_auc": 0.9301021025868679,
+            "average_precision": 0.9809995896916303,
+            "balanced_accuracy": 0.8638766697606844,
+            "precision": 0.9800347222222222,
+            "recall": 0.8087392550143266,
+            "f1": 0.8861852433281004,
+            "false_positive_rate": 0.08098591549295775,
+            "equal_error_rate": 0.11895657613301588,
+            "brier_score": 0.15029644745889104,
+            "tpr_at_fpr_1pct": 0.2027220630372493,
+            "tpr_at_fpr_5pct": 0.6439828080229226,
+            "threshold": 0.4900588328990315,
+            "n": 1680,
+            "balanced_log_loss": 0.3922475027017481,
+            "roc_auc_ci95": [
+              0.9117118452116713,
+              0.9470647397998304
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.02074084910609786,
+                "ci95": [
+                  -0.03136766516001452,
+                  -0.01144851739376082
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.022587170587997862,
+                "ci95": [
+                  0.016899201440736165,
+                  0.028658907240001624
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.006230073852859341,
+                "ci95": [
+                  -0.01335638292505754,
+                  5.675168489404526e-06
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.01845817022478724,
+                "ci95": [
+                  0.013614981435893283,
+                  0.023627302857258156
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.02074084910609786,
+              "ci95": [
+                -0.03136766516001452,
+                -0.01144851739376082
+              ]
+            }
+          },
+          "payload_only_gate": {
+            "roc_auc": 0.9199195891682472,
+            "average_precision": 0.9765704973742779,
+            "balanced_accuracy": 0.8625045401347915,
+            "precision": 0.978448275862069,
+            "recall": 0.8130372492836676,
+            "f1": 0.8881064162754304,
+            "false_positive_rate": 0.0880281690140845,
+            "equal_error_rate": 0.11967290851123938,
+            "brier_score": 0.17211869421343812,
+            "tpr_at_fpr_1pct": 0.1518624641833811,
+            "tpr_at_fpr_5pct": 0.5637535816618912,
+            "threshold": 0.40893102442846685,
+            "n": 1680,
+            "balanced_log_loss": 0.4341110012803978,
+            "roc_auc_ci95": [
+              0.8990473283829048,
+              0.938901262157472
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.0309233625247185,
+                "ci95": [
+                  -0.04404403678518099,
+                  -0.019539100649743773
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.01240465716937722,
+                "ci95": [
+                  0.0086563344969531,
+                  0.016435729347431313
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.016412587271479984,
+                "ci95": [
+                  -0.025997000988740474,
+                  -0.008441308668630628
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.008275656806166598,
+                "ci95": [
+                  0.005531208382097722,
+                  0.011199125267363535
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.0309233625247185,
+              "ci95": [
+                -0.04404403678518099,
+                -0.019539100649743773
+              ]
+            }
+          },
+          "uncertainty_only_gate": {
+            "roc_auc": 0.9235138625448969,
+            "average_precision": 0.9789500122990434,
+            "balanced_accuracy": 0.8596089430566205,
+            "precision": 0.9790575916230366,
+            "recall": 0.8037249283667621,
+            "f1": 0.8827694728560189,
+            "false_positive_rate": 0.08450704225352113,
+            "equal_error_rate": 0.11967290851123938,
+            "brier_score": 0.16513477853355216,
+            "tpr_at_fpr_1pct": 0.18051575931232092,
+            "tpr_at_fpr_5pct": 0.5924068767908309,
+            "threshold": 0.43590726106954236,
+            "n": 1680,
+            "balanced_log_loss": 0.4239885129128932,
+            "roc_auc_ci95": [
+              0.9039225503450503,
+              0.9413861031518624
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.027329089148068864,
+                "ci95": [
+                  -0.03928521883449698,
+                  -0.016674716998264696
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.015998930546026857,
+                "ci95": [
+                  0.012290838512450039,
+                  0.02011563471084389
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.012818313894830347,
+                "ci95": [
+                  -0.0208421193349207,
+                  -0.006315075265345681
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.011869930182816235,
+                "ci95": [
+                  0.008959073207151187,
+                  0.014995119355099161
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.027329089148068864,
+              "ci95": [
+                -0.03928521883449698,
+                -0.016674716998264696
+              ]
+            }
+          },
+          "probe": {
+            "roc_auc": 0.9508429516929657,
+            "average_precision": 0.9891598596189437,
+            "balanced_accuracy": 0.887157472052948,
+            "precision": 0.981101068200493,
+            "recall": 0.8553008595988538,
+            "f1": 0.9138920780711826,
+            "false_positive_rate": 0.08098591549295775,
+            "equal_error_rate": 0.11967290851123938,
+            "brier_score": 0.10592943194606508,
+            "tpr_at_fpr_1pct": 0.4670487106017192,
+            "tpr_at_fpr_5pct": 0.7822349570200573,
+            "threshold": 0.5688569,
+            "n": 1680,
+            "balanced_log_loss": 0.3915516804308221,
+            "roc_auc_ci95": [
+              0.9388944519552846,
+              0.9619452207514427
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.04332801969409572,
+                "ci95": [
+                  0.030690869788934094,
+                  0.057754550223979934
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.014510775253238517,
+                "ci95": [
+                  0.008405681222002501,
+                  0.020940173634932772
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0391990193308851,
+                "ci95": [
+                  0.02682147685540178,
+                  0.053561609629121515
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "original_fusion": {
+            "roc_auc": 0.90751493199887,
+            "average_precision": 0.9736461830954685,
+            "balanced_accuracy": 0.8463265264942088,
+            "precision": 0.9791477787851315,
+            "recall": 0.7736389684813754,
+            "f1": 0.8643457382953181,
+            "false_positive_rate": 0.08098591549295775,
+            "equal_error_rate": 0.1200310747003511,
+            "brier_score": 0.18885139831232242,
+            "tpr_at_fpr_1pct": 0.08667621776504297,
+            "tpr_at_fpr_5pct": 0.5565902578796562,
+            "threshold": 0.4600671222132044,
+            "n": 1680,
+            "balanced_log_loss": 0.48629133766230087,
+            "roc_auc_ci95": [
+              0.8856735416078131,
+              0.9275085505871907
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.04332801969409572,
+                "ci95": [
+                  -0.05775455022397994,
+                  -0.030690869788934098
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.028817244440857204,
+                "ci95": [
+                  -0.039270211166713795,
+                  -0.01994058729165819
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.004129000363210622,
+                "ci95": [
+                  -0.005589473445256005,
+                  -0.0027465923766092065
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.04332801969409572,
+              "ci95": [
+                -0.05775455022397994,
+                -0.030690869788934098
+              ]
+            }
+          }
+        }
+      },
+      "gate_by_condition": {
+        "blur:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.8746205179899355
+        },
+        "blur:2": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.875037109390712
+        },
+        "color:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.8715533364241576
+        },
+        "crop:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.706144551012058
+        },
+        "denoise:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.8701471996853959
+        },
+        "identity:0": {
+          "rows": 3360,
+          "mean_fusion_weight": 0.7676339949496214
+        },
+        "inpaint:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.872458692923942
+        },
+        "jpeg:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.8722305180509043
+        },
+        "jpeg:2": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.8703275787075089
+        },
+        "lowres:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.883359446697658
+        },
+        "lowres:2": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7912567725770485
+        },
+        "noise:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.8725067739210569
+        },
+        "regenerate:2": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7712878998871598
+        },
+        "resize:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.8732299455556344
+        },
+        "spectral:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7498485960707812
+        }
+      },
+      "criteria": {
+        "full_auc_above_probe": true,
+        "reduced_recovery_auc_within_0p005_of_probe": false,
+        "full_auc_above_logit_payload_fusion": false,
+        "full_auc_above_constant_mixture": true
+      }
+    },
+    "clip": {
+      "full_test": {
+        "rows": 26880,
+        "sources": 1680,
+        "systems": {
+          "calibrated_passive": {
+            "roc_auc": 0.993996972297611,
+            "average_precision": 0.9987087355668725,
+            "balanced_accuracy": 0.9625886587432907,
+            "precision": 0.98989898989899,
+            "recall": 0.9740329512893983,
+            "f1": 0.9819018820237396,
+            "false_positive_rate": 0.0488556338028169,
+            "equal_error_rate": 0.03413550788974534,
+            "brier_score": 0.02398837421026989,
+            "tpr_at_fpr_1pct": 0.9050859598853869,
+            "tpr_at_fpr_5pct": 0.9747492836676218,
+            "threshold": 0.4414977103398489,
+            "n": 26880,
+            "balanced_log_loss": 0.10334743701512886,
+            "roc_auc_ci95": [
+              0.9907780307705272,
+              0.9962394165989851
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": -8.901935295346775e-06,
+                "ci95": [
+                  -0.0019939309147158054,
+                  0.0013632661162173779
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.003403859650560781,
+                "ci95": [
+                  -0.005132521145126021,
+                  -0.0021381268716233032
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0008163375174037313,
+                "ci95": [
+                  -0.0027136002870847193,
+                  0.0004683156919669608
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "refit_static_fusion": {
+            "roc_auc": 0.9940058742329063,
+            "average_precision": 0.9987188059553335,
+            "balanced_accuracy": 0.9702665311352354,
+            "precision": 0.990561797752809,
+            "recall": 0.9867478510028653,
+            "f1": 0.9886511460996725,
+            "false_positive_rate": 0.04621478873239437,
+            "equal_error_rate": 0.030584113563904943,
+            "brier_score": 0.019813437215755042,
+            "tpr_at_fpr_1pct": 0.8306321633237822,
+            "tpr_at_fpr_5pct": 0.9922546561604585,
+            "threshold": 0.21099856232583192,
+            "n": 26880,
+            "balanced_log_loss": 0.08822902112496431,
+            "roc_auc_ci95": [
+              0.9921894173399098,
+              0.9955361289797907
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 8.901935295346775e-06,
+                "ci95": [
+                  -0.0013632661162173792,
+                  0.001993930914715805
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0033949577152654342,
+                "ci95": [
+                  -0.004330163163852929,
+                  -0.0025277311295129616
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0008074355821083845,
+                "ci95": [
+                  -0.0011278861630958509,
+                  -0.0005129219251306411
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 8.901935295346775e-06,
+              "ci95": [
+                -0.0013632661162173792,
+                0.001993930914715805
+              ]
+            }
+          },
+          "constant_mixture": {
+            "roc_auc": 0.9948133098150147,
+            "average_precision": 0.998872142711553,
+            "balanced_accuracy": 0.9686459552443601,
+            "precision": 0.9897263346792283,
+            "recall": 0.9876880372492837,
+            "f1": 0.9887061354367409,
+            "false_positive_rate": 0.05039612676056338,
+            "equal_error_rate": 0.030362151418539887,
+            "brier_score": 0.019673833314894133,
+            "tpr_at_fpr_1pct": 0.8387804441260746,
+            "tpr_at_fpr_5pct": 0.9875089541547278,
+            "threshold": 0.18800771996226448,
+            "n": 26880,
+            "balanced_log_loss": 0.08556872805989972,
+            "roc_auc_ci95": [
+              0.9930878787820269,
+              0.9962176637569867
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0008163375174037313,
+                "ci95": [
+                  -0.00046831569196696123,
+                  0.002713600287084719
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0008074355821083845,
+                "ci95": [
+                  0.0005129219251306411,
+                  0.0011278861630958507
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0025875221331570497,
+                "ci95": [
+                  -0.0033859301577507856,
+                  -0.0018799921777261368
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0008163375174037313,
+              "ci95": [
+                -0.00046831569196696123,
+                0.002713600287084719
+              ]
+            }
+          },
+          "logit_payload_fusion": {
+            "roc_auc": 0.9974008319481718,
+            "average_precision": 0.9994596571743821,
+            "balanced_accuracy": 0.9772110456434885,
+            "precision": 0.994640261627907,
+            "recall": 0.9803904011461319,
+            "f1": 0.987463924963925,
+            "false_positive_rate": 0.02596830985915493,
+            "equal_error_rate": 0.02261586171758346,
+            "brier_score": 0.01803290617292464,
+            "tpr_at_fpr_1pct": 0.9490060888252149,
+            "tpr_at_fpr_5pct": 0.9890311604584527,
+            "threshold": 0.40228565620375095,
+            "n": 26880,
+            "balanced_log_loss": 0.063608218916518,
+            "roc_auc_ci95": [
+              0.9959123096414492,
+              0.9983883666869029
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.003403859650560781,
+                "ci95": [
+                  0.002138126871623303,
+                  0.005132521145126017
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0033949577152654342,
+                "ci95": [
+                  0.002527731129512961,
+                  0.004330163163852928
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0025875221331570497,
+                "ci95": [
+                  0.0018799921777261364,
+                  0.0033859301577507843
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.003403859650560781,
+              "ci95": [
+                0.002138126871623303,
+                0.005132521145126017
+              ]
+            }
+          },
+          "reliability_mixture": {
+            "roc_auc": 0.9957084100006557,
+            "average_precision": 0.9990754155778951,
+            "balanced_accuracy": 0.9690555132370152,
+            "precision": 0.9910936299109363,
+            "recall": 0.9814648997134671,
+            "f1": 0.9862557642559892,
+            "false_positive_rate": 0.04335387323943662,
+            "equal_error_rate": 0.029030378546349718,
+            "brier_score": 0.018817566947951444,
+            "tpr_at_fpr_1pct": 0.8790293696275072,
+            "tpr_at_fpr_5pct": 0.9853599570200573,
+            "threshold": 0.33491035610339387,
+            "n": 26880,
+            "balanced_log_loss": 0.0826160441195255,
+            "roc_auc_ci95": [
+              0.9940772111500823,
+              0.9969453915483972
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0017114377030447159,
+                "ci95": [
+                  0.0005311910905687805,
+                  0.0034945379557633654
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.001702535767749369,
+                "ci95": [
+                  0.001219363647298366,
+                  0.0022305893818149037
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0016924219475160651,
+                "ci95": [
+                  -0.002255779715733988,
+                  -0.00119223713013667
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0008951001856409846,
+                "ci95": [
+                  0.0006378697254038224,
+                  0.001195971312180907
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0017114377030447159,
+              "ci95": [
+                0.0005311910905687805,
+                0.0034945379557633654
+              ]
+            }
+          },
+          "payload_only_gate": {
+            "roc_auc": 0.9951689734124661,
+            "average_precision": 0.998951695742475,
+            "balanced_accuracy": 0.9695609185197143,
+            "precision": 0.9913169319826338,
+            "recall": 0.9813753581661891,
+            "f1": 0.986321094312455,
+            "false_positive_rate": 0.04225352112676056,
+            "equal_error_rate": 0.029052763933169197,
+            "brier_score": 0.019205918002669794,
+            "tpr_at_fpr_1pct": 0.8405712750716332,
+            "tpr_at_fpr_5pct": 0.9855838108882522,
+            "threshold": 0.3402860399032702,
+            "n": 26880,
+            "balanced_log_loss": 0.08428171575372459,
+            "roc_auc_ci95": [
+              0.9934617593254842,
+              0.9965121769213283
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.001172001114855159,
+                "ci95": [
+                  -6.981885886863659e-05,
+                  0.0030338068900170874
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0011630991795598122,
+                "ci95": [
+                  0.0007913707171396001,
+                  0.001568557454144634
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.002231858535705622,
+                "ci95": [
+                  -0.002946217906134002,
+                  -0.0016033518530370373
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0003556635974514277,
+                "ci95": [
+                  0.00023673852047412513,
+                  0.00048297211017275224
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.001172001114855159,
+              "ci95": [
+                -6.981885886863659e-05,
+                0.0030338068900170874
+              ]
+            }
+          },
+          "uncertainty_only_gate": {
+            "roc_auc": 0.9953092072199494,
+            "average_precision": 0.9989826211503504,
+            "balanced_accuracy": 0.9674409278017677,
+            "precision": 0.9896170442286947,
+            "recall": 0.9857181232091691,
+            "f1": 0.9876637358693702,
+            "false_positive_rate": 0.050836267605633804,
+            "equal_error_rate": 0.029052763933169197,
+            "brier_score": 0.019440604789347296,
+            "tpr_at_fpr_1pct": 0.8573603151862464,
+            "tpr_at_fpr_5pct": 0.9855390401146131,
+            "threshold": 0.20365324954645708,
+            "n": 26880,
+            "balanced_log_loss": 0.08393303023066612,
+            "roc_auc_ci95": [
+              0.9936018130744532,
+              0.9966268232069936
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.001312234922338451,
+                "ci95": [
+                  0.000118438598775647,
+                  0.003102259176195728
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0013033329870431043,
+                "ci95": [
+                  0.0008733967304172169,
+                  0.0017536472613213032
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.00209162472822233,
+                "ci95": [
+                  -0.0027480382637200484,
+                  -0.0014973217736982682
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0004958974049347198,
+                "ci95": [
+                  0.0003172446280589464,
+                  0.000699253175414402
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.001312234922338451,
+              "ci95": [
+                0.000118438598775647,
+                0.003102259176195728
+              ]
+            }
+          },
+          "probe": {
+            "roc_auc": 0.993996972297611,
+            "average_precision": 0.9987087355668725,
+            "balanced_accuracy": 0.9625886587432907,
+            "precision": 0.98989898989899,
+            "recall": 0.9740329512893983,
+            "f1": 0.9819018820237396,
+            "false_positive_rate": 0.0488556338028169,
+            "equal_error_rate": 0.03413550788974534,
+            "brier_score": 0.024795220917218277,
+            "tpr_at_fpr_1pct": 0.9050859598853869,
+            "tpr_at_fpr_5pct": 0.9747492836676218,
+            "threshold": 0.43839988,
+            "n": 26880,
+            "balanced_log_loss": 0.13110100312568576,
+            "roc_auc_ci95": [
+              0.9907780307705272,
+              0.9962394165989851
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": -8.901935295346775e-06,
+                "ci95": [
+                  -0.0019939309147158054,
+                  0.0013632661162173779
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.003403859650560781,
+                "ci95": [
+                  -0.005132521145126021,
+                  -0.0021381268716233032
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0008163375174037313,
+                "ci95": [
+                  -0.0027136002870847193,
+                  0.0004683156919669608
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "original_fusion": {
+            "roc_auc": 0.9940058742329063,
+            "average_precision": 0.9987188059553335,
+            "balanced_accuracy": 0.9702665311352354,
+            "precision": 0.990561797752809,
+            "recall": 0.9867478510028653,
+            "f1": 0.9886511460996725,
+            "false_positive_rate": 0.04621478873239437,
+            "equal_error_rate": 0.030584113563904943,
+            "brier_score": 0.01981343720316066,
+            "tpr_at_fpr_1pct": 0.8306321633237822,
+            "tpr_at_fpr_5pct": 0.9922546561604585,
+            "threshold": 0.21099856169799,
+            "n": 26880,
+            "balanced_log_loss": 0.08822902104423766,
+            "roc_auc_ci95": [
+              0.9921894173399098,
+              0.9955361289797907
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 8.901935295346775e-06,
+                "ci95": [
+                  -0.0013632661162173792,
+                  0.001993930914715805
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0033949577152654342,
+                "ci95": [
+                  -0.004330163163852929,
+                  -0.0025277311295129616
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0008074355821083845,
+                "ci95": [
+                  -0.0011278861630958509,
+                  -0.0005129219251306411
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 8.901935295346775e-06,
+              "ci95": [
+                -0.0013632661162173792,
+                0.001993930914715805
+              ]
+            }
+          }
+        }
+      },
+      "reduced_recovery": {
+        "rows": 6720,
+        "sources": 1680,
+        "systems": {
+          "calibrated_passive": {
+            "roc_auc": 0.9884480368961619,
+            "average_precision": 0.9975809953998852,
+            "balanced_accuracy": 0.9224507143145406,
+            "precision": 0.9727903254490485,
+            "recall": 0.9795845272206304,
+            "f1": 0.9761756045328812,
+            "false_positive_rate": 0.13468309859154928,
+            "equal_error_rate": 0.05548675289559707,
+            "brier_score": 0.02987093562843856,
+            "tpr_at_fpr_1pct": 0.8529727793696275,
+            "tpr_at_fpr_5pct": 0.9376790830945558,
+            "threshold": 0.4414977103398489,
+            "n": 6720,
+            "balanced_log_loss": 0.19233654845586745,
+            "roc_auc_ci95": [
+              0.9849364830413354,
+              0.991419633939021
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.031753907668791936,
+                "ci95": [
+                  0.023654472726401442,
+                  0.04075617915498003
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.002983089259049776,
+                "ci95": [
+                  0.002048258952893625,
+                  0.003912086753147801
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.02523952363896831,
+                "ci95": [
+                  0.018402364401307585,
+                  0.03310863738573988
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "refit_static_fusion": {
+            "roc_auc": 0.95669412922737,
+            "average_precision": 0.9865539097347586,
+            "balanced_accuracy": 0.923681595302474,
+            "precision": 0.9733048585157501,
+            "recall": 0.9794054441260746,
+            "f1": 0.976345621708471,
+            "false_positive_rate": 0.13204225352112675,
+            "equal_error_rate": 0.07821264982444813,
+            "brier_score": 0.039045065233254274,
+            "tpr_at_fpr_1pct": 0.24910458452722062,
+            "tpr_at_fpr_5pct": 0.744269340974212,
+            "threshold": 0.21099856232583192,
+            "n": 6720,
+            "balanced_log_loss": 0.2292414310425374,
+            "roc_auc_ci95": [
+              0.9453262110494269,
+              0.966956288118215
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.031753907668791936,
+                "ci95": [
+                  -0.04075617915498004,
+                  -0.023654472726401445
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.02877081840974216,
+                "ci95": [
+                  -0.03724666087274011,
+                  -0.02126138817143542
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.006514384029823628,
+                "ci95": [
+                  -0.00868058598952238,
+                  -0.004541594965116672
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.031753907668791936,
+              "ci95": [
+                -0.04075617915498004,
+                -0.023654472726401445
+              ]
+            }
+          },
+          "constant_mixture": {
+            "roc_auc": 0.9632085132571936,
+            "average_precision": 0.9889134656097088,
+            "balanced_accuracy": 0.9191086706485331,
+            "precision": 0.9714184271258655,
+            "recall": 0.9799426934097422,
+            "f1": 0.9756619416956406,
+            "false_positive_rate": 0.14172535211267606,
+            "equal_error_rate": 0.07759342588482182,
+            "brier_score": 0.037078437122744556,
+            "tpr_at_fpr_1pct": 0.25250716332378226,
+            "tpr_at_fpr_5pct": 0.75,
+            "threshold": 0.18800771996226448,
+            "n": 6720,
+            "balanced_log_loss": 0.21495999776928115,
+            "roc_auc_ci95": [
+              0.953192542387203,
+              0.9720694691069051
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.02523952363896831,
+                "ci95": [
+                  -0.03310863738573988,
+                  -0.01840236440130759
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.006514384029823628,
+                "ci95": [
+                  0.004541594965116672,
+                  0.008680585989522378
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.022256434379918533,
+                "ci95": [
+                  -0.029380638910468534,
+                  -0.015961486257264255
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.02523952363896831,
+              "ci95": [
+                -0.03310863738573988,
+                -0.01840236440130759
+              ]
+            }
+          },
+          "logit_payload_fusion": {
+            "roc_auc": 0.9854649476371121,
+            "average_precision": 0.9969632775471469,
+            "balanced_accuracy": 0.9384269441866097,
+            "precision": 0.98392164110146,
+            "recall": 0.9534383954154728,
+            "f1": 0.9684402000909504,
+            "false_positive_rate": 0.07658450704225352,
+            "equal_error_rate": 0.06001553735017555,
+            "brier_score": 0.04366598633024458,
+            "tpr_at_fpr_1pct": 0.8078438395415473,
+            "tpr_at_fpr_5pct": 0.9263968481375359,
+            "threshold": 0.40228565620375095,
+            "n": 6720,
+            "balanced_log_loss": 0.1561336019657712,
+            "roc_auc_ci95": [
+              0.9815123543688709,
+              0.988830271317194
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.002983089259049776,
+                "ci95": [
+                  -0.003912086753147801,
+                  -0.002048258952893625
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.02877081840974216,
+                "ci95": [
+                  0.021261388171435414,
+                  0.0372466608727401
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.022256434379918533,
+                "ci95": [
+                  0.015961486257264255,
+                  0.029380638910468528
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.002983089259049776,
+              "ci95": [
+                -0.003912086753147801,
+                -0.002048258952893625
+              ]
+            }
+          },
+          "reliability_mixture": {
+            "roc_auc": 0.9724243563097783,
+            "average_precision": 0.9924553096000452,
+            "balanced_accuracy": 0.9285155777069293,
+            "precision": 0.9753659407354516,
+            "recall": 0.9785100286532952,
+            "f1": 0.9769354550330771,
+            "false_positive_rate": 0.12147887323943662,
+            "equal_error_rate": 0.0677375499414827,
+            "brier_score": 0.03370498945986156,
+            "tpr_at_fpr_1pct": 0.40025071633237824,
+            "tpr_at_fpr_5pct": 0.8513610315186246,
+            "threshold": 0.33491035610339387,
+            "n": 6720,
+            "balanced_log_loss": 0.2015883276199762,
+            "roc_auc_ci95": [
+              0.9645212664327657,
+              0.9793583323454337
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.016023680586383593,
+                "ci95": [
+                  -0.021490034404132538,
+                  -0.011258265252330577
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.015730227082408343,
+                "ci95": [
+                  0.01170973672893379,
+                  0.020174684050758656
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.013040591327333817,
+                "ci95": [
+                  -0.01777054474050598,
+                  -0.008819602000433911
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.009215843052584716,
+                "ci95": [
+                  0.006853833986187921,
+                  0.011945122224212068
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.016023680586383593,
+              "ci95": [
+                -0.021490034404132538,
+                -0.011258265252330577
+              ]
+            }
+          },
+          "payload_only_gate": {
+            "roc_auc": 0.9663241807578998,
+            "average_precision": 0.9901933434791442,
+            "balanced_accuracy": 0.9293063178497922,
+            "precision": 0.9757099482050366,
+            "recall": 0.9783309455587392,
+            "f1": 0.9770186890816418,
+            "false_positive_rate": 0.11971830985915492,
+            "equal_error_rate": 0.07661603575608378,
+            "brier_score": 0.03548568882513353,
+            "tpr_at_fpr_1pct": 0.25304441260744986,
+            "tpr_at_fpr_5pct": 0.751432664756447,
+            "threshold": 0.3402860399032702,
+            "n": 6720,
+            "balanced_log_loss": 0.20910037077588145,
+            "roc_auc_ci95": [
+              0.9569274338275353,
+              0.9745609941886274
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.022123856138262066,
+                "ci95": [
+                  -0.029104790252078343,
+                  -0.015840553934279043
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.00963005153052987,
+                "ci95": [
+                  0.00695706884799129,
+                  0.012551604622361594
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.01914076687921229,
+                "ci95": [
+                  -0.02558091655232244,
+                  -0.013400566476401393
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.003115667500706243,
+                "ci95": [
+                  0.0020546868694257094,
+                  0.00433576960959883
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.022123856138262066,
+              "ci95": [
+                -0.029104790252078343,
+                -0.015840553934279043
+              ]
+            }
+          },
+          "uncertainty_only_gate": {
+            "roc_auc": 0.9689913523043707,
+            "average_precision": 0.9913292427809741,
+            "balanced_accuracy": 0.9188476128980185,
+            "precision": 0.9712562100780695,
+            "recall": 0.9803008595988538,
+            "f1": 0.9757575757575757,
+            "false_positive_rate": 0.1426056338028169,
+            "equal_error_rate": 0.07572818717462368,
+            "brier_score": 0.03512183114051365,
+            "tpr_at_fpr_1pct": 0.3798352435530086,
+            "tpr_at_fpr_5pct": 0.835243553008596,
+            "threshold": 0.20365324954645708,
+            "n": 6720,
+            "balanced_log_loss": 0.20598300930178723,
+            "roc_auc_ci95": [
+              0.9603243571610537,
+              0.9766395640587796
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.019456684591791173,
+                "ci95": [
+                  -0.02571606438415594,
+                  -0.013975535925077715
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.012297223077000763,
+                "ci95": [
+                  0.008988278648881066,
+                  0.016055296004176916
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.016473595332741398,
+                "ci95": [
+                  -0.02212453006452038,
+                  -0.011512627092245485
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.005782839047177135,
+                "ci95": [
+                  0.004196416635558309,
+                  0.0075158345083033784
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.019456684591791173,
+              "ci95": [
+                -0.02571606438415594,
+                -0.013975535925077715
+              ]
+            }
+          },
+          "probe": {
+            "roc_auc": 0.9884480368961619,
+            "average_precision": 0.9975809953998852,
+            "balanced_accuracy": 0.9224507143145406,
+            "precision": 0.9727903254490485,
+            "recall": 0.9795845272206304,
+            "f1": 0.9761756045328812,
+            "false_positive_rate": 0.13468309859154928,
+            "equal_error_rate": 0.05548675289559707,
+            "brier_score": 0.031377820090508914,
+            "tpr_at_fpr_1pct": 0.8529727793696275,
+            "tpr_at_fpr_5pct": 0.9376790830945558,
+            "threshold": 0.43839988,
+            "n": 6720,
+            "balanced_log_loss": 0.25401322476803767,
+            "roc_auc_ci95": [
+              0.9849364830413354,
+              0.991419633939021
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.031753907668791936,
+                "ci95": [
+                  0.023654472726401442,
+                  0.04075617915498003
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.002983089259049776,
+                "ci95": [
+                  0.002048258952893625,
+                  0.003912086753147801
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.02523952363896831,
+                "ci95": [
+                  0.018402364401307585,
+                  0.03310863738573988
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "original_fusion": {
+            "roc_auc": 0.95669412922737,
+            "average_precision": 0.9865539097347586,
+            "balanced_accuracy": 0.923681595302474,
+            "precision": 0.9733048585157501,
+            "recall": 0.9794054441260746,
+            "f1": 0.976345621708471,
+            "false_positive_rate": 0.13204225352112675,
+            "equal_error_rate": 0.07821264982444813,
+            "brier_score": 0.039045065185629294,
+            "tpr_at_fpr_1pct": 0.24910458452722062,
+            "tpr_at_fpr_5pct": 0.744269340974212,
+            "threshold": 0.21099856169799,
+            "n": 6720,
+            "balanced_log_loss": 0.22924143079567294,
+            "roc_auc_ci95": [
+              0.9453262110494269,
+              0.966956288118215
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.031753907668791936,
+                "ci95": [
+                  -0.04075617915498004,
+                  -0.023654472726401445
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.02877081840974216,
+                "ci95": [
+                  -0.03724666087274011,
+                  -0.02126138817143542
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.006514384029823628,
+                "ci95": [
+                  -0.00868058598952238,
+                  -0.004541594965116672
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.031753907668791936,
+              "ci95": [
+                -0.04075617915498004,
+                -0.023654472726401445
+              ]
+            }
+          }
+        }
+      },
+      "held_out_attacks": {
+        "rows": 5040,
+        "sources": 1680,
+        "systems": {
+          "calibrated_passive": {
+            "roc_auc": 0.9864462963710309,
+            "average_precision": 0.9972331275346822,
+            "balanced_accuracy": 0.9027688096102883,
+            "precision": 0.9649823736780259,
+            "recall": 0.9804202483285578,
+            "f1": 0.97264005685183,
+            "false_positive_rate": 0.17488262910798122,
+            "equal_error_rate": 0.062024967378290746,
+            "brier_score": 0.03346804482789636,
+            "tpr_at_fpr_1pct": 0.8436007640878701,
+            "tpr_at_fpr_5pct": 0.9269340974212035,
+            "threshold": 0.4414977103398489,
+            "n": 5040,
+            "balanced_log_loss": 0.23118270967605953,
+            "roc_auc_ci95": [
+              0.9829210989031931,
+              0.9896480232477322
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.03780054571299141,
+                "ci95": [
+                  0.027982735436817,
+                  0.049368353747124546
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.003701891386523326,
+                "ci95": [
+                  0.002488000872154206,
+                  0.0049354978566078815
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.030617884319607325,
+                "ci95": [
+                  0.022082213713673245,
+                  0.04041681940576917
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "refit_static_fusion": {
+            "roc_auc": 0.9486457506580395,
+            "average_precision": 0.9843133853506727,
+            "balanced_accuracy": 0.9048774499912561,
+            "precision": 0.9658743233702047,
+            "recall": 0.9799426934097422,
+            "f1": 0.9728576508237525,
+            "false_positive_rate": 0.17018779342723006,
+            "equal_error_rate": 0.09741952190699116,
+            "brier_score": 0.04231017007712038,
+            "tpr_at_fpr_1pct": 0.15353390639923592,
+            "tpr_at_fpr_5pct": 0.6275071633237822,
+            "threshold": 0.21099856232583192,
+            "n": 5040,
+            "balanced_log_loss": 0.2674895732879202,
+            "roc_auc_ci95": [
+              0.9348026484680128,
+              0.9607562729529037
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.03780054571299141,
+                "ci95": [
+                  -0.049368353747124546,
+                  -0.027982735436817004
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.03409865432646808,
+                "ci95": [
+                  -0.044838553367322724,
+                  -0.02490441895242831
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.007182661393384082,
+                "ci95": [
+                  -0.009877105277318091,
+                  -0.00490627424207775
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.03780054571299141,
+              "ci95": [
+                -0.049368353747124546,
+                -0.027982735436817004
+              ]
+            }
+          },
+          "constant_mixture": {
+            "roc_auc": 0.9558284120514235,
+            "average_precision": 0.9868797386882915,
+            "balanced_accuracy": 0.8987802171193349,
+            "precision": 0.9634060520760028,
+            "recall": 0.9806590257879656,
+            "f1": 0.9719559815406461,
+            "false_positive_rate": 0.18309859154929578,
+            "equal_error_rate": 0.09268432947253721,
+            "brier_score": 0.04036478182763144,
+            "tpr_at_fpr_1pct": 0.27626552053486153,
+            "tpr_at_fpr_5pct": 0.6282234957020058,
+            "threshold": 0.18800771996226448,
+            "n": 5040,
+            "balanced_log_loss": 0.252719713785875,
+            "roc_auc_ci95": [
+              0.9438117892727265,
+              0.9663848349969284
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.030617884319607325,
+                "ci95": [
+                  -0.04041681940576918,
+                  -0.022082213713673256
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.007182661393384082,
+                "ci95": [
+                  0.004906274242077749,
+                  0.009877105277318091
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.026915992933084,
+                "ci95": [
+                  -0.03587211645389683,
+                  -0.0191641401657317
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.030617884319607325,
+              "ci95": [
+                -0.04041681940576918,
+                -0.022082213713673256
+              ]
+            }
+          },
+          "logit_payload_fusion": {
+            "roc_auc": 0.9827444049845075,
+            "average_precision": 0.9964336082567168,
+            "balanced_accuracy": 0.9290847760872782,
+            "precision": 0.9796817625458997,
+            "recall": 0.9555873925501432,
+            "f1": 0.9674845884201619,
+            "false_positive_rate": 0.09741784037558686,
+            "equal_error_rate": 0.06676015981274468,
+            "brier_score": 0.04430644964104287,
+            "tpr_at_fpr_1pct": 0.7979942693409742,
+            "tpr_at_fpr_5pct": 0.9083094555873925,
+            "threshold": 0.40228565620375095,
+            "n": 5040,
+            "balanced_log_loss": 0.17354131091434205,
+            "roc_auc_ci95": [
+              0.9785799173022854,
+              0.9866212947455507
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.003701891386523326,
+                "ci95": [
+                  -0.004935497856607884,
+                  -0.0024880008721542063
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.03409865432646808,
+                "ci95": [
+                  0.0249044189524283,
+                  0.04483855336732272
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.026915992933084,
+                "ci95": [
+                  0.019164140165731695,
+                  0.03587211645389682
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.003701891386523326,
+              "ci95": [
+                -0.004935497856607884,
+                -0.0024880008721542063
+              ]
+            }
+          },
+          "reliability_mixture": {
+            "roc_auc": 0.9665753595114143,
+            "average_precision": 0.9909501413758435,
+            "balanced_accuracy": 0.9109746828631771,
+            "precision": 0.9683589138134593,
+            "recall": 0.9792263610315186,
+            "f1": 0.9737623174640865,
+            "false_positive_rate": 0.1572769953051643,
+            "equal_error_rate": 0.07954316154808508,
+            "brier_score": 0.03712859248265457,
+            "tpr_at_fpr_1pct": 0.36055396370582615,
+            "tpr_at_fpr_5pct": 0.7743553008595988,
+            "threshold": 0.33491035610339387,
+            "n": 5040,
+            "balanced_log_loss": 0.23994877843700746,
+            "roc_auc_ci95": [
+              0.956969604358081,
+              0.9750088140271107
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.019870936859616606,
+                "ci95": [
+                  -0.027006620469393887,
+                  -0.013618834945361443
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0179296088533748,
+                "ci95": [
+                  0.013203804969261592,
+                  0.023555795734291167
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.01616904547309328,
+                "ci95": [
+                  -0.022491078074624155,
+                  -0.010734335974458584
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.010746947459990719,
+                "ci95": [
+                  0.007911282963620614,
+                  0.013987847012030874
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.019870936859616606,
+              "ci95": [
+                -0.027006620469393887,
+                -0.013618834945361443
+              ]
+            }
+          },
+          "payload_only_gate": {
+            "roc_auc": 0.9595594499822879,
+            "average_precision": 0.9884096307524088,
+            "balanced_accuracy": 0.9120290030536611,
+            "precision": 0.9688090737240076,
+            "recall": 0.9789875835721108,
+            "f1": 0.9738717339667459,
+            "false_positive_rate": 0.15492957746478872,
+            "equal_error_rate": 0.08688472765917375,
+            "brier_score": 0.03882103827650364,
+            "tpr_at_fpr_1pct": 0.27507163323782235,
+            "tpr_at_fpr_5pct": 0.6275071633237822,
+            "threshold": 0.3402860399032702,
+            "n": 5040,
+            "balanced_log_loss": 0.24706216099983425,
+            "roc_auc_ci95": [
+              0.9482887475281488,
+              0.9696628473483371
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.026886846388742947,
+                "ci95": [
+                  -0.03588466488200141,
+                  -0.01907939098295602
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.01091369932424846,
+                "ci95": [
+                  0.0077356400020626905,
+                  0.014529237066781518
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.02318495500221962,
+                "ci95": [
+                  -0.03127595864105355,
+                  -0.01612363711879687
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.003731037930864378,
+                "ci95": [
+                  0.002405059335638149,
+                  0.005235335925133715
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.026886846388742947,
+              "ci95": [
+                -0.03588466488200141,
+                -0.01907939098295602
+              ]
+            }
+          },
+          "uncertainty_only_gate": {
+            "roc_auc": 0.9625494930743327,
+            "average_precision": 0.9896580869410472,
+            "balanced_accuracy": 0.8984321401186488,
+            "precision": 0.9631973745897796,
+            "recall": 0.9811365807067812,
+            "f1": 0.9720842204873432,
+            "false_positive_rate": 0.18427230046948356,
+            "equal_error_rate": 0.08688472765917375,
+            "brier_score": 0.03848810745558706,
+            "tpr_at_fpr_1pct": 0.3018147086914995,
+            "tpr_at_fpr_5pct": 0.7473734479465138,
+            "threshold": 0.20365324954645708,
+            "n": 5040,
+            "balanced_log_loss": 0.24392610587401628,
+            "roc_auc_ci95": [
+              0.9520480141674625,
+              0.9717238653586594
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.023896803296698188,
+                "ci95": [
+                  -0.03203512102542022,
+                  -0.016798386626668733
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.013903742416293219,
+                "ci95": [
+                  0.01007391451542743,
+                  0.01836020000134514
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.020194911910174862,
+                "ci95": [
+                  -0.027504297714014126,
+                  -0.013888965959078287
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.006721081022909137,
+                "ci95": [
+                  0.004823956273457311,
+                  0.008849206149024092
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.023896803296698188,
+              "ci95": [
+                -0.03203512102542022,
+                -0.016798386626668733
+              ]
+            }
+          },
+          "probe": {
+            "roc_auc": 0.9864462963710309,
+            "average_precision": 0.9972331275346822,
+            "balanced_accuracy": 0.9027688096102883,
+            "precision": 0.9649823736780259,
+            "recall": 0.9804202483285578,
+            "f1": 0.97264005685183,
+            "false_positive_rate": 0.17488262910798122,
+            "equal_error_rate": 0.062024967378290746,
+            "brier_score": 0.035479860234290325,
+            "tpr_at_fpr_1pct": 0.8436007640878701,
+            "tpr_at_fpr_5pct": 0.9269340974212035,
+            "threshold": 0.43839988,
+            "n": 5040,
+            "balanced_log_loss": 0.306610917418717,
+            "roc_auc_ci95": [
+              0.9829210989031931,
+              0.9896480232477322
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.03780054571299141,
+                "ci95": [
+                  0.027982735436817,
+                  0.049368353747124546
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.003701891386523326,
+                "ci95": [
+                  0.002488000872154206,
+                  0.0049354978566078815
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.030617884319607325,
+                "ci95": [
+                  0.022082213713673245,
+                  0.04041681940576917
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "original_fusion": {
+            "roc_auc": 0.9486457506580395,
+            "average_precision": 0.9843133853506727,
+            "balanced_accuracy": 0.9048774499912561,
+            "precision": 0.9658743233702047,
+            "recall": 0.9799426934097422,
+            "f1": 0.9728576508237525,
+            "false_positive_rate": 0.17018779342723006,
+            "equal_error_rate": 0.09741952190699116,
+            "brier_score": 0.04231017005597235,
+            "tpr_at_fpr_1pct": 0.15353390639923592,
+            "tpr_at_fpr_5pct": 0.6275071633237822,
+            "threshold": 0.21099856169799,
+            "n": 5040,
+            "balanced_log_loss": 0.2674895730528037,
+            "roc_auc_ci95": [
+              0.9348026484680128,
+              0.9607562729529037
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.03780054571299141,
+                "ci95": [
+                  -0.049368353747124546,
+                  -0.027982735436817004
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.03409865432646808,
+                "ci95": [
+                  -0.044838553367322724,
+                  -0.02490441895242831
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.007182661393384082,
+                "ci95": [
+                  -0.009877105277318091,
+                  -0.00490627424207775
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.03780054571299141,
+              "ci95": [
+                -0.049368353747124546,
+                -0.027982735436817004
+              ]
+            }
+          }
+        }
+      },
+      "held_out_generator": {
+        "rows": 19936,
+        "sources": 1246,
+        "systems": {
+          "calibrated_passive": {
+            "roc_auc": 0.9929434487643114,
+            "average_precision": 0.997822609401141,
+            "balanced_accuracy": 0.9597522766536851,
+            "precision": 0.985324254644014,
+            "recall": 0.9683601871101871,
+            "f1": 0.976768570398768,
+            "false_positive_rate": 0.0488556338028169,
+            "equal_error_rate": 0.03762449306023252,
+            "brier_score": 0.0283041519075842,
+            "tpr_at_fpr_1pct": 0.8937759875259875,
+            "tpr_at_fpr_5pct": 0.9691398128898129,
+            "threshold": 0.4414977103398489,
+            "n": 19936,
+            "balanced_log_loss": 0.11180169415071942,
+            "roc_auc_ci95": [
+              0.9895058907155903,
+              0.9955320642834398
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": -0.00042352690074964894,
+                "ci95": [
+                  -0.0025189831471123273,
+                  0.0010818826824479677
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.00401752911243447,
+                "ci95": [
+                  -0.005877337576246927,
+                  -0.0025459797343049388
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0013334334554624405,
+                "ci95": [
+                  -0.003346974878114831,
+                  0.00010902078841953593
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "refit_static_fusion": {
+            "roc_auc": 0.993366975665061,
+            "average_precision": 0.997978558804936,
+            "balanced_accuracy": 0.9686740505402478,
+            "precision": 0.9863183269268356,
+            "recall": 0.9835628898128899,
+            "f1": 0.9849386812400377,
+            "false_positive_rate": 0.04621478873239437,
+            "equal_error_rate": 0.03190494970864688,
+            "brier_score": 0.02328892789237939,
+            "tpr_at_fpr_1pct": 0.8252988565488566,
+            "tpr_at_fpr_5pct": 0.9908393970893971,
+            "threshold": 0.21099856232583192,
+            "n": 19936,
+            "balanced_log_loss": 0.09436497678759287,
+            "roc_auc_ci95": [
+              0.9913863742108234,
+              0.9950713797672012
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.00042352690074964894,
+                "ci95": [
+                  -0.0010818826824479683,
+                  0.0025189831471123247
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0035940022116848214,
+                "ci95": [
+                  -0.004649512402180783,
+                  -0.002609518062931927
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0009099065547127916,
+                "ci95": [
+                  -0.001302294105475449,
+                  -0.0005403235012334112
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.00042352690074964894,
+              "ci95": [
+                -0.0010818826824479683,
+                0.0025189831471123247
+              ]
+            }
+          },
+          "constant_mixture": {
+            "roc_auc": 0.9942768822197738,
+            "average_precision": 0.9982139144549351,
+            "balanced_accuracy": 0.9671681008608826,
+            "precision": 0.9851163395294423,
+            "recall": 0.9847323284823285,
+            "f1": 0.984924296575476,
+            "false_positive_rate": 0.05039612676056338,
+            "equal_error_rate": 0.03235241098357297,
+            "brier_score": 0.023217983381411178,
+            "tpr_at_fpr_1pct": 0.8314059251559252,
+            "tpr_at_fpr_5pct": 0.9844724532224532,
+            "threshold": 0.18800771996226448,
+            "n": 19936,
+            "balanced_log_loss": 0.0914366189181489,
+            "roc_auc_ci95": [
+              0.9924071357720126,
+              0.9958321961884352
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0013334334554624405,
+                "ci95": [
+                  -0.00010902078841953655,
+                  0.0033469748781148295
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0009099065547127916,
+                "ci95": [
+                  0.0005403235012334112,
+                  0.0013022941054754485
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.00268409565697203,
+                "ci95": [
+                  -0.003503750748056442,
+                  -0.0019123854495704613
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0013334334554624405,
+              "ci95": [
+                -0.00010902078841953655,
+                0.0033469748781148295
+              ]
+            }
+          },
+          "logit_payload_fusion": {
+            "roc_auc": 0.9969609778767459,
+            "average_precision": 0.999090834819898,
+            "balanced_accuracy": 0.9750615831161606,
+            "precision": 0.9922071060626073,
+            "recall": 0.9760914760914761,
+            "f1": 0.984083316958145,
+            "false_positive_rate": 0.02596830985915493,
+            "equal_error_rate": 0.02508299537348833,
+            "brier_score": 0.020603417748292926,
+            "tpr_at_fpr_1pct": 0.9423726611226612,
+            "tpr_at_fpr_5pct": 0.9865514553014553,
+            "threshold": 0.40228565620375095,
+            "n": 19936,
+            "balanced_log_loss": 0.06910306966267636,
+            "roc_auc_ci95": [
+              0.9953083836879776,
+              0.9981192571799691
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.00401752911243447,
+                "ci95": [
+                  0.0025459797343049375,
+                  0.005877337576246926
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0035940022116848214,
+                "ci95": [
+                  0.002609518062931926,
+                  0.004649512402180783
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.00268409565697203,
+                "ci95": [
+                  0.001912385449570461,
+                  0.003503750748056441
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.00401752911243447,
+              "ci95": [
+                0.0025459797343049375,
+                0.005877337576246926
+              ]
+            }
+          },
+          "reliability_mixture": {
+            "roc_auc": 0.9951890049202439,
+            "average_precision": 0.9985092449794318,
+            "balanced_accuracy": 0.9668885519457703,
+            "precision": 0.9870709457242239,
+            "recall": 0.9771309771309772,
+            "f1": 0.9820758105063828,
+            "false_positive_rate": 0.04335387323943662,
+            "equal_error_rate": 0.032559899417293765,
+            "brier_score": 0.022453645468009324,
+            "tpr_at_fpr_1pct": 0.8688929313929314,
+            "tpr_at_fpr_5pct": 0.9820686070686071,
+            "threshold": 0.33491035610339387,
+            "n": 19936,
+            "balanced_log_loss": 0.08830821268501696,
+            "roc_auc_ci95": [
+              0.9934362595302846,
+              0.9966123684982001
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.002245556155932471,
+                "ci95": [
+                  0.0008585584575212857,
+                  0.004200090553145436
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.001822029255182822,
+                "ci95": [
+                  0.0012416056688035915,
+                  0.0024154501789845676
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0017719729565019993,
+                "ci95": [
+                  -0.0023619663606803815,
+                  -0.001216086750410814
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0009121227004700305,
+                "ci95": [
+                  0.0006433153008651576,
+                  0.0012133458785293116
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.002245556155932471,
+              "ci95": [
+                0.0008585584575212857,
+                0.004200090553145436
+              ]
+            }
+          },
+          "payload_only_gate": {
+            "roc_auc": 0.99465125357786,
+            "average_precision": 0.9983327005446666,
+            "balanced_accuracy": 0.9673737591871394,
+            "precision": 0.9873933026920552,
+            "recall": 0.9770010395010394,
+            "f1": 0.9821696819280256,
+            "false_positive_rate": 0.04225352112676056,
+            "equal_error_rate": 0.03217740695733655,
+            "brier_score": 0.02277549713827491,
+            "tpr_at_fpr_1pct": 0.8334199584199584,
+            "tpr_at_fpr_5pct": 0.9823284823284824,
+            "threshold": 0.3402860399032702,
+            "n": 19936,
+            "balanced_log_loss": 0.08996246448602203,
+            "roc_auc_ci95": [
+              0.9928238151398157,
+              0.9961441440821874
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0017078048135485968,
+                "ci95": [
+                  0.0002903183111631069,
+                  0.0037070939168829544
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0012842779127989479,
+                "ci95": [
+                  0.0008344539405417184,
+                  0.001773243308440855
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0023097242988858735,
+                "ci95": [
+                  -0.0030598599698992536,
+                  -0.0016043994525233168
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0003743713580861563,
+                "ci95": [
+                  0.0002525190857332077,
+                  0.0005221607569827701
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0017078048135485968,
+              "ci95": [
+                0.0002903183111631069,
+                0.0037070939168829544
+              ]
+            }
+          },
+          "uncertainty_only_gate": {
+            "roc_auc": 0.994786567148473,
+            "average_precision": 0.9983739447186052,
+            "balanced_accuracy": 0.9658110761763932,
+            "precision": 0.9849540806357063,
+            "recall": 0.98245841995842,
+            "f1": 0.9837046674255977,
+            "false_positive_rate": 0.050836267605633804,
+            "equal_error_rate": 0.03238489539105735,
+            "brier_score": 0.023070507404100375,
+            "tpr_at_fpr_1pct": 0.8475181912681913,
+            "tpr_at_fpr_5pct": 0.9822635135135135,
+            "threshold": 0.20365324954645708,
+            "n": 19936,
+            "balanced_log_loss": 0.08984591239877641,
+            "roc_auc_ci95": [
+              0.9929403179222653,
+              0.9962688973608248
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0018431183841616239,
+                "ci95": [
+                  0.00046188194983310115,
+                  0.0037619113545128784
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.001419591483411975,
+                "ci95": [
+                  0.0009046735911831888,
+                  0.001947556755063881
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0021744107282728464,
+                "ci95": [
+                  -0.0028609154929577383,
+                  -0.0015326181340087344
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0005096849286991834,
+                "ci95": [
+                  0.0003240022968991757,
+                  0.0007093635932833297
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0018431183841616239,
+              "ci95": [
+                0.00046188194983310115,
+                0.0037619113545128784
+              ]
+            }
+          },
+          "probe": {
+            "roc_auc": 0.9929434487643114,
+            "average_precision": 0.997822609401141,
+            "balanced_accuracy": 0.9597522766536851,
+            "precision": 0.985324254644014,
+            "recall": 0.9683601871101871,
+            "f1": 0.976768570398768,
+            "false_positive_rate": 0.0488556338028169,
+            "equal_error_rate": 0.03762449306023252,
+            "brier_score": 0.029473831924533515,
+            "tpr_at_fpr_1pct": 0.8937759875259875,
+            "tpr_at_fpr_5pct": 0.9691398128898129,
+            "threshold": 0.43839988,
+            "n": 19936,
+            "balanced_log_loss": 0.14273153448781667,
+            "roc_auc_ci95": [
+              0.9895058907155903,
+              0.9955320642834398
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": -0.00042352690074964894,
+                "ci95": [
+                  -0.0025189831471123273,
+                  0.0010818826824479677
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.00401752911243447,
+                "ci95": [
+                  -0.005877337576246927,
+                  -0.0025459797343049388
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0013334334554624405,
+                "ci95": [
+                  -0.003346974878114831,
+                  0.00010902078841953593
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "original_fusion": {
+            "roc_auc": 0.993366975665061,
+            "average_precision": 0.997978558804936,
+            "balanced_accuracy": 0.9686740505402478,
+            "precision": 0.9863183269268356,
+            "recall": 0.9835628898128899,
+            "f1": 0.9849386812400377,
+            "false_positive_rate": 0.04621478873239437,
+            "equal_error_rate": 0.03190494970864688,
+            "brier_score": 0.0232889278862161,
+            "tpr_at_fpr_1pct": 0.8252988565488566,
+            "tpr_at_fpr_5pct": 0.9908393970893971,
+            "threshold": 0.21099856169799,
+            "n": 19936,
+            "balanced_log_loss": 0.09436497672702338,
+            "roc_auc_ci95": [
+              0.9913863742108234,
+              0.9950713797672012
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.00042352690074964894,
+                "ci95": [
+                  -0.0010818826824479683,
+                  0.0025189831471123247
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0035940022116848214,
+                "ci95": [
+                  -0.004649512402180783,
+                  -0.002609518062931927
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.0009099065547127916,
+                "ci95": [
+                  -0.001302294105475449,
+                  -0.0005403235012334112
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.00042352690074964894,
+              "ci95": [
+                -0.0010818826824479683,
+                0.0025189831471123247
+              ]
+            }
+          }
+        }
+      },
+      "clean_unmarked": {
+        "rows": 1680,
+        "sources": 1680,
+        "systems": {
+          "calibrated_passive": {
+            "roc_auc": 0.9969026191533154,
+            "average_precision": 0.999306427996758,
+            "balanced_accuracy": 0.9786613664796804,
+            "precision": 0.9963396778916545,
+            "recall": 0.9749283667621776,
+            "f1": 0.9855177407675597,
+            "false_positive_rate": 0.017605633802816902,
+            "equal_error_rate": 0.01811513781831388,
+            "brier_score": 0.02027190160163822,
+            "tpr_at_fpr_1pct": 0.9534383954154728,
+            "tpr_at_fpr_5pct": 0.9878223495702005,
+            "threshold": 0.4414977103398489,
+            "n": 1680,
+            "balanced_log_loss": 0.06967570441098839,
+            "roc_auc_ci95": [
+              0.9936207953307236,
+              0.9988927746277089
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.005165664473949838,
+                "ci95": [
+                  0.002474247346543462,
+                  0.00840971689737275
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 7.819121029906118e-05,
+                "ci95": [
+                  -0.0005045855361395068,
+                  0.000660904899309966
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.003190705839622332,
+                "ci95": [
+                  0.0014350609386980684,
+                  0.005355278158924892
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "refit_static_fusion": {
+            "roc_auc": 0.9917369546793655,
+            "average_precision": 0.9982384644707767,
+            "balanced_accuracy": 0.9772287017232334,
+            "precision": 0.9963289280469897,
+            "recall": 0.9720630372492837,
+            "f1": 0.9840464104423495,
+            "false_positive_rate": 0.017605633802816902,
+            "equal_error_rate": 0.02414342790265951,
+            "brier_score": 0.031643247703100084,
+            "tpr_at_fpr_1pct": 0.8402578796561605,
+            "tpr_at_fpr_5pct": 0.9828080229226361,
+            "threshold": 0.21099856232583192,
+            "n": 1680,
+            "balanced_log_loss": 0.11035116379632136,
+            "roc_auc_ci95": [
+              0.9865962924754833,
+              0.9958943939424513
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.005165664473949838,
+                "ci95": [
+                  -0.008409716897372752,
+                  -0.002474247346543463
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.005087473263650777,
+                "ci95": [
+                  -0.00809960046813834,
+                  -0.0025475200774849327
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.001974958634327506,
+                "ci95": [
+                  -0.003556470448767135,
+                  -0.0006557972476693985
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.005165664473949838,
+              "ci95": [
+                -0.008409716897372752,
+                -0.002474247346543463
+              ]
+            }
+          },
+          "constant_mixture": {
+            "roc_auc": 0.993711913313693,
+            "average_precision": 0.998602634602495,
+            "balanced_accuracy": 0.9790195326687922,
+            "precision": 0.9963423555230432,
+            "recall": 0.9756446991404012,
+            "f1": 0.9858849077090119,
+            "false_positive_rate": 0.017605633802816902,
+            "equal_error_rate": 0.02166653214415433,
+            "brier_score": 0.029490493979059323,
+            "tpr_at_fpr_1pct": 0.8409742120343839,
+            "tpr_at_fpr_5pct": 0.9878223495702005,
+            "threshold": 0.18800771996226448,
+            "n": 1680,
+            "balanced_log_loss": 0.10030401451642376,
+            "roc_auc_ci95": [
+              0.9890809758263045,
+              0.997173324690262
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.003190705839622332,
+                "ci95": [
+                  -0.005355278158924895,
+                  -0.001435060938698069
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.001974958634327506,
+                "ci95": [
+                  0.0006557972476693985,
+                  0.003556470448767135
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.003112514629323271,
+                "ci95": [
+                  -0.00502725342023482,
+                  -0.0014447087251301563
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.003190705839622332,
+              "ci95": [
+                -0.005355278158924895,
+                -0.001435060938698069
+              ]
+            }
+          },
+          "logit_payload_fusion": {
+            "roc_auc": 0.9968244279430163,
+            "average_precision": 0.9992876925357232,
+            "balanced_accuracy": 0.971765406190726,
+            "precision": 0.9984951091045899,
+            "recall": 0.9505730659025788,
+            "f1": 0.9739449541284404,
+            "false_positive_rate": 0.007042253521126761,
+            "equal_error_rate": 0.02166653214415433,
+            "brier_score": 0.039346609906071195,
+            "tpr_at_fpr_1pct": 0.9534383954154728,
+            "tpr_at_fpr_5pct": 0.9906876790830945,
+            "threshold": 0.40228565620375095,
+            "n": 1680,
+            "balanced_log_loss": 0.09366359789891018,
+            "roc_auc_ci95": [
+              0.9935706016183059,
+              0.9988753707776746
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -7.819121029906118e-05,
+                "ci95": [
+                  -0.0006609048993099665,
+                  0.0005045855361395062
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.005087473263650777,
+                "ci95": [
+                  0.0025475200774849327,
+                  0.008099600468138337
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.003112514629323271,
+                "ci95": [
+                  0.0014447087251301532,
+                  0.005027253420234818
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -7.819121029906118e-05,
+              "ci95": [
+                -0.0006609048993099665,
+                0.0005045855361395062
+              ]
+            }
+          },
+          "reliability_mixture": {
+            "roc_auc": 0.9953892408894629,
+            "average_precision": 0.9989339039081628,
+            "balanced_accuracy": 0.97651236934501,
+            "precision": 0.9963235294117647,
+            "recall": 0.9706303724928367,
+            "f1": 0.9833091436865021,
+            "false_positive_rate": 0.017605633802816902,
+            "equal_error_rate": 0.021308365955042555,
+            "brier_score": 0.025627060115789135,
+            "tpr_at_fpr_1pct": 0.9276504297994269,
+            "tpr_at_fpr_5pct": 0.9878223495702005,
+            "threshold": 0.33491035610339387,
+            "n": 1680,
+            "balanced_log_loss": 0.08592755562650094,
+            "roc_auc_ci95": [
+              0.9910935166875177,
+              0.9982470665684652
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.0015133782638524496,
+                "ci95": [
+                  -0.002817468925299596,
+                  -0.0004438612333024842
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0036522862100973885,
+                "ci95": [
+                  0.0015234043948503888,
+                  0.006312174623673266
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0014351870535533884,
+                "ci95": [
+                  -0.0027341700633600778,
+                  -0.00039845988538684575
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0016773275757698825,
+                "ci95": [
+                  0.0006658233786673379,
+                  0.0029136315024818676
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.0015133782638524496,
+              "ci95": [
+                -0.002817468925299596,
+                -0.0004438612333024842
+              ]
+            }
+          },
+          "payload_only_gate": {
+            "roc_auc": 0.994574538924089,
+            "average_precision": 0.9987809140840631,
+            "balanced_accuracy": 0.9761542031558981,
+            "precision": 0.9963208241353937,
+            "recall": 0.9699140401146131,
+            "f1": 0.9829401088929219,
+            "false_positive_rate": 0.017605633802816902,
+            "equal_error_rate": 0.021308365955042555,
+            "brier_score": 0.027725395012513594,
+            "tpr_at_fpr_1pct": 0.9040114613180515,
+            "tpr_at_fpr_5pct": 0.9878223495702005,
+            "threshold": 0.3402860399032702,
+            "n": 1680,
+            "balanced_log_loss": 0.09444837108132331,
+            "roc_auc_ci95": [
+              0.990225657310626,
+              0.9977476517413939
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.0023280802292263703,
+                "ci95": [
+                  -0.003997967028532262,
+                  -0.0009381684087331928
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.002837584244723468,
+                "ci95": [
+                  0.0009961812421808325,
+                  0.0051079669276403875
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.002249889018927309,
+                "ci95": [
+                  -0.0037714016909479037,
+                  -0.0009430868880906731
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.0008626256103959618,
+                "ci95": [
+                  0.00020178376851365254,
+                  0.0017177473869001616
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.0023280802292263703,
+              "ci95": [
+                -0.003997967028532262,
+                -0.0009381684087331928
+              ]
+            }
+          },
+          "uncertainty_only_gate": {
+            "roc_auc": 0.9949755841640099,
+            "average_precision": 0.9988513180367875,
+            "balanced_accuracy": 0.9790195326687922,
+            "precision": 0.9963423555230432,
+            "recall": 0.9756446991404012,
+            "f1": 0.9858849077090119,
+            "false_positive_rate": 0.017605633802816902,
+            "equal_error_rate": 0.02166653214415433,
+            "brier_score": 0.02720098368748247,
+            "tpr_at_fpr_1pct": 0.9047277936962751,
+            "tpr_at_fpr_5pct": 0.9878223495702005,
+            "threshold": 0.20365324954645708,
+            "n": 1680,
+            "balanced_log_loss": 0.0913723633463353,
+            "roc_auc_ci95": [
+              0.9906388726340853,
+              0.9980049891036765
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.001927034989305465,
+                "ci95": [
+                  -0.0033950119052423844,
+                  -0.0006910463497316697
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.003238629484644373,
+                "ci95": [
+                  0.0013214629827676932,
+                  0.005567687103999364
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.0018488437790064038,
+                "ci95": [
+                  -0.003223558759433412,
+                  -0.0006834794584123591
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.001263670850316867,
+                "ci95": [
+                  0.0004943071754308165,
+                  0.0021895430606561394
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.001927034989305465,
+              "ci95": [
+                -0.0033950119052423844,
+                -0.0006910463497316697
+              ]
+            }
+          },
+          "probe": {
+            "roc_auc": 0.9969026191533154,
+            "average_precision": 0.999306427996758,
+            "balanced_accuracy": 0.9786613664796804,
+            "precision": 0.9963396778916545,
+            "recall": 0.9749283667621776,
+            "f1": 0.9855177407675597,
+            "false_positive_rate": 0.017605633802816902,
+            "equal_error_rate": 0.01811513781831388,
+            "brier_score": 0.020774826810132672,
+            "tpr_at_fpr_1pct": 0.9534383954154728,
+            "tpr_at_fpr_5pct": 0.9878223495702005,
+            "threshold": 0.43839988,
+            "n": 1680,
+            "balanced_log_loss": 0.08978173866885718,
+            "roc_auc_ci95": [
+              0.9936207953307236,
+              0.9988927746277089
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.005165664473949838,
+                "ci95": [
+                  0.002474247346543462,
+                  0.00840971689737275
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": 7.819121029906118e-05,
+                "ci95": [
+                  -0.0005045855361395068,
+                  0.000660904899309966
+                ]
+              },
+              "constant_mixture": {
+                "estimate": 0.003190705839622332,
+                "ci95": [
+                  0.0014350609386980684,
+                  0.005355278158924892
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "original_fusion": {
+            "roc_auc": 0.9917369546793655,
+            "average_precision": 0.9982384644707767,
+            "balanced_accuracy": 0.9772287017232334,
+            "precision": 0.9963289280469897,
+            "recall": 0.9720630372492837,
+            "f1": 0.9840464104423495,
+            "false_positive_rate": 0.017605633802816902,
+            "equal_error_rate": 0.02414342790265951,
+            "brier_score": 0.03164324772380106,
+            "tpr_at_fpr_1pct": 0.8402578796561605,
+            "tpr_at_fpr_5pct": 0.9828080229226361,
+            "threshold": 0.21099856169799,
+            "n": 1680,
+            "balanced_log_loss": 0.110351163692476,
+            "roc_auc_ci95": [
+              0.9865962924754833,
+              0.9958943939424513
+            ],
+            "paired_auc_vs_reference": {
+              "probe": {
+                "estimate": -0.005165664473949838,
+                "ci95": [
+                  -0.008409716897372752,
+                  -0.002474247346543463
+                ]
+              },
+              "original_fusion": {
+                "estimate": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "logit_payload_fusion": {
+                "estimate": -0.005087473263650777,
+                "ci95": [
+                  -0.00809960046813834,
+                  -0.0025475200774849327
+                ]
+              },
+              "constant_mixture": {
+                "estimate": -0.001974958634327506,
+                "ci95": [
+                  -0.003556470448767135,
+                  -0.0006557972476693985
+                ]
+              }
+            },
+            "paired_auc_minus_probe": {
+              "estimate": -0.005165664473949838,
+              "ci95": [
+                -0.008409716897372752,
+                -0.002474247346543463
+              ]
+            }
+          }
+        }
+      },
+      "gate_by_condition": {
+        "blur:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7461387599346413
+        },
+        "blur:2": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7510958783892141
+        },
+        "color:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7365647303283871
+        },
+        "crop:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.612272803731227
+        },
+        "denoise:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7443892921895082
+        },
+        "identity:0": {
+          "rows": 3360,
+          "mean_fusion_weight": 0.6584949495602113
+        },
+        "inpaint:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7400540240960419
+        },
+        "jpeg:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7414606272123684
+        },
+        "jpeg:2": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7427896799950438
+        },
+        "lowres:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7562726483722008
+        },
+        "lowres:2": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.6577223845044189
+        },
+        "noise:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.742459595928221
+        },
+        "regenerate:2": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.6501513373486583
+        },
+        "resize:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.7442545309513553
+        },
+        "spectral:1": {
+          "rows": 1680,
+          "mean_fusion_weight": 0.6175969519391259
+        }
+      },
+      "criteria": {
+        "full_auc_above_probe": true,
+        "reduced_recovery_auc_within_0p005_of_probe": false,
+        "full_auc_above_logit_payload_fusion": false,
+        "full_auc_above_constant_mixture": true
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-12T16:26:18.471319+00:00",
+  "inputs": {
+    "script_sha256": "ccdc62702a2373667d3456b25188e3aee9b468441ff43683effdd4b93095444e",
+    "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+    "model_fit_sha256": "515c2b10a0346ac5416ac8304e886b0ebda1dc87e0551ae6b8dcfaa48a91557e",
+    "calibration_features_sha256": "02eeef842fdd574ef6ee391babd46ae5292f5d26e43f7d1f981c928c7008beda"
+  },
+  "secondary_cuts_sha256": "1e762e11bee7b9a5ce2acfea373670d9ba8ecc58724ba8afc3b6c5c81ea44a9e",
+  "secondary_test_scores_observed": false
+}

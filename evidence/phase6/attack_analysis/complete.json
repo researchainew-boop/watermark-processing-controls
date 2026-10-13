@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-13T04:24:42.446530+00:00",
+  "script_sha256": "ccdc62702a2373667d3456b25188e3aee9b468441ff43683effdd4b93095444e",
+  "test_features_sha256": "4a7e1b148e32055cff7925ebc10ef92f988ada51d85a350655a6e9af5805edf3",
+  "secondary_cuts_sha256": "1e762e11bee7b9a5ce2acfea373670d9ba8ecc58724ba8afc3b6c5c81ea44a9e",
+  "outputs_sha256": {
+    "results.json": "3c6c1c0bcafa3c8b9645eeb219b1bb72a7d6a7c466b5cde3e8f62bbfd2178c10",
+    "predictions.csv": "defed5014a244568cb6add230f217dda9cc18ffd96f61c1cdc24fe886d0b735e",
+    "quality.csv": "471a544ec0d17d225a9c137dca8e313a2aa2474ddd79f4c07addff1a1bc0ac6d"
+  },
+  "primary_model_or_threshold_retuned": false
+}

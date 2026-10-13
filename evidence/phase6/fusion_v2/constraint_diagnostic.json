@@ -1,0 +1,4338 @@
+{
+  "dwt_dct/clip": {
+    "hard_13_gate": {
+      "marked_tpr": 0.8333333333333333,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "no_full_match": {
+      "marked_tpr": 0.892156862745098,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "no_null": {
+      "marked_tpr": 0.9044117647058824,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "no_pair": {
+      "marked_tpr": 0.9019607843137254,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "no_stability": {
+      "marked_tpr": 0.9044117647058824,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "old_capped_positive": {
+      "marked_tpr": 0.8333333333333333,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "old_reliability_mixture": {
+      "marked_tpr": 0.8161764705882352,
+      "real_image_fpr": 0.0125,
+      "real_source_fpr": 0.04,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.23529411764705882,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": -0.23529411764705882
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.17647058823529413
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.7647058823529411,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.058823529411764705
+        }
+      ],
+      "unmarked_tpr": 0.8088235294117647
+    },
+    "primary": {
+      "claim_status": "Development diagnostic only; no final noninferiority or shift guarantee. Constraint failure does not change frozen model.",
+      "marked_tpr": 0.9044117647058824,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "strict_development_feasibility": true,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "probe": {
+      "marked_tpr": 0.8333333333333333,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "simple_confidence": {
+      "marked_tpr": 0.857843137254902,
+      "real_image_fpr": 0.01875,
+      "real_source_fpr": 0.035,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8308823529411765
+    },
+    "static_fusion": {
+      "marked_tpr": 0.5735294117647058,
+      "real_image_fpr": 0.02125,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": -0.11764705882352941
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.23529411764705882,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.5294117647058824,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": -0.5294117647058824
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.5294117647058824,
+          "tpr_minus_probe": -0.35294117647058826
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": -0.4117647058823529
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.11764705882352941,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.058823529411764705
+        }
+      ],
+      "unmarked_tpr": 0.5220588235294118
+    },
+    "unconstrained_full_logistic": {
+      "marked_tpr": 0.909313725490196,
+      "real_image_fpr": 0.01875,
+      "real_source_fpr": 0.035,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.11764705882352941,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": -0.11764705882352941
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8014705882352942
+    },
+    "watermark_only_agreement": {
+      "marked_tpr": 0.4901960784313726,
+      "real_image_fpr": 0.00375,
+      "real_source_fpr": 0.015,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.7058823529411765,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.7058823529411765
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 1.0,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -1.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.8823529411764706,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8823529411764706
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.8235294117647058,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8235294117647058
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        }
+      ],
+      "unmarked_tpr": 0.007352941176470588
+    },
+    "watermark_only_full_match": {
+      "marked_tpr": 0.45588235294117646,
+      "real_image_fpr": 0.0,
+      "real_source_fpr": 0.0,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.7058823529411765,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.7058823529411765
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 1.0,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -1.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.8823529411764706,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8823529411764706
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.8235294117647058,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8235294117647058
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        }
+      ],
+      "unmarked_tpr": 0.0
+    },
+    "watermark_only_margin": {
+      "marked_tpr": 0.4534313725490196,
+      "real_image_fpr": 0.035,
+      "real_source_fpr": 0.075,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.7058823529411765,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.7058823529411765
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 1.0,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -1.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.8823529411764706,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8823529411764706
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.8235294117647058,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8235294117647058
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        }
+      ],
+      "unmarked_tpr": 0.0
+    }
+  },
+  "dwt_dct/resnet": {
+    "hard_13_gate": {
+      "marked_tpr": 0.4730392156862746,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "no_full_match": {
+      "marked_tpr": 0.6936274509803922,
+      "real_image_fpr": 0.025,
+      "real_source_fpr": 0.07,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "no_null": {
+      "marked_tpr": 0.6985294117647058,
+      "real_image_fpr": 0.025,
+      "real_source_fpr": 0.07,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "no_pair": {
+      "marked_tpr": 0.6985294117647058,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "no_stability": {
+      "marked_tpr": 0.6985294117647058,
+      "real_image_fpr": 0.025,
+      "real_source_fpr": 0.07,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "old_capped_positive": {
+      "marked_tpr": 0.5637254901960784,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "old_reliability_mixture": {
+      "marked_tpr": 0.5465686274509804,
+      "real_image_fpr": 0.0275,
+      "real_source_fpr": 0.075,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.11764705882352941,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.29411764705882354,
+          "tpr_minus_probe": 0.11764705882352941
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.29411764705882354,
+          "tpr_minus_probe": -0.058823529411764705
+        }
+      ],
+      "unmarked_tpr": 0.4485294117647059
+    },
+    "primary": {
+      "claim_status": "Development diagnostic only; no final noninferiority or shift guarantee. Constraint failure does not change frozen model.",
+      "marked_tpr": 0.6985294117647058,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "strict_development_feasibility": false,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "probe": {
+      "marked_tpr": 0.4730392156862746,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "simple_confidence": {
+      "marked_tpr": 0.5073529411764705,
+      "real_image_fpr": 0.02625,
+      "real_source_fpr": 0.07,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5294117647058824,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.47058823529411764
+    },
+    "static_fusion": {
+      "marked_tpr": 0.40441176470588236,
+      "real_image_fpr": 0.0175,
+      "real_source_fpr": 0.06,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.35294117647058826,
+          "sources": 17,
+          "tpr": 0.11764705882352941,
+          "tpr_minus_probe": -0.35294117647058826
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.23529411764705882,
+          "tpr_minus_probe": -0.17647058823529413
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": -0.11764705882352941
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.11764705882352941,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.23529411764705882,
+          "tpr_minus_probe": -0.4117647058823529
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.29411764705882354,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": -0.17647058823529413
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.23529411764705882,
+          "tpr_minus_probe": -0.35294117647058826
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.11764705882352941,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.2647058823529412
+    },
+    "unconstrained_full_logistic": {
+      "marked_tpr": 0.7058823529411765,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.17647058823529413
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.058823529411764705
+        }
+      ],
+      "unmarked_tpr": 0.4852941176470588
+    },
+    "watermark_only_agreement": {
+      "marked_tpr": 0.4901960784313726,
+      "real_image_fpr": 0.00375,
+      "real_source_fpr": 0.015,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.4117647058823529
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.11764705882352941
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.35294117647058826,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.35294117647058826
+        }
+      ],
+      "unmarked_tpr": 0.007352941176470588
+    },
+    "watermark_only_full_match": {
+      "marked_tpr": 0.45588235294117646,
+      "real_image_fpr": 0.0,
+      "real_source_fpr": 0.0,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.4117647058823529
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.17647058823529413
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.35294117647058826,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.35294117647058826
+        }
+      ],
+      "unmarked_tpr": 0.0
+    },
+    "watermark_only_margin": {
+      "marked_tpr": 0.4534313725490196,
+      "real_image_fpr": 0.035,
+      "real_source_fpr": 0.075,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.4117647058823529
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.17647058823529413
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.35294117647058826,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.35294117647058826
+        }
+      ],
+      "unmarked_tpr": 0.0
+    }
+  },
+  "trustmark/clip": {
+    "hard_13_gate": {
+      "marked_tpr": 0.8284313725490196,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "no_full_match": {
+      "marked_tpr": 0.9313725490196078,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "no_null": {
+      "marked_tpr": 0.9338235294117647,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "no_pair": {
+      "marked_tpr": 0.9240196078431373,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "no_stability": {
+      "marked_tpr": 0.9313725490196078,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "old_capped_positive": {
+      "marked_tpr": 0.8284313725490196,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "old_reliability_mixture": {
+      "marked_tpr": 0.8504901960784315,
+      "real_image_fpr": 0.025,
+      "real_source_fpr": 0.06,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.11764705882352941,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": -0.11764705882352941
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.11764705882352941
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.23529411764705882,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": -0.17647058823529413
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.058823529411764705
+        }
+      ],
+      "unmarked_tpr": 0.8088235294117647
+    },
+    "primary": {
+      "claim_status": "Development diagnostic only; no final noninferiority or shift guarantee. Constraint failure does not change frozen model.",
+      "marked_tpr": 0.9313725490196078,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "strict_development_feasibility": true,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "probe": {
+      "marked_tpr": 0.8284313725490196,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8235294117647058
+    },
+    "simple_confidence": {
+      "marked_tpr": 0.875,
+      "real_image_fpr": 0.0175,
+      "real_source_fpr": 0.035,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7647058823529411,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7058823529411765,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8823529411764706,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.8455882352941176
+    },
+    "static_fusion": {
+      "marked_tpr": 0.6225490196078431,
+      "real_image_fpr": 0.02125,
+      "real_source_fpr": 0.06,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.35294117647058826,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": -0.35294117647058826
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.29411764705882354,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": -0.29411764705882354
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": -0.29411764705882354
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.5294117647058824,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": -0.29411764705882354
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.5294117647058824,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.5294117647058824,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": -0.5294117647058824
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.35294117647058826,
+          "sources": 17,
+          "tpr": 0.5294117647058824,
+          "tpr_minus_probe": -0.29411764705882354
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.29411764705882354,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": -0.29411764705882354
+        }
+      ],
+      "unmarked_tpr": 0.47058823529411764
+    },
+    "unconstrained_full_logistic": {
+      "marked_tpr": 0.9877450980392155,
+      "real_image_fpr": 0.02,
+      "real_source_fpr": 0.045,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.9411764705882353,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.7647058823529411,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.17647058823529413
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 1.0,
+          "tpr_minus_probe": 0.11764705882352941
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.8235294117647058,
+          "tpr_minus_probe": 0.17647058823529413
+        }
+      ],
+      "unmarked_tpr": 0.8897058823529411
+    },
+    "watermark_only_agreement": {
+      "marked_tpr": 0.7720588235294118,
+      "real_image_fpr": 0.0075,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.7058823529411765,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.7058823529411765
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 1.0,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -1.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.8823529411764706,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8823529411764706
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.8235294117647058,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8235294117647058
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        }
+      ],
+      "unmarked_tpr": 0.0
+    },
+    "watermark_only_full_match": {
+      "marked_tpr": 0.7303921568627451,
+      "real_image_fpr": 0.0,
+      "real_source_fpr": 0.0,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.7058823529411765,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.7058823529411765
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 1.0,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -1.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.8823529411764706,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8823529411764706
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.8235294117647058,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8235294117647058
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        }
+      ],
+      "unmarked_tpr": 0.0
+    },
+    "watermark_only_margin": {
+      "marked_tpr": 0.9044117647058824,
+      "real_image_fpr": 0.06,
+      "real_source_fpr": 0.225,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.9411764705882353,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.9411764705882353
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 1.0,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -1.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.8823529411764706,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8823529411764706
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.8235294117647058,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.8235294117647058
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.5882352941176471
+        }
+      ],
+      "unmarked_tpr": 0.022058823529411766
+    }
+  },
+  "trustmark/resnet": {
+    "hard_13_gate": {
+      "marked_tpr": 0.4338235294117648,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "no_full_match": {
+      "marked_tpr": 0.8259803921568628,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "no_null": {
+      "marked_tpr": 0.8529411764705882,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "no_pair": {
+      "marked_tpr": 0.8333333333333333,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "no_stability": {
+      "marked_tpr": 0.8431372549019608,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "old_capped_positive": {
+      "marked_tpr": 0.6102941176470589,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "old_reliability_mixture": {
+      "marked_tpr": 0.534313725490196,
+      "real_image_fpr": 0.02125,
+      "real_source_fpr": 0.06,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.11764705882352941,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": -0.11764705882352941
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.23529411764705882,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.11764705882352941,
+          "sources": 17,
+          "tpr": 0.5294117647058824,
+          "tpr_minus_probe": -0.11764705882352941
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.11764705882352941,
+          "sources": 17,
+          "tpr": 0.23529411764705882,
+          "tpr_minus_probe": -0.11764705882352941
+        }
+      ],
+      "unmarked_tpr": 0.4264705882352941
+    },
+    "primary": {
+      "claim_status": "Development diagnostic only; no final noninferiority or shift guarantee. Constraint failure does not change frozen model.",
+      "marked_tpr": 0.840686274509804,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "strict_development_feasibility": false,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "probe": {
+      "marked_tpr": 0.4338235294117648,
+      "real_image_fpr": 0.02375,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.4632352941176471
+    },
+    "simple_confidence": {
+      "marked_tpr": 0.517156862745098,
+      "real_image_fpr": 0.02625,
+      "real_source_fpr": 0.065,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.47058823529411764,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": 0.0
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": 0.0
+        }
+      ],
+      "unmarked_tpr": 0.45588235294117646
+    },
+    "static_fusion": {
+      "marked_tpr": 0.4436274509803922,
+      "real_image_fpr": 0.015,
+      "real_source_fpr": 0.055,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.29411764705882354,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": -0.29411764705882354
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.29411764705882354,
+          "tpr_minus_probe": -0.11764705882352941
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.29411764705882354,
+          "sources": 17,
+          "tpr": 0.23529411764705882,
+          "tpr_minus_probe": -0.23529411764705882
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.11764705882352941
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.5294117647058824,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.5294117647058824
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.35294117647058826,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": -0.23529411764705882
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.29411764705882354,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.29411764705882354
+        }
+      ],
+      "unmarked_tpr": 0.17647058823529413
+    },
+    "unconstrained_full_logistic": {
+      "marked_tpr": 0.8897058823529411,
+      "real_image_fpr": 0.0125,
+      "real_source_fpr": 0.035,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.35294117647058826,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.4117647058823529,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.23529411764705882,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.5882352941176471,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.058823529411764705,
+          "sources": 17,
+          "tpr": 0.5294117647058824,
+          "tpr_minus_probe": -0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.0,
+          "sources": 17,
+          "tpr": 0.6470588235294118,
+          "tpr_minus_probe": 0.058823529411764705
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.17647058823529413,
+          "tpr_minus_probe": -0.17647058823529413
+        }
+      ],
+      "unmarked_tpr": 0.41911764705882354
+    },
+    "watermark_only_agreement": {
+      "marked_tpr": 0.7720588235294118,
+      "real_image_fpr": 0.0075,
+      "real_source_fpr": 0.03,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.4117647058823529
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.17647058823529413
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.35294117647058826,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.35294117647058826
+        }
+      ],
+      "unmarked_tpr": 0.0
+    },
+    "watermark_only_full_match": {
+      "marked_tpr": 0.7303921568627451,
+      "real_image_fpr": 0.0,
+      "real_source_fpr": 0.0,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.4117647058823529
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.17647058823529413
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.35294117647058826,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.35294117647058826
+        }
+      ],
+      "unmarked_tpr": 0.0
+    },
+    "watermark_only_margin": {
+      "marked_tpr": 0.9044117647058824,
+      "real_image_fpr": 0.06,
+      "real_source_fpr": 0.225,
+      "unmarked_groups": [
+        {
+          "collection": "dalle-3",
+          "condition": "crop",
+          "harmful_switch_rate": 0.47058823529411764,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.47058823529411764
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "identity",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.4117647058823529
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.4117647058823529,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.4117647058823529
+        },
+        {
+          "collection": "dalle-3",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.17647058823529413,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.11764705882352941
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "crop",
+          "harmful_switch_rate": 0.6470588235294118,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.6470588235294118
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "identity",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "jpeg50",
+          "harmful_switch_rate": 0.5882352941176471,
+          "sources": 17,
+          "tpr": 0.0,
+          "tpr_minus_probe": -0.5882352941176471
+        },
+        {
+          "collection": "stable-diffusion",
+          "condition": "lowres32",
+          "harmful_switch_rate": 0.35294117647058826,
+          "sources": 17,
+          "tpr": 0.058823529411764705,
+          "tpr_minus_probe": -0.29411764705882354
+        }
+      ],
+      "unmarked_tpr": 0.022058823529411766
+    }
+  }
+}

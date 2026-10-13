@@ -1,0 +1,82 @@
+{
+  "completed_at_utc": "2026-10-12T11:58:14.492743+00:00",
+  "role": "test",
+  "root_protocol_sha256": "1e7a6d425f7ee4356a2d010067c6058ad3d90497c4715512a8b298eb913302f8",
+  "predictions_sha256": "edf740baeeb4cd92ea3dbbf878d421eb6152c566df3781e2add39c445fff06c2",
+  "rows": 2000,
+  "blocks": [
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/000000.npz",
+      "sha256": "194c55d2ccd5888a740e525652a0357812f83fc831ea5de2b024bd4ad5e3a9bd"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/000128.npz",
+      "sha256": "6d108be780cef48ca20dd3d272c8aa41401f27f7bd3c22b20d022cfa24fa91a7"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/000256.npz",
+      "sha256": "f3b2a36abff58e6df5b659dea4cfb090759f1515bb912aae276f8ee9405d33c1"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/000384.npz",
+      "sha256": "be43b6fc40040b95dc298847b8d627edba2372990cfeb3811286988cd05b39eb"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/000512.npz",
+      "sha256": "03d9ac7deecea4ec0d9092fb62cb011c7bd37655c3c27da428248718b26df525"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/000640.npz",
+      "sha256": "cdc214bbfaeae4b63a8b8f5d074e7a169b2bba7423c914d5ad8ae5222066f2a7"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/000768.npz",
+      "sha256": "0a4e2ed25ca7fdbb00490c6f3d394ffc8942e8a5689edc67685643a6abd073b2"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/000896.npz",
+      "sha256": "a40e9a745c37502be7b3a9889113650b9c44fca270de29c5a7a9af12612f9867"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/001024.npz",
+      "sha256": "4d119fa174614b73daa8fb13061fb76af410509d0629b8df75b202dd6edf4155"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/001152.npz",
+      "sha256": "be3575ba9ea8f60584099fc4ccc6b05fe1931a5a6aae63f219a8c2d335df1f5b"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/001280.npz",
+      "sha256": "fe9d88f596b26471fcc7f8c3eb6fe6cb1a1a036f47c243ab8b39b6d6fefaaeca"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/001408.npz",
+      "sha256": "356bda18df9ce7114c6fdf0dbd795420643a93247f7e6ac228483d08ff7e39ed"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/001536.npz",
+      "sha256": "64ef3ee4af0ebf0a1709b7c2a4db9a749610abfd396b620f3964021760c30059"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/001664.npz",
+      "sha256": "383c78fb3a9df78b29b7e9ad7cf776adc4cd7eb16cf962ce8160472ae42de0ec"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/001792.npz",
+      "sha256": "76243829323e20f4ee588be791c8fef152aa6d9168522b486dd9fb65ba74d3c8"
+    },
+    {
+      "path": "outputs/phase6/native_baseline/test_blocks/001920.npz",
+      "sha256": "906fca6c50ec2875c16d9efb6efc2f613283d19bf3d9002bcbf6fdb161d65ed7"
+    }
+  ],
+  "elapsed_seconds": 259.10825269999987,
+  "dtype": "float32",
+  "device": "cuda",
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "numpy": "1.26.4",
+    "pillow": "12.3.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "base_heads_sha256": {
+    "clip": "30cf885fbf4030471c15443ce8808173764ff193e775a61f7bb11329901278d4",
+    "resnet": "db427c4aeab4edf07496cf28d6f5fb766ce48f91baee53797df41ddb42b5d9f7"
+  },
+  "development_features_sha256": "627b43725f6ef176cdcc2abdeeef62e4bd5e93968c61567ebcf3463172ebb7bf",
+  "final_test_read": false,
+  "frozen_utc": "2026-10-11T13:08:13.340893+00:00",
+  "outputs_sha256": {
+    "constraint_diagnostic.json": "3f95e27e9037492d763ccf4aeac4d73e2990fa354731a296018c31341e5054d4",
+    "development_sources.csv": "0282e4fe7cbc8a40447dfe32fa98654633844e894b938bfd04a05f748c4936b6",
+    "models.json": "96453192d3d7d712f1d1acc079d43eae86fca495bd7b3e33ce93eb03d11bef56",
+    "protocol.json": "73f34388ffc2659e2a30c37d6a78e4ec7f0566150f8126d50113c3a92c83929c",
+    "selection.json": "dae6794bb944b52f32d6b34afef4923bb829d34570471f908bc8b032a9fecbc0"
+  },
+  "registered_queries": [
+    "0100101101001011",
+    "1011010010110100",
+    "1100101000110101"
+  ],
+  "schema": "phase6_paired_fusion_v1",
+  "script_sha256": "54db8455ad6f13a09ab01c53e6ef3d22f29a03a2ee3a9db9573cb373e0175d20",
+  "source_count": 936
+}
